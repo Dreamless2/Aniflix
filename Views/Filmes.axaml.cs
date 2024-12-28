@@ -31,6 +31,20 @@ public partial class Filmes : Window
         }
     }
 
+    private static void UpdateContent
+    {
+        // create new stringlist
+        var stringList = new List<string>();
+        {
+        }
+        
+    }
+
+
+
+
+
+
     public void OnLostFocus(object? sender, RoutedEventArgs e)
     {
         var client = new TMDbClient("1dcbf681735d3e7454953f5b7c22b6dc")
