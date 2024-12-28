@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.Text;
 
 namespace Aniflix.Extensions
@@ -23,12 +25,56 @@ namespace Aniflix.Extensions
         }
 
         public static string FirstCharToUpper(this string input) =>
-        input switch
+            input switch
+            {
+                null => throw new ArgumentNullException(nameof(input)),
+                "" => throw new ArgumentException(
+                    $"{nameof(input)} cannot be empty",
+                    nameof(input)
+                ),
+                _ => string.Concat(input[0].ToString().ToUpper(), input.AsSpan(1)),
+            };
+
+        public static string RemoveExcept(
+            string value,
+            bool alphas = false,
+            bool numerics = false,
+            bool dashes = false,
+            bool underlines = false,
+            bool spaces = false,
+            bool periods = false
+        )
         {
-            null => throw new ArgumentNullException(nameof(input)),
-            "" => throw new ArgumentException($"{nameof(input)} cannot be empty", nameof(input)),
-            _ => string.Concat(input[0].ToString().ToUpper(), input.AsSpan(1))
-        };
+            if (string.IsNullOrWhiteSpace(value))
+                return value;
+            if (new[] { alphas, numerics, dashes, underlines, spaces, periods }.All(x => !x))
+                return value;
+
+            var whitelistChars = new HashSet<char>(
+                string.Concat(
+                        alphas ? "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" : "",
+                        numerics ? "0123456789" : "",
+                        dashes ? "-" : "",
+                        underlines ? "_" : "",
+                        periods ? "." : "",
+                        spaces ? " " : ""
+                    )
+                    .ToCharArray()
+            );
+
+            var scrubbedValue = value
+                .Aggregate(
+                    new StringBuilder(),
+                    (sb, @char) =>
+                    {
+                        if (whitelistChars.Contains(@char))
+                            sb.Append(@char);
+                        return sb;
+                    }
+                )
+                .ToString();
+
+            return scrubbedValue;
+        }
     }
 }
-

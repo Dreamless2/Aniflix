@@ -70,6 +70,7 @@ public partial class Filmes : Window
 
         var credits = client.GetMovieCreditsAsync(Convert.ToInt32(txID.Text)).Result;
         txGenero.Text = "#" + p0.ToLower() + " " + "#" + p1.ToLower() + " " + "#" + p2.ToLower();
+
         var directors = credits.Crew
             .Where(person => person.Job == "Director")
             .Take(4)
@@ -77,6 +78,25 @@ public partial class Filmes : Window
             .ToList();
 
         txDiretor.Text = string.Join(" ", directors);
+
+        var stars = credits.Cast
+          .Take(5)
+          .Select(person => $"#{person.Name.Replace(" ", "")}")
+          .ToList();
+
+        txElenco.Text = string.Join(" ", stars);
+
+        var studios = movie.ProductionCompanies
+               .Take(5)
+               .Select(company => $"#{company.Name.Replace(" ", "")}")
+               .ToList();
+
+
+        var cleanedList = studios.Select(str =>
+             str.Aggregate("", (result, c) => (char.IsLetterOrDigit(c) || c == '#') ? result + c : result)
+         ).ToList();
+
+        txEstudio.Text = string.Join(" ", cleanedList);
     }
 
     [GeneratedRegex("[^0-9]")]
