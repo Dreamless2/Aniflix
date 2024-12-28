@@ -6,7 +6,6 @@ using Aniflix.Extensions;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using TMDbLib.Client;
-using TMDbLib.Objects.People;
 
 namespace Aniflix;
 
@@ -73,9 +72,17 @@ public partial class Filmes : Window
             .ToArray()
         );
 
-        var credits = new MovieCredits();
+        var credits = client.GetMovieCreditsAsync(Convert.ToInt32(txID.Text)).Result;
         txGenero.Text = "#" + p0.ToLower() + " " + "#" + p1.ToLower() + " " + "#" + p2.ToLower();
-        txDiretor.Text = movie.Credits.Crew[0].Name;
+        var directors = credits.Crew
+           .Where(person => person.Job == "Director")
+           .Take(4)
+           .Select(person => person.Name);
+
+        foreach (var director in directors)
+        {
+            txDiretor.Text += "#" + director.ToLower() + " ";
+        }
     }
 
     [GeneratedRegex("[^0-9]")]
