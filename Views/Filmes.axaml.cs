@@ -1,10 +1,12 @@
 using System;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Aniflix.Extensions;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Microsoft.Extensions.Configuration;
 using TMDbLib.Client;
 
 namespace Aniflix;
@@ -12,10 +14,21 @@ namespace Aniflix;
 public partial class Filmes : Window
 {
     DateTime dataLancamento;
+    private IConfiguration? _configuration;
 
     public Filmes()
     {
         InitializeComponent();
+        ConfigureAppSettings();
+    }
+
+    private void ConfigureAppSettings()
+    {
+        var builder = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+        _configuration = builder.Build();
     }
 
     private static string FormatString(string input)
@@ -30,20 +43,6 @@ public partial class Filmes : Window
             txID.Text = "";
         }
     }
-
-    private static void UpdateContent
-    {
-        // create new stringlist
-        var stringList = new List<string>();
-        {
-        }
-        
-    }
-
-
-
-
-
 
     public void OnLostFocus(object? sender, RoutedEventArgs e)
     {

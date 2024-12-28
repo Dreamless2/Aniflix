@@ -24,6 +24,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Remove="appsetings.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="appsetings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="AsyncImageLoader.Avalonia" Version="3.3.0" />
 		<PackageReference Include="Avalonia" Version="11.2.2" />
 		<PackageReference Include="Avalonia.Desktop" Version="11.2.2" />
@@ -40,6 +50,7 @@
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.JSON" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Projektanker.Icons.Avalonia" Version="9.5.0" />
 		<PackageReference Include="Projektanker.Icons.Avalonia.FontAwesome" Version="9.5.0" />
