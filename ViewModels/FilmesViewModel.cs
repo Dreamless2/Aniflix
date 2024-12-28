@@ -16,6 +16,7 @@ namespace Aniflix.ViewModels
         private string? txDiretor;
         private string? txElenco;
         private string? txEstudio;
+        private string? cbAudio;
 
         public FilmesViewModel()
         {
@@ -29,6 +30,16 @@ namespace Aniflix.ViewModels
             {
                 txTitulo = value;
                 OnPropertyChanged(nameof(TxTitulo));
+                UpdateFormattedText();
+            }
+        }
+        public string CbAudio
+        {
+            get => cbAudio!;
+            set
+            {
+                cbAudio = value;
+                OnPropertyChanged(nameof(CbAudio));
                 UpdateFormattedText();
             }
         }
@@ -148,7 +159,7 @@ namespace Aniflix.ViewModels
         {
             // Format the text dynamically based on the entered values
             FormattedText = $@"
-                **{TxTitulo}** - **{TxSinopse}**
+                **{TxTitulo}** - **{CbAudio}**
                 
                 **HD** - __720p__
                 **SD** - __480p__
