@@ -46,7 +46,10 @@ public partial class Filmes : Window
 
     public void OnLostFocus(object? sender, RoutedEventArgs e)
     {
-        var client = new TMDbClient("1dcbf681735d3e7454953f5b7c22b6dc")
+        var appSettings = _configuration!.GetSection("AppSettings");
+
+        //var client = new TMDbClient("1dcbf681735d3e7454953f5b7c22b6dc")
+        var client = new TMDbClient(appSettings["TMDBKey"])
         {
             DefaultLanguage = "pt-BR",
             DefaultCountry = "BR",
