@@ -1,7 +1,5 @@
 ﻿{
-  "AppSettings": {
-    "AppName": "Aniflix",
-    "TMDBKey": "1dcbf681735d3e7454953f5b7c22b6dc",
-    "Version": "1.0.0"
-  }
+    "AppSettings": {
+        "TMDBKey": "1dcbf681735d3e7454953f5b7c22b6dc"
+    }
 }

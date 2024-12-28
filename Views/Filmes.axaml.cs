@@ -115,3 +115,9 @@ public partial class Filmes : Window
     [GeneratedRegex("[^0-9]")]
     private static partial Regex isOnlyNumbers();
 }
+
+public class AppSettings
+{
+    public string? TMDBKey { get; set; }
+
+}
