@@ -36,7 +36,7 @@ public partial class Filmes : Window
         var client = new TMDbClient("1dcbf681735d3e7454953f5b7c22b6dc")
         {
             DefaultLanguage = "pt-BR",
-            DefaultCountry = "BR"
+            DefaultCountry = "BR",
         };
 
         var movie = client.GetMovieAsync(txID.Text).Result;
@@ -46,43 +46,37 @@ public partial class Filmes : Window
         txDataLancamento.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy");
         txFranquia.Text = FormatString(txTitulo.Text);
 
-        if (DateTime.TryParseExact(txDataLancamento.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out dataLancamento))
+        if (
+            DateTime.TryParseExact(
+                txDataLancamento.Text,
+                "dd/MM/yyyy",
+                CultureInfo.InvariantCulture,
+                DateTimeStyles.None,
+                out dataLancamento
+            )
+        )
         {
             string ano = dataLancamento.Year.ToString();
             txTags.Text = "#Filme #Filme" + ano;
         }
 
         string g0 = movie.Genres[0].Name;
-        string g1 = movie.Genres[0].Name;
-        string g2 = movie.Genres[0].Name;
+        string g1 = movie.Genres[1].Name;
+        string g2 = movie.Genres[2].Name;
 
-        string p0 = new(g0
-            .RemoveDiacritics()
-            .Where(char.IsAscii)
-            .ToArray()
-         );
-        string p1 = new(g1
-            .RemoveDiacritics()
-            .Where(char.IsAscii)
-            .ToArray()
-         );
-        string p2 = new(g2
-            .RemoveDiacritics()
-            .Where(char.IsAscii)
-            .ToArray()
-        );
+        string p0 = new(g0.RemoveDiacritics().Where(char.IsAscii).ToArray());
+        string p1 = new(g1.RemoveDiacritics().Where(char.IsAscii).ToArray());
+        string p2 = new(g2.RemoveDiacritics().Where(char.IsAscii).ToArray());
 
         var credits = client.GetMovieCreditsAsync(Convert.ToInt32(txID.Text)).Result;
         txGenero.Text = "#" + p0.ToLower() + " " + "#" + p1.ToLower() + " " + "#" + p2.ToLower();
         var directors = credits.Crew
-           .Where(person => person.Job == "Director")
-           .Take(4)
-           .Select(person => person.Name);
+            .Where(person => person.Job == "Director")
+            .Take(4)
+            .Select(person => $"#{person.Name.Replace(" ", "")}")
+            .ToList();
 
-        foreach (var director in directors)
-        {
-            txDiretor.Text += "#" + director.ToLower() + " ";
-        }
+        txDiretor.Text = string.Join(" ", directors);
     }
 
     [GeneratedRegex("[^0-9]")]

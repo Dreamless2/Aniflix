@@ -13,10 +13,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AvaloniaXaml Remove="Readers\**" />
-	  <Compile Remove="Readers\**" />
-	  <EmbeddedResource Remove="Readers\**" />
-	  <None Remove="Readers\**" />
+		<AvaloniaXaml Remove="Models\**" />
+		<AvaloniaXaml Remove="Readers\**" />
+		<Compile Remove="Models\**" />
+		<Compile Remove="Readers\**" />
+		<EmbeddedResource Remove="Models\**" />
+		<EmbeddedResource Remove="Readers\**" />
+		<None Remove="Models\**" />
+		<None Remove="Readers\**" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -41,9 +45,5 @@
 		<PackageReference Include="Projektanker.Icons.Avalonia.FontAwesome" Version="9.5.0" />
 		<PackageReference Include="Projektanker.Icons.Avalonia.MaterialDesign" Version="9.5.0" />
 		<PackageReference Include="TMDbLib" Version="2.2.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Models\" />
 	</ItemGroup>
 </Project>
