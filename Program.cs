@@ -41,7 +41,6 @@ namespace Aniflix
                     options.UseNpgsql(connectionStriong)
                     );
         }
-
         public static AppBuilder BuildAvaloniaApp()
         {
             IconProvider
@@ -51,6 +50,7 @@ namespace Aniflix
             return AppBuilder.Configure<App>()
                 .UsePlatformDetect()
                 .UseHotReload();
+
         }
     }
 }

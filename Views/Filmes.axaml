@@ -71,7 +71,7 @@
             </Panel>
         </Button>
 
-        <Button Name="btSalvar" Command="{Binding SaveCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="275,630,0,0" Width="230" Height="90" Background="#E55C44" Foreground="White">
+        <Button Name="btSalvar" FontFamily="{StaticResource MulishFont}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="275,630,0,0" Width="230" Height="90" Background="#E55C44" Foreground="White">
             <Panel>
                 <i:Icon Value="mdi-content-save" FontSize="28" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-25,0,0"/>
                 <TextBlock Margin="1,0,0,0" FontFamily="{StaticResource MulishFont}" FontSize="16" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="Salvar Filme"/>
