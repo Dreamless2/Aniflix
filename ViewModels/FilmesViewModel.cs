@@ -156,23 +156,23 @@ namespace Aniflix.ViewModels
         {
             // Format the text dynamically based on the entered values
             FormattedText = $@"
-**{TxTitulo}** - **{CbAudio}**
-               
-**HD** - __720p__
-**SD** - __480p__
-__[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como na descrição das resoluções.]__
-**Sinopse:** __{TxSinopse}__
+                                                **{Trim(TxTitulo)}** - **{CbAudio}**
 
-**Título Original:** __{TxTituloOriginal}__
-**Data de lançamento:** __{TxDataLancamento}__
-**Filme:** {TxTitulo}
-**Franquia:** {TxFranquia}
-**Gênero:** {TxGenero}
-**Tags:** {TxTags}
-**Diretor:** {TxDiretor}
-**Estrelas:** {TxElenco}
-**Estúdio:** {TxEstudio}
-";
+                                                **HD** - __720p__
+                                                **SD** - __480p__
+                                                __[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como na descrição das resoluções.]__
+                                                **Sinopse:** __{TxSinopse}__
+
+                                                **Título Original:** __{TxTituloOriginal}__
+                                                **Data de lançamento:** __{TxDataLancamento}__
+                                                **Filme:** {TxTitulo}
+                                                **Franquia:** {TxFranquia}
+                                                **Gênero:** {TxGenero}
+                                                **Tags:** {TxTags}
+                                                **Diretor:** {TxDiretor}
+                                                **Estrelas:** {TxElenco}
+                                                **Estúdio:** {TxEstudio}
+                                                ";
         }
         protected virtual void OnPropertyChanged(string propertyName)
         {
