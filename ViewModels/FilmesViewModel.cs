@@ -26,7 +26,7 @@ namespace Aniflix.ViewModels
         public FilmesViewModel()
         {
             PropertyChanged = null;
-            _dbContext = new AniflixDbContext();
+            _dbContext = new AniflixDbContext(options: new DbContextOptions<AniflixDbContext>());
         }
 
         public string TxCodigo
