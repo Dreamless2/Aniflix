@@ -8,7 +8,7 @@ namespace Aniflix.ViewModels
     public class FilmesViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
-        private readonly AppDbContext _dbContext;
+        private readonly AniflixDbContext _dbContext;
 
         private string? txTitulo;
         private string? txSinopse;
