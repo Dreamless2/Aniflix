@@ -26,7 +26,7 @@ namespace Aniflix
             var services = new ServiceCollection();
             ConfigureServices(services);
 
-            var serviceProvider = services.BuildServiceProvider();
+            _ = services.BuildServiceProvider();
 
             BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
         }

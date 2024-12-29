@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using Aniflix.Data;
 using Aniflix.Models;
+using Microsoft.EntityFrameworkCore;
 using Npgsql;
 
 namespace Aniflix.ViewModels
@@ -10,6 +11,7 @@ namespace Aniflix.ViewModels
         public event PropertyChangedEventHandler? PropertyChanged;
         private readonly AniflixDbContext _dbContext;
 
+        private string? txCodigo;
         private string? txTitulo;
         private string? txSinopse;
         private string? txTituloOriginal;
@@ -25,6 +27,17 @@ namespace Aniflix.ViewModels
         {
             PropertyChanged = null;
             _dbContext = context;
+        }
+
+        public string TxCodigo
+        {
+            get => txCodigo!;
+            set
+            {
+                txCodigo = value;
+                OnPropertyChanged(nameof(TxCodigo));
+                UpdateFormattedText();
+            }
         }
 
         public string TxTitulo
@@ -78,7 +91,6 @@ namespace Aniflix.ViewModels
                 UpdateFormattedText();
             }
         }
-
         public string TxFranquia
         {
             get => txFranquia!;
@@ -100,7 +112,6 @@ namespace Aniflix.ViewModels
                 UpdateFormattedText();
             }
         }
-
         public string TxTags
         {
             get => txTags!;
@@ -111,7 +122,6 @@ namespace Aniflix.ViewModels
                 UpdateFormattedText();
             }
         }
-
         public string TxDiretor
         {
             get => txDiretor!;
@@ -133,7 +143,6 @@ namespace Aniflix.ViewModels
                 UpdateFormattedText();
             }
         }
-
         public string TxEstudio
         {
             get => txEstudio!;
@@ -145,7 +154,6 @@ namespace Aniflix.ViewModels
             }
         }
 
-        // Property for the formatted text shown in the large TextBox
         private string? formattedText;
         public string FormattedText
         {
@@ -159,7 +167,6 @@ namespace Aniflix.ViewModels
 
         private void UpdateFormattedText()
         {
-            // Format the text dynamically based on the entered values
             FormattedText = $@"
 **{TxTitulo}** - **{CbAudio}**
                
@@ -186,7 +193,21 @@ __[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como n
         }
         public void Save()
         {
-            var filme = new Filme();
+            var filme = new Filme
+            {
+                Codigo = TxID,
+                Titulo = TxTitulo,
+                Sinopse = TxSinopse,
+                TituloOriginal = TxTituloOriginal,
+                DataLancamento = TxDataLancamento,
+                Franquia = TxFranquia,
+                Genero = TxGenero,
+                Tags = TxTags,
+                Diretor = TxDiretor,
+                Estrelas = TxEstrelas,
+                Estudio = TxEstudio
+            };
+
             var codigo = new NpgsqlParameter("p_codigo", filme.Codigo);
             var titulo = new NpgsqlParameter("p_titulo", filme.Titulo);
             var sinopse = new NpgsqlParameter("p_sinopse", filme.Sinopse);
