@@ -14,7 +14,7 @@ namespace Aniflix.ViewModels
         private string? txGenero;
         private string? txTags;
         private string? txDiretor;
-        private string? txElenco;
+        private string? txEstrelas;
         private string? txEstudio;
         private string? cbAudio;
         public FilmesViewModel()
@@ -118,13 +118,13 @@ namespace Aniflix.ViewModels
             }
         }
 
-        public string TxElenco
+        public string TxEstrelas
         {
-            get => txElenco!;
+            get => txEstrelas!;
             set
             {
-                txElenco = value;
-                OnPropertyChanged(nameof(TxElenco));
+                txEstrelas = value;
+                OnPropertyChanged(nameof(TxEstrelas));
                 UpdateFormattedText();
             }
         }
@@ -171,7 +171,7 @@ __[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como n
 **Gênero:** {TxGenero}
 **Tags:** {TxTags}
 **Diretor:** {TxDiretor}
-**Estrelas:** {TxElenco}
+**Estrelas:** {TxEstrelas}
 **Estúdio:** {TxEstudio}
 ";
         }

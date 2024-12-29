@@ -55,8 +55,8 @@
         <TextBlock Text="Diretor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,430,0,0"/>
         <TextBox Width="695" Watermark="Diretor" Text="{Binding TxDiretor}" Name="txDiretor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,455,0,0"/>
 
-        <TextBlock	Text="Elenco" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,490,0,0"/>
-        <TextBox Width="695" Watermark="Elenco" Text="{Binding TxElenco}" Name="txElenco" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,515,0,0"/>
+        <TextBlock	Text="Estrelas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,490,0,0"/>
+        <TextBox Width="695" Watermark="Estrelas" Text="{Binding TxEstrelas}" Name="txEstrelas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,515,0,0"/>
 
         <TextBlock Text="Estúdio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,550,0,0"/>
         <TextBox Width="695" Watermark="Estúdio" Text="{Binding TxEstudio}" Name="txEstudio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,575,0,0"/>
