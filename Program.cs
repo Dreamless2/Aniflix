@@ -31,7 +31,7 @@ namespace Aniflix
             BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
         }
 
-        private static void ConfigureServices(IServiceCollection services)
+        public static void ConfigureServices(IServiceCollection services)
         {
             var connectionStriong = Configuration?.GetConnectionString("DefaultConnection");
             services.AddDbContext<AniflixDbContext>(options =>
