@@ -166,7 +166,7 @@ __[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como n
 
 **Título Original:** __{TxTituloOriginal}__
 **Data de lançamento:** __{TxDataLancamento}__
-**Filme:** {TxTitulo}
+**Filme:** #{TxTitulo.Replace(" ", string.Empty)}
 **Franquia:** {TxFranquia}
 **Gênero:** {TxGenero}
 **Tags:** {TxTags}
