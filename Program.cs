@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Aniflix.Models;
 using Avalonia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -39,7 +40,6 @@ namespace Aniflix
 
             return AppBuilder.Configure<App>()
                 .UsePlatformDetect()
-                .LogToTrace()
                 .AfterSetup(_ =>
                 {
                     var serviceProvider = CreateServiceProvider();
@@ -50,8 +50,6 @@ namespace Aniflix
         private static IServiceProvider CreateServiceProvider()
         {
             var serviceCollection = new ServiceCollection();
-
-            // Add DbContext with PostgreSQL provider
             serviceCollection.AddDbContext<AniflixDbContext>(options =>
                 options.UseNpgsql(GetConnectionString()));
 
