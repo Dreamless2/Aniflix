@@ -4,7 +4,6 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Aniflix.Data;
 using Aniflix.Extensions;
 using Avalonia.Controls;
 using Avalonia.Input;
@@ -42,20 +41,20 @@ public partial class Filmes : Window
 
     public void OnlyNumbers(object? sender, TextInputEventArgs e)
     {
-        if (isOnlyNumbers().IsMatch(txID.Text!))
+        if (isOnlyNumbers().IsMatch(txCodigo.Text!))
         {
-            txID.Text = "";
+            txCodigo.Text = "";
         }
     }
 
     public async void SearchMovies(object? sender, RoutedEventArgs e)
     {
-        if (String.IsNullOrEmpty(txID.Text))
+        if (String.IsNullOrEmpty(txCodigo.Text))
         {
             await MessageBoxManager
                 .GetMessageBoxStandard("Error", "Informe o id do filme.")
                 .ShowAsync();
-            txID.Focus();
+            txCodigo.Focus();
             return;
         }
 
@@ -67,7 +66,7 @@ public partial class Filmes : Window
             DefaultCountry = "BR",
         };
 
-        var movie = client.GetMovieAsync(txID.Text).Result;
+        var movie = client.GetMovieAsync(txCodigo.Text).Result;
 
         if (movie != null)
         {
@@ -82,7 +81,7 @@ public partial class Filmes : Window
             await MessageBoxManager
                 .GetMessageBoxStandard("Error", "Nenhum filme encontrado.")
                 .ShowAsync();
-            txID.Focus();
+            txCodigo.Focus();
             return;
         }
 
@@ -138,7 +137,7 @@ public partial class Filmes : Window
             txGenero.Text = string.Join(" ", hashtags);
         }
 
-        var credits = client.GetMovieCreditsAsync(Convert.ToInt32(txID.Text)).Result;
+        var credits = client.GetMovieCreditsAsync(Convert.ToInt32(txCodigo.Text)).Result;
         var directors = credits
             .Crew.Where(person => person.Job == "Director")
             .Take(4)
@@ -176,25 +175,6 @@ public partial class Filmes : Window
         txData.SelectAll();
         txData.Copy();
     }
-
-    // utton click , entity framework postgresql stored procedure insert_filmes
-    public void SaveData(object? sender, RoutedEventArgs e)
-    {
-        var filme = new Filme();
-        filme.Codigo = txID.Text;
-        filme.Titulo = txTitulo.Text;
-        filme.Sinopse = txSinopse.Text;
-        filme.Audio = cbAudio.SelectedItem?.ToString();
-        filme.TituloOriginal = txTituloOriginal.Text;
-        filme.DataLancamento = txDataLancamento.Text;
-        filme.Franquia = txFranquia.Text;
-        filme.Genero = txGenero.Text;
-        filme.Tags = txTags.Text;
-        filme.Diretor = txDiretor.Text;
-        filme.Estrelas = txEstrelas.Text;
-        filme.Estudio = txEstudio.Text;
-    }
-
 
     [GeneratedRegex("[^0-9]")]
     private static partial Regex isOnlyNumbers();
