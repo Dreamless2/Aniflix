@@ -1,10 +1,14 @@
 ﻿using System.ComponentModel;
+using Aniflix.Data;
+using Aniflix.Models;
+using Npgsql;
 
 namespace Aniflix.ViewModels
 {
     public class FilmesViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
+        private readonly AppDbContext _dbContext;
 
         private string? txTitulo;
         private string? txSinopse;
@@ -17,9 +21,10 @@ namespace Aniflix.ViewModels
         private string? txEstrelas;
         private string? txEstudio;
         private string? cbAudio;
-        public FilmesViewModel()
+        public FilmesViewModel(AniflixDbContext context)
         {
             PropertyChanged = null;
+            _dbContext = context;
         }
 
         public string TxTitulo
@@ -178,6 +183,23 @@ __[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como n
         protected virtual void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public void SaveData()
+        {
+            var filme = new Filme();
+            var codigo = new NpgsqlParameter("p_codigo", filme.Codigo);
+            var titulo = new NpgsqlParameter("p_titulo", filme.Titulo);
+            var sinopse = new NpgsqlParameter("p_sinopse", filme.Sinopse);
+            var titulo_original = new NpgsqlParameter("p_titulo_original", filme.TituloOriginal);
+            var data_lancamento = new NpgsqlParameter("p_data_lancamento", filme.DataLancamento);
+            var franquia = new NpgsqlParameter("p_franquia", filme.Franquia);
+            var genero = new NpgsqlParameter("p_genero", filme.Genero);
+            var tags = new NpgsqlParameter("p_tags", filme.Tags);
+            var diretor = new NpgsqlParameter("p_diretor", filme.Diretor);
+            var estrelas = new NpgsqlParameter("p_estrelas", filme.Estrelas);
+            var estudio = new NpgsqlParameter("p_estudio", filme.Estudio);
+            _dbContext.Database.ExecuteSqlRaw("CALL insert_filmes(@p_codigo, @p_titulo, @p_sinopse, @p_titulo_original, @p_data_lancamento, @p_franquia, @p_genero, @p_tags, @p_diretor, @p_estrelas, @p_estudio)", codigo, titulo, sinopse, titulo_original, data_lancamento, franquia, genero, tags, diretor, estrelas, estudio);
         }
     }
 }

@@ -11,12 +11,11 @@ namespace Aniflix
 {
     public partial class App : Application
     {
-
         public App()
         {
             var services = new ServiceCollection();
             Program.ConfigureServices(services);
-            serviceProvider = services.BuildServiceProvider();
+            _ = services.BuildServiceProvider();
         }
 
         public override void Initialize()
