@@ -184,8 +184,7 @@ __[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como n
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-        public void SaveData()
+        public void Save()
         {
             var filme = new Filme();
             var codigo = new NpgsqlParameter("p_codigo", filme.Codigo);
