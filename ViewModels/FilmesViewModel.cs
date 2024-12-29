@@ -161,6 +161,7 @@ namespace Aniflix.ViewModels
 **HD** - __720p__
 **SD** - __480p__
 __[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como na descrição das resoluções.]__
+
 **Sinopse:** __{TxSinopse}__
 
 **Título Original:** __{TxTituloOriginal}__
