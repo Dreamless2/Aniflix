@@ -151,7 +151,7 @@ public partial class Filmes : Window
             .Select(person => $"#{person.Name.Replace(" ", "")}")
             .ToList();
 
-        txElenco.Text = string.Join(" ", stars);
+        txEstrelas.Text = string.Join(" ", stars);
 
         var studios = movie
             .ProductionCompanies.Take(5)
