@@ -23,10 +23,10 @@ namespace Aniflix.ViewModels
         private string? txEstrelas;
         private string? txEstudio;
         private string? cbAudio;
-        public FilmesViewModel(AniflixDbContext context)
+        public FilmesViewModel()
         {
             PropertyChanged = null;
-            _dbContext = context;
+            _dbContext = new AniflixDbContext();
         }
 
         public string TxCodigo

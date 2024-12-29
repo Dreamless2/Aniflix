@@ -3,7 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:i="https://github.com/projektanker/icons.avalonia"
-        xmlns:vm="using:Aniflix.ViewModels"
+        xmlns:vm="clr-namespace:Aniflix.ViewModels"
         mc:Ignorable="d"
         x:Class="Aniflix.Filmes"
         x:DataType="vm:FilmesViewModel"

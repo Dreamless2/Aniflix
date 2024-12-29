@@ -3,6 +3,7 @@ using System.IO;
 using Aniflix.Models;
 using Aniflix.ViewModels;
 using Avalonia;
+using Avalonia.Markup.Declarative;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,8 +21,8 @@ namespace Aniflix
         public static void Main(string[] args)
         {
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
             Configuration = builder.Build();
 
             var services = new ServiceCollection();
@@ -37,17 +38,19 @@ namespace Aniflix
         {
             var connectionStriong = Configuration?.GetConnectionString("DefaultConnection");
             services.AddDbContext<AniflixDbContext>(options =>
-                options.UseNpgsql(connectionStriong)
-            );
+                    options.UseNpgsql(connectionStriong)
+                    );
         }
 
         public static AppBuilder BuildAvaloniaApp()
         {
             IconProvider
-                .Current.Register<FontAwesomeIconProvider>()
+            .Current.Register<FontAwesomeIconProvider>()
                 .Register<MaterialDesignIconProvider>();
 
-            return AppBuilder.Configure<App>().UsePlatformDetect();
+            return AppBuilder.Configure<App>()
+                .UsePlatformDetect()
+                .UseHotReload();
         }
     }
 }
