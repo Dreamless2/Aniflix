@@ -45,7 +45,6 @@ namespace Aniflix
                     var serviceProvider = CreateServiceProvider();
                     var dbContext = serviceProvider.GetService<AniflixDbContext>();
                 });
-
         }
 
         private static IServiceProvider CreateServiceProvider()
@@ -53,7 +52,7 @@ namespace Aniflix
             var serviceCollection = new ServiceCollection();
 
             // Add DbContext with PostgreSQL provider
-            serviceCollection.AddDbContext<MyDbContext>(options =>
+            serviceCollection.AddDbContext<AniflixDbContext>(options =>
                 options.UseNpgsql(GetConnectionString()));
 
             return serviceCollection.BuildServiceProvider();
