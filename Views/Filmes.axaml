@@ -26,9 +26,11 @@
 
         <TextBlock Text="Áudio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="590,5,0,0"/>
         <ComboBox Width="115" SelectedItem="{Binding CbAudio}" Name="cbAudio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="590,30,0,0">
-            <ComboBoxItem>Dublado</ComboBoxItem>
-            <ComboBoxItem>Legendado</ComboBoxItem>
-            <ComboBoxItem>Nacional</ComboBoxItem>
+            <ComboBox.Items>
+                <x:String>Dublado</x:String>
+                <x:String>Legendado</x:String>
+                <x:String>Nacional</x:String>
+            </ComboBox.Items>
         </ComboBox>
 
         <TextBlock Text="Sinopse" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,65,0,0"/>
