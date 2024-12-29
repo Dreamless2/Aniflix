@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Aniflix.Data;
 using Aniflix.Extensions;
 using Avalonia.Controls;
 using Avalonia.Input;
@@ -177,10 +178,22 @@ public partial class Filmes : Window
     }
 
     // utton click , entity framework postgresql stored procedure insert_filmes
-
-
-
-
+    public void SaveData(object? sender, RoutedEventArgs e)
+    {
+        var filme = new Filme();
+        filme.Codigo = txID.Text;
+        filme.Titulo = txTitulo.Text;
+        filme.Sinopse = txSinopse.Text;
+        filme.Audio = cbAudio.SelectedItem;
+        filme.TituloOriginal = txTituloOriginal.Text;
+        filme.DataLancamento = txDataLancamento.Text;
+        filme.Franquia = txFranquia.Text;
+        filme.Genero = txGenero.Text;
+        filme.Tags = txTags.Text;
+        filme.Diretor = txDiretor.Text;
+        filme.Estrelas = txEstrelas.Text;
+        filme.Estudio = txEstudio.Text;
+    }
 
 
     [GeneratedRegex("[^0-9]")]

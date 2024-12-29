@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Aniflix.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Aniflix.Models
 {
@@ -6,6 +7,4 @@ namespace Aniflix.Models
     {
         public DbSet<Filme> Filmes { get; set; }
     }
-
-
 }
