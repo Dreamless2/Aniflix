@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using Aniflix.Extensions;
 using Avalonia.Controls;
+using Avalonia.Input;
 using Avalonia.Interactivity;
 using Microsoft.Extensions.Configuration;
 using TMDbLib.Client;
@@ -36,7 +37,7 @@ public partial class Filmes : Window
         return "#" + input.Replace(" ", string.Empty);
     }
 
-    public void OnlyNumbers(object? sender, TextChangedEventArgs e)
+    public void OnlyNumbers(object? sender, TextInputEventArgs e)
     {
         if (isOnlyNumbers().IsMatch(txID.Text!))
         {
