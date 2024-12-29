@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Aniflix.Models;
+using Aniflix.ViewModels;
 using Avalonia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -24,7 +25,8 @@ namespace Aniflix
             Configuration = builder.Build();
 
             var services = new ServiceCollection();
-            ConfigureServices(services);
+            services.AddSingleton<AniflixDbContext>();
+            services.AddTransient<FilmesViewModel>();
 
             _ = services.BuildServiceProvider();
 

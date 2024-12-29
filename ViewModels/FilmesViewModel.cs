@@ -195,7 +195,7 @@ __[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como n
         {
             var filme = new Filme
             {
-                Codigo = TxID,
+                Codigo = TxCodigo,
                 Titulo = TxTitulo,
                 Sinopse = TxSinopse,
                 TituloOriginal = TxTituloOriginal,
