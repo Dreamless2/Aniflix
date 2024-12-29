@@ -11,7 +11,6 @@ using Microsoft.Extensions.Configuration;
 using TMDbLib.Client;
 
 namespace Aniflix;
-
 public partial class Filmes : Window
 {
     DateTime dataLancamento;
@@ -45,7 +44,7 @@ public partial class Filmes : Window
         }
     }
 
-    public void OnLostFocus(object? sender, RoutedEventArgs e)
+    public void SearchMovies(object? sender, RoutedEventArgs e)
     {
         var appSettings = _configuration!.GetSection("AppSettings");
 
@@ -87,34 +86,39 @@ public partial class Filmes : Window
         var credits = client.GetMovieCreditsAsync(Convert.ToInt32(txID.Text)).Result;
         txGenero.Text = "#" + p0.ToLower() + " " + "#" + p1.ToLower() + " " + "#" + p2.ToLower();
 
-        var directors = credits.Crew
-            .Where(person => person.Job == "Director")
+        var directors = credits
+            .Crew.Where(person => person.Job == "Director")
             .Take(4)
             .Select(person => $"#{person.Name.Replace(" ", "")}")
             .ToList();
 
         txDiretor.Text = string.Join(" ", directors);
 
-        var stars = credits.Cast
-          .Take(5)
-          .Select(person => $"#{person.Name.Replace(" ", "")}")
-          .ToList();
+        var stars = credits
+            .Cast.Take(5)
+            .Select(person => $"#{person.Name.Replace(" ", "")}")
+            .ToList();
 
         txElenco.Text = string.Join(" ", stars);
 
-        var studios = movie.ProductionCompanies
-               .Take(5)
-               .Select(company => $"#{company.Name.Replace(" ", "")}")
-               .ToList();
+        var studios = movie
+            .ProductionCompanies.Take(5)
+            .Select(company => $"#{company.Name.Replace(" ", "")}")
+            .ToList();
 
-
-        var cleanedList = studios.Select(str =>
-             str.Aggregate("", (result, c) => (char.IsLetterOrDigit(c) || c == '#') ? result + c : result)
-         ).ToList();
+        var cleanedList = studios
+            .Select(str =>
+                str.Aggregate(
+                    "",
+                    (result, c) => (char.IsLetterOrDigit(c) || c == '#') ? result + c : result
+                )
+            )
+            .ToList();
 
         txEstudio.Text = string.Join(" ", cleanedList);
     }
-    public void OnTextChanged(object? sender, TextChangedEventArgs e)
+
+    public void SearchMovies(object? sender, TextChangedEventArgs e)
     {
         var appSettings = _configuration!.GetSection("AppSettings");
 
@@ -156,30 +160,34 @@ public partial class Filmes : Window
         var credits = client.GetMovieCreditsAsync(Convert.ToInt32(txID.Text)).Result;
         txGenero.Text = "#" + p0.ToLower() + " " + "#" + p1.ToLower() + " " + "#" + p2.ToLower();
 
-        var directors = credits.Crew
-            .Where(person => person.Job == "Director")
+        var directors = credits
+            .Crew.Where(person => person.Job == "Director")
             .Take(4)
             .Select(person => $"#{person.Name.Replace(" ", "")}")
             .ToList();
 
         txDiretor.Text = string.Join(" ", directors);
 
-        var stars = credits.Cast
-          .Take(5)
-          .Select(person => $"#{person.Name.Replace(" ", "")}")
-          .ToList();
+        var stars = credits
+            .Cast.Take(5)
+            .Select(person => $"#{person.Name.Replace(" ", "")}")
+            .ToList();
 
         txElenco.Text = string.Join(" ", stars);
 
-        var studios = movie.ProductionCompanies
-               .Take(5)
-               .Select(company => $"#{company.Name.Replace(" ", "")}")
-               .ToList();
+        var studios = movie
+            .ProductionCompanies.Take(5)
+            .Select(company => $"#{company.Name.Replace(" ", "")}")
+            .ToList();
 
-
-        var cleanedList = studios.Select(str =>
-             str.Aggregate("", (result, c) => (char.IsLetterOrDigit(c) || c == '#') ? result + c : result)
-         ).ToList();
+        var cleanedList = studios
+            .Select(str =>
+                str.Aggregate(
+                    "",
+                    (result, c) => (char.IsLetterOrDigit(c) || c == '#') ? result + c : result
+                )
+            )
+            .ToList();
 
         txEstudio.Text = string.Join(" ", cleanedList);
     }
@@ -191,5 +199,4 @@ public partial class Filmes : Window
 public class AppSettings
 {
     public string? TMDBKey { get; set; }
-
 }
