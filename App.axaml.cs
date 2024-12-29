@@ -11,7 +11,6 @@ namespace Aniflix
 {
     public partial class App : Application
     {
-        private readonly ServiceProvider serviceProvider;
 
         public App()
         {
