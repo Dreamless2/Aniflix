@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -12,6 +13,7 @@ using MsBox.Avalonia;
 using TMDbLib.Client;
 
 namespace Aniflix;
+
 public partial class Filmes : Window
 {
     DateTime dataLancamento;
@@ -49,7 +51,9 @@ public partial class Filmes : Window
     {
         if (String.IsNullOrEmpty(txID.Text))
         {
-            await MessageBoxManager.GetMessageBoxStandard("Error", "Informe o id do filme.").ShowAsync();
+            await MessageBoxManager
+                .GetMessageBoxStandard("Error", "Informe o id do filme.")
+                .ShowAsync();
             txID.Focus();
             return;
         }
@@ -74,7 +78,9 @@ public partial class Filmes : Window
         }
         else
         {
-            await MessageBoxManager.GetMessageBoxStandard("Error", "Nenhum filme encontrado.").ShowAsync();
+            await MessageBoxManager
+                .GetMessageBoxStandard("Error", "Nenhum filme encontrado.")
+                .ShowAsync();
             txID.Focus();
             return;
         }
@@ -95,13 +101,40 @@ public partial class Filmes : Window
 
         if (movie.Genres.Count > 2)
         {
-            string g0 = movie.Genres[0].Name;
-            string g1 = movie.Genres[1].Name;
-            string g2 = movie.Genres[2].Name;
-            string p0 = new(g0.RemoveDiacritics().Where(char.IsAscii).ToArray());
-            string p1 = new(g1.RemoveDiacritics().Where(char.IsAscii).ToArray());
-            string p2 = new(g2.RemoveDiacritics().Where(char.IsAscii).ToArray());
-            txGenero.Text = "#" + p0.ToLower() + " " + "#" + p1.ToLower() + " " + "#" + p2.ToLower();
+            HashSet<string> hashtags = [];
+
+            static void FormatGenre(string genre, HashSet<string> hashtags)
+            {
+                Dictionary<string, string> specialWords = new()
+                {
+                    { "ficção científica", "ficçãocientífica ficcaocientifica" },
+                    { "romântico", "romântico romantico" },
+                    { "romântica", "romântica romantica" },
+                    { "comédia", "comédia comedia" },
+                    { "mistério", "mistério misterio" },
+                };
+
+                string lowerGenre = genre.ToLower();
+
+                if (specialWords.TryGetValue(lowerGenre, out string? value))
+                {
+                    foreach (var tag in value.Split(' '))
+                    {
+                        hashtags.Add($"#{tag}");
+                    }
+                }
+                else
+                {
+                    string clean = new(genre.RemoveDiacritics().Where(char.IsAscii).ToArray());
+                    hashtags.Add($"#{genre.ToLower().Replace(" ", "")}");
+                    hashtags.Add($"#{clean.ToLower().Replace(" ", "")}");
+                }
+            }
+
+            FormatGenre(movie.Genres[0].Name, hashtags);
+            FormatGenre(movie.Genres[1].Name, hashtags);
+            FormatGenre(movie.Genres[2].Name, hashtags);
+            txGenero.Text = string.Join(" ", hashtags);
         }
 
         var credits = client.GetMovieCreditsAsync(Convert.ToInt32(txID.Text)).Result;
