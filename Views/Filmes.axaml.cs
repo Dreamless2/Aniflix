@@ -8,6 +8,7 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Microsoft.Extensions.Configuration;
+using MsBox.Avalonia;
 using TMDbLib.Client;
 
 namespace Aniflix;
@@ -44,9 +45,15 @@ public partial class Filmes : Window
         }
     }
 
-
-    public void SearchMovies(object? sender, RoutedEventArgs e)
+    public async void SearchMovies(object? sender, RoutedEventArgs e)
     {
+        if (String.IsNullOrEmpty(txID.Text))
+        {
+            await MessageBoxManager.GetMessageBoxStandard("Error", "Informe o id do filme.").ShowAsync();
+            txID.Focus();
+            return;
+        }
+
         var appSettings = _configuration!.GetSection("AppSettings");
 
         var client = new TMDbClient(appSettings["TMDBKey"])
@@ -57,11 +64,20 @@ public partial class Filmes : Window
 
         var movie = client.GetMovieAsync(txID.Text).Result;
 
-        txTitulo.Text = movie.Title;
-        txSinopse.Text = movie.Overview;
-        txTituloOriginal.Text = movie.OriginalTitle;
-        txDataLancamento.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy");
-        txFranquia.Text = FormatString(txTitulo.Text);
+        if (movie != null)
+        {
+            txTitulo.Text = movie.Title;
+            txSinopse.Text = movie.Overview;
+            txTituloOriginal.Text = movie.OriginalTitle;
+            txDataLancamento.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy");
+            txFranquia.Text = FormatString(txTitulo.Text);
+        }
+        else
+        {
+            await MessageBoxManager.GetMessageBoxStandard("Error", "Nenhum filme encontrado.").ShowAsync();
+            txID.Focus();
+            return;
+        }
 
         if (
             DateTime.TryParseExact(
