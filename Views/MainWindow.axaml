@@ -42,7 +42,7 @@
 			</Grid>
 		</Button>
 
-		<Button Grid.Row="1" Grid.Column="0" Width="200" Height="120" Background="#D34826" Margin="5,0,0,10">
+		<Button Grid.Row="1" Grid.Column="0" Width="200" Height="120" Background="#D34826" Margin="5,0,0,10" Click="ExitApp">
 			<Grid>
 				<i:Icon Value="mdi-exit-to-app" FontSize="56" Foreground="White" />
 				<TextBlock Margin="1,0,0,0" FontFamily="{StaticResource InconsolataFont}" FontSize="16" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom">Sair</TextBlock>

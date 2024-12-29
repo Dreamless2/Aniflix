@@ -1,4 +1,6 @@
+using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Interactivity;
 
 namespace Aniflix.Views
@@ -10,12 +12,22 @@ namespace Aniflix.Views
             InitializeComponent();
         }
 
-        // function OpenMovies
         public static void OpenMovies(object sender, RoutedEventArgs e)
         {
             var window = new Filmes();
             window.Show();
         }
+
+        public static void ExitApp(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current?.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktopApp)
+            {
+                desktopApp.Shutdown();
+            }
+            else if (Application.Current?.ApplicationLifetime is ISingleViewApplicationLifetime viewApp)
+            {
+                viewApp.MainView = null;
+            }
+        }
     }
 }
-
