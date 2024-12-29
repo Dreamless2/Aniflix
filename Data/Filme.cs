@@ -14,6 +14,5 @@
         public string? Diretor { get; set; }
         public string? Estrelas { get; set; }
         public string? Estudio { get; set; }
-
     }
 }
