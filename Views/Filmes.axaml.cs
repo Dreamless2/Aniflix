@@ -184,7 +184,7 @@ public partial class Filmes : Window
         filme.Codigo = txID.Text;
         filme.Titulo = txTitulo.Text;
         filme.Sinopse = txSinopse.Text;
-        filme.Audio = cbAudio.SelectedItem.ToString();
+        filme.Audio = cbAudio.SelectedItem?.ToString();
         filme.TituloOriginal = txTituloOriginal.Text;
         filme.DataLancamento = txDataLancamento.Text;
         filme.Franquia = txFranquia.Text;
