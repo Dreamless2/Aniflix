@@ -170,6 +170,12 @@ public partial class Filmes : Window
         txEstudio.Text = string.Join(" ", cleanedList);
     }
 
+    public void CopyData(object? sender, RoutedEventArgs e)
+    {
+        txData.SelectAll();
+        txData.Copy();
+    }
+
     [GeneratedRegex("[^0-9]")]
     private static partial Regex isOnlyNumbers();
 }

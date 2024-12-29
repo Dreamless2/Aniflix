@@ -61,9 +61,9 @@
         <TextBox Width="695" Watermark="Estúdio" Text="{Binding TxEstudio}" Name="txEstudio" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,575,0,0"/>
 
         <TextBlock Text="Resumo" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="715,5,0,0"/>
-        <TextBox Width="770" Height="578" Watermark="Resumo" Text="{Binding FormattedText}" Name="txData" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Margin="715,30,0,0"/>
+        <TextBox Width="770" Height="578" Watermark="Resumo" Text="{Binding FormattedText}" Name="txData" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="715,30,0,0" IsReadOnly="True"/>
 
-        <Button VerticalAlignment="Top" Margin="35,630,0,0" Width="230" Height="90" Background="#006195" Foreground="White">
+        <Button Name="btCopiar" VerticalAlignment="Top" Margin="35,630,0,0" Width="230" Height="90" Background="#006195" Foreground="White" Click="CopyData">
             <Panel >
                 <i:Icon Value="mdi-content-copy" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-25,0,0"/>
                 <TextBlock Margin="1,0,0,0" FontFamily="{StaticResource MulishFont}" FontSize="16" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="Copiar Dados"/>
