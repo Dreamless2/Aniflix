@@ -176,6 +176,13 @@ public partial class Filmes : Window
         txData.Copy();
     }
 
+    // utton click , entity framework postgresql stored procedure insert_filmes
+
+
+
+
+
+
     [GeneratedRegex("[^0-9]")]
     private static partial Regex isOnlyNumbers();
 }
