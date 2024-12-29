@@ -17,7 +17,6 @@ namespace Aniflix.ViewModels
         private string? txElenco;
         private string? txEstudio;
         private string? cbAudio;
-
         public FilmesViewModel()
         {
             PropertyChanged = null;
@@ -54,7 +53,6 @@ namespace Aniflix.ViewModels
                 UpdateFormattedText();
             }
         }
-
         public string TxTituloOriginal
         {
             get => txTituloOriginal!;
@@ -65,7 +63,6 @@ namespace Aniflix.ViewModels
                 UpdateFormattedText();
             }
         }
-
         public string TxDataLancamento
         {
             get => txDataLancamento!;
