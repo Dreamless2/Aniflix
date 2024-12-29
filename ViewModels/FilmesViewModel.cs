@@ -2,7 +2,7 @@
 
 namespace Aniflix.ViewModels
 {
-    internal class FilmesViewModel : INotifyPropertyChanged
+    public class FilmesViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 

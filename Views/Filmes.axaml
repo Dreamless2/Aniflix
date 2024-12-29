@@ -3,13 +3,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:i="https://github.com/projektanker/icons.avalonia"
+        xmlns:vm="clr-namespace:Aniflix.ViewModels"
         mc:Ignorable="d"
         x:Class="Aniflix.Filmes"
+        x:DataType="vm:FilmesViewModel"
         Width="1500"
         Height="780"
         CanResize="False"
         WindowStartupLocation="CenterScreen"
         Title="Filmes">
+    <Window.DataContext>
+        <vm:FilmesViewModel />
+    </Window.DataContext>
 
     <Grid>
 
