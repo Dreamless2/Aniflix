@@ -11,6 +11,7 @@
         Height="780"
         CanResize="False"
         WindowStartupLocation="CenterScreen"
+        RequestedThemeVariant="Light"
         Title="Filmes">
     <Window.DataContext>
         <vm:FilmesViewModel />
