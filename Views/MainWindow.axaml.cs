@@ -14,8 +14,8 @@ namespace Aniflix.Views
 
         public static void OpenMovies(object sender, RoutedEventArgs e)
         {
-            var window = new Filmes();
-            window.Show();
+            var filmes = new Filmes();
+            filmes.Show();
         }
 
         public static void ExitApp(object sender, RoutedEventArgs e)
