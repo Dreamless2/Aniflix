@@ -1,7 +1,9 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Aniflix'
   ClientHeight = 359
   ClientWidth = 422
   Color = clBtnFace
