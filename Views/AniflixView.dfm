@@ -4,8 +4,8 @@ object Form1: TForm1
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Aniflix'
-  ClientHeight = 359
-  ClientWidth = 422
+  ClientHeight = 477
+  ClientWidth = 643
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
