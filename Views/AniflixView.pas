@@ -9,7 +9,6 @@ uses
 
 type
   TForm1 = class(TForm)
-    UButton1: TUButton;
     ImageList1: TImageList;
   private
     { Private declarations }

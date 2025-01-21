@@ -13,24 +13,6 @@ object Form1: TForm1
   Font.Name = 'Segoe UI'
   Font.Style = []
   TextHeight = 15
-  object UButton1: TUButton
-    Left = 264
-    Top = 184
-    Width = 121
-    Height = 169
-    CustomBorderColors.None = 15921906
-    CustomBorderColors.Hover = 15132390
-    CustomBorderColors.Press = 13421772
-    CustomBorderColors.Disabled = 15921906
-    CustomBorderColors.Focused = 15921906
-    CustomBackColors.None = 15921906
-    CustomBackColors.Hover = 15132390
-    CustomBackColors.Press = 13421772
-    CustomBackColors.Disabled = 15921906
-    CustomBackColors.Focused = 15921906
-    CustomTextColors.Disabled = clGray
-    Caption = 'UButton1'
-  end
   object ImageList1: TImageList
     Height = 48
     Width = 48
