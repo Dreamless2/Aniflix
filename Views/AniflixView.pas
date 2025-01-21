@@ -4,10 +4,13 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.ImageList, Vcl.ImgList,
+  UCL.TUButton;
 
 type
   TForm1 = class(TForm)
+    UButton1: TUButton;
+    ImageList1: TImageList;
   private
     { Private declarations }
   public
