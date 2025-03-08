@@ -31,7 +31,7 @@ namespace Aniflix.Services
             }
         }
 
-        public async Task<Movie?> GetMovieAsync(string movieId)
+        /*public async Task<Movie?> GetMovieAsync(string movieId)
             => await GetFromTmdbAsync<Movie>($"movie/{movieId}");
 
         public async Task<Credits?> GetMovieCreditsAsync(int movieId)
@@ -39,5 +39,6 @@ namespace Aniflix.Services
 
         public async Task<AlternativeTitles?> GetMovieAlternativeTitlesAsync(int movieId)
             => await GetFromTmdbAsync<AlternativeTitles>($"movie/{movieId}/alternative_titles");
+        */
     }
 }
