@@ -37,7 +37,7 @@
             MaximizeBox = false;
             Movable = false;
             Name = "AnimesView";
-            Text = "AnimesView";
+            Text = "Animes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             ResumeLayout(false);
         }
