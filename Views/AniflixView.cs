@@ -183,11 +183,6 @@ namespace Aniflix.Views
             OpenChildForm(new AnimesFilmesView(), sender);
         }
 
-        private void SairButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void GoreFilmesButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -214,7 +209,12 @@ namespace Aniflix.Views
 
         private void TrashflixButton_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
+            OpenChildForm(new TrashflixView(), sender);
+        }
+        private void SairButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
