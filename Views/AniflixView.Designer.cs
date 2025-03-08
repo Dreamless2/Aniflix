@@ -319,6 +319,7 @@
             LogoPicture.Location = new Point(0, 0);
             LogoPicture.Name = "LogoPicture";
             LogoPicture.Size = new Size(258, 90);
+            LogoPicture.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg";
             LogoPicture.TabIndex = 0;
             // 
             // TitleBarPanel
