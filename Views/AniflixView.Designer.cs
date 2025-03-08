@@ -40,18 +40,21 @@
             SeriesButton = new FontAwesome.Sharp.Material.MaterialButton();
             FilmesButton = new FontAwesome.Sharp.Material.MaterialButton();
             LogoPanel = new Sunny.UI.UIPanel();
+            LogoPicture = new SharpVectors.Renderers.Forms.SvgPictureBox();
             TitleBarPanel = new Sunny.UI.UITitlePanel();
             TitleChildFormLabel = new Sunny.UI.UILabel();
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
-            LogoPicture = new SharpVectors.Renderers.Forms.SvgPictureBox();
+            materialPictureBox1 = new FontAwesome.Sharp.Material.MaterialPictureBox();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)LogoPicture).BeginInit();
             TitleBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).BeginInit();
             uiPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)LogoPicture).BeginInit();
+            DesktopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // MenuPanel
@@ -313,6 +316,14 @@
             LogoPanel.Text = null;
             LogoPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
+            // LogoPicture
+            // 
+            LogoPicture.Dock = DockStyle.Fill;
+            LogoPicture.Location = new Point(0, 0);
+            LogoPicture.Name = "LogoPicture";
+            LogoPicture.Size = new Size(258, 90);
+            LogoPicture.TabIndex = 0;
+            // 
             // TitleBarPanel
             // 
             TitleBarPanel.BackColor = Color.FromArgb(26, 25, 62);
@@ -378,6 +389,7 @@
             // 
             // DesktopPanel
             // 
+            DesktopPanel.Controls.Add(materialPictureBox1);
             DesktopPanel.Dock = DockStyle.Fill;
             DesktopPanel.Font = new Font("Microsoft Sans Serif", 12F);
             DesktopPanel.Location = new Point(0, 0);
@@ -391,15 +403,18 @@
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // LogoPicture
+            // materialPictureBox1
             // 
-            LogoPicture.Dock = DockStyle.Fill;
-            LogoPicture.Location = new Point(0, 0);
-            LogoPicture.Name = "LogoPicture";
-            LogoPicture.Size = new Size(258, 90);
-            LogoPicture.Source = null;
-            LogoPicture.TabIndex = 0;
-            LogoPicture.XmlSource = null;
+            materialPictureBox1.BackColor = Color.FromArgb(238, 248, 248);
+            materialPictureBox1.ForeColor = Color.FromArgb(48, 48, 48);
+            materialPictureBox1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
+            materialPictureBox1.IconColor = Color.FromArgb(48, 48, 48);
+            materialPictureBox1.IconSize = 204;
+            materialPictureBox1.Location = new Point(528, 374);
+            materialPictureBox1.Name = "materialPictureBox1";
+            materialPictureBox1.Size = new Size(424, 204);
+            materialPictureBox1.TabIndex = 0;
+            materialPictureBox1.TabStop = false;
             // 
             // AniflixView
             // 
@@ -419,10 +434,12 @@
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             MenuPanel.ResumeLayout(false);
             LogoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)LogoPicture).EndInit();
             TitleBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).EndInit();
             uiPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)LogoPicture).EndInit();
+            DesktopPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -446,5 +463,6 @@
         private FontAwesome.Sharp.Material.MaterialButton AnimesButton;
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
         private SharpVectors.Renderers.Forms.SvgPictureBox LogoPicture;
+        private FontAwesome.Sharp.Material.MaterialPictureBox materialPictureBox1;
     }
 }
