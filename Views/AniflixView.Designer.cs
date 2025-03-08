@@ -121,6 +121,7 @@
             TrashflixButton.TextAlign = ContentAlignment.MiddleLeft;
             TrashflixButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             TrashflixButton.UseVisualStyleBackColor = true;
+            TrashflixButton.Click += TrashflixButton_Click;
             // 
             // BreakOutSeriesButton
             // 

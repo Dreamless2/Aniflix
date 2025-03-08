@@ -208,6 +208,12 @@ namespace Aniflix.Views
 
         private void BreakOutSeriesButton_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
+            OpenChildForm(new BreakOutSeriesView(), sender);
+        }
+
+        private void TrashflixButton_Click(object sender, EventArgs e)
+        {
 
         }
     }
