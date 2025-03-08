@@ -12,7 +12,7 @@ namespace Aniflix.Services
         private static readonly HttpClient _httpClient = new()
         {
             BaseAddress = new Uri("https://api.themoviedb.org/3/"),
-            DefaultRequestHeaders = { { "Authorization", "Bearer SEU_TOKEN_AQUI" } }
+            DefaultRequestHeaders = { { "Authorization", "Bearer"  }
         };
 
         public async Task<T?> GetFromTmdbAsync<T>(string endpoint)
