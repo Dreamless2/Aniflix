@@ -46,15 +46,12 @@
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
-            materialPictureBox1 = new FontAwesome.Sharp.Material.MaterialPictureBox();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoPicture).BeginInit();
             TitleBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).BeginInit();
             uiPanel1.SuspendLayout();
-            DesktopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // MenuPanel
@@ -389,7 +386,6 @@
             // 
             // DesktopPanel
             // 
-            DesktopPanel.Controls.Add(materialPictureBox1);
             DesktopPanel.Dock = DockStyle.Fill;
             DesktopPanel.Font = new Font("Microsoft Sans Serif", 12F);
             DesktopPanel.Location = new Point(0, 0);
@@ -402,19 +398,6 @@
             DesktopPanel.TabIndex = 0;
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // materialPictureBox1
-            // 
-            materialPictureBox1.BackColor = Color.FromArgb(238, 248, 248);
-            materialPictureBox1.ForeColor = Color.FromArgb(48, 48, 48);
-            materialPictureBox1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
-            materialPictureBox1.IconColor = Color.FromArgb(48, 48, 48);
-            materialPictureBox1.IconSize = 204;
-            materialPictureBox1.Location = new Point(528, 374);
-            materialPictureBox1.Name = "materialPictureBox1";
-            materialPictureBox1.Size = new Size(424, 204);
-            materialPictureBox1.TabIndex = 0;
-            materialPictureBox1.TabStop = false;
             // 
             // AniflixView
             // 
@@ -438,8 +421,6 @@
             TitleBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).EndInit();
             uiPanel1.ResumeLayout(false);
-            DesktopPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -463,6 +444,5 @@
         private FontAwesome.Sharp.Material.MaterialButton AnimesButton;
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
         private SharpVectors.Renderers.Forms.SvgPictureBox LogoPicture;
-        private FontAwesome.Sharp.Material.MaterialPictureBox materialPictureBox1;
     }
 }
