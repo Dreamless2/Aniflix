@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\BreakOutSeries.cs" />
+    <Compile Remove="Views\BreakOutSeries.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Presenters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp.Material" Version="6.6.0" />
+    <PackageReference Include="SunnyUI" Version="3.8.1" />
+    <PackageReference Include="TMDbLib" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
