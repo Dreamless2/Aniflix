@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Aniflix.Contracts
 {
-    class FilmesContracts
+    public class FilmesContracts
     {
     }
 }
