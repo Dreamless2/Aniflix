@@ -78,7 +78,6 @@ namespace Aniflix.Views
                 Color.FromArgb(0, 156, 82),     // #009C52 - Shamrock green
                 Color.FromArgb(105, 160, 108),  // #69A06C - Oxley
                 Color.FromArgb(217, 63, 64),    // #D93F40 - Jasper
-
             ];
 
             int bgIndex = random.Next(darkBackgrounds.Count);
