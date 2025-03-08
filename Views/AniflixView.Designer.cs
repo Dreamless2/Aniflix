@@ -220,6 +220,7 @@
             AnimesFilmesButton.TextAlign = ContentAlignment.MiddleLeft;
             AnimesFilmesButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             AnimesFilmesButton.UseVisualStyleBackColor = true;
+            AnimesFilmesButton.Click += AnimesFilmesButton_Click;
             // 
             // AnimesButton
             // 
