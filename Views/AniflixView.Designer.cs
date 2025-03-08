@@ -100,6 +100,7 @@
             SairButton.TextAlign = ContentAlignment.MiddleLeft;
             SairButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             SairButton.UseVisualStyleBackColor = true;
+            SairButton.Click += SairButton_Click;
             // 
             // TrashflixButton
             // 

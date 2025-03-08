@@ -182,5 +182,10 @@ namespace Aniflix.Views
             ActivateButton(sender);
             OpenChildForm(new AnimesFilmesView(), sender);
         }
+
+        private void SairButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
