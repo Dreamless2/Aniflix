@@ -161,6 +161,7 @@
             BreakOutFilmesButton.TextAlign = ContentAlignment.MiddleLeft;
             BreakOutFilmesButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             BreakOutFilmesButton.UseVisualStyleBackColor = true;
+            BreakOutFilmesButton.Click += BreakOutFilmesButton_Click;
             // 
             // GoreSeriesButton
             // 
