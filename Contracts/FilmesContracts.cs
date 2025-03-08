@@ -8,5 +8,6 @@ namespace Aniflix.Contracts
 {
     public class FilmesContracts
     {
+
     }
 }
