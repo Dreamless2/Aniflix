@@ -45,10 +45,13 @@
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
+            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             MenuPanel.SuspendLayout();
+            LogoPanel.SuspendLayout();
             TitleBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).BeginInit();
             uiPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // MenuPanel
@@ -293,6 +296,7 @@
             // 
             // LogoPanel
             // 
+            LogoPanel.Controls.Add(svgPictureBox1);
             LogoPanel.Dock = DockStyle.Top;
             LogoPanel.FillColor = Color.FromArgb(31, 30, 68);
             LogoPanel.FillColor2 = Color.FromArgb(31, 30, 68);
@@ -387,6 +391,15 @@
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
+            // svgPictureBox1
+            // 
+            svgPictureBox1.Location = new Point(27, 33);
+            svgPictureBox1.Name = "svgPictureBox1";
+            svgPictureBox1.Size = new Size(200, 200);
+            svgPictureBox1.Source = null;
+            svgPictureBox1.TabIndex = 0;
+            svgPictureBox1.XmlSource = null;
+            // 
             // AniflixView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -404,9 +417,11 @@
             TitleColor = Color.FromArgb(0, 150, 136);
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             MenuPanel.ResumeLayout(false);
+            LogoPanel.ResumeLayout(false);
             TitleBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).EndInit();
             uiPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -429,5 +444,6 @@
         private FontAwesome.Sharp.Material.MaterialButton AnimesFilmesButton;
         private FontAwesome.Sharp.Material.MaterialButton AnimesButton;
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
+        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
     }
 }
