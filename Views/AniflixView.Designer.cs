@@ -141,6 +141,7 @@
             BreakOutSeriesButton.TextAlign = ContentAlignment.MiddleLeft;
             BreakOutSeriesButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             BreakOutSeriesButton.UseVisualStyleBackColor = true;
+            BreakOutSeriesButton.Click += BreakOutSeriesButton_Click;
             // 
             // BreakOutFilmesButton
             // 
