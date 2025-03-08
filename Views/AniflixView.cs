@@ -187,5 +187,10 @@ namespace Aniflix.Views
         {
             Application.Exit();
         }
+
+        private void GoreFilmesButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

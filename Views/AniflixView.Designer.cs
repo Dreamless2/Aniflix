@@ -201,6 +201,7 @@
             GoreFilmesButton.TextAlign = ContentAlignment.MiddleLeft;
             GoreFilmesButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             GoreFilmesButton.UseVisualStyleBackColor = true;
+            GoreFilmesButton.Click += GoreFilmesButton_Click;
             // 
             // AnimesFilmesButton
             // 
