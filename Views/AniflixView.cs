@@ -53,8 +53,6 @@ namespace Aniflix.Views
                 Color.FromArgb(18, 17,12),     // #12110C - Obsidiana
                 Color.FromArgb(43, 15, 21),    // #2B0F15 - Zinnwaldita
                 Color.FromArgb(40,17, 13),     // #28110D - Ember
-
-
             ];
 
             // Paleta de cores de destaque
