@@ -46,12 +46,14 @@
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoPicture).BeginInit();
             TitleBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).BeginInit();
             uiPanel1.SuspendLayout();
+            DesktopPanel.SuspendLayout();
             SuspendLayout();
             // 
             // MenuPanel
@@ -319,8 +321,9 @@
             LogoPicture.Location = new Point(0, 0);
             LogoPicture.Name = "LogoPicture";
             LogoPicture.Size = new Size(258, 90);
-            LogoPicture.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg";
+            LogoPicture.Source = null;
             LogoPicture.TabIndex = 0;
+            LogoPicture.XmlSource = null;
             // 
             // TitleBarPanel
             // 
@@ -387,6 +390,7 @@
             // 
             // DesktopPanel
             // 
+            DesktopPanel.Controls.Add(iconButton1);
             DesktopPanel.Dock = DockStyle.Fill;
             DesktopPanel.Font = new Font("Microsoft Sans Serif", 12F);
             DesktopPanel.Location = new Point(0, 0);
@@ -399,6 +403,18 @@
             DesktopPanel.TabIndex = 0;
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // iconButton1
+            // 
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(294, 508);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(75, 23);
+            iconButton1.TabIndex = 0;
+            iconButton1.Text = "iconButton1";
+            iconButton1.UseVisualStyleBackColor = true;
             // 
             // AniflixView
             // 
@@ -422,6 +438,7 @@
             TitleBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).EndInit();
             uiPanel1.ResumeLayout(false);
+            DesktopPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -445,5 +462,6 @@
         private FontAwesome.Sharp.Material.MaterialButton AnimesButton;
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
         private SharpVectors.Renderers.Forms.SvgPictureBox LogoPicture;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
