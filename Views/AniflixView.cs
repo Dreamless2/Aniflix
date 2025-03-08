@@ -185,7 +185,7 @@ namespace Aniflix.Views
 
         private void SairButton_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
