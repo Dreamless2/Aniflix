@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Aniflix.Functions
 {
-    class GlolbalVars
+    public class GlolbalVars
     {
+        public static string TMDB_KEY = "";
+
     }
 }
