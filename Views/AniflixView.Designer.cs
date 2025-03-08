@@ -181,6 +181,7 @@
             GoreSeriesButton.TextAlign = ContentAlignment.MiddleLeft;
             GoreSeriesButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             GoreSeriesButton.UseVisualStyleBackColor = true;
+            GoreSeriesButton.Click += GoreSeriesButton_Click;
             // 
             // GoreFilmesButton
             // 

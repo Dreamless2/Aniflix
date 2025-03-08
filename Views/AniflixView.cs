@@ -190,6 +190,12 @@ namespace Aniflix.Views
 
         private void GoreFilmesButton_Click(object sender, EventArgs e)
         {
+            ActivateButton(sender);
+            OpenChildForm(new GoreFilmesView(), sender);
+        }
+
+        private void GoreSeriesButton_Click(object sender, EventArgs e)
+        {
 
         }
     }
