@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Text.Json;
 
 namespace Aniflix.Services
 {
@@ -40,5 +40,4 @@ namespace Aniflix.Services
         public async Task<AlternativeTitles?> GetMovieAlternativeTitlesAsync(int movieId)
             => await GetFromTmdbAsync<AlternativeTitles>($"movie/{movieId}/alternative_titles");
     }
-}
 }
