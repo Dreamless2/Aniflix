@@ -59,7 +59,7 @@ namespace Aniflix.Views
             List<Color> accentColors =
             [
                 Color.FromArgb(246, 114, 75),   // #F6724B - Laranja mandarin
-                //Color.FromArgb(225, 149, 71),   // #E19547 - Laranja jasper
+                Color.FromArgb(222, 128, 70),   // #DE8046 - Laranja tigre
                 Color.FromArgb(212, 163, 107),  // #D4A36B - Laranja tangerina crayon
                 Color.FromArgb(255, 152, 0),    // #FF9800 - Laranja vibrante
                 Color.FromArgb(202, 86, 86),    // #CA5656 - Vermelho indiano
