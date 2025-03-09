@@ -113,7 +113,7 @@ namespace Aniflix.Views
                     leftBorderBtn.Visible = true;
                     leftBorderBtn.BringToFront();
                     ThemeColor.PrimaryColor = backgroundColor;
-                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(backgroundColor, -0.3);
+                    ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(backgroundColor, -0.55);
                     CurrentChildFormBox.IconChar = currentBtn.IconChar;
                     CurrentChildFormBox.IconColor = accentColor;
                     CurrentChildFormBox.ForeColor = accentColor;
@@ -131,7 +131,6 @@ namespace Aniflix.Views
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
-                currentBtn.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             }
         }
         private void Reset()
