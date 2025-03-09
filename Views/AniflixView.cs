@@ -1,6 +1,7 @@
 ﻿using Sunny.UI;
 using Aniflix.Functions;
 using FontAwesome.Sharp.Material;
+using System.Net;
 
 namespace Aniflix.Views
 {
@@ -170,9 +171,12 @@ namespace Aniflix.Views
         private void SVGDownloader()
         {
             // download file https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg
-            var client = new WebClient();
-            client.DownloadFile("https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg", "logo.svg");
-        }
+
+            string url = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg";  
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
 
 
 
