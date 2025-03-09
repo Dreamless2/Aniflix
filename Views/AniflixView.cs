@@ -125,7 +125,7 @@ namespace Aniflix.Views
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(51, 51, 76);
+                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.IconColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
