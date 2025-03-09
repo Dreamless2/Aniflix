@@ -320,7 +320,9 @@
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
             WebCanvas.SizeMode = PictureBoxSizeMode.CenterImage;
+            WebCanvas.Source = null;
             WebCanvas.TabIndex = 0;
+            WebCanvas.XmlSource = null;
             WebCanvas.Click += WebCanvas_Click;
             // 
             // TitleBarPanel
@@ -414,8 +416,8 @@
             Name = "AniflixView";
             RectColor = Color.FromArgb(0, 150, 136);
             Style = Sunny.UI.UIStyle.Custom;
-            Text = "AniflixView";
-            TitleColor = Color.FromArgb(0, 150, 136);
+            Text = "Aniflix";
+            TitleColor = Color.FromArgb(60, 101, 83);
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += AniflixView_Load;
             MenuPanel.ResumeLayout(false);
