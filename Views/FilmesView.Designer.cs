@@ -34,7 +34,7 @@
             TituloText = new Sunny.UI.UITextBox();
             uiLabel2 = new Sunny.UI.UILabel();
             TituloOriginalText = new Sunny.UI.UITextBox();
-            uiLabel3 = new Sunny.UI.UILabel();
+            TituloLabel = new Sunny.UI.UILabel();
             DataLancamentoText = new Sunny.UI.UITextBox();
             uiLabel4 = new Sunny.UI.UILabel();
             TituloAlternativoText = new Sunny.UI.UITextBox();
@@ -155,16 +155,16 @@
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
             // 
-            // uiLabel3
+            // TituloLabel
             // 
-            uiLabel3.AutoSize = true;
-            uiLabel3.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel3.ForeColor = Color.Black;
-            uiLabel3.Location = new Point(213, 116);
-            uiLabel3.Name = "uiLabel3";
-            uiLabel3.Size = new Size(47, 20);
-            uiLabel3.TabIndex = 36;
-            uiLabel3.Text = "Título";
+            TituloLabel.AutoSize = true;
+            TituloLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            TituloLabel.ForeColor = Color.Black;
+            TituloLabel.Location = new Point(213, 116);
+            TituloLabel.Name = "TituloLabel";
+            TituloLabel.Size = new Size(47, 20);
+            TituloLabel.TabIndex = 36;
+            TituloLabel.Text = "Título";
             // 
             // DataLancamentoText
             // 
@@ -595,7 +595,7 @@
             Controls.Add(TituloAlternativoText);
             Controls.Add(FilmeText);
             Controls.Add(uiLabel4);
-            Controls.Add(uiLabel3);
+            Controls.Add(TituloLabel);
             Controls.Add(uiLabel5);
             Controls.Add(uiLabel10);
             Controls.Add(TituloText);
@@ -620,7 +620,7 @@
         private Sunny.UI.UITextBox TituloText;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UITextBox TituloOriginalText;
-        private Sunny.UI.UILabel uiLabel3;
+        private Sunny.UI.UILabel TituloLabel;
         private Sunny.UI.UITextBox DataLancamentoText;
         private Sunny.UI.UILabel uiLabel4;
         private Sunny.UI.UITextBox TituloAlternativoText;
