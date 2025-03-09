@@ -606,7 +606,6 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FilmesView";
-            Style = Sunny.UI.UIStyle.Custom;
             Text = "Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 1209, 709);
             Load += FilmesView_Load;
