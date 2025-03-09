@@ -35,6 +35,7 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1499, 918);
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "SeriesView";
             Text = "Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
