@@ -88,6 +88,7 @@ namespace Aniflix.Views
         private void ActivateButton(object btnSender)
         {
             var (backgroundColor, accentColor) = SelectThemeColors();
+            var color = Color.FromArgb(37, 36, 81);
 
             if (btnSender != null)
             {
@@ -107,11 +108,11 @@ namespace Aniflix.Views
                     TitleBarPanel.TitleColor = backgroundColor;
                     TitleBarPanel.TitleForeColor = accentColor;
 
-                    LogoPanel.BackColor = Color.FromArgb(37, 36, 81);
-                    LogoPanel.FillColor = Color.FromArgb(37, 36, 81);
+                    LogoPanel.BackColor = color;
+                    LogoPanel.FillColor = color;
 
-                    MenuPanel.BackColor = Color.FromArgb(37, 36, 81);
-                    MenuPanel.FillColor = Color.FromArgb(37, 36, 81);
+                    MenuPanel.BackColor = color;
+                    MenuPanel.FillColor = color;
 
                     leftBorderBtn!.BackColor = accentColor;
                     leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
