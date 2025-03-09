@@ -178,7 +178,7 @@ namespace Aniflix.Views
                     byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
                     using (MemoryStream memoryStream = new MemoryStream(fileBytes))
                     {
-                        svgPictureBox.Load(memoryStream);
+                        WebCanvas.Source = SvgDocument.Open(memoryStream);
                         Console.WriteLine("SVG carregado com sucesso!");
                     }
                 }
