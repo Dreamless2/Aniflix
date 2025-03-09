@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            uiLabel1 = new Sunny.UI.UILabel();
+            CodigoFilmeLabel = new Sunny.UI.UILabel();
             CodigoText = new Sunny.UI.UITextBox();
             AudioBox = new Sunny.UI.UIComboBox();
             TituloText = new Sunny.UI.UITextBox();
@@ -67,16 +67,16 @@
             uiLabel16 = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
-            // uiLabel1
+            // CodigoFilmeLabel
             // 
-            uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel1.ForeColor = Color.Black;
-            uiLabel1.Location = new Point(44, 116);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(123, 20);
-            uiLabel1.TabIndex = 34;
-            uiLabel1.Text = "Código do Filme";
+            CodigoFilmeLabel.AutoSize = true;
+            CodigoFilmeLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            CodigoFilmeLabel.ForeColor = Color.Black;
+            CodigoFilmeLabel.Location = new Point(44, 116);
+            CodigoFilmeLabel.Name = "CodigoFilmeLabel";
+            CodigoFilmeLabel.Size = new Size(123, 20);
+            CodigoFilmeLabel.TabIndex = 34;
+            CodigoFilmeLabel.Text = "Código do Filme";
             // 
             // CodigoText
             // 
@@ -602,7 +602,7 @@
             Controls.Add(uiLabel2);
             Controls.Add(AudioBox);
             Controls.Add(CodigoText);
-            Controls.Add(uiLabel1);
+            Controls.Add(CodigoFilmeLabel);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FilmesView";
@@ -614,7 +614,7 @@
         }
 
         #endregion
-        private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UILabel CodigoFilmeLabel;
         private Sunny.UI.UITextBox CodigoText;
         private Sunny.UI.UIComboBox AudioBox;
         private Sunny.UI.UITextBox TituloText;
