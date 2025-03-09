@@ -46,9 +46,9 @@
             uiLedLabel1.Location = new Point(61, 193);
             uiLedLabel1.MinimumSize = new Size(1, 1);
             uiLedLabel1.Name = "uiLedLabel1";
-            uiLedLabel1.Size = new Size(100, 35);
+            uiLedLabel1.Size = new Size(610, 35);
             uiLedLabel1.TabIndex = 1;
-            uiLedLabel1.Text = "uiLedLabel1";
+            uiLedLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
             // SobreView
             // 
