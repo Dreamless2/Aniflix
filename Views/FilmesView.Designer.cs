@@ -39,7 +39,7 @@
             DataLancamentoLabel = new Sunny.UI.UILabel();
             TituloAlternativoText = new Sunny.UI.UITextBox();
             uiLabel5 = new Sunny.UI.UILabel();
-            uiLabel6 = new Sunny.UI.UILabel();
+            FaseMCULabel = new Sunny.UI.UILabel();
             uiTextBox7 = new Sunny.UI.UITextBox();
             TituloOriginalLabel = new Sunny.UI.UILabel();
             TagsText = new Sunny.UI.UITextBox();
@@ -219,16 +219,16 @@
             uiLabel5.TabIndex = 36;
             uiLabel5.Text = "Franquia";
             // 
-            // uiLabel6
+            // FaseMCULabel
             // 
-            uiLabel6.AutoSize = true;
-            uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel6.ForeColor = Color.Black;
-            uiLabel6.Location = new Point(751, 453);
-            uiLabel6.Name = "uiLabel6";
-            uiLabel6.Size = new Size(85, 20);
-            uiLabel6.TabIndex = 36;
-            uiLabel6.Text = "Fase MCU";
+            FaseMCULabel.AutoSize = true;
+            FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
+            FaseMCULabel.ForeColor = Color.Black;
+            FaseMCULabel.Location = new Point(751, 453);
+            FaseMCULabel.Name = "FaseMCULabel";
+            FaseMCULabel.Size = new Size(85, 20);
+            FaseMCULabel.TabIndex = 36;
+            FaseMCULabel.Text = "Fase MCU";
             // 
             // uiTextBox7
             // 
@@ -586,7 +586,7 @@
             Controls.Add(GeneroText);
             Controls.Add(uiTextBox7);
             Controls.Add(TagsText);
-            Controls.Add(uiLabel6);
+            Controls.Add(FaseMCULabel);
             Controls.Add(TituloAlternativoLabel);
             Controls.Add(FilmeLabel);
             Controls.Add(DataLancamentoText);
@@ -625,7 +625,7 @@
         private Sunny.UI.UILabel DataLancamentoLabel;
         private Sunny.UI.UITextBox TituloAlternativoText;
         private Sunny.UI.UILabel uiLabel5;
-        private Sunny.UI.UILabel uiLabel6;
+        private Sunny.UI.UILabel FaseMCULabel;
         private Sunny.UI.UITextBox uiTextBox7;
         private Sunny.UI.UILabel TituloOriginalLabel;
         private Sunny.UI.UITextBox TagsText;
