@@ -28,20 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
+            // 
+            // svgPictureBox1
+            // 
+            svgPictureBox1.Location = new Point(409, 474);
+            svgPictureBox1.Name = "svgPictureBox1";
+            svgPictureBox1.Size = new Size(727, 317);
+            svgPictureBox1.Source = null;
+            svgPictureBox1.TabIndex = 0;
+            svgPictureBox1.XmlSource = null;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1598, 828);
+            Controls.Add(svgPictureBox1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
     }
 }
