@@ -168,8 +168,6 @@ namespace Aniflix.Views
         {
             Application.Exit();
         }
-
-
         private async void LoadSvgFromUrlAsync(string fileUrl)
         {
             using HttpClient client = new();
