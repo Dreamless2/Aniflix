@@ -6,10 +6,6 @@ namespace Aniflix.Views
 {
     public partial class AniflixView : UIForm
     {
-        private MaterialButton? currentBtn;
-        private Panel? leftBorderBtn;
-        private UIForm? currentChildForm;
-        private Random? random;
 
 
         public AniflixView()
@@ -24,8 +20,6 @@ namespace Aniflix.Views
             Text = string.Empty;
             DoubleBuffered = true;
         }
-
-
 
         private void ActivateButton(object btnSender)
         {
