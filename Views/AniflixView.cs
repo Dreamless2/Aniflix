@@ -107,7 +107,7 @@ namespace Aniflix.Views
                     TitleBarPanel.FillColor = backgroundColor;
                     TitleBarPanel.TitleColor = backgroundColor;
                     TitleBarPanel.TitleForeColor = accentColor;
-                    TitleBarPanel.RectColor = color;
+                    TitleBarPanel.RectColor = backgroundColor;
 
                     LogoPanel.BackColor = color;
                     LogoPanel.FillColor = color;
@@ -128,6 +128,8 @@ namespace Aniflix.Views
                     CurrentChildFormBox.ForeColor = accentColor;
 
                     TitleChildFormLabel.ForeColor = accentColor;
+
+                    this.TitleColor = backgroundColor;
                 }
             }
         }
