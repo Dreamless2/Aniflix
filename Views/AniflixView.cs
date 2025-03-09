@@ -85,7 +85,7 @@ namespace Aniflix.Views
 
             return (darkBackgrounds[bgIndex], accentColors[accentIndex]);
         }
-        private void ActivateButton(object btnSender)
+        private void ActivateButton(object btnSender, Color color)
         {
             var (backgroundColor, accentColor) = SelectThemeColors();
 
