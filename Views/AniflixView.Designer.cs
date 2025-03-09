@@ -88,13 +88,14 @@
             // 
             // SobreButton
             // 
+            SobreButton.Dock = DockStyle.Top;
             SobreButton.FlatAppearance.BorderSize = 0;
             SobreButton.FlatStyle = FlatStyle.Flat;
             SobreButton.ForeColor = Color.White;
             SobreButton.IconChar = FontAwesome.Sharp.MaterialIcons.Information;
             SobreButton.IconColor = Color.White;
             SobreButton.ImageAlign = ContentAlignment.MiddleLeft;
-            SobreButton.Location = new Point(-3, 702);
+            SobreButton.Location = new Point(0, 630);
             SobreButton.Name = "SobreButton";
             SobreButton.Padding = new Padding(10, 0, 20, 0);
             SobreButton.Size = new Size(258, 60);
