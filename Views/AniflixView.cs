@@ -194,17 +194,7 @@ namespace Aniflix.Views
                 //string webUrl = "https://upload.wikimedia.org/wikipedia/commons/d/dd/PoliceCar.svg";
                 string webUrl = "https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/gallardo.svg";
 
-                HttpWebRequest requestInfo = (HttpWebRequest)WebRequest.Create(webUrl);
-                if (requestInfo != null)
-                {
-                    using (HttpWebResponse response = (HttpWebResponse)requestInfo.GetResponse())
-                    {
-                        // Disposing the response will close the response stream.
-                        var webStream = response.GetResponseStream();
-                        // The control will copy the stream to memory to avoid disposing issues
-                        WebCanvas.LoadAsync(webStream);
-                    }
-                }
+             
             }
             catch (Exception ex)
             {
