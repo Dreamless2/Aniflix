@@ -38,10 +38,10 @@ namespace Aniflix.Views
                 Color.FromArgb(01, 47, 51),    // #014F33 - Azul paon
                 Color.FromArgb(40, 65, 74),    // #28494A - Azul carvão claro
                 Color.FromArgb(21, 32, 43),    // #15202B - Azul carvão
-                Color.FromArgb(12, 12, 12),    // #0C0C0C - Preto intenso
+               // Color.FromArgb(12, 12, 12),    // #0C0C0C - Preto intenso
                 Color.FromArgb(25, 20, 20),    // #191414 - Marrom café escuro
                 Color.FromArgb(15, 44, 51),    // #0F2C33 - Azul carvão escuro
-                Color.FromArgb(25, 31, 37),    // #191F25 - Preto carvão
+               // Color.FromArgb(25, 31, 37),    // #191F25 - Preto carvão
                 Color.FromArgb(0, 36, 50),     // #002432 - Ocean Obsidian
                 Color.FromArgb(49, 70, 90),    // #314E5A - Charcoal
                 Color.FromArgb(30, 99, 106),   // #1E6369 - Ivy
@@ -49,8 +49,8 @@ namespace Aniflix.Views
                 Color.FromArgb(1, 61, 90),     // #013D5A - Midnight
                 Color.FromArgb(58, 58, 59),    // #3A3A45 - Arsenico
                 Color.FromArgb(52, 63, 66),    // #343F42 - Onyx
-                Color.FromArgb(45, 48, 41),    // #2D3033 - Preto Carvão escuro
-                Color.FromArgb(18, 17,12),     // #12110C - Obsidiana
+               // Color.FromArgb(45, 48, 41),    // #2D3033 - Preto Carvão escuro
+              //  Color.FromArgb(18, 17,12),     // #12110C - Obsidiana
                 Color.FromArgb(43, 15, 21),    // #2B0F15 - Zinnwaldita
                 Color.FromArgb(40,17, 13),     // #28110D - Ember
             ];
