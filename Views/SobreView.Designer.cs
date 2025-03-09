@@ -43,17 +43,17 @@
             // uiLedLabel1
             // 
             uiLedLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLedLabel1.Location = new Point(61, 193);
+            uiLedLabel1.Location = new Point(36, 57);
             uiLedLabel1.MinimumSize = new Size(1, 1);
             uiLedLabel1.Name = "uiLedLabel1";
-            uiLedLabel1.Size = new Size(610, 35);
+            uiLedLabel1.Size = new Size(1235, 167);
             uiLedLabel1.TabIndex = 1;
             uiLedLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(817, 631);
+            ClientSize = new Size(1383, 828);
             Controls.Add(uiLedLabel1);
             Controls.Add(svgPictureBox1);
             MaximizeBox = false;
