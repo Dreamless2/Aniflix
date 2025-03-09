@@ -206,7 +206,7 @@ namespace Aniflix.Views
 
         private void BreakOutFilmesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, GlobalFunctions.RGBColors.color7);
+            ActivateButton(sender);
             OpenChildForm(new BreakOutFilmesView(), sender);
         }
 
