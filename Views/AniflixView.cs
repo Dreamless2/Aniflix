@@ -79,7 +79,7 @@ namespace Aniflix.Views
                 Color.FromArgb(162, 220, 163),  // #A2DCC3 - Maçã verde
                // Color.FromArgb(105, 160, 108),  // #69A06C - Oxley
                 Color.FromArgb(56, 147, 114),   // #388F72 - Esmeralda
-            ];  ,
+            ];
 
             int bgIndex = random.Next(darkBackgrounds.Count);
             int accentIndex = random.Next(accentColors.Count);
