@@ -37,6 +37,28 @@ namespace Aniflix.Functions
                     txt.RectColor = Color.FromArgb(2, 47, 86);
                 }
             }
+
+            foreach (Control rtxts in form.Controls)
+            {
+                if (rtxts is UIRichTextBox rtxt)
+                {
+                    rtxt.BackColor = Color.FromArgb(2, 47, 86);
+                    rtxt.ForeColor = Color.Gainsboro;
+                    rtxt.FillColor = Color.FromArgb(2, 47, 86);
+                    rtxt.RectColor = Color.FromArgb(2, 47, 86);
+                }
+            }
+
+            foreach (Control cboxs in form.Controls)
+            {
+                if (cboxs is UIComboBox cbox)
+                {
+                    cbox.BackColor = Color.FromArgb(2, 47, 86);
+                    cbox.ForeColor = Color.Gainsboro;
+                    cbox.FillColor = Color.FromArgb(2, 47, 86);
+                    cbox.RectColor = Color.FromArgb(2, 47, 86);
+                }
+            }
         }
     }
 }
