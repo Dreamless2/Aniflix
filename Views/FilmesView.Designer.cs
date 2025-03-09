@@ -186,7 +186,7 @@
             uiLabel4.AutoSize = true;
             uiLabel4.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel4.ForeColor = Color.Black;
-            uiLabel4.Location = new Point(742, 276);
+            uiLabel4.Location = new Point(742, 241);
             uiLabel4.Name = "uiLabel4";
             uiLabel4.Size = new Size(159, 20);
             uiLabel4.TabIndex = 36;
@@ -213,7 +213,7 @@
             uiLabel5.AutoSize = true;
             uiLabel5.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel5.ForeColor = Color.Black;
-            uiLabel5.Location = new Point(32, 453);
+            uiLabel5.Location = new Point(32, 418);
             uiLabel5.Name = "uiLabel5";
             uiLabel5.Size = new Size(72, 20);
             uiLabel5.TabIndex = 36;
@@ -224,7 +224,7 @@
             uiLabel6.AutoSize = true;
             uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel6.ForeColor = Color.Black;
-            uiLabel6.Location = new Point(742, 395);
+            uiLabel6.Location = new Point(742, 360);
             uiLabel6.Name = "uiLabel6";
             uiLabel6.Size = new Size(85, 20);
             uiLabel6.TabIndex = 36;
@@ -251,7 +251,7 @@
             uiLabel7.AutoSize = true;
             uiLabel7.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel7.ForeColor = Color.Black;
-            uiLabel7.Location = new Point(32, 276);
+            uiLabel7.Location = new Point(32, 241);
             uiLabel7.Name = "uiLabel7";
             uiLabel7.Size = new Size(104, 20);
             uiLabel7.TabIndex = 36;
@@ -303,7 +303,7 @@
             uiLabel9.AutoSize = true;
             uiLabel9.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel9.ForeColor = Color.Black;
-            uiLabel9.Location = new Point(32, 394);
+            uiLabel9.Location = new Point(32, 453);
             uiLabel9.Name = "uiLabel9";
             uiLabel9.Size = new Size(47, 20);
             uiLabel9.TabIndex = 36;
@@ -351,7 +351,7 @@
             uiLabel12.AutoSize = true;
             uiLabel12.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel12.ForeColor = Color.Black;
-            uiLabel12.Location = new Point(32, 630);
+            uiLabel12.Location = new Point(32, 595);
             uiLabel12.Name = "uiLabel12";
             uiLabel12.Size = new Size(67, 20);
             uiLabel12.TabIndex = 40;
@@ -362,7 +362,7 @@
             uiLabel13.AutoSize = true;
             uiLabel13.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel13.ForeColor = Color.Black;
-            uiLabel13.Location = new Point(32, 689);
+            uiLabel13.Location = new Point(32, 654);
             uiLabel13.Name = "uiLabel13";
             uiLabel13.Size = new Size(63, 20);
             uiLabel13.TabIndex = 41;
@@ -556,7 +556,7 @@
             uiLabel16.AutoSize = true;
             uiLabel16.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel16.ForeColor = Color.White;
-            uiLabel16.Location = new Point(926, 58);
+            uiLabel16.Location = new Point(926, 23);
             uiLabel16.Name = "uiLabel16";
             uiLabel16.Size = new Size(56, 20);
             uiLabel16.TabIndex = 52;
@@ -564,6 +564,7 @@
             // 
             // FilmesView
             // 
+            AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1485, 919);
             Controls.Add(uiLabel16);
@@ -606,6 +607,8 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FilmesView";
+            Padding = new Padding(0);
+            ShowTitle = false;
             Text = "Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 1209, 709);
             Load += FilmesView_Load;
