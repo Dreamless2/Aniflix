@@ -46,6 +46,7 @@
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
+            materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)WebCanvas).BeginInit();
@@ -57,6 +58,7 @@
             // MenuPanel
             // 
             MenuPanel.BackColor = Color.FromArgb(31, 30, 68);
+            MenuPanel.Controls.Add(materialButton1);
             MenuPanel.Controls.Add(SairButton);
             MenuPanel.Controls.Add(TrashflixButton);
             MenuPanel.Controls.Add(BreakOutSeriesButton);
@@ -320,7 +322,9 @@
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
             WebCanvas.SizeMode = PictureBoxSizeMode.CenterImage;
+            WebCanvas.Source = null;
             WebCanvas.TabIndex = 0;
+            WebCanvas.XmlSource = null;
             WebCanvas.Click += WebCanvas_Click;
             // 
             // TitleBarPanel
@@ -401,6 +405,17 @@
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
+            // materialButton1
+            // 
+            materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
+            materialButton1.IconColor = Color.Black;
+            materialButton1.Location = new Point(111, 751);
+            materialButton1.Name = "materialButton1";
+            materialButton1.Size = new Size(75, 23);
+            materialButton1.TabIndex = 12;
+            materialButton1.Text = "materialButton1";
+            materialButton1.UseVisualStyleBackColor = true;
+            // 
             // AniflixView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -447,5 +462,6 @@
         private FontAwesome.Sharp.Material.MaterialButton AnimesButton;
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
         private SharpVectors.Renderers.Forms.SvgPictureBox WebCanvas;
+        private FontAwesome.Sharp.Material.MaterialButton materialButton1;
     }
 }
