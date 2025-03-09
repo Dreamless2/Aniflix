@@ -33,7 +33,7 @@
             // AnimesFilmesView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1410, 966);
             Name = "AnimesFilmesView";
             Text = "Animes - Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);

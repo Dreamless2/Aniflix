@@ -35,6 +35,7 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1284, 859);
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "TrashflixView";
             Text = "Trashflix";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
