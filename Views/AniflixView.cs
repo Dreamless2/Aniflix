@@ -182,11 +182,8 @@ namespace Aniflix.Views
                 throw new Exception($"Erro ao carregar o arquivo SVG: {ex.Message}");
             }
         }
-
         private void AniflixView_Load(object sender, EventArgs e)
         {
-            ActivateButton(FilmesButton);
-            OpenChildForm(new FilmesView(), FilmesButton);
             LoadSvgFromUrlAsync("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/gallardo.svg");
         }
 
