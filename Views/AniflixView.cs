@@ -162,7 +162,7 @@ namespace Aniflix.Views
         }
         private void FilmesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, GlobalFunctions.);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color1);
             OpenChildForm(new FilmesView(), sender);
         }
 
