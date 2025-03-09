@@ -169,8 +169,13 @@ namespace Aniflix.Views
 
         private void SVGDownloader()
         {
-            // download stream from svg file
-            // https://stackoverflow.com/questions/10625539/download-stream-from-svg-file
+            // download file https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg
+            var client = new WebClient();
+            client.DownloadFile("https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg", "logo.svg");
+        }
+
+
+
 
         private void AniflixView_Load(object sender, EventArgs e)
         {
