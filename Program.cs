@@ -14,7 +14,7 @@ namespace Aniflix
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AniflixView());
+            Application.Run(new SobreView());
         }
     }
 }
