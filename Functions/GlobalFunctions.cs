@@ -56,7 +56,7 @@ namespace Aniflix.Functions
                     cbox.BackColor = Color.FromArgb(2, 47, 86);
                     cbox.ForeColor = Color.Gainsboro;
                     cbox.FillColor = Color.FromArgb(2, 47, 86);
-                    cbox.RectColor = Color.FromArgb(2, 47, 86);
+                    cbox.RectColor = ThemeColor.SecondaryColor;
                 }
             }
         }
