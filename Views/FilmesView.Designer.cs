@@ -487,7 +487,7 @@
             materialButton1.ForeColor = Color.Black;
             materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             materialButton1.IconColor = Color.Black;
-            materialButton1.Location = new Point(199, 769);
+            materialButton1.Location = new Point(173, 769);
             materialButton1.Name = "materialButton1";
             materialButton1.Size = new Size(198, 91);
             materialButton1.TabIndex = 47;
@@ -501,7 +501,7 @@
             materialButton2.ForeColor = Color.Black;
             materialButton2.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             materialButton2.IconColor = Color.Black;
-            materialButton2.Location = new Point(428, 769);
+            materialButton2.Location = new Point(402, 769);
             materialButton2.Name = "materialButton2";
             materialButton2.Size = new Size(198, 91);
             materialButton2.TabIndex = 48;
@@ -515,7 +515,7 @@
             materialButton3.ForeColor = Color.Black;
             materialButton3.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             materialButton3.IconColor = Color.Black;
-            materialButton3.Location = new Point(669, 769);
+            materialButton3.Location = new Point(643, 769);
             materialButton3.Name = "materialButton3";
             materialButton3.Size = new Size(198, 91);
             materialButton3.TabIndex = 49;
@@ -529,7 +529,7 @@
             materialButton4.ForeColor = Color.Black;
             materialButton4.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             materialButton4.IconColor = Color.Black;
-            materialButton4.Location = new Point(911, 769);
+            materialButton4.Location = new Point(885, 769);
             materialButton4.Name = "materialButton4";
             materialButton4.Size = new Size(198, 91);
             materialButton4.TabIndex = 50;
@@ -543,7 +543,7 @@
             materialButton5.ForeColor = Color.Black;
             materialButton5.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             materialButton5.IconColor = Color.Black;
-            materialButton5.Location = new Point(1139, 769);
+            materialButton5.Location = new Point(1113, 769);
             materialButton5.Name = "materialButton5";
             materialButton5.Size = new Size(198, 91);
             materialButton5.TabIndex = 51;
