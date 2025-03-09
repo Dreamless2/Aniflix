@@ -148,6 +148,7 @@ namespace Aniflix.Views
             currentChildForm?.Close();
             currentChildForm = childForm;
             childForm.TopLevel = false;
+            childForm.
             childForm.Dock = DockStyle.Fill;
             DesktopPanel.Controls.Add(childForm);
             DesktopPanel.Tag = childForm;
