@@ -97,7 +97,7 @@ namespace Aniflix.Views
                     currentBtn = (MaterialButton)btnSender;
                     currentBtn.BackColor = Color.FromArgb(37, 36, 81);
                     currentBtn.ForeColor = color;
-                    currentBtn.IconColor = accentColor;
+                    currentBtn.IconColor = color;
                     currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                     currentBtn.ImageAlign = ContentAlignment.MiddleRight;
                     TitleBarPanel.BackColor = Color.FromArgb(37, 36, 81);
@@ -108,16 +108,16 @@ namespace Aniflix.Views
                     LogoPanel.FillColor = Color.FromArgb(37, 36, 81);
                     MenuPanel.BackColor = Color.FromArgb(37, 36, 81);
                     MenuPanel.FillColor = Color.FromArgb(37, 36, 81);
-                    leftBorderBtn!.BackColor = accentColor;
+                    leftBorderBtn!.BackColor = color;
                     leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                     leftBorderBtn.Visible = true;
                     leftBorderBtn.BringToFront();
                     ThemeColor.PrimaryColor = backgroundColor;
                     ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(backgroundColor, -0.55);
                     CurrentChildFormBox.IconChar = currentBtn.IconChar;
-                    CurrentChildFormBox.IconColor = accentColor;
-                    CurrentChildFormBox.ForeColor = accentColor;
-                    TitleChildFormLabel.ForeColor = accentColor;
+                    CurrentChildFormBox.IconColor = color;
+                    CurrentChildFormBox.ForeColor = color;
+                    TitleChildFormLabel.ForeColor = color;
                 }
             }
         }
