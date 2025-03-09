@@ -96,7 +96,7 @@ namespace Aniflix.Views
                     DisableButton();
                     currentBtn = (MaterialButton)btnSender;
                     currentBtn.BackColor = Color.FromArgb(37, 36, 81);
-                    currentBtn.ForeColor = accentColor;
+                    currentBtn.ForeColor = color;
                     currentBtn.IconColor = color;
                     currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                     currentBtn.ImageAlign = ContentAlignment.MiddleRight;
