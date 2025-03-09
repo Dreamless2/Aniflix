@@ -28,7 +28,7 @@ namespace Aniflix.Functions
             }
         }
 
-        private struct RGBColors
+        public struct RGBColors
         {
             public static Color color1 = Color.FromArgb(156, 39, 176);  // #9C27B0 - Roxo
             public static Color color2 = Color.FromArgb(228, 18, 75);   // #E4126B - Rosa forte
