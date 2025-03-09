@@ -80,6 +80,7 @@ namespace Aniflix.Views
                 Color.FromArgb(217, 63, 64),    // #D93F40 - Jasper
             ];
 
+            List<Color> accentColors =
             int bgIndex = random.Next(darkBackgrounds.Count);
             int accentIndex = random.Next(accentColors.Count);
 
