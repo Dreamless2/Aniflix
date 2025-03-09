@@ -60,8 +60,8 @@
             ResumoText = new Sunny.UI.UIRichTextBox();
             SinopseText = new Sunny.UI.UIRichTextBox();
             CopiarButton = new FontAwesome.Sharp.Material.MaterialButton();
-            materialButton2 = new FontAwesome.Sharp.Material.MaterialButton();
-            materialButton3 = new FontAwesome.Sharp.Material.MaterialButton();
+            InserirNovoButton = new FontAwesome.Sharp.Material.MaterialButton();
+            EditarButton = new FontAwesome.Sharp.Material.MaterialButton();
             materialButton4 = new FontAwesome.Sharp.Material.MaterialButton();
             materialButton5 = new FontAwesome.Sharp.Material.MaterialButton();
             DadosLabel = new Sunny.UI.UILabel();
@@ -495,33 +495,33 @@
             CopiarButton.TextAlign = ContentAlignment.BottomLeft;
             CopiarButton.UseVisualStyleBackColor = true;
             // 
-            // materialButton2
+            // InserirNovoButton
             // 
-            materialButton2.Font = new Font("Microsoft Sans Serif", 12F);
-            materialButton2.ForeColor = Color.Black;
-            materialButton2.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
-            materialButton2.IconColor = Color.Black;
-            materialButton2.Location = new Point(403, 773);
-            materialButton2.Name = "materialButton2";
-            materialButton2.Size = new Size(198, 91);
-            materialButton2.TabIndex = 48;
-            materialButton2.Text = "Inserir Novo";
-            materialButton2.TextAlign = ContentAlignment.BottomLeft;
-            materialButton2.UseVisualStyleBackColor = true;
+            InserirNovoButton.Font = new Font("Microsoft Sans Serif", 12F);
+            InserirNovoButton.ForeColor = Color.Black;
+            InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
+            InserirNovoButton.IconColor = Color.Black;
+            InserirNovoButton.Location = new Point(403, 773);
+            InserirNovoButton.Name = "InserirNovoButton";
+            InserirNovoButton.Size = new Size(198, 91);
+            InserirNovoButton.TabIndex = 48;
+            InserirNovoButton.Text = "Inserir Novo";
+            InserirNovoButton.TextAlign = ContentAlignment.BottomLeft;
+            InserirNovoButton.UseVisualStyleBackColor = true;
             // 
-            // materialButton3
+            // EditarButton
             // 
-            materialButton3.Font = new Font("Microsoft Sans Serif", 12F);
-            materialButton3.ForeColor = Color.Black;
-            materialButton3.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
-            materialButton3.IconColor = Color.Black;
-            materialButton3.Location = new Point(638, 773);
-            materialButton3.Name = "materialButton3";
-            materialButton3.Size = new Size(198, 91);
-            materialButton3.TabIndex = 49;
-            materialButton3.Text = "Editar ";
-            materialButton3.TextAlign = ContentAlignment.BottomLeft;
-            materialButton3.UseVisualStyleBackColor = true;
+            EditarButton.Font = new Font("Microsoft Sans Serif", 12F);
+            EditarButton.ForeColor = Color.Black;
+            EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
+            EditarButton.IconColor = Color.Black;
+            EditarButton.Location = new Point(638, 773);
+            EditarButton.Name = "EditarButton";
+            EditarButton.Size = new Size(198, 91);
+            EditarButton.TabIndex = 49;
+            EditarButton.Text = "Editar ";
+            EditarButton.TextAlign = ContentAlignment.BottomLeft;
+            EditarButton.UseVisualStyleBackColor = true;
             // 
             // materialButton4
             // 
@@ -569,8 +569,8 @@
             Controls.Add(DadosLabel);
             Controls.Add(materialButton5);
             Controls.Add(materialButton4);
-            Controls.Add(materialButton3);
-            Controls.Add(materialButton2);
+            Controls.Add(EditarButton);
+            Controls.Add(InserirNovoButton);
             Controls.Add(CopiarButton);
             Controls.Add(SinopseText);
             Controls.Add(ResumoText);
@@ -646,8 +646,8 @@
         private Sunny.UI.UIRichTextBox ResumoText;
         private Sunny.UI.UIRichTextBox SinopseText;
         private FontAwesome.Sharp.Material.MaterialButton CopiarButton;
-        private FontAwesome.Sharp.Material.MaterialButton materialButton2;
-        private FontAwesome.Sharp.Material.MaterialButton materialButton3;
+        private FontAwesome.Sharp.Material.MaterialButton InserirNovoButton;
+        private FontAwesome.Sharp.Material.MaterialButton EditarButton;
         private FontAwesome.Sharp.Material.MaterialButton materialButton4;
         private FontAwesome.Sharp.Material.MaterialButton materialButton5;
         private Sunny.UI.UILabel DadosLabel;
