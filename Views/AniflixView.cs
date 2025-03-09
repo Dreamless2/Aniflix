@@ -198,19 +198,19 @@ namespace Aniflix.Views
 
         private void BreakOutFilmesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color7);
             OpenChildForm(new BreakOutFilmesView(), sender);
         }
 
         private void BreakOutSeriesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color8);
             OpenChildForm(new BreakOutSeriesView(), sender);
         }
 
         private void TrashflixButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color9);
             OpenChildForm(new TrashflixView(), sender);
         }
         private void SairButton_Click(object sender, EventArgs e)
