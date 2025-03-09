@@ -90,6 +90,7 @@ namespace Aniflix.Views
             GlobalVars.currentBtn = null;
             TitleBarPanel.BackColor = Color.FromArgb(0, 150, 136);
             MenuPanel.BackColor = Color.FromArgb(39, 39, 58);
+
             TitleChildFormLabel.Text = "Home";
             CurrentChildFormBox.IconChar = FontAwesome.Sharp.MaterialIcons.Home;
         }
