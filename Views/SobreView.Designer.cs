@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
+            uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -41,10 +42,21 @@
             svgPictureBox1.TabIndex = 0;
             svgPictureBox1.XmlSource = null;
             // 
+            // uiSymbolLabel1
+            // 
+            uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiSymbolLabel1.Location = new Point(233, 320);
+            uiSymbolLabel1.MinimumSize = new Size(1, 1);
+            uiSymbolLabel1.Name = "uiSymbolLabel1";
+            uiSymbolLabel1.Size = new Size(170, 35);
+            uiSymbolLabel1.TabIndex = 1;
+            uiSymbolLabel1.Text = "uiSymbolLabel1";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1598, 828);
+            Controls.Add(uiSymbolLabel1);
             Controls.Add(svgPictureBox1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -58,5 +70,6 @@
         #endregion
 
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel1;
     }
 }
