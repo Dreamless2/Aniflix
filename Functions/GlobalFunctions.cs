@@ -1,5 +1,6 @@
 ﻿using Sunny.UI;
 using FontAwesome.Sharp.Material;
+using SharpVectors.Renderers.Forms;
 
 namespace Aniflix.Functions
 {
@@ -128,14 +129,14 @@ namespace Aniflix.Functions
             return (darkBackgrounds[bgIndex], accentColors[accentIndex]);
         }
 
-        public static async void LoadSvgFromUrlAsync(string fileUrl)
+        public static async void LoadSvgFromUrlAsync(string fileUrl, SvgPictureBox svgPictureBox)
         {
             using HttpClient client = new();
             try
             {
                 byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
                 using MemoryStream memoryStream = new(fileBytes);
-                WebCanvas.Load(memoryStream);
+                svgPictureBox.Load(memoryStream);
             }
             catch (Exception ex)
             {
