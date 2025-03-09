@@ -168,31 +168,31 @@ namespace Aniflix.Views
 
         private void SeriesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color2);
             OpenChildForm(new SeriesView(), sender);
         }
 
         private void AnimesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color3);
             OpenChildForm(new AnimesView(), sender);
         }
 
         private void AnimesFilmesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color4);
             OpenChildForm(new AnimesFilmesView(), sender);
         }
 
         private void GoreFilmesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color5);
             OpenChildForm(new GoreFilmesView(), sender);
         }
 
         private void GoreSeriesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.RGBColors.color6);
             OpenChildForm(new GoreSeriesView(), sender);
         }
 
