@@ -59,7 +59,7 @@
             FaseMCUText = new Sunny.UI.UITextBox();
             ResumoText = new Sunny.UI.UIRichTextBox();
             SinopseText = new Sunny.UI.UIRichTextBox();
-            materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
+            CopiarButton = new FontAwesome.Sharp.Material.MaterialButton();
             materialButton2 = new FontAwesome.Sharp.Material.MaterialButton();
             materialButton3 = new FontAwesome.Sharp.Material.MaterialButton();
             materialButton4 = new FontAwesome.Sharp.Material.MaterialButton();
@@ -481,19 +481,19 @@
             SinopseText.TabIndex = 46;
             SinopseText.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // materialButton1
+            // CopiarButton
             // 
-            materialButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            materialButton1.ForeColor = Color.Black;
-            materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
-            materialButton1.IconColor = Color.Black;
-            materialButton1.Location = new Point(168, 773);
-            materialButton1.Name = "materialButton1";
-            materialButton1.Size = new Size(198, 91);
-            materialButton1.TabIndex = 47;
-            materialButton1.Text = "Copiar";
-            materialButton1.TextAlign = ContentAlignment.BottomLeft;
-            materialButton1.UseVisualStyleBackColor = true;
+            CopiarButton.Font = new Font("Microsoft Sans Serif", 12F);
+            CopiarButton.ForeColor = Color.Black;
+            CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
+            CopiarButton.IconColor = Color.Black;
+            CopiarButton.Location = new Point(168, 773);
+            CopiarButton.Name = "CopiarButton";
+            CopiarButton.Size = new Size(198, 91);
+            CopiarButton.TabIndex = 47;
+            CopiarButton.Text = "Copiar";
+            CopiarButton.TextAlign = ContentAlignment.BottomLeft;
+            CopiarButton.UseVisualStyleBackColor = true;
             // 
             // materialButton2
             // 
@@ -571,7 +571,7 @@
             Controls.Add(materialButton4);
             Controls.Add(materialButton3);
             Controls.Add(materialButton2);
-            Controls.Add(materialButton1);
+            Controls.Add(CopiarButton);
             Controls.Add(SinopseText);
             Controls.Add(ResumoText);
             Controls.Add(DiretorText);
@@ -645,7 +645,7 @@
         private Sunny.UI.UITextBox FaseMCUText;
         private Sunny.UI.UIRichTextBox ResumoText;
         private Sunny.UI.UIRichTextBox SinopseText;
-        private FontAwesome.Sharp.Material.MaterialButton materialButton1;
+        private FontAwesome.Sharp.Material.MaterialButton CopiarButton;
         private FontAwesome.Sharp.Material.MaterialButton materialButton2;
         private FontAwesome.Sharp.Material.MaterialButton materialButton3;
         private FontAwesome.Sharp.Material.MaterialButton materialButton4;
