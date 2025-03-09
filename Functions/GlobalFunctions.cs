@@ -127,5 +127,20 @@ namespace Aniflix.Functions
 
             return (darkBackgrounds[bgIndex], accentColors[accentIndex]);
         }
+
+        public static async void LoadSvgFromUrlAsync(string fileUrl)
+        {
+            using HttpClient client = new();
+            try
+            {
+                byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
+                using MemoryStream memoryStream = new(fileBytes);
+                WebCanvas.Load(memoryStream);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Erro ao carregar o arquivo SVG: {ex.Message}");
+            }
+        }
     }
 }
