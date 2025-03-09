@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             MenuPanel = new Sunny.UI.UIPanel();
+            SobreButton = new FontAwesome.Sharp.Material.MaterialButton();
             SairButton = new FontAwesome.Sharp.Material.MaterialButton();
             TrashflixButton = new FontAwesome.Sharp.Material.MaterialButton();
             BreakOutSeriesButton = new FontAwesome.Sharp.Material.MaterialButton();
@@ -46,7 +47,6 @@
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
-            SobreButton = new FontAwesome.Sharp.Material.MaterialButton();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)WebCanvas).BeginInit();
@@ -85,6 +85,23 @@
             MenuPanel.TabIndex = 0;
             MenuPanel.Text = null;
             MenuPanel.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // SobreButton
+            // 
+            SobreButton.Dock = DockStyle.Top;
+            SobreButton.FlatAppearance.BorderSize = 0;
+            SobreButton.FlatStyle = FlatStyle.Flat;
+            SobreButton.ForeColor = Color.White;
+            SobreButton.IconChar = FontAwesome.Sharp.MaterialIcons.Information;
+            SobreButton.IconColor = Color.Black;
+            SobreButton.Location = new Point(0, 690);
+            SobreButton.Name = "SobreButton";
+            SobreButton.Size = new Size(258, 60);
+            SobreButton.TabIndex = 12;
+            SobreButton.Text = "Sobre";
+            SobreButton.TextAlign = ContentAlignment.MiddleLeft;
+            SobreButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+            SobreButton.UseVisualStyleBackColor = true;
             // 
             // SairButton
             // 
@@ -322,9 +339,7 @@
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
             WebCanvas.SizeMode = PictureBoxSizeMode.CenterImage;
-            WebCanvas.Source = null;
             WebCanvas.TabIndex = 0;
-            WebCanvas.XmlSource = null;
             WebCanvas.Click += WebCanvas_Click;
             // 
             // TitleBarPanel
@@ -404,23 +419,6 @@
             DesktopPanel.TabIndex = 0;
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // SobreButton
-            // 
-            SobreButton.Dock = DockStyle.Top;
-            SobreButton.FlatAppearance.BorderSize = 0;
-            SobreButton.FlatStyle = FlatStyle.Flat;
-            SobreButton.ForeColor = Color.White;
-            SobreButton.IconChar = FontAwesome.Sharp.MaterialIcons.None;
-            SobreButton.IconColor = Color.Black;
-            SobreButton.Location = new Point(0, 690);
-            SobreButton.Name = "SobreButton";
-            SobreButton.Size = new Size(258, 60);
-            SobreButton.TabIndex = 12;
-            SobreButton.Text = "Sobre";
-            SobreButton.TextAlign = ContentAlignment.MiddleLeft;
-            SobreButton.TextImageRelation = TextImageRelation.ImageBeforeText;
-            SobreButton.UseVisualStyleBackColor = true;
             // 
             // AniflixView
             // 
