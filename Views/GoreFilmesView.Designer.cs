@@ -37,7 +37,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "GoreFilmesView";
-            Text = "GoreFilmesView";
+            Text = "Gore - Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             ResumeLayout(false);
         }
