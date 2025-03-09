@@ -50,7 +50,7 @@
             SinopseLabel = new Sunny.UI.UILabel();
             TagsLabel = new Sunny.UI.UILabel();
             EstrelasLabel = new Sunny.UI.UILabel();
-            uiLabel13 = new Sunny.UI.UILabel();
+            EstudioLabel = new Sunny.UI.UILabel();
             GeneroLabel = new Sunny.UI.UILabel();
             DiretorLabel = new Sunny.UI.UILabel();
             DiretorText = new Sunny.UI.UITextBox();
@@ -357,16 +357,16 @@
             EstrelasLabel.TabIndex = 40;
             EstrelasLabel.Text = "Estrelas";
             // 
-            // uiLabel13
+            // EstudioLabel
             // 
-            uiLabel13.AutoSize = true;
-            uiLabel13.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel13.ForeColor = Color.Black;
-            uiLabel13.Location = new Point(44, 747);
-            uiLabel13.Name = "uiLabel13";
-            uiLabel13.Size = new Size(63, 20);
-            uiLabel13.TabIndex = 41;
-            uiLabel13.Text = "Estúdio";
+            EstudioLabel.AutoSize = true;
+            EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            EstudioLabel.ForeColor = Color.Black;
+            EstudioLabel.Location = new Point(44, 747);
+            EstudioLabel.Name = "EstudioLabel";
+            EstudioLabel.Size = new Size(63, 20);
+            EstudioLabel.TabIndex = 41;
+            EstudioLabel.Text = "Estúdio";
             // 
             // GeneroLabel
             // 
@@ -580,7 +580,7 @@
             Controls.Add(FaseMCUText);
             Controls.Add(DiretorLabel);
             Controls.Add(GeneroLabel);
-            Controls.Add(uiLabel13);
+            Controls.Add(EstudioLabel);
             Controls.Add(EstrelasLabel);
             Controls.Add(TagsLabel);
             Controls.Add(GeneroText);
@@ -639,7 +639,7 @@
         private Sunny.UI.UITextBox EstudioText;
         private Sunny.UI.UILabel TagsLabel;
         private Sunny.UI.UILabel EstrelasLabel;
-        private Sunny.UI.UILabel uiLabel13;
+        private Sunny.UI.UILabel EstudioLabel;
         private Sunny.UI.UILabel GeneroLabel;
         private Sunny.UI.UILabel DiretorLabel;
         private Sunny.UI.UITextBox FaseMCUText;
