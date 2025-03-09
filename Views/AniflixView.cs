@@ -180,7 +180,7 @@ namespace Aniflix.Views
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao carregar SVG: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         }
 
