@@ -81,8 +81,7 @@ namespace Aniflix.Views
                 Color.FromArgb(56, 147, 114),   // #388F72 - Esmeralda
                 Color.FromArgb(230, 143, 21),   // #E68F15 - Gamboge
                 Color.FromArgb(246, 146, 104),  // #F69268 - Melon red
-                Color.FromArgb(229, 117, 106),  // #E5756A - Coral ardente
-                // color from argb #e75d50
+                Color.FromArgb(229, 117, 106),  // #E5756A - Coral ardente                
                 Color.FromArgb(231, 93, 80),    // #E75D50 - Chama de opala
 
 
