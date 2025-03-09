@@ -157,8 +157,6 @@ namespace Aniflix.Views
             TitleChildFormLabel.Text = childForm.Text;
             TitleBarPanel.Text = childForm.Text;
         }
-
-
         private void FilmesButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
