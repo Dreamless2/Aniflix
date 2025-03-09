@@ -148,7 +148,6 @@ namespace Aniflix.Views
 
             var (backgroundColor, accentColor) = SelectThemeColors();
             currentChildForm?.Close();
-            ActivateButton(btnSender);
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
@@ -163,7 +162,7 @@ namespace Aniflix.Views
         }
         private void FilmesButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ActivateButton(sender, GlobalFunctions.);
             OpenChildForm(new FilmesView(), sender);
         }
 
