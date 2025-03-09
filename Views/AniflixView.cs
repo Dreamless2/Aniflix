@@ -95,8 +95,8 @@ namespace Aniflix.Views
         {
 
             var (backgroundColor, accentColor) = GlobalFunctions.SelectThemeColors();
-            currentChildForm?.Close();
-            currentChildForm = childForm;
+            GlobalVars.currentChildForm?.Close();
+            GlobalVars.currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
             childForm.TitleColor = accentColor;
