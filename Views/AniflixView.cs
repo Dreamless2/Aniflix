@@ -101,7 +101,7 @@ namespace Aniflix.Views
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
             childForm.TitleColor = Color.FromArgb(0, 156, 82);
-            childForm.TitleForeColor = Color.FromArgb(225, 158, 17);
+            childForm.TitleForeColor = Color.FromArgb(253, 228, 110);
             childForm.RectColor = Color.FromArgb(0, 156, 82);
             childForm.ShowRect = false;
             childForm.BringToFront();
