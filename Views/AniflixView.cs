@@ -64,7 +64,7 @@ namespace Aniflix.Views
                 Color.FromArgb(255, 152, 0),    // #FF9800 - Laranja vibrante
                 //Color.FromArgb(247, 199, 103),  // #F7C767 - Laranja crayon
                 Color.FromArgb(249, 206, 117),  // #F9CE75 - Laranja topazio
-                //Color.FromArgb(255, 87, 34),    // #FF5722 - Laranja avermelhado
+                Color.FromArgb(125, 209, 172),  // #7DD1AC - Aqua
                 Color.FromArgb(73, 193, 152),   // #49C195 - Verde oceano
                 Color.FromArgb(245, 110, 15),   // #F56E0F - Orange Lava
                 Color.FromArgb(255, 103, 90),   // #FF675A - Bittersweet
