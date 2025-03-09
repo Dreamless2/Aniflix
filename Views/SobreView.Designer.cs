@@ -35,7 +35,7 @@
             // 
             // svgPictureBox1
             // 
-            svgPictureBox1.Location = new Point(409, 474);
+            svgPictureBox1.Location = new Point(173, 362);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(727, 317);
             svgPictureBox1.Source = null;
@@ -44,18 +44,18 @@
             // 
             // uiSymbolLabel1
             // 
-            uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiSymbolLabel1.Location = new Point(293, 388);
+            uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel1.Location = new Point(129, 312);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
-            uiSymbolLabel1.Size = new Size(559, 28);
+            uiSymbolLabel1.Size = new Size(832, 33);
             uiSymbolLabel1.TabIndex = 1;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1598, 828);
+            ClientSize = new Size(1060, 828);
             Controls.Add(uiSymbolLabel1);
             Controls.Add(svgPictureBox1);
             MaximizeBox = false;
