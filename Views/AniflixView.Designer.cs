@@ -46,7 +46,7 @@
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
-            materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
+            SobreButton = new FontAwesome.Sharp.Material.MaterialButton();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)WebCanvas).BeginInit();
@@ -58,7 +58,7 @@
             // MenuPanel
             // 
             MenuPanel.BackColor = Color.FromArgb(31, 30, 68);
-            MenuPanel.Controls.Add(materialButton1);
+            MenuPanel.Controls.Add(SobreButton);
             MenuPanel.Controls.Add(SairButton);
             MenuPanel.Controls.Add(TrashflixButton);
             MenuPanel.Controls.Add(BreakOutSeriesButton);
@@ -405,16 +405,22 @@
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // materialButton1
+            // SobreButton
             // 
-            materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
-            materialButton1.IconColor = Color.Black;
-            materialButton1.Location = new Point(111, 751);
-            materialButton1.Name = "materialButton1";
-            materialButton1.Size = new Size(75, 23);
-            materialButton1.TabIndex = 12;
-            materialButton1.Text = "materialButton1";
-            materialButton1.UseVisualStyleBackColor = true;
+            SobreButton.Dock = DockStyle.Top;
+            SobreButton.FlatAppearance.BorderSize = 0;
+            SobreButton.FlatStyle = FlatStyle.Flat;
+            SobreButton.ForeColor = Color.White;
+            SobreButton.IconChar = FontAwesome.Sharp.MaterialIcons.None;
+            SobreButton.IconColor = Color.Black;
+            SobreButton.Location = new Point(0, 690);
+            SobreButton.Name = "SobreButton";
+            SobreButton.Size = new Size(258, 60);
+            SobreButton.TabIndex = 12;
+            SobreButton.Text = "Sobre";
+            SobreButton.TextAlign = ContentAlignment.MiddleLeft;
+            SobreButton.TextImageRelation = TextImageRelation.ImageBeforeText;
+            SobreButton.UseVisualStyleBackColor = true;
             // 
             // AniflixView
             // 
@@ -462,6 +468,6 @@
         private FontAwesome.Sharp.Material.MaterialButton AnimesButton;
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
         private SharpVectors.Renderers.Forms.SvgPictureBox WebCanvas;
-        private FontAwesome.Sharp.Material.MaterialButton materialButton1;
+        private FontAwesome.Sharp.Material.MaterialButton SobreButton;
     }
 }
