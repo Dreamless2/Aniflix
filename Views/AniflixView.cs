@@ -96,13 +96,12 @@ namespace Aniflix.Views
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
 
-            var (backgroundColor, accentColor) = GlobalFunctions.SelectThemeColors();
             GlobalVars.currentChildForm?.Close();
             GlobalVars.currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
             childForm.TitleColor = Color.FromArgb(255, 103, 90);   // #FF675A - Bittersweet
-            childForm.RectColor = backgroundColor;
+            childForm.RectColor = Color.FromArgb(255, 103, 90);   // #FF675A - Bittersweet
             childForm.BringToFront();
             childForm.Show();
             DesktopPanel.Controls.Add(childForm);
