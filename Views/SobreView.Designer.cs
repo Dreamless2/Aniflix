@@ -30,6 +30,7 @@
         {
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
+            uiButton1 = new Sunny.UI.UIButton();
             ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -52,10 +53,22 @@
             uiSymbolLabel1.TabIndex = 1;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
+            // uiButton1
+            // 
+            uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiButton1.Location = new Point(335, 712);
+            uiButton1.MinimumSize = new Size(1, 1);
+            uiButton1.Name = "uiButton1";
+            uiButton1.Size = new Size(310, 72);
+            uiButton1.TabIndex = 2;
+            uiButton1.Text = "uiButton1";
+            uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
+            Controls.Add(uiButton1);
             Controls.Add(uiSymbolLabel1);
             Controls.Add(svgPictureBox1);
             MaximizeBox = false;
@@ -72,5 +85,6 @@
 
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
+        private Sunny.UI.UIButton uiButton1;
     }
 }
