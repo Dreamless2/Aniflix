@@ -607,6 +607,7 @@
             Controls.Add(uiLabel1);
             ForeColor = Color.White;
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "FilmesView";
             RectColor = Color.FromArgb(18, 58, 92);
             Style = Sunny.UI.UIStyle.Custom;
