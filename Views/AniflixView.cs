@@ -107,6 +107,7 @@ namespace Aniflix.Views
                     TitleBarPanel.FillColor = backgroundColor;
                     TitleBarPanel.TitleColor = backgroundColor;
                     TitleBarPanel.TitleForeColor = accentColor;
+                    TitleBarPanel.rect
 
                     LogoPanel.BackColor = color;
                     LogoPanel.FillColor = color;
