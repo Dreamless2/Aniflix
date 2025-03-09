@@ -145,10 +145,11 @@ namespace Aniflix.Views
         }
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
+
             currentChildForm?.Close();
+            ActivateButton(btnSender);
             currentChildForm = childForm;
             childForm.TopLevel = false;
-            childo
             childForm.Dock = DockStyle.Fill;
             DesktopPanel.Controls.Add(childForm);
             DesktopPanel.Tag = childForm;
