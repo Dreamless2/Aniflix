@@ -37,7 +37,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "GoreSeriesView";
-            Text = "GoreSeriesView";
+            Text = "Gore - Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             ResumeLayout(false);
         }
