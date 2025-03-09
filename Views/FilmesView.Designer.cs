@@ -62,7 +62,7 @@
             CopiarButton = new FontAwesome.Sharp.Material.MaterialButton();
             InserirNovoButton = new FontAwesome.Sharp.Material.MaterialButton();
             EditarButton = new FontAwesome.Sharp.Material.MaterialButton();
-            materialButton4 = new FontAwesome.Sharp.Material.MaterialButton();
+            AnteriorButton = new FontAwesome.Sharp.Material.MaterialButton();
             materialButton5 = new FontAwesome.Sharp.Material.MaterialButton();
             DadosLabel = new Sunny.UI.UILabel();
             SuspendLayout();
@@ -523,19 +523,19 @@
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = true;
             // 
-            // materialButton4
+            // AnteriorButton
             // 
-            materialButton4.Font = new Font("Microsoft Sans Serif", 12F);
-            materialButton4.ForeColor = Color.Black;
-            materialButton4.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
-            materialButton4.IconColor = Color.Black;
-            materialButton4.Location = new Point(873, 773);
-            materialButton4.Name = "materialButton4";
-            materialButton4.Size = new Size(198, 91);
-            materialButton4.TabIndex = 50;
-            materialButton4.Text = "Anterior";
-            materialButton4.TextAlign = ContentAlignment.BottomLeft;
-            materialButton4.UseVisualStyleBackColor = true;
+            AnteriorButton.Font = new Font("Microsoft Sans Serif", 12F);
+            AnteriorButton.ForeColor = Color.Black;
+            AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
+            AnteriorButton.IconColor = Color.Black;
+            AnteriorButton.Location = new Point(873, 773);
+            AnteriorButton.Name = "AnteriorButton";
+            AnteriorButton.Size = new Size(198, 91);
+            AnteriorButton.TabIndex = 50;
+            AnteriorButton.Text = "Anterior";
+            AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
+            AnteriorButton.UseVisualStyleBackColor = true;
             // 
             // materialButton5
             // 
@@ -568,7 +568,7 @@
             ClientSize = new Size(1485, 899);
             Controls.Add(DadosLabel);
             Controls.Add(materialButton5);
-            Controls.Add(materialButton4);
+            Controls.Add(AnteriorButton);
             Controls.Add(EditarButton);
             Controls.Add(InserirNovoButton);
             Controls.Add(CopiarButton);
@@ -648,7 +648,7 @@
         private FontAwesome.Sharp.Material.MaterialButton CopiarButton;
         private FontAwesome.Sharp.Material.MaterialButton InserirNovoButton;
         private FontAwesome.Sharp.Material.MaterialButton EditarButton;
-        private FontAwesome.Sharp.Material.MaterialButton materialButton4;
+        private FontAwesome.Sharp.Material.MaterialButton AnteriorButton;
         private FontAwesome.Sharp.Material.MaterialButton materialButton5;
         private Sunny.UI.UILabel DadosLabel;
     }
