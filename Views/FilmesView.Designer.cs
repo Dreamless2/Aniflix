@@ -186,7 +186,7 @@
             uiLabel4.AutoSize = true;
             uiLabel4.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel4.ForeColor = Color.Black;
-            uiLabel4.Location = new Point(742, 241);
+            uiLabel4.Location = new Point(741, 276);
             uiLabel4.Name = "uiLabel4";
             uiLabel4.Size = new Size(159, 20);
             uiLabel4.TabIndex = 36;
@@ -251,7 +251,7 @@
             uiLabel7.AutoSize = true;
             uiLabel7.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel7.ForeColor = Color.Black;
-            uiLabel7.Location = new Point(32, 241);
+            uiLabel7.Location = new Point(32, 276);
             uiLabel7.Name = "uiLabel7";
             uiLabel7.Size = new Size(104, 20);
             uiLabel7.TabIndex = 36;
@@ -470,14 +470,14 @@
             // 
             SinopseText.FillColor = Color.White;
             SinopseText.Font = new Font("Microsoft Sans Serif", 12F);
-            SinopseText.Location = new Point(32, 142);
+            SinopseText.Location = new Point(303, 143);
             SinopseText.Margin = new Padding(4, 5, 4, 5);
             SinopseText.MinimumSize = new Size(1, 1);
             SinopseText.Name = "SinopseText";
             SinopseText.Padding = new Padding(2);
             SinopseText.RectColor = Color.Black;
             SinopseText.ShowText = false;
-            SinopseText.Size = new Size(886, 129);
+            SinopseText.Size = new Size(275, 129);
             SinopseText.TabIndex = 46;
             SinopseText.TextAlignment = ContentAlignment.MiddleCenter;
             // 
