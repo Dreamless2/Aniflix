@@ -40,6 +40,7 @@
             Movable = false;
             Name = "BreakOutSeriesView";
             Padding = new Padding(0);
+            ShowShadow = false;
             ShowTitle = false;
             Text = "BreakOut - Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
