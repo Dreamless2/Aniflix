@@ -152,7 +152,7 @@ namespace Aniflix.Views
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
-            childForm.TitleColor = accentColor;
+            childForm.TitleColor = SelectThemeColors();
             DesktopPanel.Controls.Add(childForm);
             DesktopPanel.Tag = childForm;
             childForm.BringToFront();
