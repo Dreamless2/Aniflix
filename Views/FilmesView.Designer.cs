@@ -72,7 +72,7 @@
             uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel1.ForeColor = Color.Black;
-            uiLabel1.Location = new Point(32, 58);
+            uiLabel1.Location = new Point(32, 49);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(123, 20);
             uiLabel1.TabIndex = 34;
@@ -81,7 +81,7 @@
             // CodigoText
             // 
             CodigoText.Font = new Font("Microsoft Sans Serif", 12F);
-            CodigoText.Location = new Point(32, 83);
+            CodigoText.Location = new Point(32, 74);
             CodigoText.Margin = new Padding(4, 5, 4, 5);
             CodigoText.MinimumSize = new Size(1, 16);
             CodigoText.Name = "CodigoText";
@@ -101,7 +101,7 @@
             AudioBox.ItemHoverColor = Color.FromArgb(155, 200, 255);
             AudioBox.Items.AddRange(new object[] { "Dublado", "Legendado", "Nacional", "Desconhecido" });
             AudioBox.ItemSelectForeColor = Color.FromArgb(235, 243, 255);
-            AudioBox.Location = new Point(768, 83);
+            AudioBox.Location = new Point(768, 74);
             AudioBox.Margin = new Padding(4, 5, 4, 5);
             AudioBox.MinimumSize = new Size(63, 0);
             AudioBox.Name = "AudioBox";
@@ -117,7 +117,7 @@
             // TituloText
             // 
             TituloText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloText.Location = new Point(204, 83);
+            TituloText.Location = new Point(204, 74);
             TituloText.Margin = new Padding(4, 5, 4, 5);
             TituloText.MinimumSize = new Size(1, 16);
             TituloText.Name = "TituloText";
@@ -134,7 +134,7 @@
             uiLabel2.AutoSize = true;
             uiLabel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel2.ForeColor = Color.Black;
-            uiLabel2.Location = new Point(768, 58);
+            uiLabel2.Location = new Point(768, 49);
             uiLabel2.Name = "uiLabel2";
             uiLabel2.Size = new Size(50, 20);
             uiLabel2.TabIndex = 37;
@@ -143,7 +143,7 @@
             // TituloOriginalText
             // 
             TituloOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloOriginalText.Location = new Point(32, 301);
+            TituloOriginalText.Location = new Point(32, 292);
             TituloOriginalText.Margin = new Padding(4, 5, 4, 5);
             TituloOriginalText.MinimumSize = new Size(1, 16);
             TituloOriginalText.Name = "TituloOriginalText";
@@ -160,7 +160,7 @@
             uiLabel3.AutoSize = true;
             uiLabel3.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel3.ForeColor = Color.Black;
-            uiLabel3.Location = new Point(204, 58);
+            uiLabel3.Location = new Point(204, 49);
             uiLabel3.Name = "uiLabel3";
             uiLabel3.Size = new Size(47, 20);
             uiLabel3.TabIndex = 36;
@@ -169,7 +169,7 @@
             // DataLancamentoText
             // 
             DataLancamentoText.Font = new Font("Microsoft Sans Serif", 12F);
-            DataLancamentoText.Location = new Point(742, 301);
+            DataLancamentoText.Location = new Point(742, 292);
             DataLancamentoText.Margin = new Padding(4, 5, 4, 5);
             DataLancamentoText.MinimumSize = new Size(1, 16);
             DataLancamentoText.Name = "DataLancamentoText";
@@ -186,7 +186,7 @@
             uiLabel4.AutoSize = true;
             uiLabel4.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel4.ForeColor = Color.Black;
-            uiLabel4.Location = new Point(741, 276);
+            uiLabel4.Location = new Point(741, 267);
             uiLabel4.Name = "uiLabel4";
             uiLabel4.Size = new Size(159, 20);
             uiLabel4.TabIndex = 36;
@@ -195,7 +195,7 @@
             // TituloAlternativoText
             // 
             TituloAlternativoText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloAlternativoText.Location = new Point(32, 360);
+            TituloAlternativoText.Location = new Point(32, 351);
             TituloAlternativoText.Margin = new Padding(4, 5, 4, 5);
             TituloAlternativoText.MinimumSize = new Size(1, 16);
             TituloAlternativoText.Name = "TituloAlternativoText";
@@ -213,7 +213,7 @@
             uiLabel5.AutoSize = true;
             uiLabel5.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel5.ForeColor = Color.Black;
-            uiLabel5.Location = new Point(32, 418);
+            uiLabel5.Location = new Point(32, 444);
             uiLabel5.Name = "uiLabel5";
             uiLabel5.Size = new Size(72, 20);
             uiLabel5.TabIndex = 36;
@@ -224,7 +224,7 @@
             uiLabel6.AutoSize = true;
             uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel6.ForeColor = Color.Black;
-            uiLabel6.Location = new Point(742, 360);
+            uiLabel6.Location = new Point(742, 385);
             uiLabel6.Name = "uiLabel6";
             uiLabel6.Size = new Size(85, 20);
             uiLabel6.TabIndex = 36;
@@ -233,7 +233,7 @@
             // uiTextBox7
             // 
             uiTextBox7.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox7.Location = new Point(32, 478);
+            uiTextBox7.Location = new Point(32, 469);
             uiTextBox7.Margin = new Padding(4, 5, 4, 5);
             uiTextBox7.MinimumSize = new Size(1, 16);
             uiTextBox7.Name = "uiTextBox7";
@@ -251,7 +251,7 @@
             uiLabel7.AutoSize = true;
             uiLabel7.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel7.ForeColor = Color.Black;
-            uiLabel7.Location = new Point(32, 276);
+            uiLabel7.Location = new Point(32, 267);
             uiLabel7.Name = "uiLabel7";
             uiLabel7.Size = new Size(104, 20);
             uiLabel7.TabIndex = 36;
@@ -260,14 +260,14 @@
             // TagsText
             // 
             TagsText.Font = new Font("Microsoft Sans Serif", 12F);
-            TagsText.Location = new Point(741, 361);
+            TagsText.Location = new Point(742, 352);
             TagsText.Margin = new Padding(4, 5, 4, 5);
             TagsText.MinimumSize = new Size(1, 16);
             TagsText.Name = "TagsText";
             TagsText.Padding = new Padding(5);
             TagsText.RectColor = Color.Black;
             TagsText.ShowText = false;
-            TagsText.Size = new Size(177, 29);
+            TagsText.Size = new Size(176, 29);
             TagsText.TabIndex = 37;
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
             TagsText.Watermark = "Tags";
@@ -277,7 +277,7 @@
             uiLabel8.AutoSize = true;
             uiLabel8.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel8.ForeColor = Color.Black;
-            uiLabel8.Location = new Point(32, 335);
+            uiLabel8.Location = new Point(32, 326);
             uiLabel8.Name = "uiLabel8";
             uiLabel8.Size = new Size(126, 20);
             uiLabel8.TabIndex = 36;
@@ -286,7 +286,7 @@
             // GeneroText
             // 
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(32, 537);
+            GeneroText.Location = new Point(32, 528);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
@@ -303,7 +303,7 @@
             uiLabel9.AutoSize = true;
             uiLabel9.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel9.ForeColor = Color.Black;
-            uiLabel9.Location = new Point(32, 453);
+            uiLabel9.Location = new Point(32, 385);
             uiLabel9.Name = "uiLabel9";
             uiLabel9.Size = new Size(47, 20);
             uiLabel9.TabIndex = 36;
@@ -312,7 +312,7 @@
             // FilmeText
             // 
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeText.Location = new Point(32, 419);
+            FilmeText.Location = new Point(32, 410);
             FilmeText.Margin = new Padding(4, 5, 4, 5);
             FilmeText.MinimumSize = new Size(1, 16);
             FilmeText.Name = "FilmeText";
@@ -329,7 +329,7 @@
             uiLabel10.AutoSize = true;
             uiLabel10.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel10.ForeColor = Color.Black;
-            uiLabel10.Location = new Point(32, 117);
+            uiLabel10.Location = new Point(32, 108);
             uiLabel10.Name = "uiLabel10";
             uiLabel10.Size = new Size(67, 20);
             uiLabel10.TabIndex = 36;
@@ -340,7 +340,7 @@
             uiLabel11.AutoSize = true;
             uiLabel11.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel11.ForeColor = Color.Black;
-            uiLabel11.Location = new Point(741, 335);
+            uiLabel11.Location = new Point(741, 326);
             uiLabel11.Name = "uiLabel11";
             uiLabel11.Size = new Size(44, 20);
             uiLabel11.TabIndex = 39;
@@ -351,7 +351,7 @@
             uiLabel12.AutoSize = true;
             uiLabel12.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel12.ForeColor = Color.Black;
-            uiLabel12.Location = new Point(32, 595);
+            uiLabel12.Location = new Point(32, 621);
             uiLabel12.Name = "uiLabel12";
             uiLabel12.Size = new Size(67, 20);
             uiLabel12.TabIndex = 40;
@@ -362,7 +362,7 @@
             uiLabel13.AutoSize = true;
             uiLabel13.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel13.ForeColor = Color.Black;
-            uiLabel13.Location = new Point(32, 654);
+            uiLabel13.Location = new Point(32, 680);
             uiLabel13.Name = "uiLabel13";
             uiLabel13.Size = new Size(63, 20);
             uiLabel13.TabIndex = 41;
@@ -373,7 +373,7 @@
             uiLabel14.AutoSize = true;
             uiLabel14.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel14.ForeColor = Color.Black;
-            uiLabel14.Location = new Point(32, 512);
+            uiLabel14.Location = new Point(32, 503);
             uiLabel14.Name = "uiLabel14";
             uiLabel14.Size = new Size(63, 20);
             uiLabel14.TabIndex = 42;
@@ -384,7 +384,7 @@
             uiLabel15.AutoSize = true;
             uiLabel15.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel15.ForeColor = Color.Black;
-            uiLabel15.Location = new Point(32, 571);
+            uiLabel15.Location = new Point(32, 562);
             uiLabel15.Name = "uiLabel15";
             uiLabel15.Size = new Size(57, 20);
             uiLabel15.TabIndex = 43;
@@ -393,7 +393,7 @@
             // DiretorText
             // 
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(32, 596);
+            DiretorText.Location = new Point(32, 587);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
@@ -408,7 +408,7 @@
             // EstrelasText
             // 
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(32, 655);
+            EstrelasText.Location = new Point(32, 646);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -423,7 +423,7 @@
             // EstudioText
             // 
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(32, 714);
+            EstudioText.Location = new Point(32, 705);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -438,7 +438,7 @@
             // FaseMCUText
             // 
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCUText.Location = new Point(742, 420);
+            FaseMCUText.Location = new Point(742, 411);
             FaseMCUText.Margin = new Padding(4, 5, 4, 5);
             FaseMCUText.MinimumSize = new Size(1, 16);
             FaseMCUText.Name = "FaseMCUText";
@@ -455,7 +455,7 @@
             // 
             ResumoText.FillColor = Color.White;
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
-            ResumoText.Location = new Point(926, 83);
+            ResumoText.Location = new Point(926, 74);
             ResumoText.Margin = new Padding(4, 5, 4, 5);
             ResumoText.MinimumSize = new Size(1, 1);
             ResumoText.Name = "ResumoText";
@@ -470,14 +470,14 @@
             // 
             SinopseText.FillColor = Color.White;
             SinopseText.Font = new Font("Microsoft Sans Serif", 12F);
-            SinopseText.Location = new Point(303, 143);
+            SinopseText.Location = new Point(32, 134);
             SinopseText.Margin = new Padding(4, 5, 4, 5);
             SinopseText.MinimumSize = new Size(1, 1);
             SinopseText.Name = "SinopseText";
             SinopseText.Padding = new Padding(2);
             SinopseText.RectColor = Color.Black;
             SinopseText.ShowText = false;
-            SinopseText.Size = new Size(275, 129);
+            SinopseText.Size = new Size(879, 129);
             SinopseText.TabIndex = 46;
             SinopseText.TextAlignment = ContentAlignment.MiddleCenter;
             // 
@@ -487,7 +487,7 @@
             materialButton1.ForeColor = Color.Black;
             materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             materialButton1.IconColor = Color.Black;
-            materialButton1.Location = new Point(173, 769);
+            materialButton1.Location = new Point(173, 760);
             materialButton1.Name = "materialButton1";
             materialButton1.Size = new Size(198, 91);
             materialButton1.TabIndex = 47;
@@ -501,7 +501,7 @@
             materialButton2.ForeColor = Color.Black;
             materialButton2.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             materialButton2.IconColor = Color.Black;
-            materialButton2.Location = new Point(402, 769);
+            materialButton2.Location = new Point(402, 760);
             materialButton2.Name = "materialButton2";
             materialButton2.Size = new Size(198, 91);
             materialButton2.TabIndex = 48;
@@ -515,7 +515,7 @@
             materialButton3.ForeColor = Color.Black;
             materialButton3.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             materialButton3.IconColor = Color.Black;
-            materialButton3.Location = new Point(643, 769);
+            materialButton3.Location = new Point(643, 760);
             materialButton3.Name = "materialButton3";
             materialButton3.Size = new Size(198, 91);
             materialButton3.TabIndex = 49;
@@ -529,7 +529,7 @@
             materialButton4.ForeColor = Color.Black;
             materialButton4.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             materialButton4.IconColor = Color.Black;
-            materialButton4.Location = new Point(885, 769);
+            materialButton4.Location = new Point(885, 760);
             materialButton4.Name = "materialButton4";
             materialButton4.Size = new Size(198, 91);
             materialButton4.TabIndex = 50;
@@ -543,7 +543,7 @@
             materialButton5.ForeColor = Color.Black;
             materialButton5.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             materialButton5.IconColor = Color.Black;
-            materialButton5.Location = new Point(1113, 769);
+            materialButton5.Location = new Point(1113, 760);
             materialButton5.Name = "materialButton5";
             materialButton5.Size = new Size(198, 91);
             materialButton5.TabIndex = 51;
@@ -566,7 +566,7 @@
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1485, 919);
+            ClientSize = new Size(1485, 901);
             Controls.Add(uiLabel16);
             Controls.Add(materialButton5);
             Controls.Add(materialButton4);
