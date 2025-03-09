@@ -64,7 +64,7 @@
             materialButton3 = new FontAwesome.Sharp.Material.MaterialButton();
             materialButton4 = new FontAwesome.Sharp.Material.MaterialButton();
             materialButton5 = new FontAwesome.Sharp.Material.MaterialButton();
-            uiLabel16 = new Sunny.UI.UILabel();
+            DadosLabel = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
             // CodigoFilmeLabel
@@ -455,14 +455,14 @@
             // 
             ResumoText.FillColor = Color.White;
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
-            ResumoText.Location = new Point(935, 201);
+            ResumoText.Location = new Point(935, 141);
             ResumoText.Margin = new Padding(4, 5, 4, 5);
             ResumoText.MinimumSize = new Size(1, 1);
             ResumoText.Name = "ResumoText";
             ResumoText.Padding = new Padding(2);
             ResumoText.RectColor = Color.Black;
             ResumoText.ShowText = false;
-            ResumoText.Size = new Size(527, 600);
+            ResumoText.Size = new Size(527, 660);
             ResumoText.TabIndex = 45;
             ResumoText.TextAlignment = ContentAlignment.TopLeft;
             // 
@@ -551,22 +551,22 @@
             materialButton5.TextAlign = ContentAlignment.BottomLeft;
             materialButton5.UseVisualStyleBackColor = true;
             // 
-            // uiLabel16
+            // DadosLabel
             // 
-            uiLabel16.AutoSize = true;
-            uiLabel16.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel16.ForeColor = Color.White;
-            uiLabel16.Location = new Point(926, 58);
-            uiLabel16.Name = "uiLabel16";
-            uiLabel16.Size = new Size(56, 20);
-            uiLabel16.TabIndex = 52;
-            uiLabel16.Text = "Dados";
+            DadosLabel.AutoSize = true;
+            DadosLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            DadosLabel.ForeColor = Color.Black;
+            DadosLabel.Location = new Point(935, 116);
+            DadosLabel.Name = "DadosLabel";
+            DadosLabel.Size = new Size(56, 20);
+            DadosLabel.TabIndex = 52;
+            DadosLabel.Text = "Dados";
             // 
             // FilmesView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1485, 1023);
-            Controls.Add(uiLabel16);
+            Controls.Add(DadosLabel);
             Controls.Add(materialButton5);
             Controls.Add(materialButton4);
             Controls.Add(materialButton3);
@@ -650,6 +650,6 @@
         private FontAwesome.Sharp.Material.MaterialButton materialButton3;
         private FontAwesome.Sharp.Material.MaterialButton materialButton4;
         private FontAwesome.Sharp.Material.MaterialButton materialButton5;
-        private Sunny.UI.UILabel uiLabel16;
+        private Sunny.UI.UILabel DadosLabel;
     }
 }
