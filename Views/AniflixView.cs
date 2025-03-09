@@ -146,13 +146,13 @@ namespace Aniflix.Views
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
 
-            var (background, accentColor) = SelectThemeColors();
+            var (_, accentColor) = SelectThemeColors();
             currentChildForm?.Close();
             ActivateButton(btnSender);
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
-            childForm.TitleColor = SelectThemeColors();
+            childForm.TitleColor = accentColor;
             DesktopPanel.Controls.Add(childForm);
             DesktopPanel.Tag = childForm;
             childForm.BringToFront();
