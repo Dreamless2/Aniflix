@@ -189,7 +189,7 @@ namespace Aniflix.Views
 
         private void AniflixView_Load(object sender, EventArgs e)
         {
-
+            LoadSvgFromUrlAsync(@"C:\source\Aniflix\Assets\AniflixLogo.svg");
         }
     }
 }
