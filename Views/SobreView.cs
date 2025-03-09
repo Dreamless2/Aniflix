@@ -11,11 +11,16 @@ using System.Collections.Generic;
 
 namespace Aniflix.Views
 {
-    public partial class SobreView: UIForm
+    public partial class SobreView : UIForm
     {
         public SobreView()
         {
             InitializeComponent();
+        }
+
+        private void uiLedLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,17 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiLedLabel1 = new Sunny.UI.UILedLabel();
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // svgPictureBox1
-            // 
-            svgPictureBox1.Location = new Point(96, 296);
-            svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(200, 200);
-            svgPictureBox1.TabIndex = 0;
             // 
             // uiLedLabel1
             // 
@@ -51,25 +42,22 @@
             uiLedLabel1.TabIndex = 1;
             uiLedLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             uiLedLabel1.TextAlign = ContentAlignment.TopLeft;
+            uiLedLabel1.Click += uiLedLabel1_Click;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1862, 828);
             Controls.Add(uiLedLabel1);
-            Controls.Add(svgPictureBox1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
         private Sunny.UI.UILedLabel uiLedLabel1;
     }
 }
