@@ -47,7 +47,7 @@
             GeneroText = new Sunny.UI.UITextBox();
             uiLabel9 = new Sunny.UI.UILabel();
             FilmeText = new Sunny.UI.UITextBox();
-            uiLabel10 = new Sunny.UI.UILabel();
+            SinopseLabel = new Sunny.UI.UILabel();
             uiLabel11 = new Sunny.UI.UILabel();
             uiLabel12 = new Sunny.UI.UILabel();
             uiLabel13 = new Sunny.UI.UILabel();
@@ -324,16 +324,16 @@
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
             FilmeText.Watermark = "Filme";
             // 
-            // uiLabel10
+            // SinopseLabel
             // 
-            uiLabel10.AutoSize = true;
-            uiLabel10.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel10.ForeColor = Color.Black;
-            uiLabel10.Location = new Point(41, 175);
-            uiLabel10.Name = "uiLabel10";
-            uiLabel10.Size = new Size(67, 20);
-            uiLabel10.TabIndex = 36;
-            uiLabel10.Text = "Sinopse";
+            SinopseLabel.AutoSize = true;
+            SinopseLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            SinopseLabel.ForeColor = Color.Black;
+            SinopseLabel.Location = new Point(41, 175);
+            SinopseLabel.Name = "SinopseLabel";
+            SinopseLabel.Size = new Size(67, 20);
+            SinopseLabel.TabIndex = 36;
+            SinopseLabel.Text = "Sinopse";
             // 
             // uiLabel11
             // 
@@ -597,7 +597,7 @@
             Controls.Add(uiLabel4);
             Controls.Add(TituloLabel);
             Controls.Add(uiLabel5);
-            Controls.Add(uiLabel10);
+            Controls.Add(SinopseLabel);
             Controls.Add(TituloText);
             Controls.Add(AudioLabel);
             Controls.Add(AudioBox);
@@ -633,7 +633,7 @@
         private Sunny.UI.UITextBox GeneroText;
         private Sunny.UI.UILabel uiLabel9;
         private Sunny.UI.UITextBox FilmeText;
-        private Sunny.UI.UILabel uiLabel10;
+        private Sunny.UI.UILabel SinopseLabel;
         private Sunny.UI.UITextBox DiretorText;
         private Sunny.UI.UITextBox EstrelasText;
         private Sunny.UI.UITextBox EstudioText;
