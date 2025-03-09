@@ -45,10 +45,10 @@
             TagsText = new Sunny.UI.UITextBox();
             TituloAlternativoLabel = new Sunny.UI.UILabel();
             GeneroText = new Sunny.UI.UITextBox();
-            uiLabel9 = new Sunny.UI.UILabel();
+            FilmeLabel = new Sunny.UI.UILabel();
             FilmeText = new Sunny.UI.UITextBox();
             SinopseLabel = new Sunny.UI.UILabel();
-            uiLabel11 = new Sunny.UI.UILabel();
+            TagsLabel = new Sunny.UI.UILabel();
             uiLabel12 = new Sunny.UI.UILabel();
             uiLabel13 = new Sunny.UI.UILabel();
             uiLabel14 = new Sunny.UI.UILabel();
@@ -298,16 +298,16 @@
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
             GeneroText.Watermark = "Gênero";
             // 
-            // uiLabel9
+            // FilmeLabel
             // 
-            uiLabel9.AutoSize = true;
-            uiLabel9.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel9.ForeColor = Color.Black;
-            uiLabel9.Location = new Point(41, 452);
-            uiLabel9.Name = "uiLabel9";
-            uiLabel9.Size = new Size(47, 20);
-            uiLabel9.TabIndex = 36;
-            uiLabel9.Text = "Filme";
+            FilmeLabel.AutoSize = true;
+            FilmeLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            FilmeLabel.ForeColor = Color.Black;
+            FilmeLabel.Location = new Point(41, 452);
+            FilmeLabel.Name = "FilmeLabel";
+            FilmeLabel.Size = new Size(47, 20);
+            FilmeLabel.TabIndex = 36;
+            FilmeLabel.Text = "Filme";
             // 
             // FilmeText
             // 
@@ -335,16 +335,16 @@
             SinopseLabel.TabIndex = 36;
             SinopseLabel.Text = "Sinopse";
             // 
-            // uiLabel11
+            // TagsLabel
             // 
-            uiLabel11.AutoSize = true;
-            uiLabel11.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel11.ForeColor = Color.Black;
-            uiLabel11.Location = new Point(750, 394);
-            uiLabel11.Name = "uiLabel11";
-            uiLabel11.Size = new Size(44, 20);
-            uiLabel11.TabIndex = 39;
-            uiLabel11.Text = "Tags";
+            TagsLabel.AutoSize = true;
+            TagsLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            TagsLabel.ForeColor = Color.Black;
+            TagsLabel.Location = new Point(750, 394);
+            TagsLabel.Name = "TagsLabel";
+            TagsLabel.Size = new Size(44, 20);
+            TagsLabel.TabIndex = 39;
+            TagsLabel.Text = "Tags";
             // 
             // uiLabel12
             // 
@@ -582,13 +582,13 @@
             Controls.Add(uiLabel14);
             Controls.Add(uiLabel13);
             Controls.Add(uiLabel12);
-            Controls.Add(uiLabel11);
+            Controls.Add(TagsLabel);
             Controls.Add(GeneroText);
             Controls.Add(uiTextBox7);
             Controls.Add(TagsText);
             Controls.Add(uiLabel6);
             Controls.Add(TituloAlternativoLabel);
-            Controls.Add(uiLabel9);
+            Controls.Add(FilmeLabel);
             Controls.Add(DataLancamentoText);
             Controls.Add(TituloOriginalLabel);
             Controls.Add(TituloOriginalText);
@@ -631,13 +631,13 @@
         private Sunny.UI.UITextBox TagsText;
         private Sunny.UI.UILabel TituloAlternativoLabel;
         private Sunny.UI.UITextBox GeneroText;
-        private Sunny.UI.UILabel uiLabel9;
+        private Sunny.UI.UILabel FilmeLabel;
         private Sunny.UI.UITextBox FilmeText;
         private Sunny.UI.UILabel SinopseLabel;
         private Sunny.UI.UITextBox DiretorText;
         private Sunny.UI.UITextBox EstrelasText;
         private Sunny.UI.UITextBox EstudioText;
-        private Sunny.UI.UILabel uiLabel11;
+        private Sunny.UI.UILabel TagsLabel;
         private Sunny.UI.UILabel uiLabel12;
         private Sunny.UI.UILabel uiLabel13;
         private Sunny.UI.UILabel uiLabel14;
