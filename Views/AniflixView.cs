@@ -71,7 +71,7 @@ namespace Aniflix.Views
                 Color.FromArgb(237, 90, 52),    // #ED5E34 - Laranja soda
                 Color.FromArgb(252,214,174),    // #FCD6AE - Abricó light
                 Color.FromArgb(221, 112, 95),   // #DD705F - Terra Cotta
-                Color.FromArgb(233, 72, 69),    // #E94845 - Rosa carmin
+                Color.FromArgb(122, 155, 142),  // #7A9B8E - Cinza golfinho
                 Color.FromArgb(240, 115, 55),   // #F07337 - Siena queimado
                 Color.FromArgb(1, 180, 155),    // #01B49B - Keppel
                 Color.FromArgb(243, 124, 52),   // #F37C34 - Cadmio
