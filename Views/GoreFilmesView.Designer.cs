@@ -35,6 +35,7 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1292, 887);
             MaximizeBox = false;
+            MinimizeBox = false;
             Name = "GoreFilmesView";
             Text = "GoreFilmesView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
