@@ -66,10 +66,10 @@
             // uiLedLabel1
             // 
             uiLedLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLedLabel1.Location = new Point(237, 104);
+            uiLedLabel1.Location = new Point(23, 41);
             uiLedLabel1.MinimumSize = new Size(1, 1);
             uiLedLabel1.Name = "uiLedLabel1";
-            uiLedLabel1.Size = new Size(100, 35);
+            uiLedLabel1.Size = new Size(1336, 35);
             uiLedLabel1.TabIndex = 0;
             uiLedLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
@@ -80,7 +80,7 @@
             uiSmoothLabel1.Name = "uiSmoothLabel1";
             uiSmoothLabel1.Size = new Size(300, 60);
             uiSmoothLabel1.TabIndex = 1;
-            uiSmoothLabel1.Text = "uiSmoothLabel1";
+            uiSmoothLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
             // uiSymbolLabel1
             // 
