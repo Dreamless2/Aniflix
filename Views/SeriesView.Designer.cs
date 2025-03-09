@@ -33,7 +33,7 @@
             // SeriesView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1499, 918);
             Name = "SeriesView";
             Text = "Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);

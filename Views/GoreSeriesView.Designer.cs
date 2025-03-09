@@ -34,6 +34,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1488, 995);
+            MaximizeBox = false;
             Name = "GoreSeriesView";
             Text = "GoreSeriesView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
