@@ -28,27 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            uiLedLabel1 = new Sunny.UI.UILedLabel();
             SuspendLayout();
-            // 
-            // uiLedLabel1
-            // 
-            uiLedLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLedLabel1.ForeColor = Color.Black;
-            uiLedLabel1.Location = new Point(36, 57);
-            uiLedLabel1.MinimumSize = new Size(1, 1);
-            uiLedLabel1.Name = "uiLedLabel1";
-            uiLedLabel1.Size = new Size(1555, 167);
-            uiLedLabel1.TabIndex = 1;
-            uiLedLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
-            uiLedLabel1.TextAlign = ContentAlignment.TopLeft;
-            uiLedLabel1.Click += uiLedLabel1_Click;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1862, 828);
-            Controls.Add(uiLedLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
@@ -58,6 +43,5 @@
         }
 
         #endregion
-        private Sunny.UI.UILedLabel uiLedLabel1;
     }
 }
