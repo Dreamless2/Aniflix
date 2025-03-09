@@ -218,7 +218,7 @@ namespace Aniflix.Views
 
         private void TrashflixButton_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, GlobalFunctions.RGBColors.color9);
+            ActivateButton(sender);
             OpenChildForm(new TrashflixView(), sender);
         }
         private void SairButton_Click(object sender, EventArgs e)
