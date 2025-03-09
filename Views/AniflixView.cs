@@ -97,8 +97,8 @@ namespace Aniflix.Views
 
                     currentBtn = (MaterialButton)btnSender;
                     currentBtn.BackColor = Color.FromArgb(37, 36, 81);
-                    currentBtn.ForeColor = color;
-                    currentBtn.IconColor = color;
+                    currentBtn.ForeColor = accentColor;
+                    currentBtn.IconColor = accentColor;
                     currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                     currentBtn.ImageAlign = ContentAlignment.MiddleRight;
 
