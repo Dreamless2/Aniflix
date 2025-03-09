@@ -34,7 +34,7 @@ namespace Aniflix.Functions
                     txt.BackColor = Color.FromArgb(2, 47, 86);
                     txt.ForeColor = Color.Gainsboro;
                     txt.FillColor = Color.FromArgb(2, 47, 86);
-                    txt.
+                    txt.RectColor = Color.FromArgb(2, 47, 86);
                 }
             }
         }
