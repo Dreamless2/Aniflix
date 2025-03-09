@@ -50,7 +50,7 @@
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(170, 35);
             uiSymbolLabel1.TabIndex = 1;
-            uiSymbolLabel1.Text = "uiSymbolLabel1";
+            uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
             // SobreView
             // 
