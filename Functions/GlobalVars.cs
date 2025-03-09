@@ -3,12 +3,12 @@ using FontAwesome.Sharp.Material;
 
 namespace Aniflix.Functions
 {
-    public class GlobalVars
+    public static class GlobalVars
     {
-        public readonly MaterialButton? currentBtn;
-        public readonly Panel? leftBorderBtn;
-        public readonly UIForm? currentChildForm;
-        public readonly Random? random;
+        public static readonly MaterialButton? currentBtn;
+        public static readonly Panel? leftBorderBtn;
+        public static readonly UIForm? currentChildForm;
+        public static readonly Random? random;
 
     }
 }
