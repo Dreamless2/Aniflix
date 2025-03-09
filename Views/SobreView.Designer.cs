@@ -31,7 +31,9 @@
             uiPanel1 = new Sunny.UI.UIPanel();
             uiPanel2 = new Sunny.UI.UIPanel();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
+            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiPanel1
@@ -49,6 +51,7 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(svgPictureBox1);
             uiPanel2.Controls.Add(uiSymbolLabel1);
             uiPanel2.Dock = DockStyle.Fill;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
@@ -64,12 +67,21 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiSymbolLabel1.Location = new Point(179, 260);
+            uiSymbolLabel1.Location = new Point(178, 258);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(1155, 35);
             uiSymbolLabel1.TabIndex = 2;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
+            // 
+            // svgPictureBox1
+            // 
+            svgPictureBox1.Location = new Point(370, 356);
+            svgPictureBox1.Name = "svgPictureBox1";
+            svgPictureBox1.Size = new Size(200, 200);
+            svgPictureBox1.Source = null;
+            svgPictureBox1.TabIndex = 3;
+            svgPictureBox1.XmlSource = null;
             // 
             // SobreView
             // 
@@ -83,6 +95,7 @@
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             uiPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -91,5 +104,6 @@
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
+        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
     }
 }
