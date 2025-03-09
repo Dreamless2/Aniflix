@@ -45,7 +45,7 @@ namespace Aniflix.Functions
                     rtxt.BackColor = Color.FromArgb(2, 47, 86);
                     rtxt.ForeColor = Color.Gainsboro;
                     rtxt.FillColor = Color.FromArgb(2, 47, 86);
-                    rtxt.RectColor = Color.FromArgb(2, 47, 86);
+                    rtxt.RectColor = ThemeColor.SecondaryColor;
                 }
             }
 
