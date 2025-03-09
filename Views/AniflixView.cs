@@ -108,7 +108,7 @@ namespace Aniflix.Views
                     LogoPanel.FillColor = backgroundColor;
                     MenuPanel.BackColor = ThemeColor.ChangeColorBrightness(backgroundColor, -0.55);
                     MenuPanel.FillColor = ThemeColor.ChangeColorBrightness(backgroundColor, -0.55);
-                    leftBorderBtn!.BackColor = ThemeColor.ChangeColorBrightness(backgroundColor, -0.55);
+                    leftBorderBtn!.BackColor = ThemeColor.ChangeColorBrightness(accentColor, -0.55);
                     leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                     leftBorderBtn.Visible = true;
                     leftBorderBtn.BringToFront();
