@@ -26,7 +26,7 @@ namespace Aniflix.Functions
                 {
                     lbl.ForeColor = ThemeColor.SecondaryColor;
                 }
-                
+
             }
         }
     }
