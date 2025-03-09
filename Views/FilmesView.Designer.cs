@@ -72,7 +72,7 @@
             uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel1.ForeColor = Color.Black;
-            uiLabel1.Location = new Point(41, 116);
+            uiLabel1.Location = new Point(44, 116);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(123, 20);
             uiLabel1.TabIndex = 34;
@@ -81,14 +81,14 @@
             // CodigoText
             // 
             CodigoText.Font = new Font("Microsoft Sans Serif", 12F);
-            CodigoText.Location = new Point(41, 141);
+            CodigoText.Location = new Point(44, 141);
             CodigoText.Margin = new Padding(4, 5, 4, 5);
             CodigoText.MinimumSize = new Size(1, 16);
             CodigoText.Name = "CodigoText";
             CodigoText.Padding = new Padding(5);
             CodigoText.RectColor = Color.Black;
             CodigoText.ShowText = false;
-            CodigoText.Size = new Size(164, 29);
+            CodigoText.Size = new Size(161, 29);
             CodigoText.TabIndex = 35;
             CodigoText.TextAlignment = ContentAlignment.MiddleLeft;
             CodigoText.Watermark = "Código do Filme";
@@ -143,14 +143,14 @@
             // TituloOriginalText
             // 
             TituloOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloOriginalText.Location = new Point(41, 359);
+            TituloOriginalText.Location = new Point(44, 359);
             TituloOriginalText.Margin = new Padding(4, 5, 4, 5);
             TituloOriginalText.MinimumSize = new Size(1, 16);
             TituloOriginalText.Name = "TituloOriginalText";
             TituloOriginalText.Padding = new Padding(5);
             TituloOriginalText.RectColor = Color.Black;
             TituloOriginalText.ShowText = false;
-            TituloOriginalText.Size = new Size(702, 29);
+            TituloOriginalText.Size = new Size(699, 29);
             TituloOriginalText.TabIndex = 37;
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
@@ -186,7 +186,7 @@
             uiLabel4.AutoSize = true;
             uiLabel4.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel4.ForeColor = Color.Black;
-            uiLabel4.Location = new Point(750, 334);
+            uiLabel4.Location = new Point(750, 335);
             uiLabel4.Name = "uiLabel4";
             uiLabel4.Size = new Size(159, 20);
             uiLabel4.TabIndex = 36;
@@ -195,14 +195,14 @@
             // TituloAlternativoText
             // 
             TituloAlternativoText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloAlternativoText.Location = new Point(41, 418);
+            TituloAlternativoText.Location = new Point(44, 418);
             TituloAlternativoText.Margin = new Padding(4, 5, 4, 5);
             TituloAlternativoText.MinimumSize = new Size(1, 16);
             TituloAlternativoText.Name = "TituloAlternativoText";
             TituloAlternativoText.Padding = new Padding(5);
             TituloAlternativoText.RectColor = Color.Black;
             TituloAlternativoText.ShowText = false;
-            TituloAlternativoText.Size = new Size(702, 29);
+            TituloAlternativoText.Size = new Size(699, 29);
             TituloAlternativoText.TabIndex = 37;
             TituloAlternativoText.Text = "--";
             TituloAlternativoText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -213,7 +213,7 @@
             uiLabel5.AutoSize = true;
             uiLabel5.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel5.ForeColor = Color.Black;
-            uiLabel5.Location = new Point(41, 511);
+            uiLabel5.Location = new Point(44, 511);
             uiLabel5.Name = "uiLabel5";
             uiLabel5.Size = new Size(72, 20);
             uiLabel5.TabIndex = 36;
@@ -224,7 +224,7 @@
             uiLabel6.AutoSize = true;
             uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel6.ForeColor = Color.Black;
-            uiLabel6.Location = new Point(751, 452);
+            uiLabel6.Location = new Point(751, 453);
             uiLabel6.Name = "uiLabel6";
             uiLabel6.Size = new Size(85, 20);
             uiLabel6.TabIndex = 36;
@@ -233,14 +233,14 @@
             // uiTextBox7
             // 
             uiTextBox7.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox7.Location = new Point(41, 536);
+            uiTextBox7.Location = new Point(44, 536);
             uiTextBox7.Margin = new Padding(4, 5, 4, 5);
             uiTextBox7.MinimumSize = new Size(1, 16);
             uiTextBox7.Name = "uiTextBox7";
             uiTextBox7.Padding = new Padding(5);
             uiTextBox7.RectColor = Color.Black;
             uiTextBox7.ShowText = false;
-            uiTextBox7.Size = new Size(886, 29);
+            uiTextBox7.Size = new Size(883, 29);
             uiTextBox7.TabIndex = 37;
             uiTextBox7.Text = "--";
             uiTextBox7.TextAlignment = ContentAlignment.MiddleLeft;
@@ -277,7 +277,7 @@
             uiLabel8.AutoSize = true;
             uiLabel8.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel8.ForeColor = Color.Black;
-            uiLabel8.Location = new Point(41, 393);
+            uiLabel8.Location = new Point(41, 394);
             uiLabel8.Name = "uiLabel8";
             uiLabel8.Size = new Size(126, 20);
             uiLabel8.TabIndex = 36;
@@ -286,14 +286,14 @@
             // GeneroText
             // 
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(41, 595);
+            GeneroText.Location = new Point(44, 595);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
             GeneroText.Padding = new Padding(5);
             GeneroText.RectColor = Color.Black;
             GeneroText.ShowText = false;
-            GeneroText.Size = new Size(886, 29);
+            GeneroText.Size = new Size(883, 29);
             GeneroText.TabIndex = 37;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
             GeneroText.Watermark = "Gênero";
@@ -312,14 +312,14 @@
             // FilmeText
             // 
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeText.Location = new Point(41, 477);
+            FilmeText.Location = new Point(44, 477);
             FilmeText.Margin = new Padding(4, 5, 4, 5);
             FilmeText.MinimumSize = new Size(1, 16);
             FilmeText.Name = "FilmeText";
             FilmeText.Padding = new Padding(5);
             FilmeText.RectColor = Color.Black;
             FilmeText.ShowText = false;
-            FilmeText.Size = new Size(702, 29);
+            FilmeText.Size = new Size(699, 29);
             FilmeText.TabIndex = 37;
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
             FilmeText.Watermark = "Filme";
@@ -340,7 +340,7 @@
             uiLabel11.AutoSize = true;
             uiLabel11.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel11.ForeColor = Color.Black;
-            uiLabel11.Location = new Point(750, 393);
+            uiLabel11.Location = new Point(750, 394);
             uiLabel11.Name = "uiLabel11";
             uiLabel11.Size = new Size(44, 20);
             uiLabel11.TabIndex = 39;
@@ -362,7 +362,7 @@
             uiLabel13.AutoSize = true;
             uiLabel13.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel13.ForeColor = Color.Black;
-            uiLabel13.Location = new Point(41, 747);
+            uiLabel13.Location = new Point(44, 747);
             uiLabel13.Name = "uiLabel13";
             uiLabel13.Size = new Size(63, 20);
             uiLabel13.TabIndex = 41;
@@ -393,14 +393,14 @@
             // DiretorText
             // 
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(41, 654);
+            DiretorText.Location = new Point(44, 654);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
             DiretorText.Padding = new Padding(5);
             DiretorText.RectColor = Color.Black;
             DiretorText.ShowText = false;
-            DiretorText.Size = new Size(886, 29);
+            DiretorText.Size = new Size(883, 29);
             DiretorText.TabIndex = 38;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
             DiretorText.Watermark = "Diretor";
@@ -408,14 +408,14 @@
             // EstrelasText
             // 
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(41, 713);
+            EstrelasText.Location = new Point(44, 713);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
             EstrelasText.Padding = new Padding(5);
             EstrelasText.RectColor = Color.Black;
             EstrelasText.ShowText = false;
-            EstrelasText.Size = new Size(886, 29);
+            EstrelasText.Size = new Size(883, 29);
             EstrelasText.TabIndex = 38;
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
             EstrelasText.Watermark = "Estrelas";
@@ -423,14 +423,14 @@
             // EstudioText
             // 
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(41, 772);
+            EstudioText.Location = new Point(44, 772);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
             EstudioText.Padding = new Padding(5);
             EstudioText.RectColor = Color.Black;
             EstudioText.ShowText = false;
-            EstudioText.Size = new Size(886, 29);
+            EstudioText.Size = new Size(883, 29);
             EstudioText.TabIndex = 38;
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
@@ -470,14 +470,14 @@
             // 
             SinopseText.FillColor = Color.White;
             SinopseText.Font = new Font("Microsoft Sans Serif", 12F);
-            SinopseText.Location = new Point(41, 201);
+            SinopseText.Location = new Point(44, 201);
             SinopseText.Margin = new Padding(4, 5, 4, 5);
             SinopseText.MinimumSize = new Size(1, 1);
             SinopseText.Name = "SinopseText";
             SinopseText.Padding = new Padding(2);
             SinopseText.RectColor = Color.Black;
             SinopseText.ShowText = false;
-            SinopseText.Size = new Size(879, 129);
+            SinopseText.Size = new Size(876, 129);
             SinopseText.TabIndex = 46;
             SinopseText.TextAlignment = ContentAlignment.MiddleCenter;
             // 
@@ -556,7 +556,7 @@
             uiLabel16.AutoSize = true;
             uiLabel16.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel16.ForeColor = Color.White;
-            uiLabel16.Location = new Point(926, 23);
+            uiLabel16.Location = new Point(926, 58);
             uiLabel16.Name = "uiLabel16";
             uiLabel16.Size = new Size(56, 20);
             uiLabel16.TabIndex = 52;
@@ -564,7 +564,6 @@
             // 
             // FilmesView
             // 
-            AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1485, 1023);
             Controls.Add(uiLabel16);
@@ -607,8 +606,6 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FilmesView";
-            Padding = new Padding(0);
-            ShowTitle = false;
             Text = "Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 1209, 709);
             Load += FilmesView_Load;
