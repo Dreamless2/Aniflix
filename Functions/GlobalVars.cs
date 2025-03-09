@@ -3,7 +3,7 @@ using FontAwesome.Sharp.Material;
 
 namespace Aniflix.Functions
 {
-    public abstract class GlobalVars
+    public static class GlobalVars
     {
         public static MaterialButton? currentBtn;
         public static Panel? leftBorderBtn;
