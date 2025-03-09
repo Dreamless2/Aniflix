@@ -189,18 +189,7 @@ namespace Aniflix.Views
 
         private void AniflixView_Load(object sender, EventArgs e)
         {
-            try
-            {
-                //string webUrl = "https://upload.wikimedia.org/wikipedia/commons/d/dd/PoliceCar.svg";
-                string webUrl = "https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/gallardo.svg";
-
-             
-            }
-            catch (Exception ex)
-            {
-                ReportError(ex);
-                return;
-            }
+            LoadSvgFromUrlAsync("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/gallardo.svg");
         }
     }
 }
