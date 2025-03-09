@@ -319,9 +319,8 @@
             WebCanvas.Location = new Point(0, 0);
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
-            WebCanvas.Source = null;
+            WebCanvas.SizeMode = PictureBoxSizeMode.StretchImage;
             WebCanvas.TabIndex = 0;
-            WebCanvas.XmlSource = null;
             // 
             // TitleBarPanel
             // 
