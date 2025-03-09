@@ -30,8 +30,6 @@
         {
             uiPanel1 = new Sunny.UI.UIPanel();
             uiPanel2 = new Sunny.UI.UIPanel();
-            uiLedLabel1 = new Sunny.UI.UILedLabel();
-            uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             uiPanel2.SuspendLayout();
             SuspendLayout();
@@ -46,13 +44,12 @@
             uiPanel1.Name = "uiPanel1";
             uiPanel1.Size = new Size(1598, 80);
             uiPanel1.TabIndex = 0;
+            uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // uiPanel2
             // 
             uiPanel2.Controls.Add(uiSymbolLabel1);
-            uiPanel2.Controls.Add(uiSmoothLabel1);
-            uiPanel2.Controls.Add(uiLedLabel1);
             uiPanel2.Dock = DockStyle.Fill;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel2.Location = new Point(0, 115);
@@ -61,26 +58,8 @@
             uiPanel2.Name = "uiPanel2";
             uiPanel2.Size = new Size(1598, 713);
             uiPanel2.TabIndex = 1;
+            uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // uiLedLabel1
-            // 
-            uiLedLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLedLabel1.Location = new Point(23, 41);
-            uiLedLabel1.MinimumSize = new Size(1, 1);
-            uiLedLabel1.Name = "uiLedLabel1";
-            uiLedLabel1.Size = new Size(1435, 35);
-            uiLedLabel1.TabIndex = 0;
-            uiLedLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
-            // 
-            // uiSmoothLabel1
-            // 
-            uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiSmoothLabel1.Location = new Point(133, 161);
-            uiSmoothLabel1.Name = "uiSmoothLabel1";
-            uiSmoothLabel1.Size = new Size(300, 60);
-            uiSmoothLabel1.TabIndex = 1;
-            uiSmoothLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
             // uiSymbolLabel1
             // 
@@ -111,8 +90,6 @@
 
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIPanel uiPanel2;
-        private Sunny.UI.UILedLabel uiLedLabel1;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
     }
 }
