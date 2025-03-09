@@ -38,8 +38,8 @@
             DataLancamentoText = new Sunny.UI.UITextBox();
             DataLancamentoLabel = new Sunny.UI.UILabel();
             TituloAlternativoText = new Sunny.UI.UITextBox();
-            uiLabel5 = new Sunny.UI.UILabel();
-            FaseMCULabel = new Sunny.UI.UILabel();
+            FranquiaLabel = new Sunny.UI.UILabel();
+            Fra = new Sunny.UI.UILabel();
             uiTextBox7 = new Sunny.UI.UITextBox();
             TituloOriginalLabel = new Sunny.UI.UILabel();
             TagsText = new Sunny.UI.UITextBox();
@@ -208,27 +208,27 @@
             TituloAlternativoText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloAlternativoText.Watermark = "Título Alternativo";
             // 
-            // uiLabel5
+            // FranquiaLabel
             // 
-            uiLabel5.AutoSize = true;
-            uiLabel5.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel5.ForeColor = Color.Black;
-            uiLabel5.Location = new Point(44, 511);
-            uiLabel5.Name = "uiLabel5";
-            uiLabel5.Size = new Size(72, 20);
-            uiLabel5.TabIndex = 36;
-            uiLabel5.Text = "Franquia";
+            FranquiaLabel.AutoSize = true;
+            FranquiaLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            FranquiaLabel.ForeColor = Color.Black;
+            FranquiaLabel.Location = new Point(44, 511);
+            FranquiaLabel.Name = "FranquiaLabel";
+            FranquiaLabel.Size = new Size(72, 20);
+            FranquiaLabel.TabIndex = 36;
+            FranquiaLabel.Text = "Franquia";
             // 
-            // FaseMCULabel
+            // Fra
             // 
-            FaseMCULabel.AutoSize = true;
-            FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCULabel.ForeColor = Color.Black;
-            FaseMCULabel.Location = new Point(751, 453);
-            FaseMCULabel.Name = "FaseMCULabel";
-            FaseMCULabel.Size = new Size(85, 20);
-            FaseMCULabel.TabIndex = 36;
-            FaseMCULabel.Text = "Fase MCU";
+            Fra.AutoSize = true;
+            Fra.Font = new Font("Microsoft Sans Serif", 12F);
+            Fra.ForeColor = Color.Black;
+            Fra.Location = new Point(751, 453);
+            Fra.Name = "Fra";
+            Fra.Size = new Size(85, 20);
+            Fra.TabIndex = 36;
+            Fra.Text = "Fase MCU";
             // 
             // uiTextBox7
             // 
@@ -586,7 +586,7 @@
             Controls.Add(GeneroText);
             Controls.Add(uiTextBox7);
             Controls.Add(TagsText);
-            Controls.Add(FaseMCULabel);
+            Controls.Add(Fra);
             Controls.Add(TituloAlternativoLabel);
             Controls.Add(FilmeLabel);
             Controls.Add(DataLancamentoText);
@@ -596,7 +596,7 @@
             Controls.Add(FilmeText);
             Controls.Add(DataLancamentoLabel);
             Controls.Add(TituloLabel);
-            Controls.Add(uiLabel5);
+            Controls.Add(FranquiaLabel);
             Controls.Add(SinopseLabel);
             Controls.Add(TituloText);
             Controls.Add(AudioLabel);
@@ -624,8 +624,8 @@
         private Sunny.UI.UITextBox DataLancamentoText;
         private Sunny.UI.UILabel DataLancamentoLabel;
         private Sunny.UI.UITextBox TituloAlternativoText;
-        private Sunny.UI.UILabel uiLabel5;
-        private Sunny.UI.UILabel FaseMCULabel;
+        private Sunny.UI.UILabel FranquiaLabel;
+        private Sunny.UI.UILabel Fra;
         private Sunny.UI.UITextBox uiTextBox7;
         private Sunny.UI.UILabel TituloOriginalLabel;
         private Sunny.UI.UITextBox TagsText;
