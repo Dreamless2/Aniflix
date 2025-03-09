@@ -45,10 +45,10 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiSymbolLabel1.Location = new Point(233, 320);
+            uiSymbolLabel1.Location = new Point(293, 388);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
-            uiSymbolLabel1.Size = new Size(170, 35);
+            uiSymbolLabel1.Size = new Size(559, 28);
             uiSymbolLabel1.TabIndex = 1;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
@@ -65,6 +65,7 @@
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
