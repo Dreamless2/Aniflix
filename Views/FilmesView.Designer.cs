@@ -608,7 +608,6 @@
             MinimizeBox = false;
             Name = "FilmesView";
             Padding = new Padding(0);
-            ShowRect = false;
             ShowTitle = false;
             Text = "Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 1209, 709);
