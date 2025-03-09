@@ -77,7 +77,7 @@ namespace Aniflix.Views
                 Color.FromArgb(1, 180, 155),    // #01B49B - Keppel
                 Color.FromArgb(243, 124, 52),   // #F37C34 - Cadmio
                 Color.FromArgb(255, 62, 115),   // #FF3E73 - Rose
-                Color.FromArgb(240, 195, 83),  // #F0C34C - Amarelo milho
+                Color.FromArgb(240, 195, 83),   // #F0C34C - Amarelo milho
                 Color.FromArgb(56, 147, 114),   // #388F72 - Esmeralda
             ];
 
