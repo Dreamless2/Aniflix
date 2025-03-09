@@ -393,9 +393,10 @@
             // 
             // svgPictureBox1
             // 
-            svgPictureBox1.Location = new Point(128, 35);
+            svgPictureBox1.Dock = DockStyle.Fill;
+            svgPictureBox1.Location = new Point(0, 0);
             svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(200, 200);
+            svgPictureBox1.Size = new Size(258, 90);
             svgPictureBox1.Source = null;
             svgPictureBox1.TabIndex = 0;
             svgPictureBox1.XmlSource = null;
