@@ -51,8 +51,8 @@
             TagsLabel = new Sunny.UI.UILabel();
             uiLabel12 = new Sunny.UI.UILabel();
             uiLabel13 = new Sunny.UI.UILabel();
-            uiLabel14 = new Sunny.UI.UILabel();
-            uiLabel15 = new Sunny.UI.UILabel();
+            GeneroLabel = new Sunny.UI.UILabel();
+            DiretorLabel = new Sunny.UI.UILabel();
             DiretorText = new Sunny.UI.UITextBox();
             EstrelasText = new Sunny.UI.UITextBox();
             EstudioText = new Sunny.UI.UITextBox();
@@ -368,27 +368,27 @@
             uiLabel13.TabIndex = 41;
             uiLabel13.Text = "Estúdio";
             // 
-            // uiLabel14
+            // GeneroLabel
             // 
-            uiLabel14.AutoSize = true;
-            uiLabel14.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel14.ForeColor = Color.Black;
-            uiLabel14.Location = new Point(41, 570);
-            uiLabel14.Name = "uiLabel14";
-            uiLabel14.Size = new Size(63, 20);
-            uiLabel14.TabIndex = 42;
-            uiLabel14.Text = "Gênero";
+            GeneroLabel.AutoSize = true;
+            GeneroLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            GeneroLabel.ForeColor = Color.Black;
+            GeneroLabel.Location = new Point(41, 570);
+            GeneroLabel.Name = "GeneroLabel";
+            GeneroLabel.Size = new Size(63, 20);
+            GeneroLabel.TabIndex = 42;
+            GeneroLabel.Text = "Gênero";
             // 
-            // uiLabel15
+            // DiretorLabel
             // 
-            uiLabel15.AutoSize = true;
-            uiLabel15.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel15.ForeColor = Color.Black;
-            uiLabel15.Location = new Point(41, 629);
-            uiLabel15.Name = "uiLabel15";
-            uiLabel15.Size = new Size(57, 20);
-            uiLabel15.TabIndex = 43;
-            uiLabel15.Text = "Diretor";
+            DiretorLabel.AutoSize = true;
+            DiretorLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            DiretorLabel.ForeColor = Color.Black;
+            DiretorLabel.Location = new Point(41, 629);
+            DiretorLabel.Name = "DiretorLabel";
+            DiretorLabel.Size = new Size(57, 20);
+            DiretorLabel.TabIndex = 43;
+            DiretorLabel.Text = "Diretor";
             // 
             // DiretorText
             // 
@@ -578,8 +578,8 @@
             Controls.Add(EstrelasText);
             Controls.Add(EstudioText);
             Controls.Add(FaseMCUText);
-            Controls.Add(uiLabel15);
-            Controls.Add(uiLabel14);
+            Controls.Add(DiretorLabel);
+            Controls.Add(GeneroLabel);
             Controls.Add(uiLabel13);
             Controls.Add(uiLabel12);
             Controls.Add(TagsLabel);
@@ -640,8 +640,8 @@
         private Sunny.UI.UILabel TagsLabel;
         private Sunny.UI.UILabel uiLabel12;
         private Sunny.UI.UILabel uiLabel13;
-        private Sunny.UI.UILabel uiLabel14;
-        private Sunny.UI.UILabel uiLabel15;
+        private Sunny.UI.UILabel GeneroLabel;
+        private Sunny.UI.UILabel DiretorLabel;
         private Sunny.UI.UITextBox FaseMCUText;
         private Sunny.UI.UIRichTextBox ResumoText;
         private Sunny.UI.UIRichTextBox SinopseText;
