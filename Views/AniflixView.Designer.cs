@@ -114,7 +114,7 @@
             SairButton.IconChar = FontAwesome.Sharp.MaterialIcons.ExitToApp;
             SairButton.IconColor = Color.White;
             SairButton.ImageAlign = ContentAlignment.MiddleLeft;
-            SairButton.Location = new Point(-7, 842);
+            SairButton.Location = new Point(3, 738);
             SairButton.Name = "SairButton";
             SairButton.Padding = new Padding(10, 0, 20, 0);
             SairButton.Size = new Size(258, 60);
