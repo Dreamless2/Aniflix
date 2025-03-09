@@ -33,9 +33,10 @@
             // BreakOutSeriesView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1315, 922);
             MaximizeBox = false;
             MinimizeBox = false;
+            Movable = false;
             Name = "BreakOutSeriesView";
             Text = "BreakOut - Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
