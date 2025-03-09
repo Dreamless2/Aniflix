@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "GoreFilmesView";
+            SuspendLayout();
+            // 
+            // GoreFilmesView
+            // 
+            AutoScaleMode = AutoScaleMode.None;
+            ClientSize = new Size(1292, 887);
+            Name = "GoreFilmesView";
+            Text = "GoreFilmesView";
+            ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            ResumeLayout(false);
         }
 
         #endregion
