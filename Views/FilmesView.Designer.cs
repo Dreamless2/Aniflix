@@ -72,7 +72,7 @@
             CodigoFilmeLabel.AutoSize = true;
             CodigoFilmeLabel.Font = new Font("Microsoft Sans Serif", 12F);
             CodigoFilmeLabel.ForeColor = Color.Black;
-            CodigoFilmeLabel.Location = new Point(44, 116);
+            CodigoFilmeLabel.Location = new Point(30, 62);
             CodigoFilmeLabel.Name = "CodigoFilmeLabel";
             CodigoFilmeLabel.Size = new Size(123, 20);
             CodigoFilmeLabel.TabIndex = 34;
@@ -81,7 +81,7 @@
             // CodigoText
             // 
             CodigoText.Font = new Font("Microsoft Sans Serif", 12F);
-            CodigoText.Location = new Point(44, 141);
+            CodigoText.Location = new Point(30, 87);
             CodigoText.Margin = new Padding(4, 5, 4, 5);
             CodigoText.MinimumSize = new Size(1, 16);
             CodigoText.Name = "CodigoText";
@@ -101,7 +101,7 @@
             AudioBox.ItemHoverColor = Color.FromArgb(155, 200, 255);
             AudioBox.Items.AddRange(new object[] { "Dublado", "Legendado", "Nacional", "Desconhecido" });
             AudioBox.ItemSelectForeColor = Color.FromArgb(235, 243, 255);
-            AudioBox.Location = new Point(777, 141);
+            AudioBox.Location = new Point(763, 87);
             AudioBox.Margin = new Padding(4, 5, 4, 5);
             AudioBox.MinimumSize = new Size(63, 0);
             AudioBox.Name = "AudioBox";
@@ -117,7 +117,7 @@
             // TituloText
             // 
             TituloText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloText.Location = new Point(213, 141);
+            TituloText.Location = new Point(199, 87);
             TituloText.Margin = new Padding(4, 5, 4, 5);
             TituloText.MinimumSize = new Size(1, 16);
             TituloText.Name = "TituloText";
@@ -134,7 +134,7 @@
             AudioLabel.AutoSize = true;
             AudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
             AudioLabel.ForeColor = Color.Black;
-            AudioLabel.Location = new Point(777, 116);
+            AudioLabel.Location = new Point(763, 62);
             AudioLabel.Name = "AudioLabel";
             AudioLabel.Size = new Size(50, 20);
             AudioLabel.TabIndex = 37;
@@ -143,7 +143,7 @@
             // TituloOriginalText
             // 
             TituloOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloOriginalText.Location = new Point(44, 359);
+            TituloOriginalText.Location = new Point(30, 305);
             TituloOriginalText.Margin = new Padding(4, 5, 4, 5);
             TituloOriginalText.MinimumSize = new Size(1, 16);
             TituloOriginalText.Name = "TituloOriginalText";
@@ -160,7 +160,7 @@
             TituloLabel.AutoSize = true;
             TituloLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TituloLabel.ForeColor = Color.Black;
-            TituloLabel.Location = new Point(213, 116);
+            TituloLabel.Location = new Point(199, 62);
             TituloLabel.Name = "TituloLabel";
             TituloLabel.Size = new Size(47, 20);
             TituloLabel.TabIndex = 36;
@@ -169,7 +169,7 @@
             // DataLancamentoText
             // 
             DataLancamentoText.Font = new Font("Microsoft Sans Serif", 12F);
-            DataLancamentoText.Location = new Point(751, 359);
+            DataLancamentoText.Location = new Point(737, 305);
             DataLancamentoText.Margin = new Padding(4, 5, 4, 5);
             DataLancamentoText.MinimumSize = new Size(1, 16);
             DataLancamentoText.Name = "DataLancamentoText";
@@ -186,7 +186,7 @@
             DataLancamentoLabel.AutoSize = true;
             DataLancamentoLabel.Font = new Font("Microsoft Sans Serif", 12F);
             DataLancamentoLabel.ForeColor = Color.Black;
-            DataLancamentoLabel.Location = new Point(750, 335);
+            DataLancamentoLabel.Location = new Point(736, 281);
             DataLancamentoLabel.Name = "DataLancamentoLabel";
             DataLancamentoLabel.Size = new Size(159, 20);
             DataLancamentoLabel.TabIndex = 36;
@@ -195,7 +195,7 @@
             // TituloAlternativoText
             // 
             TituloAlternativoText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloAlternativoText.Location = new Point(44, 418);
+            TituloAlternativoText.Location = new Point(30, 364);
             TituloAlternativoText.Margin = new Padding(4, 5, 4, 5);
             TituloAlternativoText.MinimumSize = new Size(1, 16);
             TituloAlternativoText.Name = "TituloAlternativoText";
@@ -213,7 +213,7 @@
             FranquiaLabel.AutoSize = true;
             FranquiaLabel.Font = new Font("Microsoft Sans Serif", 12F);
             FranquiaLabel.ForeColor = Color.Black;
-            FranquiaLabel.Location = new Point(44, 511);
+            FranquiaLabel.Location = new Point(30, 457);
             FranquiaLabel.Name = "FranquiaLabel";
             FranquiaLabel.Size = new Size(72, 20);
             FranquiaLabel.TabIndex = 36;
@@ -224,7 +224,7 @@
             Fra.AutoSize = true;
             Fra.Font = new Font("Microsoft Sans Serif", 12F);
             Fra.ForeColor = Color.Black;
-            Fra.Location = new Point(751, 453);
+            Fra.Location = new Point(737, 399);
             Fra.Name = "Fra";
             Fra.Size = new Size(85, 20);
             Fra.TabIndex = 36;
@@ -233,7 +233,7 @@
             // uiTextBox7
             // 
             uiTextBox7.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox7.Location = new Point(44, 536);
+            uiTextBox7.Location = new Point(30, 482);
             uiTextBox7.Margin = new Padding(4, 5, 4, 5);
             uiTextBox7.MinimumSize = new Size(1, 16);
             uiTextBox7.Name = "uiTextBox7";
@@ -251,7 +251,7 @@
             TituloOriginalLabel.AutoSize = true;
             TituloOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TituloOriginalLabel.ForeColor = Color.Black;
-            TituloOriginalLabel.Location = new Point(41, 334);
+            TituloOriginalLabel.Location = new Point(30, 280);
             TituloOriginalLabel.Name = "TituloOriginalLabel";
             TituloOriginalLabel.Size = new Size(104, 20);
             TituloOriginalLabel.TabIndex = 36;
@@ -260,7 +260,7 @@
             // TagsText
             // 
             TagsText.Font = new Font("Microsoft Sans Serif", 12F);
-            TagsText.Location = new Point(751, 419);
+            TagsText.Location = new Point(737, 365);
             TagsText.Margin = new Padding(4, 5, 4, 5);
             TagsText.MinimumSize = new Size(1, 16);
             TagsText.Name = "TagsText";
@@ -277,7 +277,7 @@
             TituloAlternativoLabel.AutoSize = true;
             TituloAlternativoLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TituloAlternativoLabel.ForeColor = Color.Black;
-            TituloAlternativoLabel.Location = new Point(41, 394);
+            TituloAlternativoLabel.Location = new Point(30, 340);
             TituloAlternativoLabel.Name = "TituloAlternativoLabel";
             TituloAlternativoLabel.Size = new Size(126, 20);
             TituloAlternativoLabel.TabIndex = 36;
@@ -286,7 +286,7 @@
             // GeneroText
             // 
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(44, 595);
+            GeneroText.Location = new Point(30, 541);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
@@ -303,7 +303,7 @@
             FilmeLabel.AutoSize = true;
             FilmeLabel.Font = new Font("Microsoft Sans Serif", 12F);
             FilmeLabel.ForeColor = Color.Black;
-            FilmeLabel.Location = new Point(41, 452);
+            FilmeLabel.Location = new Point(30, 398);
             FilmeLabel.Name = "FilmeLabel";
             FilmeLabel.Size = new Size(47, 20);
             FilmeLabel.TabIndex = 36;
@@ -312,7 +312,7 @@
             // FilmeText
             // 
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeText.Location = new Point(44, 477);
+            FilmeText.Location = new Point(30, 423);
             FilmeText.Margin = new Padding(4, 5, 4, 5);
             FilmeText.MinimumSize = new Size(1, 16);
             FilmeText.Name = "FilmeText";
@@ -329,7 +329,7 @@
             SinopseLabel.AutoSize = true;
             SinopseLabel.Font = new Font("Microsoft Sans Serif", 12F);
             SinopseLabel.ForeColor = Color.Black;
-            SinopseLabel.Location = new Point(41, 175);
+            SinopseLabel.Location = new Point(30, 121);
             SinopseLabel.Name = "SinopseLabel";
             SinopseLabel.Size = new Size(67, 20);
             SinopseLabel.TabIndex = 36;
@@ -340,7 +340,7 @@
             TagsLabel.AutoSize = true;
             TagsLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TagsLabel.ForeColor = Color.Black;
-            TagsLabel.Location = new Point(750, 394);
+            TagsLabel.Location = new Point(736, 340);
             TagsLabel.Name = "TagsLabel";
             TagsLabel.Size = new Size(44, 20);
             TagsLabel.TabIndex = 39;
@@ -351,7 +351,7 @@
             EstrelasLabel.AutoSize = true;
             EstrelasLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasLabel.ForeColor = Color.Black;
-            EstrelasLabel.Location = new Point(41, 688);
+            EstrelasLabel.Location = new Point(30, 634);
             EstrelasLabel.Name = "EstrelasLabel";
             EstrelasLabel.Size = new Size(67, 20);
             EstrelasLabel.TabIndex = 40;
@@ -362,7 +362,7 @@
             EstudioLabel.AutoSize = true;
             EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioLabel.ForeColor = Color.Black;
-            EstudioLabel.Location = new Point(44, 747);
+            EstudioLabel.Location = new Point(30, 693);
             EstudioLabel.Name = "EstudioLabel";
             EstudioLabel.Size = new Size(63, 20);
             EstudioLabel.TabIndex = 41;
@@ -373,7 +373,7 @@
             GeneroLabel.AutoSize = true;
             GeneroLabel.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroLabel.ForeColor = Color.Black;
-            GeneroLabel.Location = new Point(41, 570);
+            GeneroLabel.Location = new Point(30, 516);
             GeneroLabel.Name = "GeneroLabel";
             GeneroLabel.Size = new Size(63, 20);
             GeneroLabel.TabIndex = 42;
@@ -384,7 +384,7 @@
             DiretorLabel.AutoSize = true;
             DiretorLabel.Font = new Font("Microsoft Sans Serif", 12F);
             DiretorLabel.ForeColor = Color.Black;
-            DiretorLabel.Location = new Point(41, 629);
+            DiretorLabel.Location = new Point(30, 575);
             DiretorLabel.Name = "DiretorLabel";
             DiretorLabel.Size = new Size(57, 20);
             DiretorLabel.TabIndex = 43;
@@ -393,7 +393,7 @@
             // DiretorText
             // 
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(44, 654);
+            DiretorText.Location = new Point(30, 600);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
@@ -408,7 +408,7 @@
             // EstrelasText
             // 
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(44, 713);
+            EstrelasText.Location = new Point(30, 659);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -423,7 +423,7 @@
             // EstudioText
             // 
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(44, 772);
+            EstudioText.Location = new Point(30, 718);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -438,7 +438,7 @@
             // FaseMCUText
             // 
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCUText.Location = new Point(751, 478);
+            FaseMCUText.Location = new Point(737, 424);
             FaseMCUText.Margin = new Padding(4, 5, 4, 5);
             FaseMCUText.MinimumSize = new Size(1, 16);
             FaseMCUText.Name = "FaseMCUText";
@@ -455,7 +455,7 @@
             // 
             ResumoText.FillColor = Color.White;
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
-            ResumoText.Location = new Point(935, 141);
+            ResumoText.Location = new Point(921, 87);
             ResumoText.Margin = new Padding(4, 5, 4, 5);
             ResumoText.MinimumSize = new Size(1, 1);
             ResumoText.Name = "ResumoText";
@@ -470,7 +470,7 @@
             // 
             SinopseText.FillColor = Color.White;
             SinopseText.Font = new Font("Microsoft Sans Serif", 12F);
-            SinopseText.Location = new Point(44, 201);
+            SinopseText.Location = new Point(30, 147);
             SinopseText.Margin = new Padding(4, 5, 4, 5);
             SinopseText.MinimumSize = new Size(1, 1);
             SinopseText.Name = "SinopseText";
@@ -487,7 +487,7 @@
             materialButton1.ForeColor = Color.Black;
             materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             materialButton1.IconColor = Color.Black;
-            materialButton1.Location = new Point(182, 827);
+            materialButton1.Location = new Point(168, 773);
             materialButton1.Name = "materialButton1";
             materialButton1.Size = new Size(198, 91);
             materialButton1.TabIndex = 47;
@@ -501,7 +501,7 @@
             materialButton2.ForeColor = Color.Black;
             materialButton2.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             materialButton2.IconColor = Color.Black;
-            materialButton2.Location = new Point(411, 827);
+            materialButton2.Location = new Point(403, 773);
             materialButton2.Name = "materialButton2";
             materialButton2.Size = new Size(198, 91);
             materialButton2.TabIndex = 48;
@@ -515,7 +515,7 @@
             materialButton3.ForeColor = Color.Black;
             materialButton3.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             materialButton3.IconColor = Color.Black;
-            materialButton3.Location = new Point(652, 827);
+            materialButton3.Location = new Point(638, 773);
             materialButton3.Name = "materialButton3";
             materialButton3.Size = new Size(198, 91);
             materialButton3.TabIndex = 49;
@@ -529,7 +529,7 @@
             materialButton4.ForeColor = Color.Black;
             materialButton4.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             materialButton4.IconColor = Color.Black;
-            materialButton4.Location = new Point(894, 827);
+            materialButton4.Location = new Point(873, 773);
             materialButton4.Name = "materialButton4";
             materialButton4.Size = new Size(198, 91);
             materialButton4.TabIndex = 50;
@@ -543,7 +543,7 @@
             materialButton5.ForeColor = Color.Black;
             materialButton5.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             materialButton5.IconColor = Color.Black;
-            materialButton5.Location = new Point(1122, 827);
+            materialButton5.Location = new Point(1108, 773);
             materialButton5.Name = "materialButton5";
             materialButton5.Size = new Size(198, 91);
             materialButton5.TabIndex = 51;
@@ -556,7 +556,7 @@
             DadosLabel.AutoSize = true;
             DadosLabel.Font = new Font("Microsoft Sans Serif", 12F);
             DadosLabel.ForeColor = Color.Black;
-            DadosLabel.Location = new Point(935, 116);
+            DadosLabel.Location = new Point(921, 62);
             DadosLabel.Name = "DadosLabel";
             DadosLabel.Size = new Size(56, 20);
             DadosLabel.TabIndex = 52;
@@ -565,7 +565,7 @@
             // FilmesView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1485, 1023);
+            ClientSize = new Size(1485, 899);
             Controls.Add(DadosLabel);
             Controls.Add(materialButton5);
             Controls.Add(materialButton4);
