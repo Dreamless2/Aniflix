@@ -33,26 +33,26 @@ namespace Aniflix.Views
             // Paleta de fundos escuros
             List<Color> darkBackgrounds =
             [
-              Color.FromArgb(28, 40, 51),    // #1C2833 - Azul grafite
-              Color.FromArgb(22, 30, 41),    // #161E29 - Preto carvão profundo
-              Color.FromArgb(35, 45, 55),    // #232D37 - Azul aço
-              Color.FromArgb(17, 24, 39),    // #111827 - Azul meia-noite
-    Color.FromArgb(20, 29, 38),    // #141D26 - Azul petróleo intenso
-    Color.FromArgb(30, 30, 30),    // #1E1E1E - Preto carvão suave
-    Color.FromArgb(37, 37, 37),    // #252525 - Cinza asfalto
-    Color.FromArgb(23, 33, 43),    // #17212B - Azul carvão
-    Color.FromArgb(27, 38, 44),    // #1B262C - Azul aço profundo
-    Color.FromArgb(18, 32, 47),    // #12202F - Azul meia-noite intenso
-    Color.FromArgb(45, 52, 54),    // #2D3436 - Grafite elegante
-    Color.FromArgb(38, 50, 56),    // #263238 - Azul industrial
-    Color.FromArgb(25, 25, 28),    // #19191C - Preto fosco
-    Color.FromArgb(43, 45, 66),    // #2B2D42 - Azul noite
-    Color.FromArgb(15, 23, 42),    // #0F172A - Azul cobalto intenso
-    Color.FromArgb(12, 20, 28),    // #0C141C - Preto celestial
-    Color.FromArgb(33, 37, 41),    // #212529 - Preto cinza elegante
-    Color.FromArgb(19, 24, 29),    // #13181D - Azul eclipse
-    Color.FromArgb(30, 36, 48),    // #1E2430 - Preto grafite metálico
-    Color.FromArgb(44, 62, 80)     // #2C3E50 - Azul aço azulado
+                Color.FromArgb(28, 40, 51),    // #1C2833 - Azul grafite
+                Color.FromArgb(22, 30, 41),    // #161E29 - Preto carvão profundo
+                Color.FromArgb(35, 45, 55),    // #232D37 - Azul aço
+                Color.FromArgb(17, 24, 39),    // #111827 - Azul meia-noite
+                Color.FromArgb(20, 29, 38),    // #141D26 - Azul petróleo intenso
+                Color.FromArgb(30, 30, 30),    // #1E1E1E - Preto carvão suave
+                Color.FromArgb(37, 37, 37),    // #252525 - Cinza asfalto
+                Color.FromArgb(23, 33, 43),    // #17212B - Azul carvão
+                Color.FromArgb(27, 38, 44),    // #1B262C - Azul aço profundo
+                Color.FromArgb(18, 32, 47),    // #12202F - Azul meia-noite intenso
+                Color.FromArgb(45, 52, 54),    // #2D3436 - Grafite elegante
+                Color.FromArgb(38, 50, 56),    // #263238 - Azul industrial
+                Color.FromArgb(25, 25, 28),    // #19191C - Preto fosco
+                Color.FromArgb(43, 45, 66),    // #2B2D42 - Azul noite
+                Color.FromArgb(15, 23, 42),    // #0F172A - Azul cobalto intenso
+                Color.FromArgb(12, 20, 28),    // #0C141C - Preto celestial
+                Color.FromArgb(33, 37, 41),    // #212529 - Preto cinza elegante
+                Color.FromArgb(19, 24, 29),    // #13181D - Azul eclipse
+                Color.FromArgb(30, 36, 48),    // #1E2430 - Preto grafite metálico
+                Color.FromArgb(44, 62, 80)     // #2C3E50 - Azul aço azulado
             ];
 
             // Paleta de cores de destaque
