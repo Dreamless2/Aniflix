@@ -32,7 +32,7 @@
             CodigoText = new Sunny.UI.UITextBox();
             AudioBox = new Sunny.UI.UIComboBox();
             TituloText = new Sunny.UI.UITextBox();
-            uiLabel2 = new Sunny.UI.UILabel();
+            AudioLabel = new Sunny.UI.UILabel();
             TituloOriginalText = new Sunny.UI.UITextBox();
             TituloLabel = new Sunny.UI.UILabel();
             DataLancamentoText = new Sunny.UI.UITextBox();
@@ -129,16 +129,16 @@
             TituloText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloText.Watermark = "Título";
             // 
-            // uiLabel2
+            // AudioLabel
             // 
-            uiLabel2.AutoSize = true;
-            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel2.ForeColor = Color.Black;
-            uiLabel2.Location = new Point(777, 116);
-            uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(50, 20);
-            uiLabel2.TabIndex = 37;
-            uiLabel2.Text = "Áudio";
+            AudioLabel.AutoSize = true;
+            AudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            AudioLabel.ForeColor = Color.Black;
+            AudioLabel.Location = new Point(777, 116);
+            AudioLabel.Name = "AudioLabel";
+            AudioLabel.Size = new Size(50, 20);
+            AudioLabel.TabIndex = 37;
+            AudioLabel.Text = "Áudio";
             // 
             // TituloOriginalText
             // 
@@ -599,7 +599,7 @@
             Controls.Add(uiLabel5);
             Controls.Add(uiLabel10);
             Controls.Add(TituloText);
-            Controls.Add(uiLabel2);
+            Controls.Add(AudioLabel);
             Controls.Add(AudioBox);
             Controls.Add(CodigoText);
             Controls.Add(CodigoFilmeLabel);
@@ -618,7 +618,7 @@
         private Sunny.UI.UITextBox CodigoText;
         private Sunny.UI.UIComboBox AudioBox;
         private Sunny.UI.UITextBox TituloText;
-        private Sunny.UI.UILabel uiLabel2;
+        private Sunny.UI.UILabel AudioLabel;
         private Sunny.UI.UITextBox TituloOriginalText;
         private Sunny.UI.UILabel TituloLabel;
         private Sunny.UI.UITextBox DataLancamentoText;
