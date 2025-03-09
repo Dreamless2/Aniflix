@@ -67,7 +67,7 @@ namespace Aniflix.Views
 
                     TitleChildFormLabel.ForeColor = accentColor;
 
-                    this.TitleColor = backgroundColor;
+                    this.TitleColor = accentColor;
                 }
             }
         }
