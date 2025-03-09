@@ -137,6 +137,7 @@ namespace Aniflix.Views
         private void Reset()
         {
             DisableButton();
+            leftBorderBtn!.Visible = false;
             currentBtn = null;
             TitleBarPanel.BackColor = Color.FromArgb(0, 150, 136);
             MenuPanel.BackColor = Color.FromArgb(39, 39, 58);
