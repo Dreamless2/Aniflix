@@ -180,7 +180,7 @@ namespace Aniflix.Views
             }
             catch (Exception ex)
             {
-
+                throw new Exception($"Erro ao carregar o arquivo SVG: {ex.Message}");
             }
         }
 
