@@ -338,7 +338,7 @@
             TitleBarPanel.Name = "TitleBarPanel";
             TitleBarPanel.Padding = new Padding(1, 35, 1, 1);
             TitleBarPanel.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-            TitleBarPanel.RectColor = Color.FromArgb(0, 190, 172);
+            TitleBarPanel.RectColor = Color.FromArgb(21, 63, 77);
             TitleBarPanel.RectSides = ToolStripStatusLabelBorderSides.None;
             TitleBarPanel.ShowText = false;
             TitleBarPanel.Size = new Size(1563, 90);
