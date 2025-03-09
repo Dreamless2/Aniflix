@@ -1,4 +1,5 @@
-﻿using FontAwesome.Sharp.Material;
+﻿using Sunny.UI;
+using FontAwesome.Sharp.Material;
 
 namespace Aniflix.Functions
 {
@@ -17,6 +18,15 @@ namespace Aniflix.Functions
                     btn.FlatAppearance.BorderSize = 0;
                     btn.IconColor = Color.Gainsboro;
                 }
+            }
+
+            foreach (Control lbls in form.Controls)
+            {
+                if (lbls is UILabel lbl)
+                {
+                    lbl.ForeColor = ThemeColor.SecondaryColor;
+                }
+                
             }
         }
     }
