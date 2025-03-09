@@ -75,7 +75,7 @@ namespace Aniflix.Views
                 Color.FromArgb(240, 115, 55),   // #F07337 - Siena queimado
                 Color.FromArgb(1, 180, 155),    // #01B49B - Keppel
                 Color.FromArgb(243, 124, 52),   // #F37C34 - Cadmio
-                Color.FromArgb(0, 156, 82),     // #009C52 - Shamrock green
+                Color.FromArgb(57, 97, 83),     // #396553 - Jumbo
                 Color.FromArgb(105, 160, 108),  // #69A06C - Oxley
                 Color.FromArgb(56, 147, 114),   // #388F72 - Esmeralda
             ];
