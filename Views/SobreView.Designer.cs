@@ -30,6 +30,8 @@
         {
             uiPanel1 = new Sunny.UI.UIPanel();
             uiPanel2 = new Sunny.UI.UIPanel();
+            uiLedLabel1 = new Sunny.UI.UILedLabel();
+            uiPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // uiPanel1
@@ -46,6 +48,7 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(uiLedLabel1);
             uiPanel2.Dock = DockStyle.Fill;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel2.Location = new Point(0, 115);
@@ -55,6 +58,16 @@
             uiPanel2.Size = new Size(1598, 713);
             uiPanel2.TabIndex = 1;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiLedLabel1
+            // 
+            uiLedLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLedLabel1.Location = new Point(228, 177);
+            uiLedLabel1.MinimumSize = new Size(1, 1);
+            uiLedLabel1.Name = "uiLedLabel1";
+            uiLedLabel1.Size = new Size(100, 35);
+            uiLedLabel1.TabIndex = 0;
+            uiLedLabel1.Text = "uiLedLabel1";
             // 
             // SobreView
             // 
@@ -67,6 +80,7 @@
             Name = "SobreView";
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            uiPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -74,5 +88,6 @@
 
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIPanel uiPanel2;
+        private Sunny.UI.UILedLabel uiLedLabel1;
     }
 }
