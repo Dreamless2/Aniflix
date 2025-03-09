@@ -35,6 +35,7 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1203, 859);
             MaximizeBox = false;
+            MinimizeBox = false;
             Movable = false;
             Name = "AnimesView";
             Text = "Animes";
