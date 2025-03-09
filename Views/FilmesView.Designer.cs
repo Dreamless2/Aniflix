@@ -43,7 +43,7 @@
             uiTextBox7 = new Sunny.UI.UITextBox();
             TituloOriginalLabel = new Sunny.UI.UILabel();
             TagsText = new Sunny.UI.UITextBox();
-            uiLabel8 = new Sunny.UI.UILabel();
+            TituloAlternativoLabel = new Sunny.UI.UILabel();
             GeneroText = new Sunny.UI.UITextBox();
             uiLabel9 = new Sunny.UI.UILabel();
             FilmeText = new Sunny.UI.UITextBox();
@@ -272,16 +272,16 @@
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
             TagsText.Watermark = "Tags";
             // 
-            // uiLabel8
+            // TituloAlternativoLabel
             // 
-            uiLabel8.AutoSize = true;
-            uiLabel8.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel8.ForeColor = Color.Black;
-            uiLabel8.Location = new Point(41, 394);
-            uiLabel8.Name = "uiLabel8";
-            uiLabel8.Size = new Size(126, 20);
-            uiLabel8.TabIndex = 36;
-            uiLabel8.Text = "Título Alternativo";
+            TituloAlternativoLabel.AutoSize = true;
+            TituloAlternativoLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            TituloAlternativoLabel.ForeColor = Color.Black;
+            TituloAlternativoLabel.Location = new Point(41, 394);
+            TituloAlternativoLabel.Name = "TituloAlternativoLabel";
+            TituloAlternativoLabel.Size = new Size(126, 20);
+            TituloAlternativoLabel.TabIndex = 36;
+            TituloAlternativoLabel.Text = "Título Alternativo";
             // 
             // GeneroText
             // 
@@ -587,7 +587,7 @@
             Controls.Add(uiTextBox7);
             Controls.Add(TagsText);
             Controls.Add(uiLabel6);
-            Controls.Add(uiLabel8);
+            Controls.Add(TituloAlternativoLabel);
             Controls.Add(uiLabel9);
             Controls.Add(DataLancamentoText);
             Controls.Add(TituloOriginalLabel);
@@ -629,7 +629,7 @@
         private Sunny.UI.UITextBox uiTextBox7;
         private Sunny.UI.UILabel TituloOriginalLabel;
         private Sunny.UI.UITextBox TagsText;
-        private Sunny.UI.UILabel uiLabel8;
+        private Sunny.UI.UILabel TituloAlternativoLabel;
         private Sunny.UI.UITextBox GeneroText;
         private Sunny.UI.UILabel uiLabel9;
         private Sunny.UI.UITextBox FilmeText;
