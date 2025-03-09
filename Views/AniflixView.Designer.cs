@@ -319,7 +319,9 @@
             WebCanvas.Location = new Point(0, 0);
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
+            WebCanvas.Source = null;
             WebCanvas.TabIndex = 0;
+            WebCanvas.XmlSource = null;
             // 
             // TitleBarPanel
             // 
@@ -415,6 +417,7 @@
             Text = "AniflixView";
             TitleColor = Color.FromArgb(0, 150, 136);
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            Load += AniflixView_Load;
             MenuPanel.ResumeLayout(false);
             LogoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)WebCanvas).EndInit();

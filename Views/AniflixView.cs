@@ -165,5 +165,10 @@ namespace Aniflix.Views
         {
             Application.Exit();
         }
+
+        private void AniflixView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
