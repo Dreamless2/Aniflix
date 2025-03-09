@@ -171,7 +171,7 @@ namespace Aniflix.Views
 
         private async void LoadSvgFromUrlAsync(string fileUrl)
         {
-            using HttpClient client = new HttpClient();
+            using HttpClient client = new();
             try
             {
                 byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
