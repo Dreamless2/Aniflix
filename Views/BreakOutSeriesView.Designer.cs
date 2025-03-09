@@ -32,16 +32,12 @@
             // 
             // BreakOutSeriesView
             // 
-            AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1315, 922);
             MaximizeBox = false;
             MinimizeBox = false;
             Movable = false;
             Name = "BreakOutSeriesView";
-            Padding = new Padding(0);
-            ShowShadow = false;
-            ShowTitle = false;
             Text = "BreakOut - Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             ResumeLayout(false);
