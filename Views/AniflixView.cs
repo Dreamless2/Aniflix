@@ -102,10 +102,10 @@ namespace Aniflix.Views
                     currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                     currentBtn.ImageAlign = ContentAlignment.MiddleRight;
 
-                    TitleBarPanel.BackColor = Color.FromArgb(37, 36, 81);
-                    TitleBarPanel.FillColor = Color.FromArgb(37, 36, 81);
-                    TitleBarPanel.TitleColor = Color.Gainsboro;
-                    TitleBarPanel.TitleForeColor = Color.Gainsboro;
+                    TitleBarPanel.BackColor = backgroundColor;
+                    TitleBarPanel.FillColor = backgroundColor;
+                    TitleBarPanel.TitleColor = backgroundColor;
+                    TitleBarPanel.TitleForeColor = accentColor;
 
                     LogoPanel.BackColor = Color.FromArgb(37, 36, 81);
                     LogoPanel.FillColor = Color.FromArgb(37, 36, 81);
