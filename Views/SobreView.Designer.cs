@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
+            uiLedLabel1 = new Sunny.UI.UILedLabel();
             ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -37,14 +38,23 @@
             svgPictureBox1.Location = new Point(96, 296);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(200, 200);
-            svgPictureBox1.Source = null;
             svgPictureBox1.TabIndex = 0;
-            svgPictureBox1.XmlSource = null;
+            // 
+            // uiLedLabel1
+            // 
+            uiLedLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLedLabel1.Location = new Point(61, 193);
+            uiLedLabel1.MinimumSize = new Size(1, 1);
+            uiLedLabel1.Name = "uiLedLabel1";
+            uiLedLabel1.Size = new Size(100, 35);
+            uiLedLabel1.TabIndex = 1;
+            uiLedLabel1.Text = "uiLedLabel1";
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(817, 631);
+            Controls.Add(uiLedLabel1);
             Controls.Add(svgPictureBox1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -58,5 +68,6 @@
         #endregion
 
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
+        private Sunny.UI.UILedLabel uiLedLabel1;
     }
 }
