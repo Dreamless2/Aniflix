@@ -111,7 +111,7 @@ namespace Aniflix.Functions
                 Color.FromArgb(240, 115, 55),   // #F07337 - Siena queimado
                 Color.FromArgb(1, 180, 155),    // #01B49B - Keppel
                 Color.FromArgb(243, 124, 52),   // #F37C34 - Cadmio
-                Color.FromArgb(255, 62, 115),   // #FF3E73 - Rose
+                Color.FromArgb(202, 63, 22),    // #CA3F16 - Choco
                 Color.FromArgb(255, 78, 69),    // #FF4E45 - Branco perfeito
                 Color.FromArgb(56, 147, 114),   // #388F72 - Esmeralda
                 Color.FromArgb(230, 143, 21),   // #E68F15 - Gamboge
