@@ -169,8 +169,8 @@ namespace Aniflix.Views
 
         private void SVGDownloader()
         {
-            try
-        }
+            // download stream from svg file
+            // https://stackoverflow.com/questions/10625539/download-stream-from-svg-file
 
         private void AniflixView_Load(object sender, EventArgs e)
         {
