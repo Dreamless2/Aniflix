@@ -33,7 +33,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(852, 695);
+            ClientSize = new Size(817, 631);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
