@@ -202,7 +202,7 @@ namespace Aniflix.Views
                         // Disposing the response will close the response stream.
                         var webStream = response.GetResponseStream();
                         // The control will copy the stream to memory to avoid disposing issues
-                        webSvgCanvas.StreamSource = webStream;
+                        WebCanvas.StreamSource = webStream;
                     }
                 }
             }
