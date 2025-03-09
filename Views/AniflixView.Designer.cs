@@ -30,7 +30,6 @@
         {
             MenuPanel = new Sunny.UI.UIPanel();
             SobreButton = new FontAwesome.Sharp.Material.MaterialButton();
-            SairButton = new FontAwesome.Sharp.Material.MaterialButton();
             TrashflixButton = new FontAwesome.Sharp.Material.MaterialButton();
             BreakOutSeriesButton = new FontAwesome.Sharp.Material.MaterialButton();
             BreakOutFilmesButton = new FontAwesome.Sharp.Material.MaterialButton();
@@ -47,6 +46,7 @@
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
+            materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)WebCanvas).BeginInit();
@@ -58,8 +58,8 @@
             // MenuPanel
             // 
             MenuPanel.BackColor = Color.FromArgb(31, 30, 68);
+            MenuPanel.Controls.Add(materialButton1);
             MenuPanel.Controls.Add(SobreButton);
-            MenuPanel.Controls.Add(SairButton);
             MenuPanel.Controls.Add(TrashflixButton);
             MenuPanel.Controls.Add(BreakOutSeriesButton);
             MenuPanel.Controls.Add(BreakOutFilmesButton);
@@ -95,7 +95,7 @@
             SobreButton.IconChar = FontAwesome.Sharp.MaterialIcons.Information;
             SobreButton.IconColor = Color.White;
             SobreButton.ImageAlign = ContentAlignment.MiddleLeft;
-            SobreButton.Location = new Point(0, 690);
+            SobreButton.Location = new Point(0, 630);
             SobreButton.Name = "SobreButton";
             SobreButton.Padding = new Padding(10, 0, 20, 0);
             SobreButton.Size = new Size(258, 60);
@@ -104,27 +104,6 @@
             SobreButton.TextAlign = ContentAlignment.MiddleLeft;
             SobreButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             SobreButton.UseVisualStyleBackColor = true;
-            // 
-            // SairButton
-            // 
-            SairButton.Dock = DockStyle.Top;
-            SairButton.FlatAppearance.BorderSize = 0;
-            SairButton.FlatStyle = FlatStyle.Flat;
-            SairButton.Font = new Font("Microsoft Sans Serif", 12F);
-            SairButton.ForeColor = Color.White;
-            SairButton.IconChar = FontAwesome.Sharp.MaterialIcons.ExitToApp;
-            SairButton.IconColor = Color.White;
-            SairButton.ImageAlign = ContentAlignment.MiddleLeft;
-            SairButton.Location = new Point(0, 630);
-            SairButton.Name = "SairButton";
-            SairButton.Padding = new Padding(10, 0, 20, 0);
-            SairButton.Size = new Size(258, 60);
-            SairButton.TabIndex = 11;
-            SairButton.Text = "Sair";
-            SairButton.TextAlign = ContentAlignment.MiddleLeft;
-            SairButton.TextImageRelation = TextImageRelation.ImageBeforeText;
-            SairButton.UseVisualStyleBackColor = true;
-            SairButton.Click += SairButton_Click;
             // 
             // TrashflixButton
             // 
@@ -341,9 +320,7 @@
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
             WebCanvas.SizeMode = PictureBoxSizeMode.CenterImage;
-            WebCanvas.Source = null;
             WebCanvas.TabIndex = 0;
-            WebCanvas.XmlSource = null;
             WebCanvas.Click += WebCanvas_Click;
             // 
             // TitleBarPanel
@@ -424,6 +401,25 @@
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
+            // materialButton1
+            // 
+            materialButton1.Dock = DockStyle.Top;
+            materialButton1.FlatAppearance.BorderSize = 0;
+            materialButton1.FlatStyle = FlatStyle.Flat;
+            materialButton1.ForeColor = Color.White;
+            materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.Information;
+            materialButton1.IconColor = Color.White;
+            materialButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            materialButton1.Location = new Point(0, 690);
+            materialButton1.Name = "materialButton1";
+            materialButton1.Padding = new Padding(10, 0, 20, 0);
+            materialButton1.Size = new Size(258, 60);
+            materialButton1.TabIndex = 13;
+            materialButton1.Text = "Sobre";
+            materialButton1.TextAlign = ContentAlignment.MiddleLeft;
+            materialButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            materialButton1.UseVisualStyleBackColor = true;
+            // 
             // AniflixView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -460,7 +456,6 @@
         private Sunny.UI.UILabel TitleChildFormLabel;
         private FontAwesome.Sharp.Material.MaterialPictureBox CurrentChildFormBox;
         private FontAwesome.Sharp.Material.MaterialButton FilmesButton;
-        private FontAwesome.Sharp.Material.MaterialButton SairButton;
         private FontAwesome.Sharp.Material.MaterialButton TrashflixButton;
         private FontAwesome.Sharp.Material.MaterialButton BreakOutSeriesButton;
         private FontAwesome.Sharp.Material.MaterialButton BreakOutFilmesButton;
@@ -471,5 +466,6 @@
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
         private SharpVectors.Renderers.Forms.SvgPictureBox WebCanvas;
         private FontAwesome.Sharp.Material.MaterialButton SobreButton;
+        private FontAwesome.Sharp.Material.MaterialButton materialButton1;
     }
 }
