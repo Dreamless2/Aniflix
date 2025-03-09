@@ -95,7 +95,6 @@ namespace Aniflix.Views
         }
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
-
             GlobalVars.currentChildForm?.Close();
             GlobalVars.currentChildForm = childForm;
             childForm.TopLevel = false;
