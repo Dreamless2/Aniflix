@@ -95,7 +95,7 @@
             SobreButton.IconChar = FontAwesome.Sharp.MaterialIcons.Information;
             SobreButton.IconColor = Color.White;
             SobreButton.ImageAlign = ContentAlignment.MiddleLeft;
-            SobreButton.Location = new Point(0, 690);
+            SobreButton.Location = new Point(0, 630);
             SobreButton.Name = "SobreButton";
             SobreButton.Padding = new Padding(10, 0, 20, 0);
             SobreButton.Size = new Size(258, 60);
@@ -107,7 +107,6 @@
             // 
             // SairButton
             // 
-            SairButton.Dock = DockStyle.Top;
             SairButton.FlatAppearance.BorderSize = 0;
             SairButton.FlatStyle = FlatStyle.Flat;
             SairButton.Font = new Font("Microsoft Sans Serif", 12F);
@@ -341,7 +340,9 @@
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
             WebCanvas.SizeMode = PictureBoxSizeMode.CenterImage;
+            WebCanvas.Source = null;
             WebCanvas.TabIndex = 0;
+            WebCanvas.XmlSource = null;
             WebCanvas.Click += WebCanvas_Click;
             // 
             // TitleBarPanel
