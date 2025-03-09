@@ -31,6 +31,8 @@
             uiPanel1 = new Sunny.UI.UIPanel();
             uiPanel2 = new Sunny.UI.UIPanel();
             uiLedLabel1 = new Sunny.UI.UILedLabel();
+            uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
+            uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             uiPanel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -48,6 +50,8 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(uiSymbolLabel1);
+            uiPanel2.Controls.Add(uiSmoothLabel1);
             uiPanel2.Controls.Add(uiLedLabel1);
             uiPanel2.Dock = DockStyle.Fill;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
@@ -69,6 +73,25 @@
             uiLedLabel1.TabIndex = 0;
             uiLedLabel1.Text = "uiLedLabel1";
             // 
+            // uiSmoothLabel1
+            // 
+            uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiSmoothLabel1.Location = new Point(133, 161);
+            uiSmoothLabel1.Name = "uiSmoothLabel1";
+            uiSmoothLabel1.Size = new Size(300, 60);
+            uiSmoothLabel1.TabIndex = 1;
+            uiSmoothLabel1.Text = "uiSmoothLabel1";
+            // 
+            // uiSymbolLabel1
+            // 
+            uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiSymbolLabel1.Location = new Point(640, 152);
+            uiSymbolLabel1.MinimumSize = new Size(1, 1);
+            uiSymbolLabel1.Name = "uiSymbolLabel1";
+            uiSymbolLabel1.Size = new Size(170, 35);
+            uiSymbolLabel1.TabIndex = 2;
+            uiSymbolLabel1.Text = "uiSymbolLabel1";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -89,5 +112,7 @@
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UILedLabel uiLedLabel1;
+        private Sunny.UI.UISmoothLabel uiSmoothLabel1;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel1;
     }
 }
