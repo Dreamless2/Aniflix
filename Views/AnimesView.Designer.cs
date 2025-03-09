@@ -33,7 +33,7 @@
             // AnimesView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1203, 859);
             MaximizeBox = false;
             Movable = false;
             Name = "AnimesView";
