@@ -116,8 +116,8 @@ namespace Aniflix.Views
                     ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(backgroundColor, -0.3);
                     CurrentChildFormBox.IconChar = currentBtn.IconChar;
                     CurrentChildFormBox.IconColor = accentColor;
-                    CurrentChildFormBox.ForeColor = Color.Gainsboro;
-                    TitleChildFormLabel.ForeColor = Color.Gainsboro;
+                    CurrentChildFormBox.ForeColor = accentColor;
+                    TitleChildFormLabel.ForeColor = accentColor;
                 }
             }
         }
