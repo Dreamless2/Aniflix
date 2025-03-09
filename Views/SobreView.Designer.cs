@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             uiPanel1 = new Sunny.UI.UIPanel();
+            uiPanel2 = new Sunny.UI.UIPanel();
             SuspendLayout();
             // 
             // uiPanel1
@@ -39,15 +40,28 @@
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(1862, 416);
+            uiPanel1.Size = new Size(1862, 313);
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = "uiPanel1";
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiPanel2
+            // 
+            uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
+            uiPanel2.Location = new Point(140, 426);
+            uiPanel2.Margin = new Padding(4, 5, 4, 5);
+            uiPanel2.MinimumSize = new Size(1, 1);
+            uiPanel2.Name = "uiPanel2";
+            uiPanel2.Size = new Size(270, 180);
+            uiPanel2.TabIndex = 1;
+            uiPanel2.Text = "uiPanel2";
+            uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1862, 828);
+            Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -60,5 +74,6 @@
         #endregion
 
         private Sunny.UI.UIPanel uiPanel1;
+        private Sunny.UI.UIPanel uiPanel2;
     }
 }
