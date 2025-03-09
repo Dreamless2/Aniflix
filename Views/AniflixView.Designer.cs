@@ -93,9 +93,11 @@
             SobreButton.FlatStyle = FlatStyle.Flat;
             SobreButton.ForeColor = Color.White;
             SobreButton.IconChar = FontAwesome.Sharp.MaterialIcons.Information;
-            SobreButton.IconColor = Color.Black;
+            SobreButton.IconColor = Color.White;
+            SobreButton.ImageAlign = ContentAlignment.MiddleLeft;
             SobreButton.Location = new Point(0, 690);
             SobreButton.Name = "SobreButton";
+            SobreButton.Padding = new Padding(10, 0, 20, 0);
             SobreButton.Size = new Size(258, 60);
             SobreButton.TabIndex = 12;
             SobreButton.Text = "Sobre";
