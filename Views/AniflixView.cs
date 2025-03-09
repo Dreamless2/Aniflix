@@ -189,5 +189,10 @@ namespace Aniflix.Views
             OpenChildForm(new FilmesView(), FilmesButton);
             LoadSvgFromUrlAsync("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/gallardo.svg");
         }
+
+        private void WebCanvas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
