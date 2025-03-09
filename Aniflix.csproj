@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp.Material" Version="6.6.0" />
-    <PackageReference Include="SkiaSharp.Views.WindowsForms" Version="3.116.1" />
     <PackageReference Include="SunnyUI" Version="3.8.1" />
     <PackageReference Include="TMDbLib" Version="2.2.0" />
   </ItemGroup>
