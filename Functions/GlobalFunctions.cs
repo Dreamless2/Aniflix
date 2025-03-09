@@ -24,7 +24,7 @@ namespace Aniflix.Functions
             {
                 if (lbls is UILabel lbl)
                 {
-                    lbl.ForeColor = ThemeColor.SecondaryColor;
+                    lbl.ForeColor = Color.Gainsboro;
                 }
 
             }
