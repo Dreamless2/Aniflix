@@ -168,20 +168,7 @@ namespace Aniflix.Views
         {
             Application.Exit();
         }
-        private async void LoadSvgFromUrlAsync(string fileUrl)
-        {
-            using HttpClient client = new();
-            try
-            {
-                byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
-                using MemoryStream memoryStream = new(fileBytes);
-                WebCanvas.Load(memoryStream);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Erro ao carregar o arquivo SVG: {ex.Message}");
-            }
-        }
+      
         private void AniflixView_Load(object sender, EventArgs e)
         {
             LoadSvgFromUrlAsync("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/gallardo.svg");
