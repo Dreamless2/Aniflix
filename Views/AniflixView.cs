@@ -28,16 +28,16 @@ namespace Aniflix.Views
 
             if (btnSender != null)
             {
-                if (currentBtn != (MaterialButton)btnSender)
+                if (GlobalVars.currentBtn != (MaterialButton)btnSender)
                 {
                     DisableButton();
 
-                    currentBtn = (MaterialButton)btnSender;
-                    currentBtn.BackColor = Color.FromArgb(37, 36, 81);
-                    currentBtn.ForeColor = accentColor;
-                    currentBtn.IconColor = accentColor;
-                    currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
-                    currentBtn.ImageAlign = ContentAlignment.MiddleRight;
+                    GlobalVars.currentBtn = (MaterialButton)btnSender;
+                    GlobalVars.currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                    GlobalVars.currentBtn.ForeColor = accentColor;
+                    GlobalVars.currentBtn.IconColor = accentColor;
+                    GlobalVars.currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
+                    GlobalVars.currentBtn.ImageAlign = ContentAlignment.MiddleRight;
 
                     TitleBarPanel.BackColor = backgroundColor;
                     TitleBarPanel.FillColor = backgroundColor;
@@ -51,15 +51,15 @@ namespace Aniflix.Views
                     MenuPanel.BackColor = color;
                     MenuPanel.FillColor = color;
 
-                    leftBorderBtn!.BackColor = accentColor;
-                    leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                    leftBorderBtn.Visible = true;
-                    leftBorderBtn.BringToFront();
+                    GlobalVars.leftBorderBtn!.BackColor = accentColor;
+                    GlobalVars.leftBorderBtn.Location = new Point(0, GlobalVars.currentBtn.Location.Y);
+                    GlobalVars.leftBorderBtn.Visible = true;
+                    GlobalVars.leftBorderBtn.BringToFront();
 
                     ThemeColor.PrimaryColor = backgroundColor;
                     ThemeColor.SecondaryColor = ThemeColor.ChangeColorBrightness(backgroundColor, -0.55);
 
-                    CurrentChildFormBox.IconChar = currentBtn.IconChar;
+                    CurrentChildFormBox.IconChar = GlobalVars.currentBtn.IconChar;
                     CurrentChildFormBox.IconColor = accentColor;
                     CurrentChildFormBox.ForeColor = accentColor;
 
@@ -71,21 +71,21 @@ namespace Aniflix.Views
         }
         private void DisableButton()
         {
-            if (currentBtn != null)
+            if (GlobalVars.currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
-                currentBtn.ForeColor = Color.Gainsboro;
-                currentBtn.IconColor = Color.Gainsboro;
-                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
-                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                GlobalVars.currentBtn.BackColor = Color.FromArgb(31, 30, 68);
+                GlobalVars.currentBtn.ForeColor = Color.Gainsboro;
+                GlobalVars.currentBtn.IconColor = Color.Gainsboro;
+                GlobalVars.currentBtn.TextAlign = ContentAlignment.MiddleLeft;
+                GlobalVars.currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
+                GlobalVars.currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
             }
         }
         private void Reset()
         {
             DisableButton();
-            leftBorderBtn!.Visible = false;
-            currentBtn = null;
+            GlobalVars.leftBorderBtn!.Visible = false;
+            GlobalVars.currentBtn = null;
             TitleBarPanel.BackColor = Color.FromArgb(0, 150, 136);
             MenuPanel.BackColor = Color.FromArgb(39, 39, 58);
             TitleChildFormLabel.Text = "Home";
@@ -94,7 +94,7 @@ namespace Aniflix.Views
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
 
-            var (backgroundColor, accentColor) = SelectThemeColors();
+            var (backgroundColor, accentColor) = GlobalFunctions.SelectThemeColors();
             currentChildForm?.Close();
             currentChildForm = childForm;
             childForm.TopLevel = false;
