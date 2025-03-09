@@ -171,18 +171,16 @@ namespace Aniflix.Views
 
         private async void LoadSvgFromUrlAsync(string fileUrl)
         {
-            using (HttpClient client = new HttpClient())
+            using HttpClient client = new HttpClient();
+            try
             {
-                try
-                {
-                    byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
-                    using MemoryStream memoryStream = new(fileBytes);
-                    WebCanvas.Load(memoryStream);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Erro ao carregar SVG: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
+                using MemoryStream memoryStream = new(fileBytes);
+                WebCanvas.Load(memoryStream);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar SVG: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
