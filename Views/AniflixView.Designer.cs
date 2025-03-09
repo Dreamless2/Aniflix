@@ -320,9 +320,7 @@
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
             WebCanvas.SizeMode = PictureBoxSizeMode.CenterImage;
-            WebCanvas.Source = null;
             WebCanvas.TabIndex = 0;
-            WebCanvas.XmlSource = null;
             WebCanvas.Click += WebCanvas_Click;
             // 
             // TitleBarPanel
@@ -348,7 +346,7 @@
             TitleBarPanel.TabIndex = 1;
             TitleBarPanel.Text = "Home";
             TitleBarPanel.TextAlignment = ContentAlignment.MiddleLeft;
-            TitleBarPanel.TitleColor = Color.FromArgb(0, 103, 91);
+            TitleBarPanel.TitleColor = Color.FromArgb(21, 63, 77);
             // 
             // TitleChildFormLabel
             // 
