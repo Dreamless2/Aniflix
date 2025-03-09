@@ -11,7 +11,7 @@ namespace Aniflix.Functions
             {
                 if (btns is MaterialButton btn)
                 {
-                    btn.BackColor = Color.FromArgb(37, 93, 109);
+                    btn.BackColor = Color.FromArgb(23, 86, 111);
                     btn.ForeColor = Color.Gainsboro;
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderSize = 0;
