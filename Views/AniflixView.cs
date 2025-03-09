@@ -166,6 +166,12 @@ namespace Aniflix.Views
             Application.Exit();
         }
 
+
+        private void SVGDownloader()
+        {
+            try
+        }
+
         private void AniflixView_Load(object sender, EventArgs e)
         {
 
