@@ -88,14 +88,13 @@
             // 
             // SobreButton
             // 
-            SobreButton.Dock = DockStyle.Top;
             SobreButton.FlatAppearance.BorderSize = 0;
             SobreButton.FlatStyle = FlatStyle.Flat;
             SobreButton.ForeColor = Color.White;
             SobreButton.IconChar = FontAwesome.Sharp.MaterialIcons.Information;
             SobreButton.IconColor = Color.White;
             SobreButton.ImageAlign = ContentAlignment.MiddleLeft;
-            SobreButton.Location = new Point(0, 630);
+            SobreButton.Location = new Point(-3, 702);
             SobreButton.Name = "SobreButton";
             SobreButton.Padding = new Padding(10, 0, 20, 0);
             SobreButton.Size = new Size(258, 60);
@@ -114,7 +113,7 @@
             SairButton.IconChar = FontAwesome.Sharp.MaterialIcons.ExitToApp;
             SairButton.IconColor = Color.White;
             SairButton.ImageAlign = ContentAlignment.MiddleLeft;
-            SairButton.Location = new Point(0, 630);
+            SairButton.Location = new Point(-7, 842);
             SairButton.Name = "SairButton";
             SairButton.Padding = new Padding(10, 0, 20, 0);
             SairButton.Size = new Size(258, 60);
