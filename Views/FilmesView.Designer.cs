@@ -63,7 +63,7 @@
             InserirNovoButton = new FontAwesome.Sharp.Material.MaterialButton();
             EditarButton = new FontAwesome.Sharp.Material.MaterialButton();
             AnteriorButton = new FontAwesome.Sharp.Material.MaterialButton();
-            materialButton5 = new FontAwesome.Sharp.Material.MaterialButton();
+            ProximoButton = new FontAwesome.Sharp.Material.MaterialButton();
             DadosLabel = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
@@ -537,19 +537,19 @@
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
             AnteriorButton.UseVisualStyleBackColor = true;
             // 
-            // materialButton5
+            // ProximoButton
             // 
-            materialButton5.Font = new Font("Microsoft Sans Serif", 12F);
-            materialButton5.ForeColor = Color.Black;
-            materialButton5.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
-            materialButton5.IconColor = Color.Black;
-            materialButton5.Location = new Point(1108, 773);
-            materialButton5.Name = "materialButton5";
-            materialButton5.Size = new Size(198, 91);
-            materialButton5.TabIndex = 51;
-            materialButton5.Text = "Proximo";
-            materialButton5.TextAlign = ContentAlignment.BottomLeft;
-            materialButton5.UseVisualStyleBackColor = true;
+            ProximoButton.Font = new Font("Microsoft Sans Serif", 12F);
+            ProximoButton.ForeColor = Color.Black;
+            ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
+            ProximoButton.IconColor = Color.Black;
+            ProximoButton.Location = new Point(1108, 773);
+            ProximoButton.Name = "ProximoButton";
+            ProximoButton.Size = new Size(198, 91);
+            ProximoButton.TabIndex = 51;
+            ProximoButton.Text = "Proximo";
+            ProximoButton.TextAlign = ContentAlignment.BottomLeft;
+            ProximoButton.UseVisualStyleBackColor = true;
             // 
             // DadosLabel
             // 
@@ -567,7 +567,7 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1485, 899);
             Controls.Add(DadosLabel);
-            Controls.Add(materialButton5);
+            Controls.Add(ProximoButton);
             Controls.Add(AnteriorButton);
             Controls.Add(EditarButton);
             Controls.Add(InserirNovoButton);
@@ -649,7 +649,7 @@
         private FontAwesome.Sharp.Material.MaterialButton InserirNovoButton;
         private FontAwesome.Sharp.Material.MaterialButton EditarButton;
         private FontAwesome.Sharp.Material.MaterialButton AnteriorButton;
-        private FontAwesome.Sharp.Material.MaterialButton materialButton5;
+        private FontAwesome.Sharp.Material.MaterialButton ProximoButton;
         private Sunny.UI.UILabel DadosLabel;
     }
 }
