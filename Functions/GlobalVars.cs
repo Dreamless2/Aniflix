@@ -5,10 +5,10 @@ namespace Aniflix.Functions
 {
     public static class GlobalVars
     {
-        public static MaterialButton? currentBtn;
-        public static Panel? leftBorderBtn;
-        public static UIForm? currentChildForm;
-        public static Random? random;
+        public static readonly MaterialButton? currentBtn;
+        public static readonly Panel? leftBorderBtn;
+        public static readonly UIForm? currentChildForm;
+        public static readonly Random? random;
 
     }
 }
