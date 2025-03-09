@@ -71,7 +71,7 @@
             uiLedLabel1.Name = "uiLedLabel1";
             uiLedLabel1.Size = new Size(100, 35);
             uiLedLabel1.TabIndex = 0;
-            uiLedLabel1.Text = "uiLedLabel1";
+            uiLedLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
             // uiSmoothLabel1
             // 
