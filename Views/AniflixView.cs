@@ -96,6 +96,8 @@ namespace Aniflix.Views
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
 
+            var (backgroundColor, accentColor) = GlobalFunctions.SelectThemeColors();
+
             GlobalVars.currentChildForm?.Close();
             GlobalVars.currentChildForm = childForm;
             childForm.TopLevel = false;
