@@ -55,7 +55,6 @@
             uiPanel2.Name = "uiPanel2";
             uiPanel2.Size = new Size(1862, 713);
             uiPanel2.TabIndex = 1;
-            uiPanel2.Text = "uiPanel2";
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // SobreView
