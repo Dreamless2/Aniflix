@@ -52,8 +52,8 @@ namespace Aniflix.Views
                 Color.FromArgb(33, 37, 41),    // #212529 - Preto cinza elegante
                 Color.FromArgb(19, 24, 29),    // #13181D - Azul eclipse
                 Color.FromArgb(30, 36, 48),    // #1E2430 - Preto grafite metálico
-                Color.FromArgb(21, 25, 30),    // #15191E - Preto carvão profundo
-            ];
+                Color.FromArgb(21, 25, 30),    // #15191E - Eerie Black
+             ];
 
             // Paleta de cores de destaque
             List<Color> accentColors =
