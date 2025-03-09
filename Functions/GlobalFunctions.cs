@@ -26,7 +26,15 @@ namespace Aniflix.Functions
                     lbl.ForeColor = Color.Gainsboro;
                 }
             }
-        }
 
+            foreach (Control txts in form.Controls)
+            {
+                if (txts is UITextBox txt)
+                {
+                    txt.BackColor = Color.FromArgb(2, 47, 86);
+                    txt.ForeColor = Color.Gainsboro;
+                }
+            }
+        }
     }
 }
