@@ -117,7 +117,7 @@ namespace Aniflix.Views
                     CurrentChildFormBox.IconChar = currentBtn.IconChar;
                     CurrentChildFormBox.IconColor = Color.Gainsboro;
                     CurrentChildFormBox.ForeColor = Color.Gainsboro;
-                    TitleChildFormLabel.ForeColor = accentColor;
+                    TitleChildFormLabel.ForeColor = Color.Gainsboro;
                 }
             }
         }
