@@ -11,7 +11,7 @@ namespace Aniflix.Views
         public AniflixView()
         {
             InitializeComponent();
-            random = new Random();
+            globalvars random = new Random();
             leftBorderBtn = new Panel
             {
                 Size = new Size(7, 60)
