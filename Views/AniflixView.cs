@@ -35,7 +35,7 @@ namespace Aniflix.Views
             [
                 Color.FromArgb(14, 52, 65),    // #0E3441 - Azul petróleo escuro
                 Color.FromArgb(34, 42, 42),    // #222A2A - Verde charleston
-                Color.FromArgb(01, 47, 51),    // #014F33 - Azul paon
+                //Color.FromArgb(01, 47, 51),    // #014F33 - Azul paon
                 Color.FromArgb(40, 65, 74),    // #28494A - Azul carvão claro
                 Color.FromArgb(21, 32, 43),    // #15202B - Azul carvão
                // Color.FromArgb(12, 12, 12),    // #0C0C0C - Preto intenso
