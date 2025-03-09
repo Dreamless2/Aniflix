@@ -1,10 +1,5 @@
-﻿using System;
-using Sunny.UI;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Sunny.UI;
 using FontAwesome.Sharp.Material;
-using System.Collections.Generic;
 
 namespace Aniflix.Functions
 {
