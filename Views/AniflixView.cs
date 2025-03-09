@@ -68,7 +68,7 @@ namespace Aniflix.Views
                 Color.FromArgb(73, 193, 152),   // #49C195 - Verde oceano
                 Color.FromArgb(255, 178, 203),  // #FFB2CB - Cherry blossom
                 Color.FromArgb(255, 103, 90),   // #FF675A - Bittersweet
-                Color.FromArgb(121, 197, 163),  // #79C5A3 - Verde sheen
+                Color.FromArgb(84, 186, 147),   // #54BA93 - Verde Electra
                 Color.FromArgb(229, 166, 87),   // #E5A657 - Honeycomb
                 Color.FromArgb(252,214,174),    // #FCD6AE - Abricó light
                 Color.FromArgb(221, 112, 95),   // #DD705F - Terra Cotta
