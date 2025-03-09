@@ -2,6 +2,7 @@
 using System.Net;
 using Aniflix.Functions;
 using FontAwesome.Sharp.Material;
+using SharpVectors.Renderers.Forms;
 
 namespace Aniflix.Views
 {
@@ -168,15 +169,25 @@ namespace Aniflix.Views
         }
 
 
-        private void SVGDownloader()
+        private async void LoadSvgFromUrlAsync(string fileUrl)
         {
-            // download file https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg
-
-            string url = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg";
-
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
+                    using (MemoryStream memoryStream = new MemoryStream(fileBytes))
+                    {
+                        svgPictureBox.Load(memoryStream);
+                        Console.WriteLine("SVG carregado com sucesso!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erro ao carregar SVG: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
 
 
 
