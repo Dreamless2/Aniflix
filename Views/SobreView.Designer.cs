@@ -34,6 +34,8 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(852, 695);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "SobreView";
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
