@@ -26,10 +26,10 @@ namespace Aniflix.Views
         }
 
 
-       
+
         private void ActivateButton(object btnSender)
         {
-            var (backgroundColor, accentColor) = SelectThemeColors();
+            var (backgroundColor, accentColor) = GlobalFunctions.SelectThemeColors();
             var color = Color.FromArgb(37, 36, 81);
 
             if (btnSender != null)
