@@ -49,7 +49,7 @@
             FilmeText = new Sunny.UI.UITextBox();
             SinopseLabel = new Sunny.UI.UILabel();
             TagsLabel = new Sunny.UI.UILabel();
-            uiLabel12 = new Sunny.UI.UILabel();
+            EstrelasLabel = new Sunny.UI.UILabel();
             uiLabel13 = new Sunny.UI.UILabel();
             GeneroLabel = new Sunny.UI.UILabel();
             DiretorLabel = new Sunny.UI.UILabel();
@@ -346,16 +346,16 @@
             TagsLabel.TabIndex = 39;
             TagsLabel.Text = "Tags";
             // 
-            // uiLabel12
+            // EstrelasLabel
             // 
-            uiLabel12.AutoSize = true;
-            uiLabel12.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel12.ForeColor = Color.Black;
-            uiLabel12.Location = new Point(41, 688);
-            uiLabel12.Name = "uiLabel12";
-            uiLabel12.Size = new Size(67, 20);
-            uiLabel12.TabIndex = 40;
-            uiLabel12.Text = "Estrelas";
+            EstrelasLabel.AutoSize = true;
+            EstrelasLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            EstrelasLabel.ForeColor = Color.Black;
+            EstrelasLabel.Location = new Point(41, 688);
+            EstrelasLabel.Name = "EstrelasLabel";
+            EstrelasLabel.Size = new Size(67, 20);
+            EstrelasLabel.TabIndex = 40;
+            EstrelasLabel.Text = "Estrelas";
             // 
             // uiLabel13
             // 
@@ -581,7 +581,7 @@
             Controls.Add(DiretorLabel);
             Controls.Add(GeneroLabel);
             Controls.Add(uiLabel13);
-            Controls.Add(uiLabel12);
+            Controls.Add(EstrelasLabel);
             Controls.Add(TagsLabel);
             Controls.Add(GeneroText);
             Controls.Add(uiTextBox7);
@@ -638,7 +638,7 @@
         private Sunny.UI.UITextBox EstrelasText;
         private Sunny.UI.UITextBox EstudioText;
         private Sunny.UI.UILabel TagsLabel;
-        private Sunny.UI.UILabel uiLabel12;
+        private Sunny.UI.UILabel EstrelasLabel;
         private Sunny.UI.UILabel uiLabel13;
         private Sunny.UI.UILabel GeneroLabel;
         private Sunny.UI.UILabel DiretorLabel;
