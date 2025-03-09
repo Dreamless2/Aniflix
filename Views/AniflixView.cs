@@ -12,11 +12,11 @@ namespace Aniflix.Views
         {
             InitializeComponent();
             GlobalVars.random = new Random();
-            leftBorderBtn = new Panel
+            GlobalVars.leftBorderBtn = new Panel
             {
                 Size = new Size(7, 60)
             };
-            MenuPanel.Controls.Add(leftBorderBtn);
+            MenuPanel.Controls.Add(GlobalVars.leftBorderBtn);
             Text = string.Empty;
             DoubleBuffered = true;
         }
