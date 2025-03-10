@@ -87,7 +87,7 @@
             uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 14.25F);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(139, 661);
+            uiLabel1.Location = new Point(143, 661);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(364, 24);
             uiLabel1.TabIndex = 5;
@@ -98,7 +98,7 @@
             uiLabel2.AutoSize = true;
             uiLabel2.Font = new Font("Microsoft Sans Serif", 14.25F);
             uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(578, 661);
+            uiLabel2.Location = new Point(570, 661);
             uiLabel2.Name = "uiLabel2";
             uiLabel2.Size = new Size(191, 24);
             uiLabel2.TabIndex = 6;
