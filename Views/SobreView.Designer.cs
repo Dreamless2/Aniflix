@@ -30,6 +30,8 @@
         {
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             uiButton1 = new Sunny.UI.UIButton();
+            materialPictureBox1 = new FontAwesome.Sharp.Material.MaterialPictureBox();
+            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -53,10 +55,24 @@
             uiButton1.Text = "Fechar";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
+            // materialPictureBox1
+            // 
+            materialPictureBox1.BackColor = Color.FromArgb(243, 249, 255);
+            materialPictureBox1.ForeColor = Color.FromArgb(48, 48, 48);
+            materialPictureBox1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
+            materialPictureBox1.IconColor = Color.FromArgb(48, 48, 48);
+            materialPictureBox1.IconSize = 224;
+            materialPictureBox1.Location = new Point(291, 361);
+            materialPictureBox1.Name = "materialPictureBox1";
+            materialPictureBox1.Size = new Size(359, 224);
+            materialPictureBox1.TabIndex = 3;
+            materialPictureBox1.TabStop = false;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
+            Controls.Add(materialPictureBox1);
             Controls.Add(uiButton1);
             Controls.Add(uiSymbolLabel1);
             MaximizeBox = false;
@@ -65,11 +81,13 @@
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
+            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UIButton uiButton1;
+        private FontAwesome.Sharp.Material.MaterialPictureBox materialPictureBox1;
     }
 }
