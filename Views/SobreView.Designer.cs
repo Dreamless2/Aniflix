@@ -45,7 +45,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(44, 541);
+            uiSymbolLabel1.Location = new Point(22, 138);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(472, 28);
@@ -114,7 +114,7 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(902, 504);
+            linkLabel1.Location = new Point(904, 116);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(156, 16);
             linkLabel1.TabIndex = 8;
@@ -135,6 +135,8 @@
             // 
             uiPanel1.Controls.Add(FecharButton);
             uiPanel1.Controls.Add(LicenseBox);
+            uiPanel1.Controls.Add(linkLabel1);
+            uiPanel1.Controls.Add(uiSymbolLabel1);
             uiPanel1.Dock = DockStyle.Bottom;
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel1.Location = new Point(0, 577);
@@ -151,11 +153,9 @@
             ClientSize = new Size(1102, 888);
             Controls.Add(uiPanel1);
             Controls.Add(uiSymbolLabel2);
-            Controls.Add(linkLabel1);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
-            Controls.Add(uiSymbolLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
@@ -165,6 +165,7 @@
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             uiPanel1.ResumeLayout(false);
+            uiPanel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
