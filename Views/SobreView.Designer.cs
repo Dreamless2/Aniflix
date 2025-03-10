@@ -51,7 +51,7 @@
             // 
             uiSymbolLabel1.BackColor = Color.Transparent;
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(31, 137);
+            uiSymbolLabel1.Location = new Point(21, 137);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(524, 28);
@@ -61,7 +61,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(31, 12);
+            LogoBox.Location = new Point(21, 12);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(155, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -74,7 +74,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(31, 108);
+            LinkSite.Location = new Point(21, 108);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 4;
@@ -85,7 +85,7 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(902, 12);
+            LicenseBox.Location = new Point(674, 22);
             LicenseBox.Name = "LicenseBox";
             LicenseBox.Size = new Size(158, 83);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -98,7 +98,7 @@
             // 
             LicenseSite.AutoSize = true;
             LicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LicenseSite.Location = new Point(904, 108);
+            LicenseSite.Location = new Point(676, 108);
             LicenseSite.Name = "LicenseSite";
             LicenseSite.Size = new Size(156, 16);
             LicenseSite.TabIndex = 8;
@@ -110,7 +110,7 @@
             // 
             uiSymbolLabel2.BackColor = Color.Transparent;
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(779, 137);
+            uiSymbolLabel2.Location = new Point(551, 137);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(281, 28);
@@ -134,7 +134,7 @@
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
             uiPanel1.RectSides = ToolStripStatusLabelBorderSides.None;
-            uiPanel1.Size = new Size(1077, 189);
+            uiPanel1.Size = new Size(852, 189);
             uiPanel1.TabIndex = 10;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -162,7 +162,7 @@
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
             uiPanel2.RectSides = ToolStripStatusLabelBorderSides.None;
-            uiPanel2.Size = new Size(1077, 230);
+            uiPanel2.Size = new Size(852, 230);
             uiPanel2.TabIndex = 11;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
@@ -177,7 +177,7 @@
             uiLine2.Location = new Point(246, 103);
             uiLine2.MinimumSize = new Size(1, 1);
             uiLine2.Name = "uiLine2";
-            uiLine2.Size = new Size(814, 29);
+            uiLine2.Size = new Size(596, 29);
             uiLine2.TabIndex = 4;
             // 
             // uiLine1
@@ -190,7 +190,7 @@
             uiLine1.Location = new Point(246, 13);
             uiLine1.MinimumSize = new Size(1, 1);
             uiLine1.Name = "uiLine1";
-            uiLine1.Size = new Size(814, 29);
+            uiLine1.Size = new Size(596, 29);
             uiLine1.TabIndex = 3;
             // 
             // uiLabel1
@@ -206,7 +206,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1077, 453);
+            ClientSize = new Size(852, 453);
             Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
             MaximizeBox = false;
