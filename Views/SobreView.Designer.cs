@@ -49,7 +49,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(249, 411);
+            FecharButton.Location = new Point(245, 537);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
@@ -95,7 +95,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(809, 522);
+            ClientSize = new Size(809, 682);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
