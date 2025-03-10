@@ -196,7 +196,7 @@
             // 
             // svgPictureBox1
             // 
-            svgPictureBox1.Location = new Point(90, 74);
+            svgPictureBox1.Location = new Point(3, 3);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(200, 200);
             svgPictureBox1.Source = null;
