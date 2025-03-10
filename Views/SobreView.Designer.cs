@@ -144,7 +144,7 @@
             uiPanel1.Controls.Add(uiSymbolLabel1);
             uiPanel1.Dock = DockStyle.Bottom;
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 619);
+            uiPanel1.Location = new Point(0, 263);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
@@ -156,7 +156,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1102, 888);
+            ClientSize = new Size(1102, 532);
             Controls.Add(uiPanel1);
             Controls.Add(uiSmoothLabel1);
             MaximizeBox = false;
