@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
-            uiButton1 = new Sunny.UI.UIButton();
+            FecharButton = new Sunny.UI.UIButton();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -44,16 +44,16 @@
             uiSymbolLabel1.TabIndex = 1;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
-            // uiButton1
+            // FecharButton
             // 
-            uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(387, 730);
-            uiButton1.MinimumSize = new Size(1, 1);
-            uiButton1.Name = "uiButton1";
-            uiButton1.Size = new Size(310, 72);
-            uiButton1.TabIndex = 2;
-            uiButton1.Text = "Fechar";
-            uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
+            FecharButton.Location = new Point(387, 730);
+            FecharButton.MinimumSize = new Size(1, 1);
+            FecharButton.Name = "FecharButton";
+            FecharButton.Size = new Size(310, 72);
+            FecharButton.TabIndex = 2;
+            FecharButton.Text = "Fechar";
+            FecharButton.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
             // pictureBox1
             // 
@@ -70,7 +70,7 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
             Controls.Add(pictureBox1);
-            Controls.Add(uiButton1);
+            Controls.Add(FecharButton);
             Controls.Add(uiSymbolLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -84,7 +84,7 @@
 
         #endregion
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
-        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIButton FecharButton;
         private PictureBox pictureBox1;
     }
 }
