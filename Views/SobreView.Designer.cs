@@ -43,7 +43,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(291, 328);
+            uiSymbolLabel1.Location = new Point(44, 541);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(472, 28);
@@ -53,7 +53,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(245, 537);
+            FecharButton.Location = new Point(215, 625);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
@@ -64,7 +64,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(41, 217);
+            LogoBox.Location = new Point(77, 393);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(169, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -77,7 +77,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(41, 340);
+            LinkSite.Location = new Point(90, 504);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             uiSmoothLabel1.AutoSize = true;
             uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSmoothLabel1.Location = new Point(79, 85);
+            uiSmoothLabel1.Location = new Point(291, 71);
             uiSmoothLabel1.Name = "uiSmoothLabel1";
             uiSmoothLabel1.Size = new Size(203, 73);
             uiSmoothLabel1.TabIndex = 6;
@@ -99,7 +99,7 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(881, 328);
+            LicenseBox.Location = new Point(651, 393);
             LicenseBox.Name = "LicenseBox";
             LicenseBox.Size = new Size(158, 72);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -112,7 +112,7 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(869, 508);
+            linkLabel1.Location = new Point(902, 504);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(156, 16);
             linkLabel1.TabIndex = 8;
@@ -122,12 +122,12 @@
             // uiSymbolLabel2
             // 
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(315, 430);
+            uiSymbolLabel2.Location = new Point(274, 174);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
-            uiSymbolLabel2.Size = new Size(472, 28);
+            uiSymbolLabel2.Size = new Size(251, 28);
             uiSymbolLabel2.TabIndex = 9;
-            uiSymbolLabel2.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
+            uiSymbolLabel2.Text = "Licenciado sob os termos da GPLv3";
             // 
             // SobreView
             // 
