@@ -32,6 +32,7 @@
             FecharButton = new Sunny.UI.UIButton();
             LogoBox = new PictureBox();
             LinkTMDB = new Sunny.UI.UILinkLabel();
+            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
@@ -70,21 +71,33 @@
             // LinkTMDB
             // 
             LinkTMDB.ActiveLinkColor = Color.FromArgb(80, 160, 255);
+            LinkTMDB.AutoSize = true;
             LinkTMDB.Font = new Font("Microsoft Sans Serif", 12F);
             LinkTMDB.ForeColor = Color.FromArgb(48, 48, 48);
-            LinkTMDB.LinkBehavior = LinkBehavior.AlwaysUnderline;
+            LinkTMDB.LinkBehavior = LinkBehavior.HoverUnderline;
             LinkTMDB.Location = new Point(226, 255);
             LinkTMDB.Name = "LinkTMDB";
-            LinkTMDB.Size = new Size(100, 23);
+            LinkTMDB.Size = new Size(54, 20);
             LinkTMDB.TabIndex = 4;
             LinkTMDB.TabStop = true;
             LinkTMDB.Text = "TMDB";
             LinkTMDB.VisitedLinkColor = Color.FromArgb(230, 80, 80);
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(514, 346);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(87, 16);
+            linkLabel1.TabIndex = 5;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "linkLabel1";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
+            Controls.Add(linkLabel1);
             Controls.Add(LinkTMDB);
             Controls.Add(LogoBox);
             Controls.Add(FecharButton);
@@ -97,6 +110,7 @@
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -104,5 +118,6 @@
         private Sunny.UI.UIButton FecharButton;
         private PictureBox LogoBox;
         private Sunny.UI.UILinkLabel LinkTMDB;
+        private LinkLabel linkLabel1;
     }
 }
