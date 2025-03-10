@@ -116,7 +116,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
-            Text = "SobreView";
+            Text = "Sobre";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
