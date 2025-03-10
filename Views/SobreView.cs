@@ -10,12 +10,6 @@ namespace Aniflix.Views
         {
             InitializeComponent();
         }
-
-        private void uiLedLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SobreView_Load(object sender, EventArgs e)
         {
             LinkSite.Links.Add(0, LinkSite.Text.Length, "https://www.themoviedb.org/");
