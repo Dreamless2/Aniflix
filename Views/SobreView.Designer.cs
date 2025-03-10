@@ -37,7 +37,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(94, 666);
+            uiSymbolLabel1.Location = new Point(114, 666);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(832, 33);
@@ -47,7 +47,7 @@
             // uiButton1
             // 
             uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(367, 730);
+            uiButton1.Location = new Point(387, 730);
             uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
             uiButton1.Size = new Size(310, 72);
@@ -58,10 +58,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.tmdb_logo;
-            pictureBox1.Location = new Point(350, 452);
+            pictureBox1.Location = new Point(400, 441);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(317, 143);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Size = new Size(300, 189);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
