@@ -39,8 +39,8 @@
             // 
             // uiSymbolLabel1
             // 
-            uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(130, 318);
+            uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 14.25F);
+            uiSymbolLabel1.Location = new Point(114, 408);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(832, 33);
@@ -61,7 +61,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(413, 381);
+            LogoBox.Location = new Point(396, 459);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(300, 189);
             LogoBox.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -73,10 +73,10 @@
             // LinkSite
             // 
             LinkSite.AutoSize = true;
-            LinkSite.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(510, 654);
+            LinkSite.Font = new Font("Microsoft Sans Serif", 14.25F);
+            LinkSite.Location = new Point(509, 661);
             LinkSite.Name = "LinkSite";
-            LinkSite.Size = new Size(82, 29);
+            LinkSite.Size = new Size(63, 24);
             LinkSite.TabIndex = 4;
             LinkSite.TabStop = true;
             LinkSite.Text = "TMDB";
@@ -85,22 +85,22 @@
             // uiLabel1
             // 
             uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 14.25F);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(37, 654);
+            uiLabel1.Location = new Point(139, 661);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(467, 29);
+            uiLabel1.Size = new Size(364, 24);
             uiLabel1.TabIndex = 5;
             uiLabel1.Text = "Para acessar o site do TMDB, clique aqui: ";
             // 
             // uiLabel2
             // 
             uiLabel2.AutoSize = true;
-            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel2.Font = new Font("Microsoft Sans Serif", 14.25F);
             uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(598, 661);
+            uiLabel2.Location = new Point(578, 661);
             uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(159, 20);
+            uiLabel2.Size = new Size(191, 24);
             uiLabel2.TabIndex = 6;
             uiLabel2.Text = "ou na imagem acima.";
             // 
