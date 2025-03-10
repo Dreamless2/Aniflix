@@ -38,6 +38,7 @@
             materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
             uiPanel2 = new Sunny.UI.UIPanel();
             uiLabel1 = new Sunny.UI.UILabel();
+            uiLabel2 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -154,6 +155,7 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(uiLabel2);
             uiPanel2.Controls.Add(uiLabel1);
             uiPanel2.Dock = DockStyle.Top;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
@@ -170,13 +172,24 @@
             // uiLabel1
             // 
             uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(212, 87);
+            uiLabel1.Location = new Point(292, 13);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(86, 31);
+            uiLabel1.Size = new Size(150, 55);
             uiLabel1.TabIndex = 0;
             uiLabel1.Text = "Aniflix";
+            // 
+            // uiLabel2
+            // 
+            uiLabel2.AutoSize = true;
+            uiLabel2.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel2.Location = new Point(363, 112);
+            uiLabel2.Name = "uiLabel2";
+            uiLabel2.Size = new Size(150, 55);
+            uiLabel2.TabIndex = 1;
+            uiLabel2.Text = "Aniflix";
             // 
             // SobreView
             // 
@@ -210,5 +223,6 @@
         private FontAwesome.Sharp.Material.MaterialButton materialButton1;
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UILabel uiLabel2;
     }
 }
