@@ -194,12 +194,12 @@
             // uiLedLabel1
             // 
             uiLedLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLedLabel1.Location = new Point(278, 50);
+            uiLedLabel1.Location = new Point(246, 50);
             uiLedLabel1.MinimumSize = new Size(1, 1);
             uiLedLabel1.Name = "uiLedLabel1";
-            uiLedLabel1.Size = new Size(100, 35);
+            uiLedLabel1.Size = new Size(814, 35);
             uiLedLabel1.TabIndex = 5;
-            uiLedLabel1.Text = "uiLedLabel1";
+            uiLedLabel1.Text = "Aniflix";
             // 
             // SobreView
             // 
