@@ -33,9 +33,9 @@
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
             uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
-            materialPictureBox1 = new FontAwesome.Sharp.Material.MaterialPictureBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -94,26 +94,19 @@
             uiSmoothLabel1.Text = "Aniflix";
             uiSmoothLabel1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // materialPictureBox1
+            // pictureBox1
             // 
-            materialPictureBox1.BackColor = Color.FromArgb(243, 249, 255);
-            materialPictureBox1.ForeColor = Color.FromArgb(48, 48, 48);
-            materialPictureBox1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
-            materialPictureBox1.IconColor = Color.FromArgb(48, 48, 48);
-            materialPictureBox1.IconSize = 469;
-            materialPictureBox1.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            materialPictureBox1.Location = new Point(573, 382);
-            materialPictureBox1.Name = "materialPictureBox1";
-            materialPictureBox1.Size = new Size(469, 469);
-            materialPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            materialPictureBox1.TabIndex = 7;
-            materialPictureBox1.TabStop = false;
+            pictureBox1.Location = new Point(811, 562);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(8, 8);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1493, 909);
-            Controls.Add(materialPictureBox1);
+            Controls.Add(pictureBox1);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
@@ -126,7 +119,7 @@
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -137,6 +130,6 @@
         private PictureBox LogoBox;
         private LinkLabel LinkSite;
         private Sunny.UI.UISmoothLabel uiSmoothLabel1;
-        private FontAwesome.Sharp.Material.MaterialPictureBox materialPictureBox1;
+        private PictureBox pictureBox1;
     }
 }
