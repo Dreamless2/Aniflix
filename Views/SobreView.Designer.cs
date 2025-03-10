@@ -32,7 +32,6 @@
             FecharButton = new Sunny.UI.UIButton();
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
-            uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
             LicenseBox = new PictureBox();
             LicenseSite = new LinkLabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
@@ -88,17 +87,6 @@
             LinkSite.Text = "TMDB Home Page";
             LinkSite.LinkClicked += LinkSite_LinkClicked;
             // 
-            // uiSmoothLabel1
-            // 
-            uiSmoothLabel1.AutoSize = true;
-            uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSmoothLabel1.Location = new Point(291, 71);
-            uiSmoothLabel1.Name = "uiSmoothLabel1";
-            uiSmoothLabel1.Size = new Size(203, 73);
-            uiSmoothLabel1.TabIndex = 6;
-            uiSmoothLabel1.Text = "Aniflix";
-            uiSmoothLabel1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
@@ -144,13 +132,14 @@
             uiPanel1.Controls.Add(LinkSite);
             uiPanel1.Controls.Add(uiSymbolLabel1);
             uiPanel1.Dock = DockStyle.Bottom;
-            uiPanel1.FillColor = Color.FromArgb(217, 216, 214);
+            uiPanel1.FillColor = Color.FromArgb(227, 220, 211);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 263);
+            uiPanel1.Location = new Point(0, 261);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(1102, 269);
+            uiPanel1.RectSides = ToolStripStatusLabelBorderSides.None;
+            uiPanel1.Size = new Size(1102, 271);
             uiPanel1.TabIndex = 10;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -160,7 +149,6 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1102, 532);
             Controls.Add(uiPanel1);
-            Controls.Add(uiSmoothLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
@@ -172,7 +160,6 @@
             uiPanel1.ResumeLayout(false);
             uiPanel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -180,7 +167,6 @@
         private Sunny.UI.UIButton FecharButton;
         private PictureBox LogoBox;
         private LinkLabel LinkSite;
-        private Sunny.UI.UISmoothLabel uiSmoothLabel1;
         private PictureBox LicenseBox;
         private LinkLabel LicenseSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
