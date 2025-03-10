@@ -49,5 +49,10 @@ namespace Aniflix.Views
         {
             LogoBox.Cursor = Cursors.Hand;
         }
+
+        private void LicenseBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

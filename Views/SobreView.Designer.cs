@@ -33,9 +33,9 @@
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
             uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
-            pictureBox1 = new PictureBox();
+            LicenseBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -94,21 +94,22 @@
             uiSmoothLabel1.Text = "Aniflix";
             uiSmoothLabel1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // LicenseBox
             // 
-            pictureBox1.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            pictureBox1.Location = new Point(881, 328);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(158, 72);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 7;
-            pictureBox1.TabStop = false;
+            LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
+            LicenseBox.Location = new Point(881, 328);
+            LicenseBox.Name = "LicenseBox";
+            LicenseBox.Size = new Size(158, 72);
+            LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
+            LicenseBox.TabIndex = 7;
+            LicenseBox.TabStop = false;
+            LicenseBox.Click += LicenseBox_Click;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1102, 888);
-            Controls.Add(pictureBox1);
+            Controls.Add(LicenseBox);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
@@ -121,7 +122,7 @@
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -132,6 +133,6 @@
         private PictureBox LogoBox;
         private LinkLabel LinkSite;
         private Sunny.UI.UISmoothLabel uiSmoothLabel1;
-        private PictureBox pictureBox1;
+        private PictureBox LicenseBox;
     }
 }
