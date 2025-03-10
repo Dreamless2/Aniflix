@@ -70,12 +70,13 @@
             // LinkSite
             // 
             LinkSite.AutoSize = true;
+            LinkSite.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LinkSite.Location = new Point(470, 351);
             LinkSite.Name = "LinkSite";
-            LinkSite.Size = new Size(87, 16);
+            LinkSite.Size = new Size(54, 20);
             LinkSite.TabIndex = 4;
             LinkSite.TabStop = true;
-            LinkSite.Text = "linkLabel1";
+            LinkSite.Text = "TMDB";
             LinkSite.LinkClicked += LinkSite_LinkClicked;
             // 
             // SobreView
