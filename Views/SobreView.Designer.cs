@@ -152,14 +152,15 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Dock = DockStyle.Top;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel2.Location = new Point(153, 109);
+            uiPanel2.Location = new Point(0, 35);
             uiPanel2.Margin = new Padding(4, 5, 4, 5);
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
-            uiPanel2.Size = new Size(270, 180);
+            uiPanel2.RectSides = ToolStripStatusLabelBorderSides.None;
+            uiPanel2.Size = new Size(1102, 230);
             uiPanel2.TabIndex = 11;
-            uiPanel2.Text = "uiPanel2";
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // SobreView
