@@ -74,7 +74,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 14.25F);
-            LinkSite.Location = new Point(509, 661);
+            LinkSite.Location = new Point(504, 661);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(63, 24);
             LinkSite.TabIndex = 4;
@@ -98,7 +98,7 @@
             uiLabel2.AutoSize = true;
             uiLabel2.Font = new Font("Microsoft Sans Serif", 14.25F);
             uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(570, 661);
+            uiLabel2.Location = new Point(561, 661);
             uiLabel2.Name = "uiLabel2";
             uiLabel2.Size = new Size(191, 24);
             uiLabel2.TabIndex = 6;
