@@ -145,7 +145,7 @@
             svgPictureBox1.AppTitle = "Aniflix";
             svgPictureBox1.Location = new Point(0, 0);
             svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(216, 106);
+            svgPictureBox1.Size = new Size(216, 132);
             svgPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             svgPictureBox1.TabIndex = 2;
             svgPictureBox1.XmlSource = resources.GetString("svgPictureBox1.XmlSource");
