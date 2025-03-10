@@ -23,7 +23,8 @@ namespace Aniflix.Views
 
         private void LogoBox_Click(object sender, EventArgs e)
         {
-            var target =
+            var target = "https://www.themoviedb.org/";
+
             Process.Start(new ProcessStartInfo
             {
                 FileName = target,
