@@ -35,15 +35,9 @@
             LicenseSite = new LinkLabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiPanel1 = new Sunny.UI.UIPanel();
-            uiPanel2 = new Sunny.UI.UIPanel();
-            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
-            uiLabel2 = new Sunny.UI.UILabel();
-            uiLabel1 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
-            uiPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -125,70 +119,23 @@
             uiPanel1.Controls.Add(LogoBox);
             uiPanel1.Controls.Add(LinkSite);
             uiPanel1.Controls.Add(uiSymbolLabel1);
+            uiPanel1.Dock = DockStyle.Fill;
             uiPanel1.FillColor = Color.FromArgb(237, 239, 240);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 261);
+            uiPanel1.Location = new Point(0, 35);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
             uiPanel1.RectSides = ToolStripStatusLabelBorderSides.None;
-            uiPanel1.Size = new Size(1102, 271);
+            uiPanel1.Size = new Size(1102, 504);
             uiPanel1.TabIndex = 10;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // uiPanel2
-            // 
-            uiPanel2.Controls.Add(svgPictureBox1);
-            uiPanel2.Controls.Add(uiLabel2);
-            uiPanel2.Controls.Add(uiLabel1);
-            uiPanel2.Dock = DockStyle.Top;
-            uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel2.Location = new Point(0, 35);
-            uiPanel2.Margin = new Padding(4, 5, 4, 5);
-            uiPanel2.MinimumSize = new Size(1, 1);
-            uiPanel2.Name = "uiPanel2";
-            uiPanel2.RectSides = ToolStripStatusLabelBorderSides.None;
-            uiPanel2.Size = new Size(1102, 230);
-            uiPanel2.TabIndex = 11;
-            uiPanel2.Text = null;
-            uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // svgPictureBox1
-            // 
-            svgPictureBox1.Dock = DockStyle.Left;
-            svgPictureBox1.Location = new Point(0, 0);
-            svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(216, 230);
-            svgPictureBox1.TabIndex = 2;
-            // 
-            // uiLabel2
-            // 
-            uiLabel2.AutoSize = true;
-            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(245, 83);
-            uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(31, 20);
-            uiLabel2.TabIndex = 1;
-            uiLabel2.Text = "1.0";
-            // 
-            // uiLabel1
-            // 
-            uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(245, 13);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(150, 55);
-            uiLabel1.TabIndex = 0;
-            uiLabel1.Text = "Aniflix";
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1102, 539);
-            Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -200,9 +147,6 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             uiPanel1.ResumeLayout(false);
             uiPanel1.PerformLayout();
-            uiPanel2.ResumeLayout(false);
-            uiPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -214,9 +158,5 @@
         private LinkLabel LicenseSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UIPanel uiPanel1;
-        private Sunny.UI.UIPanel uiPanel2;
-        private Sunny.UI.UILabel uiLabel1;
-        private Sunny.UI.UILabel uiLabel2;
-        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
     }
 }
