@@ -1,5 +1,4 @@
 ﻿using Sunny.UI;
-using Sunny.UI.Win32;
 using System.Diagnostics;
 
 namespace Aniflix.Views
