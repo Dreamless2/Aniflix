@@ -33,6 +33,7 @@
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
             uiLabel1 = new Sunny.UI.UILabel();
+            uiDigitalLabel1 = new Sunny.UI.UIDigitalLabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
@@ -92,10 +93,23 @@
             uiLabel1.TabIndex = 5;
             uiLabel1.Text = "Para acessar o site do TMDB, clique aqui: ";
             // 
+            // uiDigitalLabel1
+            // 
+            uiDigitalLabel1.BackColor = Color.Black;
+            uiDigitalLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiDigitalLabel1.ForeColor = Color.Lime;
+            uiDigitalLabel1.Location = new Point(187, 193);
+            uiDigitalLabel1.MinimumSize = new Size(1, 1);
+            uiDigitalLabel1.Name = "uiDigitalLabel1";
+            uiDigitalLabel1.Size = new Size(208, 42);
+            uiDigitalLabel1.TabIndex = 6;
+            uiDigitalLabel1.Text = "uiDigitalLabel1";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
+            Controls.Add(uiDigitalLabel1);
             Controls.Add(uiLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
@@ -118,5 +132,6 @@
         private PictureBox LogoBox;
         private LinkLabel LinkSite;
         private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UIDigitalLabel uiDigitalLabel1;
     }
 }
