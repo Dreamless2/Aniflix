@@ -35,6 +35,7 @@
             LicenseSite = new LinkLabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiPanel1 = new Sunny.UI.UIPanel();
+            materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -113,6 +114,7 @@
             // uiPanel1
             // 
             uiPanel1.BackColor = Color.FromArgb(237, 239, 240);
+            uiPanel1.Controls.Add(materialButton1);
             uiPanel1.Controls.Add(uiSymbolLabel2);
             uiPanel1.Controls.Add(LicenseBox);
             uiPanel1.Controls.Add(LicenseSite);
@@ -131,6 +133,17 @@
             uiPanel1.TabIndex = 10;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // materialButton1
+            // 
+            materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
+            materialButton1.IconColor = Color.Black;
+            materialButton1.Location = new Point(442, 183);
+            materialButton1.Name = "materialButton1";
+            materialButton1.Size = new Size(230, 67);
+            materialButton1.TabIndex = 10;
+            materialButton1.Text = "materialButton1";
+            materialButton1.UseVisualStyleBackColor = true;
             // 
             // SobreView
             // 
@@ -158,5 +171,6 @@
         private LinkLabel LicenseSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UIPanel uiPanel1;
+        private FontAwesome.Sharp.Material.MaterialButton materialButton1;
     }
 }
