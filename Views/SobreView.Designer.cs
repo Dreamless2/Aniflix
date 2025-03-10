@@ -95,13 +95,14 @@
             // 
             // uiLabel2
             // 
+            uiLabel2.AutoSize = true;
             uiLabel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel2.Location = new Point(598, 661);
             uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(100, 23);
+            uiLabel2.Size = new Size(159, 20);
             uiLabel2.TabIndex = 6;
-            uiLabel2.Text = "uiLabel2";
+            uiLabel2.Text = "ou na imagem acima.";
             // 
             // SobreView
             // 
