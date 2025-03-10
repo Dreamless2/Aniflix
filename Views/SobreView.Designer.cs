@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
-            FecharButton = new Sunny.UI.UIButton();
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
             LicenseBox = new PictureBox();
@@ -52,24 +51,12 @@
             uiSymbolLabel1.TabIndex = 1;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
-            // FecharButton
-            // 
-            FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(420, 175);
-            FecharButton.MinimumSize = new Size(1, 1);
-            FecharButton.Name = "FecharButton";
-            FecharButton.Size = new Size(263, 72);
-            FecharButton.TabIndex = 2;
-            FecharButton.Text = "Fechar";
-            FecharButton.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            FecharButton.Click += FecharButton_Click;
-            // 
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
             LogoBox.Location = new Point(31, 12);
             LogoBox.Name = "LogoBox";
-            LogoBox.Size = new Size(169, 83);
+            LogoBox.Size = new Size(155, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
             LogoBox.TabIndex = 3;
             LogoBox.TabStop = false;
@@ -91,7 +78,7 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(904, 12);
+            LicenseBox.Location = new Point(902, 12);
             LicenseBox.Name = "LicenseBox";
             LicenseBox.Size = new Size(158, 83);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -116,17 +103,16 @@
             // 
             uiSymbolLabel2.BackColor = Color.Transparent;
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(811, 137);
+            uiSymbolLabel2.Location = new Point(809, 137);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(251, 28);
             uiSymbolLabel2.TabIndex = 9;
-            uiSymbolLabel2.Text = "Licenciado sob os termos da GPLv3";
+            uiSymbolLabel2.Text = "Licenciado sob os termos da GPLv3.";
             // 
             // uiPanel1
             // 
             uiPanel1.BackColor = Color.FromArgb(237, 239, 240);
-            uiPanel1.Controls.Add(FecharButton);
             uiPanel1.Controls.Add(uiSymbolLabel2);
             uiPanel1.Controls.Add(LicenseBox);
             uiPanel1.Controls.Add(LicenseSite);
@@ -166,7 +152,6 @@
 
         #endregion
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
-        private Sunny.UI.UIButton FecharButton;
         private PictureBox LogoBox;
         private LinkLabel LinkSite;
         private PictureBox LicenseBox;
