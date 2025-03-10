@@ -35,9 +35,5 @@ namespace Aniflix.Views
             Process.Start("https://www.themoviedb.org/");
         }
 
-        private void LinkSite_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
