@@ -104,7 +104,8 @@
             materialPictureBox1.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
             materialPictureBox1.Location = new Point(573, 382);
             materialPictureBox1.Name = "materialPictureBox1";
-            materialPictureBox1.Size = new Size(741, 469);
+            materialPictureBox1.Size = new Size(469, 469);
+            materialPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             materialPictureBox1.TabIndex = 7;
             materialPictureBox1.TabStop = false;
             // 
