@@ -199,7 +199,7 @@
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel1.Location = new Point(246, 34);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(676, 79);
+            uiLabel1.Size = new Size(676, 72);
             uiLabel1.TabIndex = 5;
             uiLabel1.Text = "Aniflix";
             // 
