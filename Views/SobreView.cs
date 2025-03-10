@@ -37,7 +37,7 @@ namespace Aniflix.Views
 
         private void LinkSite_Click(object sender, EventArgs e)
         {
-
+            Process.Start(sender.)
         }
     }
 }
