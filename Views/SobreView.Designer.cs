@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            WebCanvas = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             uiButton1 = new Sunny.UI.UIButton();
-            ((System.ComponentModel.ISupportInitialize)WebCanvas).BeginInit();
             SuspendLayout();
-            // 
-            // WebCanvas
-            // 
-            WebCanvas.Location = new Point(167, 329);
-            WebCanvas.Name = "WebCanvas";
-            WebCanvas.Size = new Size(727, 317);
-            WebCanvas.TabIndex = 0;
             // 
             // uiSymbolLabel1
             // 
@@ -68,20 +59,16 @@
             ClientSize = new Size(1060, 828);
             Controls.Add(uiButton1);
             Controls.Add(uiSymbolLabel1);
-            Controls.Add(WebCanvas);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
-            ((System.ComponentModel.ISupportInitialize)WebCanvas).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private SharpVectors.Renderers.Forms.SvgPictureBox WebCanvas;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UIButton uiButton1;
     }
