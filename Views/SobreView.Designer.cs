@@ -174,7 +174,7 @@
             uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(292, 13);
+            uiLabel1.Location = new Point(222, 18);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(150, 55);
             uiLabel1.TabIndex = 0;
@@ -183,13 +183,13 @@
             // uiLabel2
             // 
             uiLabel2.AutoSize = true;
-            uiLabel2.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(363, 112);
+            uiLabel2.Location = new Point(302, 84);
             uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(150, 55);
+            uiLabel2.Size = new Size(31, 20);
             uiLabel2.TabIndex = 1;
-            uiLabel2.Text = "Aniflix";
+            uiLabel2.Text = "1.0";
             // 
             // SobreView
             // 
