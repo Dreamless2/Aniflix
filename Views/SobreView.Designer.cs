@@ -61,7 +61,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(331, 472);
+            LogoBox.Location = new Point(420, 472);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(220, 91);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
