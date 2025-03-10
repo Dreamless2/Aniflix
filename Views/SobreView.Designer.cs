@@ -97,7 +97,7 @@
             // pictureBox1
             // 
             pictureBox1.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            pictureBox1.Location = new Point(855, 537);
+            pictureBox1.Location = new Point(821, 217);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(158, 72);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -107,7 +107,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1493, 909);
+            ClientSize = new Size(1102, 888);
             Controls.Add(pictureBox1);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
