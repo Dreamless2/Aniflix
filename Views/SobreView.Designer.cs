@@ -135,7 +135,7 @@
             // 
             // uiPanel1
             // 
-            uiPanel1.BackColor = Color.FromArgb(217, 216, 214);
+            uiPanel1.BackColor = Color.FromArgb(227, 220, 211);
             uiPanel1.Controls.Add(FecharButton);
             uiPanel1.Controls.Add(uiSymbolLabel2);
             uiPanel1.Controls.Add(LicenseBox);
