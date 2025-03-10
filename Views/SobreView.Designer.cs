@@ -35,6 +35,7 @@
             uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
             LicenseBox = new PictureBox();
             linkLabel1 = new LinkLabel();
+            uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             SuspendLayout();
@@ -118,10 +119,21 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "GNU GPLv3 Home Page";
             // 
+            // uiSymbolLabel2
+            // 
+            uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel2.Location = new Point(315, 430);
+            uiSymbolLabel2.MinimumSize = new Size(1, 1);
+            uiSymbolLabel2.Name = "uiSymbolLabel2";
+            uiSymbolLabel2.Size = new Size(472, 28);
+            uiSymbolLabel2.TabIndex = 9;
+            uiSymbolLabel2.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1102, 888);
+            Controls.Add(uiSymbolLabel2);
             Controls.Add(linkLabel1);
             Controls.Add(LicenseBox);
             Controls.Add(uiSmoothLabel1);
@@ -149,5 +161,6 @@
         private Sunny.UI.UISmoothLabel uiSmoothLabel1;
         private PictureBox LicenseBox;
         private LinkLabel linkLabel1;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel2;
     }
 }
