@@ -37,9 +37,8 @@
             uiPanel1 = new Sunny.UI.UIPanel();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiPanel2 = new Sunny.UI.UIPanel();
-            uiLine1 = new Sunny.UI.UILine();
             uiLine2 = new Sunny.UI.UILine();
-            uiLedLabel1 = new Sunny.UI.UILedLabel();
+            uiLine1 = new Sunny.UI.UILine();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -145,11 +144,12 @@
             svgPictureBox1.Location = new Point(0, 0);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(216, 230);
+            svgPictureBox1.Source = null;
             svgPictureBox1.TabIndex = 2;
+            svgPictureBox1.XmlSource = null;
             // 
             // uiPanel2
             // 
-            uiPanel2.Controls.Add(uiLedLabel1);
             uiPanel2.Controls.Add(uiLine2);
             uiPanel2.Controls.Add(uiLine1);
             uiPanel2.Controls.Add(svgPictureBox1);
@@ -165,19 +165,6 @@
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // uiLine1
-            // 
-            uiLine1.BackColor = Color.Transparent;
-            uiLine1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
-            uiLine1.LineSize = 5;
-            uiLine1.Location = new Point(246, 13);
-            uiLine1.MinimumSize = new Size(1, 1);
-            uiLine1.Name = "uiLine1";
-            uiLine1.Size = new Size(814, 29);
-            uiLine1.TabIndex = 3;
-            // 
             // uiLine2
             // 
             uiLine2.BackColor = Color.Transparent;
@@ -191,15 +178,18 @@
             uiLine2.Size = new Size(814, 29);
             uiLine2.TabIndex = 4;
             // 
-            // uiLedLabel1
+            // uiLine1
             // 
-            uiLedLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLedLabel1.Location = new Point(246, 50);
-            uiLedLabel1.MinimumSize = new Size(1, 1);
-            uiLedLabel1.Name = "uiLedLabel1";
-            uiLedLabel1.Size = new Size(814, 35);
-            uiLedLabel1.TabIndex = 5;
-            uiLedLabel1.Text = "Aniflix";
+            uiLine1.BackColor = Color.Transparent;
+            uiLine1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
+            uiLine1.LineSize = 5;
+            uiLine1.Location = new Point(246, 13);
+            uiLine1.MinimumSize = new Size(1, 1);
+            uiLine1.Name = "uiLine1";
+            uiLine1.Size = new Size(814, 29);
+            uiLine1.TabIndex = 3;
             // 
             // SobreView
             // 
@@ -234,6 +224,5 @@
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UILine uiLine1;
         private Sunny.UI.UILine uiLine2;
-        private Sunny.UI.UILedLabel uiLedLabel1;
     }
 }
