@@ -39,7 +39,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 14.25F);
-            uiSymbolLabel1.Location = new Point(28, 513);
+            uiSymbolLabel1.Location = new Point(258, 432);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(657, 28);
@@ -49,7 +49,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(375, 730);
+            FecharButton.Location = new Point(347, 554);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
@@ -60,7 +60,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(41, 559);
+            LogoBox.Location = new Point(41, 326);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(169, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -73,7 +73,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 14.25F);
-            LinkSite.Location = new Point(41, 663);
+            LinkSite.Location = new Point(41, 455);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(169, 24);
             LinkSite.TabIndex = 4;
@@ -83,10 +83,11 @@
             // 
             // uiSmoothLabel1
             // 
+            uiSmoothLabel1.AutoSize = true;
             uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSmoothLabel1.Location = new Point(228, 128);
+            uiSmoothLabel1.Location = new Point(299, 118);
             uiSmoothLabel1.Name = "uiSmoothLabel1";
-            uiSmoothLabel1.Size = new Size(605, 198);
+            uiSmoothLabel1.Size = new Size(203, 73);
             uiSmoothLabel1.TabIndex = 6;
             uiSmoothLabel1.Text = "Aniflix";
             uiSmoothLabel1.TextAlign = ContentAlignment.MiddleCenter;
@@ -94,7 +95,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1060, 828);
+            ClientSize = new Size(908, 740);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
