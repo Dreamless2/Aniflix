@@ -28,6 +28,7 @@ namespace Aniflix.Views
         private void SobreView_Load(object sender, EventArgs e)
         {
             linkLabel1.Links.Add(0, 10, "https://www.themoviedb.org/");
+            uiLinkLabel1.Links.Add(0, 10, "https://github.com/brunocunha/Aniflix");
         }
 
         private void LogoBox_Click(object sender, EventArgs e)
