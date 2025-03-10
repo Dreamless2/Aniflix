@@ -79,7 +79,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(22, 105);
+            LinkSite.Location = new Point(22, 116);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 4;
@@ -141,11 +141,11 @@
             uiPanel1.Controls.Add(uiSymbolLabel1);
             uiPanel1.Dock = DockStyle.Bottom;
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 628);
+            uiPanel1.Location = new Point(0, 619);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(1102, 260);
+            uiPanel1.Size = new Size(1102, 269);
             uiPanel1.TabIndex = 10;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
