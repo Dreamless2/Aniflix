@@ -32,6 +32,7 @@
             FecharButton = new Sunny.UI.UIButton();
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
+            uiLabel1 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
@@ -80,10 +81,21 @@
             LinkSite.Text = "TMDB";
             LinkSite.LinkClicked += LinkSite_LinkClicked;
             // 
+            // uiLabel1
+            // 
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel1.Location = new Point(143, 602);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(100, 23);
+            uiLabel1.TabIndex = 5;
+            uiLabel1.Text = "uiLabel1";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
+            Controls.Add(uiLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
             Controls.Add(FecharButton);
@@ -104,5 +116,6 @@
         private Sunny.UI.UIButton FecharButton;
         private PictureBox LogoBox;
         private LinkLabel LinkSite;
+        private Sunny.UI.UILabel uiLabel1;
     }
 }
