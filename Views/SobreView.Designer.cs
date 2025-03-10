@@ -97,10 +97,10 @@
             // pictureBox1
             // 
             pictureBox1.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            pictureBox1.Location = new Point(835, 510);
+            pictureBox1.Location = new Point(855, 537);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(136, 68);
-            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
