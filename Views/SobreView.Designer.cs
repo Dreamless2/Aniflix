@@ -66,6 +66,7 @@
             LogoBox.TabIndex = 3;
             LogoBox.TabStop = false;
             LogoBox.Click += LogoBox_Click;
+            LogoBox.MouseEnter += LogoBox_MouseEnter;
             // 
             // LinkSite
             // 
