@@ -181,6 +181,8 @@
             uiLine1.BackColor = Color.Transparent;
             uiLine1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.DashDot;
+            uiLine1.LineSize = 5;
             uiLine1.Location = new Point(246, 13);
             uiLine1.MinimumSize = new Size(1, 1);
             uiLine1.Name = "uiLine1";
