@@ -31,7 +31,7 @@
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             FecharButton = new Sunny.UI.UIButton();
             LogoBox = new PictureBox();
-            LinkSite = new Sunny.UI.UILinkLabel();
+            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
@@ -67,26 +67,21 @@
             LogoBox.TabStop = false;
             LogoBox.Click += LogoBox_Click;
             // 
-            // LinkSite
+            // linkLabel1
             // 
-            LinkSite.ActiveLinkColor = Color.FromArgb(80, 160, 255);
-            LinkSite.Font = new Font("Microsoft Sans Serif", 12F);
-            LinkSite.ForeColor = Color.FromArgb(48, 48, 48);
-            LinkSite.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            LinkSite.Location = new Point(266, 267);
-            LinkSite.Name = "LinkSite";
-            LinkSite.Size = new Size(100, 23);
-            LinkSite.TabIndex = 6;
-            LinkSite.TabStop = true;
-            LinkSite.Text = "TMDB";
-            LinkSite.VisitedLinkColor = Color.FromArgb(230, 80, 80);
-            LinkSite.Click += LinkSite_Click;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(378, 315);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(87, 16);
+            linkLabel1.TabIndex = 4;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "linkLabel1";
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
-            Controls.Add(LinkSite);
+            Controls.Add(linkLabel1);
             Controls.Add(LogoBox);
             Controls.Add(FecharButton);
             Controls.Add(uiSymbolLabel1);
@@ -98,12 +93,13 @@
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UIButton FecharButton;
         private PictureBox LogoBox;
-        private Sunny.UI.UILinkLabel LinkSite;
+        private LinkLabel linkLabel1;
     }
 }
