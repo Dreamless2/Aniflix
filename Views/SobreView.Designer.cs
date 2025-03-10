@@ -39,7 +39,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(79, 509);
+            uiSymbolLabel1.Location = new Point(41, 483);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(559, 28);
@@ -49,7 +49,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(347, 554);
+            FecharButton.Location = new Point(131, 547);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
@@ -72,10 +72,10 @@
             // LinkSite
             // 
             LinkSite.AutoSize = true;
-            LinkSite.Font = new Font("Microsoft Sans Serif", 14.25F);
-            LinkSite.Location = new Point(41, 455);
+            LinkSite.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LinkSite.Location = new Point(41, 434);
             LinkSite.Name = "LinkSite";
-            LinkSite.Size = new Size(169, 24);
+            LinkSite.Size = new Size(142, 20);
             LinkSite.TabIndex = 4;
             LinkSite.TabStop = true;
             LinkSite.Text = "TMDB Home Page";
@@ -85,7 +85,7 @@
             // 
             uiSmoothLabel1.AutoSize = true;
             uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSmoothLabel1.Location = new Point(299, 118);
+            uiSmoothLabel1.Location = new Point(79, 85);
             uiSmoothLabel1.Name = "uiSmoothLabel1";
             uiSmoothLabel1.Size = new Size(203, 73);
             uiSmoothLabel1.TabIndex = 6;
@@ -95,7 +95,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(908, 740);
+            ClientSize = new Size(623, 672);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
