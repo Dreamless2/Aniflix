@@ -111,12 +111,12 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(490, 436);
+            linkLabel1.Location = new Point(869, 508);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(122, 16);
+            linkLabel1.Size = new Size(156, 16);
             linkLabel1.TabIndex = 8;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "TMDB Home Page";
+            linkLabel1.Text = "GNU GPLv3 Home Page";
             // 
             // SobreView
             // 
