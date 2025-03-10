@@ -22,5 +22,10 @@ namespace Aniflix.Views
         {
 
         }
+
+        private void SobreView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

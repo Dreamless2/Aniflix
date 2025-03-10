@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
+            WebCanvas = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             uiButton1 = new Sunny.UI.UIButton();
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)WebCanvas).BeginInit();
             SuspendLayout();
             // 
-            // svgPictureBox1
+            // WebCanvas
             // 
-            svgPictureBox1.Location = new Point(167, 329);
-            svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(727, 317);
-            svgPictureBox1.TabIndex = 0;
+            WebCanvas.Location = new Point(167, 329);
+            WebCanvas.Name = "WebCanvas";
+            WebCanvas.Size = new Size(727, 317);
+            WebCanvas.TabIndex = 0;
             // 
             // uiSymbolLabel1
             // 
@@ -68,19 +68,20 @@
             ClientSize = new Size(1060, 828);
             Controls.Add(uiButton1);
             Controls.Add(uiSymbolLabel1);
-            Controls.Add(svgPictureBox1);
+            Controls.Add(WebCanvas);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
+            Load += SobreView_Load;
+            ((System.ComponentModel.ISupportInitialize)WebCanvas).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
+        private SharpVectors.Renderers.Forms.SvgPictureBox WebCanvas;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UIButton uiButton1;
     }
