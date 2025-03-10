@@ -35,11 +35,10 @@
             LicenseSite = new LinkLabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiPanel1 = new Sunny.UI.UIPanel();
-            materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
             uiPanel2 = new Sunny.UI.UIPanel();
-            uiLabel1 = new Sunny.UI.UILabel();
-            uiLabel2 = new Sunny.UI.UILabel();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
+            uiLabel2 = new Sunny.UI.UILabel();
+            uiLabel1 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -120,7 +119,6 @@
             // uiPanel1
             // 
             uiPanel1.BackColor = Color.FromArgb(237, 239, 240);
-            uiPanel1.Controls.Add(materialButton1);
             uiPanel1.Controls.Add(uiSymbolLabel2);
             uiPanel1.Controls.Add(LicenseBox);
             uiPanel1.Controls.Add(LicenseSite);
@@ -140,21 +138,6 @@
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // materialButton1
-            // 
-            materialButton1.BackColor = Color.Indigo;
-            materialButton1.FlatAppearance.BorderSize = 0;
-            materialButton1.FlatStyle = FlatStyle.Flat;
-            materialButton1.ForeColor = Color.White;
-            materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
-            materialButton1.IconColor = Color.Black;
-            materialButton1.Location = new Point(449, 187);
-            materialButton1.Name = "materialButton1";
-            materialButton1.Size = new Size(204, 63);
-            materialButton1.TabIndex = 10;
-            materialButton1.Text = "Fechar";
-            materialButton1.UseVisualStyleBackColor = false;
-            // 
             // uiPanel2
             // 
             uiPanel2.Controls.Add(svgPictureBox1);
@@ -172,16 +155,13 @@
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // uiLabel1
+            // svgPictureBox1
             // 
-            uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(245, 13);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(150, 55);
-            uiLabel1.TabIndex = 0;
-            uiLabel1.Text = "Aniflix";
+            svgPictureBox1.Dock = DockStyle.Left;
+            svgPictureBox1.Location = new Point(0, 0);
+            svgPictureBox1.Name = "svgPictureBox1";
+            svgPictureBox1.Size = new Size(216, 230);
+            svgPictureBox1.TabIndex = 2;
             // 
             // uiLabel2
             // 
@@ -194,15 +174,16 @@
             uiLabel2.TabIndex = 1;
             uiLabel2.Text = "1.0";
             // 
-            // svgPictureBox1
+            // uiLabel1
             // 
-            svgPictureBox1.Dock = DockStyle.Left;
-            svgPictureBox1.Location = new Point(0, 0);
-            svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(216, 230);
-            svgPictureBox1.Source = null;
-            svgPictureBox1.TabIndex = 2;
-            svgPictureBox1.XmlSource = null;
+            uiLabel1.AutoSize = true;
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel1.Location = new Point(245, 13);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(150, 55);
+            uiLabel1.TabIndex = 0;
+            uiLabel1.Text = "Aniflix";
             // 
             // SobreView
             // 
@@ -234,7 +215,6 @@
         private LinkLabel LicenseSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UIPanel uiPanel1;
-        private FontAwesome.Sharp.Material.MaterialButton materialButton1;
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UILabel uiLabel2;
