@@ -37,9 +37,11 @@
             uiPanel1 = new Sunny.UI.UIPanel();
             materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
             uiPanel2 = new Sunny.UI.UIPanel();
+            uiLabel1 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
+            uiPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -152,6 +154,7 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(uiLabel1);
             uiPanel2.Dock = DockStyle.Top;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel2.Location = new Point(0, 35);
@@ -161,7 +164,18 @@
             uiPanel2.RectSides = ToolStripStatusLabelBorderSides.None;
             uiPanel2.Size = new Size(1102, 230);
             uiPanel2.TabIndex = 11;
+            uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel1
+            // 
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel1.Location = new Point(212, 87);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(100, 23);
+            uiLabel1.TabIndex = 0;
+            uiLabel1.Text = "uiLabel1";
             // 
             // SobreView
             // 
@@ -179,6 +193,7 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             uiPanel1.ResumeLayout(false);
             uiPanel1.PerformLayout();
+            uiPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -192,5 +207,6 @@
         private Sunny.UI.UIPanel uiPanel1;
         private FontAwesome.Sharp.Material.MaterialButton materialButton1;
         private Sunny.UI.UIPanel uiPanel2;
+        private Sunny.UI.UILabel uiLabel1;
     }
 }
