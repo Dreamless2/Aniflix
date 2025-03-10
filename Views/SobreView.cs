@@ -30,6 +30,7 @@ namespace Aniflix.Views
                 FileName = target,
                 UseShellExecute = true
             });
+            Cursor =
         }
 
         private void LinkSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
