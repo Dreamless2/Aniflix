@@ -31,9 +31,7 @@
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             FecharButton = new Sunny.UI.UIButton();
             LogoBox = new PictureBox();
-            LinkTMDB = new Sunny.UI.UILinkLabel();
             linkLabel1 = new LinkLabel();
-            linkLabel2 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
@@ -69,21 +67,6 @@
             LogoBox.TabStop = false;
             LogoBox.Click += LogoBox_Click;
             // 
-            // LinkTMDB
-            // 
-            LinkTMDB.ActiveLinkColor = Color.FromArgb(80, 160, 255);
-            LinkTMDB.AutoSize = true;
-            LinkTMDB.Font = new Font("Microsoft Sans Serif", 12F);
-            LinkTMDB.ForeColor = Color.FromArgb(48, 48, 48);
-            LinkTMDB.LinkBehavior = LinkBehavior.HoverUnderline;
-            LinkTMDB.Location = new Point(226, 255);
-            LinkTMDB.Name = "LinkTMDB";
-            LinkTMDB.Size = new Size(54, 20);
-            LinkTMDB.TabIndex = 4;
-            LinkTMDB.TabStop = true;
-            LinkTMDB.Text = "TMDB";
-            LinkTMDB.VisitedLinkColor = Color.FromArgb(230, 80, 80);
-            // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
@@ -94,23 +77,11 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "linkLabel1";
             // 
-            // linkLabel2
-            // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.Location = new Point(841, 326);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(87, 16);
-            linkLabel2.TabIndex = 6;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "linkLabel2";
-            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
-            Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
-            Controls.Add(LinkTMDB);
             Controls.Add(LogoBox);
             Controls.Add(FecharButton);
             Controls.Add(uiSymbolLabel1);
@@ -129,8 +100,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UIButton FecharButton;
         private PictureBox LogoBox;
-        private Sunny.UI.UILinkLabel LinkTMDB;
         private LinkLabel linkLabel1;
-        private LinkLabel linkLabel2;
     }
 }
