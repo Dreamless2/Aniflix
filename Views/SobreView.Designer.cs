@@ -100,18 +100,18 @@
             materialPictureBox1.ForeColor = Color.FromArgb(48, 48, 48);
             materialPictureBox1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
             materialPictureBox1.IconColor = Color.FromArgb(48, 48, 48);
-            materialPictureBox1.IconSize = 167;
+            materialPictureBox1.IconSize = 469;
             materialPictureBox1.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            materialPictureBox1.Location = new Point(596, 384);
+            materialPictureBox1.Location = new Point(573, 382);
             materialPictureBox1.Name = "materialPictureBox1";
-            materialPictureBox1.Size = new Size(167, 186);
+            materialPictureBox1.Size = new Size(741, 469);
             materialPictureBox1.TabIndex = 7;
             materialPictureBox1.TabStop = false;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(809, 682);
+            ClientSize = new Size(1493, 909);
             Controls.Add(materialPictureBox1);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
