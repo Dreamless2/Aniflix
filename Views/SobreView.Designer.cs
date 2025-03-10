@@ -39,6 +39,7 @@
             uiLabel2 = new Sunny.UI.UILabel();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiPanel2 = new Sunny.UI.UIPanel();
+            uiLine1 = new Sunny.UI.UILine();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -170,6 +171,7 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(uiLine1);
             uiPanel2.Controls.Add(svgPictureBox1);
             uiPanel2.Controls.Add(uiLabel2);
             uiPanel2.Controls.Add(uiLabel1);
@@ -184,6 +186,17 @@
             uiPanel2.TabIndex = 11;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiLine1
+            // 
+            uiLine1.BackColor = Color.Transparent;
+            uiLine1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLine1.Location = new Point(454, 183);
+            uiLine1.MinimumSize = new Size(1, 1);
+            uiLine1.Name = "uiLine1";
+            uiLine1.Size = new Size(360, 29);
+            uiLine1.TabIndex = 3;
             // 
             // SobreView
             // 
@@ -219,5 +232,6 @@
         private Sunny.UI.UILabel uiLabel2;
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
         private Sunny.UI.UIPanel uiPanel2;
+        private Sunny.UI.UILine uiLine1;
     }
 }
