@@ -13,6 +13,7 @@ namespace Aniflix.Views
         private void SobreView_Load(object sender, EventArgs e)
         {
             LinkSite.Links.Add(0, LinkSite.Text.Length, "https://www.themoviedb.org/");
+            LicenseSite.Links.Add(0, LinkSite.Text.Length, "https://www.themoviedb.org/");
         }
 
         private void LogoBox_Click(object sender, EventArgs e)
