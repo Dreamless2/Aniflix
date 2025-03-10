@@ -40,7 +40,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 14.25F);
-            uiSymbolLabel1.Location = new Point(119, 351);
+            uiSymbolLabel1.Location = new Point(114, 351);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(832, 33);
@@ -50,7 +50,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(387, 730);
+            FecharButton.Location = new Point(375, 730);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
@@ -61,7 +61,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(411, 547);
+            LogoBox.Location = new Point(420, 547);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(220, 91);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -96,7 +96,7 @@
             // uiSmoothLabel1
             // 
             uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSmoothLabel1.Location = new Point(206, 128);
+            uiSmoothLabel1.Location = new Point(228, 128);
             uiSmoothLabel1.Name = "uiSmoothLabel1";
             uiSmoothLabel1.Size = new Size(605, 198);
             uiSmoothLabel1.TabIndex = 6;
