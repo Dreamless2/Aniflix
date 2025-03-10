@@ -39,7 +39,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(41, 483);
+            uiSymbolLabel1.Location = new Point(291, 328);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(472, 28);
@@ -49,7 +49,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(131, 547);
+            FecharButton.Location = new Point(238, 411);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
