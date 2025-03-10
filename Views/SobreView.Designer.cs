@@ -195,12 +195,11 @@
             // 
             // uiLabel1
             // 
-            uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel1.Location = new Point(246, 34);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(203, 73);
+            uiLabel1.Size = new Size(676, 79);
             uiLabel1.TabIndex = 5;
             uiLabel1.Text = "Aniflix";
             // 
@@ -222,7 +221,6 @@
             uiPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             uiPanel2.ResumeLayout(false);
-            uiPanel2.PerformLayout();
             ResumeLayout(false);
         }
 
