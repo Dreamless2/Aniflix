@@ -39,7 +39,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 14.25F);
-            uiSymbolLabel1.Location = new Point(114, 408);
+            uiSymbolLabel1.Location = new Point(117, 478);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(832, 33);
@@ -60,9 +60,9 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(411, 556);
+            LogoBox.Location = new Point(411, 547);
             LogoBox.Name = "LogoBox";
-            LogoBox.Size = new Size(172, 82);
+            LogoBox.Size = new Size(220, 91);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
             LogoBox.TabIndex = 3;
             LogoBox.TabStop = false;
