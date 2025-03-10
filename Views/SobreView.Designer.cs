@@ -36,7 +36,6 @@
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiPanel1 = new Sunny.UI.UIPanel();
             uiLabel1 = new Sunny.UI.UILabel();
-            uiLabel2 = new Sunny.UI.UILabel();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiPanel2 = new Sunny.UI.UIPanel();
             uiLine1 = new Sunny.UI.UILine();
@@ -144,22 +143,11 @@
             uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(245, 13);
+            uiLabel1.Location = new Point(246, 45);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(157, 55);
             uiLabel1.TabIndex = 0;
             uiLabel1.Text = "Aniflix";
-            // 
-            // uiLabel2
-            // 
-            uiLabel2.AutoSize = true;
-            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(245, 83);
-            uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(31, 20);
-            uiLabel2.TabIndex = 1;
-            uiLabel2.Text = "1.0";
             // 
             // svgPictureBox1
             // 
@@ -173,7 +161,6 @@
             // 
             uiPanel2.Controls.Add(uiLine1);
             uiPanel2.Controls.Add(svgPictureBox1);
-            uiPanel2.Controls.Add(uiLabel2);
             uiPanel2.Controls.Add(uiLabel1);
             uiPanel2.Dock = DockStyle.Top;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
@@ -192,7 +179,7 @@
             uiLine1.BackColor = Color.Transparent;
             uiLine1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLine1.Location = new Point(454, 183);
+            uiLine1.Location = new Point(246, 13);
             uiLine1.MinimumSize = new Size(1, 1);
             uiLine1.Name = "uiLine1";
             uiLine1.Size = new Size(360, 29);
@@ -229,7 +216,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UILabel uiLabel1;
-        private Sunny.UI.UILabel uiLabel2;
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UILine uiLine1;
