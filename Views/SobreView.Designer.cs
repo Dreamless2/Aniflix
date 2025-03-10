@@ -36,6 +36,7 @@
             LicenseBox = new PictureBox();
             linkLabel1 = new LinkLabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
+            uiPanel1 = new Sunny.UI.UIPanel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             SuspendLayout();
@@ -129,10 +130,23 @@
             uiSymbolLabel2.TabIndex = 9;
             uiSymbolLabel2.Text = "Licenciado sob os termos da GPLv3";
             // 
+            // uiPanel1
+            // 
+            uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiPanel1.Location = new Point(301, 338);
+            uiPanel1.Margin = new Padding(4, 5, 4, 5);
+            uiPanel1.MinimumSize = new Size(1, 1);
+            uiPanel1.Name = "uiPanel1";
+            uiPanel1.Size = new Size(270, 180);
+            uiPanel1.TabIndex = 10;
+            uiPanel1.Text = "uiPanel1";
+            uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1102, 888);
+            Controls.Add(uiPanel1);
             Controls.Add(uiSymbolLabel2);
             Controls.Add(linkLabel1);
             Controls.Add(LicenseBox);
@@ -162,5 +176,6 @@
         private PictureBox LicenseBox;
         private LinkLabel linkLabel1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
+        private Sunny.UI.UIPanel uiPanel1;
     }
 }
