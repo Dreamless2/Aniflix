@@ -30,8 +30,8 @@
         {
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             FecharButton = new Sunny.UI.UIButton();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            LogoBox = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -55,21 +55,22 @@
             FecharButton.Text = "Fechar";
             FecharButton.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
-            // pictureBox1
+            // LogoBox
             // 
-            pictureBox1.Image = Properties.Resources.tmdb_logo;
-            pictureBox1.Location = new Point(400, 441);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(300, 189);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 3;
-            pictureBox1.TabStop = false;
+            LogoBox.Image = Properties.Resources.tmdb_logo;
+            LogoBox.Location = new Point(400, 441);
+            LogoBox.Name = "LogoBox";
+            LogoBox.Size = new Size(300, 189);
+            LogoBox.SizeMode = PictureBoxSizeMode.CenterImage;
+            LogoBox.TabIndex = 3;
+            LogoBox.TabStop = false;
+            LogoBox.Click += LogoBox_Click;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
-            Controls.Add(pictureBox1);
+            Controls.Add(LogoBox);
             Controls.Add(FecharButton);
             Controls.Add(uiSymbolLabel1);
             MaximizeBox = false;
@@ -78,13 +79,13 @@
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UIButton FecharButton;
-        private PictureBox pictureBox1;
+        private PictureBox LogoBox;
     }
 }
