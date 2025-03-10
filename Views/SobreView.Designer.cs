@@ -155,9 +155,7 @@
             svgPictureBox1.Location = new Point(0, 0);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(216, 230);
-            svgPictureBox1.Source = null;
             svgPictureBox1.TabIndex = 2;
-            svgPictureBox1.XmlSource = null;
             // 
             // uiPanel2
             // 
@@ -181,14 +179,13 @@
             uiLine1.BackColor = Color.Transparent;
             uiLine1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.DashDot;
+            uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine1.LineSize = 5;
             uiLine1.Location = new Point(246, 13);
             uiLine1.MinimumSize = new Size(1, 1);
             uiLine1.Name = "uiLine1";
             uiLine1.Size = new Size(360, 29);
             uiLine1.TabIndex = 3;
-            uiLine1.Text = "uiLine1";
             // 
             // SobreView
             // 
