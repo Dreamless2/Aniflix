@@ -104,6 +104,7 @@
             LicenseBox.TabIndex = 7;
             LicenseBox.TabStop = false;
             LicenseBox.Click += LicenseBox_Click;
+            LicenseBox.MouseEnter += LicenseBox_MouseEnter;
             // 
             // SobreView
             // 

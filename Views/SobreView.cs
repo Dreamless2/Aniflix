@@ -60,5 +60,10 @@ namespace Aniflix.Views
 
             });
         }
+
+        private void LicenseBox_MouseEnter(object sender, EventArgs e)
+        {
+            LicenseBox.Cursor = Cursors.Hand;
+        }
     }
 }
