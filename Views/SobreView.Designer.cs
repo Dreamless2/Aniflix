@@ -133,7 +133,7 @@
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
             uiPanel1.RectSides = ToolStripStatusLabelBorderSides.None;
-            uiPanel1.Size = new Size(1102, 189);
+            uiPanel1.Size = new Size(1077, 189);
             uiPanel1.TabIndex = 10;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -169,7 +169,7 @@
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
             uiPanel2.RectSides = ToolStripStatusLabelBorderSides.None;
-            uiPanel2.Size = new Size(1102, 230);
+            uiPanel2.Size = new Size(1077, 230);
             uiPanel2.TabIndex = 11;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
@@ -184,13 +184,13 @@
             uiLine1.Location = new Point(246, 13);
             uiLine1.MinimumSize = new Size(1, 1);
             uiLine1.Name = "uiLine1";
-            uiLine1.Size = new Size(360, 29);
+            uiLine1.Size = new Size(814, 29);
             uiLine1.TabIndex = 3;
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1102, 453);
+            ClientSize = new Size(1077, 453);
             Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
             MaximizeBox = false;
