@@ -32,7 +32,6 @@
             FecharButton = new Sunny.UI.UIButton();
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
-            uiLabel1 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
@@ -60,7 +59,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(400, 441);
+            LogoBox.Location = new Point(397, 413);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(300, 189);
             LogoBox.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -73,7 +72,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(470, 351);
+            LinkSite.Location = new Point(772, 507);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(54, 20);
             LinkSite.TabIndex = 4;
@@ -81,21 +80,10 @@
             LinkSite.Text = "TMDB";
             LinkSite.LinkClicked += LinkSite_LinkClicked;
             // 
-            // uiLabel1
-            // 
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(201, 419);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(100, 23);
-            uiLabel1.TabIndex = 5;
-            uiLabel1.Text = "uiLabel1";
-            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
-            Controls.Add(uiLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
             Controls.Add(FecharButton);
@@ -116,6 +104,5 @@
         private Sunny.UI.UIButton FecharButton;
         private PictureBox LogoBox;
         private LinkLabel LinkSite;
-        private Sunny.UI.UILabel uiLabel1;
     }
 }
