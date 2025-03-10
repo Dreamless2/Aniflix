@@ -60,7 +60,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(41, 326);
+            LogoBox.Location = new Point(41, 217);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(169, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -72,10 +72,10 @@
             // LinkSite
             // 
             LinkSite.AutoSize = true;
-            LinkSite.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(41, 434);
+            LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LinkSite.Location = new Point(41, 340);
             LinkSite.Name = "LinkSite";
-            LinkSite.Size = new Size(142, 20);
+            LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 4;
             LinkSite.TabStop = true;
             LinkSite.Text = "TMDB Home Page";
@@ -95,7 +95,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(623, 672);
+            ClientSize = new Size(809, 672);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
