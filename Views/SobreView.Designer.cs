@@ -166,9 +166,7 @@
             svgPictureBox1.Location = new Point(0, 0);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(216, 230);
-            svgPictureBox1.Source = null;
             svgPictureBox1.TabIndex = 2;
-            svgPictureBox1.XmlSource = null;
             // 
             // uiPanel2
             // 
