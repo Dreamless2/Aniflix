@@ -35,7 +35,6 @@
             LicenseSite = new LinkLabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiPanel1 = new Sunny.UI.UIPanel();
-            uiLabel1 = new Sunny.UI.UILabel();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiPanel2 = new Sunny.UI.UIPanel();
             uiLine1 = new Sunny.UI.UILine();
@@ -139,17 +138,6 @@
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // uiLabel1
-            // 
-            uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(246, 45);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(157, 55);
-            uiLabel1.TabIndex = 0;
-            uiLabel1.Text = "Aniflix";
-            // 
             // svgPictureBox1
             // 
             svgPictureBox1.Dock = DockStyle.Left;
@@ -163,7 +151,6 @@
             uiPanel2.Controls.Add(uiLine2);
             uiPanel2.Controls.Add(uiLine1);
             uiPanel2.Controls.Add(svgPictureBox1);
-            uiPanel2.Controls.Add(uiLabel1);
             uiPanel2.Dock = DockStyle.Top;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel2.Location = new Point(0, 35);
@@ -220,7 +207,6 @@
             uiPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             uiPanel2.ResumeLayout(false);
-            uiPanel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -232,7 +218,6 @@
         private LinkLabel LicenseSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UIPanel uiPanel1;
-        private Sunny.UI.UILabel uiLabel1;
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UILine uiLine1;
