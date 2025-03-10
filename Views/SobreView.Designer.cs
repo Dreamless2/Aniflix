@@ -60,7 +60,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(397, 413);
+            LogoBox.Location = new Point(374, 403);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(300, 189);
             LogoBox.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -73,7 +73,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(772, 507);
+            LinkSite.Location = new Point(450, 623);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(54, 20);
             LinkSite.TabIndex = 4;
@@ -83,13 +83,14 @@
             // 
             // uiLabel1
             // 
+            uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(143, 602);
+            uiLabel1.Location = new Point(138, 623);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(100, 23);
+            uiLabel1.Size = new Size(306, 20);
             uiLabel1.TabIndex = 5;
-            uiLabel1.Text = "uiLabel1";
+            uiLabel1.Text = "Para acessar o site do TMDB, clique aqui: ";
             // 
             // SobreView
             // 
