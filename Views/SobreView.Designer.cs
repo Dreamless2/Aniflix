@@ -55,13 +55,14 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(411, 175);
+            FecharButton.Location = new Point(420, 175);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
-            FecharButton.Size = new Size(310, 72);
+            FecharButton.Size = new Size(263, 72);
             FecharButton.TabIndex = 2;
             FecharButton.Text = "Fechar";
             FecharButton.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            FecharButton.Click += FecharButton_Click;
             // 
             // LogoBox
             // 

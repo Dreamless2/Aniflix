@@ -65,5 +65,10 @@ namespace Aniflix.Views
         {
             LicenseBox.Cursor = Cursors.Hand;
         }
+
+        private void FecharButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
