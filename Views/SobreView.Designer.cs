@@ -55,7 +55,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(411, 172);
+            FecharButton.Location = new Point(411, 173);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
@@ -114,7 +114,7 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(904, 116);
+            linkLabel1.Location = new Point(904, 108);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(156, 16);
             linkLabel1.TabIndex = 8;
@@ -124,7 +124,7 @@
             // uiSymbolLabel2
             // 
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(274, 174);
+            uiSymbolLabel2.Location = new Point(811, 137);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(251, 28);
@@ -134,6 +134,7 @@
             // uiPanel1
             // 
             uiPanel1.Controls.Add(FecharButton);
+            uiPanel1.Controls.Add(uiSymbolLabel2);
             uiPanel1.Controls.Add(LicenseBox);
             uiPanel1.Controls.Add(linkLabel1);
             uiPanel1.Controls.Add(LogoBox);
@@ -155,7 +156,6 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1102, 888);
             Controls.Add(uiPanel1);
-            Controls.Add(uiSymbolLabel2);
             Controls.Add(uiSmoothLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
