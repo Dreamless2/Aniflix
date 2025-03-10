@@ -136,14 +136,17 @@
             // 
             // materialButton1
             // 
+            materialButton1.BackColor = Color.Indigo;
+            materialButton1.FlatAppearance.BorderSize = 0;
+            materialButton1.FlatStyle = FlatStyle.Flat;
             materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
             materialButton1.IconColor = Color.Black;
             materialButton1.Location = new Point(436, 183);
             materialButton1.Name = "materialButton1";
             materialButton1.Size = new Size(230, 67);
             materialButton1.TabIndex = 10;
-            materialButton1.Text = "materialButton1";
-            materialButton1.UseVisualStyleBackColor = true;
+            materialButton1.Text = "Fechar";
+            materialButton1.UseVisualStyleBackColor = false;
             // 
             // SobreView
             // 
