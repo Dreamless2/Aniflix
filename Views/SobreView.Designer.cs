@@ -100,7 +100,7 @@
             uiSmoothLabel1.Name = "uiSmoothLabel1";
             uiSmoothLabel1.Size = new Size(300, 60);
             uiSmoothLabel1.TabIndex = 6;
-            uiSmoothLabel1.Text = "uiSmoothLabel1";
+            uiSmoothLabel1.Text = "Aniflix";
             // 
             // SobreView
             // 
