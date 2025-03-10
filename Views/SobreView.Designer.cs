@@ -114,6 +114,7 @@
             // 
             // uiSymbolLabel2
             // 
+            uiSymbolLabel2.BackColor = Color.Transparent;
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiSymbolLabel2.Location = new Point(811, 137);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
