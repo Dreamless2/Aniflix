@@ -33,6 +33,7 @@
             LogoBox = new PictureBox();
             LinkTMDB = new Sunny.UI.UILinkLabel();
             linkLabel1 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
@@ -93,10 +94,21 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "linkLabel1";
             // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Location = new Point(841, 326);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(87, 16);
+            linkLabel2.TabIndex = 6;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "linkLabel2";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
+            Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
             Controls.Add(LinkTMDB);
             Controls.Add(LogoBox);
@@ -119,5 +131,6 @@
         private PictureBox LogoBox;
         private Sunny.UI.UILinkLabel LinkTMDB;
         private LinkLabel linkLabel1;
+        private LinkLabel linkLabel2;
     }
 }
