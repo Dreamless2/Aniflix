@@ -30,6 +30,8 @@
         {
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             uiButton1 = new Sunny.UI.UIButton();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -53,10 +55,19 @@
             uiButton1.Text = "Fechar";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(112, 230);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(356, 214);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
+            Controls.Add(pictureBox1);
             Controls.Add(uiButton1);
             Controls.Add(uiSymbolLabel1);
             MaximizeBox = false;
@@ -65,11 +76,13 @@
             Text = "SobreView";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UIButton uiButton1;
+        private PictureBox pictureBox1;
     }
 }
