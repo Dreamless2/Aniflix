@@ -34,6 +34,7 @@
             LinkSite = new LinkLabel();
             uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
             LicenseBox = new PictureBox();
+            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             SuspendLayout();
@@ -106,10 +107,22 @@
             LicenseBox.Click += LicenseBox_Click;
             LicenseBox.MouseEnter += LicenseBox_MouseEnter;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.Location = new Point(490, 436);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(122, 16);
+            linkLabel1.TabIndex = 8;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "TMDB Home Page";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1102, 888);
+            Controls.Add(linkLabel1);
             Controls.Add(LicenseBox);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
@@ -135,5 +148,6 @@
         private LinkLabel LinkSite;
         private Sunny.UI.UISmoothLabel uiSmoothLabel1;
         private PictureBox LicenseBox;
+        private LinkLabel linkLabel1;
     }
 }
