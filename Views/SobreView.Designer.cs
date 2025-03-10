@@ -57,9 +57,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(112, 230);
+            pictureBox1.Image = Properties.Resources.tmdb_logo;
+            pictureBox1.Location = new Point(350, 452);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(356, 214);
+            pictureBox1.Size = new Size(317, 143);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
