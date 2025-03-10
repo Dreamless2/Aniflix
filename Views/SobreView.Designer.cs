@@ -135,6 +135,7 @@
             // 
             // uiPanel1
             // 
+            uiPanel1.BackColor = Color.Gray;
             uiPanel1.Controls.Add(FecharButton);
             uiPanel1.Controls.Add(uiSymbolLabel2);
             uiPanel1.Controls.Add(LicenseBox);
@@ -143,6 +144,7 @@
             uiPanel1.Controls.Add(LinkSite);
             uiPanel1.Controls.Add(uiSymbolLabel1);
             uiPanel1.Dock = DockStyle.Bottom;
+            uiPanel1.FillColor = Color.Gray;
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel1.Location = new Point(0, 263);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
