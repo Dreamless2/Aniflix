@@ -39,6 +39,7 @@
             uiPanel1 = new Sunny.UI.UIPanel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
+            uiPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -54,7 +55,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(215, 625);
+            FecharButton.Location = new Point(404, 195);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
@@ -100,7 +101,7 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(651, 393);
+            LicenseBox.Location = new Point(902, 23);
             LicenseBox.Name = "LicenseBox";
             LicenseBox.Size = new Size(158, 72);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -132,14 +133,16 @@
             // 
             // uiPanel1
             // 
+            uiPanel1.Controls.Add(FecharButton);
+            uiPanel1.Controls.Add(LicenseBox);
+            uiPanel1.Dock = DockStyle.Bottom;
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(301, 338);
+            uiPanel1.Location = new Point(0, 577);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(270, 180);
+            uiPanel1.Size = new Size(1102, 311);
             uiPanel1.TabIndex = 10;
-            uiPanel1.Text = "uiPanel1";
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // SobreView
@@ -149,11 +152,9 @@
             Controls.Add(uiPanel1);
             Controls.Add(uiSymbolLabel2);
             Controls.Add(linkLabel1);
-            Controls.Add(LicenseBox);
             Controls.Add(uiSmoothLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
-            Controls.Add(FecharButton);
             Controls.Add(uiSymbolLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -163,6 +164,7 @@
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
+            uiPanel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
