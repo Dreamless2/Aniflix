@@ -97,7 +97,7 @@
             // pictureBox1
             // 
             pictureBox1.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            pictureBox1.Location = new Point(895, 86);
+            pictureBox1.Location = new Point(881, 328);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(158, 72);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
