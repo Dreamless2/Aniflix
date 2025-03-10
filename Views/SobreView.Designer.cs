@@ -36,6 +36,7 @@
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiPanel1 = new Sunny.UI.UIPanel();
             materialButton1 = new FontAwesome.Sharp.Material.MaterialButton();
+            uiPanel2 = new Sunny.UI.UIPanel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -149,10 +150,23 @@
             materialButton1.Text = "Fechar";
             materialButton1.UseVisualStyleBackColor = false;
             // 
+            // uiPanel2
+            // 
+            uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
+            uiPanel2.Location = new Point(153, 109);
+            uiPanel2.Margin = new Padding(4, 5, 4, 5);
+            uiPanel2.MinimumSize = new Size(1, 1);
+            uiPanel2.Name = "uiPanel2";
+            uiPanel2.Size = new Size(270, 180);
+            uiPanel2.TabIndex = 11;
+            uiPanel2.Text = "uiPanel2";
+            uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1102, 532);
+            Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -176,5 +190,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UIPanel uiPanel1;
         private FontAwesome.Sharp.Material.MaterialButton materialButton1;
+        private Sunny.UI.UIPanel uiPanel2;
     }
 }
