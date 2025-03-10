@@ -125,9 +125,10 @@
             uiPanel1.Controls.Add(LogoBox);
             uiPanel1.Controls.Add(LinkSite);
             uiPanel1.Controls.Add(uiSymbolLabel1);
+            uiPanel1.Dock = DockStyle.Bottom;
             uiPanel1.FillColor = Color.FromArgb(237, 239, 240);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 261);
+            uiPanel1.Location = new Point(0, 272);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
@@ -187,7 +188,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1102, 539);
+            ClientSize = new Size(1102, 453);
             Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
             MaximizeBox = false;
