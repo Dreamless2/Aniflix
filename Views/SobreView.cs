@@ -68,7 +68,15 @@ namespace Aniflix.Views
 
         private void LicenseSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            var target = e.Link!.LinkData! as string;
+            if (!string.IsNullOrEmpty(target))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = target,
+                    UseShellExecute = true
+                });
+            }
         }
     }
 }
