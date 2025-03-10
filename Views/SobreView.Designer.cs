@@ -55,7 +55,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(404, 195);
+            FecharButton.Location = new Point(406, 207);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(310, 72);
@@ -66,7 +66,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(77, 393);
+            LogoBox.Location = new Point(31, 12);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(169, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -79,7 +79,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(90, 504);
+            LinkSite.Location = new Point(22, 105);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 4;
@@ -136,6 +136,8 @@
             uiPanel1.Controls.Add(FecharButton);
             uiPanel1.Controls.Add(LicenseBox);
             uiPanel1.Controls.Add(linkLabel1);
+            uiPanel1.Controls.Add(LogoBox);
+            uiPanel1.Controls.Add(LinkSite);
             uiPanel1.Controls.Add(uiSymbolLabel1);
             uiPanel1.Dock = DockStyle.Bottom;
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
@@ -145,6 +147,7 @@
             uiPanel1.Name = "uiPanel1";
             uiPanel1.Size = new Size(1102, 311);
             uiPanel1.TabIndex = 10;
+            uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // SobreView
@@ -154,8 +157,6 @@
             Controls.Add(uiPanel1);
             Controls.Add(uiSymbolLabel2);
             Controls.Add(uiSmoothLabel1);
-            Controls.Add(LinkSite);
-            Controls.Add(LogoBox);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
