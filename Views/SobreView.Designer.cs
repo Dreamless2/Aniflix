@@ -96,9 +96,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(811, 562);
+            pictureBox1.Location = new Point(675, 426);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(8, 8);
+            pictureBox1.Size = new Size(100, 50);
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
