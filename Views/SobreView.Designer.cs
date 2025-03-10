@@ -128,12 +128,12 @@
             uiPanel1.Dock = DockStyle.Bottom;
             uiPanel1.FillColor = Color.FromArgb(237, 239, 240);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 272);
+            uiPanel1.Location = new Point(0, 264);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
             uiPanel1.RectSides = ToolStripStatusLabelBorderSides.None;
-            uiPanel1.Size = new Size(1102, 181);
+            uiPanel1.Size = new Size(1102, 189);
             uiPanel1.TabIndex = 10;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
