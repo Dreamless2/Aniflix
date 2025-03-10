@@ -70,7 +70,7 @@
             // LinkSite
             // 
             LinkSite.AutoSize = true;
-            LinkSite.Location = new Point(378, 315);
+            LinkSite.Location = new Point(470, 351);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(87, 16);
             LinkSite.TabIndex = 4;

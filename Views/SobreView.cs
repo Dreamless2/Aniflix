@@ -1,15 +1,5 @@
-﻿using System;
-using Sunny.UI;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Drawing;
-using Aniflix.Functions;
+﻿using Sunny.UI;
 using System.Diagnostics;
-using System.Windows.Forms;
-using System.ComponentModel;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace Aniflix.Views
 {
