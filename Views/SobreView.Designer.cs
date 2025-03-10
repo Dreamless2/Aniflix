@@ -39,10 +39,10 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 14.25F);
-            uiSymbolLabel1.Location = new Point(191, 600);
+            uiSymbolLabel1.Location = new Point(28, 513);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
-            uiSymbolLabel1.Size = new Size(832, 33);
+            uiSymbolLabel1.Size = new Size(657, 28);
             uiSymbolLabel1.TabIndex = 1;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
