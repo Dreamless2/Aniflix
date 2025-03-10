@@ -39,10 +39,12 @@
             uiPanel2 = new Sunny.UI.UIPanel();
             uiLabel1 = new Sunny.UI.UILabel();
             uiLabel2 = new Sunny.UI.UILabel();
+            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
             uiPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -155,6 +157,7 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(svgPictureBox1);
             uiPanel2.Controls.Add(uiLabel2);
             uiPanel2.Controls.Add(uiLabel1);
             uiPanel2.Dock = DockStyle.Top;
@@ -191,6 +194,15 @@
             uiLabel2.TabIndex = 1;
             uiLabel2.Text = "1.0";
             // 
+            // svgPictureBox1
+            // 
+            svgPictureBox1.Location = new Point(90, 74);
+            svgPictureBox1.Name = "svgPictureBox1";
+            svgPictureBox1.Size = new Size(200, 200);
+            svgPictureBox1.Source = null;
+            svgPictureBox1.TabIndex = 2;
+            svgPictureBox1.XmlSource = null;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -209,6 +221,7 @@
             uiPanel1.PerformLayout();
             uiPanel2.ResumeLayout(false);
             uiPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -224,5 +237,6 @@
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UILabel uiLabel2;
+        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
     }
 }
