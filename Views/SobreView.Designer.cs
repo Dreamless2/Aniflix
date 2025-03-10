@@ -78,7 +78,7 @@
             uiLinkLabel1.Size = new Size(100, 23);
             uiLinkLabel1.TabIndex = 4;
             uiLinkLabel1.TabStop = true;
-            uiLinkLabel1.Text = "uiLinkLabel1";
+            uiLinkLabel1.Text = "https://www.themoviedb.org/";
             uiLinkLabel1.VisitedLinkColor = Color.FromArgb(230, 80, 80);
             // 
             // SobreView
