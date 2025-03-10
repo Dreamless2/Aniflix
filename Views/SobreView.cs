@@ -52,11 +52,13 @@ namespace Aniflix.Views
 
         private void LicenseBox_Click(object sender, EventArgs e)
         {
+            var url = "https://www.gnu.org/licenses/gpl-3.0.html";
             Process.Start(new ProcessStartInfo
             {
-                FileName = "https://www.gnu.org/licenses/gpl-3.0.html",
+                FileName = url,
                 UseShellExecute = true
 
-            }
+            });
+        }
     }
-    }
+}
