@@ -37,7 +37,7 @@ namespace Aniflix.Views
 
         private void LinkSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string linkData = e.Link.LinkData as string;
+            var linkData = e.Link?.LinkData as string;
             if (linkData != null)
             {
                 Process.Start(linkData);
