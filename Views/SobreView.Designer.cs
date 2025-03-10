@@ -50,7 +50,7 @@
             // 
             uiSymbolLabel1.BackColor = Color.Transparent;
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(31, 216);
+            uiSymbolLabel1.Location = new Point(31, 137);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(524, 28);
@@ -125,10 +125,9 @@
             uiPanel1.Controls.Add(LogoBox);
             uiPanel1.Controls.Add(LinkSite);
             uiPanel1.Controls.Add(uiSymbolLabel1);
-            uiPanel1.Dock = DockStyle.Bottom;
             uiPanel1.FillColor = Color.FromArgb(237, 239, 240);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 301);
+            uiPanel1.Location = new Point(0, 261);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
@@ -188,7 +187,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1102, 572);
+            ClientSize = new Size(1102, 539);
             Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
             MaximizeBox = false;
