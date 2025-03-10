@@ -118,20 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="svgPictureBox1.XmlSource" xml:space="preserve">
-    <value>&lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve"&gt;
+    <value>&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300"&gt;
+  &lt;defs&gt;
+    &lt;linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"&gt;
+      &lt;stop offset="0%" style="stop-color:#FF3CAC;"/&gt;
+      &lt;stop offset="50%" style="stop-color:#784BA0;"/&gt;
+      &lt;stop offset="100%" style="stop-color:#2B86C5;"/&gt;
+    &lt;/linearGradient&gt;
+  &lt;/defs&gt;
+  
+  &lt;text x="50%" y="50%" font-family="Arial, sans-serif" font-weight="bold"
+        font-size="90" fill="url(#gradient)" text-anchor="middle" dy="0.35em"&gt;
+    ANIFLIX
+  &lt;/text&gt;
 
-&lt;defs&gt;
-&lt;/defs&gt;
-&lt;g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" &gt;
-	&lt;path d="M 79.496 61.024 H 5.057 C 2.264 61.024 0 58.76 0 55.967 v -27.38 c 0 -2.793 2.264 -5.057 5.057 -5.057 h 74.438 c 2.793 0 5.057 2.264 5.057 5.057 v 27.38 C 84.553 58.76 82.289 61.024 79.496 61.024 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,242,234); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /&gt;
-	&lt;path d="M 84.943 66.471 H 10.504 c -2.793 0 -5.057 -2.264 -5.057 -5.057 v -27.38 c 0 -2.793 2.264 -5.057 5.057 -5.057 h 74.438 c 2.793 0 5.057 2.264 5.057 5.057 v 27.38 C 90 64.207 87.736 66.471 84.943 66.471 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,0,79); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /&gt;
-	&lt;path d="M 82.219 63.748 H 7.781 c -2.793 0 -5.057 -2.264 -5.057 -5.057 V 31.31 c 0 -2.793 2.264 -5.057 5.057 -5.057 h 74.438 c 2.793 0 5.057 2.264 5.057 5.057 v 27.38 C 87.276 61.483 85.012 63.748 82.219 63.748 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /&gt;
-	&lt;path d="M 73.393 56.835 h -8.905 c -0.828 0 -1.5 -0.672 -1.5 -1.5 V 34.666 c 0 -0.829 0.672 -1.5 1.5 -1.5 h 8.905 c 0.828 0 1.5 0.671 1.5 1.5 s -0.672 1.5 -1.5 1.5 h -7.405 v 17.669 h 7.405 c 0.828 0 1.5 0.672 1.5 1.5 S 74.221 56.835 73.393 56.835 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /&gt;
-	&lt;path d="M 73.393 46.5 h -8.905 c -0.828 0 -1.5 -0.671 -1.5 -1.5 s 0.672 -1.5 1.5 -1.5 h 8.905 c 0.828 0 1.5 0.671 1.5 1.5 S 74.221 46.5 73.393 46.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /&gt;
-	&lt;path d="M 33.459 56.835 c -0.829 0 -1.5 -0.672 -1.5 -1.5 V 34.666 c 0 -0.829 0.671 -1.5 1.5 -1.5 s 1.5 0.671 1.5 1.5 v 20.669 C 34.959 56.163 34.288 56.835 33.459 56.835 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /&gt;
-	&lt;path d="M 25.317 56.323 h -8.71 c -0.829 0 -1.5 -0.672 -1.5 -1.5 V 35.177 c 0 -0.829 0.671 -1.5 1.5 -1.5 s 1.5 0.671 1.5 1.5 v 18.146 h 7.21 c 0.829 0 1.5 0.672 1.5 1.5 S 26.146 56.323 25.317 56.323 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /&gt;
-	&lt;path d="M 49.253 56.835 c -0.635 0 -1.2 -0.399 -1.413 -0.997 l -7.358 -20.669 c -0.278 -0.78 0.129 -1.638 0.91 -1.916 c 0.778 -0.278 1.638 0.129 1.916 0.91 l 5.945 16.7 l 5.944 -16.7 c 0.278 -0.781 1.138 -1.186 1.916 -0.91 c 0.78 0.278 1.188 1.136 0.91 1.916 l -7.357 20.669 C 50.453 56.436 49.888 56.835 49.253 56.835 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" /&gt;
-&lt;/g&gt;
+  &lt;circle cx="100" cy="100" r="10" fill="#FFD700"/&gt;
+  &lt;circle cx="500" cy="200" r="15" fill="#FFD700"/&gt;
+
+  &lt;path d="M200 50 Q300 100 400 50" stroke="#FF3CAC" stroke-width="5" fill="none"/&gt;
+  &lt;path d="M200 250 Q300 200 400 250" stroke="#2B86C5" stroke-width="5" fill="none"/&gt;
 &lt;/svg&gt;</value>
   </data>
 </root>
