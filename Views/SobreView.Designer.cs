@@ -103,11 +103,11 @@
             // uiSymbolLabel2
             // 
             uiSymbolLabel2.BackColor = Color.Transparent;
-            uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(809, 137);
+            uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel2.Location = new Point(779, 137);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
-            uiSymbolLabel2.Size = new Size(251, 28);
+            uiSymbolLabel2.Size = new Size(281, 28);
             uiSymbolLabel2.TabIndex = 9;
             uiSymbolLabel2.Text = "Licenciado sob os termos da GPLv3.";
             // 
