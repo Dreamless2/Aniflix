@@ -33,6 +33,7 @@
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
             uiLabel1 = new Sunny.UI.UILabel();
+            uiLabel2 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
             // 
@@ -73,7 +74,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(510, 661);
+            LinkSite.Location = new Point(510, 654);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(82, 29);
             LinkSite.TabIndex = 4;
@@ -92,10 +93,21 @@
             uiLabel1.TabIndex = 5;
             uiLabel1.Text = "Para acessar o site do TMDB, clique aqui: ";
             // 
+            // uiLabel2
+            // 
+            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel2.Location = new Point(598, 661);
+            uiLabel2.Name = "uiLabel2";
+            uiLabel2.Size = new Size(100, 23);
+            uiLabel2.TabIndex = 6;
+            uiLabel2.Text = "uiLabel2";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
+            Controls.Add(uiLabel2);
             Controls.Add(uiLabel1);
             Controls.Add(LinkSite);
             Controls.Add(LogoBox);
@@ -118,5 +130,6 @@
         private PictureBox LogoBox;
         private LinkLabel LinkSite;
         private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UILabel uiLabel2;
     }
 }
