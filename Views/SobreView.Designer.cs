@@ -95,12 +95,13 @@
             // 
             // uiSmoothLabel1
             // 
-            uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiSmoothLabel1.Location = new Point(211, 295);
+            uiSmoothLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSmoothLabel1.Location = new Point(206, 128);
             uiSmoothLabel1.Name = "uiSmoothLabel1";
-            uiSmoothLabel1.Size = new Size(300, 60);
+            uiSmoothLabel1.Size = new Size(605, 198);
             uiSmoothLabel1.TabIndex = 6;
             uiSmoothLabel1.Text = "Aniflix";
+            uiSmoothLabel1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // SobreView
             // 
