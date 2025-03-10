@@ -76,6 +76,7 @@
             LinkSite.TabIndex = 4;
             LinkSite.TabStop = true;
             LinkSite.Text = "linkLabel1";
+            LinkSite.LinkClicked += LinkSite_LinkClicked;
             // 
             // SobreView
             // 
