@@ -45,7 +45,7 @@
             // uiSymbolLabel1
             // 
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(31, 138);
+            uiSymbolLabel1.Location = new Point(31, 137);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(472, 28);
@@ -79,7 +79,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(31, 116);
+            LinkSite.Location = new Point(31, 108);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 4;
@@ -101,9 +101,9 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(902, 23);
+            LicenseBox.Location = new Point(904, 12);
             LicenseBox.Name = "LicenseBox";
-            LicenseBox.Size = new Size(158, 72);
+            LicenseBox.Size = new Size(158, 83);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
             LicenseBox.TabIndex = 7;
             LicenseBox.TabStop = false;
