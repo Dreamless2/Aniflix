@@ -37,9 +37,9 @@
             uiPanel1 = new Sunny.UI.UIPanel();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiPanel2 = new Sunny.UI.UIPanel();
+            uiLabel1 = new Sunny.UI.UILabel();
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
-            uiLabel1 = new Sunny.UI.UILabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -145,9 +145,7 @@
             svgPictureBox1.Location = new Point(0, 0);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(216, 230);
-            svgPictureBox1.Source = null;
             svgPictureBox1.TabIndex = 2;
-            svgPictureBox1.XmlSource = null;
             // 
             // uiPanel2
             // 
@@ -166,6 +164,16 @@
             uiPanel2.TabIndex = 11;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel1
+            // 
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel1.Location = new Point(246, 34);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(676, 72);
+            uiLabel1.TabIndex = 5;
+            uiLabel1.Text = "Aniflix";
             // 
             // uiLine2
             // 
@@ -192,16 +200,6 @@
             uiLine1.Name = "uiLine1";
             uiLine1.Size = new Size(596, 29);
             uiLine1.TabIndex = 3;
-            // 
-            // uiLabel1
-            // 
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(246, 34);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(676, 72);
-            uiLabel1.TabIndex = 5;
-            uiLabel1.Text = "Aniflix";
             // 
             // SobreView
             // 
