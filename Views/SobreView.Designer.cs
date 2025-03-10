@@ -63,7 +63,7 @@
             LogoBox.Image = Properties.Resources.tmdb_logo;
             LogoBox.Location = new Point(396, 459);
             LogoBox.Name = "LogoBox";
-            LogoBox.Size = new Size(300, 189);
+            LogoBox.Size = new Size(255, 139);
             LogoBox.SizeMode = PictureBoxSizeMode.CenterImage;
             LogoBox.TabIndex = 3;
             LogoBox.TabStop = false;
