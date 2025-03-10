@@ -68,7 +68,7 @@ namespace Aniflix.Views
 
         private void FecharButton_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }
