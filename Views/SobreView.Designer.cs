@@ -34,7 +34,7 @@
             LinkSite = new LinkLabel();
             uiSmoothLabel1 = new Sunny.UI.UISmoothLabel();
             LicenseBox = new PictureBox();
-            linkLabel1 = new LinkLabel();
+            LicenseSite = new LinkLabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiPanel1 = new Sunny.UI.UIPanel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
@@ -111,16 +111,17 @@
             LicenseBox.Click += LicenseBox_Click;
             LicenseBox.MouseEnter += LicenseBox_MouseEnter;
             // 
-            // linkLabel1
+            // LicenseSite
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(904, 108);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(156, 16);
-            linkLabel1.TabIndex = 8;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "GNU GPLv3 Home Page";
+            LicenseSite.AutoSize = true;
+            LicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LicenseSite.Location = new Point(904, 108);
+            LicenseSite.Name = "LicenseSite";
+            LicenseSite.Size = new Size(156, 16);
+            LicenseSite.TabIndex = 8;
+            LicenseSite.TabStop = true;
+            LicenseSite.Text = "GNU GPLv3 Home Page";
+            LicenseSite.LinkClicked += LicenseSite_LinkClicked;
             // 
             // uiSymbolLabel2
             // 
@@ -137,7 +138,7 @@
             uiPanel1.Controls.Add(FecharButton);
             uiPanel1.Controls.Add(uiSymbolLabel2);
             uiPanel1.Controls.Add(LicenseBox);
-            uiPanel1.Controls.Add(linkLabel1);
+            uiPanel1.Controls.Add(LicenseSite);
             uiPanel1.Controls.Add(LogoBox);
             uiPanel1.Controls.Add(LinkSite);
             uiPanel1.Controls.Add(uiSymbolLabel1);
@@ -179,7 +180,7 @@
         private LinkLabel LinkSite;
         private Sunny.UI.UISmoothLabel uiSmoothLabel1;
         private PictureBox LicenseBox;
-        private LinkLabel linkLabel1;
+        private LinkLabel LicenseSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UIPanel uiPanel1;
     }

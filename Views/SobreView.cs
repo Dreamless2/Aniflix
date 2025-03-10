@@ -65,5 +65,10 @@ namespace Aniflix.Views
         {
             Close();
         }
+
+        private void LicenseSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
