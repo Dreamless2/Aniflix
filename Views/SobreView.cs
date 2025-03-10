@@ -1,4 +1,5 @@
 ﻿using Sunny.UI;
+using Sunny.UI.Win32;
 using System.Diagnostics;
 
 namespace Aniflix.Views
@@ -22,7 +23,11 @@ namespace Aniflix.Views
 
         private void LogoBox_Click(object sender, EventArgs e)
         {
-            Process.Start("https://www.themoviedb.org/");
+            Process.Start("https://www.themoviedb.org/")
+                 {
+                FileName = target,
+                    UseShellExecute = true
+                });
         }
 
         private void LinkSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
