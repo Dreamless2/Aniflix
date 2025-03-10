@@ -31,7 +31,6 @@
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             FecharButton = new Sunny.UI.UIButton();
             LogoBox = new PictureBox();
-            linkLabel1 = new LinkLabel();
             uiLinkLabel1 = new Sunny.UI.UILinkLabel();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             SuspendLayout();
@@ -68,16 +67,6 @@
             LogoBox.TabStop = false;
             LogoBox.Click += LogoBox_Click;
             // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(514, 346);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(87, 16);
-            linkLabel1.TabIndex = 5;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "linkLabel1";
-            // 
             // uiLinkLabel1
             // 
             uiLinkLabel1.ActiveLinkColor = Color.FromArgb(80, 160, 255);
@@ -97,7 +86,6 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1060, 828);
             Controls.Add(uiLinkLabel1);
-            Controls.Add(linkLabel1);
             Controls.Add(LogoBox);
             Controls.Add(FecharButton);
             Controls.Add(uiSymbolLabel1);
@@ -109,14 +97,12 @@
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private Sunny.UI.UIButton FecharButton;
         private PictureBox LogoBox;
-        private LinkLabel linkLabel1;
         private Sunny.UI.UILinkLabel uiLinkLabel1;
     }
 }
