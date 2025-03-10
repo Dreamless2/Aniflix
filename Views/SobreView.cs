@@ -30,7 +30,6 @@ namespace Aniflix.Views
                 FileName = target,
                 UseShellExecute = true
             });
-            LogoBox.Cursor = Cursors.Hand;
         }
 
         private void LinkSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -48,7 +47,7 @@ namespace Aniflix.Views
 
         private void LogoBox_MouseEnter(object sender, EventArgs e)
         {
-            Logo Cursor = Cursors.Hand;
+            LogoBox.Cursor = Cursors.Hand;
         }
     }
 }
