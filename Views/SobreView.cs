@@ -42,10 +42,6 @@ namespace Aniflix.Views
             {
                 Process.Start(linkData);
             }
-            else
-            {
-                // Trate o caso em que o linkData é nulo
-            }
         }
     }
 }
