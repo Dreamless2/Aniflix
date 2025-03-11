@@ -265,9 +265,8 @@
             svgPictureBox1.Location = new Point(279, 228);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(200, 200);
-            svgPictureBox1.Source = null;
+            svgPictureBox1.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg";
             svgPictureBox1.TabIndex = 23;
-            svgPictureBox1.XmlSource = null;
             // 
             // SobreView
             // 
