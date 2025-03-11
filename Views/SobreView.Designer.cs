@@ -38,6 +38,7 @@
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
@@ -46,12 +47,11 @@
             uiButton1 = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
-            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -182,8 +182,20 @@
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.tmdb_logo;
+            pictureBox3.ImageLocation = "";
+            pictureBox3.Location = new Point(539, 27);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(259, 83);
+            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox3.TabIndex = 23;
+            pictureBox3.TabStop = false;
+            // 
             // pictureBox2
             // 
+            pictureBox2.Image = Properties.Resources.sunnyui;
             pictureBox2.ImageLocation = "";
             pictureBox2.Location = new Point(539, 205);
             pictureBox2.Name = "pictureBox2";
@@ -274,17 +286,6 @@
             LinkSunnyUI.TabStop = true;
             LinkSunnyUI.Text = "SunnyUI Home Page";
             // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.tmdb_logo;
-            pictureBox3.ImageLocation = "";
-            pictureBox3.Location = new Point(539, 27);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(259, 83);
-            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox3.TabIndex = 23;
-            pictureBox3.TabStop = false;
-            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -313,8 +314,8 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
