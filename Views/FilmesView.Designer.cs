@@ -237,15 +237,24 @@
             // 
             // uiTextBox7
             // 
+            uiTextBox7.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            uiTextBox7.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox7.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox7.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox7.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox7.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox7.FillColor2 = Color.FromArgb(238, 248, 248);
             uiTextBox7.Font = new Font("Microsoft Sans Serif", 12F);
             uiTextBox7.Location = new Point(30, 482);
             uiTextBox7.Margin = new Padding(4, 5, 4, 5);
             uiTextBox7.MinimumSize = new Size(1, 16);
             uiTextBox7.Name = "uiTextBox7";
             uiTextBox7.Padding = new Padding(5);
-            uiTextBox7.RectColor = Color.Black;
+            uiTextBox7.RectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox7.ScrollBarColor = Color.FromArgb(0, 150, 136);
             uiTextBox7.ShowText = false;
             uiTextBox7.Size = new Size(883, 29);
+            uiTextBox7.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox7.TabIndex = 37;
             uiTextBox7.Text = "--";
             uiTextBox7.TextAlignment = ContentAlignment.MiddleLeft;
@@ -292,15 +301,24 @@
             // 
             // GeneroText
             // 
+            GeneroText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            GeneroText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            GeneroText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            GeneroText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            GeneroText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            GeneroText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroText.Location = new Point(30, 541);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
             GeneroText.Padding = new Padding(5);
-            GeneroText.RectColor = Color.Black;
+            GeneroText.RectColor = Color.FromArgb(0, 150, 136);
+            GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             GeneroText.ShowText = false;
             GeneroText.Size = new Size(883, 29);
+            GeneroText.Style = Sunny.UI.UIStyle.Custom;
             GeneroText.TabIndex = 37;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
             GeneroText.Watermark = "Gênero";
@@ -319,15 +337,24 @@
             // 
             // FilmeText
             // 
+            FilmeText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            FilmeText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            FilmeText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            FilmeText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            FilmeText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            FilmeText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            FilmeText.FillColor2 = Color.FromArgb(238, 248, 248);
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
             FilmeText.Location = new Point(30, 423);
             FilmeText.Margin = new Padding(4, 5, 4, 5);
             FilmeText.MinimumSize = new Size(1, 16);
             FilmeText.Name = "FilmeText";
             FilmeText.Padding = new Padding(5);
-            FilmeText.RectColor = Color.Black;
+            FilmeText.RectColor = Color.FromArgb(0, 150, 136);
+            FilmeText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FilmeText.ShowText = false;
             FilmeText.Size = new Size(699, 29);
+            FilmeText.Style = Sunny.UI.UIStyle.Custom;
             FilmeText.TabIndex = 37;
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
             FilmeText.Watermark = "Filme";
@@ -401,15 +428,24 @@
             // 
             // DiretorText
             // 
+            DiretorText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            DiretorText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            DiretorText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            DiretorText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            DiretorText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            DiretorText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            DiretorText.FillColor2 = Color.FromArgb(238, 248, 248);
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
             DiretorText.Location = new Point(30, 600);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
             DiretorText.Padding = new Padding(5);
-            DiretorText.RectColor = Color.Black;
+            DiretorText.RectColor = Color.FromArgb(0, 150, 136);
+            DiretorText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             DiretorText.ShowText = false;
             DiretorText.Size = new Size(883, 29);
+            DiretorText.Style = Sunny.UI.UIStyle.Custom;
             DiretorText.TabIndex = 38;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
             DiretorText.Watermark = "Diretor";
@@ -417,15 +453,24 @@
             // 
             // EstrelasText
             // 
+            EstrelasText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            EstrelasText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            EstrelasText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            EstrelasText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            EstrelasText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            EstrelasText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasText.Location = new Point(30, 659);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
             EstrelasText.Padding = new Padding(5);
-            EstrelasText.RectColor = Color.Black;
+            EstrelasText.RectColor = Color.FromArgb(0, 150, 136);
+            EstrelasText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstrelasText.ShowText = false;
             EstrelasText.Size = new Size(883, 29);
+            EstrelasText.Style = Sunny.UI.UIStyle.Custom;
             EstrelasText.TabIndex = 38;
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
             EstrelasText.Watermark = "Estrelas";
@@ -458,15 +503,24 @@
             // 
             // FaseMCUText
             // 
+            FaseMCUText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            FaseMCUText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            FaseMCUText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            FaseMCUText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            FaseMCUText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            FaseMCUText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
             FaseMCUText.Location = new Point(737, 423);
             FaseMCUText.Margin = new Padding(4, 5, 4, 5);
             FaseMCUText.MinimumSize = new Size(1, 16);
             FaseMCUText.Name = "FaseMCUText";
             FaseMCUText.Padding = new Padding(5);
-            FaseMCUText.RectColor = Color.Black;
+            FaseMCUText.RectColor = Color.FromArgb(0, 150, 136);
+            FaseMCUText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FaseMCUText.ShowText = false;
             FaseMCUText.Size = new Size(176, 29);
+            FaseMCUText.Style = Sunny.UI.UIStyle.Custom;
             FaseMCUText.TabIndex = 38;
             FaseMCUText.Text = "--";
             FaseMCUText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -476,15 +530,18 @@
             // ResumoText
             // 
             ResumoText.FillColor = Color.White;
+            ResumoText.FillColor2 = Color.FromArgb(238, 248, 248);
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
             ResumoText.Location = new Point(921, 87);
             ResumoText.Margin = new Padding(4, 5, 4, 5);
             ResumoText.MinimumSize = new Size(1, 1);
             ResumoText.Name = "ResumoText";
             ResumoText.Padding = new Padding(2);
-            ResumoText.RectColor = Color.Black;
+            ResumoText.RectColor = Color.FromArgb(0, 150, 136);
+            ResumoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             ResumoText.ShowText = false;
             ResumoText.Size = new Size(530, 660);
+            ResumoText.Style = Sunny.UI.UIStyle.Custom;
             ResumoText.TabIndex = 45;
             ResumoText.TextAlignment = ContentAlignment.TopLeft;
             // 
