@@ -192,7 +192,6 @@
             uiSymbolLabel5.Symbol = 560403;
             uiSymbolLabel5.TabIndex = 20;
             uiSymbolLabel5.Text = "TMDBLib 2.2.0";
-            uiSymbolLabel5.TextAlign = ContentAlignment.TopLeft;
             // 
             // uiSymbolLabel4
             // 
@@ -205,7 +204,6 @@
             uiSymbolLabel4.Symbol = 560403;
             uiSymbolLabel4.TabIndex = 19;
             uiSymbolLabel4.Text = "NET 8.0";
-            uiSymbolLabel4.TextAlign = ContentAlignment.TopLeft;
             // 
             // uiSymbolLabel3
             // 
