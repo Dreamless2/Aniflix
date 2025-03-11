@@ -208,7 +208,7 @@
             uiSymbolLabel3.MinimumSize = new Size(1, 1);
             uiSymbolLabel3.Name = "uiSymbolLabel3";
             uiSymbolLabel3.Size = new Size(160, 28);
-            uiSymbolLabel3.Symbol = 240;
+            uiSymbolLabel3.Symbol = 61713;
             uiSymbolLabel3.TabIndex = 18;
             uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits";
             // 
@@ -235,7 +235,6 @@
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
-            uiGroupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
