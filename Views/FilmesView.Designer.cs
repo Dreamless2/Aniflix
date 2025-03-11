@@ -479,7 +479,7 @@
             SinopseText.ShowText = false;
             SinopseText.Size = new Size(876, 129);
             SinopseText.TabIndex = 46;
-            SinopseText.TextAlignment = ContentAlignment.MiddleCenter;
+            SinopseText.TextAlignment = ContentAlignment.TopLeft;
             // 
             // CopiarButton
             // 
