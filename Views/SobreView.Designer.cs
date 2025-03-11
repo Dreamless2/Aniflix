@@ -39,20 +39,20 @@
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            LogoBox = new SharpVectors.Renderers.Forms.SvgPictureBox();
+            pictureBox2 = new PictureBox();
+            uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
             uiButton1 = new Sunny.UI.UIButton();
-            uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
-            pictureBox2 = new PictureBox();
-            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             LinkTMDBLib = new LinkLabel();
             LinkSunny = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -162,7 +162,7 @@
             // 
             // uiGroupBox1
             // 
-            uiGroupBox1.Controls.Add(svgPictureBox1);
+            uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(pictureBox2);
             uiGroupBox1.Controls.Add(uiSymbolLabel6);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
@@ -181,6 +181,38 @@
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
+            // 
+            // LogoBox
+            // 
+            LogoBox.Location = new Point(539, 26);
+            LogoBox.Name = "LogoBox";
+            LogoBox.Size = new Size(259, 83);
+            LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            LogoBox.Source = null;
+            LogoBox.TabIndex = 23;
+            LogoBox.XmlSource = null;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.ImageLocation = resources.GetString("pictureBox2.ImageLocation");
+            pictureBox2.Location = new Point(539, 205);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(259, 83);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
+            // 
+            // uiSymbolLabel6
+            // 
+            uiSymbolLabel6.BackColor = Color.Transparent;
+            uiSymbolLabel6.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel6.Location = new Point(8, 171);
+            uiSymbolLabel6.MinimumSize = new Size(1, 1);
+            uiSymbolLabel6.Name = "uiSymbolLabel6";
+            uiSymbolLabel6.Size = new Size(127, 28);
+            uiSymbolLabel6.Symbol = 560403;
+            uiSymbolLabel6.TabIndex = 21;
+            uiSymbolLabel6.Text = "SunnyUI 3.8.2";
             // 
             // uiSymbolLabel5
             // 
@@ -229,37 +261,6 @@
             uiButton1.Text = "uiButton1";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
-            // uiSymbolLabel6
-            // 
-            uiSymbolLabel6.BackColor = Color.Transparent;
-            uiSymbolLabel6.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel6.Location = new Point(8, 171);
-            uiSymbolLabel6.MinimumSize = new Size(1, 1);
-            uiSymbolLabel6.Name = "uiSymbolLabel6";
-            uiSymbolLabel6.Size = new Size(127, 28);
-            uiSymbolLabel6.Symbol = 560403;
-            uiSymbolLabel6.TabIndex = 21;
-            uiSymbolLabel6.Text = "SunnyUI 3.8.2";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.ImageLocation = resources.GetString("pictureBox2.ImageLocation");
-            pictureBox2.Location = new Point(539, 205);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(259, 83);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 22;
-            pictureBox2.TabStop = false;
-            // 
-            // svgPictureBox1
-            // 
-            svgPictureBox1.Location = new Point(539, 26);
-            svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(259, 83);
-            svgPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            svgPictureBox1.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg";
-            svgPictureBox1.TabIndex = 23;
-            // 
             // LinkTMDBLib
             // 
             LinkTMDBLib.AutoSize = true;
@@ -306,9 +307,8 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
-            uiGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -330,7 +330,7 @@
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel6;
         private PictureBox pictureBox2;
-        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
+        private SharpVectors.Renderers.Forms.SvgPictureBox LogoBox;
         private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunny;
     }
