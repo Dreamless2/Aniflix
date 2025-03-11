@@ -164,23 +164,27 @@ namespace Aniflix.Views
             ActivateButton(sender);
             OpenChildForm(new TrashflixView(), sender);
         }
-        private void SairButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void AniflixView_Load(object sender, EventArgs e)
-        {
-        }
 
         private void SobreButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             OpenChildForm(new SobreView(), sender);
         }
+        private void SairButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
         private void LogoBox_Click(object sender, EventArgs e)
         {
             Reset();
         }
+
+        private void AniflixView_Load(object sender, EventArgs e)
+        {
+        }
+
+
     }
 }
