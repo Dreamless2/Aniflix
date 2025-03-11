@@ -578,7 +578,7 @@
             // FilmesView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(238, 248, 248);
+            BackColor = Color.Red;
             ClientSize = new Size(1485, 899);
             ControlBox = false;
             ControlBoxFillHoverColor = Color.FromArgb(51, 171, 160);
