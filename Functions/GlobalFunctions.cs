@@ -60,6 +60,8 @@ namespace Aniflix.Functions
                     cbox.RectColor = ThemeColor.SecondaryColor;
                 }
             }
+
+
         }
 
         public static (Color background, Color accent) SelectThemeColors()
