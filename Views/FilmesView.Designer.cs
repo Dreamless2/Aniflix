@@ -65,6 +65,7 @@
             AnteriorButton = new FontAwesome.Sharp.Material.MaterialButton();
             ProximoButton = new FontAwesome.Sharp.Material.MaterialButton();
             DadosLabel = new Sunny.UI.UILabel();
+            ResumoText.SuspendLayout();
             SuspendLayout();
             // 
             // CodigoFilmeLabel
@@ -224,7 +225,7 @@
             Fra.AutoSize = true;
             Fra.Font = new Font("Microsoft Sans Serif", 12F);
             Fra.ForeColor = Color.Black;
-            Fra.Location = new Point(737, 399);
+            Fra.Location = new Point(81, 336);
             Fra.Name = "Fra";
             Fra.Size = new Size(85, 20);
             Fra.TabIndex = 36;
@@ -245,6 +246,7 @@
             uiTextBox7.Text = "--";
             uiTextBox7.TextAlignment = ContentAlignment.MiddleLeft;
             uiTextBox7.Watermark = "Franquia";
+            uiTextBox7.WordWarp = false;
             // 
             // TituloOriginalLabel
             // 
@@ -297,6 +299,7 @@
             GeneroText.TabIndex = 37;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
             GeneroText.Watermark = "Gênero";
+            GeneroText.WordWarp = false;
             // 
             // FilmeLabel
             // 
@@ -405,6 +408,7 @@
             DiretorText.TabIndex = 38;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
             DiretorText.Watermark = "Diretor";
+            DiretorText.WordWarp = false;
             // 
             // EstrelasText
             // 
@@ -420,6 +424,7 @@
             EstrelasText.TabIndex = 38;
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
             EstrelasText.Watermark = "Estrelas";
+            EstrelasText.WordWarp = false;
             // 
             // EstudioText
             // 
@@ -435,6 +440,7 @@
             EstudioText.TabIndex = 38;
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
+            EstudioText.WordWarp = false;
             // 
             // FaseMCUText
             // 
@@ -451,9 +457,11 @@
             FaseMCUText.Text = "--";
             FaseMCUText.TextAlignment = ContentAlignment.MiddleLeft;
             FaseMCUText.Watermark = "";
+            FaseMCUText.WordWarp = false;
             // 
             // ResumoText
             // 
+            ResumoText.Controls.Add(Fra);
             ResumoText.FillColor = Color.White;
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
             ResumoText.Location = new Point(921, 87);
@@ -590,7 +598,6 @@
             Controls.Add(GeneroText);
             Controls.Add(uiTextBox7);
             Controls.Add(TagsText);
-            Controls.Add(Fra);
             Controls.Add(TituloAlternativoLabel);
             Controls.Add(FilmeLabel);
             Controls.Add(DataLancamentoText);
@@ -616,6 +623,8 @@
             TitleColor = Color.FromArgb(0, 150, 136);
             ZoomScaleRect = new Rectangle(15, 15, 1209, 709);
             Load += FilmesView_Load;
+            ResumoText.ResumeLayout(false);
+            ResumoText.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
