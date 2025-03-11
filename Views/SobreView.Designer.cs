@@ -44,10 +44,12 @@
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
             uiButton1 = new Sunny.UI.UIButton();
             uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -165,6 +167,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(pictureBox2);
             uiGroupBox1.Controls.Add(uiSymbolLabel6);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
             uiGroupBox1.Controls.Add(uiSymbolLabel4);
@@ -243,6 +246,16 @@
             uiSymbolLabel6.TabIndex = 21;
             uiSymbolLabel6.Text = "SunnyUI 3.8.2";
             // 
+            // pictureBox2
+            // 
+            pictureBox2.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
+            pictureBox2.Location = new Point(653, 205);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(140, 83);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.TabIndex = 22;
+            pictureBox2.TabStop = false;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -266,6 +279,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
             uiGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -287,5 +301,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel6;
+        private PictureBox pictureBox2;
     }
 }
