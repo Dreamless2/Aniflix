@@ -55,11 +55,10 @@
             uiSymbolLabel2.Location = new Point(8, 171);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
-            uiSymbolLabel2.Size = new Size(281, 28);
+            uiSymbolLabel2.Size = new Size(185, 28);
             uiSymbolLabel2.Symbol = 560403;
             uiSymbolLabel2.TabIndex = 17;
             uiSymbolLabel2.Text = "Licensed under GPLv3";
-            uiSymbolLabel2.TextAlign = ContentAlignment.TopLeft;
             // 
             // LicenseBox
             // 
@@ -114,7 +113,6 @@
             uiSymbolLabel1.Symbol = 560403;
             uiSymbolLabel1.TabIndex = 12;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
-            uiSymbolLabel1.TextAlign = ContentAlignment.TopLeft;
             // 
             // pictureBox1
             // 
