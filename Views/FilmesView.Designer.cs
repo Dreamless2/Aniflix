@@ -344,7 +344,7 @@
             TagsLabel.AutoSize = true;
             TagsLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TagsLabel.ForeColor = Color.Black;
-            TagsLabel.Location = new Point(736, 340);
+            TagsLabel.Location = new Point(737, 340);
             TagsLabel.Name = "TagsLabel";
             TagsLabel.Size = new Size(44, 20);
             TagsLabel.TabIndex = 39;
