@@ -200,6 +200,7 @@
             uiSymbolLabel4.MinimumSize = new Size(1, 1);
             uiSymbolLabel4.Name = "uiSymbolLabel4";
             uiSymbolLabel4.Size = new Size(90, 28);
+            uiSymbolLabel4.Symbol = 560403;
             uiSymbolLabel4.TabIndex = 19;
             uiSymbolLabel4.Text = "NET 8.0";
             // 
