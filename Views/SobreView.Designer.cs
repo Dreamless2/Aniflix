@@ -197,6 +197,7 @@
             LogoBox.TabIndex = 23;
             LogoBox.TabStop = false;
             LogoBox.Click += LogoBox_Click;
+            LogoBox.MouseEnter += LogoBox_MouseEnter;
             // 
             // SunnyBox
             // 
