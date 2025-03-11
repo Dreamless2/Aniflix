@@ -32,7 +32,6 @@
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             LicenseBox = new PictureBox();
             LicenseSite = new LinkLabel();
-            LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             pictureBox1 = new PictureBox();
@@ -48,7 +47,6 @@
             pictureBox2 = new PictureBox();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -87,16 +85,6 @@
             LicenseSite.TabIndex = 16;
             LicenseSite.TabStop = true;
             LicenseSite.Text = "GNU GPLv3 Home Page";
-            // 
-            // LogoBox
-            // 
-            LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(593, 23);
-            LogoBox.Name = "LogoBox";
-            LogoBox.Size = new Size(200, 83);
-            LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            LogoBox.TabIndex = 13;
-            LogoBox.TabStop = false;
             // 
             // LinkSite
             // 
@@ -179,7 +167,6 @@
             uiGroupBox1.Controls.Add(uiSymbolLabel1);
             uiGroupBox1.Controls.Add(uiSymbolLabel2);
             uiGroupBox1.Controls.Add(LicenseBox);
-            uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Font = new Font("Microsoft Sans Serif", 12F);
             uiGroupBox1.Location = new Point(22, 153);
             uiGroupBox1.Margin = new Padding(4, 5, 4, 5);
@@ -262,7 +249,7 @@
             // 
             // svgPictureBox1
             // 
-            svgPictureBox1.Location = new Point(221, 205);
+            svgPictureBox1.Location = new Point(482, 35);
             svgPictureBox1.Name = "svgPictureBox1";
             svgPictureBox1.Size = new Size(311, 59);
             svgPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -288,7 +275,6 @@
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
             uiGroupBox1.PerformLayout();
@@ -302,7 +288,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private PictureBox LicenseBox;
         private LinkLabel LicenseSite;
-        private PictureBox LogoBox;
         private LinkLabel LinkSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private PictureBox pictureBox1;
