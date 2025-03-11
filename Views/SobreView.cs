@@ -79,18 +79,6 @@ namespace Aniflix.Views
                 });
             }
         }
-        private void LinkTMDBLib_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            var target = e.Link!.LinkData! as string;
-            if (!string.IsNullOrEmpty(target))
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = target,
-                    UseShellExecute = true
-                });
-            }
-        }
 
         private void SunnyBox_Click(object sender, EventArgs e)
         {
@@ -114,6 +102,19 @@ namespace Aniflix.Views
                 });
             }
         }
+        private void LinkTMDBLib_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var target = e.Link!.LinkData! as string;
+            if (!string.IsNullOrEmpty(target))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = target,
+                    UseShellExecute = true
+                });
+            }
+        }
+
 
         private void LinkSunnyUI_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
