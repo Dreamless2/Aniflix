@@ -178,7 +178,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(852, 453);
+            ClientSize = new Size(852, 746);
             Controls.Add(uiSymbolLabel2);
             Controls.Add(LicenseBox);
             Controls.Add(LicenseSite);
