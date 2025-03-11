@@ -47,10 +47,12 @@
             uiButton1 = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -160,6 +162,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(pictureBox3);
             uiGroupBox1.Controls.Add(pictureBox2);
             uiGroupBox1.Controls.Add(uiSymbolLabel6);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
@@ -271,6 +274,16 @@
             LinkSunnyUI.TabStop = true;
             LinkSunnyUI.Text = "SunnyUI Home Page";
             // 
+            // pictureBox3
+            // 
+            pictureBox3.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
+            pictureBox3.Location = new Point(539, 27);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(259, 83);
+            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox3.TabIndex = 23;
+            pictureBox3.TabStop = false;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -300,6 +313,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -323,5 +337,6 @@
         private PictureBox pictureBox2;
         private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunnyUI;
+        private PictureBox pictureBox3;
     }
 }
