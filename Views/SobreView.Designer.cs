@@ -68,9 +68,9 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(524, 116);
+            LicenseBox.Location = new Point(593, 116);
             LicenseBox.Name = "LicenseBox";
-            LicenseBox.Size = new Size(269, 83);
+            LicenseBox.Size = new Size(200, 83);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
             LicenseBox.TabIndex = 15;
             LicenseBox.TabStop = false;
@@ -89,9 +89,9 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(653, 23);
+            LogoBox.Location = new Point(593, 23);
             LogoBox.Name = "LogoBox";
-            LogoBox.Size = new Size(140, 83);
+            LogoBox.Size = new Size(200, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
             LogoBox.TabIndex = 13;
             LogoBox.TabStop = false;
