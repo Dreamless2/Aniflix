@@ -210,6 +210,7 @@
             SunnyBox.TabIndex = 22;
             SunnyBox.TabStop = false;
             SunnyBox.Click += SunnyBox_Click;
+            SunnyBox.MouseEnter += SunnyBox_MouseEnter;
             // 
             // uiSymbolLabel6
             // 
