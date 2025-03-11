@@ -238,11 +238,10 @@
             uiSymbolLabel6.Location = new Point(8, 171);
             uiSymbolLabel6.MinimumSize = new Size(1, 1);
             uiSymbolLabel6.Name = "uiSymbolLabel6";
-            uiSymbolLabel6.Size = new Size(185, 28);
+            uiSymbolLabel6.Size = new Size(91, 28);
             uiSymbolLabel6.Symbol = 560403;
             uiSymbolLabel6.TabIndex = 21;
             uiSymbolLabel6.Text = "SunnyUI";
-            uiSymbolLabel6.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // SobreView
             // 
