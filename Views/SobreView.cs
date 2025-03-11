@@ -71,7 +71,10 @@ namespace Aniflix.Views
         {
             LicenseBox.Cursor = Cursors.Hand;
         }
-
+        private void SunnyBox_MouseEnter(object sender, EventArgs e)
+        {
+            SunnyBox.Cursor = Cursors.Hand;
+        }
 
 
 
@@ -131,9 +134,6 @@ namespace Aniflix.Views
             }
         }
 
-        private void SunnyBox_MouseEnter(object sender, EventArgs e)
-        {
 
-        }
     }
 }
