@@ -274,7 +274,7 @@
             FecharButton.TabIndex = 23;
             FecharButton.Text = "Fechar";
             FecharButton.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            FecharButton.Click += FecharButton_Click_1;
+            FecharButton.Click += FecharButton_Click;
             // 
             // LinkTMDBLib
             // 
