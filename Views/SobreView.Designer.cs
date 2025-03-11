@@ -58,7 +58,6 @@
             uiSymbolLabel2.Size = new Size(281, 28);
             uiSymbolLabel2.TabIndex = 17;
             uiSymbolLabel2.Text = "Licenciado sob os termos da GPLv3.";
-            uiSymbolLabel2.TextAlign = ContentAlignment.TopLeft;
             // 
             // LicenseBox
             // 
@@ -112,7 +111,6 @@
             uiSymbolLabel1.Size = new Size(524, 28);
             uiSymbolLabel1.TabIndex = 12;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
-            uiSymbolLabel1.TextAlign = ContentAlignment.TopLeft;
             // 
             // pictureBox1
             // 
@@ -197,10 +195,9 @@
             uiSymbolLabel4.Location = new Point(3, 137);
             uiSymbolLabel4.MinimumSize = new Size(1, 1);
             uiSymbolLabel4.Name = "uiSymbolLabel4";
-            uiSymbolLabel4.Size = new Size(281, 28);
+            uiSymbolLabel4.Size = new Size(90, 28);
             uiSymbolLabel4.TabIndex = 19;
             uiSymbolLabel4.Text = "NET 8.0";
-            uiSymbolLabel4.TextAlign = ContentAlignment.TopLeft;
             // 
             // uiSymbolLabel5
             // 
@@ -209,10 +206,9 @@
             uiSymbolLabel5.Location = new Point(3, 171);
             uiSymbolLabel5.MinimumSize = new Size(1, 1);
             uiSymbolLabel5.Name = "uiSymbolLabel5";
-            uiSymbolLabel5.Size = new Size(281, 28);
+            uiSymbolLabel5.Size = new Size(98, 28);
             uiSymbolLabel5.TabIndex = 20;
             uiSymbolLabel5.Text = "TMDBLib";
-            uiSymbolLabel5.TextAlign = ContentAlignment.TopLeft;
             // 
             // SobreView
             // 
