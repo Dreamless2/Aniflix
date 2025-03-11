@@ -46,11 +46,13 @@
             uiButton1 = new Sunny.UI.UIButton();
             uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             pictureBox2 = new PictureBox();
+            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -168,6 +170,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(svgPictureBox1);
             uiGroupBox1.Controls.Add(pictureBox2);
             uiGroupBox1.Controls.Add(uiSymbolLabel6);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
@@ -257,6 +260,15 @@
             pictureBox2.TabIndex = 22;
             pictureBox2.TabStop = false;
             // 
+            // svgPictureBox1
+            // 
+            svgPictureBox1.Location = new Point(279, 228);
+            svgPictureBox1.Name = "svgPictureBox1";
+            svgPictureBox1.Size = new Size(200, 200);
+            svgPictureBox1.Source = null;
+            svgPictureBox1.TabIndex = 23;
+            svgPictureBox1.XmlSource = null;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -281,6 +293,7 @@
             uiGroupBox1.ResumeLayout(false);
             uiGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -303,5 +316,6 @@
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel6;
         private PictureBox pictureBox2;
+        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
     }
 }
