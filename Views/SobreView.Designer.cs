@@ -44,7 +44,7 @@
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
-            uiButton1 = new Sunny.UI.UIButton();
+            FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
@@ -253,16 +253,16 @@
             uiSymbolLabel3.TabIndex = 18;
             uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             // 
-            // uiButton1
+            // FecharButton
             // 
-            uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(699, 537);
-            uiButton1.MinimumSize = new Size(1, 1);
-            uiButton1.Name = "uiButton1";
-            uiButton1.Size = new Size(132, 45);
-            uiButton1.TabIndex = 23;
-            uiButton1.Text = "Fechar";
-            uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
+            FecharButton.Location = new Point(699, 537);
+            FecharButton.MinimumSize = new Size(1, 1);
+            FecharButton.Name = "FecharButton";
+            FecharButton.Size = new Size(132, 45);
+            FecharButton.TabIndex = 23;
+            FecharButton.Text = "Fechar";
+            FecharButton.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
             // LinkTMDBLib
             // 
@@ -295,7 +295,7 @@
             ControlBoxFillHoverColor = Color.FromArgb(133, 97, 198);
             Controls.Add(LinkSunnyUI);
             Controls.Add(LinkTMDBLib);
-            Controls.Add(uiButton1);
+            Controls.Add(FecharButton);
             Controls.Add(uiLine2);
             Controls.Add(uiGroupBox1);
             Controls.Add(pictureBox1);
@@ -335,7 +335,7 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
         private Sunny.UI.UISymbolLabel uiSymbolLabel5;
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
-        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIButton FecharButton;
         private Sunny.UI.UISymbolLabel uiSymbolLabel6;
         private PictureBox SunnyBox;
         private LinkLabel LinkTMDBLib;
