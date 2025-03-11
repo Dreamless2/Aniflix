@@ -95,7 +95,13 @@ namespace Aniflix.Views
 
         private void SunnyBox_Click(object sender, EventArgs e)
         {
+            var url = "https://www.gnu.org/licenses/gpl-3.0.html";
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
 
+            });
         }
     }
 }
