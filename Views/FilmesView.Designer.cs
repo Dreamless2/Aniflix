@@ -433,15 +433,24 @@
             // 
             // EstudioText
             // 
+            EstudioText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            EstudioText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            EstudioText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            EstudioText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            EstudioText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            EstudioText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioText.Location = new Point(30, 718);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
             EstudioText.Padding = new Padding(5);
-            EstudioText.RectColor = Color.Black;
+            EstudioText.RectColor = Color.FromArgb(0, 150, 136);
+            EstudioText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstudioText.ShowText = false;
             EstudioText.Size = new Size(883, 29);
+            EstudioText.Style = Sunny.UI.UIStyle.Custom;
             EstudioText.TabIndex = 38;
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
