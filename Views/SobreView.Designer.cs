@@ -264,10 +264,10 @@
             linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel1.Location = new Point(217, 476);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(156, 16);
+            linkLabel1.Size = new Size(140, 16);
             linkLabel1.TabIndex = 24;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "GNU GPLv3 Home Page";
+            linkLabel1.Text = "TMDBLib Home Page";
             // 
             // linkLabel2
             // 
