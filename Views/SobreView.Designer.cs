@@ -43,6 +43,7 @@
             uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
             uiButton1 = new Sunny.UI.UIButton();
+            uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -164,6 +165,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(uiSymbolLabel6);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
             uiGroupBox1.Controls.Add(uiSymbolLabel4);
             uiGroupBox1.Controls.Add(uiSymbolLabel3);
@@ -177,7 +179,7 @@
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
-            uiGroupBox1.Size = new Size(811, 359);
+            uiGroupBox1.Size = new Size(811, 318);
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -229,6 +231,18 @@
             uiButton1.Text = "uiButton1";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
+            // uiSymbolLabel6
+            // 
+            uiSymbolLabel6.BackColor = Color.Transparent;
+            uiSymbolLabel6.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel6.Location = new Point(313, 145);
+            uiSymbolLabel6.MinimumSize = new Size(1, 1);
+            uiSymbolLabel6.Name = "uiSymbolLabel6";
+            uiSymbolLabel6.Size = new Size(185, 28);
+            uiSymbolLabel6.Symbol = 560403;
+            uiSymbolLabel6.TabIndex = 21;
+            uiSymbolLabel6.Text = "Licensed under GPLv3";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -272,5 +286,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel5;
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
         private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel6;
     }
 }
