@@ -276,7 +276,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
+            pictureBox3.ImageLocation = "";
             pictureBox3.Location = new Point(539, 27);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(259, 83);
