@@ -275,6 +275,7 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.Image = Properties.Resources.tmdb_logo;
             pictureBox3.ImageLocation = "";
             pictureBox3.Location = new Point(539, 27);
             pictureBox3.Name = "pictureBox3";
