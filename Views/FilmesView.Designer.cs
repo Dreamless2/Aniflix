@@ -565,7 +565,9 @@
             // FilmesView
             // 
             AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(238, 248, 248);
             ClientSize = new Size(1485, 899);
+            ControlBoxFillHoverColor = Color.FromArgb(51, 171, 160);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
             Controls.Add(AnteriorButton);
@@ -606,7 +608,10 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FilmesView";
+            RectColor = Color.FromArgb(0, 150, 136);
+            Style = Sunny.UI.UIStyle.Custom;
             Text = "Filmes";
+            TitleColor = Color.FromArgb(0, 150, 136);
             ZoomScaleRect = new Rectangle(15, 15, 1209, 709);
             Load += FilmesView_Load;
             ResumeLayout(false);
