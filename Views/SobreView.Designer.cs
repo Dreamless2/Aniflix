@@ -137,6 +137,7 @@
             uiLine2.BackColor = Color.Transparent;
             uiLine2.Font = new Font("Microsoft Sans Serif", 12F);
             uiLine2.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLine2.LineColor = Color.FromArgb(13, 37, 63);
             uiLine2.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine2.LineSize = 5;
             uiLine2.Location = new Point(202, 104);
