@@ -42,7 +42,6 @@
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
-            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -162,7 +161,6 @@
             // 
             // uiGroupBox1
             // 
-            uiGroupBox1.Controls.Add(linkLabel1);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
             uiGroupBox1.Controls.Add(uiSymbolLabel4);
             uiGroupBox1.Controls.Add(uiSymbolLabel3);
@@ -212,16 +210,6 @@
             uiSymbolLabel3.TabIndex = 18;
             uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits";
             // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(107, 177);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(80, 20);
-            linkLabel1.TabIndex = 21;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "linkLabel1";
-            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -245,7 +233,6 @@
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
-            uiGroupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -265,6 +252,5 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
         private Sunny.UI.UISymbolLabel uiSymbolLabel5;
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
-        private LinkLabel linkLabel1;
     }
 }
