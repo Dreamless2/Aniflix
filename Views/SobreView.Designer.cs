@@ -42,6 +42,7 @@
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
+            uiButton1 = new Sunny.UI.UIButton();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -217,10 +218,22 @@
             uiSymbolLabel3.TabIndex = 18;
             uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             // 
+            // uiButton1
+            // 
+            uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiButton1.Location = new Point(691, 441);
+            uiButton1.MinimumSize = new Size(1, 1);
+            uiButton1.Name = "uiButton1";
+            uiButton1.Size = new Size(100, 35);
+            uiButton1.TabIndex = 23;
+            uiButton1.Text = "uiButton1";
+            uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(852, 501);
+            Controls.Add(uiButton1);
             Controls.Add(uiLine2);
             Controls.Add(uiGroupBox1);
             Controls.Add(pictureBox1);
@@ -258,5 +271,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
         private Sunny.UI.UISymbolLabel uiSymbolLabel5;
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
+        private Sunny.UI.UIButton uiButton1;
     }
 }
