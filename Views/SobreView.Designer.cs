@@ -76,7 +76,7 @@
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
             LicenseBox.TabIndex = 15;
             LicenseBox.TabStop = false;
-            LicenseBox.Click += LicenseBox_Click_1;
+            LicenseBox.Click += LicenseBox_Click;
             // 
             // LinkLicenseSite
             // 

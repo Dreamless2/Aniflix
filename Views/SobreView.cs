@@ -112,10 +112,5 @@ namespace Aniflix.Views
                 });
             }
         }
-
-        private void LicenseBox_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
