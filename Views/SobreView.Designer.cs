@@ -39,7 +39,6 @@
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
-            LogoBox = new SharpVectors.Renderers.Forms.SvgPictureBox();
             pictureBox2 = new PictureBox();
             uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
@@ -51,7 +50,6 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -162,7 +160,6 @@
             // 
             // uiGroupBox1
             // 
-            uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(pictureBox2);
             uiGroupBox1.Controls.Add(uiSymbolLabel6);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
@@ -181,15 +178,6 @@
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
-            // 
-            // LogoBox
-            // 
-            LogoBox.Location = new Point(539, 26);
-            LogoBox.Name = "LogoBox";
-            LogoBox.Size = new Size(259, 83);
-            LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            LogoBox.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg";
-            LogoBox.TabIndex = 23;
             // 
             // pictureBox2
             // 
@@ -311,7 +299,6 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -334,7 +321,6 @@
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel6;
         private PictureBox pictureBox2;
-        private SharpVectors.Renderers.Forms.SvgPictureBox LogoBox;
         private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunnyUI;
     }
