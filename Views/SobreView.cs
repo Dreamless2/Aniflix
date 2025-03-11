@@ -60,11 +60,7 @@ namespace Aniflix.Views
         }
 
 
-
-
-
         #region "Mouse Enter"
-
         private void LogoBox_MouseEnter(object sender, EventArgs e)
         {
             LogoBox.Cursor = Cursors.Hand;
@@ -78,7 +74,6 @@ namespace Aniflix.Views
         {
             SunnyBox.Cursor = Cursors.Hand;
         }
-
         #endregion
 
 
