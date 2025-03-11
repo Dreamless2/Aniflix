@@ -232,7 +232,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(852, 501);
+            ClientSize = new Size(852, 679);
             Controls.Add(uiButton1);
             Controls.Add(uiLine2);
             Controls.Add(uiGroupBox1);
