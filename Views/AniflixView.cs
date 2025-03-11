@@ -180,7 +180,8 @@ namespace Aniflix.Views
 
         private void SobreButton_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
+            OpenChildForm(new SobreView(), sender);
         }
     }
 }
