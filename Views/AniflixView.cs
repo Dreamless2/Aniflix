@@ -178,5 +178,10 @@ namespace Aniflix.Views
         {
             Reset();
         }
+
+        private void SobreButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

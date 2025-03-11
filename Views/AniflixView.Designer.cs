@@ -124,6 +124,7 @@
             SobreButton.TextAlign = ContentAlignment.MiddleLeft;
             SobreButton.TextImageRelation = TextImageRelation.ImageBeforeText;
             SobreButton.UseVisualStyleBackColor = true;
+            SobreButton.Click += SobreButton_Click;
             // 
             // TrashflixButton
             // 
@@ -340,9 +341,7 @@
             WebCanvas.Name = "WebCanvas";
             WebCanvas.Size = new Size(258, 90);
             WebCanvas.SizeMode = PictureBoxSizeMode.CenterImage;
-            WebCanvas.Source = null;
             WebCanvas.TabIndex = 0;
-            WebCanvas.XmlSource = null;
             WebCanvas.Click += WebCanvas_Click;
             // 
             // TitleBarPanel
