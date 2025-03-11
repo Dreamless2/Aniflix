@@ -167,7 +167,7 @@ namespace Aniflix.Views
         private void SobreButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-          var sobre = new SobreView();
+            var sobre = new SobreView();
             sobre.ShowDialog();
         }
         private void SairButton_Click(object sender, EventArgs e)
