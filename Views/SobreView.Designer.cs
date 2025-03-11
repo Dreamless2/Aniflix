@@ -144,7 +144,7 @@
             uiLine2.LineColor = Color.FromArgb(13, 37, 63);
             uiLine2.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine2.LineSize = 5;
-            uiLine2.Location = new Point(202, 102);
+            uiLine2.Location = new Point(202, 101);
             uiLine2.MinimumSize = new Size(1, 1);
             uiLine2.Name = "uiLine2";
             uiLine2.Size = new Size(631, 29);
@@ -158,7 +158,7 @@
             uiLine1.LineColor = Color.FromArgb(13, 37, 63);
             uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine1.LineSize = 5;
-            uiLine1.Location = new Point(202, 45);
+            uiLine1.Location = new Point(202, 41);
             uiLine1.MinimumSize = new Size(1, 1);
             uiLine1.Name = "uiLine1";
             uiLine1.Size = new Size(631, 29);
