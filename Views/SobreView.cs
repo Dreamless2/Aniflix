@@ -83,7 +83,7 @@ namespace Aniflix.Views
 
 
 
-
+        #region "Link Click"
         private void LinkTMDB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var target = e.Link!.LinkData! as string;
@@ -132,7 +132,7 @@ namespace Aniflix.Views
                 });
             }
         }
-
+        #endregion
 
     }
 }
