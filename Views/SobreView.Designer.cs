@@ -39,10 +39,12 @@
             uiLabel1 = new Sunny.UI.UILabel();
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
+            materialPictureBox1 = new FontAwesome.Sharp.Material.MaterialPictureBox();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
             uiPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -139,6 +141,7 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(materialPictureBox1);
             uiPanel2.Controls.Add(uiLabel1);
             uiPanel2.Controls.Add(uiLine2);
             uiPanel2.Controls.Add(uiLine1);
@@ -190,6 +193,18 @@
             uiLine1.Size = new Size(596, 29);
             uiLine1.TabIndex = 3;
             // 
+            // materialPictureBox1
+            // 
+            materialPictureBox1.BackColor = Color.FromArgb(243, 249, 255);
+            materialPictureBox1.ForeColor = Color.FromArgb(48, 48, 48);
+            materialPictureBox1.IconChar = FontAwesome.Sharp.MaterialIcons.None;
+            materialPictureBox1.IconColor = Color.FromArgb(48, 48, 48);
+            materialPictureBox1.Location = new Point(35, 40);
+            materialPictureBox1.Name = "materialPictureBox1";
+            materialPictureBox1.Size = new Size(32, 32);
+            materialPictureBox1.TabIndex = 6;
+            materialPictureBox1.TabStop = false;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -207,6 +222,7 @@
             uiPanel1.ResumeLayout(false);
             uiPanel1.PerformLayout();
             uiPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)materialPictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -222,5 +238,6 @@
         private Sunny.UI.UILine uiLine1;
         private Sunny.UI.UILine uiLine2;
         private Sunny.UI.UILabel uiLabel1;
+        private FontAwesome.Sharp.Material.MaterialPictureBox materialPictureBox1;
     }
 }
