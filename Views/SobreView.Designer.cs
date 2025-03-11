@@ -75,7 +75,7 @@
             // 
             LicenseSite.AutoSize = true;
             LicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LicenseSite.Location = new Point(677, 391);
+            LicenseSite.Location = new Point(675, 496);
             LicenseSite.Name = "LicenseSite";
             LicenseSite.Size = new Size(156, 16);
             LicenseSite.TabIndex = 16;
@@ -96,7 +96,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(22, 391);
+            LinkSite.Location = new Point(20, 496);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 14;
@@ -177,7 +177,7 @@
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
-            uiGroupBox1.Size = new Size(811, 222);
+            uiGroupBox1.Size = new Size(811, 359);
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -221,7 +221,7 @@
             // uiButton1
             // 
             uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(691, 441);
+            uiButton1.Location = new Point(689, 546);
             uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
             uiButton1.Size = new Size(100, 35);
