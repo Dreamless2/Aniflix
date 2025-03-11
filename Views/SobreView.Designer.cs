@@ -52,7 +52,7 @@
             // 
             uiSymbolLabel2.BackColor = Color.Transparent;
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(3, 69);
+            uiSymbolLabel2.Location = new Point(8, 69);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(281, 28);
@@ -84,7 +84,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(97, 636);
+            LogoBox.Location = new Point(30, 470);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(155, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -95,7 +95,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(22, 537);
+            LinkSite.Location = new Point(47, 644);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 14;
@@ -106,7 +106,7 @@
             // 
             uiSymbolLabel1.BackColor = Color.Transparent;
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(3, 205);
+            uiSymbolLabel1.Location = new Point(8, 171);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(524, 28);
@@ -182,10 +182,10 @@
             // 
             uiSymbolLabel5.BackColor = Color.Transparent;
             uiSymbolLabel5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel5.Location = new Point(3, 137);
+            uiSymbolLabel5.Location = new Point(8, 137);
             uiSymbolLabel5.MinimumSize = new Size(1, 1);
             uiSymbolLabel5.Name = "uiSymbolLabel5";
-            uiSymbolLabel5.Size = new Size(98, 28);
+            uiSymbolLabel5.Size = new Size(134, 28);
             uiSymbolLabel5.TabIndex = 20;
             uiSymbolLabel5.Text = "TMDBLib 2.2.0";
             // 
@@ -193,7 +193,7 @@
             // 
             uiSymbolLabel4.BackColor = Color.Transparent;
             uiSymbolLabel4.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel4.Location = new Point(3, 103);
+            uiSymbolLabel4.Location = new Point(8, 103);
             uiSymbolLabel4.MinimumSize = new Size(1, 1);
             uiSymbolLabel4.Name = "uiSymbolLabel4";
             uiSymbolLabel4.Size = new Size(90, 28);
@@ -204,7 +204,7 @@
             // 
             uiSymbolLabel3.BackColor = Color.Transparent;
             uiSymbolLabel3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel3.Location = new Point(3, 35);
+            uiSymbolLabel3.Location = new Point(8, 35);
             uiSymbolLabel3.MinimumSize = new Size(1, 1);
             uiSymbolLabel3.Name = "uiSymbolLabel3";
             uiSymbolLabel3.Size = new Size(160, 28);
@@ -234,6 +234,7 @@
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
+            uiGroupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
