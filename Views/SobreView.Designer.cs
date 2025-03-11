@@ -47,7 +47,7 @@
             pictureBox2 = new PictureBox();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             linkLabel1 = new LinkLabel();
-            linkLabel2 = new LinkLabel();
+            LinkSunny = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
@@ -269,22 +269,22 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "TMDBLib Home Page";
             // 
-            // linkLabel2
+            // LinkSunny
             // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel2.Location = new Point(446, 476);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(133, 16);
-            linkLabel2.TabIndex = 25;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "SunnyUI Home Page";
+            LinkSunny.AutoSize = true;
+            LinkSunny.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LinkSunny.Location = new Point(446, 476);
+            LinkSunny.Name = "LinkSunny";
+            LinkSunny.Size = new Size(133, 16);
+            LinkSunny.TabIndex = 25;
+            LinkSunny.TabStop = true;
+            LinkSunny.Text = "SunnyUI Home Page";
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(852, 679);
-            Controls.Add(linkLabel2);
+            Controls.Add(LinkSunny);
             Controls.Add(linkLabel1);
             Controls.Add(uiButton1);
             Controls.Add(uiLine2);
@@ -329,6 +329,6 @@
         private PictureBox pictureBox2;
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
         private LinkLabel linkLabel1;
-        private LinkLabel linkLabel2;
+        private LinkLabel LinkSunny;
     }
 }
