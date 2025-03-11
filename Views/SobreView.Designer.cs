@@ -186,7 +186,7 @@
             uiSymbolLabel5.Name = "uiSymbolLabel5";
             uiSymbolLabel5.Size = new Size(98, 28);
             uiSymbolLabel5.TabIndex = 20;
-            uiSymbolLabel5.Text = "TMDBLib";
+            uiSymbolLabel5.Text = "TMDBLib 2.2.0";
             // 
             // uiSymbolLabel4
             // 
