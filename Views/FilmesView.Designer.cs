@@ -623,7 +623,7 @@
             // 
             // CopiarButton
             // 
-            CopiarButton.BackColor = Color.FromArgb(44, 100, 133);
+            CopiarButton.BackColor = Color.FromArgb(57, 74, 86);
             CopiarButton.FlatAppearance.BorderSize = 0;
             CopiarButton.FlatStyle = FlatStyle.Flat;
             CopiarButton.Font = new Font("Microsoft Sans Serif", 12F);
