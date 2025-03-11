@@ -68,6 +68,7 @@
             // 
             // LicenseBox
             // 
+            LicenseBox.Image = Properties.Resources.gpl_logo;
             LicenseBox.ImageLocation = "";
             LicenseBox.Location = new Point(539, 116);
             LicenseBox.Name = "LicenseBox";
