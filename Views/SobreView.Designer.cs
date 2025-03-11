@@ -52,7 +52,7 @@
             // 
             uiSymbolLabel2.BackColor = Color.Transparent;
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(8, 205);
+            uiSymbolLabel2.Location = new Point(8, 171);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(281, 28);
@@ -107,7 +107,7 @@
             // 
             uiSymbolLabel1.BackColor = Color.Transparent;
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(8, 171);
+            uiSymbolLabel1.Location = new Point(8, 137);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(524, 28);
@@ -178,7 +178,7 @@
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
-            uiGroupBox1.Size = new Size(811, 267);
+            uiGroupBox1.Size = new Size(811, 222);
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits ";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -187,7 +187,7 @@
             // 
             uiSymbolLabel5.BackColor = Color.Transparent;
             uiSymbolLabel5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel5.Location = new Point(8, 137);
+            uiSymbolLabel5.Location = new Point(8, 103);
             uiSymbolLabel5.MinimumSize = new Size(1, 1);
             uiSymbolLabel5.Name = "uiSymbolLabel5";
             uiSymbolLabel5.Size = new Size(134, 28);
@@ -200,7 +200,7 @@
             // 
             uiSymbolLabel4.BackColor = Color.Transparent;
             uiSymbolLabel4.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel4.Location = new Point(8, 103);
+            uiSymbolLabel4.Location = new Point(8, 69);
             uiSymbolLabel4.MinimumSize = new Size(1, 1);
             uiSymbolLabel4.Name = "uiSymbolLabel4";
             uiSymbolLabel4.Size = new Size(90, 28);
