@@ -129,6 +129,7 @@
             TituloText.TabIndex = 38;
             TituloText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloText.Watermark = "Título";
+            TituloText.WordWarp = false;
             // 
             // AudioLabel
             // 
