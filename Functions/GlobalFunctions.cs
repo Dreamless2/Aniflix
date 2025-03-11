@@ -16,7 +16,7 @@ namespace Aniflix.Functions
                     btn.ForeColor = Color.White;
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderSize = 0;
-                    btn.IconColor = Color.Gainsboro;
+                    btn.IconColor = Color.White;
                 }
             }
 
@@ -33,7 +33,7 @@ namespace Aniflix.Functions
                 if (txts is UITextBox txt)
                 {
                     txt.BackColor = Color.FromArgb(2, 47, 86);
-                    txt.ForeColor = Color.Gainsboro;
+                    txt.ForeColor = Color.White;
                     txt.FillColor = Color.FromArgb(2, 47, 86);
                     txt.RectColor = Color.FromArgb(2, 47, 86);
                 }
@@ -44,7 +44,7 @@ namespace Aniflix.Functions
                 if (rtxts is UIRichTextBox rtxt)
                 {
                     rtxt.BackColor = Color.FromArgb(2, 47, 86);
-                    rtxt.ForeColor = Color.Gainsboro;
+                    rtxt.ForeColor = Color.White;
                     rtxt.FillColor = Color.FromArgb(2, 47, 86);
                     rtxt.RectColor = ThemeColor.SecondaryColor;
                 }
@@ -55,7 +55,7 @@ namespace Aniflix.Functions
                 if (cboxs is UIComboBox cbox)
                 {
                     cbox.BackColor = Color.FromArgb(2, 47, 86);
-                    cbox.ForeColor = Color.Gainsboro;
+                    cbox.ForeColor = Color.White;
                     cbox.FillColor = Color.FromArgb(2, 47, 86);
                     cbox.RectColor = ThemeColor.SecondaryColor;
                 }
