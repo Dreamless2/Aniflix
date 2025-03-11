@@ -27,10 +27,6 @@ namespace Aniflix.Views
                 UseShellExecute = true
             });
         }
-        private void LogoBox_MouseEnter(object sender, EventArgs e)
-        {
-            LogoBox.Cursor = Cursors.Hand;
-        }
 
         private void LicenseBox_Click(object sender, EventArgs e)
         {
@@ -41,6 +37,10 @@ namespace Aniflix.Views
                 UseShellExecute = true
 
             });
+        }
+        private void LogoBox_MouseEnter(object sender, EventArgs e)
+        {
+            LogoBox.Cursor = Cursors.Hand;
         }
 
         private void LicenseBox_MouseEnter(object sender, EventArgs e)
