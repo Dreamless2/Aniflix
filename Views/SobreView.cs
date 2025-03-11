@@ -27,20 +27,6 @@ namespace Aniflix.Views
                 UseShellExecute = true
             });
         }
-
-        private void LinkSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            var target = e.Link!.LinkData! as string;
-            if (!string.IsNullOrEmpty(target))
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = target,
-                    UseShellExecute = true
-                });
-            }
-        }
-
         private void LogoBox_MouseEnter(object sender, EventArgs e)
         {
             LogoBox.Cursor = Cursors.Hand;
