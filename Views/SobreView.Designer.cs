@@ -64,9 +64,9 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(675, 464);
+            LicenseBox.Location = new Point(507, 23);
             LicenseBox.Name = "LicenseBox";
-            LicenseBox.Size = new Size(158, 83);
+            LicenseBox.Size = new Size(140, 83);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
             LicenseBox.TabIndex = 15;
             LicenseBox.TabStop = false;
@@ -75,7 +75,7 @@
             // 
             LicenseSite.AutoSize = true;
             LicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LicenseSite.Location = new Point(677, 537);
+            LicenseSite.Location = new Point(675, 537);
             LicenseSite.Name = "LicenseSite";
             LicenseSite.Size = new Size(156, 16);
             LicenseSite.TabIndex = 16;
@@ -85,9 +85,9 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(30, 470);
+            LogoBox.Location = new Point(653, 23);
             LogoBox.Name = "LogoBox";
-            LogoBox.Size = new Size(155, 83);
+            LogoBox.Size = new Size(140, 60);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
             LogoBox.TabIndex = 13;
             LogoBox.TabStop = false;
@@ -96,7 +96,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(47, 644);
+            LinkSite.Location = new Point(30, 444);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 14;
@@ -170,13 +170,15 @@
             uiGroupBox1.Controls.Add(uiSymbolLabel3);
             uiGroupBox1.Controls.Add(uiSymbolLabel1);
             uiGroupBox1.Controls.Add(uiSymbolLabel2);
+            uiGroupBox1.Controls.Add(LicenseBox);
+            uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Font = new Font("Microsoft Sans Serif", 12F);
             uiGroupBox1.Location = new Point(22, 153);
             uiGroupBox1.Margin = new Padding(4, 5, 4, 5);
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
-            uiGroupBox1.Size = new Size(811, 303);
+            uiGroupBox1.Size = new Size(811, 283);
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits ";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -223,15 +225,13 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(852, 746);
+            ClientSize = new Size(852, 578);
             Controls.Add(uiGroupBox1);
             Controls.Add(pictureBox1);
             Controls.Add(uiLabel1);
             Controls.Add(uiLine2);
             Controls.Add(uiLine1);
-            Controls.Add(LicenseBox);
             Controls.Add(LicenseSite);
-            Controls.Add(LogoBox);
             Controls.Add(LinkSite);
             MaximizeBox = false;
             MinimizeBox = false;
