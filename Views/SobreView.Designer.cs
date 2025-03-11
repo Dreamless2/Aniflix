@@ -175,13 +175,17 @@
             uiGroupBox1.Controls.Add(uiSymbolLabel1);
             uiGroupBox1.Controls.Add(uiSymbolLabel2);
             uiGroupBox1.Controls.Add(LicenseBox);
+            uiGroupBox1.FillColor = Color.FromArgb(244, 242, 251);
+            uiGroupBox1.FillColor2 = Color.FromArgb(244, 242, 251);
             uiGroupBox1.Font = new Font("Microsoft Sans Serif", 12F);
             uiGroupBox1.Location = new Point(22, 153);
             uiGroupBox1.Margin = new Padding(4, 5, 4, 5);
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
+            uiGroupBox1.RectColor = Color.FromArgb(102, 58, 183);
             uiGroupBox1.Size = new Size(811, 301);
+            uiGroupBox1.Style = Sunny.UI.UIStyle.Custom;
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
