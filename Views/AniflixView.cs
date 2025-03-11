@@ -173,11 +173,6 @@ namespace Aniflix.Views
         {
         }
 
-        private void WebCanvas_Click(object sender, EventArgs e)
-        {
-            Reset();
-        }
-
         private void SobreButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
