@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SobreView));
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             LicenseBox = new PictureBox();
             LicenseSite = new LinkLabel();
@@ -69,7 +68,7 @@
             // 
             // LicenseBox
             // 
-            LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
+            LicenseBox.ImageLocation = "";
             LicenseBox.Location = new Point(539, 116);
             LicenseBox.Name = "LicenseBox";
             LicenseBox.Size = new Size(259, 83);
@@ -184,7 +183,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.ImageLocation = resources.GetString("pictureBox2.ImageLocation");
+            pictureBox2.ImageLocation = "";
             pictureBox2.Location = new Point(539, 205);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(259, 83);
