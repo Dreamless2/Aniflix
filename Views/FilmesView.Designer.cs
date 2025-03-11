@@ -624,6 +624,7 @@
             // CopiarButton
             // 
             CopiarButton.BackColor = Color.FromArgb(44, 100, 133);
+            CopiarButton.FlatAppearance.BorderSize = 0;
             CopiarButton.FlatStyle = FlatStyle.Flat;
             CopiarButton.Font = new Font("Microsoft Sans Serif", 12F);
             CopiarButton.ForeColor = Color.Black;
@@ -639,6 +640,8 @@
             // 
             // InserirNovoButton
             // 
+            InserirNovoButton.FlatAppearance.BorderSize = 0;
+            InserirNovoButton.FlatStyle = FlatStyle.Flat;
             InserirNovoButton.Font = new Font("Microsoft Sans Serif", 12F);
             InserirNovoButton.ForeColor = Color.Black;
             InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
@@ -653,6 +656,8 @@
             // 
             // EditarButton
             // 
+            EditarButton.FlatAppearance.BorderSize = 0;
+            EditarButton.FlatStyle = FlatStyle.Flat;
             EditarButton.Font = new Font("Microsoft Sans Serif", 12F);
             EditarButton.ForeColor = Color.Black;
             EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
@@ -667,6 +672,8 @@
             // 
             // AnteriorButton
             // 
+            AnteriorButton.FlatAppearance.BorderSize = 0;
+            AnteriorButton.FlatStyle = FlatStyle.Flat;
             AnteriorButton.Font = new Font("Microsoft Sans Serif", 12F);
             AnteriorButton.ForeColor = Color.Black;
             AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
@@ -681,6 +688,8 @@
             // 
             // ProximoButton
             // 
+            ProximoButton.FlatAppearance.BorderSize = 0;
+            ProximoButton.FlatStyle = FlatStyle.Flat;
             ProximoButton.Font = new Font("Microsoft Sans Serif", 12F);
             ProximoButton.ForeColor = Color.Black;
             ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
