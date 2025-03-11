@@ -250,9 +250,9 @@
             // pictureBox2
             // 
             pictureBox2.ImageLocation = resources.GetString("pictureBox2.ImageLocation");
-            pictureBox2.Location = new Point(347, 205);
+            pictureBox2.Location = new Point(415, 205);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(446, 83);
+            pictureBox2.Size = new Size(378, 83);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 22;
             pictureBox2.TabStop = false;
