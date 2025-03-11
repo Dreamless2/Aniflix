@@ -56,6 +56,7 @@
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(281, 28);
+            uiSymbolLabel2.Symbol = 560403;
             uiSymbolLabel2.TabIndex = 17;
             uiSymbolLabel2.Text = "Licensed under GPLv3";
             uiSymbolLabel2.TextAlign = ContentAlignment.TopLeft;
@@ -110,6 +111,7 @@
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(524, 28);
+            uiSymbolLabel1.Symbol = 560403;
             uiSymbolLabel1.TabIndex = 12;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
@@ -186,6 +188,7 @@
             uiSymbolLabel5.MinimumSize = new Size(1, 1);
             uiSymbolLabel5.Name = "uiSymbolLabel5";
             uiSymbolLabel5.Size = new Size(134, 28);
+            uiSymbolLabel5.Symbol = 560403;
             uiSymbolLabel5.TabIndex = 20;
             uiSymbolLabel5.Text = "TMDBLib 2.2.0";
             // 
