@@ -189,7 +189,7 @@
             pictureBox3.Location = new Point(539, 27);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(259, 83);
-            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 23;
             pictureBox3.TabStop = false;
             // 
