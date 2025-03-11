@@ -129,5 +129,10 @@ namespace Aniflix.Views
             Close();
         }
         #endregion
+
+        private void FecharButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
