@@ -216,11 +216,10 @@
             uiSymbolLabel3.Location = new Point(8, 35);
             uiSymbolLabel3.MinimumSize = new Size(1, 1);
             uiSymbolLabel3.Name = "uiSymbolLabel3";
-            uiSymbolLabel3.Size = new Size(160, 28);
+            uiSymbolLabel3.Size = new Size(305, 28);
             uiSymbolLabel3.Symbol = 560403;
             uiSymbolLabel3.TabIndex = 18;
             uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
-            uiSymbolLabel3.TextAlign = ContentAlignment.TopLeft;
             // 
             // SobreView
             // 
@@ -243,6 +242,7 @@
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
+            uiGroupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
