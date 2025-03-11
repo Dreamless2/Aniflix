@@ -17,6 +17,7 @@ namespace Aniflix.Views
             LinkSunnyUI.Links.Add(0, LinkSunnyUI.Text.Length, "https://github.com/SunnyUI/SunnyUI");
         }
 
+        #region "PictureBox Click"
         private void LogoBox_Click(object sender, EventArgs e)
         {
             var url = "https://www.themoviedb.org/";
@@ -50,6 +51,7 @@ namespace Aniflix.Views
 
             });
         }
+        #endregion
 
 
         private void FecharButton_Click(object sender, EventArgs e)
