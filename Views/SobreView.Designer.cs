@@ -46,6 +46,8 @@
             uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             pictureBox2 = new PictureBox();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
+            linkLabel1 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
@@ -68,9 +70,9 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(593, 116);
+            LicenseBox.Location = new Point(539, 116);
             LicenseBox.Name = "LicenseBox";
-            LicenseBox.Size = new Size(200, 83);
+            LicenseBox.Size = new Size(259, 83);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
             LicenseBox.TabIndex = 15;
             LicenseBox.TabStop = false;
@@ -79,7 +81,7 @@
             // 
             LicenseSite.AutoSize = true;
             LicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LicenseSite.Location = new Point(677, 496);
+            LicenseSite.Location = new Point(675, 476);
             LicenseSite.Name = "LicenseSite";
             LicenseSite.Size = new Size(156, 16);
             LicenseSite.TabIndex = 16;
@@ -90,7 +92,7 @@
             // 
             LinkSite.AutoSize = true;
             LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(20, 496);
+            LinkSite.Location = new Point(22, 476);
             LinkSite.Name = "LinkSite";
             LinkSite.Size = new Size(122, 16);
             LinkSite.TabIndex = 14;
@@ -173,7 +175,7 @@
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
-            uiGroupBox1.Size = new Size(811, 318);
+            uiGroupBox1.Size = new Size(811, 301);
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -240,26 +242,50 @@
             // pictureBox2
             // 
             pictureBox2.ImageLocation = resources.GetString("pictureBox2.ImageLocation");
-            pictureBox2.Location = new Point(593, 205);
+            pictureBox2.Location = new Point(539, 205);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(200, 83);
+            pictureBox2.Size = new Size(259, 83);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 22;
             pictureBox2.TabStop = false;
             // 
             // svgPictureBox1
             // 
-            svgPictureBox1.Location = new Point(482, 35);
+            svgPictureBox1.Location = new Point(539, 26);
             svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(311, 59);
+            svgPictureBox1.Size = new Size(259, 83);
             svgPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            svgPictureBox1.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg";
+            svgPictureBox1.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg";
             svgPictureBox1.TabIndex = 23;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.Location = new Point(217, 476);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(156, 16);
+            linkLabel1.TabIndex = 24;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "GNU GPLv3 Home Page";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel2.Location = new Point(446, 476);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(156, 16);
+            linkLabel2.TabIndex = 25;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "GNU GPLv3 Home Page";
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(852, 679);
+            Controls.Add(linkLabel2);
+            Controls.Add(linkLabel1);
             Controls.Add(uiButton1);
             Controls.Add(uiLine2);
             Controls.Add(uiGroupBox1);
@@ -302,5 +328,7 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel6;
         private PictureBox pictureBox2;
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
+        private LinkLabel linkLabel1;
+        private LinkLabel linkLabel2;
     }
 }
