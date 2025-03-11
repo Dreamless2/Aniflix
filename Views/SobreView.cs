@@ -106,5 +106,15 @@ namespace Aniflix.Views
         {
 
         }
+
+        private void LinkSunnyUI_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void LinkLicenseSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

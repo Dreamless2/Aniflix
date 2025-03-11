@@ -87,6 +87,7 @@
             LinkLicenseSite.TabIndex = 16;
             LinkLicenseSite.TabStop = true;
             LinkLicenseSite.Text = "GNU GPLv3 Home Page";
+            LinkLicenseSite.LinkClicked += LinkLicenseSite_LinkClicked;
             // 
             // LinkTMDB
             // 
@@ -287,6 +288,7 @@
             LinkSunnyUI.TabIndex = 25;
             LinkSunnyUI.TabStop = true;
             LinkSunnyUI.Text = "SunnyUI Home Page";
+            LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
             // 
             // SobreView
             // 
