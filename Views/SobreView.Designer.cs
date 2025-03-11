@@ -283,7 +283,7 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(852, 679);
+            ClientSize = new Size(852, 605);
             Controls.Add(LinkSunny);
             Controls.Add(LinkTMDBLib);
             Controls.Add(uiButton1);
