@@ -462,14 +462,14 @@
             // 
             ResumoText.FillColor = Color.White;
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
-            ResumoText.Location = new Point(972, 87);
+            ResumoText.Location = new Point(921, 87);
             ResumoText.Margin = new Padding(4, 5, 4, 5);
             ResumoText.MinimumSize = new Size(1, 1);
             ResumoText.Name = "ResumoText";
             ResumoText.Padding = new Padding(2);
             ResumoText.RectColor = Color.Black;
             ResumoText.ShowText = false;
-            ResumoText.Size = new Size(476, 660);
+            ResumoText.Size = new Size(530, 660);
             ResumoText.TabIndex = 45;
             ResumoText.TextAlignment = ContentAlignment.TopLeft;
             // 
