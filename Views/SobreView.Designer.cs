@@ -111,10 +111,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.aniflix;
-            pictureBox1.Location = new Point(3, 38);
+            pictureBox1.Location = new Point(22, 38);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(240, 216);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.Size = new Size(174, 95);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
             // 
@@ -158,7 +158,7 @@
             // uiGroupBox1
             // 
             uiGroupBox1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiGroupBox1.Location = new Point(265, 367);
+            uiGroupBox1.Location = new Point(22, 153);
             uiGroupBox1.Margin = new Padding(4, 5, 4, 5);
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
