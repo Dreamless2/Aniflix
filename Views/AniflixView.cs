@@ -183,5 +183,10 @@ namespace Aniflix.Views
             ActivateButton(sender);
             OpenChildForm(new SobreView(), sender);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

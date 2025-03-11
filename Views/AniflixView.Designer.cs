@@ -340,8 +340,10 @@
             pictureBox1.Location = new Point(4, 22);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(251, 47);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // TitleBarPanel
             // 
