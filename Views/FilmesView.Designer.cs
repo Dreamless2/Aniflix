@@ -640,6 +640,7 @@
             // 
             // InserirNovoButton
             // 
+            InserirNovoButton.BackColor = Color.FromArgb(57, 74, 86);
             InserirNovoButton.FlatAppearance.BorderSize = 0;
             InserirNovoButton.FlatStyle = FlatStyle.Flat;
             InserirNovoButton.Font = new Font("Microsoft Sans Serif", 12F);
@@ -652,10 +653,11 @@
             InserirNovoButton.TabIndex = 48;
             InserirNovoButton.Text = "Inserir Novo";
             InserirNovoButton.TextAlign = ContentAlignment.BottomLeft;
-            InserirNovoButton.UseVisualStyleBackColor = true;
+            InserirNovoButton.UseVisualStyleBackColor = false;
             // 
             // EditarButton
             // 
+            EditarButton.BackColor = Color.FromArgb(57, 74, 86);
             EditarButton.FlatAppearance.BorderSize = 0;
             EditarButton.FlatStyle = FlatStyle.Flat;
             EditarButton.Font = new Font("Microsoft Sans Serif", 12F);
@@ -668,10 +670,11 @@
             EditarButton.TabIndex = 49;
             EditarButton.Text = "Editar ";
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
-            EditarButton.UseVisualStyleBackColor = true;
+            EditarButton.UseVisualStyleBackColor = false;
             // 
             // AnteriorButton
             // 
+            AnteriorButton.BackColor = Color.FromArgb(57, 74, 86);
             AnteriorButton.FlatAppearance.BorderSize = 0;
             AnteriorButton.FlatStyle = FlatStyle.Flat;
             AnteriorButton.Font = new Font("Microsoft Sans Serif", 12F);
@@ -684,10 +687,11 @@
             AnteriorButton.TabIndex = 50;
             AnteriorButton.Text = "Anterior";
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
-            AnteriorButton.UseVisualStyleBackColor = true;
+            AnteriorButton.UseVisualStyleBackColor = false;
             // 
             // ProximoButton
             // 
+            ProximoButton.BackColor = Color.FromArgb(57, 74, 86);
             ProximoButton.FlatAppearance.BorderSize = 0;
             ProximoButton.FlatStyle = FlatStyle.Flat;
             ProximoButton.Font = new Font("Microsoft Sans Serif", 12F);
@@ -700,7 +704,7 @@
             ProximoButton.TabIndex = 51;
             ProximoButton.Text = "Proximo";
             ProximoButton.TextAlign = ContentAlignment.BottomLeft;
-            ProximoButton.UseVisualStyleBackColor = true;
+            ProximoButton.UseVisualStyleBackColor = false;
             // 
             // DadosLabel
             // 
