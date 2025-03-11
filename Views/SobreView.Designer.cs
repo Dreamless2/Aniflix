@@ -262,7 +262,7 @@
             uiButton1.Name = "uiButton1";
             uiButton1.Size = new Size(132, 45);
             uiButton1.TabIndex = 23;
-            uiButton1.Text = "uiButton1";
+            uiButton1.Text = "Fechar";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
             // LinkTMDBLib
