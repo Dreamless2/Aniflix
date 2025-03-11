@@ -208,7 +208,7 @@
             uiSymbolLabel5.Name = "uiSymbolLabel5";
             uiSymbolLabel5.Size = new Size(281, 28);
             uiSymbolLabel5.TabIndex = 20;
-            uiSymbolLabel5.Text = "Licenciado sob os termos da GPLv3.";
+            uiSymbolLabel5.Text = "TMDBLib";
             // 
             // SobreView
             // 
