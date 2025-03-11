@@ -171,7 +171,6 @@ namespace Aniflix.Views
 
         private void AniflixView_Load(object sender, EventArgs e)
         {
-            //LoadSvgFromUrlAsync("https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/gallardo.svg");
         }
 
         private void WebCanvas_Click(object sender, EventArgs e)
