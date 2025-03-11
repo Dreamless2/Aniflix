@@ -40,6 +40,8 @@
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
+            uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
+            uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -50,7 +52,7 @@
             // 
             uiSymbolLabel2.BackColor = Color.Transparent;
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(3, 140);
+            uiSymbolLabel2.Location = new Point(3, 103);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(281, 28);
@@ -103,7 +105,7 @@
             // 
             uiSymbolLabel1.BackColor = Color.Transparent;
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(3, 106);
+            uiSymbolLabel1.Location = new Point(3, 69);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(524, 28);
@@ -159,6 +161,8 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(uiSymbolLabel5);
+            uiGroupBox1.Controls.Add(uiSymbolLabel4);
             uiGroupBox1.Controls.Add(uiSymbolLabel3);
             uiGroupBox1.Controls.Add(uiSymbolLabel1);
             uiGroupBox1.Controls.Add(uiSymbolLabel2);
@@ -180,9 +184,31 @@
             uiSymbolLabel3.Location = new Point(3, 35);
             uiSymbolLabel3.MinimumSize = new Size(1, 1);
             uiSymbolLabel3.Name = "uiSymbolLabel3";
-            uiSymbolLabel3.Size = new Size(524, 28);
+            uiSymbolLabel3.Size = new Size(160, 28);
             uiSymbolLabel3.TabIndex = 18;
-            uiSymbolLabel3.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
+            uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits";
+            // 
+            // uiSymbolLabel4
+            // 
+            uiSymbolLabel4.BackColor = Color.Transparent;
+            uiSymbolLabel4.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel4.Location = new Point(3, 137);
+            uiSymbolLabel4.MinimumSize = new Size(1, 1);
+            uiSymbolLabel4.Name = "uiSymbolLabel4";
+            uiSymbolLabel4.Size = new Size(281, 28);
+            uiSymbolLabel4.TabIndex = 19;
+            uiSymbolLabel4.Text = "Licenciado sob os termos da GPLv3.";
+            // 
+            // uiSymbolLabel5
+            // 
+            uiSymbolLabel5.BackColor = Color.Transparent;
+            uiSymbolLabel5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel5.Location = new Point(3, 171);
+            uiSymbolLabel5.MinimumSize = new Size(1, 1);
+            uiSymbolLabel5.Name = "uiSymbolLabel5";
+            uiSymbolLabel5.Size = new Size(281, 28);
+            uiSymbolLabel5.TabIndex = 20;
+            uiSymbolLabel5.Text = "Licenciado sob os termos da GPLv3.";
             // 
             // SobreView
             // 
@@ -207,6 +233,7 @@
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
+            uiGroupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -224,5 +251,7 @@
         private Sunny.UI.UILine uiLine1;
         private Sunny.UI.UIGroupBox uiGroupBox1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel5;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel4;
     }
 }
