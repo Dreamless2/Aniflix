@@ -102,5 +102,10 @@ namespace Aniflix.Views
 
             });
         }
+
+        private void LinkSite_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

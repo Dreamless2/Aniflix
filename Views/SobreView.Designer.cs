@@ -98,6 +98,7 @@
             LinkSite.TabIndex = 14;
             LinkSite.TabStop = true;
             LinkSite.Text = "TMDB Home Page";
+            LinkSite.LinkClicked += LinkSite_LinkClicked_1;
             // 
             // uiSymbolLabel1
             // 
