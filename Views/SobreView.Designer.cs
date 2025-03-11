@@ -64,7 +64,7 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(507, 23);
+            LicenseBox.Location = new Point(653, 116);
             LicenseBox.Name = "LicenseBox";
             LicenseBox.Size = new Size(140, 83);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -87,7 +87,7 @@
             LogoBox.Image = Properties.Resources.tmdb_logo;
             LogoBox.Location = new Point(653, 23);
             LogoBox.Name = "LogoBox";
-            LogoBox.Size = new Size(140, 60);
+            LogoBox.Size = new Size(140, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
             LogoBox.TabIndex = 13;
             LogoBox.TabStop = false;
@@ -178,7 +178,7 @@
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
-            uiGroupBox1.Size = new Size(811, 283);
+            uiGroupBox1.Size = new Size(811, 267);
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits ";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
