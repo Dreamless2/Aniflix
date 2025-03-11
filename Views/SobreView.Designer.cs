@@ -42,13 +42,14 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            uiGroupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // uiSymbolLabel2
             // 
             uiSymbolLabel2.BackColor = Color.Transparent;
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(552, 566);
+            uiSymbolLabel2.Location = new Point(3, 140);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(281, 28);
@@ -79,7 +80,7 @@
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
-            LogoBox.Location = new Point(22, 464);
+            LogoBox.Location = new Point(97, 636);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(155, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -101,7 +102,7 @@
             // 
             uiSymbolLabel1.BackColor = Color.Transparent;
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(22, 566);
+            uiSymbolLabel1.Location = new Point(3, 106);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(524, 28);
@@ -157,13 +158,15 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(uiSymbolLabel1);
+            uiGroupBox1.Controls.Add(uiSymbolLabel2);
             uiGroupBox1.Font = new Font("Microsoft Sans Serif", 12F);
             uiGroupBox1.Location = new Point(22, 153);
             uiGroupBox1.Margin = new Padding(4, 5, 4, 5);
             uiGroupBox1.MinimumSize = new Size(1, 1);
             uiGroupBox1.Name = "uiGroupBox1";
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
-            uiGroupBox1.Size = new Size(270, 180);
+            uiGroupBox1.Size = new Size(811, 303);
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits ";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -177,12 +180,10 @@
             Controls.Add(uiLabel1);
             Controls.Add(uiLine2);
             Controls.Add(uiLine1);
-            Controls.Add(uiSymbolLabel2);
             Controls.Add(LicenseBox);
             Controls.Add(LicenseSite);
             Controls.Add(LogoBox);
             Controls.Add(LinkSite);
-            Controls.Add(uiSymbolLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
@@ -192,6 +193,7 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            uiGroupBox1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
