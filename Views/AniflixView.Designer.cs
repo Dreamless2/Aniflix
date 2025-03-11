@@ -46,10 +46,13 @@
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
+            pictureBox1 = new PictureBox();
             MenuPanel.SuspendLayout();
+            LogoPanel.SuspendLayout();
             TitleBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).BeginInit();
             uiPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // MenuPanel
@@ -314,6 +317,7 @@
             // 
             // LogoPanel
             // 
+            LogoPanel.Controls.Add(pictureBox1);
             LogoPanel.Dock = DockStyle.Top;
             LogoPanel.FillColor = Color.FromArgb(31, 30, 68);
             LogoPanel.FillColor2 = Color.FromArgb(31, 30, 68);
@@ -408,6 +412,15 @@
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(258, 90);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // AniflixView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -426,9 +439,11 @@
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += AniflixView_Load;
             MenuPanel.ResumeLayout(false);
+            LogoPanel.ResumeLayout(false);
             TitleBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).EndInit();
             uiPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -452,5 +467,6 @@
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
         private FontAwesome.Sharp.Material.MaterialButton SobreButton;
         private FontAwesome.Sharp.Material.MaterialButton SairButton;
+        private PictureBox pictureBox1;
     }
 }
