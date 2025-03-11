@@ -627,9 +627,9 @@
             CopiarButton.FlatAppearance.BorderSize = 0;
             CopiarButton.FlatStyle = FlatStyle.Flat;
             CopiarButton.Font = new Font("Microsoft Sans Serif", 12F);
-            CopiarButton.ForeColor = Color.Gainsboro;
+            CopiarButton.ForeColor = Color.White;
             CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
-            CopiarButton.IconColor = Color.Gainsboro;
+            CopiarButton.IconColor = Color.White;
             CopiarButton.Location = new Point(173, 773);
             CopiarButton.Name = "CopiarButton";
             CopiarButton.Size = new Size(198, 91);
