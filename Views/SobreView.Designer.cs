@@ -242,7 +242,7 @@
             uiSymbolLabel6.Symbol = 560403;
             uiSymbolLabel6.TabIndex = 21;
             uiSymbolLabel6.Text = "SunnyUI";
-            uiSymbolLabel6.TextAlign = ContentAlignment.TopLeft;
+            uiSymbolLabel6.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // SobreView
             // 
