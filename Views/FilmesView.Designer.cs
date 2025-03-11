@@ -39,7 +39,7 @@
             DataLancamentoLabel = new Sunny.UI.UILabel();
             TituloAlternativoText = new Sunny.UI.UITextBox();
             FranquiaLabel = new Sunny.UI.UILabel();
-            Fra = new Sunny.UI.UILabel();
+            FaseMCULabel = new Sunny.UI.UILabel();
             uiTextBox7 = new Sunny.UI.UITextBox();
             TituloOriginalLabel = new Sunny.UI.UILabel();
             TagsText = new Sunny.UI.UITextBox();
@@ -219,16 +219,16 @@
             FranquiaLabel.TabIndex = 36;
             FranquiaLabel.Text = "Franquia";
             // 
-            // Fra
+            // FaseMCULabel
             // 
-            Fra.AutoSize = true;
-            Fra.Font = new Font("Microsoft Sans Serif", 12F);
-            Fra.ForeColor = Color.Black;
-            Fra.Location = new Point(737, 399);
-            Fra.Name = "Fra";
-            Fra.Size = new Size(85, 20);
-            Fra.TabIndex = 36;
-            Fra.Text = "Fase MCU";
+            FaseMCULabel.AutoSize = true;
+            FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
+            FaseMCULabel.ForeColor = Color.Black;
+            FaseMCULabel.Location = new Point(737, 399);
+            FaseMCULabel.Name = "FaseMCULabel";
+            FaseMCULabel.Size = new Size(85, 20);
+            FaseMCULabel.TabIndex = 36;
+            FaseMCULabel.Text = "Fase MCU";
             // 
             // uiTextBox7
             // 
@@ -578,7 +578,7 @@
             ControlBoxFillHoverColor = Color.FromArgb(51, 171, 160);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
-            Controls.Add(Fra);
+            Controls.Add(FaseMCULabel);
             Controls.Add(AnteriorButton);
             Controls.Add(EditarButton);
             Controls.Add(InserirNovoButton);
@@ -638,7 +638,7 @@
         private Sunny.UI.UILabel DataLancamentoLabel;
         private Sunny.UI.UITextBox TituloAlternativoText;
         private Sunny.UI.UILabel FranquiaLabel;
-        private Sunny.UI.UILabel Fra;
+        private Sunny.UI.UILabel FaseMCULabel;
         private Sunny.UI.UITextBox uiTextBox7;
         private Sunny.UI.UILabel TituloOriginalLabel;
         private Sunny.UI.UITextBox TagsText;
