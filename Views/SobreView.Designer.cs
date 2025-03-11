@@ -47,7 +47,7 @@
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
             uiButton1 = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
-            LinkSunny = new LinkLabel();
+            LinkSunnyUI = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
@@ -188,9 +188,7 @@
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(259, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            LogoBox.Source = null;
             LogoBox.TabIndex = 23;
-            LogoBox.XmlSource = null;
             // 
             // pictureBox2
             // 
@@ -273,22 +271,22 @@
             LinkTMDBLib.Text = "TMDBLib Home Page";
             LinkTMDBLib.LinkClicked += LinkTMDBLib_LinkClicked;
             // 
-            // LinkSunny
+            // LinkSunnyUI
             // 
-            LinkSunny.AutoSize = true;
-            LinkSunny.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSunny.Location = new Point(446, 476);
-            LinkSunny.Name = "LinkSunny";
-            LinkSunny.Size = new Size(133, 16);
-            LinkSunny.TabIndex = 25;
-            LinkSunny.TabStop = true;
-            LinkSunny.Text = "SunnyUI Home Page";
+            LinkSunnyUI.AutoSize = true;
+            LinkSunnyUI.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LinkSunnyUI.Location = new Point(446, 476);
+            LinkSunnyUI.Name = "LinkSunnyUI";
+            LinkSunnyUI.Size = new Size(133, 16);
+            LinkSunnyUI.TabIndex = 25;
+            LinkSunnyUI.TabStop = true;
+            LinkSunnyUI.Text = "SunnyUI Home Page";
             // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(852, 605);
-            Controls.Add(LinkSunny);
+            Controls.Add(LinkSunnyUI);
             Controls.Add(LinkTMDBLib);
             Controls.Add(uiButton1);
             Controls.Add(uiLine2);
@@ -332,6 +330,6 @@
         private PictureBox pictureBox2;
         private SharpVectors.Renderers.Forms.SvgPictureBox LogoBox;
         private LinkLabel LinkTMDBLib;
-        private LinkLabel LinkSunny;
+        private LinkLabel LinkSunnyUI;
     }
 }
