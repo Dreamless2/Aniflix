@@ -41,15 +41,12 @@
             SeriesButton = new FontAwesome.Sharp.Material.MaterialButton();
             FilmesButton = new FontAwesome.Sharp.Material.MaterialButton();
             LogoPanel = new Sunny.UI.UIPanel();
-            WebCanvas = new SharpVectors.Renderers.Forms.SvgPictureBox();
             TitleBarPanel = new Sunny.UI.UITitlePanel();
             TitleChildFormLabel = new Sunny.UI.UILabel();
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
             MenuPanel.SuspendLayout();
-            LogoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)WebCanvas).BeginInit();
             TitleBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -317,7 +314,6 @@
             // 
             // LogoPanel
             // 
-            LogoPanel.Controls.Add(WebCanvas);
             LogoPanel.Dock = DockStyle.Top;
             LogoPanel.FillColor = Color.FromArgb(31, 30, 68);
             LogoPanel.FillColor2 = Color.FromArgb(31, 30, 68);
@@ -333,16 +329,6 @@
             LogoPanel.TabIndex = 1;
             LogoPanel.Text = null;
             LogoPanel.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // WebCanvas
-            // 
-            WebCanvas.Dock = DockStyle.Fill;
-            WebCanvas.Location = new Point(0, 0);
-            WebCanvas.Name = "WebCanvas";
-            WebCanvas.Size = new Size(258, 90);
-            WebCanvas.SizeMode = PictureBoxSizeMode.CenterImage;
-            WebCanvas.TabIndex = 0;
-            WebCanvas.Click += WebCanvas_Click;
             // 
             // TitleBarPanel
             // 
@@ -440,8 +426,6 @@
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += AniflixView_Load;
             MenuPanel.ResumeLayout(false);
-            LogoPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)WebCanvas).EndInit();
             TitleBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).EndInit();
             uiPanel1.ResumeLayout(false);
@@ -466,7 +450,6 @@
         private FontAwesome.Sharp.Material.MaterialButton AnimesFilmesButton;
         private FontAwesome.Sharp.Material.MaterialButton AnimesButton;
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
-        private SharpVectors.Renderers.Forms.SvgPictureBox WebCanvas;
         private FontAwesome.Sharp.Material.MaterialButton SobreButton;
         private FontAwesome.Sharp.Material.MaterialButton SairButton;
     }
