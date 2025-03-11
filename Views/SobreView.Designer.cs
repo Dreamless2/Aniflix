@@ -35,7 +35,6 @@
             LicenseSite = new LinkLabel();
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             uiPanel1 = new Sunny.UI.UIPanel();
-            svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
             uiPanel2 = new Sunny.UI.UIPanel();
             uiLabel1 = new Sunny.UI.UILabel();
             uiLine2 = new Sunny.UI.UILine();
@@ -43,7 +42,6 @@
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).BeginInit();
             uiPanel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -139,21 +137,11 @@
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // svgPictureBox1
-            // 
-            svgPictureBox1.AppTitle = "Aniflix";
-            svgPictureBox1.Location = new Point(0, 0);
-            svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(216, 132);
-            svgPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            svgPictureBox1.TabIndex = 2;
-            // 
             // uiPanel2
             // 
             uiPanel2.Controls.Add(uiLabel1);
             uiPanel2.Controls.Add(uiLine2);
             uiPanel2.Controls.Add(uiLine1);
-            uiPanel2.Controls.Add(svgPictureBox1);
             uiPanel2.Dock = DockStyle.Top;
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel2.Location = new Point(0, 35);
@@ -218,7 +206,6 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             uiPanel1.ResumeLayout(false);
             uiPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)svgPictureBox1).EndInit();
             uiPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -231,7 +218,6 @@
         private LinkLabel LicenseSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private Sunny.UI.UIPanel uiPanel1;
-        private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
         private Sunny.UI.UIPanel uiPanel2;
         private Sunny.UI.UILine uiLine1;
         private Sunny.UI.UILine uiLine2;
