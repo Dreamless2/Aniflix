@@ -57,7 +57,8 @@
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(281, 28);
             uiSymbolLabel2.TabIndex = 17;
-            uiSymbolLabel2.Text = "Licenciado sob os termos da GPLv3.";
+            uiSymbolLabel2.Text = "Licensed under GPLv3";
+            uiSymbolLabel2.TextAlign = ContentAlignment.TopLeft;
             // 
             // LicenseBox
             // 
