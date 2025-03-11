@@ -11,7 +11,7 @@ namespace Aniflix.Views
         }
         private void SobreView_Load(object sender, EventArgs e)
         {
-            LinkSite.Links.Add(0, LinkSite.Text.Length, "https://www.themoviedb.org/");
+            LinkTMDB.Links.Add(0, LinkTMDB.Text.Length, "https://www.themoviedb.org/");
             LinkLicenseSite.Links.Add(0, LinkLicenseSite.Text.Length, "https://www.gnu.org/licenses/gpl-3.0.html");
             LinkTMDBLib.Links.Add(0, LinkTMDBLib.Text.Length, "https://github.com/jellyfin/TMDbLib");
             LinkSunnyUI.Links.Add(0, LinkSunnyUI.Text.Length, "https://github.com/SunnyUI/SunnyUI");

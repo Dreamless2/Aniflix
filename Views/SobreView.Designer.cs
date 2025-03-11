@@ -31,7 +31,7 @@
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             LicenseBox = new PictureBox();
             LinkLicenseSite = new LinkLabel();
-            LinkSite = new LinkLabel();
+            LinkTMDB = new LinkLabel();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             pictureBox1 = new PictureBox();
             uiLabel1 = new Sunny.UI.UILabel();
@@ -88,17 +88,17 @@
             LinkLicenseSite.TabStop = true;
             LinkLicenseSite.Text = "GNU GPLv3 Home Page";
             // 
-            // LinkSite
+            // LinkTMDB
             // 
-            LinkSite.AutoSize = true;
-            LinkSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSite.Location = new Point(22, 476);
-            LinkSite.Name = "LinkSite";
-            LinkSite.Size = new Size(122, 16);
-            LinkSite.TabIndex = 14;
-            LinkSite.TabStop = true;
-            LinkSite.Text = "TMDB Home Page";
-            LinkSite.LinkClicked += LinkSite_LinkClicked_1;
+            LinkTMDB.AutoSize = true;
+            LinkTMDB.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LinkTMDB.Location = new Point(22, 476);
+            LinkTMDB.Name = "LinkTMDB";
+            LinkTMDB.Size = new Size(122, 16);
+            LinkTMDB.TabIndex = 14;
+            LinkTMDB.TabStop = true;
+            LinkTMDB.Text = "TMDB Home Page";
+            LinkTMDB.LinkClicked += LinkSite_LinkClicked_1;
             // 
             // uiSymbolLabel1
             // 
@@ -302,7 +302,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(uiLine1);
             Controls.Add(LinkLicenseSite);
-            Controls.Add(LinkSite);
+            Controls.Add(LinkTMDB);
             Controls.Add(uiLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
@@ -326,7 +326,7 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private PictureBox LicenseBox;
         private LinkLabel LinkLicenseSite;
-        private LinkLabel LinkSite;
+        private LinkLabel LinkTMDB;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private PictureBox pictureBox1;
         private Sunny.UI.UILabel uiLabel1;
