@@ -113,7 +113,7 @@
             pictureBox1.Image = Properties.Resources.aniflix;
             pictureBox1.Location = new Point(3, 38);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(240, 230);
+            pictureBox1.Size = new Size(240, 216);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
@@ -121,11 +121,11 @@
             // uiLabel1
             // 
             uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
             uiLabel1.Location = new Point(251, 70);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(203, 73);
+            uiLabel1.Size = new Size(86, 31);
             uiLabel1.TabIndex = 20;
             uiLabel1.Text = "Aniflix";
             // 
@@ -136,7 +136,7 @@
             uiLine2.ForeColor = Color.FromArgb(48, 48, 48);
             uiLine2.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine2.LineSize = 5;
-            uiLine2.Location = new Point(253, 146);
+            uiLine2.Location = new Point(253, 104);
             uiLine2.MinimumSize = new Size(1, 1);
             uiLine2.Name = "uiLine2";
             uiLine2.Size = new Size(596, 29);
