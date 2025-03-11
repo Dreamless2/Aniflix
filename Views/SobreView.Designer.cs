@@ -39,10 +39,12 @@
             uiLabel1 = new Sunny.UI.UILabel();
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             uiPanel1.SuspendLayout();
             uiPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel1
@@ -139,6 +141,7 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(pictureBox1);
             uiPanel2.Controls.Add(uiLabel1);
             uiPanel2.Controls.Add(uiLine2);
             uiPanel2.Controls.Add(uiLine1);
@@ -190,6 +193,14 @@
             uiLine1.Size = new Size(596, 29);
             uiLine1.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(35, 38);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -207,6 +218,7 @@
             uiPanel1.ResumeLayout(false);
             uiPanel1.PerformLayout();
             uiPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -222,5 +234,6 @@
         private Sunny.UI.UILine uiLine1;
         private Sunny.UI.UILine uiLine2;
         private Sunny.UI.UILabel uiLabel1;
+        private PictureBox pictureBox1;
     }
 }
