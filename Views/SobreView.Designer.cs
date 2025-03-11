@@ -188,7 +188,9 @@
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(259, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            LogoBox.Source = null;
             LogoBox.TabIndex = 23;
+            LogoBox.XmlSource = null;
             // 
             // pictureBox2
             // 
@@ -285,7 +287,9 @@
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(244, 242, 251);
             ClientSize = new Size(852, 605);
+            ControlBoxFillHoverColor = Color.FromArgb(133, 97, 198);
             Controls.Add(LinkSunnyUI);
             Controls.Add(LinkTMDBLib);
             Controls.Add(uiButton1);
@@ -299,7 +303,10 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
+            RectColor = Color.FromArgb(102, 58, 183);
+            Style = Sunny.UI.UIStyle.Custom;
             Text = "Sobre";
+            TitleColor = Color.FromArgb(102, 58, 183);
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SobreView_Load;
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
