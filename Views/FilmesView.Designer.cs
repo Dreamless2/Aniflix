@@ -65,7 +65,6 @@
             AnteriorButton = new FontAwesome.Sharp.Material.MaterialButton();
             ProximoButton = new FontAwesome.Sharp.Material.MaterialButton();
             DadosLabel = new Sunny.UI.UILabel();
-            ResumoText.SuspendLayout();
             SuspendLayout();
             // 
             // CodigoFilmeLabel
@@ -225,7 +224,7 @@
             Fra.AutoSize = true;
             Fra.Font = new Font("Microsoft Sans Serif", 12F);
             Fra.ForeColor = Color.Black;
-            Fra.Location = new Point(81, 336);
+            Fra.Location = new Point(737, 399);
             Fra.Name = "Fra";
             Fra.Size = new Size(85, 20);
             Fra.TabIndex = 36;
@@ -461,7 +460,6 @@
             // 
             // ResumoText
             // 
-            ResumoText.Controls.Add(Fra);
             ResumoText.FillColor = Color.White;
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
             ResumoText.Location = new Point(972, 87);
@@ -580,6 +578,7 @@
             ControlBoxFillHoverColor = Color.FromArgb(51, 171, 160);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
+            Controls.Add(Fra);
             Controls.Add(AnteriorButton);
             Controls.Add(EditarButton);
             Controls.Add(InserirNovoButton);
@@ -623,8 +622,6 @@
             TitleColor = Color.FromArgb(0, 150, 136);
             ZoomScaleRect = new Rectangle(15, 15, 1209, 709);
             Load += FilmesView_Load;
-            ResumoText.ResumeLayout(false);
-            ResumoText.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
