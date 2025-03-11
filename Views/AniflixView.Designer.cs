@@ -343,7 +343,7 @@
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
             LogoBox.TabIndex = 0;
             LogoBox.TabStop = false;
-            LogoBox.Click += pictureBox1_Click;
+            LogoBox.Click += LogoBox_Click;
             // 
             // TitleBarPanel
             // 
