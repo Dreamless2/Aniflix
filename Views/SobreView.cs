@@ -39,10 +39,6 @@ namespace Aniflix.Views
             });
         }
 
-        private void FecharButton_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
 
 
@@ -56,6 +52,38 @@ namespace Aniflix.Views
 
             });
         }
+
+
+        private void FecharButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
+
+
+
+
+        private void LogoBox_MouseEnter(object sender, EventArgs e)
+        {
+            LogoBox.Cursor = Cursors.Hand;
+        }
+
+        private void LicenseBox_MouseEnter(object sender, EventArgs e)
+        {
+            LicenseBox.Cursor = Cursors.Hand;
+        }
+
+
+
+
+
+
+
+
+
+
+
         private void LinkTMDB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var target = e.Link!.LinkData! as string;
