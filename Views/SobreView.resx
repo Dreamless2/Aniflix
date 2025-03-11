@@ -117,26 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="svgPictureBox1.XmlSource" xml:space="preserve">
-    <value>&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300"&gt;
-  &lt;defs&gt;
-    &lt;linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"&gt;
-      &lt;stop offset="0%" style="stop-color:#FF3CAC;"/&gt;
-      &lt;stop offset="50%" style="stop-color:#784BA0;"/&gt;
-      &lt;stop offset="100%" style="stop-color:#2B86C5;"/&gt;
-    &lt;/linearGradient&gt;
-  &lt;/defs&gt;
-  
-  &lt;text x="50%" y="50%" font-family="Arial, sans-serif" font-weight="bold"
-        font-size="90" fill="url(#gradient)" text-anchor="middle" dy="0.35em"&gt;
-    ANIFLIX
-  &lt;/text&gt;
-
-  &lt;circle cx="100" cy="100" r="10" fill="#FFD700"/&gt;
-  &lt;circle cx="500" cy="200" r="15" fill="#FFD700"/&gt;
-
-  &lt;path d="M200 50 Q300 100 400 50" stroke="#FF3CAC" stroke-width="5" fill="none"/&gt;
-  &lt;path d="M200 250 Q300 200 400 250" stroke="#2B86C5" stroke-width="5" fill="none"/&gt;
-&lt;/svg&gt;</value>
-  </data>
 </root>

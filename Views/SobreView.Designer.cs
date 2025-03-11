@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SobreView));
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             LogoBox = new PictureBox();
             LinkSite = new LinkLabel();
@@ -148,7 +147,6 @@
             svgPictureBox1.Size = new Size(216, 132);
             svgPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             svgPictureBox1.TabIndex = 2;
-            svgPictureBox1.XmlSource = resources.GetString("svgPictureBox1.XmlSource");
             // 
             // uiPanel2
             // 
