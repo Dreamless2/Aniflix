@@ -92,6 +92,7 @@
             CodigoText.TabIndex = 35;
             CodigoText.TextAlignment = ContentAlignment.MiddleLeft;
             CodigoText.Watermark = "Código do Filme";
+            CodigoText.WordWarp = false;
             // 
             // AudioBox
             // 
