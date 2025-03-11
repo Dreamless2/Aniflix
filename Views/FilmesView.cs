@@ -13,7 +13,7 @@ namespace Aniflix.Views
 
         private void FilmesView_Load(object sender, EventArgs e)
         {
-            GlobalFunctions.ApplyTheme(this);
+            //GlobalFunctions.ApplyTheme(this);
         }
 
 
