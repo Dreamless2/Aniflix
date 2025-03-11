@@ -39,6 +39,7 @@
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -158,6 +159,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(uiSymbolLabel3);
             uiGroupBox1.Controls.Add(uiSymbolLabel1);
             uiGroupBox1.Controls.Add(uiSymbolLabel2);
             uiGroupBox1.Font = new Font("Microsoft Sans Serif", 12F);
@@ -170,6 +172,17 @@
             uiGroupBox1.TabIndex = 22;
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits ";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
+            // 
+            // uiSymbolLabel3
+            // 
+            uiSymbolLabel3.BackColor = Color.Transparent;
+            uiSymbolLabel3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel3.Location = new Point(3, 35);
+            uiSymbolLabel3.MinimumSize = new Size(1, 1);
+            uiSymbolLabel3.Name = "uiSymbolLabel3";
+            uiSymbolLabel3.Size = new Size(524, 28);
+            uiSymbolLabel3.TabIndex = 18;
+            uiSymbolLabel3.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
             // 
             // SobreView
             // 
@@ -210,5 +223,6 @@
         private Sunny.UI.UILine uiLine2;
         private Sunny.UI.UILine uiLine1;
         private Sunny.UI.UIGroupBox uiGroupBox1;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel3;
     }
 }
