@@ -104,17 +104,41 @@ namespace Aniflix.Views
         }
         private void LinkTMDB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            var target = e.Link!.LinkData! as string;
+            if (!string.IsNullOrEmpty(target))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = target,
+                    UseShellExecute = true
+                });
+            }
         }
 
         private void LinkSunnyUI_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            var target = e.Link!.LinkData! as string;
+            if (!string.IsNullOrEmpty(target))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = target,
+                    UseShellExecute = true
+                });
+            }
         }
 
         private void LinkLicenseSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            var target = e.Link!.LinkData! as string;
+            if (!string.IsNullOrEmpty(target))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = target,
+                    UseShellExecute = true
+                });
+            }
         }
     }
 }
