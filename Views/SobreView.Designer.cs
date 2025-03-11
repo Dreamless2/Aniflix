@@ -197,7 +197,7 @@
             uiSymbolLabel4.Name = "uiSymbolLabel4";
             uiSymbolLabel4.Size = new Size(281, 28);
             uiSymbolLabel4.TabIndex = 19;
-            uiSymbolLabel4.Text = "Licenciado sob os termos da GPLv3.";
+            uiSymbolLabel4.Text = "NET 8.0";
             // 
             // uiSymbolLabel5
             // 
