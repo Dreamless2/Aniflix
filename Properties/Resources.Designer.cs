@@ -83,6 +83,16 @@ namespace Aniflix.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sunnyui {
+            get {
+                object obj = ResourceManager.GetObject("sunnyui", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tmdb_logo {
             get {
                 object obj = ResourceManager.GetObject("tmdb_logo", resourceCulture);
