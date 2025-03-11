@@ -151,6 +151,7 @@
             uiLine1.BackColor = Color.Transparent;
             uiLine1.Font = new Font("Microsoft Sans Serif", 12F);
             uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLine1.LineColor = Color.FromArgb(13, 37, 63);
             uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine1.LineSize = 5;
             uiLine1.Location = new Point(202, 49);
@@ -269,6 +270,7 @@
             LinkTMDBLib.TabIndex = 24;
             LinkTMDBLib.TabStop = true;
             LinkTMDBLib.Text = "TMDBLib Home Page";
+            LinkTMDBLib.LinkClicked += LinkTMDBLib_LinkClicked;
             // 
             // LinkSunny
             // 

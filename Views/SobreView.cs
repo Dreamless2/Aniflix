@@ -82,5 +82,10 @@ namespace Aniflix.Views
         {
 
         }
+
+        private void LinkTMDBLib_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
