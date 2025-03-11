@@ -38,7 +38,7 @@
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
-            pictureBox3 = new PictureBox();
+            LogoBox = new PictureBox();
             pictureBox2 = new PictureBox();
             uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
@@ -50,7 +50,7 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -162,7 +162,7 @@
             // 
             // uiGroupBox1
             // 
-            uiGroupBox1.Controls.Add(pictureBox3);
+            uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(pictureBox2);
             uiGroupBox1.Controls.Add(uiSymbolLabel6);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
@@ -182,16 +182,16 @@
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
             // 
-            // pictureBox3
+            // LogoBox
             // 
-            pictureBox3.Image = Properties.Resources.tmdb_logo;
-            pictureBox3.ImageLocation = "";
-            pictureBox3.Location = new Point(539, 27);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(259, 83);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 23;
-            pictureBox3.TabStop = false;
+            LogoBox.Image = Properties.Resources.tmdb_logo;
+            LogoBox.ImageLocation = "";
+            LogoBox.Location = new Point(539, 27);
+            LogoBox.Name = "LogoBox";
+            LogoBox.Size = new Size(259, 83);
+            LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            LogoBox.TabIndex = 23;
+            LogoBox.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -314,7 +314,7 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -339,6 +339,6 @@
         private PictureBox pictureBox2;
         private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunnyUI;
-        private PictureBox pictureBox3;
+        private PictureBox LogoBox;
     }
 }
