@@ -67,19 +67,6 @@ namespace Aniflix.Views
             Close();
         }
 
-        private void LicenseSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            var target = e.Link!.LinkData! as string;
-            if (!string.IsNullOrEmpty(target))
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = target,
-                    UseShellExecute = true
-                });
-            }
-        }
-
         private void SunnyBox_Click(object sender, EventArgs e)
         {
             var url = "https://github.com/yhuse/SunnyUI";
