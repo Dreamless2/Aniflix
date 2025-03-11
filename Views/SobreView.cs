@@ -95,7 +95,7 @@ namespace Aniflix.Views
 
         private void SunnyBox_Click(object sender, EventArgs e)
         {
-            var url = "https://www.gnu.org/licenses/gpl-3.0.html";
+            var url = "https://github.com/yhuse/SunnyUI";
             Process.Start(new ProcessStartInfo
             {
                 FileName = url,
