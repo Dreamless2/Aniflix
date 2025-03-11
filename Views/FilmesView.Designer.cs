@@ -567,6 +567,7 @@
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(238, 248, 248);
             ClientSize = new Size(1485, 899);
+            ControlBox = false;
             ControlBoxFillHoverColor = Color.FromArgb(51, 171, 160);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
