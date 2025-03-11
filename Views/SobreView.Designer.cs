@@ -165,7 +165,7 @@
             uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
             uiGroupBox1.Size = new Size(270, 180);
             uiGroupBox1.TabIndex = 22;
-            uiGroupBox1.Text = "uiGroupBox1";
+            uiGroupBox1.Text = "Aniflix ";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
             // 
             // SobreView
