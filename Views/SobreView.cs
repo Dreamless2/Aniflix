@@ -19,11 +19,11 @@ namespace Aniflix.Views
 
         private void LogoBox_Click(object sender, EventArgs e)
         {
-            var target = "https://www.themoviedb.org/";
+            var url = "https://www.themoviedb.org/";
 
             Process.Start(new ProcessStartInfo
             {
-                FileName = target,
+                FileName = url,
                 UseShellExecute = true
             });
         }
@@ -31,6 +31,7 @@ namespace Aniflix.Views
         private void LicenseBox_Click(object sender, EventArgs e)
         {
             var url = "https://www.gnu.org/licenses/gpl-3.0.html";
+
             Process.Start(new ProcessStartInfo
             {
                 FileName = url,
@@ -41,6 +42,7 @@ namespace Aniflix.Views
         private void SunnyBox_Click(object sender, EventArgs e)
         {
             var url = "https://github.com/yhuse/SunnyUI";
+
             Process.Start(new ProcessStartInfo
             {
                 FileName = url,
