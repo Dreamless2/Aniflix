@@ -39,9 +39,10 @@
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
-            uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
-            uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
+            uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
+            uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
+            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -161,6 +162,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(linkLabel1);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
             uiGroupBox1.Controls.Add(uiSymbolLabel4);
             uiGroupBox1.Controls.Add(uiSymbolLabel3);
@@ -177,16 +179,16 @@
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits ";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
             // 
-            // uiSymbolLabel3
+            // uiSymbolLabel5
             // 
-            uiSymbolLabel3.BackColor = Color.Transparent;
-            uiSymbolLabel3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel3.Location = new Point(3, 35);
-            uiSymbolLabel3.MinimumSize = new Size(1, 1);
-            uiSymbolLabel3.Name = "uiSymbolLabel3";
-            uiSymbolLabel3.Size = new Size(160, 28);
-            uiSymbolLabel3.TabIndex = 18;
-            uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits";
+            uiSymbolLabel5.BackColor = Color.Transparent;
+            uiSymbolLabel5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel5.Location = new Point(3, 171);
+            uiSymbolLabel5.MinimumSize = new Size(1, 1);
+            uiSymbolLabel5.Name = "uiSymbolLabel5";
+            uiSymbolLabel5.Size = new Size(98, 28);
+            uiSymbolLabel5.TabIndex = 20;
+            uiSymbolLabel5.Text = "TMDBLib";
             // 
             // uiSymbolLabel4
             // 
@@ -199,16 +201,26 @@
             uiSymbolLabel4.TabIndex = 19;
             uiSymbolLabel4.Text = "NET 8.0";
             // 
-            // uiSymbolLabel5
+            // uiSymbolLabel3
             // 
-            uiSymbolLabel5.BackColor = Color.Transparent;
-            uiSymbolLabel5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel5.Location = new Point(3, 171);
-            uiSymbolLabel5.MinimumSize = new Size(1, 1);
-            uiSymbolLabel5.Name = "uiSymbolLabel5";
-            uiSymbolLabel5.Size = new Size(98, 28);
-            uiSymbolLabel5.TabIndex = 20;
-            uiSymbolLabel5.Text = "TMDBLib";
+            uiSymbolLabel3.BackColor = Color.Transparent;
+            uiSymbolLabel3.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel3.Location = new Point(3, 35);
+            uiSymbolLabel3.MinimumSize = new Size(1, 1);
+            uiSymbolLabel3.Name = "uiSymbolLabel3";
+            uiSymbolLabel3.Size = new Size(160, 28);
+            uiSymbolLabel3.TabIndex = 18;
+            uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits";
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new Point(107, 177);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(80, 20);
+            linkLabel1.TabIndex = 21;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "linkLabel1";
             // 
             // SobreView
             // 
@@ -253,5 +265,6 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
         private Sunny.UI.UISymbolLabel uiSymbolLabel5;
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
+        private LinkLabel linkLabel1;
     }
 }
