@@ -99,7 +99,6 @@ namespace Aniflix.Views
                 });
             }
         }
-
         private void LinkLicenseSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             var target = e.Link!.LinkData! as string;
