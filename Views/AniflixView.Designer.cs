@@ -337,7 +337,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.aniflix;
-            pictureBox1.Location = new Point(4, 26);
+            pictureBox1.Location = new Point(4, 22);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(251, 47);
             pictureBox1.TabIndex = 0;
