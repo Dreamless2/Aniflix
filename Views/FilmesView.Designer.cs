@@ -643,9 +643,9 @@
             InserirNovoButton.FlatAppearance.BorderSize = 0;
             InserirNovoButton.FlatStyle = FlatStyle.Flat;
             InserirNovoButton.Font = new Font("Microsoft Sans Serif", 12F);
-            InserirNovoButton.ForeColor = Color.Gainsboro;
+            InserirNovoButton.ForeColor = Color.White;
             InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
-            InserirNovoButton.IconColor = Color.Gainsboro;
+            InserirNovoButton.IconColor = Color.White;
             InserirNovoButton.Location = new Point(408, 773);
             InserirNovoButton.Name = "InserirNovoButton";
             InserirNovoButton.Size = new Size(198, 91);
@@ -659,9 +659,9 @@
             EditarButton.FlatAppearance.BorderSize = 0;
             EditarButton.FlatStyle = FlatStyle.Flat;
             EditarButton.Font = new Font("Microsoft Sans Serif", 12F);
-            EditarButton.ForeColor = Color.Gainsboro;
+            EditarButton.ForeColor = Color.White;
             EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
-            EditarButton.IconColor = Color.Gainsboro;
+            EditarButton.IconColor = Color.White;
             EditarButton.Location = new Point(643, 773);
             EditarButton.Name = "EditarButton";
             EditarButton.Size = new Size(198, 91);
@@ -675,9 +675,9 @@
             AnteriorButton.FlatAppearance.BorderSize = 0;
             AnteriorButton.FlatStyle = FlatStyle.Flat;
             AnteriorButton.Font = new Font("Microsoft Sans Serif", 12F);
-            AnteriorButton.ForeColor = Color.Gainsboro;
+            AnteriorButton.ForeColor = Color.White;
             AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
-            AnteriorButton.IconColor = Color.Gainsboro;
+            AnteriorButton.IconColor = Color.White;
             AnteriorButton.Location = new Point(878, 773);
             AnteriorButton.Name = "AnteriorButton";
             AnteriorButton.Size = new Size(198, 91);
@@ -691,9 +691,9 @@
             ProximoButton.FlatAppearance.BorderSize = 0;
             ProximoButton.FlatStyle = FlatStyle.Flat;
             ProximoButton.Font = new Font("Microsoft Sans Serif", 12F);
-            ProximoButton.ForeColor = Color.Gainsboro;
+            ProximoButton.ForeColor = Color.White;
             ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
-            ProximoButton.IconColor = Color.Gainsboro;
+            ProximoButton.IconColor = Color.White;
             ProximoButton.Location = new Point(1113, 773);
             ProximoButton.Name = "ProximoButton";
             ProximoButton.Size = new Size(198, 91);
