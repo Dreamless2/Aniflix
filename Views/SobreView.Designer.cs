@@ -111,7 +111,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.aniflix;
-            pictureBox1.Location = new Point(22, 38);
+            pictureBox1.Location = new Point(12, 38);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(174, 95);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
