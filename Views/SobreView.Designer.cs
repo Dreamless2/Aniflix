@@ -39,7 +39,7 @@
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
             LogoBox = new PictureBox();
-            pictureBox2 = new PictureBox();
+            SunnyBox = new PictureBox();
             uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
@@ -51,7 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)SunnyBox).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -163,7 +163,7 @@
             // uiGroupBox1
             // 
             uiGroupBox1.Controls.Add(LogoBox);
-            uiGroupBox1.Controls.Add(pictureBox2);
+            uiGroupBox1.Controls.Add(SunnyBox);
             uiGroupBox1.Controls.Add(uiSymbolLabel6);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
             uiGroupBox1.Controls.Add(uiSymbolLabel4);
@@ -193,16 +193,17 @@
             LogoBox.TabIndex = 23;
             LogoBox.TabStop = false;
             // 
-            // pictureBox2
+            // SunnyBox
             // 
-            pictureBox2.Image = Properties.Resources.sunnyui;
-            pictureBox2.ImageLocation = "";
-            pictureBox2.Location = new Point(539, 205);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(259, 83);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 22;
-            pictureBox2.TabStop = false;
+            SunnyBox.Image = Properties.Resources.sunnyui;
+            SunnyBox.ImageLocation = "";
+            SunnyBox.Location = new Point(539, 205);
+            SunnyBox.Name = "SunnyBox";
+            SunnyBox.Size = new Size(259, 83);
+            SunnyBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            SunnyBox.TabIndex = 22;
+            SunnyBox.TabStop = false;
+            SunnyBox.Click += SunnyBox_Click;
             // 
             // uiSymbolLabel6
             // 
@@ -315,7 +316,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)SunnyBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -336,7 +337,7 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
         private Sunny.UI.UIButton uiButton1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel6;
-        private PictureBox pictureBox2;
+        private PictureBox SunnyBox;
         private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunnyUI;
         private PictureBox LogoBox;

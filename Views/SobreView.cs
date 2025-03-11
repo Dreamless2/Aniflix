@@ -92,5 +92,10 @@ namespace Aniflix.Views
                 });
             }
         }
+
+        private void SunnyBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
