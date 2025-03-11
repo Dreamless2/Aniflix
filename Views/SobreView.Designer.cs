@@ -219,10 +219,10 @@
             // uiButton1
             // 
             uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(662, 546);
+            uiButton1.Location = new Point(699, 537);
             uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
-            uiButton1.Size = new Size(127, 45);
+            uiButton1.Size = new Size(132, 45);
             uiButton1.TabIndex = 23;
             uiButton1.Text = "uiButton1";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
