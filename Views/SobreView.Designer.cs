@@ -131,7 +131,7 @@
             uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Merriweather Sans", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(202, 57);
+            uiLabel1.Location = new Point(202, 68);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(107, 44);
             uiLabel1.TabIndex = 20;
@@ -144,7 +144,7 @@
             uiLine2.ForeColor = Color.FromArgb(48, 48, 48);
             uiLine2.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine2.LineSize = 5;
-            uiLine2.Location = new Point(202, 91);
+            uiLine2.Location = new Point(202, 104);
             uiLine2.MinimumSize = new Size(1, 1);
             uiLine2.Name = "uiLine2";
             uiLine2.Size = new Size(631, 29);
@@ -157,7 +157,7 @@
             uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
             uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine1.LineSize = 5;
-            uiLine1.Location = new Point(202, 39);
+            uiLine1.Location = new Point(202, 49);
             uiLine1.MinimumSize = new Size(1, 1);
             uiLine1.Name = "uiLine1";
             uiLine1.Size = new Size(631, 29);
@@ -226,13 +226,13 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(852, 501);
+            Controls.Add(uiLine2);
             Controls.Add(uiGroupBox1);
             Controls.Add(pictureBox1);
-            Controls.Add(uiLabel1);
-            Controls.Add(uiLine2);
             Controls.Add(uiLine1);
             Controls.Add(LicenseSite);
             Controls.Add(LinkSite);
+            Controls.Add(uiLabel1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
