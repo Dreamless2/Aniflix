@@ -219,7 +219,7 @@
             uiSymbolLabel3.Size = new Size(160, 28);
             uiSymbolLabel3.Symbol = 560403;
             uiSymbolLabel3.TabIndex = 18;
-            uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits";
+            uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiSymbolLabel3.TextAlign = ContentAlignment.TopLeft;
             // 
             // SobreView
