@@ -241,7 +241,8 @@
             uiSymbolLabel6.Size = new Size(185, 28);
             uiSymbolLabel6.Symbol = 560403;
             uiSymbolLabel6.TabIndex = 21;
-            uiSymbolLabel6.Text = "Licensed under GPLv3";
+            uiSymbolLabel6.Text = "SunnyUI";
+            uiSymbolLabel6.TextAlign = ContentAlignment.TopLeft;
             // 
             // SobreView
             // 
