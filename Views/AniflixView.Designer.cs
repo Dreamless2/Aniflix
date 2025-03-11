@@ -41,18 +41,18 @@
             SeriesButton = new FontAwesome.Sharp.Material.MaterialButton();
             FilmesButton = new FontAwesome.Sharp.Material.MaterialButton();
             LogoPanel = new Sunny.UI.UIPanel();
+            pictureBox1 = new PictureBox();
             TitleBarPanel = new Sunny.UI.UITitlePanel();
             TitleChildFormLabel = new Sunny.UI.UILabel();
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
             uiPanel1 = new Sunny.UI.UIPanel();
             DesktopPanel = new Sunny.UI.UIPanel();
-            pictureBox1 = new PictureBox();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             TitleBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).BeginInit();
             uiPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // MenuPanel
@@ -334,6 +334,16 @@
             LogoPanel.Text = null;
             LogoPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.aniflix;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(258, 90);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // TitleBarPanel
             // 
             TitleBarPanel.BackColor = Color.FromArgb(26, 25, 62);
@@ -412,17 +422,6 @@
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.aniflix;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(258, 90);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // AniflixView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -442,10 +441,10 @@
             Load += AniflixView_Load;
             MenuPanel.ResumeLayout(false);
             LogoPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             TitleBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).EndInit();
             uiPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
