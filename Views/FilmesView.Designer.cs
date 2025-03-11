@@ -323,6 +323,7 @@
             FilmeText.TabIndex = 37;
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
             FilmeText.Watermark = "Filme";
+            FilmeText.WordWarp = false;
             // 
             // SinopseLabel
             // 
