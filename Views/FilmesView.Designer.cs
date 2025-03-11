@@ -623,6 +623,8 @@
             // 
             // CopiarButton
             // 
+            CopiarButton.BackColor = Color.FromArgb(44, 100, 133);
+            CopiarButton.FlatStyle = FlatStyle.Flat;
             CopiarButton.Font = new Font("Microsoft Sans Serif", 12F);
             CopiarButton.ForeColor = Color.Black;
             CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
@@ -633,7 +635,7 @@
             CopiarButton.TabIndex = 47;
             CopiarButton.Text = "Copiar";
             CopiarButton.TextAlign = ContentAlignment.BottomLeft;
-            CopiarButton.UseVisualStyleBackColor = true;
+            CopiarButton.UseVisualStyleBackColor = false;
             // 
             // InserirNovoButton
             // 
