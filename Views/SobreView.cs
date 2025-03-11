@@ -9,6 +9,8 @@ namespace Aniflix.Views
         {
             InitializeComponent();
         }
+
+        #region "Form Load"
         private void SobreView_Load(object sender, EventArgs e)
         {
             LinkTMDB.Links.Add(0, LinkTMDB.Text.Length, "https://www.themoviedb.org/");
@@ -16,6 +18,7 @@ namespace Aniflix.Views
             LinkTMDBLib.Links.Add(0, LinkTMDBLib.Text.Length, "https://github.com/jellyfin/TMDbLib");
             LinkSunnyUI.Links.Add(0, LinkSunnyUI.Text.Length, "https://github.com/SunnyUI/SunnyUI");
         }
+        #endregion
 
         #region "PictureBox Click"
         private void LogoBox_Click(object sender, EventArgs e)
@@ -53,13 +56,6 @@ namespace Aniflix.Views
         }
         #endregion
 
-
-        private void FecharButton_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-
         #region "Mouse Enter"
         private void LogoBox_MouseEnter(object sender, EventArgs e)
         {
@@ -75,13 +71,6 @@ namespace Aniflix.Views
             SunnyBox.Cursor = Cursors.Hand;
         }
         #endregion
-
-
-
-
-
-
-
 
         #region "Link Click"
         private void LinkTMDB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -134,5 +123,11 @@ namespace Aniflix.Views
         }
         #endregion
 
+        #region "Button Click"
+        private void FecharButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        #endregion
     }
 }
