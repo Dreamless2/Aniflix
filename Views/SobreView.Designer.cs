@@ -267,7 +267,7 @@
             // FecharButton
             // 
             FecharButton.Font = new Font("Microsoft Sans Serif", 12F);
-            FecharButton.Location = new Point(699, 537);
+            FecharButton.Location = new Point(699, 519);
             FecharButton.MinimumSize = new Size(1, 1);
             FecharButton.Name = "FecharButton";
             FecharButton.Size = new Size(132, 45);
@@ -303,7 +303,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(244, 242, 251);
-            ClientSize = new Size(852, 605);
+            ClientSize = new Size(852, 588);
             ControlBoxFillHoverColor = Color.FromArgb(133, 97, 198);
             Controls.Add(LinkSunnyUI);
             Controls.Add(LinkTMDBLib);
