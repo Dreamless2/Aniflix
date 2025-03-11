@@ -46,7 +46,7 @@
             uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
             pictureBox2 = new PictureBox();
             svgPictureBox1 = new SharpVectors.Renderers.Forms.SvgPictureBox();
-            linkLabel1 = new LinkLabel();
+            LinkTMDBLib = new LinkLabel();
             LinkSunny = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -219,10 +219,10 @@
             // uiButton1
             // 
             uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(689, 546);
+            uiButton1.Location = new Point(662, 546);
             uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
-            uiButton1.Size = new Size(100, 35);
+            uiButton1.Size = new Size(127, 45);
             uiButton1.TabIndex = 23;
             uiButton1.Text = "uiButton1";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
@@ -258,16 +258,16 @@
             svgPictureBox1.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg";
             svgPictureBox1.TabIndex = 23;
             // 
-            // linkLabel1
+            // LinkTMDBLib
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(217, 476);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(140, 16);
-            linkLabel1.TabIndex = 24;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "TMDBLib Home Page";
+            LinkTMDBLib.AutoSize = true;
+            LinkTMDBLib.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LinkTMDBLib.Location = new Point(217, 476);
+            LinkTMDBLib.Name = "LinkTMDBLib";
+            LinkTMDBLib.Size = new Size(140, 16);
+            LinkTMDBLib.TabIndex = 24;
+            LinkTMDBLib.TabStop = true;
+            LinkTMDBLib.Text = "TMDBLib Home Page";
             // 
             // LinkSunny
             // 
@@ -285,7 +285,7 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(852, 679);
             Controls.Add(LinkSunny);
-            Controls.Add(linkLabel1);
+            Controls.Add(LinkTMDBLib);
             Controls.Add(uiButton1);
             Controls.Add(uiLine2);
             Controls.Add(uiGroupBox1);
@@ -328,7 +328,7 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel6;
         private PictureBox pictureBox2;
         private SharpVectors.Renderers.Forms.SvgPictureBox svgPictureBox1;
-        private LinkLabel linkLabel1;
+        private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunny;
     }
 }
