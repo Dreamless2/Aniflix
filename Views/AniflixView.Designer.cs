@@ -41,7 +41,7 @@
             SeriesButton = new FontAwesome.Sharp.Material.MaterialButton();
             FilmesButton = new FontAwesome.Sharp.Material.MaterialButton();
             LogoPanel = new Sunny.UI.UIPanel();
-            pictureBox1 = new PictureBox();
+            LogoBox = new PictureBox();
             TitleBarPanel = new Sunny.UI.UITitlePanel();
             TitleChildFormLabel = new Sunny.UI.UILabel();
             CurrentChildFormBox = new FontAwesome.Sharp.Material.MaterialPictureBox();
@@ -49,7 +49,7 @@
             DesktopPanel = new Sunny.UI.UIPanel();
             MenuPanel.SuspendLayout();
             LogoPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             TitleBarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).BeginInit();
             uiPanel1.SuspendLayout();
@@ -317,7 +317,7 @@
             // 
             // LogoPanel
             // 
-            LogoPanel.Controls.Add(pictureBox1);
+            LogoPanel.Controls.Add(LogoBox);
             LogoPanel.Dock = DockStyle.Top;
             LogoPanel.FillColor = Color.FromArgb(31, 30, 68);
             LogoPanel.FillColor2 = Color.FromArgb(31, 30, 68);
@@ -334,16 +334,16 @@
             LogoPanel.Text = null;
             LogoPanel.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // LogoBox
             // 
-            pictureBox1.Image = Properties.Resources.aniflix;
-            pictureBox1.Location = new Point(4, 22);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(251, 47);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            LogoBox.Image = Properties.Resources.aniflix;
+            LogoBox.Location = new Point(4, 22);
+            LogoBox.Name = "LogoBox";
+            LogoBox.Size = new Size(251, 47);
+            LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            LogoBox.TabIndex = 0;
+            LogoBox.TabStop = false;
+            LogoBox.Click += pictureBox1_Click;
             // 
             // TitleBarPanel
             // 
@@ -442,7 +442,7 @@
             Load += AniflixView_Load;
             MenuPanel.ResumeLayout(false);
             LogoPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             TitleBarPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)CurrentChildFormBox).EndInit();
             uiPanel1.ResumeLayout(false);
@@ -469,6 +469,6 @@
         private FontAwesome.Sharp.Material.MaterialButton SeriesButton;
         private FontAwesome.Sharp.Material.MaterialButton SobreButton;
         private FontAwesome.Sharp.Material.MaterialButton SairButton;
-        private PictureBox pictureBox1;
+        private PictureBox LogoBox;
     }
 }
