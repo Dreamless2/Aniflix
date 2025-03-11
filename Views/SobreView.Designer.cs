@@ -194,7 +194,7 @@
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
             LogoBox.TabIndex = 23;
             LogoBox.TabStop = false;
-            LogoBox.Click += LogoBox_Click_1;
+            LogoBox.Click += LogoBox_Click;
             // 
             // SunnyBox
             // 
