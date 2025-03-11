@@ -81,7 +81,7 @@
             // 
             LicenseSite.AutoSize = true;
             LicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LicenseSite.Location = new Point(675, 496);
+            LicenseSite.Location = new Point(677, 496);
             LicenseSite.Name = "LicenseSite";
             LicenseSite.Size = new Size(156, 16);
             LicenseSite.TabIndex = 16;
@@ -262,9 +262,10 @@
             // 
             // svgPictureBox1
             // 
-            svgPictureBox1.Location = new Point(279, 228);
+            svgPictureBox1.Location = new Point(221, 205);
             svgPictureBox1.Name = "svgPictureBox1";
-            svgPictureBox1.Size = new Size(200, 200);
+            svgPictureBox1.Size = new Size(311, 59);
+            svgPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             svgPictureBox1.Source = "https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg";
             svgPictureBox1.TabIndex = 23;
             // 
