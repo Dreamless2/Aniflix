@@ -38,10 +38,6 @@ namespace Aniflix.Views
 
             });
         }
-
-
-
-
         private void SunnyBox_Click(object sender, EventArgs e)
         {
             var url = "https://github.com/yhuse/SunnyUI";
