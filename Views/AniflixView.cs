@@ -164,7 +164,6 @@ namespace Aniflix.Views
             ActivateButton(sender);
             OpenChildForm(new TrashflixView(), sender);
         }
-
         private void SobreButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -174,8 +173,6 @@ namespace Aniflix.Views
         {
             Application.Exit();
         }
-
-
         private void LogoBox_Click(object sender, EventArgs e)
         {
             Reset();
@@ -183,6 +180,7 @@ namespace Aniflix.Views
 
         private void AniflixView_Load(object sender, EventArgs e)
         {
+
         }
 
 
