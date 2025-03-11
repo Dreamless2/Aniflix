@@ -130,7 +130,7 @@
             uiLabel1.AutoSize = true;
             uiLabel1.Font = new Font("Merriweather Sans", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(202, 64);
+            uiLabel1.Location = new Point(202, 62);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(107, 44);
             uiLabel1.TabIndex = 20;
@@ -144,7 +144,7 @@
             uiLine2.LineColor = Color.FromArgb(13, 37, 63);
             uiLine2.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine2.LineSize = 5;
-            uiLine2.Location = new Point(202, 101);
+            uiLine2.Location = new Point(202, 98);
             uiLine2.MinimumSize = new Size(1, 1);
             uiLine2.Name = "uiLine2";
             uiLine2.Size = new Size(631, 29);
