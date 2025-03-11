@@ -38,6 +38,7 @@
             uiLabel1 = new Sunny.UI.UILabel();
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
+            uiGroupBox1 = new Sunny.UI.UIGroupBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -154,10 +155,24 @@
             uiLine1.Size = new Size(596, 29);
             uiLine1.TabIndex = 18;
             // 
+            // uiGroupBox1
+            // 
+            uiGroupBox1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiGroupBox1.Location = new Point(265, 367);
+            uiGroupBox1.Margin = new Padding(4, 5, 4, 5);
+            uiGroupBox1.MinimumSize = new Size(1, 1);
+            uiGroupBox1.Name = "uiGroupBox1";
+            uiGroupBox1.Padding = new Padding(0, 32, 0, 0);
+            uiGroupBox1.Size = new Size(270, 180);
+            uiGroupBox1.TabIndex = 22;
+            uiGroupBox1.Text = "uiGroupBox1";
+            uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(852, 746);
+            Controls.Add(uiGroupBox1);
             Controls.Add(pictureBox1);
             Controls.Add(uiLabel1);
             Controls.Add(uiLine2);
@@ -192,5 +207,6 @@
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UILine uiLine2;
         private Sunny.UI.UILine uiLine1;
+        private Sunny.UI.UIGroupBox uiGroupBox1;
     }
 }
