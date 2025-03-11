@@ -80,15 +80,24 @@
             // 
             // CodigoText
             // 
+            CodigoText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            CodigoText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            CodigoText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            CodigoText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            CodigoText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            CodigoText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            CodigoText.FillColor2 = Color.FromArgb(238, 248, 248);
             CodigoText.Font = new Font("Microsoft Sans Serif", 12F);
             CodigoText.Location = new Point(30, 87);
             CodigoText.Margin = new Padding(4, 5, 4, 5);
             CodigoText.MinimumSize = new Size(1, 16);
             CodigoText.Name = "CodigoText";
             CodigoText.Padding = new Padding(5);
-            CodigoText.RectColor = Color.Black;
+            CodigoText.RectColor = Color.FromArgb(0, 150, 136);
+            CodigoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             CodigoText.ShowText = false;
             CodigoText.Size = new Size(161, 29);
+            CodigoText.Style = Sunny.UI.UIStyle.Custom;
             CodigoText.TabIndex = 35;
             CodigoText.TextAlignment = ContentAlignment.MiddleLeft;
             CodigoText.Watermark = "Código do Filme";
@@ -98,17 +107,21 @@
             // 
             AudioBox.DataSource = null;
             AudioBox.FillColor = Color.White;
+            AudioBox.FillColor2 = Color.FromArgb(238, 248, 248);
             AudioBox.Font = new Font("Microsoft Sans Serif", 12F);
-            AudioBox.ItemHoverColor = Color.FromArgb(155, 200, 255);
+            AudioBox.ItemHoverColor = Color.FromArgb(204, 234, 232);
+            AudioBox.ItemRectColor = Color.FromArgb(0, 150, 136);
             AudioBox.Items.AddRange(new object[] { "Dublado", "Legendado", "Nacional", "Desconhecido" });
-            AudioBox.ItemSelectForeColor = Color.FromArgb(235, 243, 255);
+            AudioBox.ItemSelectBackColor = Color.FromArgb(0, 150, 136);
+            AudioBox.ItemSelectForeColor = Color.FromArgb(238, 248, 248);
             AudioBox.Location = new Point(763, 87);
             AudioBox.Margin = new Padding(4, 5, 4, 5);
             AudioBox.MinimumSize = new Size(63, 0);
             AudioBox.Name = "AudioBox";
             AudioBox.Padding = new Padding(0, 0, 30, 2);
-            AudioBox.RectColor = Color.Black;
+            AudioBox.RectColor = Color.FromArgb(0, 150, 136);
             AudioBox.Size = new Size(150, 29);
+            AudioBox.Style = Sunny.UI.UIStyle.Custom;
             AudioBox.SymbolSize = 24;
             AudioBox.TabIndex = 36;
             AudioBox.Text = "Dublado";
@@ -117,15 +130,24 @@
             // 
             // TituloText
             // 
+            TituloText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            TituloText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            TituloText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            TituloText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            TituloText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            TituloText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            TituloText.FillColor2 = Color.FromArgb(238, 248, 248);
             TituloText.Font = new Font("Microsoft Sans Serif", 12F);
             TituloText.Location = new Point(199, 87);
             TituloText.Margin = new Padding(4, 5, 4, 5);
             TituloText.MinimumSize = new Size(1, 16);
             TituloText.Name = "TituloText";
             TituloText.Padding = new Padding(5);
-            TituloText.RectColor = Color.Black;
+            TituloText.RectColor = Color.FromArgb(0, 150, 136);
+            TituloText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             TituloText.ShowText = false;
             TituloText.Size = new Size(556, 29);
+            TituloText.Style = Sunny.UI.UIStyle.Custom;
             TituloText.TabIndex = 38;
             TituloText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloText.Watermark = "Título";
@@ -144,15 +166,24 @@
             // 
             // TituloOriginalText
             // 
+            TituloOriginalText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            TituloOriginalText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            TituloOriginalText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            TituloOriginalText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            TituloOriginalText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            TituloOriginalText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            TituloOriginalText.FillColor2 = Color.FromArgb(238, 248, 248);
             TituloOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
             TituloOriginalText.Location = new Point(30, 305);
             TituloOriginalText.Margin = new Padding(4, 5, 4, 5);
             TituloOriginalText.MinimumSize = new Size(1, 16);
             TituloOriginalText.Name = "TituloOriginalText";
             TituloOriginalText.Padding = new Padding(5);
-            TituloOriginalText.RectColor = Color.Black;
+            TituloOriginalText.RectColor = Color.FromArgb(0, 150, 136);
+            TituloOriginalText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             TituloOriginalText.ShowText = false;
             TituloOriginalText.Size = new Size(699, 29);
+            TituloOriginalText.Style = Sunny.UI.UIStyle.Custom;
             TituloOriginalText.TabIndex = 37;
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
@@ -171,15 +202,24 @@
             // 
             // DataLancamentoText
             // 
+            DataLancamentoText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            DataLancamentoText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            DataLancamentoText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            DataLancamentoText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            DataLancamentoText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            DataLancamentoText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            DataLancamentoText.FillColor2 = Color.FromArgb(238, 248, 248);
             DataLancamentoText.Font = new Font("Microsoft Sans Serif", 12F);
             DataLancamentoText.Location = new Point(737, 305);
             DataLancamentoText.Margin = new Padding(4, 5, 4, 5);
             DataLancamentoText.MinimumSize = new Size(1, 16);
             DataLancamentoText.Name = "DataLancamentoText";
             DataLancamentoText.Padding = new Padding(5);
-            DataLancamentoText.RectColor = Color.Black;
+            DataLancamentoText.RectColor = Color.FromArgb(0, 150, 136);
+            DataLancamentoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             DataLancamentoText.ShowText = false;
             DataLancamentoText.Size = new Size(176, 29);
+            DataLancamentoText.Style = Sunny.UI.UIStyle.Custom;
             DataLancamentoText.TabIndex = 37;
             DataLancamentoText.TextAlignment = ContentAlignment.MiddleLeft;
             DataLancamentoText.Watermark = "Data de Lançamento";
@@ -198,15 +238,24 @@
             // 
             // TituloAlternativoText
             // 
+            TituloAlternativoText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            TituloAlternativoText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            TituloAlternativoText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            TituloAlternativoText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            TituloAlternativoText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            TituloAlternativoText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            TituloAlternativoText.FillColor2 = Color.FromArgb(238, 248, 248);
             TituloAlternativoText.Font = new Font("Microsoft Sans Serif", 12F);
             TituloAlternativoText.Location = new Point(30, 364);
             TituloAlternativoText.Margin = new Padding(4, 5, 4, 5);
             TituloAlternativoText.MinimumSize = new Size(1, 16);
             TituloAlternativoText.Name = "TituloAlternativoText";
             TituloAlternativoText.Padding = new Padding(5);
-            TituloAlternativoText.RectColor = Color.Black;
+            TituloAlternativoText.RectColor = Color.FromArgb(0, 150, 136);
+            TituloAlternativoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             TituloAlternativoText.ShowText = false;
             TituloAlternativoText.Size = new Size(699, 29);
+            TituloAlternativoText.Style = Sunny.UI.UIStyle.Custom;
             TituloAlternativoText.TabIndex = 37;
             TituloAlternativoText.Text = "--";
             TituloAlternativoText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -274,15 +323,24 @@
             // 
             // TagsText
             // 
+            TagsText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            TagsText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            TagsText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            TagsText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            TagsText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            TagsText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            TagsText.FillColor2 = Color.FromArgb(238, 248, 248);
             TagsText.Font = new Font("Microsoft Sans Serif", 12F);
             TagsText.Location = new Point(737, 365);
             TagsText.Margin = new Padding(4, 5, 4, 5);
             TagsText.MinimumSize = new Size(1, 16);
             TagsText.Name = "TagsText";
             TagsText.Padding = new Padding(5);
-            TagsText.RectColor = Color.Black;
+            TagsText.RectColor = Color.FromArgb(0, 150, 136);
+            TagsText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             TagsText.ShowText = false;
             TagsText.Size = new Size(176, 29);
+            TagsText.Style = Sunny.UI.UIStyle.Custom;
             TagsText.TabIndex = 37;
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
             TagsText.Watermark = "Tags";
@@ -548,15 +606,18 @@
             // SinopseText
             // 
             SinopseText.FillColor = Color.White;
+            SinopseText.FillColor2 = Color.FromArgb(238, 248, 248);
             SinopseText.Font = new Font("Microsoft Sans Serif", 12F);
             SinopseText.Location = new Point(30, 147);
             SinopseText.Margin = new Padding(4, 5, 4, 5);
             SinopseText.MinimumSize = new Size(1, 1);
             SinopseText.Name = "SinopseText";
             SinopseText.Padding = new Padding(2);
-            SinopseText.RectColor = Color.Black;
+            SinopseText.RectColor = Color.FromArgb(0, 150, 136);
+            SinopseText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             SinopseText.ShowText = false;
             SinopseText.Size = new Size(876, 129);
+            SinopseText.Style = Sunny.UI.UIStyle.Custom;
             SinopseText.TabIndex = 46;
             SinopseText.TextAlignment = ContentAlignment.TopLeft;
             // 
