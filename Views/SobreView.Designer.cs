@@ -275,10 +275,10 @@
             linkLabel2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             linkLabel2.Location = new Point(446, 476);
             linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(156, 16);
+            linkLabel2.Size = new Size(133, 16);
             linkLabel2.TabIndex = 25;
             linkLabel2.TabStop = true;
-            linkLabel2.Text = "GNU GPLv3 Home Page";
+            linkLabel2.Text = "SunnyUI Home Page";
             // 
             // SobreView
             // 
