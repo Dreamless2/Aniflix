@@ -148,7 +148,7 @@
             uiLine1.ForeColor = Color.FromArgb(48, 48, 48);
             uiLine1.LineDashStyle = Sunny.UI.UILineDashStyle.Custom;
             uiLine1.LineSize = 5;
-            uiLine1.Location = new Point(251, 18);
+            uiLine1.Location = new Point(251, 84);
             uiLine1.MinimumSize = new Size(1, 1);
             uiLine1.Name = "uiLine1";
             uiLine1.Size = new Size(596, 29);
