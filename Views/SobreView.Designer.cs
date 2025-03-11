@@ -68,9 +68,9 @@
             // LicenseBox
             // 
             LicenseBox.ImageLocation = "https://www.gnu.org/graphics/gplv3-with-text-136x68.png";
-            LicenseBox.Location = new Point(653, 116);
+            LicenseBox.Location = new Point(524, 116);
             LicenseBox.Name = "LicenseBox";
-            LicenseBox.Size = new Size(140, 83);
+            LicenseBox.Size = new Size(269, 83);
             LicenseBox.SizeMode = PictureBoxSizeMode.CenterImage;
             LicenseBox.TabIndex = 15;
             LicenseBox.TabStop = false;
@@ -250,10 +250,10 @@
             // pictureBox2
             // 
             pictureBox2.ImageLocation = resources.GetString("pictureBox2.ImageLocation");
-            pictureBox2.Location = new Point(430, 205);
+            pictureBox2.Location = new Point(524, 205);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(363, 83);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.Size = new Size(269, 83);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 22;
             pictureBox2.TabStop = false;
             // 
