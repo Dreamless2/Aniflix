@@ -370,7 +370,7 @@
             // 
             EstudioLabel.AutoSize = true;
             EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioLabel.ForeColor = Color.Black;
+            EstudioLabel.ForeColor = Color.FromArgb(48, 48, 48);
             EstudioLabel.Location = new Point(30, 693);
             EstudioLabel.Name = "EstudioLabel";
             EstudioLabel.Size = new Size(63, 20);
