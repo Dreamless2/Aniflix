@@ -77,6 +77,7 @@
             LicenseBox.TabIndex = 15;
             LicenseBox.TabStop = false;
             LicenseBox.Click += LicenseBox_Click;
+            LicenseBox.MouseEnter += LicenseBox_MouseEnter;
             // 
             // LinkLicenseSite
             // 
