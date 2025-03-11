@@ -30,7 +30,7 @@
         {
             uiSymbolLabel2 = new Sunny.UI.UISymbolLabel();
             LicenseBox = new PictureBox();
-            LicenseSite = new LinkLabel();
+            LinkLicenseSite = new LinkLabel();
             LinkSite = new LinkLabel();
             uiSymbolLabel1 = new Sunny.UI.UISymbolLabel();
             pictureBox1 = new PictureBox();
@@ -77,16 +77,16 @@
             LicenseBox.TabIndex = 15;
             LicenseBox.TabStop = false;
             // 
-            // LicenseSite
+            // LinkLicenseSite
             // 
-            LicenseSite.AutoSize = true;
-            LicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LicenseSite.Location = new Point(675, 476);
-            LicenseSite.Name = "LicenseSite";
-            LicenseSite.Size = new Size(156, 16);
-            LicenseSite.TabIndex = 16;
-            LicenseSite.TabStop = true;
-            LicenseSite.Text = "GNU GPLv3 Home Page";
+            LinkLicenseSite.AutoSize = true;
+            LinkLicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LinkLicenseSite.Location = new Point(675, 476);
+            LinkLicenseSite.Name = "LinkLicenseSite";
+            LinkLicenseSite.Size = new Size(156, 16);
+            LinkLicenseSite.TabIndex = 16;
+            LinkLicenseSite.TabStop = true;
+            LinkLicenseSite.Text = "GNU GPLv3 Home Page";
             // 
             // LinkSite
             // 
@@ -301,7 +301,7 @@
             Controls.Add(uiGroupBox1);
             Controls.Add(pictureBox1);
             Controls.Add(uiLine1);
-            Controls.Add(LicenseSite);
+            Controls.Add(LinkLicenseSite);
             Controls.Add(LinkSite);
             Controls.Add(uiLabel1);
             MaximizeBox = false;
@@ -325,7 +325,7 @@
         #endregion
         private Sunny.UI.UISymbolLabel uiSymbolLabel2;
         private PictureBox LicenseBox;
-        private LinkLabel LicenseSite;
+        private LinkLabel LinkLicenseSite;
         private LinkLabel LinkSite;
         private Sunny.UI.UISymbolLabel uiSymbolLabel1;
         private PictureBox pictureBox1;
