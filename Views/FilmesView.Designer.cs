@@ -156,6 +156,7 @@
             TituloOriginalText.TabIndex = 37;
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
+            TituloOriginalText.WordWarp = false;
             // 
             // TituloLabel
             // 
@@ -182,6 +183,7 @@
             DataLancamentoText.TabIndex = 37;
             DataLancamentoText.TextAlignment = ContentAlignment.MiddleLeft;
             DataLancamentoText.Watermark = "Data de Lançamento";
+            DataLancamentoText.WordWarp = false;
             // 
             // DataLancamentoLabel
             // 
@@ -209,6 +211,7 @@
             TituloAlternativoText.Text = "--";
             TituloAlternativoText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloAlternativoText.Watermark = "Título Alternativo";
+            TituloAlternativoText.WordWarp = false;
             // 
             // FranquiaLabel
             // 
@@ -274,6 +277,7 @@
             TagsText.TabIndex = 37;
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
             TagsText.Watermark = "Tags";
+            TagsText.WordWarp = false;
             // 
             // TituloAlternativoLabel
             // 
