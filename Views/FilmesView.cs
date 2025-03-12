@@ -21,7 +21,6 @@ namespace Aniflix.Views
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
             var filmesService = new FilmesServices();
-            var filmesModel = new FilmesModel();
 
             var codigo = CodigoText.ToString();
 
