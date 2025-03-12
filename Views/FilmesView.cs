@@ -20,6 +20,7 @@ namespace Aniflix.Views
         private void CodigoText_Leave(object sender, EventArgs e)
         {
             var filmesService = new FilmesServices();
+            var filmesModel = new FilmesModel();
 
         }
     }
