@@ -32,7 +32,7 @@ namespace Aniflix.Views
             }
             else
             {
-                await filmesService.GivenData(codigo, TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
+                await filmesService.GivenData(CodigoText.Text.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
             }
         }
     }
