@@ -305,7 +305,7 @@
             uiTextBox7.ButtonStyleInherited = false;
             uiTextBox7.FillColor2 = Color.FromArgb(238, 248, 248);
             uiTextBox7.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox7.Location = new Point(32, 482);
+            uiTextBox7.Location = new Point(32, 447);
             uiTextBox7.Margin = new Padding(4, 5, 4, 5);
             uiTextBox7.MinimumSize = new Size(1, 16);
             uiTextBox7.Name = "uiTextBox7";
@@ -382,7 +382,7 @@
             GeneroText.ButtonStyleInherited = false;
             GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(32, 541);
+            GeneroText.Location = new Point(32, 506);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
@@ -513,7 +513,7 @@
             DiretorText.ButtonStyleInherited = false;
             DiretorText.FillColor2 = Color.FromArgb(238, 248, 248);
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(32, 600);
+            DiretorText.Location = new Point(32, 565);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
@@ -540,7 +540,7 @@
             EstrelasText.ButtonStyleInherited = false;
             EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(32, 659);
+            EstrelasText.Location = new Point(32, 624);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -567,7 +567,7 @@
             EstudioText.ButtonStyleInherited = false;
             EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(32, 718);
+            EstudioText.Location = new Point(32, 683);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -616,7 +616,7 @@
             ResumoText.FillColor = Color.White;
             ResumoText.FillColor2 = Color.FromArgb(238, 248, 248);
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
-            ResumoText.Location = new Point(1357, 52);
+            ResumoText.Location = new Point(923, 52);
             ResumoText.Margin = new Padding(4, 5, 4, 5);
             ResumoText.MinimumSize = new Size(1, 1);
             ResumoText.Name = "ResumoText";
@@ -625,7 +625,7 @@
             ResumoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             ResumoText.ScrollBarStyleInherited = false;
             ResumoText.ShowText = false;
-            ResumoText.Size = new Size(96, 660);
+            ResumoText.Size = new Size(514, 660);
             ResumoText.Style = Sunny.UI.UIStyle.Custom;
             ResumoText.TabIndex = 45;
             ResumoText.TextAlignment = ContentAlignment.TopLeft;
@@ -658,7 +658,7 @@
             CopiarButton.ForeColor = Color.White;
             CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             CopiarButton.IconColor = Color.White;
-            CopiarButton.Location = new Point(173, 773);
+            CopiarButton.Location = new Point(182, 743);
             CopiarButton.Name = "CopiarButton";
             CopiarButton.Size = new Size(198, 91);
             CopiarButton.TabIndex = 47;
@@ -675,7 +675,7 @@
             InserirNovoButton.ForeColor = Color.White;
             InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             InserirNovoButton.IconColor = Color.White;
-            InserirNovoButton.Location = new Point(408, 773);
+            InserirNovoButton.Location = new Point(417, 743);
             InserirNovoButton.Name = "InserirNovoButton";
             InserirNovoButton.Size = new Size(198, 91);
             InserirNovoButton.TabIndex = 48;
@@ -692,7 +692,7 @@
             EditarButton.ForeColor = Color.White;
             EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             EditarButton.IconColor = Color.White;
-            EditarButton.Location = new Point(643, 773);
+            EditarButton.Location = new Point(652, 743);
             EditarButton.Name = "EditarButton";
             EditarButton.Size = new Size(198, 91);
             EditarButton.TabIndex = 49;
@@ -709,7 +709,7 @@
             AnteriorButton.ForeColor = Color.White;
             AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             AnteriorButton.IconColor = Color.White;
-            AnteriorButton.Location = new Point(878, 773);
+            AnteriorButton.Location = new Point(887, 743);
             AnteriorButton.Name = "AnteriorButton";
             AnteriorButton.Size = new Size(198, 91);
             AnteriorButton.TabIndex = 50;
@@ -726,7 +726,7 @@
             ProximoButton.ForeColor = Color.White;
             ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             ProximoButton.IconColor = Color.White;
-            ProximoButton.Location = new Point(1113, 773);
+            ProximoButton.Location = new Point(1122, 743);
             ProximoButton.Name = "ProximoButton";
             ProximoButton.Size = new Size(198, 91);
             ProximoButton.TabIndex = 51;
@@ -750,7 +750,7 @@
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(238, 248, 248);
-            ClientSize = new Size(1485, 899);
+            ClientSize = new Size(1463, 873);
             ControlBox = false;
             ControlBoxFillHoverColor = Color.FromArgb(51, 171, 160);
             Controls.Add(DadosLabel);
