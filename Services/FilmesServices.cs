@@ -46,8 +46,11 @@ namespace Aniflix.Services
                     var hashtags = new HashSet<string>();
                     foreach (var genre in movie.Genres.Take(3))
                     {
-                        string clean = new string(genre.Name.Normalize().Where(char.IsLetterOrDigit).ToArray()).ToLower();
-                        hashtags.Add($"#{clean}");
+                        if (!string.IsNullOrEmpty(genre?.Name))
+                        {
+                            string clean = new string(genre.Name.Normalize().Where(char.IsLetterOrDigit).ToArray()).ToLower();
+                            hashtags.Add($"#{clean}");
+                        }
                     }
                     generoText.Text = string.Join(" ", hashtags);
                 }
