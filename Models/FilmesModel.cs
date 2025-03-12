@@ -9,7 +9,6 @@ namespace Aniflix.Models
     public class FilmesModel
     {
         public int Id { get; set; }
-
         public string? Codigo { get; set; }
         public string? Titulo { get; set; }
         public string? Audio { get; set; }
