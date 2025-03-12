@@ -1,12 +1,6 @@
-﻿using System;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
+﻿using Sunny.UI;
 using Aniflix.Contracts;
 using System.Globalization;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using Sunny.UI;
 
 namespace Aniflix.Services
 {
@@ -15,7 +9,7 @@ namespace Aniflix.Services
         private readonly FilmesContracts _movieService = new();
 
         public async Task GivenData(string movieId, UITextBox tituloText, UITextBox sinopseText, UITextBox tituloOriginalText,
-                                    UITextBox dataLancamentoText, UITextBox filmeText, UITextBox tagsText, UITextBox generoText,
+                                    UITextBox dataLancamentoText, UITextBox tagsText, UITextBox generoText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText, UITextBox tituloAlternativoText)
         {
             try
