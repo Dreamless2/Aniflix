@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Globalization;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
@@ -9,36 +10,71 @@ namespace Aniflix.Services
 {
     public class FilmesServices
     {
-        private static readonly HttpClient _httpClient = new()
-        {
-            BaseAddress = new Uri("https://api.themoviedb.org/3/"),
-            DefaultRequestHeaders = { { "Authorization", "Bearer" } }
-        };
+        private readonly MovieService _movieService = new();
 
-        public async Task<T?> GetFromTmdbAsync<T>(string endpoint)
+        public async Task GivenData(string movieId, TextBox tituloText, TextBox sinopseText, TextBox tituloOriginalText,
+                                    TextBox dataLancamentoText, TextBox filmeText, TextBox tagsText, TextBox generoText,
+                                    TextBox diretorText, TextBox estrelasText, TextBox estudioText, TextBox tituloAlternativoText)
         {
             try
             {
-                HttpResponseMessage response = await _httpClient.GetAsync(endpoint);
-                response.EnsureSuccessStatusCode();
-                string json = await response.Content.ReadAsStringAsync();
-                return JsonSerializer.Deserialize<T>(json);
+                var movieTask = _movieService.GetMovieAsync(movieId);
+                var creditsTask = _movieService.GetMovieCreditsAsync(Convert.ToInt32(movieId));
+                var alternativeTitlesTask = _movieService.GetMovieAlternativeTitlesAsync(Convert.ToInt32(movieId));
+
+                await Task.WhenAll(movieTask, creditsTask, alternativeTitlesTask);
+
+                var movie = movieTask.Result;
+                var credits = creditsTask.Result;
+                var alternativeTitles = alternativeTitlesTask.Result;
+
+                if (movie == null)
+                {
+                    MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                tituloText.Text = movie.Title;
+                sinopseText.Text = movie.Overview;
+                tituloOriginalText.Text = movie.OriginalTitle;
+                dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
+                tituloAlternativoText.Text = alternativeTitles?.Titles.FirstOrDefault()?.Title ?? "--";
+
+                if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
+                {
+                    tagsText.Text = $"#Filme #Filme{releaseDate.Year}";
+                }
+
+                if (movie.Genres?.Count > 2)
+                {
+                    var hashtags = new HashSet<string>();
+                    foreach (var genre in movie.Genres.Take(3))
+                    {
+                        string clean = new string(genre.Name.Normalize().Where(char.IsLetterOrDigit).ToArray()).ToLower();
+                        hashtags.Add($"#{clean}");
+                    }
+                    generoText.Text = string.Join(" ", hashtags);
+                }
+
+                if (credits?.Crew != null)
+                {
+                    diretorText.Text = string.Join(" ", credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
+                }
+
+                if (credits?.Cast != null)
+                {
+                    estrelasText.Text = string.Join(" ", credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}"));
+                }
+
+                if (movie.ProductionCompanies != null)
+                {
+                    estudioText.Text = string.Join(" ", movie.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}"));
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao buscar {endpoint}: {ex.Message}");
-                return default;
+                MessageBox.Show($"Erro ao buscar o filme: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        /*public async Task<Movie?> GetMovieAsync(string movieId)
-            => await GetFromTmdbAsync<Movie>($"movie/{movieId}");
-
-        public async Task<Credits?> GetMovieCreditsAsync(int movieId)
-            => await GetFromTmdbAsync<Credits>($"movie/{movieId}/credits");
-
-        public async Task<AlternativeTitles?> GetMovieAlternativeTitlesAsync(int movieId)
-            => await GetFromTmdbAsync<AlternativeTitles>($"movie/{movieId}/alternative_titles");
-        */
     }
 }
