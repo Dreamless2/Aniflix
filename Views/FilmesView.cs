@@ -24,9 +24,9 @@ namespace Aniflix.Views
 
             var codigo = CodigoText.Text;
 
-            if (string.IsNullOrEmpty(codigo))
+            if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
-                UIMessageBox.ShowError("Informe o código do filme.");
+                UIMessageBox.ShowError("Informe um código de filme válido.");
                 CodigoText.Focus();
                 return;
             }
