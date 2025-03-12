@@ -8,7 +8,7 @@ namespace Aniflix.Contracts
 {
     public class FilmesContracts
     {
-        private readonly TMDbClient _client = new TMDbClient("SEU_TOKEN_AQUI")
+        private readonly TMDbClient _client = new("SEU_TOKEN_AQUI")
         {
             DefaultLanguage = "pt-BR",
             DefaultCountry = "BR",
