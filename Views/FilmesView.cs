@@ -23,6 +23,6 @@ namespace Aniflix.Views
             var filmesService = new FilmesServices();
             var filmesModel = new FilmesModel();
 
-            filmesService.GivenData(CodigoText, TituloText, SinopseText, Titulo_OriginalText, Data_LancamentoText, Titulo_AlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
+            filmesService.GivenData(CodigoText, TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
 
         }
