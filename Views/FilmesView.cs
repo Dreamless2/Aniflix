@@ -1,6 +1,7 @@
 ﻿using Sunny.UI;
 using Aniflix.Functions;
 using FontAwesome.Sharp.Material;
+using Aniflix.Services;
 
 namespace Aniflix.Views
 {
@@ -18,7 +19,7 @@ namespace Aniflix.Views
 
         private void CodigoText_Leave(object sender, EventArgs e)
         {
-
+            FilmesServices.get
         }
     }
 }
