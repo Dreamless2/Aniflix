@@ -53,4 +53,4 @@ namespace Aniflix.Contracts
         }
 
     }
-}
+
