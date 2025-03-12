@@ -2,6 +2,7 @@
 using Aniflix.Services;
 using Aniflix.Functions;
 using FontAwesome.Sharp.Material;
+using Aniflix.Models;
 
 namespace Aniflix.Views
 {
@@ -21,6 +22,8 @@ namespace Aniflix.Views
         {
             var filmesService = new FilmesServices();
             var filmesModel = new FilmesModel();
+
+            filmesService.GivenData
 
         }
     }
