@@ -6,7 +6,7 @@ O app usa as seguintes bibliotecas:
 
 - TMDBLib: [TMDBLib](https://github.com/jellyfin/TMDbLib)
 
-- SunnyUI [SunnyUI](https://github.com/yhuse/SunnyUI)
+- SunnyUI: [SunnyUI](https://github.com/yhuse/SunnyUI)
 
 Para saber mais sobre o TMDB:
 
