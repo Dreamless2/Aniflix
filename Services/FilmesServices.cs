@@ -14,7 +14,7 @@ namespace Aniflix.Services
     {
         private readonly FilmesContracts _movieService = new();
 
-        public async Task GivenData(string movieId, UITextBox tituloText, UIComboBox audioBox, UITextBox sinopseText, UITextBox tituloOriginalText,
+        public async Task GivenData(string movieId, UITextBox tituloText, UITextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox filmeText, UITextBox tagsText, UITextBox generoText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText, UITextBox tituloAlternativoText)
         {
