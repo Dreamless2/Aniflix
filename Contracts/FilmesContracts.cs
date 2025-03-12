@@ -8,7 +8,7 @@ namespace Aniflix.Contracts
         private static readonly HttpClient _httpClient = new()
         {
             BaseAddress = new Uri("https://api.themoviedb.org/3/"),
-            DefaultRequestHeaders = { { "Authorization", "Bearer SEU_TOKEN_AQUI" } }
+            DefaultRequestHeaders = { { "Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMWYxNWFjMDYzMjQ5MmIzYzNhOTQwMDMyYWQ2Yjk1YiIsIm5iZiI6MTc0MDYwOTk2MS40NDk5OTk4LCJzdWIiOiI2N2JmOTlhOThjMzg2YzRlNWJjOGMyMWQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-UvZqVY1yZ9_6Yjk9qh1WaKwop07J4pgOvKlcZZIREQ" } }
         };
 
         public async Task<T?> GetFromTmdbAsync<T>(string endpoint)
