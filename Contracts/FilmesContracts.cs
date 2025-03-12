@@ -41,12 +41,12 @@ namespace Aniflix.Contracts
 
     public static TMDbClient MovieDatabase()
         {
-            var client = new TMDbClient(GlobalVars.TMDB_KEY)
+            var client = new TMDbClient("d1f15ac0632492b3c3a940032ad6b95b")
             {
                 DefaultLanguage = "pt-BR",
                 DefaultCountry = "BR",
+                Timeout = TimeSpan.FromSeconds(600)
             };
-            client.Timeout = TimeSpan.FromSeconds(600);
 
             return client;
         }
