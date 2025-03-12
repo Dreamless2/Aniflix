@@ -16,6 +16,9 @@ namespace Aniflix.Views
             //GlobalFunctions.ApplyTheme(this);
         }
 
+        private void CodigoText_Leave(object sender, EventArgs e)
+        {
 
+        }
     }
 }

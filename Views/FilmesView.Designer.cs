@@ -104,6 +104,7 @@
             CodigoText.TextAlignment = ContentAlignment.MiddleLeft;
             CodigoText.Watermark = "Código do Filme";
             CodigoText.WordWarp = false;
+            CodigoText.Leave += CodigoText_Leave;
             // 
             // AudioBox
             // 
