@@ -1,6 +1,7 @@
 ﻿using Sunny.UI;
 using Aniflix.Contracts;
 using System.Globalization;
+using Aniflix.Functions;
 
 namespace Aniflix.Services
 {
@@ -8,15 +9,18 @@ namespace Aniflix.Services
     {
         private readonly FilmesContracts _movieService = new();
 
+
+
         public async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox tagsText, UITextBox generoText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
         {
             try
             {
-                var movieTask = _movieService.GetMovieAsync(movieId);
-                var creditsTask = _movieService.GetMovieCreditsAsync(Convert.ToInt32(movieId));
-                var alternativeTitlesTask = _movieService.GetMovieAlternativeTitlesAsync(Convert.ToInt32(movieId));
+                var general = FilmesContracts.MovieDatabase();
+                var movieTask = general.GetMovieAsync(movieId);
+                var creditsTask = general.GetMovieCreditsAsync(Convert.ToInt32(movieId));
+                var alternativeTitlesTask = general.GetMovieAlternativeTitlesAsync(Convert.ToInt32(movieId));
 
                 await Task.WhenAll(movieTask, creditsTask, alternativeTitlesTask);
 
