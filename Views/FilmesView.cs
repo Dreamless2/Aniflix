@@ -1,8 +1,8 @@
 ﻿using Sunny.UI;
+using Aniflix.Models;
 using Aniflix.Services;
 using Aniflix.Functions;
 using FontAwesome.Sharp.Material;
-using Aniflix.Models;
 
 namespace Aniflix.Views
 {
@@ -23,8 +23,6 @@ namespace Aniflix.Views
             var filmesService = new FilmesServices();
             var filmesModel = new FilmesModel();
 
-            filmesService.GivenData(CodigoText, TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText, TituloAlternativoText);
+            filmesService.GivenData(CodigoText, TituloText, SinopseText, Titulo_OriginalText, Data_LancamentoText, Titulo_AlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
 
         }
-    }
-}
