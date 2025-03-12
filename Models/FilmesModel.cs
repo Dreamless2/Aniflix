@@ -24,11 +24,11 @@ namespace Aniflix.Models
         public string? Genero { get; set; }
 
         public string? Tags { get; set; }
-        public string? Estrelas { get; set; }
         public string? Diretor { get; set; }
-
         public string? Estrelas { get; set; }
         public string? Estudio { get; set; }
+
+        public string? MCU { get; set; }
 
 
     }
