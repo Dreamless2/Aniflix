@@ -18,12 +18,14 @@ namespace Aniflix.Views
             //GlobalFunctions.ApplyTheme(this);
         }
 
-        private void CodigoText_Leave(object sender, EventArgs e)
+        private async void CodigoText_Leave(object sender, EventArgs e)
         {
             var filmesService = new FilmesServices();
             var filmesModel = new FilmesModel();
 
-            filmesService.GivenData(CodigoText.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
+            var codigo = CodigoText.ToString();
+
+            await filmesService.GivenData(codigo, TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
         }
     }
 }
