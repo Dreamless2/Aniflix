@@ -1,8 +1,8 @@
-﻿using TMDbLib.Client;
+﻿using Sunny.UI;
+using TMDbLib.Client;
 using System.Text.Json;
 using Aniflix.Functions;
 using TMDbLib.Objects.Movies;
-using Sunny.UI;
 
 namespace Aniflix.Contracts
 {
@@ -18,18 +18,12 @@ namespace Aniflix.Contracts
         {
             try
             {
-                //HttpResponseMessage response = await _httpClient.GetAsync(endpoint);
-                // response.EnsureSuccessStatusCode();
                 HttpResponseMessage response = await _httpClient.GetAsync(endpoint);
-                if (!response.IsSuccessStatusCode)
-                {
-                    string errorDetails = await response.Content.ReadAsStringAsync();
-                    UIMessageBox.ShowError($"Erro na chamada API: {response.StatusCode} - {errorDetails}");
-                    return default;
-                }
-
-
                 string json = await response.Content.ReadAsStringAsync();
+
+                UIMessageBox.ShowWarning($"[DEBUG] JSON Recebido para {endpoint}:\n{json}");
+
+                response.EnsureSuccessStatusCode();
                 return JsonSerializer.Deserialize<T>(json);
             }
             catch (Exception ex)
