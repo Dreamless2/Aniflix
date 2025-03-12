@@ -12,8 +12,6 @@ namespace Aniflix.Models
         public string? Titulo { get; set; }
 
         public string? Audio { get; set; }
-
-
         public string? Sinopse { get; set; }
         public string? Titulo_Original { get; set; }
         public string? Data_Lancamento { get; set; }
