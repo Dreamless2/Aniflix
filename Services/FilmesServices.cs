@@ -1,7 +1,7 @@
 ﻿using Sunny.UI;
 using Aniflix.Contracts;
-using System.Globalization;
 using Aniflix.Functions;
+using System.Globalization;
 
 namespace Aniflix.Services
 {
@@ -9,9 +9,7 @@ namespace Aniflix.Services
     {
         private readonly FilmesContracts _movieService = new();
 
-
-
-        public async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
+        public static async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox tagsText, UITextBox generoText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
         {
