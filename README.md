@@ -1,6 +1,8 @@
 # Aniflix
 
-Feito usando [TMDBLib](https://github.com/jellyfin/TMDbLib), C# e NET 8.0! 
+Scraper de filmes, séries, animes, puxando dados do TMDB, através do C# e NET 8.0! 
+
+O app usa as seguintes bibliotecas:
 
 - TMDBLib: [TMDBLib](https://github.com/jellyfin/TMDbLib)
 
