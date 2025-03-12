@@ -28,6 +28,7 @@ namespace Aniflix.Views
             {
                 UIMessageBox.ShowError("Informe o código do filme.");
                 CodigoText.Focus();
+                return;
             }
             else
             {
