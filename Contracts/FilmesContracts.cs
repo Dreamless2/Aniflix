@@ -8,7 +8,14 @@ namespace Aniflix.Contracts
 {
     public class FilmesContracts
     {
-        private readonly TMDbClient _client = new TMDbClient("SEU_TOKEN_AQUI");
+        private readonly TMDbClient _client = new TMDbClient("SEU_TOKEN_AQUI")
+        {
+            DefaultLanguage = "pt-BR",
+            DefaultCountry = "BR",
+            Timeout = TimeSpan.FromSeconds(600)
+        };
+
+
 
         public async Task<Movie?> GetMovieAsync(string movieId)
             => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | MovieMethods.AlternativeTitles);
