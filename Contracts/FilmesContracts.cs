@@ -2,6 +2,7 @@
 using System.Text.Json;
 using Aniflix.Functions;
 using TMDbLib.Objects.Movies;
+using Sunny.UI;
 
 namespace Aniflix.Contracts
 {
@@ -23,7 +24,7 @@ namespace Aniflix.Contracts
                 if (!response.IsSuccessStatusCode)
                 {
                     string errorDetails = await response.Content.ReadAsStringAsync();
-                    MessageBox.Show($"Erro na chamada API: {response.StatusCode} - {errorDetails}");
+                    UIMessageBox.ShowError($"Erro na chamada API: {response.StatusCode} - {errorDetails}");
                     return default;
                 }
 
@@ -33,7 +34,7 @@ namespace Aniflix.Contracts
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao buscar {endpoint}: {ex.Message}");
+                UIMessageBox.ShowError($"Erro ao buscar {endpoint}: {ex.Message}");
                 return default;
             }
         }
