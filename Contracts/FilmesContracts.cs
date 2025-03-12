@@ -8,11 +8,11 @@ namespace Aniflix.Contracts
 {
     public class FilmesContracts
     {
-        private static readonly HttpClient _httpClient = new()
-        {
-            BaseAddress = new Uri("https://api.themoviedb.org/3/"),
-            DefaultRequestHeaders = { { "Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMWYxNWFjMDYzMjQ5MmIzYzNhOTQwMDMyYWQ2Yjk1YiIsIm5iZiI6MTc0MDYwOTk2MS40NDk5OTk4LCJzdWIiOiI2N2JmOTlhOThjMzg2YzRlNWJjOGMyMWQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-UvZqVY1yZ9_6Yjk9qh1WaKwop07J4pgOvKlcZZIREQ" } }
-        };
+        private readonly TMDbClient _client = new TMDbClient("SEU_TOKEN_AQUI");
+
+        public async Task<Movie?> GetMovieAsync(string movieId)
+            => await _client.GetMovieAsync(int.Parse(movieId), TMDbLib.Objects.Movies.MovieMethods.Credits | TMDbLib.Objects.Movies.MovieMethods.AlternativeTitles, "pt-BR");
+}
 
         public async Task<T?> GetFromTmdbAsync<T>(string endpoint)
         {
