@@ -14,7 +14,7 @@ namespace Aniflix.Services
         {
             try
             {
-                var movieTask = _movieService.GetMovieAsync(movieId);
+                var movieTask = FilmesContracts.MovieDatabase.GetMovieAsync(movieId);
                 var creditsTask = _movieService.GetMovieCreditsAsync(Convert.ToInt32(movieId));
                 var alternativeTitlesTask = _movieService.GetMovieAlternativeTitlesAsync(Convert.ToInt32(movieId));
 
