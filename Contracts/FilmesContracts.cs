@@ -23,7 +23,7 @@ namespace Aniflix.Contracts
                 if (!response.IsSuccessStatusCode)
                 {
                     string errorDetails = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Erro na chamada API: {response.StatusCode} - {errorDetails}");
+                    MessageBox.Show($"Erro na chamada API: {response.StatusCode} - {errorDetails}");
                     return default;
                 }
 
