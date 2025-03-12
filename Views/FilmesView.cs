@@ -20,8 +20,6 @@ namespace Aniflix.Views
 
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
-            var filmesService = new FilmesServices();
-
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
                 UIMessageBox.ShowError("Informe um código de filme válido.");
@@ -30,7 +28,7 @@ namespace Aniflix.Views
             }
             else
             {
-                await filmesService.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
+                await FilmesServices.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
             }
         }
     }
