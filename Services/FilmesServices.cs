@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using Aniflix.Contracts;
 using System.Globalization;
 using System.Threading.Tasks;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace Aniflix.Services
 {
     public class FilmesServices
     {
-        private readonly MovieService _movieService = new();
+        private readonly FilmesContracts _movieService = new();
 
         public async Task GivenData(string movieId, TextBox tituloText, TextBox sinopseText, TextBox tituloOriginalText,
                                     TextBox dataLancamentoText, TextBox filmeText, TextBox tagsText, TextBox generoText,
