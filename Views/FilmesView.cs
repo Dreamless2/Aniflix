@@ -22,7 +22,7 @@ namespace Aniflix.Views
         {
             var filmesService = new FilmesServices();
 
-            var codigo = CodigoText.ToString();
+            var codigo = CodigoText.Text;
 
             if (string.IsNullOrEmpty(codigo))
             {
