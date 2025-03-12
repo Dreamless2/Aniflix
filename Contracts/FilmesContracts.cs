@@ -41,3 +41,4 @@ namespace Aniflix.Contracts
         public async Task<AlternativeTitles?> GetMovieAlternativeTitlesAsync(int movieId)
             => await GetFromTmdbAsync<AlternativeTitles>($"movie/{movieId}/alternative_titles");
     }
+}
