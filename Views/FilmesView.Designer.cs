@@ -217,7 +217,7 @@
             DataLancamentoText.ButtonStyleInherited = false;
             DataLancamentoText.FillColor2 = Color.FromArgb(238, 248, 248);
             DataLancamentoText.Font = new Font("Microsoft Sans Serif", 12F);
-            DataLancamentoText.Location = new Point(739, 305);
+            DataLancamentoText.Location = new Point(739, 270);
             DataLancamentoText.Margin = new Padding(4, 5, 4, 5);
             DataLancamentoText.MinimumSize = new Size(1, 16);
             DataLancamentoText.Name = "DataLancamentoText";
@@ -238,7 +238,7 @@
             DataLancamentoLabel.AutoSize = true;
             DataLancamentoLabel.Font = new Font("Microsoft Sans Serif", 12F);
             DataLancamentoLabel.ForeColor = Color.Black;
-            DataLancamentoLabel.Location = new Point(1027, 220);
+            DataLancamentoLabel.Location = new Point(739, 245);
             DataLancamentoLabel.Name = "DataLancamentoLabel";
             DataLancamentoLabel.Size = new Size(159, 20);
             DataLancamentoLabel.TabIndex = 36;
@@ -255,7 +255,7 @@
             TituloAlternativoText.ButtonStyleInherited = false;
             TituloAlternativoText.FillColor2 = Color.FromArgb(238, 248, 248);
             TituloAlternativoText.Font = new Font("Microsoft Sans Serif", 12F);
-            TituloAlternativoText.Location = new Point(32, 364);
+            TituloAlternativoText.Location = new Point(32, 330);
             TituloAlternativoText.Margin = new Padding(4, 5, 4, 5);
             TituloAlternativoText.MinimumSize = new Size(1, 16);
             TituloAlternativoText.Name = "TituloAlternativoText";
@@ -288,7 +288,7 @@
             FaseMCULabel.AutoSize = true;
             FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
             FaseMCULabel.ForeColor = Color.Black;
-            FaseMCULabel.Location = new Point(1113, 345);
+            FaseMCULabel.Location = new Point(739, 363);
             FaseMCULabel.Name = "FaseMCULabel";
             FaseMCULabel.Size = new Size(85, 20);
             FaseMCULabel.TabIndex = 36;
@@ -344,7 +344,7 @@
             TagsText.ButtonStyleInherited = false;
             TagsText.FillColor2 = Color.FromArgb(238, 248, 248);
             TagsText.Font = new Font("Microsoft Sans Serif", 12F);
-            TagsText.Location = new Point(739, 365);
+            TagsText.Location = new Point(739, 330);
             TagsText.Margin = new Padding(4, 5, 4, 5);
             TagsText.MinimumSize = new Size(1, 16);
             TagsText.Name = "TagsText";
@@ -420,7 +420,7 @@
             FilmeText.ButtonStyleInherited = false;
             FilmeText.FillColor2 = Color.FromArgb(238, 248, 248);
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeText.Location = new Point(32, 423);
+            FilmeText.Location = new Point(32, 388);
             FilmeText.Margin = new Padding(4, 5, 4, 5);
             FilmeText.MinimumSize = new Size(1, 16);
             FilmeText.Name = "FilmeText";
@@ -452,7 +452,7 @@
             TagsLabel.AutoSize = true;
             TagsLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TagsLabel.ForeColor = Color.Black;
-            TagsLabel.Location = new Point(1163, 279);
+            TagsLabel.Location = new Point(739, 305);
             TagsLabel.Name = "TagsLabel";
             TagsLabel.Size = new Size(44, 20);
             TagsLabel.TabIndex = 39;
@@ -594,7 +594,7 @@
             FaseMCUText.ButtonStyleInherited = false;
             FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCUText.Location = new Point(739, 423);
+            FaseMCUText.Location = new Point(739, 388);
             FaseMCUText.Margin = new Padding(4, 5, 4, 5);
             FaseMCUText.MinimumSize = new Size(1, 16);
             FaseMCUText.Name = "FaseMCUText";
