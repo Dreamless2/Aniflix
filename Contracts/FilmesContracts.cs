@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using TMDbLib.Client;
+using System.Text.Json;
+using Aniflix.Functions;
 using TMDbLib.Objects.Movies;
 
 namespace Aniflix.Contracts
@@ -35,5 +37,19 @@ namespace Aniflix.Contracts
 
         public async Task<AlternativeTitles?> GetMovieAlternativeTitlesAsync(int movieId)
             => await GetFromTmdbAsync<AlternativeTitles>($"movie/{movieId}/alternative_titles");
+    }
+
+    public static TMDbClient MovieDatabase()
+        {
+            var client = new TMDbClient(GlobalVars.TMDB_KEY)
+            {
+                DefaultLanguage = "pt-BR",
+                DefaultCountry = "BR",
+            };
+            client.Timeout = TimeSpan.FromSeconds(600);
+
+            return client;
+        }
+
     }
 }
