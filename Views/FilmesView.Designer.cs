@@ -40,7 +40,7 @@
             TituloAlternativoText = new Sunny.UI.UITextBox();
             FranquiaLabel = new Sunny.UI.UILabel();
             FaseMCULabel = new Sunny.UI.UILabel();
-            uiTextBox7 = new Sunny.UI.UITextBox();
+            FranquiaText = new Sunny.UI.UITextBox();
             TituloOriginalLabel = new Sunny.UI.UILabel();
             TagsText = new Sunny.UI.UITextBox();
             TituloAlternativoLabel = new Sunny.UI.UILabel();
@@ -294,33 +294,33 @@
             FaseMCULabel.TabIndex = 36;
             FaseMCULabel.Text = "Fase MCU";
             // 
-            // uiTextBox7
+            // FranquiaText
             // 
-            uiTextBox7.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            uiTextBox7.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox7.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox7.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox7.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox7.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox7.ButtonStyleInherited = false;
-            uiTextBox7.FillColor2 = Color.FromArgb(238, 248, 248);
-            uiTextBox7.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox7.Location = new Point(29, 448);
-            uiTextBox7.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox7.MinimumSize = new Size(1, 16);
-            uiTextBox7.Name = "uiTextBox7";
-            uiTextBox7.Padding = new Padding(5);
-            uiTextBox7.RectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox7.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            uiTextBox7.ScrollBarStyleInherited = false;
-            uiTextBox7.ShowText = false;
-            uiTextBox7.Size = new Size(883, 29);
-            uiTextBox7.Style = Sunny.UI.UIStyle.Custom;
-            uiTextBox7.TabIndex = 37;
-            uiTextBox7.Text = "--";
-            uiTextBox7.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox7.Watermark = "Franquia";
-            uiTextBox7.WordWarp = false;
+            FranquiaText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            FranquiaText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            FranquiaText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            FranquiaText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            FranquiaText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            FranquiaText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            FranquiaText.ButtonStyleInherited = false;
+            FranquiaText.FillColor2 = Color.FromArgb(238, 248, 248);
+            FranquiaText.Font = new Font("Microsoft Sans Serif", 12F);
+            FranquiaText.Location = new Point(29, 448);
+            FranquiaText.Margin = new Padding(4, 5, 4, 5);
+            FranquiaText.MinimumSize = new Size(1, 16);
+            FranquiaText.Name = "FranquiaText";
+            FranquiaText.Padding = new Padding(5);
+            FranquiaText.RectColor = Color.FromArgb(0, 150, 136);
+            FranquiaText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            FranquiaText.ScrollBarStyleInherited = false;
+            FranquiaText.ShowText = false;
+            FranquiaText.Size = new Size(883, 29);
+            FranquiaText.Style = Sunny.UI.UIStyle.Custom;
+            FranquiaText.TabIndex = 37;
+            FranquiaText.Text = "--";
+            FranquiaText.TextAlignment = ContentAlignment.MiddleLeft;
+            FranquiaText.Watermark = "Franquia";
+            FranquiaText.WordWarp = false;
             // 
             // TituloOriginalLabel
             // 
@@ -772,7 +772,7 @@
             Controls.Add(EstrelasLabel);
             Controls.Add(TagsLabel);
             Controls.Add(GeneroText);
-            Controls.Add(uiTextBox7);
+            Controls.Add(FranquiaText);
             Controls.Add(TagsText);
             Controls.Add(TituloAlternativoLabel);
             Controls.Add(FilmeLabel);
@@ -818,7 +818,7 @@
         private Sunny.UI.UITextBox TituloAlternativoText;
         private Sunny.UI.UILabel FranquiaLabel;
         private Sunny.UI.UILabel FaseMCULabel;
-        private Sunny.UI.UITextBox uiTextBox7;
+        private Sunny.UI.UITextBox FranquiaText;
         private Sunny.UI.UILabel TituloOriginalLabel;
         private Sunny.UI.UITextBox TagsText;
         private Sunny.UI.UILabel TituloAlternativoLabel;
