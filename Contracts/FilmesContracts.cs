@@ -17,8 +17,17 @@ namespace Aniflix.Contracts
         {
             try
             {
+                //HttpResponseMessage response = await _httpClient.GetAsync(endpoint);
+                // response.EnsureSuccessStatusCode();
                 HttpResponseMessage response = await _httpClient.GetAsync(endpoint);
-                response.EnsureSuccessStatusCode();
+                if (!response.IsSuccessStatusCode)
+                {
+                    string errorDetails = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Erro na chamada API: {response.StatusCode} - {errorDetails}");
+                    return default;
+                }
+
+
                 string json = await response.Content.ReadAsStringAsync();
                 return JsonSerializer.Deserialize<T>(json);
             }
