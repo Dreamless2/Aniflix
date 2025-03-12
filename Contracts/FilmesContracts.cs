@@ -11,7 +11,7 @@ namespace Aniflix.Contracts
         private readonly TMDbClient _client = new TMDbClient("SEU_TOKEN_AQUI");
 
         public async Task<Movie?> GetMovieAsync(string movieId)
-            => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | TMDbLib.Objects.Movies.MovieMethods.AlternativeTitles, "pt-BR");
+            => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | MovieMethods.AlternativeTitles, "pt-BR");
 
 
 
