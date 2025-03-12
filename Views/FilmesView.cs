@@ -28,6 +28,7 @@ namespace Aniflix.Views
             if (string.IsNullOrEmpty(codigo))
             {
                 MessageBox.Show("Por favor, insira um código válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CodigoText.Focus();
             }
             else
             {
