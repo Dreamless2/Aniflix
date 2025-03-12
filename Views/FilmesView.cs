@@ -25,7 +25,17 @@ namespace Aniflix.Views
 
             var codigo = CodigoText.ToString();
 
-            await filmesService.GivenData(codigo, TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
+            if (string.IsNullOrEmpty(codigo))
+            {
+                MessageBox.Show("Por favor, insira um código válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+
+
+                await filmesService.GivenData(codigo, TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
+            }
         }
     }
 }
