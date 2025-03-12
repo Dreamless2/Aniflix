@@ -86,6 +86,7 @@
             CodigoText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             CodigoText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             CodigoText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            CodigoText.ButtonStyleInherited = false;
             CodigoText.FillColor2 = Color.FromArgb(238, 248, 248);
             CodigoText.Font = new Font("Microsoft Sans Serif", 12F);
             CodigoText.Location = new Point(32, 87);
@@ -95,6 +96,7 @@
             CodigoText.Padding = new Padding(5);
             CodigoText.RectColor = Color.FromArgb(0, 150, 136);
             CodigoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            CodigoText.ScrollBarStyleInherited = false;
             CodigoText.ShowText = false;
             CodigoText.Size = new Size(161, 29);
             CodigoText.Style = Sunny.UI.UIStyle.Custom;
@@ -136,6 +138,7 @@
             TituloText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             TituloText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             TituloText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            TituloText.ButtonStyleInherited = false;
             TituloText.FillColor2 = Color.FromArgb(238, 248, 248);
             TituloText.Font = new Font("Microsoft Sans Serif", 12F);
             TituloText.Location = new Point(201, 87);
@@ -145,6 +148,7 @@
             TituloText.Padding = new Padding(5);
             TituloText.RectColor = Color.FromArgb(0, 150, 136);
             TituloText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            TituloText.ScrollBarStyleInherited = false;
             TituloText.ShowText = false;
             TituloText.Size = new Size(556, 29);
             TituloText.Style = Sunny.UI.UIStyle.Custom;
@@ -172,6 +176,7 @@
             TituloOriginalText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             TituloOriginalText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             TituloOriginalText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            TituloOriginalText.ButtonStyleInherited = false;
             TituloOriginalText.FillColor2 = Color.FromArgb(238, 248, 248);
             TituloOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
             TituloOriginalText.Location = new Point(32, 305);
@@ -181,6 +186,7 @@
             TituloOriginalText.Padding = new Padding(5);
             TituloOriginalText.RectColor = Color.FromArgb(0, 150, 136);
             TituloOriginalText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            TituloOriginalText.ScrollBarStyleInherited = false;
             TituloOriginalText.ShowText = false;
             TituloOriginalText.Size = new Size(699, 29);
             TituloOriginalText.Style = Sunny.UI.UIStyle.Custom;
@@ -208,6 +214,7 @@
             DataLancamentoText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             DataLancamentoText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             DataLancamentoText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            DataLancamentoText.ButtonStyleInherited = false;
             DataLancamentoText.FillColor2 = Color.FromArgb(238, 248, 248);
             DataLancamentoText.Font = new Font("Microsoft Sans Serif", 12F);
             DataLancamentoText.Location = new Point(739, 305);
@@ -217,6 +224,7 @@
             DataLancamentoText.Padding = new Padding(5);
             DataLancamentoText.RectColor = Color.FromArgb(0, 150, 136);
             DataLancamentoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            DataLancamentoText.ScrollBarStyleInherited = false;
             DataLancamentoText.ShowText = false;
             DataLancamentoText.Size = new Size(176, 29);
             DataLancamentoText.Style = Sunny.UI.UIStyle.Custom;
@@ -244,6 +252,7 @@
             TituloAlternativoText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             TituloAlternativoText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             TituloAlternativoText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            TituloAlternativoText.ButtonStyleInherited = false;
             TituloAlternativoText.FillColor2 = Color.FromArgb(238, 248, 248);
             TituloAlternativoText.Font = new Font("Microsoft Sans Serif", 12F);
             TituloAlternativoText.Location = new Point(32, 364);
@@ -253,6 +262,7 @@
             TituloAlternativoText.Padding = new Padding(5);
             TituloAlternativoText.RectColor = Color.FromArgb(0, 150, 136);
             TituloAlternativoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            TituloAlternativoText.ScrollBarStyleInherited = false;
             TituloAlternativoText.ShowText = false;
             TituloAlternativoText.Size = new Size(699, 29);
             TituloAlternativoText.Style = Sunny.UI.UIStyle.Custom;
@@ -292,6 +302,7 @@
             uiTextBox7.ButtonRectColor = Color.FromArgb(0, 150, 136);
             uiTextBox7.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             uiTextBox7.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox7.ButtonStyleInherited = false;
             uiTextBox7.FillColor2 = Color.FromArgb(238, 248, 248);
             uiTextBox7.Font = new Font("Microsoft Sans Serif", 12F);
             uiTextBox7.Location = new Point(32, 482);
@@ -301,6 +312,7 @@
             uiTextBox7.Padding = new Padding(5);
             uiTextBox7.RectColor = Color.FromArgb(0, 150, 136);
             uiTextBox7.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            uiTextBox7.ScrollBarStyleInherited = false;
             uiTextBox7.ShowText = false;
             uiTextBox7.Size = new Size(883, 29);
             uiTextBox7.Style = Sunny.UI.UIStyle.Custom;
@@ -329,6 +341,7 @@
             TagsText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             TagsText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             TagsText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            TagsText.ButtonStyleInherited = false;
             TagsText.FillColor2 = Color.FromArgb(238, 248, 248);
             TagsText.Font = new Font("Microsoft Sans Serif", 12F);
             TagsText.Location = new Point(739, 365);
@@ -338,6 +351,7 @@
             TagsText.Padding = new Padding(5);
             TagsText.RectColor = Color.FromArgb(0, 150, 136);
             TagsText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            TagsText.ScrollBarStyleInherited = false;
             TagsText.ShowText = false;
             TagsText.Size = new Size(176, 29);
             TagsText.Style = Sunny.UI.UIStyle.Custom;
@@ -365,6 +379,7 @@
             GeneroText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             GeneroText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             GeneroText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            GeneroText.ButtonStyleInherited = false;
             GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroText.Location = new Point(32, 541);
@@ -374,6 +389,7 @@
             GeneroText.Padding = new Padding(5);
             GeneroText.RectColor = Color.FromArgb(0, 150, 136);
             GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            GeneroText.ScrollBarStyleInherited = false;
             GeneroText.ShowText = false;
             GeneroText.Size = new Size(883, 29);
             GeneroText.Style = Sunny.UI.UIStyle.Custom;
@@ -401,6 +417,7 @@
             FilmeText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             FilmeText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             FilmeText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            FilmeText.ButtonStyleInherited = false;
             FilmeText.FillColor2 = Color.FromArgb(238, 248, 248);
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
             FilmeText.Location = new Point(32, 423);
@@ -410,6 +427,7 @@
             FilmeText.Padding = new Padding(5);
             FilmeText.RectColor = Color.FromArgb(0, 150, 136);
             FilmeText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            FilmeText.ScrollBarStyleInherited = false;
             FilmeText.ShowText = false;
             FilmeText.Size = new Size(699, 29);
             FilmeText.Style = Sunny.UI.UIStyle.Custom;
@@ -492,6 +510,7 @@
             DiretorText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             DiretorText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             DiretorText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            DiretorText.ButtonStyleInherited = false;
             DiretorText.FillColor2 = Color.FromArgb(238, 248, 248);
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
             DiretorText.Location = new Point(32, 600);
@@ -501,6 +520,7 @@
             DiretorText.Padding = new Padding(5);
             DiretorText.RectColor = Color.FromArgb(0, 150, 136);
             DiretorText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            DiretorText.ScrollBarStyleInherited = false;
             DiretorText.ShowText = false;
             DiretorText.Size = new Size(883, 29);
             DiretorText.Style = Sunny.UI.UIStyle.Custom;
@@ -517,6 +537,7 @@
             EstrelasText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             EstrelasText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             EstrelasText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            EstrelasText.ButtonStyleInherited = false;
             EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasText.Location = new Point(32, 659);
@@ -526,6 +547,7 @@
             EstrelasText.Padding = new Padding(5);
             EstrelasText.RectColor = Color.FromArgb(0, 150, 136);
             EstrelasText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            EstrelasText.ScrollBarStyleInherited = false;
             EstrelasText.ShowText = false;
             EstrelasText.Size = new Size(883, 29);
             EstrelasText.Style = Sunny.UI.UIStyle.Custom;
@@ -542,6 +564,7 @@
             EstudioText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             EstudioText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             EstudioText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            EstudioText.ButtonStyleInherited = false;
             EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioText.Location = new Point(32, 718);
@@ -551,6 +574,7 @@
             EstudioText.Padding = new Padding(5);
             EstudioText.RectColor = Color.FromArgb(0, 150, 136);
             EstudioText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            EstudioText.ScrollBarStyleInherited = false;
             EstudioText.ShowText = false;
             EstudioText.Size = new Size(883, 29);
             EstudioText.Style = Sunny.UI.UIStyle.Custom;
@@ -567,6 +591,7 @@
             FaseMCUText.ButtonRectColor = Color.FromArgb(0, 150, 136);
             FaseMCUText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
             FaseMCUText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            FaseMCUText.ButtonStyleInherited = false;
             FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
             FaseMCUText.Location = new Point(739, 423);
@@ -576,6 +601,7 @@
             FaseMCUText.Padding = new Padding(5);
             FaseMCUText.RectColor = Color.FromArgb(0, 150, 136);
             FaseMCUText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            FaseMCUText.ScrollBarStyleInherited = false;
             FaseMCUText.ShowText = false;
             FaseMCUText.Size = new Size(176, 29);
             FaseMCUText.Style = Sunny.UI.UIStyle.Custom;
@@ -597,6 +623,7 @@
             ResumoText.Padding = new Padding(2);
             ResumoText.RectColor = Color.FromArgb(0, 150, 136);
             ResumoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            ResumoText.ScrollBarStyleInherited = false;
             ResumoText.ShowText = false;
             ResumoText.Size = new Size(530, 660);
             ResumoText.Style = Sunny.UI.UIStyle.Custom;
@@ -615,6 +642,7 @@
             SinopseText.Padding = new Padding(2);
             SinopseText.RectColor = Color.FromArgb(0, 150, 136);
             SinopseText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            SinopseText.ScrollBarStyleInherited = false;
             SinopseText.ShowText = false;
             SinopseText.Size = new Size(876, 129);
             SinopseText.Style = Sunny.UI.UIStyle.Custom;
