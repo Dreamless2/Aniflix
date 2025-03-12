@@ -15,15 +15,16 @@ namespace Aniflix.Models
 
 
         public string? Sinopse { get; set; }
-        public string? TituloOriginal { get; set; }
-        public string? DataLancamento { get; set; }
+        public string? Titulo_Original { get; set; }
+        public string? Data_Lancamento { get; set; }
+        public string? Titulo_Alternativo { get; set; }
         public string? Tags { get; set; }
         public string? Genero { get; set; }
         public string? Diretor { get; set; }
 
         public string? Estrelas { get; set; }
         public string? Estudio { get; set; }
-        public string? Titulo_Alternativo { get; set; }
+
 
     }
 }
