@@ -32,12 +32,7 @@ namespace Aniflix.Services
                     return;
                 }
 
-                tituloText.Text = movie.Title;
-                sinopseText.Text = movie.Overview;
-                tituloOriginalText.Text = movie.OriginalTitle;
-                dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
-                tituloAlternativoText.Text = alternativeTitles?.Titles.FirstOrDefault()?.Title ?? "--";
-
+                tituloText.Text = movie.Title ?? "--";
                 sinopseText.Text = movie.Overview ?? "--";
                 tituloOriginalText.Text = movie.OriginalTitle ?? "--";
                 dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
