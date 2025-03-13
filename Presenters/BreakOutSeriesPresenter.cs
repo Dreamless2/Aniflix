@@ -1,10 +1,11 @@
 ﻿using System.Linq;
+using Aniflix.Models;
 using WatchFlix.Models;
 using WatchFlix.Globals;
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-namespace WatchFlix.Presenter
+namespace Aniflix.Presenters
 {
     public class BreakOutSeriesPresenter
     {
