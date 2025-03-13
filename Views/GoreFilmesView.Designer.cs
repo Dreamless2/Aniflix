@@ -431,6 +431,7 @@
             FranquiaText.TextAlignment = ContentAlignment.MiddleLeft;
             FranquiaText.Watermark = "Franquia";
             FranquiaText.WordWarp = false;
+            FranquiaText.TextChanged += FranquiaText_TextChanged;
             // 
             // TagsText
             // 
