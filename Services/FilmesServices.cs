@@ -57,14 +57,14 @@ namespace Aniflix.Services
                     generoText.Text = string.Join(" ", hashtags);
                 }
 
-                if (movie.credits?.Crew != null)
+                if (movie.Credits?.Crew != null)
                 {
-                    diretorText.Text = string.Join(" ", credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
+                    diretorText.Text = string.Join(" ", movie.Credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
                 }
 
-                if (credits?.Cast != null)
+                if (movie.Credits?.Cast != null)
                 {
-                    estrelasText.Text = string.Join(" ", credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}"));
+                    estrelasText.Text = string.Join(" ", movie.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}"));
                 }
 
                 if (movie.ProductionCompanies != null)
