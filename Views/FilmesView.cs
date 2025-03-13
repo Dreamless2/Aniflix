@@ -232,7 +232,6 @@ namespace Aniflix.Views
         }
         #endregion
 
-
         #region "EditarButton"
         private void EditarButton_Click(object sender, EventArgs e)
         {
