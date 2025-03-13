@@ -1,9 +1,9 @@
 ﻿namespace WatchFlix.Services
 {
-    public class BaseAnimesServices(string titulo, string audio, string sinopse = null, string tituloOriginal = null,
-                  string dataLancamento = null, string tituloAlternativo = null, string franquia = null, string paisOrigem = null, string idiomaOriginal = null,
-                  string anime = null, string autores = null, string genero = null, string tags = null, string diretor = null,
-                  string estrelas = null, string estudio = null)
+    public class BaseAnimesServices(string titulo, string audio, string sinopse = null!, string tituloOriginal = null!,
+                  string dataLancamento = null!, string tituloAlternativo = null!, string franquia = null!, string paisOrigem = null!, string idiomaOriginal = null!,
+                  string anime = null!, string autores = null!, string genero = null!, string tags = null!, string diretor = null!,
+                  string estrelas = null!, string estudio = null!)
     {
         public string Titulo { get; private set; } = titulo;
         public string Audio { get; private set; } = audio;
