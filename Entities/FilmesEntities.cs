@@ -1,10 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-
-namespace Aniflix.Entities
+﻿namespace Aniflix.Entities
 {
     public class FilmesEntities(string titulo, string franquia, string sinopse = null!, string tituloOriginal = null!,
                string dataLancamento = null!, string tituloAlternativo = null!, string filme = null!, string genero = null!, string tags = null!,
