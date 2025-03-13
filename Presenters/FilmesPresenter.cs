@@ -1,10 +1,5 @@
 ﻿using Aniflix.Functions;
 using Aniflix.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Aniflix.Presenters
 {
@@ -78,7 +73,7 @@ namespace Aniflix.Presenters
             }
             catch
             {
-                return null;
+                return null!;
             }
         }
 
@@ -98,7 +93,7 @@ namespace Aniflix.Presenters
             }
             catch
             {
-                return null;
+                return null!;
             }
         }
 
