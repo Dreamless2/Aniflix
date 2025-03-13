@@ -4,7 +4,6 @@ using Aniflix.Services;
 using Aniflix.Entities;
 using Aniflix.Functions;
 using Aniflix.Presenters;
-using FontAwesome.Sharp.Material;
 
 namespace Aniflix.Views
 {
@@ -14,8 +13,6 @@ namespace Aniflix.Views
         {
             InitializeComponent();
         }
-
-
 
         #region "ChangeData"
         private void ChangeData()
@@ -36,12 +33,9 @@ namespace Aniflix.Views
                 mcu: FaseMCUText.Text,
                 estrelas: EstrelasText.Text,
                 estudio: EstudioText.Text
-
             );
-
             ResumoText.Text = entities.GetFormattedText();
         }
-
         #endregion
 
         #region "FillData"
@@ -70,7 +64,6 @@ namespace Aniflix.Views
             ;
         }
         #endregion
-
 
         private void FilmesView_Load(object sender, EventArgs e)
         {
