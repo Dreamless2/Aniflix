@@ -33,7 +33,7 @@
             // BreakOutFilmesView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1303, 878);
+            ClientSize = new Size(1525, 912);
             Name = "BreakOutFilmesView";
             Text = "BreakOut - Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
