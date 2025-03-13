@@ -57,7 +57,7 @@ namespace Aniflix.Services
                     generoText.Text = string.Join(" ", hashtags);
                 }
 
-                if (credits?.Crew != null)
+                if (movie.credits?.Crew != null)
                 {
                     diretorText.Text = string.Join(" ", credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
                 }
