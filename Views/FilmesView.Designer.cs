@@ -626,7 +626,7 @@
             ResumoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             ResumoText.ScrollBarStyleInherited = false;
             ResumoText.ShowText = false;
-            ResumoText.Size = new Size(514, 660);
+            ResumoText.Size = new Size(575, 660);
             ResumoText.Style = Sunny.UI.UIStyle.Custom;
             ResumoText.TabIndex = 45;
             ResumoText.TextAlignment = ContentAlignment.TopLeft;
@@ -659,7 +659,7 @@
             CopiarButton.ForeColor = Color.White;
             CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             CopiarButton.IconColor = Color.White;
-            CopiarButton.Location = new Point(182, 743);
+            CopiarButton.Location = new Point(178, 780);
             CopiarButton.Name = "CopiarButton";
             CopiarButton.Size = new Size(198, 91);
             CopiarButton.TabIndex = 47;
@@ -676,7 +676,7 @@
             InserirNovoButton.ForeColor = Color.White;
             InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             InserirNovoButton.IconColor = Color.White;
-            InserirNovoButton.Location = new Point(417, 743);
+            InserirNovoButton.Location = new Point(413, 780);
             InserirNovoButton.Name = "InserirNovoButton";
             InserirNovoButton.Size = new Size(198, 91);
             InserirNovoButton.TabIndex = 48;
@@ -693,7 +693,7 @@
             EditarButton.ForeColor = Color.White;
             EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             EditarButton.IconColor = Color.White;
-            EditarButton.Location = new Point(652, 743);
+            EditarButton.Location = new Point(648, 780);
             EditarButton.Name = "EditarButton";
             EditarButton.Size = new Size(198, 91);
             EditarButton.TabIndex = 49;
@@ -710,7 +710,7 @@
             AnteriorButton.ForeColor = Color.White;
             AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             AnteriorButton.IconColor = Color.White;
-            AnteriorButton.Location = new Point(887, 743);
+            AnteriorButton.Location = new Point(883, 780);
             AnteriorButton.Name = "AnteriorButton";
             AnteriorButton.Size = new Size(198, 91);
             AnteriorButton.TabIndex = 50;
@@ -727,7 +727,7 @@
             ProximoButton.ForeColor = Color.White;
             ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             ProximoButton.IconColor = Color.White;
-            ProximoButton.Location = new Point(1122, 743);
+            ProximoButton.Location = new Point(1118, 780);
             ProximoButton.Name = "ProximoButton";
             ProximoButton.Size = new Size(198, 91);
             ProximoButton.TabIndex = 51;
