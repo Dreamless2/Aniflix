@@ -139,12 +139,47 @@ namespace Aniflix.Views
 
         #endregion
 
-
+        #region "CopiarButton"
         private void CopiarButton_Click(object sender, EventArgs e)
         {
             ResumoText.SelectAll();
             ResumoText.Copy();
         }
+        #endregion
+
+        #region "InserirNovoButton"
+        private void InserirNovoButton_Click(object sender, EventArgs e)
+        {
+            var filmes = new FilmesModels
+            {
+                Codigo = CodigoText.Text,
+                Titulo = TituloText.Text,
+                Audio = AudioBox.SelectedItem?.ToString() ?? string.Empty,
+                Sinopse = SinopseText.Text,
+                Titulo_Original = TituloOriginalText.Text,
+                Data_Lancamento = DataLancamentoText.Text,
+                Titulo_Alternativo = TituloAlternativoText.Text,
+                Filme = FilmeText.Text,
+                Franquia = FranquiaText.Text,
+                Genero = GeneroText.Text,
+                Tags = TagsText.Text,
+                Diretor = DiretorText.Text,
+                MCU = FaseMCUText.Text,
+                Estrelas = EstrelasText.Text,
+                Estudio = EstudioText.Text
+            };
+
+            if (!string.IsNullOrEmpty(filmes.Codigo))
+            {
+                FilmesPresenter.Registrar(filmes);
+            }
+            else
+            {
+                MessageBox.Show("Por favor, insira o código do filme.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        #endregion
+
 
         #region "EditarButton"
         private void EditarButton_Click(object sender, EventArgs e)
