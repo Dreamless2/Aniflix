@@ -733,6 +733,8 @@
             CodigoText.TextAlignment = ContentAlignment.MiddleLeft;
             CodigoText.Watermark = "Código do Filme";
             CodigoText.WordWarp = false;
+            CodigoText.KeyPress += CodigoText_KeyPress;
+            CodigoText.Leave += CodigoText_Leave;
             // 
             // CodigoFilmeLabel
             // 
