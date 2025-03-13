@@ -196,7 +196,7 @@ namespace Aniflix.Views
         #region "InserirNovoButton"
         private void InserirNovoButton_Click(object sender, EventArgs e)
         {
-            var models = new GoreFilmesModels
+            var item = new GoreFilmesModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -214,9 +214,9 @@ namespace Aniflix.Views
                 Estudio = EstudioText.Text
             };
 
-            if (!string.IsNullOrEmpty(models.Codigo))
+            if (!string.IsNullOrEmpty(item.Codigo))
             {
-                GoreFilmesPresenter.Registrar(models);
+                GoreFilmesPresenter.Registrar(item);
             }
             else
             {
