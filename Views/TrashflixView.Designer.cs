@@ -534,6 +534,7 @@
             TituloAlternativoText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloAlternativoText.Watermark = "Título Alternativo";
             TituloAlternativoText.WordWarp = false;
+            TituloAlternativoText.TextChanged += TituloAlternativoText_TextChanged;
             // 
             // FilmeText
             // 
