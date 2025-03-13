@@ -1,7 +1,7 @@
 ﻿using Aniflix.Models;
 using Aniflix.Functions;
 
-namespace WatchFlix.Presenter
+namespace Aniflix.Presenters
 {
     public class AnimesPresenter
     {
