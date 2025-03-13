@@ -16,7 +16,7 @@ namespace Aniflix.Services
             try
             {
                 //var general = FilmesContracts.MovieDatabase();
-                var movieTask = await general.GetMovieAsync(movieId);
+                var movie = await general.GetMovieAsync(movieId);
 
                 if (movie == null)
                 {
