@@ -34,7 +34,7 @@
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1678, 1039);
+            ClientSize = new Size(1525, 912);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "GoreFilmesView";
