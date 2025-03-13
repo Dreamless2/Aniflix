@@ -1,6 +1,7 @@
 ﻿using Sunny.UI;
 using Aniflix.Models;
 using Aniflix.Services;
+using Aniflix.Entities;
 using Aniflix.Functions;
 using FontAwesome.Sharp.Material;
 
@@ -19,7 +20,7 @@ namespace Aniflix.Views
         private void ChangeData()
         {
 
-            var services = new FILMESE(
+            var services = new FilmesEntities(
                 titulo: TituloText.Text,
                 audio: AudioBox.SelectedItem?.ToString() ?? string.Empty,
                 sinopse: SinopseText.Text,
