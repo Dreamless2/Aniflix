@@ -10,7 +10,7 @@ namespace Aniflix.Functions
         public static UIForm? currentChildForm;
         public static Random? random;
 
-        public static TMDB_KEY = "d1f15ac0632492b3c3a940032ad6b95b";
+        public static string TMDB_KEY = "d1f15ac0632492b3c3a940032ad6b95b";
 
     }
 }
