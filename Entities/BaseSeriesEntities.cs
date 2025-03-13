@@ -1,4 +1,4 @@
-﻿namespace WatchFlix.Services
+﻿namespace Aniflix.Entities
 {
     public class BaseSeriesEntities(string titulo, string audio, string sinopse = null!, string tituloOriginal = null!,
                string dataLancamento = null!, string tituloAlternativo = null!, string paisOrigem = null!, string idiomaOriginal = null!, string serie = null!,
