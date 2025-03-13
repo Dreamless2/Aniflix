@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <Folder Include="NovaPasta\" />
-    <Folder Include="Presenters\" />
   </ItemGroup>
 
   <ItemGroup>
