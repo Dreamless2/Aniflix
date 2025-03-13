@@ -75,62 +75,62 @@ namespace Aniflix.Views
             ChangeData();
         }
 
-        private void SinopseText_EditValueChanged(object sender, EventArgs e)
+        private void SinopseText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void TituloOriginalText_EditValueChanged(object sender, EventArgs e)
+        private void TituloOriginalText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void DataLancamentoText_EditValueChanged(object sender, EventArgs e)
+        private void DataLancamentoText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void TituloAlternativoText_EditValueChanged(object sender, EventArgs e)
+        private void TituloAlternativoText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void TagsText_EditValueChanged(object sender, EventArgs e)
+        private void TagsText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void FilmeText_EditValueChanged(object sender, EventArgs e)
+        private void FilmeText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void FranquiaText_EditValueChanged(object sender, EventArgs e)
+        private void FranquiaText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void GeneroText_EditValueChanged(object sender, EventArgs e)
+        private void GeneroText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void DiretorText_EditValueChanged(object sender, EventArgs e)
+        private void DiretorText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void EstrelasText_EditValueChanged(object sender, EventArgs e)
+        private void EstrelasText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void EstudioText_EditValueChanged(object sender, EventArgs e)
+        private void EstudioText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void FaseMCUText_EditValueChanged(object sender, EventArgs e)
+        private void FaseMCUText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
