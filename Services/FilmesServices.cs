@@ -44,6 +44,46 @@ namespace Aniflix.Services
                             hashtags.Add($"#{clean}");
                         }
                     }
+
+
+                    static void FormatGenre(string genre, HashSet<string> hashtags)
+                    {
+                        Dictionary<string, string> specialWords = new()
+                    {
+
+                        { "ficção científica", "ficcaocientifica ficçãocientífica" },
+                        { "romântico", "romantico romântico" },
+                        { "romântica", "romantica romântica" },
+                        { "comédia", "comedia comédia" },
+                        { "mistério", "misterio mistério" },
+                        { "ação", "acao ação" }
+                    };
+
+                        string lowerGenre = genre.ToLower();
+
+                        if (specialWords.TryGetValue(lowerGenre, out string value))
+                        {
+                            foreach (var tag in value.Split(' '))
+                            {
+                                hashtags.Add($"#{tag}");
+                            }
+                        }
+                        else
+                        {
+                            string clean = new([.. genre.RemoveDiacritics().Where(char.IsAscii)]);
+                            hashtags.Add($"#{genre.ToLower().Replace(" ", "")}");
+                            hashtags.Add($"#{clean.ToLower().Replace(" ", "")}");
+                        }
+                    }
+
+                    FormatGenre(movie.Genres[0].Name, hashtags);
+                    FormatGenre(movie.Genres[1].Name, hashtags);
+                    FormatGenre(movie.Genres[2].Name, hashtags);
+
+
+
+
+
                     generoText.Text = string.Join(" ", hashtags);
                 }
 
