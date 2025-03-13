@@ -300,5 +300,11 @@ namespace Aniflix.Views
             }
         }
         #endregion
+
+        private void CodigoText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+
+        }
     }
 }
