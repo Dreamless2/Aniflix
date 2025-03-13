@@ -1,4 +1,4 @@
-﻿namespace WatchFlix.Services
+﻿namespace Aniflix.Entities
 {
     class GeneralFilmesEntities(string titulo, string franquia, string sinopse = null!, string tituloOriginal = null!,
                string dataLancamento = null!, string tituloAlternativo = null!, string filme = null!, string genero = null!, string tags = null!,
