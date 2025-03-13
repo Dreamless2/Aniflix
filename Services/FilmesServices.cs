@@ -17,6 +17,12 @@ namespace Aniflix.Services
             {
                 var movie = await general.GetMovieAsync(movieId);
 
+
+                var filmeSemAcentos = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", "")))); ;
+
+                var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
+
+
                 if (movie == null)
                 {
                     MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -28,11 +34,6 @@ namespace Aniflix.Services
                 tituloOriginalText.Text = movie.OriginalTitle ?? "--";
                 dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
                 tituloAlternativoText.Text = movie.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
-
-                var filmeSemAcentos = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", "")))); ;
-
-                var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
-
 
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
