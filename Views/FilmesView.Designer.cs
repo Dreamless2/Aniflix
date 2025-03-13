@@ -734,6 +734,7 @@
             AnteriorButton.Text = "Anterior";
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
             AnteriorButton.UseVisualStyleBackColor = false;
+            AnteriorButton.Click += AnteriorButton_Click;
             // 
             // ProximoButton
             // 
