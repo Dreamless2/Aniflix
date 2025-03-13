@@ -46,8 +46,8 @@ namespace Aniflix.Views
 
         private void FilmesView_Load(object sender, EventArgs e)
         {
-            ChangeData  ();
-            CodigoText.Focus
+            ChangeData();
+            CodigoText.Focus();
         }
 
         private async void CodigoText_Leave(object sender, EventArgs e)
@@ -57,7 +57,6 @@ namespace Aniflix.Views
             {
                 UIMessageBox.ShowError("Informe um código de filme válido.");
                 CodigoText.Focus();
-                return;
             }
             else
             {
