@@ -466,6 +466,7 @@
             DataLancamentoText.TextAlignment = ContentAlignment.MiddleLeft;
             DataLancamentoText.Watermark = "Data de Lançamento";
             DataLancamentoText.WordWarp = false;
+            DataLancamentoText.TextChanged += DataLancamentoText_TextChanged;
             // 
             // TituloOriginalLabel
             // 
@@ -504,6 +505,7 @@
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
             TituloOriginalText.WordWarp = false;
+            TituloOriginalText.TextChanged += TituloOriginalText_TextChanged;
             // 
             // TituloAlternativoText
             // 
