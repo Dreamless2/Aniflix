@@ -1,7 +1,5 @@
-﻿using System.Linq;
-using WatchFlix.Models;
-using WatchFlix.Globals;
-using System.Windows.Forms;
+﻿using Aniflix.Models;
+using Aniflix.Functions;
 
 namespace WatchFlix.Presenter
 {
