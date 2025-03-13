@@ -3,8 +3,8 @@ using Aniflix.Models;
 using Aniflix.Services;
 using Aniflix.Entities;
 using Aniflix.Functions;
-using FontAwesome.Sharp.Material;
 using Aniflix.Presenters;
+using FontAwesome.Sharp.Material;
 
 namespace Aniflix.Views
 {
@@ -264,6 +264,4 @@ namespace Aniflix.Views
         }
         #endregion
     }
-
-}
 }
