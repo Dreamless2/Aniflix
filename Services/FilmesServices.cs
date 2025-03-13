@@ -1,6 +1,7 @@
 ﻿using Sunny.UI;
 using Aniflix.Contracts;
 using System.Globalization;
+using Aniflix.Extensions;
 
 namespace Aniflix.Services
 {
