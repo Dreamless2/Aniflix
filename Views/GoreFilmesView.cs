@@ -93,7 +93,7 @@ namespace Aniflix.Views
         #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
-            var services = new FilmesServices();
+            var services = new GoreFilmesServices();
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
                 UIMessageBox.ShowError("Informe um código válido.", false, 1000);
