@@ -105,6 +105,9 @@ namespace Aniflix.Views
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, FilmeText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
             }
         }
+        #endregion
+
+        #region "KeyPress"
         private void CodigoText_KeyPress(object sender, KeyPressEventArgs e)
         {
 
@@ -113,6 +116,7 @@ namespace Aniflix.Views
                 e.Handled = true;
             }
         }
+        #endregion
 
         #region "TextChanged"
         private void TituloText_TextChanged(object sender, EventArgs e)
