@@ -716,6 +716,7 @@
             EditarButton.Text = "Editar ";
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = false;
+            EditarButton.Click += EditarButton_Click;
             // 
             // AnteriorButton
             // 
