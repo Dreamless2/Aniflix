@@ -1,7 +1,7 @@
 ﻿using Sunny.UI;
 using Aniflix.Contracts;
-using System.Globalization;
 using Aniflix.Extensions;
+using System.Globalization;
 
 namespace Aniflix.Services
 {
@@ -28,6 +28,11 @@ namespace Aniflix.Services
                 tituloOriginalText.Text = movie.OriginalTitle ?? "--";
                 dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
                 tituloAlternativoText.Text = movie.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
+
+                var filmeSemAcentos = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", "")))); ;
+
+                var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
+
 
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
