@@ -44,6 +44,34 @@ namespace Aniflix.Views
 
         #endregion
 
+        #region "FillData"
+        private void FillData()
+        {
+            var filmes = FilmesPresenter.GetFirstRow();
+
+            if (filmes != null)
+            {
+                GlobalVars.currentId = filmes.Id;
+                CodigoText.Text = filmes.Codigo;
+                TituloText.Text = filmes.Titulo;
+                AudioBox.SelectedItem = filmes.Audio;
+                SinopseText.Text = filmes.Sinopse;
+                TituloOriginalText.Text = filmes.Titulo_Original;
+                DataLancamentoText.Text = filmes.Data_Lancamento;
+                TituloAlternativoText.Text = filmes.Titulo_Alternativo;
+                FilmeText.Text = filmes.Filme;
+                FranquiaText.Text = filmes.Franquia;
+                GeneroText.Text = filmes.Genero;
+                TagsText.Text = filmes.Tags;
+                DiretorText.Text = filmes.Diretor;
+                EstrelasText.Text = filmes.Estrelas;
+                EstudioText.Text = filmes.Estudio;
+            }
+            ;
+        }
+        #endregion
+
+
         private void FilmesView_Load(object sender, EventArgs e)
         {
             ChangeData();
