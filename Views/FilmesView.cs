@@ -9,6 +9,7 @@ namespace Aniflix.Views
 {
     public partial class FilmesView : UIForm
     {
+
         public FilmesView()
         {
             InitializeComponent();
@@ -353,7 +354,6 @@ namespace Aniflix.Views
             }
         }
         #endregion
-
 
     }
 }
