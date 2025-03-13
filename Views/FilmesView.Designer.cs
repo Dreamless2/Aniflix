@@ -538,6 +538,7 @@
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
             DiretorText.Watermark = "Diretor";
             DiretorText.WordWarp = false;
+            DiretorText.TextChanged += DiretorText_TextChanged;
             // 
             // EstrelasText
             // 
