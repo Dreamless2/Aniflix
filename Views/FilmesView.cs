@@ -67,7 +67,7 @@ namespace Aniflix.Views
 
         private void TituloText_TextChanged(object sender, EventArgs e)
         {
-
+            ChangeData();
         }
     }
 }
