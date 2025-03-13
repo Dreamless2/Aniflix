@@ -88,7 +88,7 @@ namespace Aniflix.Presenters
             {
                 if (id == 0)
                 {
-                    return null;
+                    return null!;
                 }
 
                 return GlobalVars.context.Filmes
