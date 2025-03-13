@@ -659,7 +659,7 @@
             SinopseText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             SinopseText.ScrollBarStyleInherited = false;
             SinopseText.ShowText = false;
-            SinopseText.Size = new Size(876, 165);
+            SinopseText.Size = new Size(883, 165);
             SinopseText.Style = Sunny.UI.UIStyle.Custom;
             SinopseText.TabIndex = 46;
             SinopseText.TextAlignment = ContentAlignment.TopLeft;
