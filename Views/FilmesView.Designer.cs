@@ -752,6 +752,7 @@
             ProximoButton.Text = "Proximo";
             ProximoButton.TextAlign = ContentAlignment.BottomLeft;
             ProximoButton.UseVisualStyleBackColor = false;
+            ProximoButton.Click += ProximoButton_Click;
             // 
             // DadosLabel
             // 
