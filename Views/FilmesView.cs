@@ -64,5 +64,10 @@ namespace Aniflix.Views
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, FilmeText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
             }
         }
+
+        private void TituloText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
