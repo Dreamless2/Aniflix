@@ -1,9 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Text;
-using Aniflix.Models;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+﻿using Aniflix.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aniflix.Data
