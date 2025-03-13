@@ -75,6 +75,7 @@ namespace Aniflix.Views
         private void FilmesView_Load(object sender, EventArgs e)
         {
             ChangeData();
+
             CodigoText.Focus();
         }
 
