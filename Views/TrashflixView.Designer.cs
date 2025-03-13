@@ -552,7 +552,7 @@
             FilmeText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FilmeText.ScrollBarStyleInherited = false;
             FilmeText.ShowText = false;
-            FilmeText.Size = new Size(866, 29);
+            FilmeText.Size = new Size(883, 29);
             FilmeText.Style = Sunny.UI.UIStyle.Custom;
             FilmeText.TabIndex = 70;
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
