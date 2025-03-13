@@ -4,7 +4,7 @@ using WatchFlix.Globals;
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-namespace WatchFlix.Presenter
+namespace Aniflix.Presenters
 {
     public class GoreSeriesPresenter
     {
