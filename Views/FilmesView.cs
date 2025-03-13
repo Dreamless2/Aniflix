@@ -21,7 +21,7 @@ namespace Aniflix.Views
         private void ChangeData()
         {
 
-            var entities = new FilmesEntities(
+            var entities = new BaseFilmesEntities(
                 titulo: TituloText.Text,
                 audio: AudioBox.SelectedItem?.ToString() ?? string.Empty,
                 sinopse: SinopseText.Text,

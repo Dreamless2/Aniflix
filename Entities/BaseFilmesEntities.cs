@@ -1,6 +1,6 @@
 ﻿namespace Aniflix.Entities
 {
-    public class FilmesEntities(string titulo, string franquia, string sinopse = null!, string tituloOriginal = null!,
+    public class BaseFilmesEntities(string titulo, string franquia, string sinopse = null!, string tituloOriginal = null!,
                string dataLancamento = null!, string tituloAlternativo = null!, string filme = null!, string genero = null!, string tags = null!,
                string diretor = null!, string mcu = null!, string estrelas = null!, string estudio = null!, string audio = null!)
     {
