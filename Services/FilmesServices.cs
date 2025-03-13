@@ -50,8 +50,7 @@ namespace Aniflix.Services
                         }
                     }
 
-
-                    /*static void FormatGenre(string genre, HashSet<string> hashtags)
+                    static void FormatGenre(string genre, HashSet<string> hashtags)
                     {
                         Dictionary<string, string> specialWords = new()
                     {
@@ -84,7 +83,6 @@ namespace Aniflix.Services
                     FormatGenre(movie.Genres[0].Name, hashtags);
                     FormatGenre(movie.Genres[1].Name, hashtags);
                     FormatGenre(movie.Genres[2].Name, hashtags);
-                    */
                     generoText.Text = string.Join(" ", hashtags);
                 }
 
