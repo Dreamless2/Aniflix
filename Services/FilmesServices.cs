@@ -16,16 +16,10 @@ namespace Aniflix.Services
             try
             {
                 //var general = FilmesContracts.MovieDatabase();
-                var movieTask = general.GetMovieAsync(movieId);
-                //var creditsTask = general.GetMovieCreditsAsync(Convert.ToInt32(movieId));
-                //                var alternativeTitlesTask = general.GetMovieAlternativeTitlesAsync(Convert.ToInt32(movieId));
-
-                //await Task.WhenAll(movieTask, creditsTask, alternativeTitlesTask);
+                var movieTask = general.GetMovieAsync(movieId);             
 
                 var movie = movieTask.Result;
-                //var credits = creditsTask.Result;
-                //var alternativeTitles = alternativeTitlesTask.Result;
-
+             
                 if (movie == null)
                 {
                     MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
