@@ -66,6 +66,7 @@ namespace Aniflix.Views
             }
         }
 
+        #region "TextChanged"
         private void TituloText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
@@ -135,6 +136,9 @@ namespace Aniflix.Views
         {
             ChangeData();
         }
+
+        #endregion
+
 
         private void CopiarButton_Click(object sender, EventArgs e)
         {
