@@ -670,6 +670,7 @@
             TituloText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloText.Watermark = "Título";
             TituloText.WordWarp = false;
+            TituloText.Leave += TituloText_TextChanged;
             // 
             // AudioLabel
             // 
