@@ -286,7 +286,7 @@ namespace Aniflix.Views
         #region "AnteriorButton"
         private void AnteriorButton_Click(object sender, EventArgs e)
         {
-            var item = FilmesPresenter.GetPriorRow(GlobalVars.currentId);
+            var item = GoreFilmesPresenter.GetPriorRow(GlobalVars.currentId);
 
             if (item != null)
             {
@@ -303,7 +303,6 @@ namespace Aniflix.Views
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
                 DiretorText.Text = item.Diretor;
-                FaseMCUText.Text = item.MCU;
                 EstrelasText.Text = item.Estrelas;
                 EstudioText.Text = item.Estudio;
             }
@@ -318,7 +317,7 @@ namespace Aniflix.Views
         private void ProximoButton_Click(object sender, EventArgs e)
         {
 
-            var item = FilmesPresenter.GetNearRow(GlobalVars.currentId);
+            var item = GoreFilmesPresenter.GetNearRow(GlobalVars.currentId);
 
             if (item != null)
             {
@@ -335,7 +334,6 @@ namespace Aniflix.Views
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
                 DiretorText.Text = item.Diretor;
-                FaseMCUText.Text = item.MCU;
                 EstrelasText.Text = item.Estrelas;
                 EstudioText.Text = item.Estudio;
             }
