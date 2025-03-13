@@ -1,9 +1,4 @@
-﻿using System.Linq;
-using Aniflix.Models;
-using WatchFlix.Models;
-using WatchFlix.Globals;
-using System.Windows.Forms;
-using System.Collections.Generic;
+﻿using Aniflix.Models;
 using Aniflix.Functions;
 
 namespace Aniflix.Presenters
