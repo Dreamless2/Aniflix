@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Aniflix.Presenters
 {
-    class FilmesPresenter
+    public class FilmesPresenter
     {
-    }public static void Registrar(FilmesModels item)
+    public static void Registrar(FilmesModels item)
         {
             var geral = GlobalVars.context.Filmes
                 .Where(x => x.Codigo == item.Codigo)
