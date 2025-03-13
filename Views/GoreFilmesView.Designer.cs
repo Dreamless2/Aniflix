@@ -32,11 +32,14 @@
             // 
             // GoreFilmesView
             // 
+            AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1678, 1039);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "GoreFilmesView";
+            Padding = new Padding(0);
+            ShowTitle = false;
             Text = "Gore - Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             ResumeLayout(false);
