@@ -65,7 +65,7 @@ namespace Aniflix.Views
         #endregion
 
         #region "Load"
-        private void FilmesView_Load(object sender, EventArgs e)
+        private void GoreFilmesView_Load(object sender, EventArgs e)
         {
             ChangeData();
             CodigoText.Focus();
