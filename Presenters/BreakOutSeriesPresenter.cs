@@ -4,6 +4,7 @@ using WatchFlix.Models;
 using WatchFlix.Globals;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using Aniflix.Functions;
 
 namespace Aniflix.Presenters
 {
