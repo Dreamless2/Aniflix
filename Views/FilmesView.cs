@@ -46,7 +46,8 @@ namespace Aniflix.Views
 
         private void FilmesView_Load(object sender, EventArgs e)
         {
-
+            ChangeData  ();
+            CodigoText.Focus
         }
 
         private async void CodigoText_Leave(object sender, EventArgs e)
