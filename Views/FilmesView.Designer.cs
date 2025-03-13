@@ -618,6 +618,7 @@
             FaseMCUText.TextAlignment = ContentAlignment.MiddleLeft;
             FaseMCUText.Watermark = "";
             FaseMCUText.WordWarp = false;
+            FaseMCUText.TextChanged += FaseMCUText_TextChanged;
             // 
             // ResumoText
             // 
