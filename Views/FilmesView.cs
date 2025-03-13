@@ -135,5 +135,9 @@ namespace Aniflix.Views
             ChangeData();
         }
 
+        private void CopiarButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
