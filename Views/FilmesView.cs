@@ -20,7 +20,7 @@ namespace Aniflix.Views
         private void ChangeData()
         {
 
-            var services = new FilmesEntities(
+            var entities = new FilmesEntities(
                 titulo: TituloText.Text,
                 audio: AudioBox.SelectedItem?.ToString() ?? string.Empty,
                 sinopse: SinopseText.Text,
@@ -38,7 +38,7 @@ namespace Aniflix.Views
 
             );
 
-            ResumoText.Text = services.GetFormattedText();
+            ResumoText.Text = entities.GetFormattedText();
         }
 
         #endregion
