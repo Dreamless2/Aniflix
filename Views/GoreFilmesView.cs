@@ -228,7 +228,7 @@ namespace Aniflix.Views
         #region "EditarButton"
         private void EditarButton_Click(object sender, EventArgs e)
         {
-            var item = new FilmesModels
+            var item = new GoreFilmesModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -242,7 +242,6 @@ namespace Aniflix.Views
                 Genero = GeneroText.Text,
                 Tags = TagsText.Text,
                 Diretor = DiretorText.Text,
-                MCU = FaseMCUText.Text,
                 Estrelas = EstrelasText.Text,
                 Estudio = EstudioText.Text
             };
@@ -274,7 +273,7 @@ namespace Aniflix.Views
 
                 if (atualizar == DialogResult.Yes)
                 {
-                    FilmesPresenter.Atualizar(item);
+                    GoreFilmesPresenter.Atualizar(item);
                 }
 
                 GlobalFunctions.DoReadOnly(this);
