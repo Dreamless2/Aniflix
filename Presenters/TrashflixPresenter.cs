@@ -1,4 +1,5 @@
-﻿using Aniflix.Models;
+﻿using Aniflix.Functions;
+using Aniflix.Models;
 
 namespace Aniflix.Presenters
 {
