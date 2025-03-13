@@ -545,6 +545,7 @@
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
             TituloOriginalText.WordWarp = false;
+            TituloOriginalText.TextChanged += TituloOriginalText_TextChanged;
             // 
             // TituloAlternativoText
             // 
