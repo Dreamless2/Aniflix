@@ -65,6 +65,7 @@ namespace Aniflix.Views
         }
         #endregion
 
+        #region "Load"
         private void FilmesView_Load(object sender, EventArgs e)
         {
             ChangeData();
@@ -87,9 +88,10 @@ namespace Aniflix.Views
             {
                 MessageBox.Show($"Erro ao verificar: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+        #endregion
 
+        #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
             var services = new FilmesServices();
