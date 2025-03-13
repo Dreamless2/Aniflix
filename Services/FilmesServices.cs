@@ -1,6 +1,5 @@
 ﻿using Sunny.UI;
 using Aniflix.Contracts;
-using Aniflix.Functions;
 using System.Globalization;
 
 namespace Aniflix.Services
@@ -15,7 +14,6 @@ namespace Aniflix.Services
         {
             try
             {
-                //var general = FilmesContracts.MovieDatabase();
                 var movie = await general.GetMovieAsync(movieId);
 
                 if (movie == null)
