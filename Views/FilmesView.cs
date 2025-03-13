@@ -13,6 +13,37 @@ namespace Aniflix.Views
             InitializeComponent();
         }
 
+
+
+        #region "ChangeData"
+        private void ChangeData()
+        {
+
+            var services = new FILMESE(
+                titulo: TituloText.Text,
+                audio: AudioBox.SelectedItem?.ToString() ?? string.Empty,
+                sinopse: SinopseText.Text,
+                tituloOriginal: TituloOriginalText.Text,
+                dataLancamento: DataLancamentoText.Text,
+                tituloAlternativo: TituloAlternativoText.Text,
+                filme: FilmeText.Text,
+                franquia: FranquiaText.Text,
+                genero: GeneroText.Text,
+                tags: TagsText.Text,
+                diretor: DiretorText.Text,
+                mcu: FaseMCUText.Text,
+                estrelas: EstrelasText.Text,
+                estudio: EstudioText.Text
+
+            );
+
+            ResumoText.Text = services.GetFormattedText();
+        }
+
+        #endregion
+
+
+
         private void FilmesView_Load(object sender, EventArgs e)
         {
             //GlobalFunctions.ApplyTheme(this);
