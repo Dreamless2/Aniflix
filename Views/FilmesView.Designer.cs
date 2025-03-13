@@ -594,6 +594,7 @@
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
             EstudioText.WordWarp = false;
+            EstudioText.TextChanged += EstudioText_TextChanged;
             // 
             // FaseMCUText
             // 
