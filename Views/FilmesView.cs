@@ -140,5 +140,129 @@ namespace Aniflix.Views
             ResumoText.SelectAll();
             ResumoText.Copy();
         }
+
+        #region "EditarButton"
+        private void EditarButton_Click(object sender, EventArgs e)
+        {
+            var item = new FilmesModels
+            {
+                Codigo = CodigoText.Text,
+                Titulo = TituloText.Text,
+                Audio = AudioBox.SelectedItem?.ToString() ?? string.Empty,
+                Sinopse = SinopseText.Text,
+                Titulo_Original = TituloOriginalText.Text,
+                Data_Lancamento = DataLancamentoText.Text,
+                Titulo_Alternativo = TituloAlternativoText.Text,
+                Filme = FilmeText.Text,
+                Franquia = FranquiaText.Text,
+                Genero = GeneroText.Text,
+                Tags = TagsText.Text,
+                Diretor = DiretorText.Text,
+                MCU = FaseMCUText.Text,
+                Estrelas = EstrelasText.Text,
+                Estudio = EstudioText.Text
+            };
+
+            if (!GlobalVars.editando)
+            {
+                GlobalVars.editando = true;
+                EditarButton.Text = "Cancelar";
+                GlobalFunctions.UndoReadOnly(this);
+            }
+            else if (EditarButton.Text == "Cancelar")
+            {
+                var cancelar = MessageBox.Show($"Cancelar a edição do filme {item.Titulo} ?", "Filmes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (cancelar == DialogResult.Yes)
+                {
+                    GlobalVars.editando = false;
+                    GlobalFunctions.DoReadOnly(this);
+                    EditarButton.Text = "Editar";
+                }
+                else
+                {
+                    EditarButton.Text = "Salvar";
+                }
+            }
+            else if (EditarButton.Text == "Salvar")
+            {
+                var atualizar = MessageBox.Show($"Atualizar as informações sobre o filme {item.Titulo} ?", "Filmes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (atualizar == DialogResult.Yes)
+                {
+                    FilmesPresenter.Atualizar(item);
+                }
+
+                GlobalFunctions.DoReadOnly(this);
+                EditarButton.Text = "Editar";
+                GlobalVars.editando = false;
+            }
+        }
+        #endregion
+
+        #region "AnteriorButton"
+        private void AnteriorButton_Click(object sender, EventArgs e)
+        {
+            var item = FilmesPresenter.GetPriorRow(GlobalVars.currentId);
+
+            if (item != null)
+            {
+                GlobalVars.currentId = item.Id;
+                CodigoText.Text = item.Codigo;
+                TituloText.Text = item.Titulo;
+                AudioBox.SelectedItem = item.Audio;
+                SinopseText.Text = item.Sinopse;
+                TituloOriginalText.Text = item.Titulo_Original;
+                DataLancamentoText.Text = item.Data_Lancamento;
+                TituloAlternativoText.Text = item.Titulo_Alternativo;
+                FilmeText.Text = item.Filme;
+                FranquiaText.Text = item.Franquia;
+                GeneroText.Text = item.Genero;
+                TagsText.Text = item.Tags;
+                DiretorText.Text = item.Diretor;
+                FaseMCUText.Text = item.MCU;
+                EstrelasText.Text = item.Estrelas;
+                EstudioText.Text = item.Estudio;
+            }
+            else
+            {
+                MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        #endregion
+
+        #region "ProximoButton"
+        private void ProximoButton_Click(object sender, EventArgs e)
+        {
+
+            var item = FilmesPresenter.GetNearRow(GlobalVars.currentId);
+
+            if (item != null)
+            {
+                GlobalVars.currentId = item.Id;
+                CodigoText.Text = item.Codigo;
+                TituloText.Text = item.Titulo;
+                AudioBox.SelectedItem = item.Audio;
+                SinopseText.Text = item.Sinopse;
+                TituloOriginalText.Text = item.Titulo_Original;
+                DataLancamentoText.Text = item.Data_Lancamento;
+                TituloAlternativoText.Text = item.Titulo_Alternativo;
+                FilmeText.Text = item.Filme;
+                FranquiaText.Text = item.Franquia;
+                GeneroText.Text = item.Genero;
+                TagsText.Text = item.Tags;
+                DiretorText.Text = item.Diretor;
+                FaseMCUText.Text = item.MCU;
+                EstrelasText.Text = item.Estrelas;
+                EstudioText.Text = item.Estudio;
+            }
+            else
+            {
+                MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        #endregion
     }
+
+}
 }
