@@ -629,6 +629,7 @@
             TituloText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloText.Watermark = "Título";
             TituloText.WordWarp = false;
+            TituloText.TextChanged += TituloText_TextChanged;
             // 
             // AudioLabel
             // 
@@ -665,6 +666,7 @@
             AudioBox.Text = "Dublado";
             AudioBox.TextAlignment = ContentAlignment.MiddleLeft;
             AudioBox.Watermark = "Áudio";
+            AudioBox.SelectedIndexChanged += AudioBox_SelectedIndexChanged;
             // 
             // CodigoText
             // 
