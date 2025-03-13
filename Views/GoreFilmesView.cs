@@ -183,11 +183,6 @@ namespace Aniflix.Views
             ChangeData();
         }
 
-        private void FaseMCUText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
         #endregion
 
         #region "CopiarButton"
