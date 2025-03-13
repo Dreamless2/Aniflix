@@ -42,7 +42,7 @@ namespace Aniflix.Views
         #region "FillData"
         private void FillData()
         {
-            var item = GoreFilmesPresenter.GetFirstRow();
+            var item = TrashflixPresenter.GetFirstRow();
 
             if (item != null)
             {
@@ -67,14 +67,14 @@ namespace Aniflix.Views
         #endregion
 
         #region "Load"
-        private void GoreFilmesView_Load(object sender, EventArgs e)
+        private void TrashflixView_Load(object sender, EventArgs e)
         {
             ChangeData();
             CodigoText.Focus();
 
             try
             {
-                bool findData = GoreFilmesPresenter.Existe(1);
+                bool findData = TrashflixPresenter.Existe(1);
 
                 if (findData)
                 {
@@ -95,7 +95,7 @@ namespace Aniflix.Views
         #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
-            var services = new GoreFilmesServices();
+            var services = new TrashflixServices();
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
                 UIMessageBox.ShowError("Informe um código válido.", false, 1000);
@@ -198,7 +198,7 @@ namespace Aniflix.Views
         #region "InserirNovoButton"
         private void InserirNovoButton_Click(object sender, EventArgs e)
         {
-            var item = new GoreFilmesModels
+            var item = new TrashflixModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -218,7 +218,7 @@ namespace Aniflix.Views
 
             if (!string.IsNullOrEmpty(item.Codigo))
             {
-                GoreFilmesPresenter.Registrar(item);
+                TrashflixPresenter.Registrar(item);
             }
             else
             {
@@ -230,7 +230,7 @@ namespace Aniflix.Views
         #region "EditarButton"
         private void EditarButton_Click(object sender, EventArgs e)
         {
-            var item = new GoreFilmesModels
+            var item = new TrashflixModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -275,7 +275,7 @@ namespace Aniflix.Views
 
                 if (atualizar == DialogResult.Yes)
                 {
-                    GoreFilmesPresenter.Atualizar(item);
+                    TrashflixPresenter.Atualizar(item);
                 }
 
                 GlobalFunctions.DoReadOnly(this);
@@ -288,7 +288,7 @@ namespace Aniflix.Views
         #region "AnteriorButton"
         private void AnteriorButton_Click(object sender, EventArgs e)
         {
-            var item = GoreFilmesPresenter.GetPriorRow(GlobalVars.currentId);
+            var item = TrashflixPresenter.GetPriorRow(GlobalVars.currentId);
 
             if (item != null)
             {
@@ -319,7 +319,7 @@ namespace Aniflix.Views
         private void ProximoButton_Click(object sender, EventArgs e)
         {
 
-            var item = GoreFilmesPresenter.GetNearRow(GlobalVars.currentId);
+            var item = TrashflixPresenter.GetNearRow(GlobalVars.currentId);
 
             if (item != null)
             {
