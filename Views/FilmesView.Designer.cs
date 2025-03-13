@@ -566,6 +566,7 @@
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
             EstrelasText.Watermark = "Estrelas";
             EstrelasText.WordWarp = false;
+            EstrelasText.TextChanged += EstrelasText_TextChanged;
             // 
             // EstudioText
             // 
