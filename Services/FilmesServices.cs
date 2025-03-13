@@ -62,7 +62,7 @@ namespace Aniflix.Services
 
                         string lowerGenre = genre.ToLower();
 
-                        if (specialWords.TryGetValue(lowerGenre, out string value))
+                        if (specialWords.TryGetValue(lowerGenre, out string? value))
                         {
                             foreach (var tag in value.Split(' '))
                             {
