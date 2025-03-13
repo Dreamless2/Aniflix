@@ -130,6 +130,7 @@
             AudioBox.Text = "Dublado";
             AudioBox.TextAlignment = ContentAlignment.MiddleLeft;
             AudioBox.Watermark = "Áudio";
+            AudioBox.SelectedIndexChanged += AudioBox_SelectedIndexChanged;
             // 
             // TituloText
             // 
