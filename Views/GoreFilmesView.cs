@@ -40,7 +40,7 @@ namespace Aniflix.Views
         #region "FillData"
         private void FillData()
         {
-            var filmes = FilmesPresenter.GetFirstRow();
+            var filmes = GoreFilmesPresenter.GetFirstRow();
 
             if (filmes != null)
             {
@@ -72,7 +72,7 @@ namespace Aniflix.Views
 
             try
             {
-                bool findData = FilmesPresenter.Existe(1);
+                bool findData = GoreFilmesPresenter.Existe(1);
 
                 if (findData)
                 {
