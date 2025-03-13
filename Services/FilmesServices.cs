@@ -92,7 +92,7 @@ namespace Aniflix.Services
 
                 if (movie.Credits?.Cast != null)
                 {
-                    estrelasText.Text = string.Join(" ", StringExtensions.RemoveAccents(movie.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")))));
+                    estrelasText.Text = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(string.Join(" ", movie.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")))));
                 }
 
                 if (movie.ProductionCompanies != null)
