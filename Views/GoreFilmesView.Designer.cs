@@ -160,6 +160,7 @@
             CopiarButton.Text = "Copiar";
             CopiarButton.TextAlign = ContentAlignment.BottomLeft;
             CopiarButton.UseVisualStyleBackColor = false;
+            CopiarButton.Click += CopiarButton_Click;
             // 
             // SinopseText
             // 
