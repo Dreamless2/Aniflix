@@ -6,9 +6,9 @@ using System.Collections.Generic;
 
 namespace Aniflix.Entities
 {
-    public class FilmesEntities(       string titulo, string franquia, string sinopse = null, string tituloOriginal = null,
-               string dataLancamento = null, string tituloAlternativo = null, string filme = null, string genero = null, string tags = null,
-               string diretor = null, string mcu = null, string estrelas = null, string estudio = null, string audio = null)
+    public class FilmesEntities(       string titulo, string franquia, string sinopse = null?, string tituloOriginal = null?,
+               string dataLancamento = null?, string tituloAlternativo = null?, string filme = null?, string genero = null?, string tags = null?,
+               string diretor = null?, string mcu = null?, string estrelas = null?, string estudio = null?, string audio = null?)
     {
         public string Titulo { get; private set; } = titulo;
         public string Audio { get; private set; } = audio;
