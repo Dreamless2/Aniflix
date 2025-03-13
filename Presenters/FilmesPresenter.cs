@@ -10,7 +10,7 @@ namespace Aniflix.Presenters
 {
     public class FilmesPresenter
     {
-    public static void Registrar(FilmesModels item)
+        public static void Registrar(FilmesModels item)
         {
             var geral = GlobalVars.context.Filmes
                 .Where(x => x.Codigo == item.Codigo)
@@ -107,3 +107,4 @@ namespace Aniflix.Presenters
             return GlobalVars.context.Filmes.Any(x => x.Id == id);
         }
     }
+}
