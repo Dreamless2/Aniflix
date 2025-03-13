@@ -651,6 +651,7 @@
             SinopseText.Style = Sunny.UI.UIStyle.Custom;
             SinopseText.TabIndex = 46;
             SinopseText.TextAlignment = ContentAlignment.TopLeft;
+            SinopseText.TextChanged += SinopseText_TextChanged;
             // 
             // CopiarButton
             // 
