@@ -16,23 +16,7 @@ namespace Aniflix.Contracts
         };
 
         public async Task<Movie?> GetMovieAsync(string movieId)
-            => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | MovieMethods.AlternativeTitles);
-
-
-
-
-
-        public static TMDbClient MovieDatabase()
-        {
-            var client = new TMDbClient("d1f15ac0632492b3c3a940032ad6b95b")
-            {
-                DefaultLanguage = "pt-BR",
-                DefaultCountry = "BR",
-                Timeout = TimeSpan.FromSeconds(600)
-            };
-
-            return client;
-        }
+            => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | MovieMethods.AlternativeTitles);      
 
     }
 }
