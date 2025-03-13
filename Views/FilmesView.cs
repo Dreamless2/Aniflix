@@ -72,7 +72,7 @@ namespace Aniflix.Views
 
         private void AudioBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            ChangeData();
         }
     }
 }
