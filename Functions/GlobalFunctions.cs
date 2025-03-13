@@ -146,6 +146,26 @@ namespace Aniflix.Functions
             }
         }
 
+        public static void DoReadOnly(Control control)
+        {
+            foreach (Control c in control.Controls)
+            {
+                if (c.Controls != null && c.Controls.Count > 0)
+                {
+                    DoReadOnly(c);
+                }
+                else if (c is UITextBox box)
+                {
+                    box.ReadOnly = true;
+                }
+                else if (c is UIComboBox comboBox)
+                {
+                    comboBox.Enabled = false;
+                }
+            }
+        }
+
+
         public static void UndoReadOnly(Control control)
         {
             foreach (Control c in control.Controls)
