@@ -4,6 +4,7 @@ using Aniflix.Services;
 using Aniflix.Entities;
 using Aniflix.Functions;
 using FontAwesome.Sharp.Material;
+using Aniflix.Presenters;
 
 namespace Aniflix.Views
 {
