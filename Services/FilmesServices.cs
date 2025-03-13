@@ -17,9 +17,7 @@ namespace Aniflix.Services
             {
                 var movie = await general.GetMovieAsync(movieId);
 
-
-                var filmeSemAcentos = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", "")))); ;
-
+                var filmeSemAcentos = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(movie!.Title.Replace(" ", "")))); ;
                 var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
 
 
