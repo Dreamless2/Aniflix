@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WatchFlix.Models
+namespace Aniflix.Models
 {
     [Table("animes_filmes")]
     public class AnimesFilmesModels
