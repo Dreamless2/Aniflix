@@ -16,10 +16,10 @@ namespace Aniflix.Services
             try
             {
                 //var general = FilmesContracts.MovieDatabase();
-                var movieTask = general.GetMovieAsync(movieId);             
+                var movieTask = general.GetMovieAsync(movieId);
 
                 var movie = movieTask.Result;
-             
+
                 if (movie == null)
                 {
                     MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
