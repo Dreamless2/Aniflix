@@ -75,8 +75,26 @@ namespace Aniflix.Views
         private void FilmesView_Load(object sender, EventArgs e)
         {
             ChangeData();
-
             CodigoText.Focus();
+
+            try
+            {
+                bool findData = FilmesPresenter.Existe(1);
+
+                if (findData)
+                {
+                    FillData();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum filme cadastrado.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao verificar: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private async void CodigoText_Leave(object sender, EventArgs e)
