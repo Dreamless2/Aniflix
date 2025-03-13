@@ -33,7 +33,7 @@
             // GoreFilmesView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1292, 887);
+            ClientSize = new Size(1678, 1039);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "GoreFilmesView";
