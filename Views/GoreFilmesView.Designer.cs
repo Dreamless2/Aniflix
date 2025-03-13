@@ -458,6 +458,7 @@
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
             TagsText.Watermark = "Tags";
             TagsText.WordWarp = false;
+            TagsText.TextChanged += TagsText_TextChanged;
             // 
             // TituloAlternativoLabel
             // 
@@ -603,6 +604,7 @@
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
             FilmeText.Watermark = "Filme";
             FilmeText.WordWarp = false;
+            FilmeText.TextChanged += FilmeText_TextChanged;
             // 
             // DataLancamentoLabel
             // 
