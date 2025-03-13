@@ -236,6 +236,7 @@
             DataLancamentoText.TextAlignment = ContentAlignment.MiddleLeft;
             DataLancamentoText.Watermark = "Data de Lançamento";
             DataLancamentoText.WordWarp = false;
+            DataLancamentoText.TextChanged += DataLancamentoText_TextChanged;
             // 
             // DataLancamentoLabel
             // 
