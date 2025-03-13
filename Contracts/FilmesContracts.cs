@@ -1,7 +1,4 @@
-﻿using Sunny.UI;
-using TMDbLib.Client;
-using System.Text.Json;
-using Aniflix.Functions;
+﻿using TMDbLib.Client;
 using TMDbLib.Objects.Movies;
 
 namespace Aniflix.Contracts
