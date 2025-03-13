@@ -74,5 +74,66 @@ namespace Aniflix.Views
         {
             ChangeData();
         }
+
+        private void SinopseText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TituloOriginalText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void DataLancamentoText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TituloAlternativoText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TagsText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void FilmeText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void FranquiaText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void GeneroText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void DiretorText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void EstrelasText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void EstudioText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void FaseMCUText_EditValueChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
     }
 }
