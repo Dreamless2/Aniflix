@@ -44,11 +44,9 @@ namespace Aniflix.Views
 
         #endregion
 
-
-
         private void FilmesView_Load(object sender, EventArgs e)
         {
-            //GlobalFunctions.ApplyTheme(this);
+
         }
 
         private async void CodigoText_Leave(object sender, EventArgs e)
