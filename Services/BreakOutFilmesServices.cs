@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aniflix.Services
 {
-    class BreakOutFilmesServices
+    public class BreakOutFilmesServices
     {
     }
 }
