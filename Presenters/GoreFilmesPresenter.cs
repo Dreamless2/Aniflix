@@ -1,9 +1,7 @@
-﻿using System.Linq;
-using WatchFlix.Models;
-using WatchFlix.Globals;
-using System.Windows.Forms;
+﻿using Aniflix.Models;
+using Aniflix.Functions;
 
-namespace WatchFlix.Presenter
+namespace Aniflix.Presenters
 {
     public static class GoreFilmesPresenter
     {
