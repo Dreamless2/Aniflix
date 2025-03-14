@@ -205,7 +205,7 @@ namespace Aniflix.Views
         #region "InserirNovoButton"
         private void InserirNovoButton_Click(object sender, EventArgs e)
         {
-            var item = new GoreFilmesModels
+            var item = new BreakOutFilmesModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -225,7 +225,7 @@ namespace Aniflix.Views
 
             if (!string.IsNullOrEmpty(item.Codigo))
             {
-                GoreFilmesPresenter.Registrar(item);
+                BreakOutFilmesPresenter.Registrar(item);
             }
             else
             {
@@ -237,7 +237,7 @@ namespace Aniflix.Views
         #region "EditarButton"
         private void EditarButton_Click(object sender, EventArgs e)
         {
-            var item = new GoreFilmesModels
+            var item = new BreakOutFilmesModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -282,7 +282,7 @@ namespace Aniflix.Views
 
                 if (atualizar == DialogResult.Yes)
                 {
-                    GoreFilmesPresenter.Atualizar(item);
+                    BreakOutFilmesPresenter.Atualizar(item);
                 }
 
                 GlobalFunctions.DoReadOnly(this);
