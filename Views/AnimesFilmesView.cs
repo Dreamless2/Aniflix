@@ -1,9 +1,9 @@
 ﻿using Sunny.UI;
-using Aniflix.Entities;
-using Aniflix.Functions;
 using Aniflix.Models;
-using Aniflix.Presenters;
+using Aniflix.Entities;
 using Aniflix.Services;
+using Aniflix.Functions;
+using Aniflix.Presenters;
 
 namespace Aniflix.Views
 {
