@@ -10,7 +10,8 @@ namespace Aniflix.Services
         private readonly TMDBContracts general = new();
         private readonly DEEPLContracts deepl = new();
         public async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
-                                    UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox serieText, UITextBox tagsText, UITextBox generoText,
+                                    UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox paisOrigem, UITextBox idiomaOriginal,
+                                    UITextBox serieText, UITextBox criadores, UITextBox tagsText, UITextBox generoText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
         {
             try
