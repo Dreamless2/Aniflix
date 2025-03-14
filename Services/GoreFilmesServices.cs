@@ -39,13 +39,7 @@ namespace Aniflix.Services
 
                 if (!string.IsNullOrWhiteSpace(movie.Title))
                 {
-                    var filmeSemAcentos = StringExtensions.RemoveAccents(
-                        StringExtensions.StripPunctuation(
-                            StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", ""))
-                        )
-                    );
-
-                    var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
+                    filmes
 
                     // Verificar se o título contém acentuação
                     bool temAcentos = StringExtensions.HasAccents(movie.Title);
