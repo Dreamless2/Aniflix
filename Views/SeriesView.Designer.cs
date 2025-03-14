@@ -599,7 +599,7 @@
             FilmeText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FilmeText.ScrollBarStyleInherited = false;
             FilmeText.ShowText = false;
-            FilmeText.Size = new Size(294, 29);
+            FilmeText.Size = new Size(883, 29);
             FilmeText.Style = Sunny.UI.UIStyle.Custom;
             FilmeText.TabIndex = 70;
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -767,7 +767,7 @@
             AutoresLabel.AutoSize = true;
             AutoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
             AutoresLabel.ForeColor = Color.Black;
-            AutoresLabel.Location = new Point(679, 509);
+            AutoresLabel.Location = new Point(763, 733);
             AutoresLabel.Name = "AutoresLabel";
             AutoresLabel.Size = new Size(65, 20);
             AutoresLabel.TabIndex = 91;
@@ -789,7 +789,7 @@
             CriadoresLabel.AutoSize = true;
             CriadoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
             CriadoresLabel.ForeColor = Color.Black;
-            CriadoresLabel.Location = new Point(626, 569);
+            CriadoresLabel.Location = new Point(512, 735);
             CriadoresLabel.Name = "CriadoresLabel";
             CriadoresLabel.Size = new Size(77, 20);
             CriadoresLabel.TabIndex = 93;
