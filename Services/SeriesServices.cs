@@ -18,6 +18,8 @@ namespace Aniflix.Services
             {
                 var tv = await general.GetTvShowAsync(tvId);
 
+                var country = await deepl.Translate(tv.OriginCountry, CultureInfo.CurrentCulture.Name);
+
                 if (tv == null || string.IsNullOrWhiteSpace(tv.Name))
                 {
                     MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
