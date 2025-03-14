@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Aniflix.Contracts
 {
-    class DEEPLContracts
+    public class DEEPLContracts
     {
+
     }
 }
