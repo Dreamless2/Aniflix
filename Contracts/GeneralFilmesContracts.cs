@@ -1,6 +1,6 @@
 ﻿using TMDbLib.Client;
 using TMDbLib.Objects.Movies;
-using TMDbLib.Objects.
+using TMDbLib.Objects.TvShows;
 
 namespace Aniflix.Contracts
 {
@@ -16,7 +16,7 @@ namespace Aniflix.Contracts
         public async Task<Movie?> GetMovieAsync(string movieId)
             => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | MovieMethods.AlternativeTitles);
 
-        public async Task<Tv?> SearchMovieAsync(string movieName)
+        public async Task<TvShow?> SearchMovieAsync(string movieName)
             => await _client.SearchMovieAsync(movieName);
     }
 }
