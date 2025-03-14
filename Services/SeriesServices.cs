@@ -16,9 +16,9 @@ namespace Aniflix.Services
         {
             try
             {
-                var movie = await general.GetMovieAsync(movieId);
+                var tv = await general.GetMovieAsync(movieId);
 
-                if (movie == null || string.IsNullOrWhiteSpace(movie.Title))
+                if (tv == null || string.IsNullOrWhiteSpace(movie.Title))
                 {
                     MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
