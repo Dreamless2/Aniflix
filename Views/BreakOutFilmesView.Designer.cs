@@ -562,6 +562,7 @@
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
             FilmeText.Watermark = "Filme";
             FilmeText.WordWarp = false;
+            FilmeText.TextChanged += FilmeText_TextChanged;
             // 
             // DataLancamentoLabel
             // 
