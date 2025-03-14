@@ -63,11 +63,6 @@ namespace Aniflix.Presenters
 
         }
 
-        public static BreakOutFilmesModels ObterUltimo()
-        {
-            return GlobalVars.context.Breakout_Filmes.LastOrDefault();
-        }
-
         public static BreakOutFilmesModels GetNearRow(string codigoAtual)
         {
             var proximo = GlobalVars.context.Breakout_Filmes
