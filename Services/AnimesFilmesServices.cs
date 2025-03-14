@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Aniflix.Services
 {
-    public class AnimesFilmes
+    public class AnimesFilmesServices
     {
         private readonly FilmesContracts general = new();
 
