@@ -8,6 +8,7 @@ namespace Aniflix.Services
     public class SeriesServices
     {
         private readonly TMDBContracts general = new();
+        private readonly DEEPLContracts deepl = new();
         public async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox serieText, UITextBox tagsText, UITextBox generoText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
