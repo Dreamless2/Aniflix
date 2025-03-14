@@ -15,5 +15,7 @@ namespace Aniflix.Contracts
         public async Task<Movie?> GetMovieAsync(string movieId)
             => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | MovieMethods.AlternativeTitles);
 
+        public async Task<SearchContainer<SearchMovie>> SearchMovieAsync(string movieName)
+            => await _client.SearchMovieAsync(movieName);
     }
 }
