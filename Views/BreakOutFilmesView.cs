@@ -81,7 +81,7 @@ namespace Aniflix.Views
 
             try
             {
-                bool findData = GoreFilmesPresenter.Existe(1);
+                bool findData = BreakOutFilmesPresenter.Existe(1);
 
                 if (findData)
                 {
