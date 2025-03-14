@@ -19,7 +19,7 @@ namespace Aniflix.Services
                 var series = await general.GetTvShowAsync(tvId);
 
                 var country = await deepl.Translate(series!.ProductionCountries[0].Name);
-                var language = await deepl.Translate(series.OriginalLanguage);
+                var language = await deepl.Translate(series.SpokenLanguages[0].Name);
 
                 if (series == null || string.IsNullOrWhiteSpace(series.Name))
                 {
