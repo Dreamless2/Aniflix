@@ -4,15 +4,15 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Drawing;
+using Aniflix.Models;
+using Aniflix.Entities;
+using Aniflix.Services;
+using Aniflix.Functions;
+using Aniflix.Presenters;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using Aniflix.Entities;
-using Aniflix.Functions;
-using Aniflix.Models;
-using Aniflix.Presenters;
-using Aniflix.Services;
 
 namespace Aniflix.Views
 {
