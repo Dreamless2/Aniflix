@@ -63,6 +63,7 @@ namespace Aniflix.Services
                 if (movie.Genres?.Count > 2)
                 {
                     var hashtags = new HashSet<string>();
+
                     foreach (var genre in movie.Genres.Take(3))
                     {
                         if (!string.IsNullOrEmpty(genre?.Name))
@@ -75,15 +76,14 @@ namespace Aniflix.Services
                     static void FormatGenre(string genre, HashSet<string> hashtags)
                     {
                         Dictionary<string, string> specialWords = new()
-                    {
-
-                        { "ficção científica", "ficcaocientifica ficçãocientífica" },
-                        { "romântico", "romantico romântico" },
-                        { "romântica", "romantica romântica" },
-                        { "comédia", "comedia comédia" },
-                        { "mistério", "misterio mistério" },
-                        { "ação", "acao ação" }
-                    };
+                        {
+                            { "ficção científica", "ficçãocientífica ficcaocientifica" },
+                            { "romântico", "romântico romantico" },
+                            { "romântica", "romântica romantica" },
+                            { "comédia", "comédia comedia" },
+                            { "mistério", "mistério misterio" },
+                            { "ação", "ação acao" }
+                        };
 
                         string lowerGenre = genre.ToLower();
 
@@ -105,8 +105,10 @@ namespace Aniflix.Services
                     FormatGenre(movie.Genres[0].Name, hashtags);
                     FormatGenre(movie.Genres[1].Name, hashtags);
                     FormatGenre(movie.Genres[2].Name, hashtags);
-                    generoText.Text = string.Join(" ", hashtags);
+
+                    generoText.Text = string.Join(" ", hashtags.OrderBy(tag => tag.Contains("ç") ? 0 : 1));
                 }
+
 
                 if (movie.Credits?.Crew != null)
                 {
