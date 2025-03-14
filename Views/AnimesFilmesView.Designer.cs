@@ -109,6 +109,7 @@
             AnteriorButton.Text = "Anterior";
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
             AnteriorButton.UseVisualStyleBackColor = false;
+            AnteriorButton.Click += AnteriorButton_Click;
             // 
             // EditarButton
             // 
@@ -126,6 +127,7 @@
             EditarButton.Text = "Editar ";
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = false;
+            EditarButton.Click += EditarButton_Click;
             // 
             // InserirNovoButton
             // 
