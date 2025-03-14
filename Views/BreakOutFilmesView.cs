@@ -326,7 +326,7 @@ namespace Aniflix.Views
         private void ProximoButton_Click(object sender, EventArgs e)
         {
 
-            var item = GoreFilmesPresenter.GetNearRow(GlobalVars.currentId);
+            var item = BreakOutFilmesPresenter.GetNearRow(GlobalVars.currentId);
 
             if (item != null)
             {
