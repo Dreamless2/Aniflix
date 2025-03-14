@@ -815,7 +815,7 @@
             uiTextBox1.ScrollBarColor = Color.FromArgb(0, 150, 136);
             uiTextBox1.ScrollBarStyleInherited = false;
             uiTextBox1.ShowText = false;
-            uiTextBox1.Size = new Size(440, 29);
+            uiTextBox1.Size = new Size(439, 29);
             uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox1.TabIndex = 94;
             uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
