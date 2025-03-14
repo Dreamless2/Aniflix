@@ -5,7 +5,7 @@ using TMDbLib.Objects.TvShows;
 
 namespace Aniflix.Contracts
 {
-    public class GeneralContracts
+    public class TMDBContracts
     {
         private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY)
         {
