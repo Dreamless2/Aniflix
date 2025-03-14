@@ -49,7 +49,7 @@ namespace Aniflix.Views
         #region "FillData"
         private void FillData()
         {
-            var filmes = FilmesPresenter.GetFirstRow();
+            var filmes = AnimesFilmesPresenter.GetFirstRow();
 
             if (filmes != null)
             {
