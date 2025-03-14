@@ -407,7 +407,7 @@
             GeneroText.Style = Sunny.UI.UIStyle.Custom;
             GeneroText.TabIndex = 71;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
-            GeneroText.Watermark = "Gênero";
+            GeneroText.Watermark = "Autores";
             GeneroText.WordWarp = false;
             // 
             // FranquiaText
@@ -604,7 +604,7 @@
             FilmeText.Style = Sunny.UI.UIStyle.Custom;
             FilmeText.TabIndex = 70;
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
-            FilmeText.Watermark = "Filme";
+            FilmeText.Watermark = "Série";
             FilmeText.WordWarp = false;
             // 
             // DataLancamentoLabel
