@@ -68,7 +68,7 @@
             PaisOrigemText = new Sunny.UI.UILabel();
             uiLabel2 = new Sunny.UI.UILabel();
             IdiomaOriginalText = new Sunny.UI.UILabel();
-            uiLabel4 = new Sunny.UI.UILabel();
+            CriadoresLabel = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
             // DadosLabel
@@ -782,23 +782,23 @@
             IdiomaOriginalText.TabIndex = 92;
             IdiomaOriginalText.Text = "Idioma Original";
             // 
-            // uiLabel4
+            // CriadoresLabel
             // 
-            uiLabel4.AutoSize = true;
-            uiLabel4.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel4.ForeColor = Color.Black;
-            uiLabel4.Location = new Point(626, 569);
-            uiLabel4.Name = "uiLabel4";
-            uiLabel4.Size = new Size(63, 20);
-            uiLabel4.TabIndex = 93;
-            uiLabel4.Text = "Gênero";
+            CriadoresLabel.AutoSize = true;
+            CriadoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            CriadoresLabel.ForeColor = Color.Black;
+            CriadoresLabel.Location = new Point(626, 569);
+            CriadoresLabel.Name = "CriadoresLabel";
+            CriadoresLabel.Size = new Size(77, 20);
+            CriadoresLabel.TabIndex = 93;
+            CriadoresLabel.Text = "Criadores";
             // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
-            Controls.Add(uiLabel4);
+            Controls.Add(CriadoresLabel);
             Controls.Add(IdiomaOriginalText);
             Controls.Add(uiLabel2);
             Controls.Add(PaisOrigemText);
@@ -892,6 +892,6 @@
         private Sunny.UI.UILabel PaisOrigemText;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UILabel IdiomaOriginalText;
-        private Sunny.UI.UILabel uiLabel4;
+        private Sunny.UI.UILabel CriadoresLabel;
     }
 }
