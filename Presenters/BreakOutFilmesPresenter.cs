@@ -57,7 +57,10 @@ namespace Aniflix.Presenters
 
         public static BreakOutFilmesModels GetFirstRow()
         {
-            return GlobalVars.context.Breakout_Filmes.FirstOrDefault();
+            return GlobalVars.context.Filmes
+                .OrderBy(x => x.Id)
+                .FirstOrDefault();
+
         }
 
         public static BreakOutFilmesModels ObterUltimo()
