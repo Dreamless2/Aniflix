@@ -17,6 +17,11 @@ namespace Aniflix.Contracts
         private readonly string _sourceLanguage = "EN";
         private readonly string _targetLanguage = "PT-BR";
 
+        public DEEPLContracts()
+        {
+
+        }
+
 
 
     }
