@@ -254,6 +254,7 @@
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
             EstrelasText.Watermark = "Estrelas";
             EstrelasText.WordWarp = false;
+            EstrelasText.TextChanged += EstrelasText_TextChanged;
             // 
             // EstudioText
             // 
@@ -281,6 +282,7 @@
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
             EstudioText.WordWarp = false;
+            EstudioText.TextChanged += EstudioText_TextChanged;
             // 
             // DiretorLabel
             // 
