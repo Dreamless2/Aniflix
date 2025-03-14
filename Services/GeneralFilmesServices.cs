@@ -104,9 +104,9 @@ namespace Aniflix.Services
                     }
 
                     // Processa os gêneros na ordem desejada
-                    FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(movie.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(movie.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(movie.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
 
                     // Junta as hashtags com prioridade primeiro
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
