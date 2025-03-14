@@ -1,13 +1,4 @@
-﻿using System;
-using Sunny.UI;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Drawing;
-using System.Windows.Forms;
-using System.ComponentModel;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+﻿using Sunny.UI;
 using Aniflix.Entities;
 using Aniflix.Functions;
 using Aniflix.Models;
