@@ -778,7 +778,7 @@
             IdiomaOriginalLabel.AutoSize = true;
             IdiomaOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
             IdiomaOriginalLabel.ForeColor = Color.Black;
-            IdiomaOriginalLabel.Location = new Point(438, 524);
+            IdiomaOriginalLabel.Location = new Point(475, 405);
             IdiomaOriginalLabel.Name = "IdiomaOriginalLabel";
             IdiomaOriginalLabel.Size = new Size(114, 20);
             IdiomaOriginalLabel.TabIndex = 92;
