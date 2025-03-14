@@ -55,7 +55,7 @@ namespace Aniflix.Services
                 sinopseText.Text = tv.Overview ?? "--";
                 tituloOriginalText.Text = tv.OriginalName ?? "--";
                 dataLancamentoText.Text = tv.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
-                tituloAlternativoText.Text = tv.AlternativeTitles..FirstOrDefault()?.Title ?? "--";
+                tituloAlternativoText.Text = tv.AlternativeTitles.Results[0].Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
                     tagsText.Text = $"#Filme #Filme{releaseDate.Year}";
