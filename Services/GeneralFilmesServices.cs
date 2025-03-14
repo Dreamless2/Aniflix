@@ -103,9 +103,9 @@ namespace Aniflix.Services
                         }
                     }
 
-                    FormatGenre(movie.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(movie.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
-                    //FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(movie.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
 
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
