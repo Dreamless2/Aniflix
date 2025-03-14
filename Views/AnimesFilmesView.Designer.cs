@@ -179,6 +179,7 @@
             SinopseText.Style = Sunny.UI.UIStyle.Custom;
             SinopseText.TabIndex = 83;
             SinopseText.TextAlignment = ContentAlignment.TopLeft;
+            SinopseText.TextChanged += SinopseText_TextChanged;
             // 
             // ResumoText
             // 
@@ -503,6 +504,7 @@
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
             TituloOriginalText.WordWarp = false;
+            TituloOriginalText.TextChanged += TituloOriginalText_TextChanged;
             // 
             // TituloAlternativoText
             // 
