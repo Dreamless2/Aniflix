@@ -65,6 +65,10 @@
             AudioBox = new Sunny.UI.UIComboBox();
             CodigoText = new Sunny.UI.UITextBox();
             CodigoFilmeLabel = new Sunny.UI.UILabel();
+            uiLabel1 = new Sunny.UI.UILabel();
+            uiLabel2 = new Sunny.UI.UILabel();
+            uiLabel3 = new Sunny.UI.UILabel();
+            uiLabel4 = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
             // DadosLabel
@@ -745,11 +749,59 @@
             CodigoFilmeLabel.TabIndex = 53;
             CodigoFilmeLabel.Text = "Código do Filme";
             // 
+            // uiLabel1
+            // 
+            uiLabel1.AutoSize = true;
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel1.ForeColor = Color.Black;
+            uiLabel1.Location = new Point(376, 491);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(63, 20);
+            uiLabel1.TabIndex = 90;
+            uiLabel1.Text = "Gênero";
+            // 
+            // uiLabel2
+            // 
+            uiLabel2.AutoSize = true;
+            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel2.ForeColor = Color.Black;
+            uiLabel2.Location = new Point(679, 509);
+            uiLabel2.Name = "uiLabel2";
+            uiLabel2.Size = new Size(63, 20);
+            uiLabel2.TabIndex = 91;
+            uiLabel2.Text = "Gênero";
+            // 
+            // uiLabel3
+            // 
+            uiLabel3.AutoSize = true;
+            uiLabel3.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel3.ForeColor = Color.Black;
+            uiLabel3.Location = new Point(435, 608);
+            uiLabel3.Name = "uiLabel3";
+            uiLabel3.Size = new Size(63, 20);
+            uiLabel3.TabIndex = 92;
+            uiLabel3.Text = "Gênero";
+            // 
+            // uiLabel4
+            // 
+            uiLabel4.AutoSize = true;
+            uiLabel4.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel4.ForeColor = Color.Black;
+            uiLabel4.Location = new Point(626, 569);
+            uiLabel4.Name = "uiLabel4";
+            uiLabel4.Size = new Size(63, 20);
+            uiLabel4.TabIndex = 93;
+            uiLabel4.Text = "Gênero";
+            // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
+            Controls.Add(uiLabel4);
+            Controls.Add(uiLabel3);
+            Controls.Add(uiLabel2);
+            Controls.Add(uiLabel1);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
             Controls.Add(FaseMCULabel);
@@ -837,5 +889,9 @@
         private Sunny.UI.UIComboBox AudioBox;
         private Sunny.UI.UITextBox CodigoText;
         private Sunny.UI.UILabel CodigoFilmeLabel;
+        private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UILabel uiLabel2;
+        private Sunny.UI.UILabel uiLabel3;
+        private Sunny.UI.UILabel uiLabel4;
     }
 }
