@@ -12,14 +12,13 @@ namespace Aniflix.Services
         public async Task GivenData(string tvId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox paisOrigem, UITextBox idiomaOriginal,
                                     UITextBox serieText, UITextBox criadoresText, UITextBox generoText, UITextBox tagsText,
-                                    UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
+                                    UITextBox estrelasText, UITextBox estudioText)
         {
             try
             {
                 var series = await general.GetTvShowAsync(tvId);
 
                 var country = await deepl.Translate(series!.ProductionCountries[0].Name);
-
 
                 if (series == null || string.IsNullOrWhiteSpace(series.Name))
                 {
