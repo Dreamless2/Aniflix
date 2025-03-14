@@ -75,7 +75,7 @@ namespace Aniflix.Presenters
             }
             catch
             {
-                return null;
+                return null!;
             }
         }
 
@@ -85,7 +85,7 @@ namespace Aniflix.Presenters
             {
                 if (id == 0)
                 {
-                    return null;
+                    return null!;
                 }
 
                 return GlobalVars.context.Breakout_Filmes
@@ -95,7 +95,7 @@ namespace Aniflix.Presenters
             }
             catch
             {
-                return null;
+                return null!;
             }
         }
 
