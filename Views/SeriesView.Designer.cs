@@ -420,7 +420,7 @@
             FranquiaText.ButtonStyleInherited = false;
             FranquiaText.FillColor2 = Color.FromArgb(238, 248, 248);
             FranquiaText.Font = new Font("Microsoft Sans Serif", 12F);
-            FranquiaText.Location = new Point(66, 667);
+            FranquiaText.Location = new Point(132, 744);
             FranquiaText.Margin = new Padding(4, 5, 4, 5);
             FranquiaText.MinimumSize = new Size(1, 16);
             FranquiaText.Name = "FranquiaText";
