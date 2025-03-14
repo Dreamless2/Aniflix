@@ -9,16 +9,16 @@ namespace Aniflix.Services
     {
         private readonly TMDBContracts general = new();
         private readonly DEEPLContracts deepl = new();
-        public async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
+        public async Task GivenData(string tvId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox paisOrigem, UITextBox idiomaOriginal,
                                     UITextBox serieText, UITextBox criadores, UITextBox generoText, UITextBox tagsText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
         {
             try
             {
-                var tv = await general.GetMovieAsync(movieId);
+                var tv = await general.GetTvShowAsync(tvId);
 
-                if (tv == null || string.IsNullOrWhiteSpace(movie.Title))
+                if (tv == null || string.IsNullOrWhiteSpace(tv.Title))
                 {
                     MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -26,11 +26,11 @@ namespace Aniflix.Services
 
                 var filmeSemAcentos = StringExtensions.RemoveAccents(
                     StringExtensions.StripPunctuation(
-                        StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", ""))
+                        StringExtensions.RemoveDiacritics(tv.Title.Replace(" ", ""))
                     )
                 );
 
-                var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
+                var filmesAcentos = StringExtensions.StripPunctuation(tv.Title.Replace(" ", ""));
 
                 if (string.IsNullOrEmpty(filmeSemAcentos) || string.IsNullOrEmpty(filmesAcentos))
                 {
@@ -38,9 +38,9 @@ namespace Aniflix.Services
                     return;
                 }
 
-                if (!string.IsNullOrWhiteSpace(movie.Title))
+                if (!string.IsNullOrWhiteSpace(tv.Title))
                 {
-                    bool temAcentos = StringExtensions.HasAccents(movie.Title);
+                    bool temAcentos = StringExtensions.HasAccents(tv.Title);
 
                     serieText.Text = temAcentos
                         ? "#" + filmesAcentos + " " + "#" + filmeSemAcentos
@@ -51,18 +51,18 @@ namespace Aniflix.Services
                     serieText.Text = "--";
                 }
 
-                tituloText.Text = movie.Title ?? "--";
-                sinopseText.Text = movie.Overview ?? "--";
-                tituloOriginalText.Text = movie.OriginalTitle ?? "--";
-                dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
-                tituloAlternativoText.Text = movie.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
+                tituloText.Text = tv.Title ?? "--";
+                sinopseText.Text = tv.Overview ?? "--";
+                tituloOriginalText.Text = tv.OriginalTitle ?? "--";
+                dataLancamentoText.Text = tv.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
+                tituloAlternativoText.Text = tv.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
                     tagsText.Text = $"#Filme #Filme{releaseDate.Year}";
                 }
 
 
-                if (movie.Genres?.Count > 2)
+                if (tv.Genres?.Count > 2)
                 {
                     var hashtagsPrincipais = new HashSet<string>();
                     var outrasHashtags = new HashSet<string>();
@@ -96,26 +96,26 @@ namespace Aniflix.Services
                         }
                     }
 
-                    FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(movie.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(movie.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(tv.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(tv.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(tv.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
 
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
 
-                if (movie.Credits?.Crew != null)
+                if (tv.Credits?.Crew != null)
                 {
-                    diretorText.Text = string.Join(" ", movie.Credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
+                    diretorText.Text = string.Join(" ", tv.Credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
                 }
 
-                if (movie.Credits?.Cast != null)
+                if (tv.Credits?.Cast != null)
                 {
-                    estrelasText.Text = StringExtensions.RemoveAccents(string.Join(" ", movie.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")));
+                    estrelasText.Text = StringExtensions.RemoveAccents(string.Join(" ", tv.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")));
                 }
 
-                if (movie.ProductionCompanies != null)
+                if (tv.ProductionCompanies != null)
                 {
-                    estudioText.Text = string.Join(" ", movie.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}"));
+                    estudioText.Text = string.Join(" ", tv.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}"));
                 }
             }
             catch (Exception ex)
