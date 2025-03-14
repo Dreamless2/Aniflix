@@ -11,7 +11,7 @@ namespace Aniflix.Services
         private readonly DEEPLContracts deepl = new();
         public async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox paisOrigem, UITextBox idiomaOriginal,
-                                    UITextBox serieText, UITextBox criadores, UITextBox tagsText, UITextBox generoText,
+                                    UITextBox serieText, UITextBox criadores, UITextBox generoText, UITextBox tagsText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
         {
             try
