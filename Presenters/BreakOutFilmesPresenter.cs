@@ -72,7 +72,7 @@ namespace Aniflix.Presenters
                 .OrderBy(x => x.Codigo)
                 .FirstOrDefault();
 
-            return proximo!;
+            return proximo;
         }
         public static BreakOutFilmesModels GetPriorRow(string codigoAtual)
         {
@@ -81,7 +81,7 @@ namespace Aniflix.Presenters
                 .OrderBy(x => x.Codigo)
                 .FirstOrDefault();
 
-            return anterior!;
+            return anterior;
         }
         public static List<BreakOutFilmesModels> ObterTodos()
         {
