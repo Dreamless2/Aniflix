@@ -100,7 +100,7 @@
             FaseMCULabel.AutoSize = true;
             FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
             FaseMCULabel.ForeColor = Color.Black;
-            FaseMCULabel.Location = new Point(737, 404);
+            FaseMCULabel.Location = new Point(1148, 41);
             FaseMCULabel.Name = "FaseMCULabel";
             FaseMCULabel.Size = new Size(85, 20);
             FaseMCULabel.TabIndex = 55;
@@ -304,7 +304,7 @@
             FaseMCUText.ButtonStyleInherited = false;
             FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCUText.Location = new Point(737, 429);
+            FaseMCUText.Location = new Point(1166, 116);
             FaseMCUText.Margin = new Padding(4, 5, 4, 5);
             FaseMCUText.MinimumSize = new Size(1, 16);
             FaseMCUText.Name = "FaseMCUText";
@@ -370,7 +370,7 @@
             TagsLabel.AutoSize = true;
             TagsLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TagsLabel.ForeColor = Color.Black;
-            TagsLabel.Location = new Point(737, 346);
+            TagsLabel.Location = new Point(1166, 191);
             TagsLabel.Name = "TagsLabel";
             TagsLabel.Size = new Size(44, 20);
             TagsLabel.TabIndex = 77;
@@ -442,7 +442,7 @@
             TagsText.ButtonStyleInherited = false;
             TagsText.FillColor2 = Color.FromArgb(238, 248, 248);
             TagsText.Font = new Font("Microsoft Sans Serif", 12F);
-            TagsText.Location = new Point(737, 371);
+            TagsText.Location = new Point(1166, 216);
             TagsText.Margin = new Padding(4, 5, 4, 5);
             TagsText.MinimumSize = new Size(1, 16);
             TagsText.Name = "TagsText";
