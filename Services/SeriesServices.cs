@@ -106,19 +106,19 @@ namespace Aniflix.Services
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
 
-                if (tv.Credits?.Crew != null)
+                if (series.CreatedBy != null)
                 {
-                    diretorText.Text = string.Join(" ", tv.Credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
+                    criadoresText.Text = string.Join(" ", series.CreatedBy.Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
                 }
 
-                if (tv.Credits?.Cast != null)
+                if (series.Credits?.Cast != null)
                 {
-                    estrelasText.Text = StringExtensions.RemoveAccents(string.Join(" ", tv.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")));
+                    estrelasText.Text = string.Join(" ", series.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}"));
                 }
 
-                if (tv.ProductionCompanies != null)
+                if (series.ProductionCompanies != null)
                 {
-                    estudioText.Text = string.Join(" ", tv.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}"));
+                    estudioText.Text = string.Join(" ", series.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}"));
                 }
             }
             catch (Exception ex)
