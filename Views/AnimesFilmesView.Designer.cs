@@ -126,7 +126,6 @@
             EditarButton.Text = "Editar ";
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = false;
-            EditarButton.TextChanged += EditarButton_Click;
             // 
             // InserirNovoButton
             // 
@@ -144,7 +143,6 @@
             InserirNovoButton.Text = "Inserir Novo";
             InserirNovoButton.TextAlign = ContentAlignment.BottomLeft;
             InserirNovoButton.UseVisualStyleBackColor = false;
-            InserirNovoButton.TextChanged += InserirNovoButton_Click;
             // 
             // CopiarButton
             // 
