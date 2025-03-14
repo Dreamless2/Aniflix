@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Aniflix.Services
 {
-    public class GeneralFilmesServices
+    public class FilmesServices
     {
         private readonly GeneralFilmesContracts general = new();
         public async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
