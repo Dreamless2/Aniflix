@@ -81,7 +81,7 @@ namespace Aniflix.Views
 
             try
             {
-                bool findData = FilmesPresenter.Existe(1);
+                bool findData = AnimesFilmesPresenter.Existe(1);
 
                 if (findData)
                 {
@@ -102,7 +102,7 @@ namespace Aniflix.Views
         #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
-            var services = new FilmesServices();
+            var services = new AnimesFilmesServices();
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
                 UIMessageBox.ShowError("Informe um código válido.", false, 1000);
