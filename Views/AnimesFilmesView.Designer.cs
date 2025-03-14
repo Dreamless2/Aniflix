@@ -466,6 +466,7 @@
             DataLancamentoText.TextAlignment = ContentAlignment.MiddleLeft;
             DataLancamentoText.Watermark = "Data de Lançamento";
             DataLancamentoText.WordWarp = false;
+            DataLancamentoText.TextChanged += DataLancamentoText_TextChanged;
             // 
             // TituloOriginalLabel
             // 
@@ -533,6 +534,7 @@
             TituloAlternativoText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloAlternativoText.Watermark = "Título Alternativo";
             TituloAlternativoText.WordWarp = false;
+            TituloAlternativoText.TextChanged += TituloAlternativoText_TextChanged;
             // 
             // FilmeText
             // 
