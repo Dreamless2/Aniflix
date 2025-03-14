@@ -69,6 +69,8 @@
             AutoresLabel = new Sunny.UI.UILabel();
             IdiomaOriginalLabel = new Sunny.UI.UILabel();
             CriadoresLabel = new Sunny.UI.UILabel();
+            uiTextBox1 = new Sunny.UI.UITextBox();
+            uiTextBox2 = new Sunny.UI.UITextBox();
             SuspendLayout();
             // 
             // DadosLabel
@@ -569,7 +571,7 @@
             TituloAlternativoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             TituloAlternativoText.ScrollBarStyleInherited = false;
             TituloAlternativoText.ShowText = false;
-            TituloAlternativoText.Size = new Size(699, 29);
+            TituloAlternativoText.Size = new Size(553, 29);
             TituloAlternativoText.Style = Sunny.UI.UIStyle.Custom;
             TituloAlternativoText.TabIndex = 66;
             TituloAlternativoText.Text = "--";
@@ -754,7 +756,7 @@
             PaisOrigemLabel.AutoSize = true;
             PaisOrigemLabel.Font = new Font("Microsoft Sans Serif", 12F);
             PaisOrigemLabel.ForeColor = Color.Black;
-            PaisOrigemLabel.Location = new Point(376, 491);
+            PaisOrigemLabel.Location = new Point(30, 405);
             PaisOrigemLabel.Name = "PaisOrigemLabel";
             PaisOrigemLabel.Size = new Size(116, 20);
             PaisOrigemLabel.TabIndex = 90;
@@ -776,7 +778,7 @@
             IdiomaOriginalLabel.AutoSize = true;
             IdiomaOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
             IdiomaOriginalLabel.ForeColor = Color.Black;
-            IdiomaOriginalLabel.Location = new Point(435, 608);
+            IdiomaOriginalLabel.Location = new Point(438, 524);
             IdiomaOriginalLabel.Name = "IdiomaOriginalLabel";
             IdiomaOriginalLabel.Size = new Size(114, 20);
             IdiomaOriginalLabel.TabIndex = 92;
@@ -793,11 +795,67 @@
             CriadoresLabel.TabIndex = 93;
             CriadoresLabel.Text = "Criadores";
             // 
+            // uiTextBox1
+            // 
+            uiTextBox1.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            uiTextBox1.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox1.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox1.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox1.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox1.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox1.ButtonStyleInherited = false;
+            uiTextBox1.FillColor2 = Color.FromArgb(238, 248, 248);
+            uiTextBox1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiTextBox1.Location = new Point(30, 430);
+            uiTextBox1.Margin = new Padding(4, 5, 4, 5);
+            uiTextBox1.MinimumSize = new Size(1, 16);
+            uiTextBox1.Name = "uiTextBox1";
+            uiTextBox1.Padding = new Padding(5);
+            uiTextBox1.RectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox1.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            uiTextBox1.ScrollBarStyleInherited = false;
+            uiTextBox1.ShowText = false;
+            uiTextBox1.Size = new Size(466, 29);
+            uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
+            uiTextBox1.TabIndex = 94;
+            uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
+            uiTextBox1.Watermark = "Gênero";
+            uiTextBox1.WordWarp = false;
+            // 
+            // uiTextBox2
+            // 
+            uiTextBox2.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            uiTextBox2.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox2.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox2.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox2.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox2.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox2.ButtonStyleInherited = false;
+            uiTextBox2.FillColor2 = Color.FromArgb(238, 248, 248);
+            uiTextBox2.Font = new Font("Microsoft Sans Serif", 12F);
+            uiTextBox2.Location = new Point(30, 469);
+            uiTextBox2.Margin = new Padding(4, 5, 4, 5);
+            uiTextBox2.MinimumSize = new Size(1, 16);
+            uiTextBox2.Name = "uiTextBox2";
+            uiTextBox2.Padding = new Padding(5);
+            uiTextBox2.RectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox2.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            uiTextBox2.ScrollBarStyleInherited = false;
+            uiTextBox2.ShowText = false;
+            uiTextBox2.Size = new Size(883, 29);
+            uiTextBox2.Style = Sunny.UI.UIStyle.Custom;
+            uiTextBox2.TabIndex = 95;
+            uiTextBox2.TextAlignment = ContentAlignment.MiddleLeft;
+            uiTextBox2.Watermark = "Gênero";
+            uiTextBox2.WordWarp = false;
+            // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
+            Controls.Add(uiTextBox2);
+            Controls.Add(uiTextBox1);
             Controls.Add(CriadoresLabel);
             Controls.Add(IdiomaOriginalLabel);
             Controls.Add(AutoresLabel);
@@ -893,5 +951,7 @@
         private Sunny.UI.UILabel AutoresLabel;
         private Sunny.UI.UILabel IdiomaOriginalLabel;
         private Sunny.UI.UILabel CriadoresLabel;
+        private Sunny.UI.UITextBox uiTextBox1;
+        private Sunny.UI.UITextBox uiTextBox2;
     }
 }
