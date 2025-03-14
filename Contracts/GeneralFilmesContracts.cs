@@ -1,4 +1,5 @@
-﻿using TMDbLib.Client;
+﻿using Aniflix.Functions;
+using TMDbLib.Client;
 using TMDbLib.Objects.Movies;
 using TMDbLib.Objects.TvShows;
 
@@ -6,7 +7,7 @@ namespace Aniflix.Contracts
 {
     public class GeneralFilmesContracts
     {
-        private readonly TMDbClient _client = new("d1f15ac0632492b3c3a940032ad6b95b")
+        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY)
         {
             DefaultLanguage = "pt-BR",
             DefaultCountry = "BR",
