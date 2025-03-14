@@ -67,7 +67,7 @@
             CodigoFilmeLabel = new Sunny.UI.UILabel();
             PaisOrigemText = new Sunny.UI.UILabel();
             uiLabel2 = new Sunny.UI.UILabel();
-            uiLabel3 = new Sunny.UI.UILabel();
+            IdiomaOriginalText = new Sunny.UI.UILabel();
             uiLabel4 = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
@@ -771,16 +771,16 @@
             uiLabel2.TabIndex = 91;
             uiLabel2.Text = "Gênero";
             // 
-            // uiLabel3
+            // IdiomaOriginalText
             // 
-            uiLabel3.AutoSize = true;
-            uiLabel3.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel3.ForeColor = Color.Black;
-            uiLabel3.Location = new Point(435, 608);
-            uiLabel3.Name = "uiLabel3";
-            uiLabel3.Size = new Size(63, 20);
-            uiLabel3.TabIndex = 92;
-            uiLabel3.Text = "Gênero";
+            IdiomaOriginalText.AutoSize = true;
+            IdiomaOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
+            IdiomaOriginalText.ForeColor = Color.Black;
+            IdiomaOriginalText.Location = new Point(435, 608);
+            IdiomaOriginalText.Name = "IdiomaOriginalText";
+            IdiomaOriginalText.Size = new Size(114, 20);
+            IdiomaOriginalText.TabIndex = 92;
+            IdiomaOriginalText.Text = "Idioma Original";
             // 
             // uiLabel4
             // 
@@ -799,7 +799,7 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
             Controls.Add(uiLabel4);
-            Controls.Add(uiLabel3);
+            Controls.Add(IdiomaOriginalText);
             Controls.Add(uiLabel2);
             Controls.Add(PaisOrigemText);
             Controls.Add(DadosLabel);
@@ -891,7 +891,7 @@
         private Sunny.UI.UILabel CodigoFilmeLabel;
         private Sunny.UI.UILabel PaisOrigemText;
         private Sunny.UI.UILabel uiLabel2;
-        private Sunny.UI.UILabel uiLabel3;
+        private Sunny.UI.UILabel IdiomaOriginalText;
         private Sunny.UI.UILabel uiLabel4;
     }
 }
