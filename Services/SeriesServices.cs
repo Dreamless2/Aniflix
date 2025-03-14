@@ -16,12 +16,12 @@ namespace Aniflix.Services
         {
             try
             {
-                var tv = await general.GetTvShowAsync(tvId);
+                var series = await general.GetTvShowAsync(tvId);
 
-                var country = await deepl.Translate(tv!.ProductionCountries[0].Name);
+                var country = await deepl.Translate(series!.ProductionCountries[0].Name);
 
 
-                if (tv == null || string.IsNullOrWhiteSpace(tv.Name))
+                if (series == null || string.IsNullOrWhiteSpace(series.Name))
                 {
                     MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -29,11 +29,11 @@ namespace Aniflix.Services
 
                 var filmeSemAcentos = StringExtensions.RemoveAccents(
                     StringExtensions.StripPunctuation(
-                        StringExtensions.RemoveDiacritics(tv.Name.Replace(" ", ""))
+                        StringExtensions.RemoveDiacritics(series.Name.Replace(" ", ""))
                     )
                 );
 
-                var filmesAcentos = StringExtensions.StripPunctuation(tv.Name.Replace(" ", ""));
+                var filmesAcentos = StringExtensions.StripPunctuation(series.Name.Replace(" ", ""));
 
                 if (string.IsNullOrEmpty(filmeSemAcentos) || string.IsNullOrEmpty(filmesAcentos))
                 {
@@ -41,9 +41,9 @@ namespace Aniflix.Services
                     return;
                 }
 
-                if (!string.IsNullOrWhiteSpace(tv.Name))
+                if (!string.IsNullOrWhiteSpace(series.Name))
                 {
-                    bool temAcentos = StringExtensions.HasAccents(tv.Name);
+                    bool temAcentos = StringExtensions.HasAccents(series.Name);
 
                     serieText.Text = temAcentos
                         ? "#" + filmesAcentos + " " + "#" + filmeSemAcentos
@@ -54,11 +54,11 @@ namespace Aniflix.Services
                     serieText.Text = "--";
                 }
 
-                tituloText.Text = tv.Name ?? "--";
-                sinopseText.Text = tv.Overview ?? "--";
-                tituloOriginalText.Text = tv.OriginalName ?? "--";
-                dataLancamentoText.Text = tv.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
-                tituloAlternativoText.Text = tv.AlternativeTitles.Results[0].Title ?? "--";
+                tituloText.Text = series.Name ?? "--";
+                sinopseText.Text = series.Overview ?? "--";
+                tituloOriginalText.Text = series.OriginalName ?? "--";
+                dataLancamentoText.Text = series.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
+                tituloAlternativoText.Text = series.AlternativeTitles.Results[0].Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
                     tagsText.Text = $"#Serie #Serie{releaseDate.Year} #Série #Série{releaseDate.Year}";
