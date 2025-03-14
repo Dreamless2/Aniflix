@@ -847,7 +847,7 @@
             uiTextBox2.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox2.TabIndex = 95;
             uiTextBox2.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox2.Watermark = "Gênero";
+            uiTextBox2.Watermark = "Idioma Original";
             uiTextBox2.WordWarp = false;
             // 
             // uiTextBox3
