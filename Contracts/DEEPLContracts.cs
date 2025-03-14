@@ -11,7 +11,7 @@ namespace Aniflix.Contracts
         {
             MaximumNetworkRetries = 5,
             PerRetryConnectionTimeout = TimeSpan.FromSeconds(10),
-            sendPlatformInfo = false
+            sendPlatformInfo = false,
         };
 
 
