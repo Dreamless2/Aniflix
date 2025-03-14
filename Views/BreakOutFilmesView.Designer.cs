@@ -416,6 +416,7 @@
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
             TagsText.Watermark = "Tags";
             TagsText.WordWarp = false;
+            TagsText.TextChanged += TagsText_TextChanged;
             // 
             // TituloAlternativoLabel
             // 
