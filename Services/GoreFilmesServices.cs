@@ -20,6 +20,18 @@ namespace Aniflix.Services
                 var filmeSemAcentos = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(movie!.Title.Replace(" ", "")))); ;
                 var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
 
+                if (filmeSemAcentos == null)
+                {
+                    MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (filmesAcentos == null)
+                {
+                    MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 if (movie == null)
                 {
                     MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
