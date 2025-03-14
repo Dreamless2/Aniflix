@@ -482,9 +482,9 @@
             FilmeLabel.ForeColor = Color.Black;
             FilmeLabel.Location = new Point(30, 464);
             FilmeLabel.Name = "FilmeLabel";
-            FilmeLabel.Size = new Size(47, 20);
+            FilmeLabel.Size = new Size(46, 20);
             FilmeLabel.TabIndex = 61;
-            FilmeLabel.Text = "Filme";
+            FilmeLabel.Text = "Série";
             // 
             // DataLancamentoText
             // 
@@ -590,7 +590,7 @@
             FilmeText.ButtonStyleInherited = false;
             FilmeText.FillColor2 = Color.FromArgb(238, 248, 248);
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeText.Location = new Point(115, 744);
+            FilmeText.Location = new Point(30, 489);
             FilmeText.Margin = new Padding(4, 5, 4, 5);
             FilmeText.MinimumSize = new Size(1, 16);
             FilmeText.Name = "FilmeText";
