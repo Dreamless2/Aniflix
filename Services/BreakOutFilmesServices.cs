@@ -17,13 +17,37 @@ namespace Aniflix.Services
             {
                 var movie = await general.GetMovieAsync(movieId);
 
-                var filmeSemAcentos = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(movie!.Title.Replace(" ", "")))); ;
+                if (movie == null || string.IsNullOrWhiteSpace(movie.Title))
+                {
+                    MessageBox.Show("Filme inválido ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var filmeSemAcentos = StringExtensions.RemoveAccents(
+                    StringExtensions.StripPunctuation(
+                        StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", ""))
+                    )
+                );
+
                 var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
 
-                if (movie == null)
+                if (string.IsNullOrEmpty(filmeSemAcentos) || string.IsNullOrEmpty(filmesAcentos))
                 {
                     MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
+                }
+
+                if (!string.IsNullOrWhiteSpace(movie.Title))
+                {
+                    bool temAcentos = StringExtensions.HasAccents(movie.Title);
+
+                    filmeText.Text = temAcentos
+                        ? "#" + filmesAcentos + " " + "#" + filmeSemAcentos
+                        : "#" + filmeSemAcentos;
+                }
+                else
+                {
+                    filmeText.Text = "--";
                 }
 
                 tituloText.Text = movie.Title ?? "--";
@@ -31,7 +55,6 @@ namespace Aniflix.Services
                 tituloOriginalText.Text = movie.OriginalTitle ?? "--";
                 dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
                 tituloAlternativoText.Text = movie.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
-                filmeText.Text = "#" + filmesAcentos + " " + "#" + filmeSemAcentos ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
                     tagsText.Text = $"#Filme #Filme{releaseDate.Year}";
