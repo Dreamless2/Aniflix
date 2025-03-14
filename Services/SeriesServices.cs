@@ -11,7 +11,7 @@ namespace Aniflix.Services
         private readonly DEEPLContracts deepl = new();
         public async Task GivenData(string tvId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox paisOrigem, UITextBox idiomaOriginal,
-                                    UITextBox serieText, UITextBox criadores, UITextBox generoText, UITextBox tagsText,
+                                    UITextBox serieText, UITextBox criadoresText, UITextBox generoText, UITextBox tagsText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
         {
             try
@@ -65,7 +65,7 @@ namespace Aniflix.Services
                 }
 
 
-                if (tv.Genres?.Count > 2)
+                if (series.Genres?.Count > 2)
                 {
                     var hashtagsPrincipais = new HashSet<string>();
                     var outrasHashtags = new HashSet<string>();
@@ -99,9 +99,9 @@ namespace Aniflix.Services
                         }
                     }
 
-                    FormatGenre(tv.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(tv.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(tv.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(series.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(series.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(series.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
 
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
