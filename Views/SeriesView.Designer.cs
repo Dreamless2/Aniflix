@@ -756,9 +756,9 @@
             PaisOrigemText.ForeColor = Color.Black;
             PaisOrigemText.Location = new Point(376, 491);
             PaisOrigemText.Name = "PaisOrigemText";
-            PaisOrigemText.Size = new Size(63, 20);
+            PaisOrigemText.Size = new Size(116, 20);
             PaisOrigemText.TabIndex = 90;
-            PaisOrigemText.Text = "Gênero";
+            PaisOrigemText.Text = "País de Origem";
             // 
             // uiLabel2
             // 
@@ -767,9 +767,9 @@
             uiLabel2.ForeColor = Color.Black;
             uiLabel2.Location = new Point(679, 509);
             uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(63, 20);
+            uiLabel2.Size = new Size(65, 20);
             uiLabel2.TabIndex = 91;
-            uiLabel2.Text = "Gênero";
+            uiLabel2.Text = "Autores";
             // 
             // IdiomaOriginalText
             // 
