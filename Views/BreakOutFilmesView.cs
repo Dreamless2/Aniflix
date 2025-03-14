@@ -295,7 +295,7 @@ namespace Aniflix.Views
         #region "AnteriorButton"
         private void AnteriorButton_Click(object sender, EventArgs e)
         {
-            var item = GoreFilmesPresenter.GetPriorRow(GlobalVars.currentId);
+            var item = BreakOutFilmesPresenter.GetPriorRow(GlobalVars.currentId);
 
             if (item != null)
             {
