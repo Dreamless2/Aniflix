@@ -8,9 +8,9 @@ namespace Aniflix.Contracts
     {
         private readonly DeepLClient _client = new DeepLClient(GlobalVars.DEEPL_KEY)
         {
-            
+            MaximumNetwortRetries = 5
         };
     }
 
-            
+
 }
