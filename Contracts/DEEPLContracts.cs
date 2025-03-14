@@ -15,7 +15,7 @@ namespace Aniflix.Contracts
         };
 
 
-        private readonly DeepLClient _client = new DeepLClient(GlobalVars.DEEPL_KEY)
+        private readonly DeepLClient _client = new(GlobalVars.DEEPL_KEY, _options)
         {
 
         };
