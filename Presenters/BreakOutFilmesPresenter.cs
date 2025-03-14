@@ -79,23 +79,26 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static BreakOutFilmesModels GetPriorRow(string codigoAtual)
+        public static BreakOutFilmesModels GetPriorRow(int id)
         {
-            var anterior = GlobalVars.context.Breakout_Filmes
-                .Where(x => string.Compare(x.Codigo, codigoAtual) < 0)
-                .OrderBy(x => x.Codigo)
-                .FirstOrDefault();
+            try
+            {
+                if (id == 0)
+                {
+                    return null;
+                }
 
-            return anterior;
+                return GlobalVars.context.Filmes
+                    .Where(x => x.Id < id)
+                    .OrderByDescending(x => x.Id)
+                    .FirstOrDefault();
+            }
+            catch
+            {
+                return null;
+            }
         }
-        public static List<BreakOutFilmesModels> ObterTodos()
-        {
-            var listaFilmes = GlobalVars.context.Breakout_Filmes
-                .OrderBy(x => x.Codigo)
-                .ToList();
 
-            return listaFilmes;
-        }
 
         public static bool Existe(int id)
         {
