@@ -126,6 +126,7 @@
             EditarButton.Text = "Editar ";
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = false;
+            EditarButton.TextChanged += EditarButton_Click;
             // 
             // InserirNovoButton
             // 
