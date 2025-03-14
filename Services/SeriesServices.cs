@@ -18,7 +18,7 @@ namespace Aniflix.Services
             {
                 var tv = await general.GetTvShowAsync(tvId);
 
-                if (tv == null || string.IsNullOrWhiteSpace(tv.Title))
+                if (tv == null || string.IsNullOrWhiteSpace(tv.Name))
                 {
                     MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -26,11 +26,11 @@ namespace Aniflix.Services
 
                 var filmeSemAcentos = StringExtensions.RemoveAccents(
                     StringExtensions.StripPunctuation(
-                        StringExtensions.RemoveDiacritics(tv.Title.Replace(" ", ""))
+                        StringExtensions.RemoveDiacritics(tv.Name.Replace(" ", ""))
                     )
                 );
 
-                var filmesAcentos = StringExtensions.StripPunctuation(tv.Title.Replace(" ", ""));
+                var filmesAcentos = StringExtensions.StripPunctuation(tv.Name.Replace(" ", ""));
 
                 if (string.IsNullOrEmpty(filmeSemAcentos) || string.IsNullOrEmpty(filmesAcentos))
                 {
@@ -38,9 +38,9 @@ namespace Aniflix.Services
                     return;
                 }
 
-                if (!string.IsNullOrWhiteSpace(tv.Title))
+                if (!string.IsNullOrWhiteSpace(tv.Name))
                 {
-                    bool temAcentos = StringExtensions.HasAccents(tv.Title);
+                    bool temAcentos = StringExtensions.HasAccents(tv.Name);
 
                     serieText.Text = temAcentos
                         ? "#" + filmesAcentos + " " + "#" + filmeSemAcentos
@@ -51,10 +51,10 @@ namespace Aniflix.Services
                     serieText.Text = "--";
                 }
 
-                tituloText.Text = tv.Title ?? "--";
+                tituloText.Text = tv.Name ?? "--";
                 sinopseText.Text = tv.Overview ?? "--";
-                tituloOriginalText.Text = tv.OriginalTitle ?? "--";
-                dataLancamentoText.Text = tv.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
+                tituloOriginalText.Text = tv.OriginalName ?? "--";
+                dataLancamentoText.Text = tv.?.ToString("dd/MM/yyyy") ?? "--";
                 tituloAlternativoText.Text = tv.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
