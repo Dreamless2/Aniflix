@@ -37,12 +37,46 @@ namespace Aniflix.Services
                     return;
                 }
 
+                if (!string.IsNullOrWhiteSpace(movie.Title))
+                {
+                    var filmeSemAcentos = StringExtensions.RemoveAccents(
+                        StringExtensions.StripPunctuation(
+                            StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", ""))
+                        )
+                    );
+
+                    var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
+
+                    // Verificar se o título contém acentuação
+                    bool temAcentos = StringExtensions.HasAccents(movie.Title);
+
+                    filmeText.Text = temAcentos
+                        ? "#" + filmesAcentos + " " + "#" + filmeSemAcentos
+                        : "#" + filmeSemAcentos;
+                }
+                else
+                {
+                    filmeText.Text = "--";
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
                 tituloText.Text = movie.Title ?? "--";
                 sinopseText.Text = movie.Overview ?? "--";
                 tituloOriginalText.Text = movie.OriginalTitle ?? "--";
                 dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
                 tituloAlternativoText.Text = movie.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
-                filmeText.Text = "#" + filmesAcentos + " " + "#" + filmeSemAcentos ?? "--";
+
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
                     tagsText.Text = $"#Filme #Filme{releaseDate.Year}";
