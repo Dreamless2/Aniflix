@@ -106,7 +106,7 @@
             FaseMCULabel.AutoSize = true;
             FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
             FaseMCULabel.ForeColor = Color.Black;
-            FaseMCULabel.Location = new Point(1148, 41);
+            FaseMCULabel.Location = new Point(965, 299);
             FaseMCULabel.Name = "FaseMCULabel";
             FaseMCULabel.Size = new Size(85, 20);
             FaseMCULabel.TabIndex = 55;
@@ -310,7 +310,7 @@
             FaseMCUText.ButtonStyleInherited = false;
             FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCUText.Location = new Point(1166, 116);
+            FaseMCUText.Location = new Point(983, 374);
             FaseMCUText.Margin = new Padding(4, 5, 4, 5);
             FaseMCUText.MinimumSize = new Size(1, 16);
             FaseMCUText.Name = "FaseMCUText";
@@ -343,7 +343,7 @@
             GeneroLabel.AutoSize = true;
             GeneroLabel.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroLabel.ForeColor = Color.Black;
-            GeneroLabel.Location = new Point(974, 524);
+            GeneroLabel.Location = new Point(30, 464);
             GeneroLabel.Name = "GeneroLabel";
             GeneroLabel.Size = new Size(63, 20);
             GeneroLabel.TabIndex = 80;
@@ -376,7 +376,7 @@
             TagsLabel.AutoSize = true;
             TagsLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TagsLabel.ForeColor = Color.Black;
-            TagsLabel.Location = new Point(1166, 191);
+            TagsLabel.Location = new Point(983, 449);
             TagsLabel.Name = "TagsLabel";
             TagsLabel.Size = new Size(44, 20);
             TagsLabel.TabIndex = 77;
@@ -393,7 +393,7 @@
             GeneroText.ButtonStyleInherited = false;
             GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(974, 549);
+            GeneroText.Location = new Point(30, 489);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
@@ -420,7 +420,7 @@
             FranquiaText.ButtonStyleInherited = false;
             FranquiaText.FillColor2 = Color.FromArgb(238, 248, 248);
             FranquiaText.Font = new Font("Microsoft Sans Serif", 12F);
-            FranquiaText.Location = new Point(1372, 834);
+            FranquiaText.Location = new Point(66, 667);
             FranquiaText.Margin = new Padding(4, 5, 4, 5);
             FranquiaText.MinimumSize = new Size(1, 16);
             FranquiaText.Name = "FranquiaText";
@@ -448,7 +448,7 @@
             TagsText.ButtonStyleInherited = false;
             TagsText.FillColor2 = Color.FromArgb(238, 248, 248);
             TagsText.Font = new Font("Microsoft Sans Serif", 12F);
-            TagsText.Location = new Point(1166, 216);
+            TagsText.Location = new Point(983, 474);
             TagsText.Margin = new Padding(4, 5, 4, 5);
             TagsText.MinimumSize = new Size(1, 16);
             TagsText.Name = "TagsText";
@@ -480,7 +480,7 @@
             FilmeLabel.AutoSize = true;
             FilmeLabel.Font = new Font("Microsoft Sans Serif", 12F);
             FilmeLabel.ForeColor = Color.Black;
-            FilmeLabel.Location = new Point(1421, 886);
+            FilmeLabel.Location = new Point(115, 719);
             FilmeLabel.Name = "FilmeLabel";
             FilmeLabel.Size = new Size(47, 20);
             FilmeLabel.TabIndex = 61;
@@ -590,7 +590,7 @@
             FilmeText.ButtonStyleInherited = false;
             FilmeText.FillColor2 = Color.FromArgb(238, 248, 248);
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeText.Location = new Point(1421, 911);
+            FilmeText.Location = new Point(115, 744);
             FilmeText.Margin = new Padding(4, 5, 4, 5);
             FilmeText.MinimumSize = new Size(1, 16);
             FilmeText.Name = "FilmeText";
@@ -633,7 +633,7 @@
             FranquiaLabel.AutoSize = true;
             FranquiaLabel.Font = new Font("Microsoft Sans Serif", 12F);
             FranquiaLabel.ForeColor = Color.Black;
-            FranquiaLabel.Location = new Point(1372, 809);
+            FranquiaLabel.Location = new Point(66, 642);
             FranquiaLabel.Name = "FranquiaLabel";
             FranquiaLabel.Size = new Size(72, 20);
             FranquiaLabel.TabIndex = 57;
