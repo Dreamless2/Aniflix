@@ -39,7 +39,6 @@ namespace Aniflix.Services
 
                 if (!string.IsNullOrWhiteSpace(movie.Title))
                 {
-                    filmes
 
                     // Verificar se o título contém acentuação
                     bool temAcentos = StringExtensions.HasAccents(movie.Title);
