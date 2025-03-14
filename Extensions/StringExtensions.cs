@@ -1,5 +1,6 @@
-﻿using System.Globalization;
-using System.Text;
+﻿using System.Text;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace Aniflix.Extensions
 {
@@ -114,6 +115,18 @@ namespace Aniflix.Extensions
             }
 
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+        }
+
+        public static bool HasAccents(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+            {
+                return false;
+            }
+
+            string normalized = input.Normalize(NormalizationForm.FormD);
+
+            return Regex.IsMatch(normalized, @"\p{M}");
         }
     }
 }
