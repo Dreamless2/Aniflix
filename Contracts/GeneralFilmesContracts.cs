@@ -1,5 +1,6 @@
 ﻿using TMDbLib.Client;
 using TMDbLib.Objects.Movies;
+using TMDbLib.Objects.
 
 namespace Aniflix.Contracts
 {
