@@ -66,7 +66,7 @@
             CodigoText = new Sunny.UI.UITextBox();
             CodigoFilmeLabel = new Sunny.UI.UILabel();
             PaisOrigemText = new Sunny.UI.UILabel();
-            uiLabel2 = new Sunny.UI.UILabel();
+            AutoresLabel = new Sunny.UI.UILabel();
             IdiomaOriginalText = new Sunny.UI.UILabel();
             CriadoresLabel = new Sunny.UI.UILabel();
             SuspendLayout();
@@ -760,16 +760,16 @@
             PaisOrigemText.TabIndex = 90;
             PaisOrigemText.Text = "País de Origem";
             // 
-            // uiLabel2
+            // AutoresLabel
             // 
-            uiLabel2.AutoSize = true;
-            uiLabel2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel2.ForeColor = Color.Black;
-            uiLabel2.Location = new Point(679, 509);
-            uiLabel2.Name = "uiLabel2";
-            uiLabel2.Size = new Size(65, 20);
-            uiLabel2.TabIndex = 91;
-            uiLabel2.Text = "Autores";
+            AutoresLabel.AutoSize = true;
+            AutoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            AutoresLabel.ForeColor = Color.Black;
+            AutoresLabel.Location = new Point(679, 509);
+            AutoresLabel.Name = "AutoresLabel";
+            AutoresLabel.Size = new Size(65, 20);
+            AutoresLabel.TabIndex = 91;
+            AutoresLabel.Text = "Autores";
             // 
             // IdiomaOriginalText
             // 
@@ -800,7 +800,7 @@
             ClientSize = new Size(1783, 1026);
             Controls.Add(CriadoresLabel);
             Controls.Add(IdiomaOriginalText);
-            Controls.Add(uiLabel2);
+            Controls.Add(AutoresLabel);
             Controls.Add(PaisOrigemText);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
@@ -890,7 +890,7 @@
         private Sunny.UI.UITextBox CodigoText;
         private Sunny.UI.UILabel CodigoFilmeLabel;
         private Sunny.UI.UILabel PaisOrigemText;
-        private Sunny.UI.UILabel uiLabel2;
+        private Sunny.UI.UILabel AutoresLabel;
         private Sunny.UI.UILabel IdiomaOriginalText;
         private Sunny.UI.UILabel CriadoresLabel;
     }
