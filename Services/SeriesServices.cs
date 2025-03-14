@@ -10,7 +10,7 @@ namespace Aniflix.Services
         private readonly TMDBContracts general = new();
         private readonly DEEPLContracts deepl = new();
         public async Task GivenData(string tvId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
-                                    UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox paisOrigem, UITextBox idiomaOriginal,
+                                    UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox paisOrigemText, UITextBox idiomaOriginalText,
                                     UITextBox serieText, UITextBox criadoresText, UITextBox generoText, UITextBox tagsText,
                                     UITextBox estrelasText, UITextBox estudioText)
         {
@@ -57,6 +57,8 @@ namespace Aniflix.Services
                 sinopseText.Text = series.Overview ?? "--";
                 tituloOriginalText.Text = series.OriginalName ?? "--";
                 dataLancamentoText.Text = series.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
+                paisOrigemText.Text = "#" + StringExtensions.RemoveDiacritics(country.Text.Replace(" ", ""));
+                idiomaOriginalText.Text = "#" + StringExtensions.RemoveDiacritics(language.Text.Replace(" ", ""));
                 tituloAlternativoText.Text = series.AlternativeTitles.Results[0].Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
