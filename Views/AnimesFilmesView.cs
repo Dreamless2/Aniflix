@@ -17,5 +17,8 @@ namespace Aniflix.Views
         {
             InitializeComponent();
         }
-    }
+
+    
+
+
 }
