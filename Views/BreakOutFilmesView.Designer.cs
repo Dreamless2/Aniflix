@@ -92,6 +92,7 @@
             ProximoButton.Text = "Proximo";
             ProximoButton.TextAlign = ContentAlignment.BottomLeft;
             ProximoButton.UseVisualStyleBackColor = false;
+            ProximoButton.Click += ProximoButton_Click;
             // 
             // AnteriorButton
             // 
@@ -109,6 +110,7 @@
             AnteriorButton.Text = "Anterior";
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
             AnteriorButton.UseVisualStyleBackColor = false;
+            AnteriorButton.Click += AnteriorButton_Click;
             // 
             // EditarButton
             // 
