@@ -1,6 +1,6 @@
-﻿using Aniflix.Contracts;
+﻿using Sunny.UI;
+using Aniflix.Contracts;
 using Aniflix.Extensions;
-using Sunny.UI;
 using System.Globalization;
 
 namespace Aniflix.Services
@@ -17,22 +17,21 @@ namespace Aniflix.Services
             {
                 var movie = await general.GetMovieAsync(movieId);
 
-                var filmeSemAcentos = StringExtensions.RemoveAccents(StringExtensions.StripPunctuation(StringExtensions.RemoveDiacritics(movie!.Title.Replace(" ", "")))); ;
+                if (movie == null || string.IsNullOrWhiteSpace(movie.Title))
+                {
+                    MessageBox.Show("Filme inválido ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var filmeSemAcentos = StringExtensions.RemoveAccents(
+                    StringExtensions.StripPunctuation(
+                        StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", ""))
+                    )
+                );
+
                 var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
 
-                if (filmeSemAcentos == null)
-                {
-                    MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (filmesAcentos == null)
-                {
-                    MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (movie == null)
+                if (string.IsNullOrEmpty(filmeSemAcentos) || string.IsNullOrEmpty(filmesAcentos))
                 {
                     MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
