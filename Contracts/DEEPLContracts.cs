@@ -8,11 +8,7 @@ namespace Aniflix.Contracts
     {
         private readonly DeepLClient _client = new(GlobalVars.DEEPL_KEY);
 
-        public async Task<string> Translate(string text) =>
+        public async Task<TextResult> Translate(string text) =>
             await _client.TranslateTextAsync(text, null, LanguageCode.PortugueseBrazilian);
-
-
     }
-
-
 }
