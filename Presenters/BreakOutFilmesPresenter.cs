@@ -63,15 +63,22 @@ namespace Aniflix.Presenters
 
         }
 
-        public static BreakOutFilmesModels GetNearRow(string codigoAtual)
+        public static BreakOutFilmesModels GetNearRow(int id)
         {
-            var proximo = GlobalVars.context.Breakout_Filmes
-                .Where(x => string.Compare(x.Codigo, codigoAtual) > 0)
-                .OrderBy(x => x.Codigo)
-                .FirstOrDefault();
+            try
+            {
+                return GlobalVars.context.Filmes
+                    .Where(x => x.Id > id)
+                    .OrderBy(x => x.Id)
+                    .FirstOrDefault();
 
-            return proximo;
+            }
+            catch
+            {
+                return null;
+            }
         }
+
         public static BreakOutFilmesModels GetPriorRow(string codigoAtual)
         {
             var anterior = GlobalVars.context.Breakout_Filmes
