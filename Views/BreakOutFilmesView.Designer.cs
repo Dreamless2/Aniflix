@@ -143,6 +143,7 @@
             InserirNovoButton.Text = "Inserir Novo";
             InserirNovoButton.TextAlign = ContentAlignment.BottomLeft;
             InserirNovoButton.UseVisualStyleBackColor = false;
+            InserirNovoButton.Click += InserirNovoButton_Click;
             // 
             // CopiarButton
             // 
@@ -160,6 +161,7 @@
             CopiarButton.Text = "Copiar";
             CopiarButton.TextAlign = ContentAlignment.BottomLeft;
             CopiarButton.UseVisualStyleBackColor = false;
+            CopiarButton.Click += CopiarButton_Click;
             // 
             // SinopseText
             // 
