@@ -11,7 +11,7 @@ namespace Aniflix.Contracts
 
         public DEEPLContracts(DeepLClient deepL)
         {
-
+            deepL = _client;
         }
     }
 }
