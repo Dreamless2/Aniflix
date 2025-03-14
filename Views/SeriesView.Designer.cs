@@ -65,9 +65,9 @@
             AudioBox = new Sunny.UI.UIComboBox();
             CodigoText = new Sunny.UI.UITextBox();
             CodigoFilmeLabel = new Sunny.UI.UILabel();
-            PaisOrigemText = new Sunny.UI.UILabel();
+            PaisOrigemLabel = new Sunny.UI.UILabel();
             AutoresLabel = new Sunny.UI.UILabel();
-            IdiomaOriginalText = new Sunny.UI.UILabel();
+            IdiomaOriginalLabel = new Sunny.UI.UILabel();
             CriadoresLabel = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
@@ -749,16 +749,16 @@
             CodigoFilmeLabel.TabIndex = 53;
             CodigoFilmeLabel.Text = "Código do Filme";
             // 
-            // PaisOrigemText
+            // PaisOrigemLabel
             // 
-            PaisOrigemText.AutoSize = true;
-            PaisOrigemText.Font = new Font("Microsoft Sans Serif", 12F);
-            PaisOrigemText.ForeColor = Color.Black;
-            PaisOrigemText.Location = new Point(376, 491);
-            PaisOrigemText.Name = "PaisOrigemText";
-            PaisOrigemText.Size = new Size(116, 20);
-            PaisOrigemText.TabIndex = 90;
-            PaisOrigemText.Text = "País de Origem";
+            PaisOrigemLabel.AutoSize = true;
+            PaisOrigemLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            PaisOrigemLabel.ForeColor = Color.Black;
+            PaisOrigemLabel.Location = new Point(376, 491);
+            PaisOrigemLabel.Name = "PaisOrigemLabel";
+            PaisOrigemLabel.Size = new Size(116, 20);
+            PaisOrigemLabel.TabIndex = 90;
+            PaisOrigemLabel.Text = "País de Origem";
             // 
             // AutoresLabel
             // 
@@ -771,16 +771,16 @@
             AutoresLabel.TabIndex = 91;
             AutoresLabel.Text = "Autores";
             // 
-            // IdiomaOriginalText
+            // IdiomaOriginalLabel
             // 
-            IdiomaOriginalText.AutoSize = true;
-            IdiomaOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
-            IdiomaOriginalText.ForeColor = Color.Black;
-            IdiomaOriginalText.Location = new Point(435, 608);
-            IdiomaOriginalText.Name = "IdiomaOriginalText";
-            IdiomaOriginalText.Size = new Size(114, 20);
-            IdiomaOriginalText.TabIndex = 92;
-            IdiomaOriginalText.Text = "Idioma Original";
+            IdiomaOriginalLabel.AutoSize = true;
+            IdiomaOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            IdiomaOriginalLabel.ForeColor = Color.Black;
+            IdiomaOriginalLabel.Location = new Point(435, 608);
+            IdiomaOriginalLabel.Name = "IdiomaOriginalLabel";
+            IdiomaOriginalLabel.Size = new Size(114, 20);
+            IdiomaOriginalLabel.TabIndex = 92;
+            IdiomaOriginalLabel.Text = "Idioma Original";
             // 
             // CriadoresLabel
             // 
@@ -799,9 +799,9 @@
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
             Controls.Add(CriadoresLabel);
-            Controls.Add(IdiomaOriginalText);
+            Controls.Add(IdiomaOriginalLabel);
             Controls.Add(AutoresLabel);
-            Controls.Add(PaisOrigemText);
+            Controls.Add(PaisOrigemLabel);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
             Controls.Add(FaseMCULabel);
@@ -889,9 +889,9 @@
         private Sunny.UI.UIComboBox AudioBox;
         private Sunny.UI.UITextBox CodigoText;
         private Sunny.UI.UILabel CodigoFilmeLabel;
-        private Sunny.UI.UILabel PaisOrigemText;
+        private Sunny.UI.UILabel PaisOrigemLabel;
         private Sunny.UI.UILabel AutoresLabel;
-        private Sunny.UI.UILabel IdiomaOriginalText;
+        private Sunny.UI.UILabel IdiomaOriginalLabel;
         private Sunny.UI.UILabel CriadoresLabel;
     }
 }
