@@ -6,11 +6,11 @@ namespace Aniflix.Contracts
 {
     public class DEEPLContracts
     {
-        private readonly DeepLClient _client = new(GlobalVars.DEEPL_KEY)
+        private readonly DeepLClient _client = new DeepLClient(GlobalVars.DEEPL_KEY)
         {
-            SourceLanguage = "EN",
-            TargetLanguage = "PT-BR"
-        }
-
+            
+        };
     }
+
+            
 }
