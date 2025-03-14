@@ -20,7 +20,7 @@ namespace Aniflix.Services
 
                 if (movie == null || string.IsNullOrWhiteSpace(movie.Title))
                 {
-                    MessageBox.Show("Filme inválido ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -34,7 +34,7 @@ namespace Aniflix.Services
 
                 if (string.IsNullOrEmpty(filmeSemAcentos) || string.IsNullOrEmpty(filmesAcentos))
                 {
-                    MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Nenhuma série encontrada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -42,13 +42,13 @@ namespace Aniflix.Services
                 {
                     bool temAcentos = StringExtensions.HasAccents(movie.Title);
 
-                    filmeText.Text = temAcentos
+                    serieText.Text = temAcentos
                         ? "#" + filmesAcentos + " " + "#" + filmeSemAcentos
                         : "#" + filmeSemAcentos;
                 }
                 else
                 {
-                    filmeText.Text = "--";
+                    serieText.Text = "--";
                 }
 
                 tituloText.Text = movie.Title ?? "--";
