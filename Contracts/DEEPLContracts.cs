@@ -7,7 +7,7 @@ namespace Aniflix.Contracts
     public class DEEPLContracts
     {
 
-        private readonly DeepLClientOptions _options = new()
+        var DeepLClientOptions _options = new ()
         {
             MaximumNetworkRetries = 5,
             PerRetryConnectionTimeout = TimeSpan.FromSeconds(10),
@@ -15,7 +15,7 @@ namespace Aniflix.Contracts
         };
 
 
-        DeepLClient _client = new(GlobalVars.DEEPL_KEY, _options)
+    DeepLClient _client = new(GlobalVars.DEEPL_KEY, _options)
 
     }
 
