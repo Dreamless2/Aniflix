@@ -833,7 +833,7 @@
             uiTextBox2.ButtonStyleInherited = false;
             uiTextBox2.FillColor2 = Color.FromArgb(238, 248, 248);
             uiTextBox2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox2.Location = new Point(478, 430);
+            uiTextBox2.Location = new Point(475, 430);
             uiTextBox2.Margin = new Padding(4, 5, 4, 5);
             uiTextBox2.MinimumSize = new Size(1, 16);
             uiTextBox2.Name = "uiTextBox2";
