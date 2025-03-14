@@ -39,7 +39,6 @@ namespace Aniflix.Views
                 genero: GeneroText.Text,
                 tags: TagsText.Text,
                 diretor: DiretorText.Text,
-                mcu: FaseMCUText.Text,
                 estrelas: EstrelasText.Text,
                 estudio: EstudioText.Text
             );
