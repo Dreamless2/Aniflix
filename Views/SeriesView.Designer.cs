@@ -815,7 +815,7 @@
             uiTextBox1.ScrollBarColor = Color.FromArgb(0, 150, 136);
             uiTextBox1.ScrollBarStyleInherited = false;
             uiTextBox1.ShowText = false;
-            uiTextBox1.Size = new Size(439, 29);
+            uiTextBox1.Size = new Size(438, 29);
             uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox1.TabIndex = 94;
             uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -842,7 +842,7 @@
             uiTextBox2.ScrollBarColor = Color.FromArgb(0, 150, 136);
             uiTextBox2.ScrollBarStyleInherited = false;
             uiTextBox2.ShowText = false;
-            uiTextBox2.Size = new Size(440, 29);
+            uiTextBox2.Size = new Size(438, 29);
             uiTextBox2.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox2.TabIndex = 95;
             uiTextBox2.TextAlignment = ContentAlignment.MiddleLeft;
