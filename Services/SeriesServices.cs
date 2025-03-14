@@ -1,12 +1,7 @@
-﻿using System;
-using Sunny.UI;
-using System.Linq;
-using System.Text;
+﻿using Sunny.UI;
 using Aniflix.Contracts;
 using Aniflix.Extensions;
 using System.Globalization;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace Aniflix.Services
 {
