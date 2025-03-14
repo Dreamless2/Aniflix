@@ -23,6 +23,11 @@ namespace Aniflix.Services
                     return;
                 }
 
+                var filmeSemAcentos = StringExtensions.RemoveAccents(
+                    StringExtensions.StripPunctuation(
+                        StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", ""))
+                    )
+                );
 
                 var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
 
