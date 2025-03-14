@@ -63,8 +63,8 @@ namespace Aniflix.Services
 
                 if (movie.Genres?.Count > 2)
                 {
-                    var hashtagsPrincipais = new HashSet<string>(); // Evita duplicatas aqui
-                    var outrasHashtags = new HashSet<string>();      // Mantém as outras hashtags
+                    var hashtagsPrincipais = new HashSet<string>();
+                    var outrasHashtags = new HashSet<string>();
 
                     static void FormatGenre(string genre, HashSet<string> hashtagsPrincipais, HashSet<string> outrasHashtags)
                     {
@@ -95,12 +95,10 @@ namespace Aniflix.Services
                         }
                     }
 
-                    // Processa os gêneros na ordem desejada
                     FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(movie.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(movie.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
 
-                    // Junta as hashtags com prioridade primeiro e evita duplicatas
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
 
