@@ -71,6 +71,7 @@
             CriadoresLabel = new Sunny.UI.UILabel();
             uiTextBox1 = new Sunny.UI.UITextBox();
             uiTextBox2 = new Sunny.UI.UITextBox();
+            uiTextBox3 = new Sunny.UI.UITextBox();
             SuspendLayout();
             // 
             // DadosLabel
@@ -393,7 +394,7 @@
             GeneroText.ButtonStyleInherited = false;
             GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(81, 826);
+            GeneroText.Location = new Point(30, 608);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
@@ -402,7 +403,7 @@
             GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             GeneroText.ScrollBarStyleInherited = false;
             GeneroText.ShowText = false;
-            GeneroText.Size = new Size(368, 29);
+            GeneroText.Size = new Size(883, 29);
             GeneroText.Style = Sunny.UI.UIStyle.Custom;
             GeneroText.TabIndex = 71;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -420,7 +421,7 @@
             FranquiaText.ButtonStyleInherited = false;
             FranquiaText.FillColor2 = Color.FromArgb(238, 248, 248);
             FranquiaText.Font = new Font("Microsoft Sans Serif", 12F);
-            FranquiaText.Location = new Point(132, 744);
+            FranquiaText.Location = new Point(30, 548);
             FranquiaText.Margin = new Padding(4, 5, 4, 5);
             FranquiaText.MinimumSize = new Size(1, 16);
             FranquiaText.Name = "FranquiaText";
@@ -429,7 +430,7 @@
             FranquiaText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FranquiaText.ScrollBarStyleInherited = false;
             FranquiaText.ShowText = false;
-            FranquiaText.Size = new Size(241, 29);
+            FranquiaText.Size = new Size(883, 29);
             FranquiaText.Style = Sunny.UI.UIStyle.Custom;
             FranquiaText.TabIndex = 65;
             FranquiaText.Text = "--";
@@ -633,7 +634,7 @@
             FranquiaLabel.AutoSize = true;
             FranquiaLabel.Font = new Font("Microsoft Sans Serif", 12F);
             FranquiaLabel.ForeColor = Color.Black;
-            FranquiaLabel.Location = new Point(66, 642);
+            FranquiaLabel.Location = new Point(30, 523);
             FranquiaLabel.Name = "FranquiaLabel";
             FranquiaLabel.Size = new Size(72, 20);
             FranquiaLabel.TabIndex = 57;
@@ -767,7 +768,7 @@
             AutoresLabel.AutoSize = true;
             AutoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
             AutoresLabel.ForeColor = Color.Black;
-            AutoresLabel.Location = new Point(30, 523);
+            AutoresLabel.Location = new Point(30, 583);
             AutoresLabel.Name = "AutoresLabel";
             AutoresLabel.Size = new Size(65, 20);
             AutoresLabel.TabIndex = 91;
@@ -849,11 +850,39 @@
             uiTextBox2.Watermark = "Gênero";
             uiTextBox2.WordWarp = false;
             // 
+            // uiTextBox3
+            // 
+            uiTextBox3.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            uiTextBox3.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox3.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox3.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox3.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox3.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox3.ButtonStyleInherited = false;
+            uiTextBox3.FillColor2 = Color.FromArgb(238, 248, 248);
+            uiTextBox3.Font = new Font("Microsoft Sans Serif", 12F);
+            uiTextBox3.Location = new Point(974, 523);
+            uiTextBox3.Margin = new Padding(4, 5, 4, 5);
+            uiTextBox3.MinimumSize = new Size(1, 16);
+            uiTextBox3.Name = "uiTextBox3";
+            uiTextBox3.Padding = new Padding(5);
+            uiTextBox3.RectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox3.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            uiTextBox3.ScrollBarStyleInherited = false;
+            uiTextBox3.ShowText = false;
+            uiTextBox3.Size = new Size(368, 29);
+            uiTextBox3.Style = Sunny.UI.UIStyle.Custom;
+            uiTextBox3.TabIndex = 96;
+            uiTextBox3.TextAlignment = ContentAlignment.MiddleLeft;
+            uiTextBox3.Watermark = "Gênero";
+            uiTextBox3.WordWarp = false;
+            // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
+            Controls.Add(uiTextBox3);
             Controls.Add(uiTextBox2);
             Controls.Add(uiTextBox1);
             Controls.Add(CriadoresLabel);
@@ -953,5 +982,6 @@
         private Sunny.UI.UILabel CriadoresLabel;
         private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UITextBox uiTextBox2;
+        private Sunny.UI.UITextBox uiTextBox3;
     }
 }
