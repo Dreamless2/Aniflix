@@ -62,28 +62,29 @@ namespace Aniflix.Services
 
                 if (movie.Genres?.Count > 2)
                 {
-                    var hashtags = new HashSet<string>();
+                    var hashtagsPrincipais = new List<string>(); // Hashtags com prioridade
+                    var outrasHashtags = new HashSet<string>();  // Outras hashtags comuns
 
                     foreach (var genre in movie.Genres.Take(3))
                     {
                         if (!string.IsNullOrEmpty(genre?.Name))
                         {
                             string clean = new string([.. genre.Name.Normalize().Where(char.IsLetterOrDigit)]).ToLower();
-                            hashtags.Add($"#{clean}");
+                            outrasHashtags.Add($"#{clean}");
                         }
                     }
 
-                    static void FormatGenre(string genre, HashSet<string> hashtags)
+                    static void FormatGenre(string genre, List<string> hashtagsPrincipais, HashSet<string> outrasHashtags)
                     {
                         Dictionary<string, string> specialWords = new()
-                        {
-                            { "ficção científica", "ficçãocientífica ficcaocientifica" },
-                            { "romântico", "romântico romantico" },
-                            { "romântica", "romântica romantica" },
-                            { "comédia", "comédia comedia" },
-                            { "mistério", "mistério misterio" },
-                            { "ação", "ação acao" }
-                        };
+        {
+            { "ficção científica", "ficçãocientífica ficcaocientifica" },
+            { "romântico", "romântico romantico" },
+            { "romântica", "romântica romantica" },
+            { "comédia", "comédia comedia" },
+            { "mistério", "mistério misterio" },
+            { "ação", "ação acao" }
+        };
 
                         string lowerGenre = genre.ToLower();
 
@@ -91,24 +92,25 @@ namespace Aniflix.Services
                         {
                             foreach (var tag in value.Split(' '))
                             {
-                                hashtags.Add($"#{tag}");
+                                hashtagsPrincipais.Add($"#{tag}");
                             }
                         }
                         else
                         {
                             string clean = new([.. genre.RemoveDiacritics().Where(char.IsAscii)]);
-                            hashtags.Add($"#{genre.ToLower().Replace(" ", "")}");
-                            hashtags.Add($"#{clean.ToLower().Replace(" ", "")}");
+                            outrasHashtags.Add($"#{genre.ToLower().Replace(" ", "")}");
+                            outrasHashtags.Add($"#{clean.ToLower().Replace(" ", "")}");
                         }
                     }
 
-                    FormatGenre(movie.Genres[2].Name, hashtags);
-                    FormatGenre(movie.Genres[1].Name, hashtags);
-                    FormatGenre(movie.Genres[0].Name, hashtags);
+                    // Processa os gêneros na ordem desejada
+                    FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(movie.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(movie.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
 
-                    generoText.Text = string.Join(" ", hashtags);
+                    // Junta as hashtags com prioridade primeiro
+                    generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
-
 
                 if (movie.Credits?.Crew != null)
                 {
