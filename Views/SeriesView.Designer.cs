@@ -223,7 +223,7 @@
             DiretorText.ButtonStyleInherited = false;
             DiretorText.FillColor2 = Color.FromArgb(238, 248, 248);
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(30, 606);
+            DiretorText.Location = new Point(974, 608);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
@@ -232,7 +232,7 @@
             DiretorText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             DiretorText.ScrollBarStyleInherited = false;
             DiretorText.ShowText = false;
-            DiretorText.Size = new Size(883, 29);
+            DiretorText.Size = new Size(368, 29);
             DiretorText.Style = Sunny.UI.UIStyle.Custom;
             DiretorText.TabIndex = 75;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -250,7 +250,7 @@
             EstrelasText.ButtonStyleInherited = false;
             EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(30, 665);
+            EstrelasText.Location = new Point(974, 667);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -259,7 +259,7 @@
             EstrelasText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstrelasText.ScrollBarStyleInherited = false;
             EstrelasText.ShowText = false;
-            EstrelasText.Size = new Size(883, 29);
+            EstrelasText.Size = new Size(368, 29);
             EstrelasText.Style = Sunny.UI.UIStyle.Custom;
             EstrelasText.TabIndex = 74;
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -277,7 +277,7 @@
             EstudioText.ButtonStyleInherited = false;
             EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(30, 724);
+            EstudioText.Location = new Point(974, 726);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -286,7 +286,7 @@
             EstudioText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstudioText.ScrollBarStyleInherited = false;
             EstudioText.ShowText = false;
-            EstudioText.Size = new Size(883, 29);
+            EstudioText.Size = new Size(368, 29);
             EstudioText.Style = Sunny.UI.UIStyle.Custom;
             EstudioText.TabIndex = 73;
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -326,7 +326,7 @@
             DiretorLabel.AutoSize = true;
             DiretorLabel.Font = new Font("Microsoft Sans Serif", 12F);
             DiretorLabel.ForeColor = Color.Black;
-            DiretorLabel.Location = new Point(30, 581);
+            DiretorLabel.Location = new Point(974, 583);
             DiretorLabel.Name = "DiretorLabel";
             DiretorLabel.Size = new Size(57, 20);
             DiretorLabel.TabIndex = 81;
@@ -337,7 +337,7 @@
             GeneroLabel.AutoSize = true;
             GeneroLabel.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroLabel.ForeColor = Color.Black;
-            GeneroLabel.Location = new Point(30, 522);
+            GeneroLabel.Location = new Point(974, 524);
             GeneroLabel.Name = "GeneroLabel";
             GeneroLabel.Size = new Size(63, 20);
             GeneroLabel.TabIndex = 80;
@@ -348,7 +348,7 @@
             EstudioLabel.AutoSize = true;
             EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioLabel.ForeColor = Color.FromArgb(48, 48, 48);
-            EstudioLabel.Location = new Point(30, 699);
+            EstudioLabel.Location = new Point(974, 701);
             EstudioLabel.Name = "EstudioLabel";
             EstudioLabel.Size = new Size(63, 20);
             EstudioLabel.TabIndex = 79;
@@ -359,7 +359,7 @@
             EstrelasLabel.AutoSize = true;
             EstrelasLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasLabel.ForeColor = Color.Black;
-            EstrelasLabel.Location = new Point(30, 640);
+            EstrelasLabel.Location = new Point(974, 642);
             EstrelasLabel.Name = "EstrelasLabel";
             EstrelasLabel.Size = new Size(67, 20);
             EstrelasLabel.TabIndex = 78;
@@ -387,7 +387,7 @@
             GeneroText.ButtonStyleInherited = false;
             GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(30, 547);
+            GeneroText.Location = new Point(974, 549);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
@@ -396,7 +396,7 @@
             GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             GeneroText.ScrollBarStyleInherited = false;
             GeneroText.ShowText = false;
-            GeneroText.Size = new Size(883, 29);
+            GeneroText.Size = new Size(368, 29);
             GeneroText.Style = Sunny.UI.UIStyle.Custom;
             GeneroText.TabIndex = 71;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -414,7 +414,7 @@
             FranquiaText.ButtonStyleInherited = false;
             FranquiaText.FillColor2 = Color.FromArgb(238, 248, 248);
             FranquiaText.Font = new Font("Microsoft Sans Serif", 12F);
-            FranquiaText.Location = new Point(30, 488);
+            FranquiaText.Location = new Point(1372, 834);
             FranquiaText.Margin = new Padding(4, 5, 4, 5);
             FranquiaText.MinimumSize = new Size(1, 16);
             FranquiaText.Name = "FranquiaText";
@@ -423,7 +423,7 @@
             FranquiaText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FranquiaText.ScrollBarStyleInherited = false;
             FranquiaText.ShowText = false;
-            FranquiaText.Size = new Size(883, 29);
+            FranquiaText.Size = new Size(241, 29);
             FranquiaText.Style = Sunny.UI.UIStyle.Custom;
             FranquiaText.TabIndex = 65;
             FranquiaText.Text = "--";
@@ -474,7 +474,7 @@
             FilmeLabel.AutoSize = true;
             FilmeLabel.Font = new Font("Microsoft Sans Serif", 12F);
             FilmeLabel.ForeColor = Color.Black;
-            FilmeLabel.Location = new Point(30, 404);
+            FilmeLabel.Location = new Point(1421, 886);
             FilmeLabel.Name = "FilmeLabel";
             FilmeLabel.Size = new Size(47, 20);
             FilmeLabel.TabIndex = 61;
@@ -584,7 +584,7 @@
             FilmeText.ButtonStyleInherited = false;
             FilmeText.FillColor2 = Color.FromArgb(238, 248, 248);
             FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeText.Location = new Point(30, 429);
+            FilmeText.Location = new Point(1421, 911);
             FilmeText.Margin = new Padding(4, 5, 4, 5);
             FilmeText.MinimumSize = new Size(1, 16);
             FilmeText.Name = "FilmeText";
@@ -593,7 +593,7 @@
             FilmeText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FilmeText.ScrollBarStyleInherited = false;
             FilmeText.ShowText = false;
-            FilmeText.Size = new Size(699, 29);
+            FilmeText.Size = new Size(294, 29);
             FilmeText.Style = Sunny.UI.UIStyle.Custom;
             FilmeText.TabIndex = 70;
             FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -627,7 +627,7 @@
             FranquiaLabel.AutoSize = true;
             FranquiaLabel.Font = new Font("Microsoft Sans Serif", 12F);
             FranquiaLabel.ForeColor = Color.Black;
-            FranquiaLabel.Location = new Point(30, 463);
+            FranquiaLabel.Location = new Point(1372, 809);
             FranquiaLabel.Name = "FranquiaLabel";
             FranquiaLabel.Size = new Size(72, 20);
             FranquiaLabel.TabIndex = 57;
