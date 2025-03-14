@@ -60,21 +60,13 @@ namespace Aniflix.Services
                     tagsText.Text = $"#Filme #Filme{releaseDate.Year}";
                 }
 
+
                 if (movie.Genres?.Count > 2)
                 {
-                    var hashtagsPrincipais = new List<string>();
-                    var outrasHashtags = new HashSet<string>();
+                    var hashtagsPrincipais = new HashSet<string>(); // Evita duplicatas aqui
+                    var outrasHashtags = new HashSet<string>();      // Mantém as outras hashtags
 
-                    foreach (var genre in movie.Genres.Take(3))
-                    {
-                        if (!string.IsNullOrEmpty(genre?.Name))
-                        {
-                            string clean = new string([.. genre.Name.Normalize().Where(char.IsLetterOrDigit)]).ToLower();
-                            outrasHashtags.Add($"#{clean}");
-                        }
-                    }
-
-                    static void FormatGenre(string genre, List<string> hashtagsPrincipais, HashSet<string> outrasHashtags)
+                    static void FormatGenre(string genre, HashSet<string> hashtagsPrincipais, HashSet<string> outrasHashtags)
                     {
                         Dictionary<string, string> specialWords = new()
                         {
@@ -103,12 +95,16 @@ namespace Aniflix.Services
                         }
                     }
 
+                    // Processa os gêneros na ordem desejada
                     FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(movie.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(movie.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
 
+                    // Junta as hashtags com prioridade primeiro e evita duplicatas
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
+
+
 
                 if (movie.Credits?.Crew != null)
                 {
