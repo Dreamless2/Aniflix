@@ -815,7 +815,7 @@
             uiTextBox1.ScrollBarColor = Color.FromArgb(0, 150, 136);
             uiTextBox1.ScrollBarStyleInherited = false;
             uiTextBox1.ShowText = false;
-            uiTextBox1.Size = new Size(466, 29);
+            uiTextBox1.Size = new Size(440, 29);
             uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox1.TabIndex = 94;
             uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
@@ -833,7 +833,7 @@
             uiTextBox2.ButtonStyleInherited = false;
             uiTextBox2.FillColor2 = Color.FromArgb(238, 248, 248);
             uiTextBox2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox2.Location = new Point(30, 469);
+            uiTextBox2.Location = new Point(478, 430);
             uiTextBox2.Margin = new Padding(4, 5, 4, 5);
             uiTextBox2.MinimumSize = new Size(1, 16);
             uiTextBox2.Name = "uiTextBox2";
