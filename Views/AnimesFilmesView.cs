@@ -40,25 +40,25 @@ namespace Aniflix.Views
         #region "FillData"
         private void FillData()
         {
-            var filmes = AnimesFilmesPresenter.GetFirstRow();
+            var item = AnimesFilmesPresenter.GetFirstRow();
 
-            if (filmes != null)
+            if (item != null)
             {
-                GlobalVars.currentId = filmes.Id;
-                CodigoText.Text = filmes.Codigo;
-                TituloText.Text = filmes.Titulo;
-                AudioBox.SelectedItem = filmes.Audio;
-                SinopseText.Text = filmes.Sinopse;
-                TituloOriginalText.Text = filmes.Titulo_Original;
-                DataLancamentoText.Text = filmes.Data_Lancamento;
-                TituloAlternativoText.Text = filmes.Titulo_Alternativo;
-                FilmeText.Text = filmes.Filme;
-                FranquiaText.Text = filmes.Franquia;
-                GeneroText.Text = filmes.Genero;
-                TagsText.Text = filmes.Tags;
-                DiretorText.Text = filmes.Diretor;
-                EstrelasText.Text = filmes.Estrelas;
-                EstudioText.Text = filmes.Estudio;
+                GlobalVars.currentId = item.Id;
+                CodigoText.Text = item.Codigo;
+                TituloText.Text = item.Titulo;
+                AudioBox.SelectedItem = item.Audio;
+                SinopseText.Text = item.Sinopse;
+                TituloOriginalText.Text = item.Titulo_Original;
+                DataLancamentoText.Text = item.Data_Lancamento;
+                TituloAlternativoText.Text = item.Titulo_Alternativo;
+                FilmeText.Text = item.Filme;
+                FranquiaText.Text = item.Franquia;
+                GeneroText.Text = item.Genero;
+                TagsText.Text = item.Tags;
+                DiretorText.Text = item.Diretor;
+                EstrelasText.Text = item.Estrelas;
+                EstudioText.Text = item.Estudio;
             }
             ;
         }
@@ -196,7 +196,7 @@ namespace Aniflix.Views
         #region "InserirNovoButton"
         private void InserirNovoButton_Click(object sender, EventArgs e)
         {
-            var filmes = new AnimesFilmesModels
+            var item = new AnimesFilmesModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -214,9 +214,9 @@ namespace Aniflix.Views
                 Estudio = EstudioText.Text
             };
 
-            if (!string.IsNullOrEmpty(filmes.Codigo))
+            if (!string.IsNullOrEmpty(item.Codigo))
             {
-                AnimesFilmesPresenter.Registrar(filmes);
+                AnimesFilmesPresenter.Registrar(item);
             }
             else
             {
