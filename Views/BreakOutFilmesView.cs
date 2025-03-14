@@ -49,7 +49,7 @@ namespace Aniflix.Views
         #region "FillData"
         private void FillData()
         {
-            var item = GoreFilmesPresenter.GetFirstRow();
+            var item = BreakOutFilmesPresenter.GetFirstRow();
 
             if (item != null)
             {
@@ -74,7 +74,7 @@ namespace Aniflix.Views
         #endregion
 
         #region "Load"
-        private void GoreFilmesView_Load(object sender, EventArgs e)
+        private void BreakOutFilmesView_Load(object sender, EventArgs e)
         {
             ChangeData();
             CodigoText.Focus();
