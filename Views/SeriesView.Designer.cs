@@ -65,7 +65,7 @@
             AudioBox = new Sunny.UI.UIComboBox();
             CodigoText = new Sunny.UI.UITextBox();
             CodigoFilmeLabel = new Sunny.UI.UILabel();
-            uiLabel1 = new Sunny.UI.UILabel();
+            PaisOrigemText = new Sunny.UI.UILabel();
             uiLabel2 = new Sunny.UI.UILabel();
             uiLabel3 = new Sunny.UI.UILabel();
             uiLabel4 = new Sunny.UI.UILabel();
@@ -749,16 +749,16 @@
             CodigoFilmeLabel.TabIndex = 53;
             CodigoFilmeLabel.Text = "Código do Filme";
             // 
-            // uiLabel1
+            // PaisOrigemText
             // 
-            uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel1.ForeColor = Color.Black;
-            uiLabel1.Location = new Point(376, 491);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(63, 20);
-            uiLabel1.TabIndex = 90;
-            uiLabel1.Text = "Gênero";
+            PaisOrigemText.AutoSize = true;
+            PaisOrigemText.Font = new Font("Microsoft Sans Serif", 12F);
+            PaisOrigemText.ForeColor = Color.Black;
+            PaisOrigemText.Location = new Point(376, 491);
+            PaisOrigemText.Name = "PaisOrigemText";
+            PaisOrigemText.Size = new Size(63, 20);
+            PaisOrigemText.TabIndex = 90;
+            PaisOrigemText.Text = "Gênero";
             // 
             // uiLabel2
             // 
@@ -801,7 +801,7 @@
             Controls.Add(uiLabel4);
             Controls.Add(uiLabel3);
             Controls.Add(uiLabel2);
-            Controls.Add(uiLabel1);
+            Controls.Add(PaisOrigemText);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
             Controls.Add(FaseMCULabel);
@@ -889,7 +889,7 @@
         private Sunny.UI.UIComboBox AudioBox;
         private Sunny.UI.UITextBox CodigoText;
         private Sunny.UI.UILabel CodigoFilmeLabel;
-        private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UILabel PaisOrigemText;
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UILabel uiLabel3;
         private Sunny.UI.UILabel uiLabel4;
