@@ -57,7 +57,7 @@ namespace Aniflix.Presenters
 
         public static BreakOutFilmesModels GetFirstRow()
         {
-            return GlobalVars.context.Filmes
+            return GlobalVars.context.Breakout_Filmes
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
 
@@ -67,7 +67,7 @@ namespace Aniflix.Presenters
         {
             try
             {
-                return GlobalVars.context.Filmes
+                return GlobalVars.context.Breakout_Filmes
                     .Where(x => x.Id > id)
                     .OrderBy(x => x.Id)
                     .FirstOrDefault();
@@ -88,7 +88,7 @@ namespace Aniflix.Presenters
                     return null;
                 }
 
-                return GlobalVars.context.Filmes
+                return GlobalVars.context.Breakout_Filmes
                     .Where(x => x.Id < id)
                     .OrderByDescending(x => x.Id)
                     .FirstOrDefault();
