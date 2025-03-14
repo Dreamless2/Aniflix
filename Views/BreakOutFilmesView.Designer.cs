@@ -361,6 +361,7 @@
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
             GeneroText.Watermark = "Gênero";
             GeneroText.WordWarp = false;
+            GeneroText.TextChanged += GeneroText_TextChanged;
             // 
             // FranquiaText
             // 
@@ -389,6 +390,7 @@
             FranquiaText.TextAlignment = ContentAlignment.MiddleLeft;
             FranquiaText.Watermark = "Franquia";
             FranquiaText.WordWarp = false;
+            FranquiaText.TextChanged += FranquiaText_TextChanged;
             // 
             // TagsText
             // 
