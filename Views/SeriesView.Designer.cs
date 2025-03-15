@@ -433,7 +433,7 @@
             FranquiaText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FranquiaText.ScrollBarStyleInherited = false;
             FranquiaText.ShowText = false;
-            FranquiaText.Size = new Size(883, 29);
+            FranquiaText.Size = new Size(497, 29);
             FranquiaText.Style = Sunny.UI.UIStyle.Custom;
             FranquiaText.TabIndex = 65;
             FranquiaText.Text = "--";
