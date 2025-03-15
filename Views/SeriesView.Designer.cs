@@ -893,7 +893,7 @@
             CriadoresText.ButtonStyleInherited = false;
             CriadoresText.FillColor2 = Color.FromArgb(238, 248, 248);
             CriadoresText.Font = new Font("Microsoft Sans Serif", 12F);
-            CriadoresText.Location = new Point(457, 603);
+            CriadoresText.Location = new Point(504, 603);
             CriadoresText.Margin = new Padding(4, 5, 4, 5);
             CriadoresText.MinimumSize = new Size(1, 16);
             CriadoresText.Name = "CriadoresText";
@@ -902,7 +902,7 @@
             CriadoresText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             CriadoresText.ScrollBarStyleInherited = false;
             CriadoresText.ShowText = false;
-            CriadoresText.Size = new Size(462, 29);
+            CriadoresText.Size = new Size(415, 29);
             CriadoresText.Style = Sunny.UI.UIStyle.Custom;
             CriadoresText.TabIndex = 97;
             CriadoresText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -914,7 +914,7 @@
             ObraOriginalLabel.AutoSize = true;
             ObraOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
             ObraOriginalLabel.ForeColor = Color.Black;
-            ObraOriginalLabel.Location = new Point(35, 637);
+            ObraOriginalLabel.Location = new Point(35, 577);
             ObraOriginalLabel.Name = "ObraOriginalLabel";
             ObraOriginalLabel.Size = new Size(101, 20);
             ObraOriginalLabel.TabIndex = 98;
