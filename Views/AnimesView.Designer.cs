@@ -752,7 +752,7 @@
             SerieText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             SerieText.ScrollBarStyleInherited = false;
             SerieText.ShowText = false;
-            SerieText.Size = new Size(852, 29);
+            SerieText.Size = new Size(883, 29);
             SerieText.Style = Sunny.UI.UIStyle.Custom;
             SerieText.TabIndex = 117;
             SerieText.TextAlignment = ContentAlignment.MiddleLeft;
