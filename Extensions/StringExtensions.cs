@@ -133,9 +133,9 @@ namespace Aniflix.Extensions
         {
             string normalized = input.Normalize(NormalizationForm.FormD);
 
-            string withoutAccents = Regex.Replace(normalized, "[^\p{L}#]", "");
+            string withoutAccents = Regex.Replace(normalized, "[^\\p{L}#]", "");
 
-            return Regex.Replace(withoutAccents, "[\p{P}\s]", "");
+            return Regex.Replace(withoutAccents, "[\\p{P}\\s]", "");
         }
     }
 }
