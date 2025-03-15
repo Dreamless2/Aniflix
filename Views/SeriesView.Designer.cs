@@ -69,7 +69,7 @@
             AutoresLabel = new Sunny.UI.UILabel();
             IdiomaOriginalLabel = new Sunny.UI.UILabel();
             CriadoresLabel = new Sunny.UI.UILabel();
-            Id = new Sunny.UI.UITextBox();
+            PaisOrigemText = new Sunny.UI.UITextBox();
             IdiomaOriginalText = new Sunny.UI.UITextBox();
             GeneroText = new Sunny.UI.UITextBox();
             CriadoresText = new Sunny.UI.UITextBox();
@@ -799,32 +799,32 @@
             CriadoresLabel.TabIndex = 93;
             CriadoresLabel.Text = "Criadores";
             // 
-            // Id
+            // PaisOrigemText
             // 
-            Id.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            Id.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            Id.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            Id.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            Id.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            Id.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            Id.ButtonStyleInherited = false;
-            Id.FillColor2 = Color.FromArgb(238, 248, 248);
-            Id.Font = new Font("Microsoft Sans Serif", 12F);
-            Id.Location = new Point(35, 425);
-            Id.Margin = new Padding(4, 5, 4, 5);
-            Id.MinimumSize = new Size(1, 16);
-            Id.Name = "Id";
-            Id.Padding = new Padding(5);
-            Id.RectColor = Color.FromArgb(0, 150, 136);
-            Id.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            Id.ScrollBarStyleInherited = false;
-            Id.ShowText = false;
-            Id.Size = new Size(438, 29);
-            Id.Style = Sunny.UI.UIStyle.Custom;
-            Id.TabIndex = 94;
-            Id.TextAlignment = ContentAlignment.MiddleLeft;
-            Id.Watermark = "País de Origem";
-            Id.WordWarp = false;
+            PaisOrigemText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            PaisOrigemText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            PaisOrigemText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            PaisOrigemText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            PaisOrigemText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            PaisOrigemText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            PaisOrigemText.ButtonStyleInherited = false;
+            PaisOrigemText.FillColor2 = Color.FromArgb(238, 248, 248);
+            PaisOrigemText.Font = new Font("Microsoft Sans Serif", 12F);
+            PaisOrigemText.Location = new Point(35, 425);
+            PaisOrigemText.Margin = new Padding(4, 5, 4, 5);
+            PaisOrigemText.MinimumSize = new Size(1, 16);
+            PaisOrigemText.Name = "PaisOrigemText";
+            PaisOrigemText.Padding = new Padding(5);
+            PaisOrigemText.RectColor = Color.FromArgb(0, 150, 136);
+            PaisOrigemText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            PaisOrigemText.ScrollBarStyleInherited = false;
+            PaisOrigemText.ShowText = false;
+            PaisOrigemText.Size = new Size(438, 29);
+            PaisOrigemText.Style = Sunny.UI.UIStyle.Custom;
+            PaisOrigemText.TabIndex = 94;
+            PaisOrigemText.TextAlignment = ContentAlignment.MiddleLeft;
+            PaisOrigemText.Watermark = "País de Origem";
+            PaisOrigemText.WordWarp = false;
             // 
             // IdiomaOriginalText
             // 
@@ -955,7 +955,7 @@
             Controls.Add(CriadoresText);
             Controls.Add(GeneroText);
             Controls.Add(IdiomaOriginalText);
-            Controls.Add(Id);
+            Controls.Add(PaisOrigemText);
             Controls.Add(CriadoresLabel);
             Controls.Add(IdiomaOriginalLabel);
             Controls.Add(AutoresLabel);
@@ -1052,7 +1052,7 @@
         private Sunny.UI.UILabel AutoresLabel;
         private Sunny.UI.UILabel IdiomaOriginalLabel;
         private Sunny.UI.UILabel CriadoresLabel;
-        private Sunny.UI.UITextBox Id;
+        private Sunny.UI.UITextBox PaisOrigemText;
         private Sunny.UI.UITextBox IdiomaOriginalText;
         private Sunny.UI.UITextBox GeneroText;
         private Sunny.UI.UITextBox CriadoresText;
