@@ -58,7 +58,7 @@
             FranquiaText = new Sunny.UI.UITextBox();
             TagsText = new Sunny.UI.UITextBox();
             TituloAlternativoLabel = new Sunny.UI.UILabel();
-            FilmeLabel = new Sunny.UI.UILabel();
+            AnimeLabel = new Sunny.UI.UILabel();
             DataLancamentoText = new Sunny.UI.UITextBox();
             TituloOriginalLabel = new Sunny.UI.UILabel();
             TituloOriginalText = new Sunny.UI.UITextBox();
@@ -628,16 +628,16 @@
             TituloAlternativoLabel.TabIndex = 109;
             TituloAlternativoLabel.Text = "Título Alternativo";
             // 
-            // FilmeLabel
+            // AnimeLabel
             // 
-            FilmeLabel.AutoSize = true;
-            FilmeLabel.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeLabel.ForeColor = Color.Black;
-            FilmeLabel.Location = new Point(35, 461);
-            FilmeLabel.Name = "FilmeLabel";
-            FilmeLabel.Size = new Size(46, 20);
-            FilmeLabel.TabIndex = 108;
-            FilmeLabel.Text = "Série";
+            AnimeLabel.AutoSize = true;
+            AnimeLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            AnimeLabel.ForeColor = Color.Black;
+            AnimeLabel.Location = new Point(35, 461);
+            AnimeLabel.Name = "AnimeLabel";
+            AnimeLabel.Size = new Size(54, 20);
+            AnimeLabel.TabIndex = 108;
+            AnimeLabel.Text = "Anime";
             // 
             // DataLancamentoText
             // 
@@ -752,7 +752,7 @@
             SerieText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             SerieText.ScrollBarStyleInherited = false;
             SerieText.ShowText = false;
-            SerieText.Size = new Size(747, 29);
+            SerieText.Size = new Size(641, 29);
             SerieText.Style = Sunny.UI.UIStyle.Custom;
             SerieText.TabIndex = 117;
             SerieText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -939,7 +939,7 @@
             Controls.Add(FranquiaText);
             Controls.Add(TagsText);
             Controls.Add(TituloAlternativoLabel);
-            Controls.Add(FilmeLabel);
+            Controls.Add(AnimeLabel);
             Controls.Add(DataLancamentoText);
             Controls.Add(TituloOriginalLabel);
             Controls.Add(TituloOriginalText);
@@ -998,7 +998,7 @@
         private Sunny.UI.UITextBox FranquiaText;
         private Sunny.UI.UITextBox TagsText;
         private Sunny.UI.UILabel TituloAlternativoLabel;
-        private Sunny.UI.UILabel FilmeLabel;
+        private Sunny.UI.UILabel AnimeLabel;
         private Sunny.UI.UITextBox DataLancamentoText;
         private Sunny.UI.UILabel TituloOriginalLabel;
         private Sunny.UI.UITextBox TituloOriginalText;
