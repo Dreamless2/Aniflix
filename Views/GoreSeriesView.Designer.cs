@@ -820,9 +820,9 @@
             CodigoFilmeLabel.ForeColor = Color.Black;
             CodigoFilmeLabel.Location = new Point(35, 32);
             CodigoFilmeLabel.Name = "CodigoFilmeLabel";
-            CodigoFilmeLabel.Size = new Size(130, 20);
+            CodigoFilmeLabel.Size = new Size(122, 20);
             CodigoFilmeLabel.TabIndex = 144;
-            CodigoFilmeLabel.Text = "Código do Anime";
+            CodigoFilmeLabel.Text = "Código da Série";
             // 
             // GoreSeriesView
             // 
