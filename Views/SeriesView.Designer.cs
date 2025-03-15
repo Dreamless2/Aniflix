@@ -73,7 +73,7 @@
             uiTextBox2 = new Sunny.UI.UITextBox();
             uiTextBox3 = new Sunny.UI.UITextBox();
             uiTextBox4 = new Sunny.UI.UITextBox();
-            uiLabel1 = new Sunny.UI.UILabel();
+            ObraOriginalLabel = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
             // DadosLabel
@@ -906,23 +906,23 @@
             uiTextBox4.Watermark = "Criadores";
             uiTextBox4.WordWarp = false;
             // 
-            // uiLabel1
+            // ObraOriginalLabel
             // 
-            uiLabel1.AutoSize = true;
-            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel1.ForeColor = Color.Black;
-            uiLabel1.Location = new Point(737, 749);
-            uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(63, 20);
-            uiLabel1.TabIndex = 98;
-            uiLabel1.Text = "Gênero";
+            ObraOriginalLabel.AutoSize = true;
+            ObraOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
+            ObraOriginalLabel.ForeColor = Color.Black;
+            ObraOriginalLabel.Location = new Point(737, 749);
+            ObraOriginalLabel.Name = "ObraOriginalLabel";
+            ObraOriginalLabel.Size = new Size(63, 20);
+            ObraOriginalLabel.TabIndex = 98;
+            ObraOriginalLabel.Text = "Gênero";
             // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
-            Controls.Add(uiLabel1);
+            Controls.Add(ObraOriginalLabel);
             Controls.Add(uiTextBox4);
             Controls.Add(uiTextBox3);
             Controls.Add(uiTextBox2);
@@ -1026,6 +1026,6 @@
         private Sunny.UI.UITextBox uiTextBox2;
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UITextBox uiTextBox4;
-        private Sunny.UI.UILabel uiLabel1;
+        private Sunny.UI.UILabel ObraOriginalLabel;
     }
 }
