@@ -59,7 +59,7 @@
             TituloOriginalLabel = new Sunny.UI.UILabel();
             TituloOriginalText = new Sunny.UI.UITextBox();
             TituloAlternativoText = new Sunny.UI.UITextBox();
-            SerieText = new Sunny.UI.UITextBox();
+            AnimeText = new Sunny.UI.UITextBox();
             DataLancamentoLabel = new Sunny.UI.UILabel();
             TituloLabel = new Sunny.UI.UILabel();
             FranquiaLabel = new Sunny.UI.UILabel();
@@ -652,32 +652,32 @@
             TituloAlternativoText.Watermark = "Título Alternativo";
             TituloAlternativoText.WordWarp = false;
             // 
-            // SerieText
+            // AnimeText
             // 
-            SerieText.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            SerieText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            SerieText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            SerieText.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            SerieText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            SerieText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            SerieText.ButtonStyleInherited = false;
-            SerieText.FillColor2 = Color.FromArgb(238, 248, 248);
-            SerieText.Font = new Font("Microsoft Sans Serif", 12F);
-            SerieText.Location = new Point(35, 486);
-            SerieText.Margin = new Padding(4, 5, 4, 5);
-            SerieText.MinimumSize = new Size(1, 16);
-            SerieText.Name = "SerieText";
-            SerieText.Padding = new Padding(5);
-            SerieText.RectColor = Color.FromArgb(0, 150, 136);
-            SerieText.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            SerieText.ScrollBarStyleInherited = false;
-            SerieText.ShowText = false;
-            SerieText.Size = new Size(883, 29);
-            SerieText.Style = Sunny.UI.UIStyle.Custom;
-            SerieText.TabIndex = 117;
-            SerieText.TextAlignment = ContentAlignment.MiddleLeft;
-            SerieText.Watermark = "Série";
-            SerieText.WordWarp = false;
+            AnimeText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            AnimeText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            AnimeText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            AnimeText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            AnimeText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            AnimeText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            AnimeText.ButtonStyleInherited = false;
+            AnimeText.FillColor2 = Color.FromArgb(238, 248, 248);
+            AnimeText.Font = new Font("Microsoft Sans Serif", 12F);
+            AnimeText.Location = new Point(35, 486);
+            AnimeText.Margin = new Padding(4, 5, 4, 5);
+            AnimeText.MinimumSize = new Size(1, 16);
+            AnimeText.Name = "AnimeText";
+            AnimeText.Padding = new Padding(5);
+            AnimeText.RectColor = Color.FromArgb(0, 150, 136);
+            AnimeText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            AnimeText.ScrollBarStyleInherited = false;
+            AnimeText.ShowText = false;
+            AnimeText.Size = new Size(883, 29);
+            AnimeText.Style = Sunny.UI.UIStyle.Custom;
+            AnimeText.TabIndex = 117;
+            AnimeText.TextAlignment = ContentAlignment.MiddleLeft;
+            AnimeText.Watermark = "Série";
+            AnimeText.WordWarp = false;
             // 
             // DataLancamentoLabel
             // 
@@ -860,7 +860,7 @@
             Controls.Add(TituloOriginalLabel);
             Controls.Add(TituloOriginalText);
             Controls.Add(TituloAlternativoText);
-            Controls.Add(SerieText);
+            Controls.Add(AnimeText);
             Controls.Add(DataLancamentoLabel);
             Controls.Add(TituloLabel);
             Controls.Add(FranquiaLabel);
@@ -914,7 +914,7 @@
         private Sunny.UI.UILabel TituloOriginalLabel;
         private Sunny.UI.UITextBox TituloOriginalText;
         private Sunny.UI.UITextBox TituloAlternativoText;
-        private Sunny.UI.UITextBox SerieText;
+        private Sunny.UI.UITextBox AnimeText;
         private Sunny.UI.UILabel DataLancamentoLabel;
         private Sunny.UI.UILabel TituloLabel;
         private Sunny.UI.UILabel FranquiaLabel;
