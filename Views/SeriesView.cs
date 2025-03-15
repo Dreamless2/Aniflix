@@ -24,6 +24,36 @@ namespace Aniflix.Views
         }
 
 
+        #region "ChangeData"
+        private void ChangeData()
+        {
+
+            var services = new BaseSeriesServices(
+                titulo: TituloText.Text,
+                audio: AudioBox.SelectedItem?.ToString() ?? string.Empty,
+                sinopse: SinopseText.Text,
+                tituloOriginal: TituloOriginalText.Text,
+                dataLancamento: DataLancamentoText.Text,
+                tituloAlternativo: TituloAlternativoText.Text,
+                paisOrigem: PaisOrigemText.Text,
+                idiomaOriginal: IdiomaOriginalText.Text,
+                serie: SerieText.Text,
+                autores: AutoresText.Text,
+                criadores: CriadoresText.Text,
+                obraOriginal: ObraOriginalText.Text,
+                genero: GeneroText.Text,
+                tags: TagsText.Text,
+                diretor: DiretorText.Text,
+                estrelas: EstrelasText.Text,
+                estudio: EstudioText.Text,
+                mcu: FaseMCUText.Text
+            );
+
+            ResumoText.Text = services.GetFormattedText();
+        }
+
+        #endregion
+
 
 
 
