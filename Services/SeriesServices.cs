@@ -33,9 +33,9 @@ namespace Aniflix.Services
                     )
                 );
 
-                var filmesAcentos = StringExtensions.StripPunctuation(series.Name.Replace(" ", ""));
+                var itemComAcentos = StringExtensions.StripPunctuation(series.Name.Replace(" ", ""));
 
-                if (string.IsNullOrEmpty(itemSemAcentos) || string.IsNullOrEmpty(filmesAcentos))
+                if (string.IsNullOrEmpty(itemSemAcentos) || string.IsNullOrEmpty(itemComAcentos))
                 {
                     MessageBox.Show("Nenhuma série encontrada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -46,7 +46,7 @@ namespace Aniflix.Services
                     bool temAcentos = StringExtensions.HasAccents(series.Name);
 
                     serieText.Text = temAcentos
-                        ? "#" + filmesAcentos + " " + "#" + itemSemAcentos
+                        ? "#" + itemComAcentos + " " + "#" + itemSemAcentos
                         : "#" + itemSemAcentos;
                 }
                 else

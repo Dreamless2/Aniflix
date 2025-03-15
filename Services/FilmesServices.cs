@@ -28,9 +28,9 @@ namespace Aniflix.Services
                     )
                 );
 
-                var filmesAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
+                var itemComAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
 
-                if (string.IsNullOrEmpty(itemSemAcentos) || string.IsNullOrEmpty(filmesAcentos))
+                if (string.IsNullOrEmpty(itemSemAcentos) || string.IsNullOrEmpty(itemComAcentos))
                 {
                     MessageBox.Show("Nenhum filme encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -41,7 +41,7 @@ namespace Aniflix.Services
                     bool temAcentos = StringExtensions.HasAccents(movie.Title);
 
                     filmeText.Text = temAcentos
-                        ? "#" + filmesAcentos + " " + "#" + itemSemAcentos
+                        ? "#" + itemComAcentos + " " + "#" + itemSemAcentos
                         : "#" + itemSemAcentos;
                 }
                 else
