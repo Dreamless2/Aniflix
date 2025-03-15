@@ -823,7 +823,7 @@
             uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox1.TabIndex = 94;
             uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox1.Watermark = "Gênero";
+            uiTextBox1.Watermark = "País de Origem";
             uiTextBox1.WordWarp = false;
             // 
             // uiTextBox2
