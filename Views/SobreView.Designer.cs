@@ -248,7 +248,7 @@
             // 
             TMDBLibVersion.BackColor = Color.Transparent;
             TMDBLibVersion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TMDBLibVersion.Location = new Point(9, 103);
+            TMDBLibVersion.Location = new Point(8, 103);
             TMDBLibVersion.MinimumSize = new Size(1, 1);
             TMDBLibVersion.Name = "TMDBLibVersion";
             TMDBLibVersion.Size = new Size(134, 28);
