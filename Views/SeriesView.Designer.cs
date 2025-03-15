@@ -287,7 +287,7 @@
             EstudioText.ButtonStyleInherited = false;
             EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(35, 780);
+            EstudioText.Location = new Point(35, 839);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -358,7 +358,7 @@
             EstudioLabel.AutoSize = true;
             EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioLabel.ForeColor = Color.FromArgb(48, 48, 48);
-            EstudioLabel.Location = new Point(35, 755);
+            EstudioLabel.Location = new Point(35, 814);
             EstudioLabel.Name = "EstudioLabel";
             EstudioLabel.Size = new Size(63, 20);
             EstudioLabel.TabIndex = 79;
