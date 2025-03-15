@@ -942,7 +942,7 @@
             uiTextBox5.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox5.TabIndex = 99;
             uiTextBox5.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox5.Watermark = "Gênero";
+            uiTextBox5.Watermark = "Obra Original";
             uiTextBox5.WordWarp = false;
             // 
             // SeriesView
