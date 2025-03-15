@@ -56,12 +56,13 @@ namespace Aniflix.Services
 
                 if (!string.IsNullOrEmpty(language.ToString()))
                 {
-                    var toLowerLanguage = StringExtensions.FirstCharToLower(StringExtensions.RemoveDiacritics(language.ToString()));
+                    var toLowerLanguage = StringExtensions.FirstCharToLower(language.ToString());
+                    var diacritis
 
                     bool temAcentos = StringExtensions.HasAccents(toLowerLanguage);
 
                     idiomaOriginalText.Text = temAcentos
-                        ? "#" + toLowerLanguage + " " + "#" + toLowerLanguage
+                        ? "#" + toLowerLanguage + " " + "#" + StringExtensions.RemoveDiacritics(language.ToString().Replace(" ", ""))
                         : "#" + StringExtensions.RemoveDiacritics(toLowerLanguage.Replace(" ", ""));
                 }
                 else
