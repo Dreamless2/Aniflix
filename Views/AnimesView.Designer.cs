@@ -28,13 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ObraOriginalText = new Sunny.UI.UITextBox();
-            ObraOriginalLabel = new Sunny.UI.UILabel();
-            CriadoresText = new Sunny.UI.UITextBox();
             GeneroText = new Sunny.UI.UITextBox();
             IdiomaOriginalText = new Sunny.UI.UITextBox();
             PaisOrigemText = new Sunny.UI.UITextBox();
-            CriadoresLabel = new Sunny.UI.UILabel();
             IdiomaOriginalLabel = new Sunny.UI.UILabel();
             AutoresLabel = new Sunny.UI.UILabel();
             PaisOrigemLabel = new Sunny.UI.UILabel();
@@ -75,71 +71,6 @@
             CodigoFilmeLabel = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
-            // ObraOriginalText
-            // 
-            ObraOriginalText.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            ObraOriginalText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            ObraOriginalText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            ObraOriginalText.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            ObraOriginalText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            ObraOriginalText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            ObraOriginalText.ButtonStyleInherited = false;
-            ObraOriginalText.FillColor2 = Color.FromArgb(238, 248, 248);
-            ObraOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
-            ObraOriginalText.Location = new Point(35, 604);
-            ObraOriginalText.Margin = new Padding(4, 5, 4, 5);
-            ObraOriginalText.MinimumSize = new Size(1, 16);
-            ObraOriginalText.Name = "ObraOriginalText";
-            ObraOriginalText.Padding = new Padding(5);
-            ObraOriginalText.RectColor = Color.FromArgb(0, 150, 136);
-            ObraOriginalText.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            ObraOriginalText.ScrollBarStyleInherited = false;
-            ObraOriginalText.ShowText = false;
-            ObraOriginalText.Size = new Size(412, 29);
-            ObraOriginalText.Style = Sunny.UI.UIStyle.Custom;
-            ObraOriginalText.TabIndex = 146;
-            ObraOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
-            ObraOriginalText.Watermark = "Obra Original";
-            ObraOriginalText.WordWarp = false;
-            // 
-            // ObraOriginalLabel
-            // 
-            ObraOriginalLabel.AutoSize = true;
-            ObraOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
-            ObraOriginalLabel.ForeColor = Color.Black;
-            ObraOriginalLabel.Location = new Point(35, 579);
-            ObraOriginalLabel.Name = "ObraOriginalLabel";
-            ObraOriginalLabel.Size = new Size(101, 20);
-            ObraOriginalLabel.TabIndex = 145;
-            ObraOriginalLabel.Text = "Obra Original";
-            // 
-            // CriadoresText
-            // 
-            CriadoresText.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            CriadoresText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            CriadoresText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            CriadoresText.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            CriadoresText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            CriadoresText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            CriadoresText.ButtonStyleInherited = false;
-            CriadoresText.FillColor2 = Color.FromArgb(238, 248, 248);
-            CriadoresText.Font = new Font("Microsoft Sans Serif", 12F);
-            CriadoresText.Location = new Point(455, 604);
-            CriadoresText.Margin = new Padding(4, 5, 4, 5);
-            CriadoresText.MinimumSize = new Size(1, 16);
-            CriadoresText.Name = "CriadoresText";
-            CriadoresText.Padding = new Padding(5);
-            CriadoresText.RectColor = Color.FromArgb(0, 150, 136);
-            CriadoresText.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            CriadoresText.ScrollBarStyleInherited = false;
-            CriadoresText.ShowText = false;
-            CriadoresText.Size = new Size(463, 29);
-            CriadoresText.Style = Sunny.UI.UIStyle.Custom;
-            CriadoresText.TabIndex = 144;
-            CriadoresText.TextAlignment = ContentAlignment.MiddleLeft;
-            CriadoresText.Watermark = "Criadores";
-            CriadoresText.WordWarp = false;
-            // 
             // GeneroText
             // 
             GeneroText.ButtonFillColor = Color.FromArgb(0, 150, 136);
@@ -151,7 +82,7 @@
             GeneroText.ButtonStyleInherited = false;
             GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(35, 723);
+            GeneroText.Location = new Point(35, 663);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
@@ -221,17 +152,6 @@
             PaisOrigemText.Watermark = "País de Origem";
             PaisOrigemText.WordWarp = false;
             // 
-            // CriadoresLabel
-            // 
-            CriadoresLabel.AutoSize = true;
-            CriadoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
-            CriadoresLabel.ForeColor = Color.Black;
-            CriadoresLabel.Location = new Point(455, 579);
-            CriadoresLabel.Name = "CriadoresLabel";
-            CriadoresLabel.Size = new Size(77, 20);
-            CriadoresLabel.TabIndex = 140;
-            CriadoresLabel.Text = "Criadores";
-            // 
             // IdiomaOriginalLabel
             // 
             IdiomaOriginalLabel.AutoSize = true;
@@ -285,7 +205,7 @@
             ProximoButton.ForeColor = Color.White;
             ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             ProximoButton.IconColor = Color.White;
-            ProximoButton.Location = new Point(1139, 847);
+            ProximoButton.Location = new Point(1139, 784);
             ProximoButton.Name = "ProximoButton";
             ProximoButton.Size = new Size(198, 91);
             ProximoButton.TabIndex = 135;
@@ -302,7 +222,7 @@
             AnteriorButton.ForeColor = Color.White;
             AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             AnteriorButton.IconColor = Color.White;
-            AnteriorButton.Location = new Point(904, 847);
+            AnteriorButton.Location = new Point(904, 784);
             AnteriorButton.Name = "AnteriorButton";
             AnteriorButton.Size = new Size(198, 91);
             AnteriorButton.TabIndex = 134;
@@ -319,7 +239,7 @@
             EditarButton.ForeColor = Color.White;
             EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             EditarButton.IconColor = Color.White;
-            EditarButton.Location = new Point(669, 847);
+            EditarButton.Location = new Point(669, 784);
             EditarButton.Name = "EditarButton";
             EditarButton.Size = new Size(198, 91);
             EditarButton.TabIndex = 133;
@@ -336,7 +256,7 @@
             InserirNovoButton.ForeColor = Color.White;
             InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             InserirNovoButton.IconColor = Color.White;
-            InserirNovoButton.Location = new Point(434, 847);
+            InserirNovoButton.Location = new Point(434, 784);
             InserirNovoButton.Name = "InserirNovoButton";
             InserirNovoButton.Size = new Size(198, 91);
             InserirNovoButton.TabIndex = 132;
@@ -353,7 +273,7 @@
             CopiarButton.ForeColor = Color.White;
             CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             CopiarButton.IconColor = Color.White;
-            CopiarButton.Location = new Point(199, 847);
+            CopiarButton.Location = new Point(199, 784);
             CopiarButton.Name = "CopiarButton";
             CopiarButton.Size = new Size(198, 91);
             CopiarButton.TabIndex = 131;
@@ -394,7 +314,7 @@
             ResumoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             ResumoText.ScrollBarStyleInherited = false;
             ResumoText.ShowText = false;
-            ResumoText.Size = new Size(575, 757);
+            ResumoText.Size = new Size(575, 697);
             ResumoText.Style = Sunny.UI.UIStyle.Custom;
             ResumoText.TabIndex = 129;
             ResumoText.TextAlignment = ContentAlignment.TopLeft;
@@ -410,7 +330,7 @@
             DiretorText.ButtonStyleInherited = false;
             DiretorText.FillColor2 = Color.FromArgb(238, 248, 248);
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(35, 664);
+            DiretorText.Location = new Point(35, 604);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
@@ -437,7 +357,7 @@
             EstrelasText.ButtonStyleInherited = false;
             EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(455, 664);
+            EstrelasText.Location = new Point(455, 604);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -464,7 +384,7 @@
             EstudioText.ButtonStyleInherited = false;
             EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(35, 782);
+            EstudioText.Location = new Point(35, 722);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -485,7 +405,7 @@
             DiretorLabel.AutoSize = true;
             DiretorLabel.Font = new Font("Microsoft Sans Serif", 12F);
             DiretorLabel.ForeColor = Color.Black;
-            DiretorLabel.Location = new Point(35, 638);
+            DiretorLabel.Location = new Point(35, 579);
             DiretorLabel.Name = "DiretorLabel";
             DiretorLabel.Size = new Size(57, 20);
             DiretorLabel.TabIndex = 128;
@@ -496,7 +416,7 @@
             GeneroLabel.AutoSize = true;
             GeneroLabel.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroLabel.ForeColor = Color.Black;
-            GeneroLabel.Location = new Point(35, 698);
+            GeneroLabel.Location = new Point(35, 638);
             GeneroLabel.Name = "GeneroLabel";
             GeneroLabel.Size = new Size(63, 20);
             GeneroLabel.TabIndex = 127;
@@ -507,7 +427,7 @@
             EstudioLabel.AutoSize = true;
             EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioLabel.ForeColor = Color.FromArgb(48, 48, 48);
-            EstudioLabel.Location = new Point(35, 757);
+            EstudioLabel.Location = new Point(35, 697);
             EstudioLabel.Name = "EstudioLabel";
             EstudioLabel.Size = new Size(63, 20);
             EstudioLabel.TabIndex = 126;
@@ -518,7 +438,7 @@
             EstrelasLabel.AutoSize = true;
             EstrelasLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasLabel.ForeColor = Color.Black;
-            EstrelasLabel.Location = new Point(455, 639);
+            EstrelasLabel.Location = new Point(455, 579);
             EstrelasLabel.Name = "EstrelasLabel";
             EstrelasLabel.Size = new Size(67, 20);
             EstrelasLabel.TabIndex = 125;
@@ -908,14 +828,10 @@
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1537, 966);
-            Controls.Add(ObraOriginalText);
-            Controls.Add(ObraOriginalLabel);
-            Controls.Add(CriadoresText);
+            ClientSize = new Size(1537, 911);
             Controls.Add(GeneroText);
             Controls.Add(IdiomaOriginalText);
             Controls.Add(PaisOrigemText);
-            Controls.Add(CriadoresLabel);
             Controls.Add(IdiomaOriginalLabel);
             Controls.Add(AutoresLabel);
             Controls.Add(PaisOrigemLabel);
@@ -967,14 +883,9 @@
         }
 
         #endregion
-
-        private Sunny.UI.UITextBox ObraOriginalText;
-        private Sunny.UI.UILabel ObraOriginalLabel;
-        private Sunny.UI.UITextBox CriadoresText;
         private Sunny.UI.UITextBox GeneroText;
         private Sunny.UI.UITextBox IdiomaOriginalText;
         private Sunny.UI.UITextBox PaisOrigemText;
-        private Sunny.UI.UILabel CriadoresLabel;
         private Sunny.UI.UILabel IdiomaOriginalLabel;
         private Sunny.UI.UILabel AutoresLabel;
         private Sunny.UI.UILabel PaisOrigemLabel;
