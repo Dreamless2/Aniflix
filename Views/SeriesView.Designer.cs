@@ -875,7 +875,7 @@
             GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             GeneroText.ScrollBarStyleInherited = false;
             GeneroText.ShowText = false;
-            GeneroText.Size = new Size(733, 29);
+            GeneroText.Size = new Size(747, 29);
             GeneroText.Style = Sunny.UI.UIStyle.Custom;
             GeneroText.TabIndex = 96;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
