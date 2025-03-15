@@ -233,7 +233,7 @@
             DiretorText.ButtonStyleInherited = false;
             DiretorText.FillColor2 = Color.FromArgb(238, 248, 248);
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(481, 662);
+            DiretorText.Location = new Point(35, 662);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
