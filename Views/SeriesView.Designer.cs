@@ -69,7 +69,7 @@
             AutoresLabel = new Sunny.UI.UILabel();
             IdiomaOriginalLabel = new Sunny.UI.UILabel();
             CriadoresLabel = new Sunny.UI.UILabel();
-            uiTextBox1 = new Sunny.UI.UITextBox();
+            PaisOrigemText = new Sunny.UI.UITextBox();
             uiTextBox2 = new Sunny.UI.UITextBox();
             uiTextBox3 = new Sunny.UI.UITextBox();
             uiTextBox4 = new Sunny.UI.UITextBox();
@@ -799,32 +799,32 @@
             CriadoresLabel.TabIndex = 93;
             CriadoresLabel.Text = "Criadores";
             // 
-            // uiTextBox1
+            // PaisOrigemText
             // 
-            uiTextBox1.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            uiTextBox1.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox1.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox1.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox1.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox1.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox1.ButtonStyleInherited = false;
-            uiTextBox1.FillColor2 = Color.FromArgb(238, 248, 248);
-            uiTextBox1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox1.Location = new Point(35, 425);
-            uiTextBox1.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox1.MinimumSize = new Size(1, 16);
-            uiTextBox1.Name = "uiTextBox1";
-            uiTextBox1.Padding = new Padding(5);
-            uiTextBox1.RectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox1.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            uiTextBox1.ScrollBarStyleInherited = false;
-            uiTextBox1.ShowText = false;
-            uiTextBox1.Size = new Size(438, 29);
-            uiTextBox1.Style = Sunny.UI.UIStyle.Custom;
-            uiTextBox1.TabIndex = 94;
-            uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox1.Watermark = "País de Origem";
-            uiTextBox1.WordWarp = false;
+            PaisOrigemText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            PaisOrigemText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            PaisOrigemText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            PaisOrigemText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            PaisOrigemText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            PaisOrigemText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            PaisOrigemText.ButtonStyleInherited = false;
+            PaisOrigemText.FillColor2 = Color.FromArgb(238, 248, 248);
+            PaisOrigemText.Font = new Font("Microsoft Sans Serif", 12F);
+            PaisOrigemText.Location = new Point(35, 425);
+            PaisOrigemText.Margin = new Padding(4, 5, 4, 5);
+            PaisOrigemText.MinimumSize = new Size(1, 16);
+            PaisOrigemText.Name = "PaisOrigemText";
+            PaisOrigemText.Padding = new Padding(5);
+            PaisOrigemText.RectColor = Color.FromArgb(0, 150, 136);
+            PaisOrigemText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            PaisOrigemText.ScrollBarStyleInherited = false;
+            PaisOrigemText.ShowText = false;
+            PaisOrigemText.Size = new Size(438, 29);
+            PaisOrigemText.Style = Sunny.UI.UIStyle.Custom;
+            PaisOrigemText.TabIndex = 94;
+            PaisOrigemText.TextAlignment = ContentAlignment.MiddleLeft;
+            PaisOrigemText.Watermark = "País de Origem";
+            PaisOrigemText.WordWarp = false;
             // 
             // uiTextBox2
             // 
@@ -955,7 +955,7 @@
             Controls.Add(uiTextBox4);
             Controls.Add(uiTextBox3);
             Controls.Add(uiTextBox2);
-            Controls.Add(uiTextBox1);
+            Controls.Add(PaisOrigemText);
             Controls.Add(CriadoresLabel);
             Controls.Add(IdiomaOriginalLabel);
             Controls.Add(AutoresLabel);
@@ -1052,7 +1052,7 @@
         private Sunny.UI.UILabel AutoresLabel;
         private Sunny.UI.UILabel IdiomaOriginalLabel;
         private Sunny.UI.UILabel CriadoresLabel;
-        private Sunny.UI.UITextBox uiTextBox1;
+        private Sunny.UI.UITextBox PaisOrigemText;
         private Sunny.UI.UITextBox uiTextBox2;
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UITextBox uiTextBox4;
