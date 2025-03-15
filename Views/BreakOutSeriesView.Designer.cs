@@ -900,9 +900,9 @@
             CodigoFilmeLabel.ForeColor = Color.Black;
             CodigoFilmeLabel.Location = new Point(35, 29);
             CodigoFilmeLabel.Name = "CodigoFilmeLabel";
-            CodigoFilmeLabel.Size = new Size(123, 20);
+            CodigoFilmeLabel.Size = new Size(122, 20);
             CodigoFilmeLabel.TabIndex = 100;
-            CodigoFilmeLabel.Text = "Código do Filme";
+            CodigoFilmeLabel.Text = "Código da Série";
             // 
             // BreakOutSeriesView
             // 
