@@ -73,6 +73,8 @@
             CriadoresText = new Sunny.UI.UITextBox();
             ObraOriginalLabel = new Sunny.UI.UILabel();
             ObraOriginalText = new Sunny.UI.UITextBox();
+            FaseMCULabel = new Sunny.UI.UILabel();
+            FaseMCUText = new Sunny.UI.UITextBox();
             SuspendLayout();
             // 
             // DadosLabel
@@ -562,7 +564,7 @@
             SerieText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             SerieText.ScrollBarStyleInherited = false;
             SerieText.ShowText = false;
-            SerieText.Size = new Size(626, 29);
+            SerieText.Size = new Size(699, 29);
             SerieText.Style = Sunny.UI.UIStyle.Custom;
             SerieText.TabIndex = 70;
             SerieText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -906,11 +908,52 @@
             ObraOriginalText.Watermark = "Obra Original";
             ObraOriginalText.WordWarp = false;
             // 
+            // FaseMCULabel
+            // 
+            FaseMCULabel.AutoSize = true;
+            FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
+            FaseMCULabel.ForeColor = Color.Black;
+            FaseMCULabel.Location = new Point(742, 459);
+            FaseMCULabel.Name = "FaseMCULabel";
+            FaseMCULabel.Size = new Size(85, 20);
+            FaseMCULabel.TabIndex = 100;
+            FaseMCULabel.Text = "Fase MCU";
+            // 
+            // FaseMCUText
+            // 
+            FaseMCUText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            FaseMCUText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            FaseMCUText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            FaseMCUText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            FaseMCUText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            FaseMCUText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            FaseMCUText.ButtonStyleInherited = false;
+            FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
+            FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
+            FaseMCUText.Location = new Point(742, 484);
+            FaseMCUText.Margin = new Padding(4, 5, 4, 5);
+            FaseMCUText.MinimumSize = new Size(1, 16);
+            FaseMCUText.Name = "FaseMCUText";
+            FaseMCUText.Padding = new Padding(5);
+            FaseMCUText.RectColor = Color.FromArgb(0, 150, 136);
+            FaseMCUText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            FaseMCUText.ScrollBarStyleInherited = false;
+            FaseMCUText.ShowText = false;
+            FaseMCUText.Size = new Size(176, 29);
+            FaseMCUText.Style = Sunny.UI.UIStyle.Custom;
+            FaseMCUText.TabIndex = 101;
+            FaseMCUText.Text = "--";
+            FaseMCUText.TextAlignment = ContentAlignment.MiddleLeft;
+            FaseMCUText.Watermark = "";
+            FaseMCUText.WordWarp = false;
+            // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1537, 966);
+            Controls.Add(FaseMCULabel);
+            Controls.Add(FaseMCUText);
             Controls.Add(ObraOriginalText);
             Controls.Add(ObraOriginalLabel);
             Controls.Add(CriadoresText);
@@ -961,7 +1004,7 @@
             Name = "SeriesView";
             Padding = new Padding(0);
             ShowTitle = false;
-            Text = "Séries";
+            Text = "v";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SeriesView_Load;
             ResumeLayout(false);
@@ -1015,5 +1058,7 @@
         private Sunny.UI.UITextBox CriadoresText;
         private Sunny.UI.UILabel ObraOriginalLabel;
         private Sunny.UI.UITextBox ObraOriginalText;
+        private Sunny.UI.UILabel FaseMCULabel;
+        private Sunny.UI.UITextBox FaseMCUText;
     }
 }
