@@ -208,7 +208,7 @@
             ResumoText.FillColor = Color.White;
             ResumoText.FillColor2 = Color.FromArgb(238, 248, 248);
             ResumoText.Font = new Font("Microsoft Sans Serif", 12F);
-            ResumoText.Location = new Point(1372, 57);
+            ResumoText.Location = new Point(921, 57);
             ResumoText.Margin = new Padding(4, 5, 4, 5);
             ResumoText.MinimumSize = new Size(1, 1);
             ResumoText.Name = "ResumoText";
@@ -217,7 +217,7 @@
             ResumoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             ResumoText.ScrollBarStyleInherited = false;
             ResumoText.ShowText = false;
-            ResumoText.Size = new Size(124, 696);
+            ResumoText.Size = new Size(575, 816);
             ResumoText.Style = Sunny.UI.UIStyle.Custom;
             ResumoText.TabIndex = 82;
             ResumoText.TextAlignment = ContentAlignment.TopLeft;
@@ -949,7 +949,7 @@
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1783, 1026);
+            ClientSize = new Size(1537, 1026);
             Controls.Add(uiTextBox5);
             Controls.Add(ObraOriginalLabel);
             Controls.Add(uiTextBox4);
