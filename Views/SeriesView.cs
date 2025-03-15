@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Aniflix.Entities;
 
 namespace Aniflix.Views
 {
@@ -28,7 +29,7 @@ namespace Aniflix.Views
         private void ChangeData()
         {
 
-            var services = new BaseSeriesServices(
+            var services = new BaseSeriesEntities(
                 titulo: TituloText.Text,
                 audio: AudioBox.SelectedItem?.ToString() ?? string.Empty,
                 sinopse: SinopseText.Text,
