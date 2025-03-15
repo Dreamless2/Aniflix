@@ -74,7 +74,7 @@
             uiTextBox3 = new Sunny.UI.UITextBox();
             CriadoresText = new Sunny.UI.UITextBox();
             ObraOriginalLabel = new Sunny.UI.UILabel();
-            uiTextBox5 = new Sunny.UI.UITextBox();
+            ObraOriginalText = new Sunny.UI.UITextBox();
             SuspendLayout();
             // 
             // DadosLabel
@@ -918,39 +918,39 @@
             ObraOriginalLabel.TabIndex = 98;
             ObraOriginalLabel.Text = "Obra Original";
             // 
-            // uiTextBox5
+            // ObraOriginalText
             // 
-            uiTextBox5.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            uiTextBox5.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox5.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox5.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox5.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox5.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox5.ButtonStyleInherited = false;
-            uiTextBox5.FillColor2 = Color.FromArgb(238, 248, 248);
-            uiTextBox5.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox5.Location = new Point(35, 662);
-            uiTextBox5.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox5.MinimumSize = new Size(1, 16);
-            uiTextBox5.Name = "uiTextBox5";
-            uiTextBox5.Padding = new Padding(5);
-            uiTextBox5.RectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox5.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            uiTextBox5.ScrollBarStyleInherited = false;
-            uiTextBox5.ShowText = false;
-            uiTextBox5.Size = new Size(438, 29);
-            uiTextBox5.Style = Sunny.UI.UIStyle.Custom;
-            uiTextBox5.TabIndex = 99;
-            uiTextBox5.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox5.Watermark = "Obra Original";
-            uiTextBox5.WordWarp = false;
+            ObraOriginalText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            ObraOriginalText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            ObraOriginalText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            ObraOriginalText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            ObraOriginalText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            ObraOriginalText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            ObraOriginalText.ButtonStyleInherited = false;
+            ObraOriginalText.FillColor2 = Color.FromArgb(238, 248, 248);
+            ObraOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
+            ObraOriginalText.Location = new Point(35, 662);
+            ObraOriginalText.Margin = new Padding(4, 5, 4, 5);
+            ObraOriginalText.MinimumSize = new Size(1, 16);
+            ObraOriginalText.Name = "ObraOriginalText";
+            ObraOriginalText.Padding = new Padding(5);
+            ObraOriginalText.RectColor = Color.FromArgb(0, 150, 136);
+            ObraOriginalText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            ObraOriginalText.ScrollBarStyleInherited = false;
+            ObraOriginalText.ShowText = false;
+            ObraOriginalText.Size = new Size(438, 29);
+            ObraOriginalText.Style = Sunny.UI.UIStyle.Custom;
+            ObraOriginalText.TabIndex = 99;
+            ObraOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
+            ObraOriginalText.Watermark = "Obra Original";
+            ObraOriginalText.WordWarp = false;
             // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1537, 959);
-            Controls.Add(uiTextBox5);
+            Controls.Add(ObraOriginalText);
             Controls.Add(ObraOriginalLabel);
             Controls.Add(CriadoresText);
             Controls.Add(uiTextBox3);
@@ -1057,6 +1057,6 @@
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UITextBox CriadoresText;
         private Sunny.UI.UILabel ObraOriginalLabel;
-        private Sunny.UI.UITextBox uiTextBox5;
+        private Sunny.UI.UITextBox ObraOriginalText;
     }
 }
