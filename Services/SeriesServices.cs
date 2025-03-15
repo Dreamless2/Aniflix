@@ -54,6 +54,11 @@ namespace Aniflix.Services
                     serieText.Text = "--";
                 }
 
+
+
+
+
+
                 tituloText.Text = series.Name ?? "--";
                 sinopseText.Text = series.Overview ?? "--";
                 tituloOriginalText.Text = series.OriginalName ?? "--";
