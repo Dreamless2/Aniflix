@@ -33,7 +33,6 @@ namespace Aniflix.Extensions
                 _ => string.Concat(input[0].ToString().ToUpper(), input.AsSpan(1)),
             };
 
-        // first char to lower
         public static string FirstCharToLower(this string input) =>
             input switch
             {
