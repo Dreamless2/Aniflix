@@ -38,6 +38,7 @@
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            DEEPLVersion = new Sunny.UI.UISymbolLabel();
             LogoBox = new PictureBox();
             SunnyBox = new PictureBox();
             SunnyVersion = new Sunny.UI.UISymbolLabel();
@@ -47,7 +48,6 @@
             FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
-            DEEPLVersion = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
@@ -192,6 +192,18 @@
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
             // 
+            // DEEPLVersion
+            // 
+            DEEPLVersion.BackColor = Color.Transparent;
+            DEEPLVersion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DEEPLVersion.Location = new Point(9, 171);
+            DEEPLVersion.MinimumSize = new Size(1, 1);
+            DEEPLVersion.Name = "DEEPLVersion";
+            DEEPLVersion.Size = new Size(524, 28);
+            DEEPLVersion.Symbol = 560403;
+            DEEPLVersion.TabIndex = 24;
+            DEEPLVersion.TextAlign = ContentAlignment.MiddleLeft;
+            // 
             // LogoBox
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
@@ -301,17 +313,6 @@
             LinkSunnyUI.TabStop = true;
             LinkSunnyUI.Text = "SunnyUI Home Page";
             LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
-            // 
-            // DEEPLVersion
-            // 
-            DEEPLVersion.BackColor = Color.Transparent;
-            DEEPLVersion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DEEPLVersion.Location = new Point(9, 171);
-            DEEPLVersion.MinimumSize = new Size(1, 1);
-            DEEPLVersion.Name = "DEEPLVersion";
-            DEEPLVersion.Size = new Size(524, 28);
-            DEEPLVersion.Symbol = 560403;
-            DEEPLVersion.TabIndex = 24;
             // 
             // SobreView
             // 
