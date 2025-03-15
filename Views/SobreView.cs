@@ -62,7 +62,6 @@ namespace Aniflix.Views
 
             });
         }
-
         private void DEEPLBox_Click(object sender, EventArgs e)
         {
             var url = "https://github.com/DeepLcom/deepl-dotnet";
