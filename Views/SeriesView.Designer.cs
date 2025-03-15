@@ -97,7 +97,7 @@
             ProximoButton.ForeColor = Color.White;
             ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             ProximoButton.IconColor = Color.White;
-            ProximoButton.Location = new Point(1147, 904);
+            ProximoButton.Location = new Point(1139, 904);
             ProximoButton.Name = "ProximoButton";
             ProximoButton.Size = new Size(198, 91);
             ProximoButton.TabIndex = 88;
@@ -125,7 +125,7 @@
             AnteriorButton.ForeColor = Color.White;
             AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             AnteriorButton.IconColor = Color.White;
-            AnteriorButton.Location = new Point(909, 904);
+            AnteriorButton.Location = new Point(904, 904);
             AnteriorButton.Name = "AnteriorButton";
             AnteriorButton.Size = new Size(198, 91);
             AnteriorButton.TabIndex = 87;
@@ -142,7 +142,7 @@
             EditarButton.ForeColor = Color.White;
             EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             EditarButton.IconColor = Color.White;
-            EditarButton.Location = new Point(674, 904);
+            EditarButton.Location = new Point(669, 904);
             EditarButton.Name = "EditarButton";
             EditarButton.Size = new Size(198, 91);
             EditarButton.TabIndex = 86;
@@ -159,7 +159,7 @@
             InserirNovoButton.ForeColor = Color.White;
             InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             InserirNovoButton.IconColor = Color.White;
-            InserirNovoButton.Location = new Point(439, 904);
+            InserirNovoButton.Location = new Point(434, 904);
             InserirNovoButton.Name = "InserirNovoButton";
             InserirNovoButton.Size = new Size(198, 91);
             InserirNovoButton.TabIndex = 85;
@@ -176,7 +176,7 @@
             CopiarButton.ForeColor = Color.White;
             CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             CopiarButton.IconColor = Color.White;
-            CopiarButton.Location = new Point(204, 904);
+            CopiarButton.Location = new Point(199, 904);
             CopiarButton.Name = "CopiarButton";
             CopiarButton.Size = new Size(198, 91);
             CopiarButton.TabIndex = 84;
