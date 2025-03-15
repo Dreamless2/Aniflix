@@ -199,12 +199,12 @@
             // 
             // DEEPLBox
             // 
-            DEEPLBox.Image = Properties.Resources.gpl_logo;
+            DEEPLBox.Image = Properties.Resources.deepl;
             DEEPLBox.ImageLocation = "";
             DEEPLBox.Location = new Point(274, 116);
             DEEPLBox.Name = "DEEPLBox";
             DEEPLBox.Size = new Size(259, 83);
-            DEEPLBox.SizeMode = PictureBoxSizeMode.CenterImage;
+            DEEPLBox.SizeMode = PictureBoxSizeMode.StretchImage;
             DEEPLBox.TabIndex = 25;
             DEEPLBox.TabStop = false;
             // 
