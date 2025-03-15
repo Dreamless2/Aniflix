@@ -273,7 +273,7 @@
             TMDBLibVersion.Symbol = 560403;
             TMDBLibVersion.TabIndex = 20;
             TMDBLibVersion.Text = "TMDBLib";
-            TMDBLibVersion.TextAlign = ContentAlignment.MiddleLeft;            
+            TMDBLibVersion.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // uiSymbolLabel4
             // 
@@ -347,6 +347,7 @@
             LinkDEEPLSite.TabIndex = 26;
             LinkDEEPLSite.TabStop = true;
             LinkDEEPLSite.Text = "DeepL.NET Home Page";
+            LinkDEEPLSite.LinkClicked += LinkDEEPLSite_LinkClicked;
             // 
             // SobreView
             // 
