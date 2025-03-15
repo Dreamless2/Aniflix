@@ -110,7 +110,7 @@
             FaseMCULabel.AutoSize = true;
             FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
             FaseMCULabel.ForeColor = Color.Black;
-            FaseMCULabel.Location = new Point(787, 696);
+            FaseMCULabel.Location = new Point(790, 459);
             FaseMCULabel.Name = "FaseMCULabel";
             FaseMCULabel.Size = new Size(85, 20);
             FaseMCULabel.TabIndex = 55;
@@ -314,7 +314,7 @@
             FaseMCUText.ButtonStyleInherited = false;
             FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCUText.Location = new Point(790, 721);
+            FaseMCUText.Location = new Point(790, 484);
             FaseMCUText.Margin = new Padding(4, 5, 4, 5);
             FaseMCUText.MinimumSize = new Size(1, 16);
             FaseMCUText.Name = "FaseMCUText";
@@ -603,7 +603,7 @@
             SerieText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             SerieText.ScrollBarStyleInherited = false;
             SerieText.ShowText = false;
-            SerieText.Size = new Size(883, 29);
+            SerieText.Size = new Size(747, 29);
             SerieText.Style = Sunny.UI.UIStyle.Custom;
             SerieText.TabIndex = 70;
             SerieText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -875,7 +875,7 @@
             GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             GeneroText.ScrollBarStyleInherited = false;
             GeneroText.ShowText = false;
-            GeneroText.Size = new Size(747, 29);
+            GeneroText.Size = new Size(883, 29);
             GeneroText.Style = Sunny.UI.UIStyle.Custom;
             GeneroText.TabIndex = 96;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
