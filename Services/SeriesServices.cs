@@ -63,6 +63,10 @@ namespace Aniflix.Services
                         ? "#" + language.ToString() + " " + "#" + StringExtensions.RemoveDiacritics(language.ToString().Replace(" ", ""))
                         : "#" + StringExtensions.RemoveDiacritics(language.ToString().Replace(" ", ""));
                 }
+                else
+                {
+                    idiomaOriginalText.Text = "--";
+                }
 
 
                 tituloText.Text = series.Name ?? "--";
@@ -70,7 +74,6 @@ namespace Aniflix.Services
                 tituloOriginalText.Text = series.OriginalName ?? "--";
                 dataLancamentoText.Text = series.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
                 paisOrigemText.Text = "#" + StringExtensions.RemoveDiacritics(country.Text.Replace(" ", ""));
-                idiomaOriginalText.Text = "#" + StringExtensions.RemoveDiacritics(language.Text.Replace(" ", ""));
                 tituloAlternativoText.Text = series.AlternativeTitles.Results[0].Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
