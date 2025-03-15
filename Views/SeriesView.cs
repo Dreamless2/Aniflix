@@ -19,10 +19,6 @@ namespace Aniflix.Views
             InitializeComponent();
         }
 
-        private void SeriesView_Load(object sender, EventArgs e)
-        {
-
-        }
 
 
         #region "ChangeData"
@@ -52,6 +48,37 @@ namespace Aniflix.Views
             ResumoText.Text = services.GetFormattedText();
         }
         #endregion
+
+        #region "CodigoText"
+        private async void CodigoText_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(CodigoText.Text))
+            {
+                MessageBox.Show("Por favor, insira o código da série.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                CodigoText.Focus();
+            }
+            else
+            {
+                //await GivenData();
+            }
+
+        }
+
+        private void CodigoText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        #endregion
+
+        private void SeriesView_Load(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
 
 
 
