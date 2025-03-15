@@ -931,7 +931,7 @@
             ObraOriginalText.ButtonStyleInherited = false;
             ObraOriginalText.FillColor2 = Color.FromArgb(238, 248, 248);
             ObraOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
-            ObraOriginalText.Location = new Point(35, 662);
+            ObraOriginalText.Location = new Point(35, 602);
             ObraOriginalText.Margin = new Padding(4, 5, 4, 5);
             ObraOriginalText.MinimumSize = new Size(1, 16);
             ObraOriginalText.Name = "ObraOriginalText";
