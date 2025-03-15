@@ -47,6 +47,7 @@
             FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
+            uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
@@ -58,7 +59,7 @@
             // 
             uiSymbolLabel2.BackColor = Color.Transparent;
             uiSymbolLabel2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel2.Location = new Point(8, 171);
+            uiSymbolLabel2.Location = new Point(9, 205);
             uiSymbolLabel2.MinimumSize = new Size(1, 1);
             uiSymbolLabel2.Name = "uiSymbolLabel2";
             uiSymbolLabel2.Size = new Size(185, 28);
@@ -107,7 +108,7 @@
             // 
             uiSymbolLabel1.BackColor = Color.Transparent;
             uiSymbolLabel1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel1.Location = new Point(8, 205);
+            uiSymbolLabel1.Location = new Point(9, 239);
             uiSymbolLabel1.MinimumSize = new Size(1, 1);
             uiSymbolLabel1.Name = "uiSymbolLabel1";
             uiSymbolLabel1.Size = new Size(524, 28);
@@ -166,6 +167,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(uiSymbolLabel5);
             uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(SunnyBox);
             uiGroupBox1.Controls.Add(SunnyVersion);
@@ -300,6 +302,18 @@
             LinkSunnyUI.Text = "SunnyUI Home Page";
             LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
             // 
+            // uiSymbolLabel5
+            // 
+            uiSymbolLabel5.BackColor = Color.Transparent;
+            uiSymbolLabel5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiSymbolLabel5.Location = new Point(9, 171);
+            uiSymbolLabel5.MinimumSize = new Size(1, 1);
+            uiSymbolLabel5.Name = "uiSymbolLabel5";
+            uiSymbolLabel5.Size = new Size(524, 28);
+            uiSymbolLabel5.Symbol = 560403;
+            uiSymbolLabel5.TabIndex = 24;
+            uiSymbolLabel5.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -354,5 +368,6 @@
         private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunnyUI;
         private PictureBox LogoBox;
+        private Sunny.UI.UISymbolLabel uiSymbolLabel5;
     }
 }
