@@ -61,8 +61,8 @@ namespace Aniflix.Services
                     bool temAcentos = StringExtensions.HasAccents(toLowerLanguage);
 
                     idiomaOriginalText.Text = temAcentos
-                        ? "#" + tol + " " + "#" + StringExtensions.RemoveDiacritics(language.ToString().Replace(" ", ""))
-                        : "#" + StringExtensions.RemoveDiacritics(language.ToString().Replace(" ", ""));
+                        ? "#" + toLowerLanguage + " " + "#" + StringExtensions.RemoveDiacritics(language.ToString().Replace(" ", ""))
+                        : "#" + StringExtensions.RemoveDiacritics(toLowerLanguage.Replace(" ", ""));
                 }
                 else
                 {
