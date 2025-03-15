@@ -49,7 +49,7 @@
             FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
-            linkLabel1 = new LinkLabel();
+            LinkDEEPL = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
@@ -337,16 +337,16 @@
             LinkSunnyUI.Text = "SunnyUI Home Page";
             LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
             // 
-            // linkLabel1
+            // LinkDEEPL
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(492, 476);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(155, 16);
-            linkLabel1.TabIndex = 26;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "DeepL.NET Home Page";
+            LinkDEEPL.AutoSize = true;
+            LinkDEEPL.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LinkDEEPL.Location = new Point(492, 476);
+            LinkDEEPL.Name = "LinkDEEPL";
+            LinkDEEPL.Size = new Size(155, 16);
+            LinkDEEPL.TabIndex = 26;
+            LinkDEEPL.TabStop = true;
+            LinkDEEPL.Text = "DeepL.NET Home Page";
             // 
             // SobreView
             // 
@@ -354,7 +354,7 @@
             BackColor = Color.FromArgb(244, 242, 251);
             ClientSize = new Size(852, 588);
             ControlBoxFillHoverColor = Color.FromArgb(133, 97, 198);
-            Controls.Add(linkLabel1);
+            Controls.Add(LinkDEEPL);
             Controls.Add(LinkSunnyUI);
             Controls.Add(LinkTMDBLib);
             Controls.Add(FecharButton);
@@ -406,6 +406,6 @@
         private PictureBox LogoBox;
         private Sunny.UI.UISymbolLabel DEEPLVersion;
         private PictureBox DEEPLBox;
-        private LinkLabel linkLabel1;
+        private LinkLabel LinkDEEPL;
     }
 }
