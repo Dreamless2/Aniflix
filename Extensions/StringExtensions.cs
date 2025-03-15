@@ -128,5 +128,14 @@ namespace Aniflix.Extensions
 
             return Regex.IsMatch(normalized, @"\p{M}");
         }
+
+        static string CleanString(string input)
+        {
+            string normalized = input.Normalize(NormalizationForm.FormD);
+
+            string withoutAccents = Regex.Replace(normalized, "[^\p{L}#]", "");
+
+            return Regex.Replace(withoutAccents, "[\p{P}\s]", "");
+        }
     }
 }
