@@ -676,7 +676,7 @@
             AnimeText.Style = Sunny.UI.UIStyle.Custom;
             AnimeText.TabIndex = 117;
             AnimeText.TextAlignment = ContentAlignment.MiddleLeft;
-            AnimeText.Watermark = "Série";
+            AnimeText.Watermark = "Anime";
             AnimeText.WordWarp = false;
             // 
             // DataLancamentoLabel
