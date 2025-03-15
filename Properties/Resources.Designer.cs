@@ -73,6 +73,16 @@ namespace Aniflix.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap deepl {
+            get {
+                object obj = ResourceManager.GetObject("deepl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gpl_logo {
             get {
                 object obj = ResourceManager.GetObject("gpl_logo", resourceCulture);
