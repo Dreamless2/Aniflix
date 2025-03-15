@@ -753,9 +753,9 @@
             CodigoFilmeLabel.ForeColor = Color.Black;
             CodigoFilmeLabel.Location = new Point(35, 27);
             CodigoFilmeLabel.Name = "CodigoFilmeLabel";
-            CodigoFilmeLabel.Size = new Size(123, 20);
+            CodigoFilmeLabel.Size = new Size(122, 20);
             CodigoFilmeLabel.TabIndex = 53;
-            CodigoFilmeLabel.Text = "Código do Filme";
+            CodigoFilmeLabel.Text = "Código da Série";
             // 
             // PaisOrigemLabel
             // 
