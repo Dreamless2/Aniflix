@@ -41,7 +41,7 @@
             LogoBox = new PictureBox();
             SunnyBox = new PictureBox();
             SunnyVersion = new Sunny.UI.UISymbolLabel();
-            uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
+            TMDBLibVersion = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
             FecharButton = new Sunny.UI.UIButton();
@@ -169,7 +169,7 @@
             uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(SunnyBox);
             uiGroupBox1.Controls.Add(SunnyVersion);
-            uiGroupBox1.Controls.Add(uiSymbolLabel5);
+            uiGroupBox1.Controls.Add(TMDBLibVersion);
             uiGroupBox1.Controls.Add(uiSymbolLabel4);
             uiGroupBox1.Controls.Add(uiSymbolLabel3);
             uiGroupBox1.Controls.Add(uiSymbolLabel1);
@@ -228,17 +228,17 @@
             SunnyVersion.TabIndex = 21;
             SunnyVersion.Text = "SunnyUI 3.8.2";
             // 
-            // uiSymbolLabel5
+            // TMDBLibVersion
             // 
-            uiSymbolLabel5.BackColor = Color.Transparent;
-            uiSymbolLabel5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel5.Location = new Point(8, 103);
-            uiSymbolLabel5.MinimumSize = new Size(1, 1);
-            uiSymbolLabel5.Name = "uiSymbolLabel5";
-            uiSymbolLabel5.Size = new Size(134, 28);
-            uiSymbolLabel5.Symbol = 560403;
-            uiSymbolLabel5.TabIndex = 20;
-            uiSymbolLabel5.Text = "TMDBLib 2.2.0";
+            TMDBLibVersion.BackColor = Color.Transparent;
+            TMDBLibVersion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TMDBLibVersion.Location = new Point(8, 103);
+            TMDBLibVersion.MinimumSize = new Size(1, 1);
+            TMDBLibVersion.Name = "TMDBLibVersion";
+            TMDBLibVersion.Size = new Size(134, 28);
+            TMDBLibVersion.Symbol = 560403;
+            TMDBLibVersion.TabIndex = 20;
+            TMDBLibVersion.Text = "TMDBLib 2.2.0";
             // 
             // uiSymbolLabel4
             // 
@@ -346,7 +346,7 @@
         private Sunny.UI.UILine uiLine1;
         private Sunny.UI.UIGroupBox uiGroupBox1;
         private Sunny.UI.UISymbolLabel uiSymbolLabel3;
-        private Sunny.UI.UISymbolLabel uiSymbolLabel5;
+        private Sunny.UI.UISymbolLabel TMDBLibVersion;
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
         private Sunny.UI.UIButton FecharButton;
         private Sunny.UI.UISymbolLabel SunnyVersion;
