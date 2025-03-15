@@ -242,7 +242,7 @@
             DiretorText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             DiretorText.ScrollBarStyleInherited = false;
             DiretorText.ShowText = false;
-            DiretorText.Size = new Size(699, 29);
+            DiretorText.Size = new Size(438, 29);
             DiretorText.Style = Sunny.UI.UIStyle.Custom;
             DiretorText.TabIndex = 75;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
