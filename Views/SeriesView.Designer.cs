@@ -741,7 +741,7 @@
             CodigoText.Style = Sunny.UI.UIStyle.Custom;
             CodigoText.TabIndex = 54;
             CodigoText.TextAlignment = ContentAlignment.MiddleLeft;
-            CodigoText.Watermark = "Código do Filme";
+            CodigoText.Watermark = "Código da Série";
             CodigoText.WordWarp = false;
             CodigoText.KeyPress += CodigoText_KeyPress;
             CodigoText.Leave += CodigoText_Leave;
