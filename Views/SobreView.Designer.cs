@@ -240,7 +240,6 @@
             SunnyVersion.Size = new Size(127, 28);
             SunnyVersion.Symbol = 560403;
             SunnyVersion.TabIndex = 21;
-            SunnyVersion.Text = "SunnyUI 3.8.2";
             // 
             // TMDBLibVersion
             // 
@@ -253,6 +252,7 @@
             TMDBLibVersion.Symbol = 560403;
             TMDBLibVersion.TabIndex = 20;
             TMDBLibVersion.Text = "TMDBLib 2.2.0";
+            TMDBLibVersion.Click += TMDBLibVersion_Click;
             // 
             // uiSymbolLabel4
             // 
