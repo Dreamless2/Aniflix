@@ -90,7 +90,17 @@ namespace Aniflix.Views
         {
             SunnyBox.Cursor = Cursors.Hand;
         }
+
+        private void Box_MouseEnter(object sender, EventArgs e)
+        {
+            DEEPLBox.Cursor = Cursors.Hand;
+        }
+
+
+
+
         #endregion
+
 
         #region "Link Click"
         private void LinkTMDB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
