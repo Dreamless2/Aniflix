@@ -139,10 +139,7 @@ namespace Aniflix.Views
 
         #endregion
 
-        private void TMDBLibVersion_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void DEEPLBox_Click(object sender, EventArgs e)
         {
