@@ -40,7 +40,6 @@
             PaisOrigemLabel = new Sunny.UI.UILabel();
             DadosLabel = new Sunny.UI.UILabel();
             ProximoButton = new FontAwesome.Sharp.Material.MaterialButton();
-            FaseMCULabel = new Sunny.UI.UILabel();
             AnteriorButton = new FontAwesome.Sharp.Material.MaterialButton();
             EditarButton = new FontAwesome.Sharp.Material.MaterialButton();
             InserirNovoButton = new FontAwesome.Sharp.Material.MaterialButton();
@@ -50,7 +49,6 @@
             DiretorText = new Sunny.UI.UITextBox();
             EstrelasText = new Sunny.UI.UITextBox();
             EstudioText = new Sunny.UI.UITextBox();
-            FaseMCUText = new Sunny.UI.UITextBox();
             DiretorLabel = new Sunny.UI.UILabel();
             GeneroLabel = new Sunny.UI.UILabel();
             EstudioLabel = new Sunny.UI.UILabel();
@@ -295,17 +293,6 @@
             ProximoButton.TextAlign = ContentAlignment.BottomLeft;
             ProximoButton.UseVisualStyleBackColor = false;
             // 
-            // FaseMCULabel
-            // 
-            FaseMCULabel.AutoSize = true;
-            FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCULabel.ForeColor = Color.Black;
-            FaseMCULabel.Location = new Point(790, 461);
-            FaseMCULabel.Name = "FaseMCULabel";
-            FaseMCULabel.Size = new Size(85, 20);
-            FaseMCULabel.TabIndex = 102;
-            FaseMCULabel.Text = "Fase MCU";
-            // 
             // AnteriorButton
             // 
             AnteriorButton.BackColor = Color.FromArgb(57, 74, 86);
@@ -492,34 +479,6 @@
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
             EstudioText.WordWarp = false;
-            // 
-            // FaseMCUText
-            // 
-            FaseMCUText.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            FaseMCUText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            FaseMCUText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            FaseMCUText.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            FaseMCUText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            FaseMCUText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            FaseMCUText.ButtonStyleInherited = false;
-            FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
-            FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCUText.Location = new Point(790, 486);
-            FaseMCUText.Margin = new Padding(4, 5, 4, 5);
-            FaseMCUText.MinimumSize = new Size(1, 16);
-            FaseMCUText.Name = "FaseMCUText";
-            FaseMCUText.Padding = new Padding(5);
-            FaseMCUText.RectColor = Color.FromArgb(0, 150, 136);
-            FaseMCUText.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            FaseMCUText.ScrollBarStyleInherited = false;
-            FaseMCUText.ShowText = false;
-            FaseMCUText.Size = new Size(129, 29);
-            FaseMCUText.Style = Sunny.UI.UIStyle.Custom;
-            FaseMCUText.TabIndex = 119;
-            FaseMCUText.Text = "--";
-            FaseMCUText.TextAlignment = ContentAlignment.MiddleLeft;
-            FaseMCUText.Watermark = "Fase MCU";
-            FaseMCUText.WordWarp = false;
             // 
             // DiretorLabel
             // 
@@ -962,7 +921,6 @@
             Controls.Add(PaisOrigemLabel);
             Controls.Add(DadosLabel);
             Controls.Add(ProximoButton);
-            Controls.Add(FaseMCULabel);
             Controls.Add(AnteriorButton);
             Controls.Add(EditarButton);
             Controls.Add(InserirNovoButton);
@@ -972,7 +930,6 @@
             Controls.Add(DiretorText);
             Controls.Add(EstrelasText);
             Controls.Add(EstudioText);
-            Controls.Add(FaseMCUText);
             Controls.Add(DiretorLabel);
             Controls.Add(GeneroLabel);
             Controls.Add(EstudioLabel);
@@ -1023,7 +980,6 @@
         private Sunny.UI.UILabel PaisOrigemLabel;
         private Sunny.UI.UILabel DadosLabel;
         private FontAwesome.Sharp.Material.MaterialButton ProximoButton;
-        private Sunny.UI.UILabel FaseMCULabel;
         private FontAwesome.Sharp.Material.MaterialButton AnteriorButton;
         private FontAwesome.Sharp.Material.MaterialButton EditarButton;
         private FontAwesome.Sharp.Material.MaterialButton InserirNovoButton;
@@ -1033,7 +989,6 @@
         private Sunny.UI.UITextBox DiretorText;
         private Sunny.UI.UITextBox EstrelasText;
         private Sunny.UI.UITextBox EstudioText;
-        private Sunny.UI.UITextBox FaseMCUText;
         private Sunny.UI.UILabel DiretorLabel;
         private Sunny.UI.UILabel GeneroLabel;
         private Sunny.UI.UILabel EstudioLabel;
