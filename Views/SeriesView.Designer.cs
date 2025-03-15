@@ -287,7 +287,7 @@
             EstudioText.ButtonStyleInherited = false;
             EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(30, 844);
+            EstudioText.Location = new Point(30, 785);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -296,7 +296,7 @@
             EstudioText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstudioText.ScrollBarStyleInherited = false;
             EstudioText.ShowText = false;
-            EstudioText.Size = new Size(578, 29);
+            EstudioText.Size = new Size(700, 29);
             EstudioText.Style = Sunny.UI.UIStyle.Custom;
             EstudioText.TabIndex = 73;
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -358,7 +358,7 @@
             EstudioLabel.AutoSize = true;
             EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioLabel.ForeColor = Color.FromArgb(48, 48, 48);
-            EstudioLabel.Location = new Point(30, 819);
+            EstudioLabel.Location = new Point(30, 760);
             EstudioLabel.Name = "EstudioLabel";
             EstudioLabel.Size = new Size(63, 20);
             EstudioLabel.TabIndex = 79;
