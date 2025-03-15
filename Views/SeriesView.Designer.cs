@@ -73,6 +73,7 @@
             uiTextBox2 = new Sunny.UI.UITextBox();
             uiTextBox3 = new Sunny.UI.UITextBox();
             uiTextBox4 = new Sunny.UI.UITextBox();
+            uiLabel1 = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
             // DadosLabel
@@ -345,7 +346,7 @@
             GeneroLabel.AutoSize = true;
             GeneroLabel.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroLabel.ForeColor = Color.Black;
-            GeneroLabel.Location = new Point(666, 753);
+            GeneroLabel.Location = new Point(572, 749);
             GeneroLabel.Name = "GeneroLabel";
             GeneroLabel.Size = new Size(63, 20);
             GeneroLabel.TabIndex = 80;
@@ -378,7 +379,7 @@
             TagsLabel.AutoSize = true;
             TagsLabel.Font = new Font("Microsoft Sans Serif", 12F);
             TagsLabel.ForeColor = Color.Black;
-            TagsLabel.Location = new Point(983, 449);
+            TagsLabel.Location = new Point(591, 345);
             TagsLabel.Name = "TagsLabel";
             TagsLabel.Size = new Size(44, 20);
             TagsLabel.TabIndex = 77;
@@ -450,7 +451,7 @@
             TagsText.ButtonStyleInherited = false;
             TagsText.FillColor2 = Color.FromArgb(238, 248, 248);
             TagsText.Font = new Font("Microsoft Sans Serif", 12F);
-            TagsText.Location = new Point(983, 474);
+            TagsText.Location = new Point(591, 370);
             TagsText.Margin = new Padding(4, 5, 4, 5);
             TagsText.MinimumSize = new Size(1, 16);
             TagsText.Name = "TagsText";
@@ -459,7 +460,7 @@
             TagsText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             TagsText.ScrollBarStyleInherited = false;
             TagsText.ShowText = false;
-            TagsText.Size = new Size(176, 29);
+            TagsText.Size = new Size(322, 29);
             TagsText.Style = Sunny.UI.UIStyle.Custom;
             TagsText.TabIndex = 69;
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -791,7 +792,7 @@
             CriadoresLabel.AutoSize = true;
             CriadoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
             CriadoresLabel.ForeColor = Color.Black;
-            CriadoresLabel.Location = new Point(476, 583);
+            CriadoresLabel.Location = new Point(476, 582);
             CriadoresLabel.Name = "CriadoresLabel";
             CriadoresLabel.Size = new Size(77, 20);
             CriadoresLabel.TabIndex = 93;
@@ -902,14 +903,26 @@
             uiTextBox4.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox4.TabIndex = 97;
             uiTextBox4.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox4.Watermark = "Autores";
+            uiTextBox4.Watermark = "Criadores";
             uiTextBox4.WordWarp = false;
+            // 
+            // uiLabel1
+            // 
+            uiLabel1.AutoSize = true;
+            uiLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel1.ForeColor = Color.Black;
+            uiLabel1.Location = new Point(737, 749);
+            uiLabel1.Name = "uiLabel1";
+            uiLabel1.Size = new Size(63, 20);
+            uiLabel1.TabIndex = 98;
+            uiLabel1.Text = "Gênero";
             // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
+            Controls.Add(uiLabel1);
             Controls.Add(uiTextBox4);
             Controls.Add(uiTextBox3);
             Controls.Add(uiTextBox2);
@@ -1013,5 +1026,6 @@
         private Sunny.UI.UITextBox uiTextBox2;
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UITextBox uiTextBox4;
+        private Sunny.UI.UILabel uiLabel1;
     }
 }
