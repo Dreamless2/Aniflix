@@ -54,7 +54,6 @@ namespace Aniflix.Services
                     serieText.Text = "--";
                 }
 
-
                 if (!string.IsNullOrEmpty(language.ToString()))
                 {
                     bool temAcentos = StringExtensions.HasAccents(language.ToString());
@@ -68,12 +67,23 @@ namespace Aniflix.Services
                     idiomaOriginalText.Text = "--";
                 }
 
+                if (!string.IsNullOrEmpty(country.ToString()))
+                {
+                    bool temAcentos = StringExtensions.HasAccents(country.ToString());
+
+                    paisOrigemText.Text = temAcentos
+                        ? "#" + country.ToString() + " " + "#" + StringExtensions.RemoveDiacritics(country.ToString().Replace(" ", ""))
+                        : "#" + StringExtensions.RemoveDiacritics(country.ToString().Replace(" ", ""));
+                }
+                else
+                {
+                    paisOrigemText.Text = "--";
+                }
 
                 tituloText.Text = series.Name ?? "--";
                 sinopseText.Text = series.Overview ?? "--";
                 tituloOriginalText.Text = series.OriginalName ?? "--";
                 dataLancamentoText.Text = series.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
-                paisOrigemText.Text = "#" + StringExtensions.RemoveDiacritics(country.Text.Replace(" ", ""));
                 tituloAlternativoText.Text = series.AlternativeTitles.Results[0].Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
