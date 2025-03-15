@@ -40,7 +40,7 @@
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
             LogoBox = new PictureBox();
             SunnyBox = new PictureBox();
-            uiSymbolLabel6 = new Sunny.UI.UISymbolLabel();
+            SunnyVersion = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel4 = new Sunny.UI.UISymbolLabel();
             uiSymbolLabel3 = new Sunny.UI.UISymbolLabel();
@@ -168,7 +168,7 @@
             // 
             uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(SunnyBox);
-            uiGroupBox1.Controls.Add(uiSymbolLabel6);
+            uiGroupBox1.Controls.Add(SunnyVersion);
             uiGroupBox1.Controls.Add(uiSymbolLabel5);
             uiGroupBox1.Controls.Add(uiSymbolLabel4);
             uiGroupBox1.Controls.Add(uiSymbolLabel3);
@@ -216,17 +216,17 @@
             SunnyBox.Click += SunnyBox_Click;
             SunnyBox.MouseEnter += SunnyBox_MouseEnter;
             // 
-            // uiSymbolLabel6
+            // SunnyVersion
             // 
-            uiSymbolLabel6.BackColor = Color.Transparent;
-            uiSymbolLabel6.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel6.Location = new Point(8, 137);
-            uiSymbolLabel6.MinimumSize = new Size(1, 1);
-            uiSymbolLabel6.Name = "uiSymbolLabel6";
-            uiSymbolLabel6.Size = new Size(127, 28);
-            uiSymbolLabel6.Symbol = 560403;
-            uiSymbolLabel6.TabIndex = 21;
-            uiSymbolLabel6.Text = "SunnyUI 3.8.2";
+            SunnyVersion.BackColor = Color.Transparent;
+            SunnyVersion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SunnyVersion.Location = new Point(8, 137);
+            SunnyVersion.MinimumSize = new Size(1, 1);
+            SunnyVersion.Name = "SunnyVersion";
+            SunnyVersion.Size = new Size(127, 28);
+            SunnyVersion.Symbol = 560403;
+            SunnyVersion.TabIndex = 21;
+            SunnyVersion.Text = "SunnyUI 3.8.2";
             // 
             // uiSymbolLabel5
             // 
@@ -349,7 +349,7 @@
         private Sunny.UI.UISymbolLabel uiSymbolLabel5;
         private Sunny.UI.UISymbolLabel uiSymbolLabel4;
         private Sunny.UI.UIButton FecharButton;
-        private Sunny.UI.UISymbolLabel uiSymbolLabel6;
+        private Sunny.UI.UISymbolLabel SunnyVersion;
         private PictureBox SunnyBox;
         private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunnyUI;
