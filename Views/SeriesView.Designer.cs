@@ -773,7 +773,7 @@
             AutoresLabel.AutoSize = true;
             AutoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
             AutoresLabel.ForeColor = Color.Black;
-            AutoresLabel.Location = new Point(481, 518);
+            AutoresLabel.Location = new Point(540, 518);
             AutoresLabel.Name = "AutoresLabel";
             AutoresLabel.Size = new Size(65, 20);
             AutoresLabel.TabIndex = 91;
