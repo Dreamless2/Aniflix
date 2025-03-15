@@ -406,7 +406,7 @@
             AutoresText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             AutoresText.ScrollBarStyleInherited = false;
             AutoresText.ShowText = false;
-            AutoresText.Size = new Size(438, 29);
+            AutoresText.Size = new Size(414, 29);
             AutoresText.Style = Sunny.UI.UIStyle.Custom;
             AutoresText.TabIndex = 71;
             AutoresText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -893,7 +893,7 @@
             CriadoresText.ButtonStyleInherited = false;
             CriadoresText.FillColor2 = Color.FromArgb(238, 248, 248);
             CriadoresText.Font = new Font("Microsoft Sans Serif", 12F);
-            CriadoresText.Location = new Point(481, 603);
+            CriadoresText.Location = new Point(457, 603);
             CriadoresText.Margin = new Padding(4, 5, 4, 5);
             CriadoresText.MinimumSize = new Size(1, 16);
             CriadoresText.Name = "CriadoresText";
@@ -902,7 +902,7 @@
             CriadoresText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             CriadoresText.ScrollBarStyleInherited = false;
             CriadoresText.ShowText = false;
-            CriadoresText.Size = new Size(438, 29);
+            CriadoresText.Size = new Size(462, 29);
             CriadoresText.Style = Sunny.UI.UIStyle.Custom;
             CriadoresText.TabIndex = 97;
             CriadoresText.TextAlignment = ContentAlignment.MiddleLeft;
