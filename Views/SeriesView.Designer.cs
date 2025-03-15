@@ -69,8 +69,8 @@
             AutoresLabel = new Sunny.UI.UILabel();
             IdiomaOriginalLabel = new Sunny.UI.UILabel();
             CriadoresLabel = new Sunny.UI.UILabel();
-            PaisOrigemText = new Sunny.UI.UITextBox();
-            uiTextBox2 = new Sunny.UI.UITextBox();
+            Id = new Sunny.UI.UITextBox();
+            IdiomaOriginalText = new Sunny.UI.UITextBox();
             uiTextBox3 = new Sunny.UI.UITextBox();
             uiTextBox4 = new Sunny.UI.UITextBox();
             ObraOriginalLabel = new Sunny.UI.UILabel();
@@ -799,59 +799,59 @@
             CriadoresLabel.TabIndex = 93;
             CriadoresLabel.Text = "Criadores";
             // 
-            // PaisOrigemText
+            // Id
             // 
-            PaisOrigemText.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            PaisOrigemText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            PaisOrigemText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            PaisOrigemText.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            PaisOrigemText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            PaisOrigemText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            PaisOrigemText.ButtonStyleInherited = false;
-            PaisOrigemText.FillColor2 = Color.FromArgb(238, 248, 248);
-            PaisOrigemText.Font = new Font("Microsoft Sans Serif", 12F);
-            PaisOrigemText.Location = new Point(35, 425);
-            PaisOrigemText.Margin = new Padding(4, 5, 4, 5);
-            PaisOrigemText.MinimumSize = new Size(1, 16);
-            PaisOrigemText.Name = "PaisOrigemText";
-            PaisOrigemText.Padding = new Padding(5);
-            PaisOrigemText.RectColor = Color.FromArgb(0, 150, 136);
-            PaisOrigemText.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            PaisOrigemText.ScrollBarStyleInherited = false;
-            PaisOrigemText.ShowText = false;
-            PaisOrigemText.Size = new Size(438, 29);
-            PaisOrigemText.Style = Sunny.UI.UIStyle.Custom;
-            PaisOrigemText.TabIndex = 94;
-            PaisOrigemText.TextAlignment = ContentAlignment.MiddleLeft;
-            PaisOrigemText.Watermark = "País de Origem";
-            PaisOrigemText.WordWarp = false;
+            Id.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            Id.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            Id.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            Id.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            Id.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            Id.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            Id.ButtonStyleInherited = false;
+            Id.FillColor2 = Color.FromArgb(238, 248, 248);
+            Id.Font = new Font("Microsoft Sans Serif", 12F);
+            Id.Location = new Point(35, 425);
+            Id.Margin = new Padding(4, 5, 4, 5);
+            Id.MinimumSize = new Size(1, 16);
+            Id.Name = "Id";
+            Id.Padding = new Padding(5);
+            Id.RectColor = Color.FromArgb(0, 150, 136);
+            Id.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            Id.ScrollBarStyleInherited = false;
+            Id.ShowText = false;
+            Id.Size = new Size(438, 29);
+            Id.Style = Sunny.UI.UIStyle.Custom;
+            Id.TabIndex = 94;
+            Id.TextAlignment = ContentAlignment.MiddleLeft;
+            Id.Watermark = "País de Origem";
+            Id.WordWarp = false;
             // 
-            // uiTextBox2
+            // IdiomaOriginalText
             // 
-            uiTextBox2.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            uiTextBox2.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox2.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox2.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox2.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox2.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox2.ButtonStyleInherited = false;
-            uiTextBox2.FillColor2 = Color.FromArgb(238, 248, 248);
-            uiTextBox2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox2.Location = new Point(480, 425);
-            uiTextBox2.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox2.MinimumSize = new Size(1, 16);
-            uiTextBox2.Name = "uiTextBox2";
-            uiTextBox2.Padding = new Padding(5);
-            uiTextBox2.RectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox2.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            uiTextBox2.ScrollBarStyleInherited = false;
-            uiTextBox2.ShowText = false;
-            uiTextBox2.Size = new Size(438, 29);
-            uiTextBox2.Style = Sunny.UI.UIStyle.Custom;
-            uiTextBox2.TabIndex = 95;
-            uiTextBox2.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox2.Watermark = "Idioma Original";
-            uiTextBox2.WordWarp = false;
+            IdiomaOriginalText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            IdiomaOriginalText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            IdiomaOriginalText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            IdiomaOriginalText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            IdiomaOriginalText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            IdiomaOriginalText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            IdiomaOriginalText.ButtonStyleInherited = false;
+            IdiomaOriginalText.FillColor2 = Color.FromArgb(238, 248, 248);
+            IdiomaOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
+            IdiomaOriginalText.Location = new Point(480, 425);
+            IdiomaOriginalText.Margin = new Padding(4, 5, 4, 5);
+            IdiomaOriginalText.MinimumSize = new Size(1, 16);
+            IdiomaOriginalText.Name = "IdiomaOriginalText";
+            IdiomaOriginalText.Padding = new Padding(5);
+            IdiomaOriginalText.RectColor = Color.FromArgb(0, 150, 136);
+            IdiomaOriginalText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            IdiomaOriginalText.ScrollBarStyleInherited = false;
+            IdiomaOriginalText.ShowText = false;
+            IdiomaOriginalText.Size = new Size(438, 29);
+            IdiomaOriginalText.Style = Sunny.UI.UIStyle.Custom;
+            IdiomaOriginalText.TabIndex = 95;
+            IdiomaOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
+            IdiomaOriginalText.Watermark = "Idioma Original";
+            IdiomaOriginalText.WordWarp = false;
             // 
             // uiTextBox3
             // 
@@ -954,8 +954,8 @@
             Controls.Add(ObraOriginalLabel);
             Controls.Add(uiTextBox4);
             Controls.Add(uiTextBox3);
-            Controls.Add(uiTextBox2);
-            Controls.Add(PaisOrigemText);
+            Controls.Add(IdiomaOriginalText);
+            Controls.Add(Id);
             Controls.Add(CriadoresLabel);
             Controls.Add(IdiomaOriginalLabel);
             Controls.Add(AutoresLabel);
@@ -1052,8 +1052,8 @@
         private Sunny.UI.UILabel AutoresLabel;
         private Sunny.UI.UILabel IdiomaOriginalLabel;
         private Sunny.UI.UILabel CriadoresLabel;
-        private Sunny.UI.UITextBox PaisOrigemText;
-        private Sunny.UI.UITextBox uiTextBox2;
+        private Sunny.UI.UITextBox Id;
+        private Sunny.UI.UITextBox IdiomaOriginalText;
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UITextBox uiTextBox4;
         private Sunny.UI.UILabel ObraOriginalLabel;
