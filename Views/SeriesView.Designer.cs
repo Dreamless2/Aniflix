@@ -75,6 +75,7 @@
             uiTextBox4 = new Sunny.UI.UITextBox();
             ObraOriginalLabel = new Sunny.UI.UILabel();
             uiTextBox5 = new Sunny.UI.UITextBox();
+            uiButton1 = new Sunny.UI.UIButton();
             SuspendLayout();
             // 
             // DadosLabel
@@ -945,11 +946,23 @@
             uiTextBox5.Watermark = "Gênero";
             uiTextBox5.WordWarp = false;
             // 
+            // uiButton1
+            // 
+            uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiButton1.Location = new Point(1343, 846);
+            uiButton1.MinimumSize = new Size(1, 1);
+            uiButton1.Name = "uiButton1";
+            uiButton1.Size = new Size(100, 35);
+            uiButton1.TabIndex = 100;
+            uiButton1.Text = "uiButton1";
+            uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1537, 980);
+            Controls.Add(uiButton1);
             Controls.Add(uiTextBox5);
             Controls.Add(ObraOriginalLabel);
             Controls.Add(uiTextBox4);
@@ -1057,5 +1070,6 @@
         private Sunny.UI.UITextBox uiTextBox4;
         private Sunny.UI.UILabel ObraOriginalLabel;
         private Sunny.UI.UITextBox uiTextBox5;
+        private Sunny.UI.UIButton uiButton1;
     }
 }
