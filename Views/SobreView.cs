@@ -1,4 +1,5 @@
 ﻿using Sunny.UI;
+using System.Reflection;
 using System.Diagnostics;
 
 namespace Aniflix.Views
@@ -17,6 +18,8 @@ namespace Aniflix.Views
             LinkLicenseSite.Links.Add(0, LinkLicenseSite.Text.Length, "https://www.gnu.org/licenses/gpl-3.0.html");
             LinkTMDBLib.Links.Add(0, LinkTMDBLib.Text.Length, "https://github.com/jellyfin/TMDbLib");
             LinkSunnyUI.Links.Add(0, LinkSunnyUI.Text.Length, "https://github.com/SunnyUI/SunnyUI");
+            var assembly = Assembly.Load("");
+            var version = assembly.GetName().Version;
         }
         #endregion
 
