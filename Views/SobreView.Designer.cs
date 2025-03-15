@@ -196,7 +196,7 @@
             // 
             DEEPLVersion.BackColor = Color.Transparent;
             DEEPLVersion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DEEPLVersion.Location = new Point(9, 171);
+            DEEPLVersion.Location = new Point(8, 171);
             DEEPLVersion.MinimumSize = new Size(1, 1);
             DEEPLVersion.Name = "DEEPLVersion";
             DEEPLVersion.Size = new Size(147, 28);
@@ -235,7 +235,7 @@
             // 
             SunnyVersion.BackColor = Color.Transparent;
             SunnyVersion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            SunnyVersion.Location = new Point(9, 137);
+            SunnyVersion.Location = new Point(8, 137);
             SunnyVersion.MinimumSize = new Size(1, 1);
             SunnyVersion.Name = "SunnyVersion";
             SunnyVersion.Size = new Size(127, 28);
