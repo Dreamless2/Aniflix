@@ -48,11 +48,13 @@
             FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)SunnyBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -169,6 +171,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(pictureBox2);
             uiGroupBox1.Controls.Add(DEEPLVersion);
             uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(SunnyBox);
@@ -211,7 +214,7 @@
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
             LogoBox.ImageLocation = "";
-            LogoBox.Location = new Point(539, 27);
+            LogoBox.Location = new Point(319, 27);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(259, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -322,6 +325,17 @@
             LinkSunnyUI.Text = "SunnyUI Home Page";
             LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.gpl_logo;
+            pictureBox2.ImageLocation = "";
+            pictureBox2.Location = new Point(274, 116);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(259, 83);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -352,6 +366,7 @@
             uiGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)SunnyBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -377,5 +392,6 @@
         private LinkLabel LinkSunnyUI;
         private PictureBox LogoBox;
         private Sunny.UI.UISymbolLabel DEEPLVersion;
+        private PictureBox pictureBox2;
     }
 }
