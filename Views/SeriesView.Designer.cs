@@ -242,7 +242,7 @@
             DiretorText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             DiretorText.ScrollBarStyleInherited = false;
             DiretorText.ShowText = false;
-            DiretorText.Size = new Size(335, 29);
+            DiretorText.Size = new Size(412, 29);
             DiretorText.Style = Sunny.UI.UIStyle.Custom;
             DiretorText.TabIndex = 75;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -260,7 +260,7 @@
             EstrelasText.ButtonStyleInherited = false;
             EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(378, 662);
+            EstrelasText.Location = new Point(455, 662);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -269,7 +269,7 @@
             EstrelasText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstrelasText.ScrollBarStyleInherited = false;
             EstrelasText.ShowText = false;
-            EstrelasText.Size = new Size(540, 29);
+            EstrelasText.Size = new Size(463, 29);
             EstrelasText.Style = Sunny.UI.UIStyle.Custom;
             EstrelasText.TabIndex = 74;
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -369,7 +369,7 @@
             EstrelasLabel.AutoSize = true;
             EstrelasLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasLabel.ForeColor = Color.Black;
-            EstrelasLabel.Location = new Point(480, 636);
+            EstrelasLabel.Location = new Point(455, 637);
             EstrelasLabel.Name = "EstrelasLabel";
             EstrelasLabel.Size = new Size(67, 20);
             EstrelasLabel.TabIndex = 78;
@@ -397,7 +397,7 @@
             AutoresText.ButtonStyleInherited = false;
             AutoresText.FillColor2 = Color.FromArgb(238, 248, 248);
             AutoresText.Font = new Font("Microsoft Sans Serif", 12F);
-            AutoresText.Location = new Point(481, 543);
+            AutoresText.Location = new Point(524, 543);
             AutoresText.Margin = new Padding(4, 5, 4, 5);
             AutoresText.MinimumSize = new Size(1, 16);
             AutoresText.Name = "AutoresText";
@@ -406,7 +406,7 @@
             AutoresText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             AutoresText.ScrollBarStyleInherited = false;
             AutoresText.ShowText = false;
-            AutoresText.Size = new Size(437, 29);
+            AutoresText.Size = new Size(394, 29);
             AutoresText.Style = Sunny.UI.UIStyle.Custom;
             AutoresText.TabIndex = 71;
             AutoresText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -773,7 +773,7 @@
             AutoresLabel.AutoSize = true;
             AutoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
             AutoresLabel.ForeColor = Color.Black;
-            AutoresLabel.Location = new Point(504, 518);
+            AutoresLabel.Location = new Point(481, 518);
             AutoresLabel.Name = "AutoresLabel";
             AutoresLabel.Size = new Size(65, 20);
             AutoresLabel.TabIndex = 91;
