@@ -91,7 +91,7 @@ namespace Aniflix.Views
             SunnyBox.Cursor = Cursors.Hand;
         }
 
-        private void Box_MouseEnter(object sender, EventArgs e)
+        private void DEEPLBox_MouseEnter(object sender, EventArgs e)
         {
             DEEPLBox.Cursor = Cursors.Hand;
         }
