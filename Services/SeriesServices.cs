@@ -125,7 +125,13 @@ namespace Aniflix.Services
                         }
                     }
 
-                    FormatGenre(deepl.Translate(series.Genres[2].Name), hashtagsPrincipais, outrasHashtags);
+
+                    var genre0 = deepl.Translate(series.Genres[0].Name);
+                    var genre1 = deepl.Translate(series.Genres[1].Name);
+                    var genre2 = deepl.Translate(series.Genres[2].Name);
+
+
+                    FormatGenre(genre2, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(series.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(series.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
 
