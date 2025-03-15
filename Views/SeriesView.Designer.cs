@@ -328,7 +328,7 @@
             FaseMCUText.TabIndex = 72;
             FaseMCUText.Text = "--";
             FaseMCUText.TextAlignment = ContentAlignment.MiddleLeft;
-            FaseMCUText.Watermark = "";
+            FaseMCUText.Watermark = "Fase MCU";
             FaseMCUText.WordWarp = false;
             // 
             // DiretorLabel
