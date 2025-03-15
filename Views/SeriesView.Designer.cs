@@ -952,7 +952,7 @@
             uiButton1.Location = new Point(1343, 846);
             uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
-            uiButton1.Size = new Size(100, 35);
+            uiButton1.Size = new Size(100, 91);
             uiButton1.TabIndex = 100;
             uiButton1.Text = "uiButton1";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
