@@ -242,6 +242,7 @@
             SunnyVersion.Symbol = 560403;
             SunnyVersion.TabIndex = 21;
             SunnyVersion.Text = "SunnyUI";
+            SunnyVersion.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // TMDBLibVersion
             // 
