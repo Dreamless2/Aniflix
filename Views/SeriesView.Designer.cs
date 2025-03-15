@@ -97,7 +97,7 @@
             ProximoButton.ForeColor = Color.White;
             ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             ProximoButton.IconColor = Color.White;
-            ProximoButton.Location = new Point(1139, 904);
+            ProximoButton.Location = new Point(1139, 845);
             ProximoButton.Name = "ProximoButton";
             ProximoButton.Size = new Size(198, 91);
             ProximoButton.TabIndex = 88;
@@ -125,7 +125,7 @@
             AnteriorButton.ForeColor = Color.White;
             AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             AnteriorButton.IconColor = Color.White;
-            AnteriorButton.Location = new Point(904, 904);
+            AnteriorButton.Location = new Point(904, 845);
             AnteriorButton.Name = "AnteriorButton";
             AnteriorButton.Size = new Size(198, 91);
             AnteriorButton.TabIndex = 87;
@@ -142,7 +142,7 @@
             EditarButton.ForeColor = Color.White;
             EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             EditarButton.IconColor = Color.White;
-            EditarButton.Location = new Point(669, 904);
+            EditarButton.Location = new Point(669, 845);
             EditarButton.Name = "EditarButton";
             EditarButton.Size = new Size(198, 91);
             EditarButton.TabIndex = 86;
@@ -159,7 +159,7 @@
             InserirNovoButton.ForeColor = Color.White;
             InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             InserirNovoButton.IconColor = Color.White;
-            InserirNovoButton.Location = new Point(434, 904);
+            InserirNovoButton.Location = new Point(434, 845);
             InserirNovoButton.Name = "InserirNovoButton";
             InserirNovoButton.Size = new Size(198, 91);
             InserirNovoButton.TabIndex = 85;
@@ -176,7 +176,7 @@
             CopiarButton.ForeColor = Color.White;
             CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             CopiarButton.IconColor = Color.White;
-            CopiarButton.Location = new Point(199, 904);
+            CopiarButton.Location = new Point(199, 845);
             CopiarButton.Name = "CopiarButton";
             CopiarButton.Size = new Size(198, 91);
             CopiarButton.TabIndex = 84;
@@ -217,7 +217,7 @@
             ResumoText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             ResumoText.ScrollBarStyleInherited = false;
             ResumoText.ShowText = false;
-            ResumoText.Size = new Size(575, 816);
+            ResumoText.Size = new Size(575, 757);
             ResumoText.Style = Sunny.UI.UIStyle.Custom;
             ResumoText.TabIndex = 82;
             ResumoText.TextAlignment = ContentAlignment.TopLeft;
@@ -242,7 +242,7 @@
             DiretorText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             DiretorText.ScrollBarStyleInherited = false;
             DiretorText.ShowText = false;
-            DiretorText.Size = new Size(438, 29);
+            DiretorText.Size = new Size(335, 29);
             DiretorText.Style = Sunny.UI.UIStyle.Custom;
             DiretorText.TabIndex = 75;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -260,7 +260,7 @@
             EstrelasText.ButtonStyleInherited = false;
             EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(35, 721);
+            EstrelasText.Location = new Point(378, 662);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -269,7 +269,7 @@
             EstrelasText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstrelasText.ScrollBarStyleInherited = false;
             EstrelasText.ShowText = false;
-            EstrelasText.Size = new Size(747, 29);
+            EstrelasText.Size = new Size(540, 29);
             EstrelasText.Style = Sunny.UI.UIStyle.Custom;
             EstrelasText.TabIndex = 74;
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -287,7 +287,7 @@
             EstudioText.ButtonStyleInherited = false;
             EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(35, 839);
+            EstudioText.Location = new Point(35, 780);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -347,7 +347,7 @@
             GeneroLabel.AutoSize = true;
             GeneroLabel.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroLabel.ForeColor = Color.Black;
-            GeneroLabel.Location = new Point(35, 755);
+            GeneroLabel.Location = new Point(35, 696);
             GeneroLabel.Name = "GeneroLabel";
             GeneroLabel.Size = new Size(63, 20);
             GeneroLabel.TabIndex = 80;
@@ -358,7 +358,7 @@
             EstudioLabel.AutoSize = true;
             EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioLabel.ForeColor = Color.FromArgb(48, 48, 48);
-            EstudioLabel.Location = new Point(35, 814);
+            EstudioLabel.Location = new Point(35, 755);
             EstudioLabel.Name = "EstudioLabel";
             EstudioLabel.Size = new Size(63, 20);
             EstudioLabel.TabIndex = 79;
@@ -369,7 +369,7 @@
             EstrelasLabel.AutoSize = true;
             EstrelasLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasLabel.ForeColor = Color.Black;
-            EstrelasLabel.Location = new Point(35, 696);
+            EstrelasLabel.Location = new Point(480, 636);
             EstrelasLabel.Name = "EstrelasLabel";
             EstrelasLabel.Size = new Size(67, 20);
             EstrelasLabel.TabIndex = 78;
@@ -866,7 +866,7 @@
             GeneroText.ButtonStyleInherited = false;
             GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
             GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(35, 780);
+            GeneroText.Location = new Point(35, 721);
             GeneroText.Margin = new Padding(4, 5, 4, 5);
             GeneroText.MinimumSize = new Size(1, 16);
             GeneroText.Name = "GeneroText";
@@ -875,7 +875,7 @@
             GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             GeneroText.ScrollBarStyleInherited = false;
             GeneroText.ShowText = false;
-            GeneroText.Size = new Size(883, 29);
+            GeneroText.Size = new Size(733, 29);
             GeneroText.Style = Sunny.UI.UIStyle.Custom;
             GeneroText.TabIndex = 96;
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -951,7 +951,7 @@
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1537, 1032);
+            ClientSize = new Size(1537, 966);
             Controls.Add(ObraOriginalText);
             Controls.Add(ObraOriginalLabel);
             Controls.Add(CriadoresText);
