@@ -52,7 +52,8 @@ namespace Aniflix.Views
             else
             {
                 var services = new SeriesServices();
-                await services.GivenData();
+                var codigo = CodigoText.Text;
+                await services.GivenData(codigo.Tostring(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, SerieText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
             }
 
         }
