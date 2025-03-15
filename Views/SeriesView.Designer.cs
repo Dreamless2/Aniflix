@@ -75,7 +75,6 @@
             uiTextBox4 = new Sunny.UI.UITextBox();
             ObraOriginalLabel = new Sunny.UI.UILabel();
             uiTextBox5 = new Sunny.UI.UITextBox();
-            uiButton1 = new Sunny.UI.UIButton();
             SuspendLayout();
             // 
             // DadosLabel
@@ -98,7 +97,7 @@
             ProximoButton.ForeColor = Color.White;
             ProximoButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipNext;
             ProximoButton.IconColor = Color.White;
-            ProximoButton.Location = new Point(1139, 846);
+            ProximoButton.Location = new Point(1139, 833);
             ProximoButton.Name = "ProximoButton";
             ProximoButton.Size = new Size(198, 91);
             ProximoButton.TabIndex = 88;
@@ -126,7 +125,7 @@
             AnteriorButton.ForeColor = Color.White;
             AnteriorButton.IconChar = FontAwesome.Sharp.MaterialIcons.SkipPrevious;
             AnteriorButton.IconColor = Color.White;
-            AnteriorButton.Location = new Point(904, 846);
+            AnteriorButton.Location = new Point(904, 833);
             AnteriorButton.Name = "AnteriorButton";
             AnteriorButton.Size = new Size(198, 91);
             AnteriorButton.TabIndex = 87;
@@ -143,7 +142,7 @@
             EditarButton.ForeColor = Color.White;
             EditarButton.IconChar = FontAwesome.Sharp.MaterialIcons.FileEdit;
             EditarButton.IconColor = Color.White;
-            EditarButton.Location = new Point(669, 846);
+            EditarButton.Location = new Point(669, 833);
             EditarButton.Name = "EditarButton";
             EditarButton.Size = new Size(198, 91);
             EditarButton.TabIndex = 86;
@@ -160,7 +159,7 @@
             InserirNovoButton.ForeColor = Color.White;
             InserirNovoButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentSave;
             InserirNovoButton.IconColor = Color.White;
-            InserirNovoButton.Location = new Point(434, 846);
+            InserirNovoButton.Location = new Point(434, 833);
             InserirNovoButton.Name = "InserirNovoButton";
             InserirNovoButton.Size = new Size(198, 91);
             InserirNovoButton.TabIndex = 85;
@@ -177,7 +176,7 @@
             CopiarButton.ForeColor = Color.White;
             CopiarButton.IconChar = FontAwesome.Sharp.MaterialIcons.ContentCopy;
             CopiarButton.IconColor = Color.White;
-            CopiarButton.Location = new Point(199, 846);
+            CopiarButton.Location = new Point(199, 833);
             CopiarButton.Name = "CopiarButton";
             CopiarButton.Size = new Size(198, 91);
             CopiarButton.TabIndex = 84;
@@ -946,23 +945,11 @@
             uiTextBox5.Watermark = "Gênero";
             uiTextBox5.WordWarp = false;
             // 
-            // uiButton1
-            // 
-            uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(1343, 846);
-            uiButton1.MinimumSize = new Size(1, 1);
-            uiButton1.Name = "uiButton1";
-            uiButton1.Size = new Size(100, 91);
-            uiButton1.TabIndex = 100;
-            uiButton1.Text = "uiButton1";
-            uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1537, 980);
-            Controls.Add(uiButton1);
+            ClientSize = new Size(1537, 959);
             Controls.Add(uiTextBox5);
             Controls.Add(ObraOriginalLabel);
             Controls.Add(uiTextBox4);
@@ -1070,6 +1057,5 @@
         private Sunny.UI.UITextBox uiTextBox4;
         private Sunny.UI.UILabel ObraOriginalLabel;
         private Sunny.UI.UITextBox uiTextBox5;
-        private Sunny.UI.UIButton uiButton1;
     }
 }
