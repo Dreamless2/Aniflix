@@ -55,11 +55,11 @@ namespace Aniflix.Services
                 }
 
 
+                if (!string.IsNullOrEmpty(language.ToString()))
 
 
 
-
-                tituloText.Text = series.Name ?? "--";
+                    tituloText.Text = series.Name ?? "--";
                 sinopseText.Text = series.Overview ?? "--";
                 tituloOriginalText.Text = series.OriginalName ?? "--";
                 dataLancamentoText.Text = series.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
