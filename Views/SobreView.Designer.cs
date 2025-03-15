@@ -66,6 +66,7 @@
             uiSymbolLabel2.Symbol = 560403;
             uiSymbolLabel2.TabIndex = 17;
             uiSymbolLabel2.Text = "Licensed under GPLv3";
+            uiSymbolLabel2.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // LicenseBox
             // 
@@ -115,6 +116,7 @@
             uiSymbolLabel1.Symbol = 560403;
             uiSymbolLabel1.TabIndex = 12;
             uiSymbolLabel1.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
+            uiSymbolLabel1.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
@@ -269,6 +271,7 @@
             uiSymbolLabel4.Symbol = 560403;
             uiSymbolLabel4.TabIndex = 19;
             uiSymbolLabel4.Text = "NET 8.0";
+            uiSymbolLabel4.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // uiSymbolLabel3
             // 
@@ -281,6 +284,7 @@
             uiSymbolLabel3.Symbol = 560403;
             uiSymbolLabel3.TabIndex = 18;
             uiSymbolLabel3.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
+            uiSymbolLabel3.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // FecharButton
             // 
