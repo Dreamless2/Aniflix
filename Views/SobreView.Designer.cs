@@ -251,7 +251,8 @@
             TMDBLibVersion.Size = new Size(134, 28);
             TMDBLibVersion.Symbol = 560403;
             TMDBLibVersion.TabIndex = 20;
-            TMDBLibVersion.Text = "TMDBLib 2.2.0";
+            TMDBLibVersion.Text = "TMDBLib";
+            TMDBLibVersion.TextAlign = ContentAlignment.MiddleLeft;
             TMDBLibVersion.Click += TMDBLibVersion_Click;
             // 
             // uiSymbolLabel4
