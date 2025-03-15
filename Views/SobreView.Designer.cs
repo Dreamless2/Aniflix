@@ -324,10 +324,10 @@
             // 
             uiMarkLabel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiMarkLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiMarkLabel1.Location = new Point(290, 123);
+            uiMarkLabel1.Location = new Point(376, 171);
             uiMarkLabel1.Name = "uiMarkLabel1";
             uiMarkLabel1.Padding = new Padding(5, 0, 0, 0);
-            uiMarkLabel1.Size = new Size(100, 42);
+            uiMarkLabel1.Size = new Size(100, 27);
             uiMarkLabel1.TabIndex = 25;
             uiMarkLabel1.Text = "uiMarkLabel1";
             // 
