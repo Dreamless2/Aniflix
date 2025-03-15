@@ -48,13 +48,13 @@
             FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
-            pictureBox2 = new PictureBox();
+            DEEPLBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)SunnyBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DEEPLBox).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -171,7 +171,7 @@
             // 
             // uiGroupBox1
             // 
-            uiGroupBox1.Controls.Add(pictureBox2);
+            uiGroupBox1.Controls.Add(DEEPLBox);
             uiGroupBox1.Controls.Add(DEEPLVersion);
             uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(SunnyBox);
@@ -325,16 +325,16 @@
             LinkSunnyUI.Text = "SunnyUI Home Page";
             LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
             // 
-            // pictureBox2
+            // DEEPLBox
             // 
-            pictureBox2.Image = Properties.Resources.gpl_logo;
-            pictureBox2.ImageLocation = "";
-            pictureBox2.Location = new Point(274, 116);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(259, 83);
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox2.TabIndex = 25;
-            pictureBox2.TabStop = false;
+            DEEPLBox.Image = Properties.Resources.gpl_logo;
+            DEEPLBox.ImageLocation = "";
+            DEEPLBox.Location = new Point(274, 116);
+            DEEPLBox.Name = "DEEPLBox";
+            DEEPLBox.Size = new Size(259, 83);
+            DEEPLBox.SizeMode = PictureBoxSizeMode.CenterImage;
+            DEEPLBox.TabIndex = 25;
+            DEEPLBox.TabStop = false;
             // 
             // SobreView
             // 
@@ -366,7 +366,7 @@
             uiGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)SunnyBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DEEPLBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -392,6 +392,6 @@
         private LinkLabel LinkSunnyUI;
         private PictureBox LogoBox;
         private Sunny.UI.UISymbolLabel DEEPLVersion;
-        private PictureBox pictureBox2;
+        private PictureBox DEEPLBox;
     }
 }
