@@ -55,7 +55,7 @@
             TituloOriginalLabel = new Sunny.UI.UILabel();
             TituloOriginalText = new Sunny.UI.UITextBox();
             TituloAlternativoText = new Sunny.UI.UITextBox();
-            FilmeText = new Sunny.UI.UITextBox();
+            SerieText = new Sunny.UI.UITextBox();
             DataLancamentoLabel = new Sunny.UI.UILabel();
             TituloLabel = new Sunny.UI.UILabel();
             FranquiaLabel = new Sunny.UI.UILabel();
@@ -583,32 +583,32 @@
             TituloAlternativoText.Watermark = "Título Alternativo";
             TituloAlternativoText.WordWarp = false;
             // 
-            // FilmeText
+            // SerieText
             // 
-            FilmeText.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            FilmeText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            FilmeText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            FilmeText.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            FilmeText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            FilmeText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            FilmeText.ButtonStyleInherited = false;
-            FilmeText.FillColor2 = Color.FromArgb(238, 248, 248);
-            FilmeText.Font = new Font("Microsoft Sans Serif", 12F);
-            FilmeText.Location = new Point(35, 484);
-            FilmeText.Margin = new Padding(4, 5, 4, 5);
-            FilmeText.MinimumSize = new Size(1, 16);
-            FilmeText.Name = "FilmeText";
-            FilmeText.Padding = new Padding(5);
-            FilmeText.RectColor = Color.FromArgb(0, 150, 136);
-            FilmeText.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            FilmeText.ScrollBarStyleInherited = false;
-            FilmeText.ShowText = false;
-            FilmeText.Size = new Size(883, 29);
-            FilmeText.Style = Sunny.UI.UIStyle.Custom;
-            FilmeText.TabIndex = 70;
-            FilmeText.TextAlignment = ContentAlignment.MiddleLeft;
-            FilmeText.Watermark = "Série";
-            FilmeText.WordWarp = false;
+            SerieText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            SerieText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            SerieText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            SerieText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            SerieText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            SerieText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            SerieText.ButtonStyleInherited = false;
+            SerieText.FillColor2 = Color.FromArgb(238, 248, 248);
+            SerieText.Font = new Font("Microsoft Sans Serif", 12F);
+            SerieText.Location = new Point(35, 484);
+            SerieText.Margin = new Padding(4, 5, 4, 5);
+            SerieText.MinimumSize = new Size(1, 16);
+            SerieText.Name = "SerieText";
+            SerieText.Padding = new Padding(5);
+            SerieText.RectColor = Color.FromArgb(0, 150, 136);
+            SerieText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            SerieText.ScrollBarStyleInherited = false;
+            SerieText.ShowText = false;
+            SerieText.Size = new Size(883, 29);
+            SerieText.Style = Sunny.UI.UIStyle.Custom;
+            SerieText.TabIndex = 70;
+            SerieText.TextAlignment = ContentAlignment.MiddleLeft;
+            SerieText.Watermark = "Série";
+            SerieText.WordWarp = false;
             // 
             // DataLancamentoLabel
             // 
@@ -987,7 +987,7 @@
             Controls.Add(TituloOriginalLabel);
             Controls.Add(TituloOriginalText);
             Controls.Add(TituloAlternativoText);
-            Controls.Add(FilmeText);
+            Controls.Add(SerieText);
             Controls.Add(DataLancamentoLabel);
             Controls.Add(TituloLabel);
             Controls.Add(FranquiaLabel);
@@ -1038,7 +1038,7 @@
         private Sunny.UI.UILabel TituloOriginalLabel;
         private Sunny.UI.UITextBox TituloOriginalText;
         private Sunny.UI.UITextBox TituloAlternativoText;
-        private Sunny.UI.UITextBox FilmeText;
+        private Sunny.UI.UITextBox SerieText;
         private Sunny.UI.UILabel DataLancamentoLabel;
         private Sunny.UI.UILabel TituloLabel;
         private Sunny.UI.UILabel FranquiaLabel;
