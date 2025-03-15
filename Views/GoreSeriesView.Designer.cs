@@ -34,7 +34,7 @@
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1537, 911);
+            ClientSize = new Size(1537, 966);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "GoreSeriesView";
