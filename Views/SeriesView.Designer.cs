@@ -46,7 +46,7 @@
             EstudioLabel = new Sunny.UI.UILabel();
             EstrelasLabel = new Sunny.UI.UILabel();
             TagsLabel = new Sunny.UI.UILabel();
-            GeneroText = new Sunny.UI.UITextBox();
+            AutoresText = new Sunny.UI.UITextBox();
             FranquiaText = new Sunny.UI.UITextBox();
             TagsText = new Sunny.UI.UITextBox();
             TituloAlternativoLabel = new Sunny.UI.UILabel();
@@ -386,32 +386,32 @@
             TagsLabel.TabIndex = 77;
             TagsLabel.Text = "Tags";
             // 
-            // GeneroText
+            // AutoresText
             // 
-            GeneroText.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            GeneroText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            GeneroText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            GeneroText.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            GeneroText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            GeneroText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            GeneroText.ButtonStyleInherited = false;
-            GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
-            GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
-            GeneroText.Location = new Point(35, 603);
-            GeneroText.Margin = new Padding(4, 5, 4, 5);
-            GeneroText.MinimumSize = new Size(1, 16);
-            GeneroText.Name = "GeneroText";
-            GeneroText.Padding = new Padding(5);
-            GeneroText.RectColor = Color.FromArgb(0, 150, 136);
-            GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            GeneroText.ScrollBarStyleInherited = false;
-            GeneroText.ShowText = false;
-            GeneroText.Size = new Size(438, 29);
-            GeneroText.Style = Sunny.UI.UIStyle.Custom;
-            GeneroText.TabIndex = 71;
-            GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
-            GeneroText.Watermark = "Autores";
-            GeneroText.WordWarp = false;
+            AutoresText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            AutoresText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            AutoresText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            AutoresText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            AutoresText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            AutoresText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            AutoresText.ButtonStyleInherited = false;
+            AutoresText.FillColor2 = Color.FromArgb(238, 248, 248);
+            AutoresText.Font = new Font("Microsoft Sans Serif", 12F);
+            AutoresText.Location = new Point(35, 603);
+            AutoresText.Margin = new Padding(4, 5, 4, 5);
+            AutoresText.MinimumSize = new Size(1, 16);
+            AutoresText.Name = "AutoresText";
+            AutoresText.Padding = new Padding(5);
+            AutoresText.RectColor = Color.FromArgb(0, 150, 136);
+            AutoresText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            AutoresText.ScrollBarStyleInherited = false;
+            AutoresText.ShowText = false;
+            AutoresText.Size = new Size(438, 29);
+            AutoresText.Style = Sunny.UI.UIStyle.Custom;
+            AutoresText.TabIndex = 71;
+            AutoresText.TextAlignment = ContentAlignment.MiddleLeft;
+            AutoresText.Watermark = "Autores";
+            AutoresText.WordWarp = false;
             // 
             // FranquiaText
             // 
@@ -978,7 +978,7 @@
             Controls.Add(EstudioLabel);
             Controls.Add(EstrelasLabel);
             Controls.Add(TagsLabel);
-            Controls.Add(GeneroText);
+            Controls.Add(AutoresText);
             Controls.Add(FranquiaText);
             Controls.Add(TagsText);
             Controls.Add(TituloAlternativoLabel);
@@ -1029,7 +1029,7 @@
         private Sunny.UI.UILabel EstudioLabel;
         private Sunny.UI.UILabel EstrelasLabel;
         private Sunny.UI.UILabel TagsLabel;
-        private Sunny.UI.UITextBox GeneroText;
+        private Sunny.UI.UITextBox AutoresText;
         private Sunny.UI.UITextBox FranquiaText;
         private Sunny.UI.UITextBox TagsText;
         private Sunny.UI.UILabel TituloAlternativoLabel;
