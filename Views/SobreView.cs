@@ -139,11 +139,17 @@ namespace Aniflix.Views
 
         #endregion
 
-      
+
 
         private void DEEPLBox_Click(object sender, EventArgs e)
         {
+            var url = "https://github.com/DeepLcom/deepl-dotnet";
 
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            });
         }
     }
 }
