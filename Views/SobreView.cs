@@ -96,7 +96,6 @@ namespace Aniflix.Views
         }
         #endregion
 
-
         #region "Link Click"
         private void LinkTMDB_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
