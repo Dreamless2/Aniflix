@@ -810,7 +810,7 @@
             CodigoText.Style = Sunny.UI.UIStyle.Custom;
             CodigoText.TabIndex = 145;
             CodigoText.TextAlignment = ContentAlignment.MiddleLeft;
-            CodigoText.Watermark = "Código do Anime";
+            CodigoText.Watermark = "Código da Série";
             CodigoText.WordWarp = false;
             // 
             // CodigoFilmeLabel
