@@ -88,7 +88,7 @@
             // 
             LinkLicenseSite.AutoSize = true;
             LinkLicenseSite.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkLicenseSite.Location = new Point(675, 476);
+            LinkLicenseSite.Location = new Point(673, 476);
             LinkLicenseSite.Name = "LinkLicenseSite";
             LinkLicenseSite.Size = new Size(156, 16);
             LinkLicenseSite.TabIndex = 16;
@@ -317,7 +317,7 @@
             // 
             LinkTMDBLib.AutoSize = true;
             LinkTMDBLib.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkTMDBLib.Location = new Point(217, 476);
+            LinkTMDBLib.Location = new Point(173, 476);
             LinkTMDBLib.Name = "LinkTMDBLib";
             LinkTMDBLib.Size = new Size(140, 16);
             LinkTMDBLib.TabIndex = 24;
@@ -329,7 +329,7 @@
             // 
             LinkSunnyUI.AutoSize = true;
             LinkSunnyUI.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LinkSunnyUI.Location = new Point(446, 476);
+            LinkSunnyUI.Location = new Point(342, 476);
             LinkSunnyUI.Name = "LinkSunnyUI";
             LinkSunnyUI.Size = new Size(133, 16);
             LinkSunnyUI.TabIndex = 25;
@@ -341,7 +341,7 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.Location = new Point(439, 519);
+            linkLabel1.Location = new Point(504, 476);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(140, 16);
             linkLabel1.TabIndex = 26;
