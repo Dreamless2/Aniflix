@@ -131,9 +131,9 @@ namespace Aniflix.Services
                     var genre2 = deepl.Translate(series.Genres[2].Name);
 
 
-                    FormatGenre(genre2, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(series.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(series.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(genre2.ToString()!, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(genre1.ToString()!, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(genre0.ToString()!, hashtagsPrincipais, outrasHashtags);
 
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
