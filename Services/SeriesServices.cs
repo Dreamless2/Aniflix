@@ -17,6 +17,12 @@ namespace Aniflix.Services
             try
             {
                 var series = await general.GetTvShowAsync(tvId);
+
+                var country = await deepl.Translate(series!.ProductionCountries[0].Name);
+                var language = await deepl.Translate(series.SpokenLanguages[0].Name);
+
+
+                var series = await general.GetTvShowAsync(tvId);
                 if (series == null)
                 {
                     Console.WriteLine($"Série com ID {tvId} não encontrada.");
