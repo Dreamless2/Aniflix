@@ -21,18 +21,6 @@ namespace Aniflix.Services
                 var country = await deepl.Translate(series!.ProductionCountries[0].Name);
                 var language = await deepl.Translate(series.SpokenLanguages[0].Name);
 
-                if (country == null || string.IsNullOrWhiteSpace(country.ToString()))
-                {
-                    MessageBox.Show("País inválido ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                if (language == null || string.IsNullOrWhiteSpace(language.ToString()))
-                {
-                    MessageBox.Show("Idioma inválido ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
                 if (series == null || string.IsNullOrWhiteSpace(series.Name))
                 {
                     MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
