@@ -157,7 +157,6 @@ namespace Aniflix.Views
                 });
             }
         }
-
         #endregion
 
         #region "Button Click"
