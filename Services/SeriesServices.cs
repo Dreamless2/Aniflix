@@ -21,7 +21,6 @@ namespace Aniflix.Services
                 //var country = await deepl.Translate(series!.ProductionCountries[0].Name);
                 // var language = await deepl.Translate(series.SpokenLanguages[0].Name);
 
-
                 if (series == null)
                 {
                     Console.WriteLine($"Série com ID {tvId} não encontrada.");
