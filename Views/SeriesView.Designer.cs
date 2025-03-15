@@ -74,6 +74,7 @@
             uiTextBox3 = new Sunny.UI.UITextBox();
             uiTextBox4 = new Sunny.UI.UITextBox();
             ObraOriginalLabel = new Sunny.UI.UILabel();
+            uiTextBox5 = new Sunny.UI.UITextBox();
             SuspendLayout();
             // 
             // DadosLabel
@@ -109,7 +110,7 @@
             FaseMCULabel.AutoSize = true;
             FaseMCULabel.Font = new Font("Microsoft Sans Serif", 12F);
             FaseMCULabel.ForeColor = Color.Black;
-            FaseMCULabel.Location = new Point(965, 299);
+            FaseMCULabel.Location = new Point(737, 699);
             FaseMCULabel.Name = "FaseMCULabel";
             FaseMCULabel.Size = new Size(85, 20);
             FaseMCULabel.TabIndex = 55;
@@ -232,7 +233,7 @@
             DiretorText.ButtonStyleInherited = false;
             DiretorText.FillColor2 = Color.FromArgb(238, 248, 248);
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(974, 608);
+            DiretorText.Location = new Point(30, 726);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
@@ -241,7 +242,7 @@
             DiretorText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             DiretorText.ScrollBarStyleInherited = false;
             DiretorText.ShowText = false;
-            DiretorText.Size = new Size(368, 29);
+            DiretorText.Size = new Size(699, 29);
             DiretorText.Style = Sunny.UI.UIStyle.Custom;
             DiretorText.TabIndex = 75;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -259,7 +260,7 @@
             EstrelasText.ButtonStyleInherited = false;
             EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(974, 667);
+            EstrelasText.Location = new Point(30, 785);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -268,7 +269,7 @@
             EstrelasText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstrelasText.ScrollBarStyleInherited = false;
             EstrelasText.ShowText = false;
-            EstrelasText.Size = new Size(368, 29);
+            EstrelasText.Size = new Size(883, 29);
             EstrelasText.Style = Sunny.UI.UIStyle.Custom;
             EstrelasText.TabIndex = 74;
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -286,7 +287,7 @@
             EstudioText.ButtonStyleInherited = false;
             EstudioText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstudioText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstudioText.Location = new Point(974, 726);
+            EstudioText.Location = new Point(30, 844);
             EstudioText.Margin = new Padding(4, 5, 4, 5);
             EstudioText.MinimumSize = new Size(1, 16);
             EstudioText.Name = "EstudioText";
@@ -295,7 +296,7 @@
             EstudioText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstudioText.ScrollBarStyleInherited = false;
             EstudioText.ShowText = false;
-            EstudioText.Size = new Size(368, 29);
+            EstudioText.Size = new Size(883, 29);
             EstudioText.Style = Sunny.UI.UIStyle.Custom;
             EstudioText.TabIndex = 73;
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -313,7 +314,7 @@
             FaseMCUText.ButtonStyleInherited = false;
             FaseMCUText.FillColor2 = Color.FromArgb(238, 248, 248);
             FaseMCUText.Font = new Font("Microsoft Sans Serif", 12F);
-            FaseMCUText.Location = new Point(983, 374);
+            FaseMCUText.Location = new Point(737, 724);
             FaseMCUText.Margin = new Padding(4, 5, 4, 5);
             FaseMCUText.MinimumSize = new Size(1, 16);
             FaseMCUText.Name = "FaseMCUText";
@@ -335,7 +336,7 @@
             DiretorLabel.AutoSize = true;
             DiretorLabel.Font = new Font("Microsoft Sans Serif", 12F);
             DiretorLabel.ForeColor = Color.Black;
-            DiretorLabel.Location = new Point(974, 583);
+            DiretorLabel.Location = new Point(30, 701);
             DiretorLabel.Name = "DiretorLabel";
             DiretorLabel.Size = new Size(57, 20);
             DiretorLabel.TabIndex = 81;
@@ -346,7 +347,7 @@
             GeneroLabel.AutoSize = true;
             GeneroLabel.Font = new Font("Microsoft Sans Serif", 12F);
             GeneroLabel.ForeColor = Color.Black;
-            GeneroLabel.Location = new Point(572, 749);
+            GeneroLabel.Location = new Point(476, 642);
             GeneroLabel.Name = "GeneroLabel";
             GeneroLabel.Size = new Size(63, 20);
             GeneroLabel.TabIndex = 80;
@@ -357,7 +358,7 @@
             EstudioLabel.AutoSize = true;
             EstudioLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstudioLabel.ForeColor = Color.FromArgb(48, 48, 48);
-            EstudioLabel.Location = new Point(974, 701);
+            EstudioLabel.Location = new Point(30, 819);
             EstudioLabel.Name = "EstudioLabel";
             EstudioLabel.Size = new Size(63, 20);
             EstudioLabel.TabIndex = 79;
@@ -368,7 +369,7 @@
             EstrelasLabel.AutoSize = true;
             EstrelasLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasLabel.ForeColor = Color.Black;
-            EstrelasLabel.Location = new Point(974, 642);
+            EstrelasLabel.Location = new Point(26, 760);
             EstrelasLabel.Name = "EstrelasLabel";
             EstrelasLabel.Size = new Size(67, 20);
             EstrelasLabel.TabIndex = 78;
@@ -863,7 +864,7 @@
             uiTextBox3.ButtonStyleInherited = false;
             uiTextBox3.FillColor2 = Color.FromArgb(238, 248, 248);
             uiTextBox3.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox3.Location = new Point(974, 523);
+            uiTextBox3.Location = new Point(476, 667);
             uiTextBox3.Margin = new Padding(4, 5, 4, 5);
             uiTextBox3.MinimumSize = new Size(1, 16);
             uiTextBox3.Name = "uiTextBox3";
@@ -872,7 +873,7 @@
             uiTextBox3.ScrollBarColor = Color.FromArgb(0, 150, 136);
             uiTextBox3.ScrollBarStyleInherited = false;
             uiTextBox3.ShowText = false;
-            uiTextBox3.Size = new Size(368, 29);
+            uiTextBox3.Size = new Size(437, 29);
             uiTextBox3.Style = Sunny.UI.UIStyle.Custom;
             uiTextBox3.TabIndex = 96;
             uiTextBox3.TextAlignment = ContentAlignment.MiddleLeft;
@@ -911,17 +912,45 @@
             ObraOriginalLabel.AutoSize = true;
             ObraOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
             ObraOriginalLabel.ForeColor = Color.Black;
-            ObraOriginalLabel.Location = new Point(737, 749);
+            ObraOriginalLabel.Location = new Point(30, 642);
             ObraOriginalLabel.Name = "ObraOriginalLabel";
-            ObraOriginalLabel.Size = new Size(63, 20);
+            ObraOriginalLabel.Size = new Size(101, 20);
             ObraOriginalLabel.TabIndex = 98;
-            ObraOriginalLabel.Text = "Gênero";
+            ObraOriginalLabel.Text = "Obra Original";
+            // 
+            // uiTextBox5
+            // 
+            uiTextBox5.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            uiTextBox5.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox5.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox5.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox5.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            uiTextBox5.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            uiTextBox5.ButtonStyleInherited = false;
+            uiTextBox5.FillColor2 = Color.FromArgb(238, 248, 248);
+            uiTextBox5.Font = new Font("Microsoft Sans Serif", 12F);
+            uiTextBox5.Location = new Point(30, 667);
+            uiTextBox5.Margin = new Padding(4, 5, 4, 5);
+            uiTextBox5.MinimumSize = new Size(1, 16);
+            uiTextBox5.Name = "uiTextBox5";
+            uiTextBox5.Padding = new Padding(5);
+            uiTextBox5.RectColor = Color.FromArgb(0, 150, 136);
+            uiTextBox5.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            uiTextBox5.ScrollBarStyleInherited = false;
+            uiTextBox5.ShowText = false;
+            uiTextBox5.Size = new Size(438, 29);
+            uiTextBox5.Style = Sunny.UI.UIStyle.Custom;
+            uiTextBox5.TabIndex = 99;
+            uiTextBox5.TextAlignment = ContentAlignment.MiddleLeft;
+            uiTextBox5.Watermark = "Gênero";
+            uiTextBox5.WordWarp = false;
             // 
             // SeriesView
             // 
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1783, 1026);
+            Controls.Add(uiTextBox5);
             Controls.Add(ObraOriginalLabel);
             Controls.Add(uiTextBox4);
             Controls.Add(uiTextBox3);
@@ -1027,5 +1056,6 @@
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UITextBox uiTextBox4;
         private Sunny.UI.UILabel ObraOriginalLabel;
+        private Sunny.UI.UITextBox uiTextBox5;
     }
 }
