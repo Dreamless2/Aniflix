@@ -273,8 +273,7 @@
             TMDBLibVersion.Symbol = 560403;
             TMDBLibVersion.TabIndex = 20;
             TMDBLibVersion.Text = "TMDBLib";
-            TMDBLibVersion.TextAlign = ContentAlignment.MiddleLeft;
-            TMDBLibVersion.Click += TMDBLibVersion_Click;
+            TMDBLibVersion.TextAlign = ContentAlignment.MiddleLeft;            
             // 
             // uiSymbolLabel4
             // 
