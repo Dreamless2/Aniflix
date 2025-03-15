@@ -81,7 +81,6 @@ namespace Aniflix.Views
         {
             LogoBox.Cursor = Cursors.Hand;
         }
-
         private void LicenseBox_MouseEnter(object sender, EventArgs e)
         {
             LicenseBox.Cursor = Cursors.Hand;
@@ -95,10 +94,6 @@ namespace Aniflix.Views
         {
             DEEPLBox.Cursor = Cursors.Hand;
         }
-
-
-
-
         #endregion
 
 
