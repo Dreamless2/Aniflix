@@ -296,7 +296,7 @@
             EstudioText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstudioText.ScrollBarStyleInherited = false;
             EstudioText.ShowText = false;
-            EstudioText.Size = new Size(883, 29);
+            EstudioText.Size = new Size(578, 29);
             EstudioText.Style = Sunny.UI.UIStyle.Custom;
             EstudioText.TabIndex = 73;
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
