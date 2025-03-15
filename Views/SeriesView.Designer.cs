@@ -397,7 +397,7 @@
             AutoresText.ButtonStyleInherited = false;
             AutoresText.FillColor2 = Color.FromArgb(238, 248, 248);
             AutoresText.Font = new Font("Microsoft Sans Serif", 12F);
-            AutoresText.Location = new Point(35, 603);
+            AutoresText.Location = new Point(504, 543);
             AutoresText.Margin = new Padding(4, 5, 4, 5);
             AutoresText.MinimumSize = new Size(1, 16);
             AutoresText.Name = "AutoresText";
@@ -433,7 +433,7 @@
             FranquiaText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             FranquiaText.ScrollBarStyleInherited = false;
             FranquiaText.ShowText = false;
-            FranquiaText.Size = new Size(497, 29);
+            FranquiaText.Size = new Size(438, 29);
             FranquiaText.Style = Sunny.UI.UIStyle.Custom;
             FranquiaText.TabIndex = 65;
             FranquiaText.Text = "--";
@@ -773,7 +773,7 @@
             AutoresLabel.AutoSize = true;
             AutoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
             AutoresLabel.ForeColor = Color.Black;
-            AutoresLabel.Location = new Point(35, 578);
+            AutoresLabel.Location = new Point(504, 518);
             AutoresLabel.Name = "AutoresLabel";
             AutoresLabel.Size = new Size(65, 20);
             AutoresLabel.TabIndex = 91;
