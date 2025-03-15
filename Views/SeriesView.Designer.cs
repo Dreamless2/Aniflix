@@ -71,7 +71,7 @@
             CriadoresLabel = new Sunny.UI.UILabel();
             Id = new Sunny.UI.UITextBox();
             IdiomaOriginalText = new Sunny.UI.UITextBox();
-            uiTextBox3 = new Sunny.UI.UITextBox();
+            GeneroText = new Sunny.UI.UITextBox();
             CriadoresText = new Sunny.UI.UITextBox();
             ObraOriginalLabel = new Sunny.UI.UILabel();
             ObraOriginalText = new Sunny.UI.UITextBox();
@@ -853,32 +853,32 @@
             IdiomaOriginalText.Watermark = "Idioma Original";
             IdiomaOriginalText.WordWarp = false;
             // 
-            // uiTextBox3
+            // GeneroText
             // 
-            uiTextBox3.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            uiTextBox3.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox3.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox3.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox3.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            uiTextBox3.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            uiTextBox3.ButtonStyleInherited = false;
-            uiTextBox3.FillColor2 = Color.FromArgb(238, 248, 248);
-            uiTextBox3.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox3.Location = new Point(481, 662);
-            uiTextBox3.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox3.MinimumSize = new Size(1, 16);
-            uiTextBox3.Name = "uiTextBox3";
-            uiTextBox3.Padding = new Padding(5);
-            uiTextBox3.RectColor = Color.FromArgb(0, 150, 136);
-            uiTextBox3.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            uiTextBox3.ScrollBarStyleInherited = false;
-            uiTextBox3.ShowText = false;
-            uiTextBox3.Size = new Size(437, 29);
-            uiTextBox3.Style = Sunny.UI.UIStyle.Custom;
-            uiTextBox3.TabIndex = 96;
-            uiTextBox3.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox3.Watermark = "Gênero";
-            uiTextBox3.WordWarp = false;
+            GeneroText.ButtonFillColor = Color.FromArgb(0, 150, 136);
+            GeneroText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
+            GeneroText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
+            GeneroText.ButtonRectColor = Color.FromArgb(0, 150, 136);
+            GeneroText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
+            GeneroText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
+            GeneroText.ButtonStyleInherited = false;
+            GeneroText.FillColor2 = Color.FromArgb(238, 248, 248);
+            GeneroText.Font = new Font("Microsoft Sans Serif", 12F);
+            GeneroText.Location = new Point(481, 662);
+            GeneroText.Margin = new Padding(4, 5, 4, 5);
+            GeneroText.MinimumSize = new Size(1, 16);
+            GeneroText.Name = "GeneroText";
+            GeneroText.Padding = new Padding(5);
+            GeneroText.RectColor = Color.FromArgb(0, 150, 136);
+            GeneroText.ScrollBarColor = Color.FromArgb(0, 150, 136);
+            GeneroText.ScrollBarStyleInherited = false;
+            GeneroText.ShowText = false;
+            GeneroText.Size = new Size(437, 29);
+            GeneroText.Style = Sunny.UI.UIStyle.Custom;
+            GeneroText.TabIndex = 96;
+            GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
+            GeneroText.Watermark = "Gênero";
+            GeneroText.WordWarp = false;
             // 
             // CriadoresText
             // 
@@ -953,7 +953,7 @@
             Controls.Add(ObraOriginalText);
             Controls.Add(ObraOriginalLabel);
             Controls.Add(CriadoresText);
-            Controls.Add(uiTextBox3);
+            Controls.Add(GeneroText);
             Controls.Add(IdiomaOriginalText);
             Controls.Add(Id);
             Controls.Add(CriadoresLabel);
@@ -1054,7 +1054,7 @@
         private Sunny.UI.UILabel CriadoresLabel;
         private Sunny.UI.UITextBox Id;
         private Sunny.UI.UITextBox IdiomaOriginalText;
-        private Sunny.UI.UITextBox uiTextBox3;
+        private Sunny.UI.UITextBox GeneroText;
         private Sunny.UI.UITextBox CriadoresText;
         private Sunny.UI.UILabel ObraOriginalLabel;
         private Sunny.UI.UITextBox ObraOriginalText;
