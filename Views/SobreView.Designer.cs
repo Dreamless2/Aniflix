@@ -217,7 +217,7 @@
             DEEPLVersion.Location = new Point(8, 171);
             DEEPLVersion.MinimumSize = new Size(1, 1);
             DEEPLVersion.Name = "DEEPLVersion";
-            DEEPLVersion.Size = new Size(147, 28);
+            DEEPLVersion.Size = new Size(260, 28);
             DEEPLVersion.Symbol = 560403;
             DEEPLVersion.TabIndex = 24;
             DEEPLVersion.Text = "DeepL.NET";
@@ -256,7 +256,7 @@
             SunnyVersion.Location = new Point(8, 137);
             SunnyVersion.MinimumSize = new Size(1, 1);
             SunnyVersion.Name = "SunnyVersion";
-            SunnyVersion.Size = new Size(127, 28);
+            SunnyVersion.Size = new Size(260, 28);
             SunnyVersion.Symbol = 560403;
             SunnyVersion.TabIndex = 21;
             SunnyVersion.Text = "SunnyUI";
@@ -269,7 +269,7 @@
             TMDBLibVersion.Location = new Point(8, 103);
             TMDBLibVersion.MinimumSize = new Size(1, 1);
             TMDBLibVersion.Name = "TMDBLibVersion";
-            TMDBLibVersion.Size = new Size(134, 28);
+            TMDBLibVersion.Size = new Size(260, 28);
             TMDBLibVersion.Symbol = 560403;
             TMDBLibVersion.TabIndex = 20;
             TMDBLibVersion.Text = "TMDBLib";
