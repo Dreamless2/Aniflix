@@ -34,46 +34,28 @@ namespace Aniflix.Extensions
             };
 
         public static string RemoveExcept(
-            string value,
-            bool alphas = false,
-            bool numerics = false,
-            bool dashes = false,
-            bool underlines = false,
-            bool spaces = false,
-            bool periods = false
-        )
+        string value,
+        bool alphas = false,
+        bool numerics = false,
+        bool dashes = false,
+        bool underlines = false,
+        bool spaces = false,
+        bool periods = false
+    )
         {
             if (string.IsNullOrWhiteSpace(value))
                 return value;
-            if (new[] { alphas, numerics, dashes, underlines, spaces, periods }.All(x => !x))
-                return value;
 
-            var whitelistChars = new HashSet<char>(
-                string.Concat(
-                        alphas ? "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" : "",
-                        numerics ? "0123456789" : "",
-                        dashes ? "-" : "",
-                        underlines ? "_" : "",
-                        periods ? "." : "",
-                        spaces ? " " : ""
-                    )
-                    .ToCharArray()
-            );
+            var pattern = $"[^{(alphas ? "a-zA-Z" : "")}" +
+                          $"{(numerics ? "0-9" : "")}" +
+                          $"{(dashes ? "-" : "")}" +
+                          $"{(underlines ? "_" : "")}" +
+                          $"{(spaces ? " " : "")}" +
+                          $"{(periods ? "\\." : "")}]";
 
-            var scrubbedValue = value
-                .Aggregate(
-                    new StringBuilder(),
-                    (sb, @char) =>
-                    {
-                        if (whitelistChars.Contains(@char))
-                            sb.Append(@char);
-                        return sb;
-                    }
-                )
-                .ToString();
-
-            return scrubbedValue;
+            return Regex.Replace(value, pattern, "");
         }
+
         public static string ClearLists(IEnumerable<string> names)
         {
             HashSet<string> uniqueNames = [];
