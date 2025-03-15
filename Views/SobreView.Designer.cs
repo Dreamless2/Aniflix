@@ -199,7 +199,7 @@
             DEEPLVersion.Location = new Point(9, 171);
             DEEPLVersion.MinimumSize = new Size(1, 1);
             DEEPLVersion.Name = "DEEPLVersion";
-            DEEPLVersion.Size = new Size(524, 28);
+            DEEPLVersion.Size = new Size(147, 28);
             DEEPLVersion.Symbol = 560403;
             DEEPLVersion.TabIndex = 24;
             DEEPLVersion.Text = "DeepL.NET";
