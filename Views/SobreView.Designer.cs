@@ -208,6 +208,7 @@
             DEEPLBox.SizeMode = PictureBoxSizeMode.StretchImage;
             DEEPLBox.TabIndex = 25;
             DEEPLBox.TabStop = false;
+            DEEPLBox.Click += DEEPLBox_Click;
             // 
             // DEEPLVersion
             // 
