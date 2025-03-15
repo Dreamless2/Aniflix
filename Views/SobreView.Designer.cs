@@ -47,7 +47,7 @@
             FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
-            uiSymbolLabel5 = new Sunny.UI.UISymbolLabel();
+            DEEPLVersion = new Sunny.UI.UISymbolLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
@@ -167,7 +167,7 @@
             // 
             // uiGroupBox1
             // 
-            uiGroupBox1.Controls.Add(uiSymbolLabel5);
+            uiGroupBox1.Controls.Add(DEEPLVersion);
             uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(SunnyBox);
             uiGroupBox1.Controls.Add(SunnyVersion);
@@ -302,17 +302,16 @@
             LinkSunnyUI.Text = "SunnyUI Home Page";
             LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
             // 
-            // uiSymbolLabel5
+            // DEEPLVersion
             // 
-            uiSymbolLabel5.BackColor = Color.Transparent;
-            uiSymbolLabel5.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiSymbolLabel5.Location = new Point(9, 171);
-            uiSymbolLabel5.MinimumSize = new Size(1, 1);
-            uiSymbolLabel5.Name = "uiSymbolLabel5";
-            uiSymbolLabel5.Size = new Size(524, 28);
-            uiSymbolLabel5.Symbol = 560403;
-            uiSymbolLabel5.TabIndex = 24;
-            uiSymbolLabel5.Text = "This product uses the TMDB API but is not endorsed or certified by TMDB.";
+            DEEPLVersion.BackColor = Color.Transparent;
+            DEEPLVersion.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            DEEPLVersion.Location = new Point(9, 171);
+            DEEPLVersion.MinimumSize = new Size(1, 1);
+            DEEPLVersion.Name = "DEEPLVersion";
+            DEEPLVersion.Size = new Size(524, 28);
+            DEEPLVersion.Symbol = 560403;
+            DEEPLVersion.TabIndex = 24;
             // 
             // SobreView
             // 
@@ -368,6 +367,6 @@
         private LinkLabel LinkTMDBLib;
         private LinkLabel LinkSunnyUI;
         private PictureBox LogoBox;
-        private Sunny.UI.UISymbolLabel uiSymbolLabel5;
+        private Sunny.UI.UISymbolLabel DEEPLVersion;
     }
 }

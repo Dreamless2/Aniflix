@@ -21,7 +21,9 @@ namespace Aniflix.Views
             var sunny = Assembly.Load("SunnyUi");
             var tmddlib = Assembly.Load("TMDbLib");
             var deeplNet = Assembly.Load("DeepL.Net");
-             = sunny.GetName().Version;
+            SunnyVersion.Text = sunny.GetName().Version!.ToString();
+            TMDBLibVersion.Text = tmddlib.GetName().Version!.ToString();
+            DEEPLVersion.Text = deeplNet.GetName().Version!.ToString();
         }
         #endregion
 
