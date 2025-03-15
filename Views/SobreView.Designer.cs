@@ -38,6 +38,7 @@
             uiLine2 = new Sunny.UI.UILine();
             uiLine1 = new Sunny.UI.UILine();
             uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            DEEPLBox = new PictureBox();
             DEEPLVersion = new Sunny.UI.UISymbolLabel();
             LogoBox = new PictureBox();
             SunnyBox = new PictureBox();
@@ -48,13 +49,12 @@
             FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
-            DEEPLBox = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DEEPLBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)SunnyBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)DEEPLBox).BeginInit();
             SuspendLayout();
             // 
             // uiSymbolLabel2
@@ -197,6 +197,17 @@
             uiGroupBox1.Text = "Aniflix 1.0.0, 64 bits - 2025/03/10 22:41:30";
             uiGroupBox1.TextAlignment = ContentAlignment.MiddleLeft;
             // 
+            // DEEPLBox
+            // 
+            DEEPLBox.Image = Properties.Resources.gpl_logo;
+            DEEPLBox.ImageLocation = "";
+            DEEPLBox.Location = new Point(274, 116);
+            DEEPLBox.Name = "DEEPLBox";
+            DEEPLBox.Size = new Size(259, 83);
+            DEEPLBox.SizeMode = PictureBoxSizeMode.CenterImage;
+            DEEPLBox.TabIndex = 25;
+            DEEPLBox.TabStop = false;
+            // 
             // DEEPLVersion
             // 
             DEEPLVersion.BackColor = Color.Transparent;
@@ -214,7 +225,7 @@
             // 
             LogoBox.Image = Properties.Resources.tmdb_logo;
             LogoBox.ImageLocation = "";
-            LogoBox.Location = new Point(319, 27);
+            LogoBox.Location = new Point(539, 27);
             LogoBox.Name = "LogoBox";
             LogoBox.Size = new Size(259, 83);
             LogoBox.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -325,17 +336,6 @@
             LinkSunnyUI.Text = "SunnyUI Home Page";
             LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
             // 
-            // DEEPLBox
-            // 
-            DEEPLBox.Image = Properties.Resources.gpl_logo;
-            DEEPLBox.ImageLocation = "";
-            DEEPLBox.Location = new Point(274, 116);
-            DEEPLBox.Name = "DEEPLBox";
-            DEEPLBox.Size = new Size(259, 83);
-            DEEPLBox.SizeMode = PictureBoxSizeMode.CenterImage;
-            DEEPLBox.TabIndex = 25;
-            DEEPLBox.TabStop = false;
-            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -364,9 +364,9 @@
             ((System.ComponentModel.ISupportInitialize)LicenseBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             uiGroupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)DEEPLBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)SunnyBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)DEEPLBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
