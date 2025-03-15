@@ -406,7 +406,7 @@
             AutoresText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             AutoresText.ScrollBarStyleInherited = false;
             AutoresText.ShowText = false;
-            AutoresText.Size = new Size(420, 29);
+            AutoresText.Size = new Size(437, 29);
             AutoresText.Style = Sunny.UI.UIStyle.Custom;
             AutoresText.TabIndex = 71;
             AutoresText.TextAlignment = ContentAlignment.MiddleLeft;
