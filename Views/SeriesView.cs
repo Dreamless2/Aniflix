@@ -11,11 +11,16 @@ using System.Collections.Generic;
 
 namespace Aniflix.Views
 {
-    public partial class SeriesView: UIForm
+    public partial class SeriesView : UIForm
     {
         public SeriesView()
         {
             InitializeComponent();
+        }
+
+        private void SeriesView_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
