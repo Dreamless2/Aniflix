@@ -22,5 +22,11 @@ namespace Aniflix.Views
         {
 
         }
+
+
+
+
+
+
     }
 }
