@@ -31,9 +31,6 @@ namespace Aniflix.Services
                 var country = series.ProductionCountries?.FirstOrDefault()?.Name ?? "País desconhecido";
                 var language = series.SpokenLanguages?.FirstOrDefault()?.Name ?? "Idioma desconhecido";
 
-                country = await deepl.Translate(country);
-                language = await deepl.Translate(language);
-
 
 
 
