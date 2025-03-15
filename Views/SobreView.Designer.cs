@@ -48,6 +48,7 @@
             FecharButton = new Sunny.UI.UIButton();
             LinkTMDBLib = new LinkLabel();
             LinkSunnyUI = new LinkLabel();
+            uiMarkLabel1 = new Sunny.UI.UIMarkLabel();
             ((System.ComponentModel.ISupportInitialize)LicenseBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             uiGroupBox1.SuspendLayout();
@@ -167,6 +168,7 @@
             // 
             // uiGroupBox1
             // 
+            uiGroupBox1.Controls.Add(uiMarkLabel1);
             uiGroupBox1.Controls.Add(DEEPLVersion);
             uiGroupBox1.Controls.Add(LogoBox);
             uiGroupBox1.Controls.Add(SunnyBox);
@@ -318,6 +320,17 @@
             LinkSunnyUI.Text = "SunnyUI Home Page";
             LinkSunnyUI.LinkClicked += LinkSunnyUI_LinkClicked;
             // 
+            // uiMarkLabel1
+            // 
+            uiMarkLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiMarkLabel1.ForeColor = Color.FromArgb(48, 48, 48);
+            uiMarkLabel1.Location = new Point(290, 123);
+            uiMarkLabel1.Name = "uiMarkLabel1";
+            uiMarkLabel1.Padding = new Padding(5, 0, 0, 0);
+            uiMarkLabel1.Size = new Size(100, 42);
+            uiMarkLabel1.TabIndex = 25;
+            uiMarkLabel1.Text = "uiMarkLabel1";
+            // 
             // SobreView
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -373,5 +386,6 @@
         private LinkLabel LinkSunnyUI;
         private PictureBox LogoBox;
         private Sunny.UI.UISymbolLabel DEEPLVersion;
+        private Sunny.UI.UIMarkLabel uiMarkLabel1;
     }
 }
