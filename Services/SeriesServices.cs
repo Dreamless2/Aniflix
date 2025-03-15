@@ -145,7 +145,7 @@ namespace Aniflix.Services
 
                 if (series.Credits?.Cast != null)
                 {
-                    estrelasText.Text = StringExtensions.StripPunctuation(string.Join(" ", series.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")));
+                    estrelasText.Text = string.Join(" ", series.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}"));
                 }
 
                 if (series.ProductionCompanies != null)
