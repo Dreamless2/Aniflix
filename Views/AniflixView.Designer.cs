@@ -81,7 +81,7 @@
             MenuPanel.Name = "MenuPanel";
             MenuPanel.RadiusSides = Sunny.UI.UICornerRadiusSides.LeftTop;
             MenuPanel.RectSides = ToolStripStatusLabelBorderSides.None;
-            MenuPanel.Size = new Size(258, 998);
+            MenuPanel.Size = new Size(258, 1060);
             MenuPanel.TabIndex = 0;
             MenuPanel.Text = null;
             MenuPanel.TextAlignment = ContentAlignment.MiddleCenter;
@@ -403,7 +403,7 @@
             uiPanel1.Name = "uiPanel1";
             uiPanel1.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
             uiPanel1.RectSides = ToolStripStatusLabelBorderSides.None;
-            uiPanel1.Size = new Size(1563, 908);
+            uiPanel1.Size = new Size(1563, 970);
             uiPanel1.TabIndex = 2;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -418,7 +418,7 @@
             DesktopPanel.Name = "DesktopPanel";
             DesktopPanel.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
             DesktopPanel.RectSides = ToolStripStatusLabelBorderSides.None;
-            DesktopPanel.Size = new Size(1563, 908);
+            DesktopPanel.Size = new Size(1563, 970);
             DesktopPanel.TabIndex = 0;
             DesktopPanel.Text = null;
             DesktopPanel.TextAlignment = ContentAlignment.MiddleCenter;
@@ -427,7 +427,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(238, 248, 248);
-            ClientSize = new Size(1821, 1033);
+            ClientSize = new Size(1821, 1095);
             ControlBoxFillHoverColor = Color.FromArgb(51, 171, 160);
             Controls.Add(uiPanel1);
             Controls.Add(TitleBarPanel);
