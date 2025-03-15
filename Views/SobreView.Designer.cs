@@ -240,6 +240,7 @@
             SunnyVersion.Size = new Size(127, 28);
             SunnyVersion.Symbol = 560403;
             SunnyVersion.TabIndex = 21;
+            SunnyVersion.Text = "SunnyUI";
             // 
             // TMDBLibVersion
             // 
