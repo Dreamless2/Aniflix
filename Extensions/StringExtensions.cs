@@ -121,8 +121,7 @@ namespace Aniflix.Extensions
 
             return Regex.IsMatch(normalized, @"\p{M}");
         }
-
-        static string CleanString(string input)
+        public static string CleanString(string input)
         {
             string normalized = input.Normalize(NormalizationForm.FormD);
 
