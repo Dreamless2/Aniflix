@@ -4,11 +4,11 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Drawing;
+using Aniflix.Entities;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using Aniflix.Entities;
 
 namespace Aniflix.Views
 {
@@ -49,10 +49,8 @@ namespace Aniflix.Views
                 estudio: EstudioText.Text,
                 mcu: FaseMCUText.Text
             );
-
             ResumoText.Text = services.GetFormattedText();
         }
-
         #endregion
 
 
