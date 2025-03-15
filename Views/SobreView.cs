@@ -143,8 +143,18 @@ namespace Aniflix.Views
         }
 
 
-
-
+        private void LinkDEEPLSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var target = e.Link!.LinkData! as string;
+            if (!string.IsNullOrEmpty(target))
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = target,
+                    UseShellExecute = true
+                });
+            }
+        }
 
         #endregion
 
@@ -159,17 +169,5 @@ namespace Aniflix.Views
 
 
 
-        private void LinkDEEPLSite_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            var target = e.Link!.LinkData! as string;
-            if (!string.IsNullOrEmpty(target))
-            {
-                Process.Start(new ProcessStartInfo
-                {
-                    FileName = target,
-                    UseShellExecute = true
-                });
-            }
-        }
     }
 }
