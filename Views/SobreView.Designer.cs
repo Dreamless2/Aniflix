@@ -203,7 +203,6 @@
             DEEPLVersion.Symbol = 560403;
             DEEPLVersion.TabIndex = 24;
             DEEPLVersion.Text = "DeepL.NET";
-            DEEPLVersion.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // LogoBox
             // 
