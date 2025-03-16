@@ -298,6 +298,7 @@
             ProximoButton.TextAlign = ContentAlignment.BottomLeft;
             ProximoButton.UseVisualStyleBackColor = false;
             ProximoButton.TextChanged += ProximoButton_Click;
+            ProximoButton.Click += ProximoButton_Click;
             // 
             // AnteriorButton
             // 
@@ -316,6 +317,7 @@
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
             AnteriorButton.UseVisualStyleBackColor = false;
             AnteriorButton.TextChanged += AnteriorButton_Click;
+            AnteriorButton.Click += AnteriorButton_Click;
             // 
             // EditarButton
             // 
@@ -334,6 +336,7 @@
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = false;
             EditarButton.TextChanged += EditarButton_Click;
+            EditarButton.Click += EditarButton_Click;
             // 
             // InserirNovoButton
             // 
@@ -352,6 +355,7 @@
             InserirNovoButton.TextAlign = ContentAlignment.BottomLeft;
             InserirNovoButton.UseVisualStyleBackColor = false;
             InserirNovoButton.TextChanged += InserirNovoButton_Click;
+            InserirNovoButton.Click += InserirNovoButton_Click;
             // 
             // CopiarButton
             // 
@@ -370,6 +374,7 @@
             CopiarButton.TextAlign = ContentAlignment.BottomLeft;
             CopiarButton.UseVisualStyleBackColor = false;
             CopiarButton.TextChanged += CopiarButton_Click;
+            CopiarButton.Click += CopiarButton_Click;
             // 
             // SinopseText
             // 
