@@ -144,7 +144,7 @@ namespace Aniflix.Services
 
                 if (series.CreatedBy != null)
                 {
-                    criadoresText.Text = string.Join(" ", series.CreatedBy.Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
+                    criadoresText.Text = StringExtensions.CleanString( string.Join(" ", series.CreatedBy.Take(4).Select(person => $"#{person.Name.Replace(" ", "")}")));
                 }
 
                 if (series.Credits?.Cast != null)
