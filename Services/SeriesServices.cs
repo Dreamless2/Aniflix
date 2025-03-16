@@ -144,7 +144,7 @@ namespace Aniflix.Services
 
                 if (series.CreatedBy != null)
                 {
-                    criadoresText.Text = StringExtensions.CleanString( string.Join(" ", series.CreatedBy.Take(4).Select(person => $"#{person.Name.Replace(" ", "")}")));
+                    criadoresText.Text = StringExtensions.CleanString(string.Join(" ", series.CreatedBy.Take(4).Select(person => $"#{person.Name.Replace(" ", "")}")));
                 }
 
                 if (series.Credits?.Cast != null)
@@ -154,7 +154,7 @@ namespace Aniflix.Services
 
                 if (series.ProductionCompanies != null)
                 {
-                    estudioText.Text = string.Join(" ", series.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}"));
+                    estudioText.Text = StringExtensions.CleanString(string.Join(" ", series.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}")));
                 }
             }
             catch (Exception ex)
