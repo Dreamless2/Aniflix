@@ -78,6 +78,98 @@ namespace Aniflix.Views
             ChangeData();
         }
 
+        private void TituloText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
 
+        private void AudioBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void SinopseText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TituloOriginalText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void DataLancamentoText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TituloAlternativoText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TagsText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void PaisOrigemText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void IdiomaOriginalText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void SerieText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void FaseMCUText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void FranquiaText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void AutoresText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void ObraOriginalText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+
+        private void CriadoresText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void DiretorText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EstrelasText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GeneroText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EstudioText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

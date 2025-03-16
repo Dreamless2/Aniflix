@@ -191,6 +191,7 @@
             SinopseText.Style = Sunny.UI.UIStyle.Custom;
             SinopseText.TabIndex = 83;
             SinopseText.TextAlignment = ContentAlignment.TopLeft;
+            SinopseText.TextChanged += SinopseText_TextChanged;
             // 
             // ResumoText
             // 
@@ -237,6 +238,7 @@
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
             DiretorText.Watermark = "Diretor";
             DiretorText.WordWarp = false;
+            DiretorText.TextChanged += DiretorText_TextChanged;
             // 
             // EstrelasText
             // 
@@ -264,6 +266,7 @@
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
             EstrelasText.Watermark = "Estrelas";
             EstrelasText.WordWarp = false;
+            EstrelasText.TextChanged += EstrelasText_TextChanged;
             // 
             // EstudioText
             // 
@@ -291,6 +294,7 @@
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
             EstudioText.WordWarp = false;
+            EstudioText.TextChanged += EstudioText_TextChanged;
             // 
             // DiretorLabel
             // 
@@ -373,6 +377,7 @@
             AutoresText.TextAlignment = ContentAlignment.MiddleLeft;
             AutoresText.Watermark = "Autores";
             AutoresText.WordWarp = false;
+            AutoresText.TextChanged += AutoresText_TextChanged;
             // 
             // FranquiaText
             // 
@@ -401,6 +406,7 @@
             FranquiaText.TextAlignment = ContentAlignment.MiddleLeft;
             FranquiaText.Watermark = "Franquia";
             FranquiaText.WordWarp = false;
+            FranquiaText.TextChanged += FranquiaText_TextChanged;
             // 
             // TagsText
             // 
@@ -428,6 +434,7 @@
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
             TagsText.Watermark = "Tags";
             TagsText.WordWarp = false;
+            TagsText.TextChanged += TagsText_TextChanged;
             // 
             // TituloAlternativoLabel
             // 
@@ -477,6 +484,7 @@
             DataLancamentoText.TextAlignment = ContentAlignment.MiddleLeft;
             DataLancamentoText.Watermark = "Data de Lançamento";
             DataLancamentoText.WordWarp = false;
+            DataLancamentoText.TextChanged += DataLancamentoText_TextChanged;
             // 
             // TituloOriginalLabel
             // 
@@ -515,6 +523,7 @@
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
             TituloOriginalText.WordWarp = false;
+            TituloOriginalText.TextChanged += TituloOriginalText_TextChanged;
             // 
             // TituloAlternativoText
             // 
@@ -543,6 +552,7 @@
             TituloAlternativoText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloAlternativoText.Watermark = "Título Alternativo";
             TituloAlternativoText.WordWarp = false;
+            TituloAlternativoText.TextChanged += TituloAlternativoText_TextChanged;
             // 
             // SerieText
             // 
@@ -570,6 +580,7 @@
             SerieText.TextAlignment = ContentAlignment.MiddleLeft;
             SerieText.Watermark = "Série";
             SerieText.WordWarp = false;
+            SerieText.TextChanged += SerieText_TextChanged;
             // 
             // DataLancamentoLabel
             // 
@@ -641,6 +652,7 @@
             TituloText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloText.Watermark = "Título";
             TituloText.WordWarp = false;
+            TituloText.TextChanged += TituloText_TextChanged;
             // 
             // AudioLabel
             // 
@@ -677,6 +689,7 @@
             AudioBox.Text = "Dublado";
             AudioBox.TextAlignment = ContentAlignment.MiddleLeft;
             AudioBox.Watermark = "Áudio";
+            AudioBox.SelectedIndexChanged += AudioBox_SelectedIndexChanged;
             // 
             // CodigoText
             // 
@@ -788,6 +801,7 @@
             PaisOrigemText.TextAlignment = ContentAlignment.MiddleLeft;
             PaisOrigemText.Watermark = "País de Origem";
             PaisOrigemText.WordWarp = false;
+            PaisOrigemText.TextChanged += PaisOrigemText_TextChanged;
             // 
             // IdiomaOriginalText
             // 
@@ -815,6 +829,7 @@
             IdiomaOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             IdiomaOriginalText.Watermark = "Idioma Original";
             IdiomaOriginalText.WordWarp = false;
+            IdiomaOriginalText.TextChanged += IdiomaOriginalText_TextChanged;
             // 
             // GeneroText
             // 
@@ -842,6 +857,7 @@
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
             GeneroText.Watermark = "Gênero";
             GeneroText.WordWarp = false;
+            GeneroText.TextChanged += GeneroText_TextChanged;
             // 
             // CriadoresText
             // 
@@ -869,6 +885,7 @@
             CriadoresText.TextAlignment = ContentAlignment.MiddleLeft;
             CriadoresText.Watermark = "Criadores";
             CriadoresText.WordWarp = false;
+            CriadoresText.TextChanged += CriadoresText_TextChanged;
             // 
             // ObraOriginalLabel
             // 
@@ -907,6 +924,7 @@
             ObraOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             ObraOriginalText.Watermark = "Obra Original";
             ObraOriginalText.WordWarp = false;
+            ObraOriginalText.TextChanged += ObraOriginalText_TextChanged;
             // 
             // FaseMCULabel
             // 
@@ -946,6 +964,7 @@
             FaseMCUText.TextAlignment = ContentAlignment.MiddleLeft;
             FaseMCUText.Watermark = "";
             FaseMCUText.WordWarp = false;
+            FaseMCUText.TextChanged += FaseMCUText_TextChanged;
             // 
             // SeriesView
             // 
