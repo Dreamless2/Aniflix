@@ -146,6 +146,7 @@ namespace Aniflix.Views
         private void ObraOriginalText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
+        }
 
         private void CriadoresText_TextChanged(object sender, EventArgs e)
         {
@@ -154,22 +155,22 @@ namespace Aniflix.Views
 
         private void DiretorText_TextChanged(object sender, EventArgs e)
         {
-
+            ChangeData();
         }
 
         private void EstrelasText_TextChanged(object sender, EventArgs e)
         {
-
+            ChangeData();
         }
 
         private void GeneroText_TextChanged(object sender, EventArgs e)
         {
-
+            ChangeData();
         }
 
         private void EstudioText_TextChanged(object sender, EventArgs e)
         {
-
+            ChangeData();
         }
     }
 }
