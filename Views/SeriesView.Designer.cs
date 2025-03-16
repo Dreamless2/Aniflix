@@ -104,6 +104,7 @@
             ProximoButton.Text = "Proximo";
             ProximoButton.TextAlign = ContentAlignment.BottomLeft;
             ProximoButton.UseVisualStyleBackColor = false;
+            ProximoButton.Click += ProximoButton_Click;
             // 
             // AnteriorButton
             // 
@@ -121,6 +122,7 @@
             AnteriorButton.Text = "Anterior";
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
             AnteriorButton.UseVisualStyleBackColor = false;
+            AnteriorButton.Click += AnteriorButton_Click;
             // 
             // EditarButton
             // 
@@ -138,6 +140,7 @@
             EditarButton.Text = "Editar ";
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = false;
+            EditarButton.Click += EditarButton_Click;
             // 
             // InserirNovoButton
             // 
@@ -155,6 +158,7 @@
             InserirNovoButton.Text = "Inserir Novo";
             InserirNovoButton.TextAlign = ContentAlignment.BottomLeft;
             InserirNovoButton.UseVisualStyleBackColor = false;
+            InserirNovoButton.Click += InserirNovoButton_Click;
             // 
             // CopiarButton
             // 
@@ -172,6 +176,7 @@
             CopiarButton.Text = "Copiar";
             CopiarButton.TextAlign = ContentAlignment.BottomLeft;
             CopiarButton.UseVisualStyleBackColor = false;
+            CopiarButton.Click += CopiarButton_Click;
             // 
             // SinopseText
             // 
