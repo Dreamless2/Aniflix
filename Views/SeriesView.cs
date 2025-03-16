@@ -89,7 +89,7 @@ namespace Aniflix.Views
                 }
                 else
                 {
-                    MessageBox.Show("Nenhum filme cadastrado.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nenhuma série cadastrada.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
