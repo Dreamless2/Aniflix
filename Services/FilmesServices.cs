@@ -108,12 +108,12 @@ namespace Aniflix.Services
 
                 if (movie.Credits?.Cast != null)
                 {
-                    estrelasText.Text = StringExtensions.RemoveAccents(string.Join(" ", movie.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")));
+                    estrelasText.Text = StringExtensions.CleanString(StringExtensions.RemoveAccents(string.Join(" ", movie.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}"))));
                 }
 
                 if (movie.ProductionCompanies != null)
                 {
-                    estudioText.Text = string.Join(" ", movie.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}"));
+                    estudioText.Text = StringExtensions.CleanString(string.Join(" ", movie.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}")));
                 }
             }
             catch (Exception ex)
