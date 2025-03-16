@@ -16,6 +16,8 @@ namespace Aniflix.Models
         public string? Pais_Origem { get; set; }
         public string? Idioma_Original { get; set; }
         public string? Serie { get; set; }
+        public string? Franquia { get; set; }
+
         public string? Autores { get; set; }
         public string? Criadores { get; set; }
         public string? Obra_Original { get; set; }
