@@ -1,18 +1,9 @@
-﻿using System;
-using Sunny.UI;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Drawing;
+﻿using Sunny.UI;
 using Aniflix.Models;
 using Aniflix.Entities;
 using Aniflix.Services;
 using Aniflix.Functions;
 using Aniflix.Presenters;
-using System.Windows.Forms;
-using System.ComponentModel;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace Aniflix.Views
 {
@@ -82,7 +73,7 @@ namespace Aniflix.Views
         #endregion
 
         #region "Load"
-        private void SeriesView_Load(object sender, EventArgs e)
+        private void GoreSeriesView_Load(object sender, EventArgs e)
         {
             ChangeData();
             CodigoText.Focus();
@@ -190,12 +181,6 @@ namespace Aniflix.Views
         {
             ChangeData();
         }
-
-        private void FaseMCUText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
         private void FranquiaText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
@@ -273,7 +258,7 @@ namespace Aniflix.Views
 
             if (!string.IsNullOrEmpty(item.Codigo))
             {
-                SeriesPresenter.Registrar(item);
+                GoreSeriesPresenter.Registrar(item);
             }
             else
             {
@@ -285,7 +270,7 @@ namespace Aniflix.Views
         #region "EditarButton"
         private void EditarButton_Click(object sender, EventArgs e)
         {
-            var item = new SeriesModels
+            var item = new GoreSeriesModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -304,7 +289,6 @@ namespace Aniflix.Views
                 Genero = GeneroText.Text,
                 Tags = TagsText.Text,
                 Diretor = DiretorText.Text,
-                MCU = FaseMCUText.Text,
                 Estrelas = EstrelasText.Text,
                 Estudio = EstudioText.Text
             };
@@ -336,7 +320,7 @@ namespace Aniflix.Views
 
                 if (atualizar == DialogResult.Yes)
                 {
-                    SeriesPresenter.Atualizar(item);
+                    GoreSeriesPresenter.Atualizar(item);
                 }
 
                 GlobalFunctions.DoReadOnly(this);
@@ -349,7 +333,7 @@ namespace Aniflix.Views
         #region "AnteriorButton"
         private void AnteriorButton_Click(object sender, EventArgs e)
         {
-            var item = SeriesPresenter.GetPriorRow(GlobalVars.currentId);
+            var item = GoreSeriesPresenter.GetPriorRow(GlobalVars.currentId);
 
             if (item != null)
             {
@@ -371,7 +355,6 @@ namespace Aniflix.Views
                 DiretorText.Text = item.Diretor;
                 EstrelasText.Text = item.Estrelas;
                 EstudioText.Text = item.Estudio;
-                FaseMCUText.Text = item.MCU;
             }
             else
             {
@@ -384,7 +367,7 @@ namespace Aniflix.Views
         private void ProximoButton_Click(object sender, EventArgs e)
         {
 
-            var item = SeriesPresenter.GetNearRow(GlobalVars.currentId);
+            var item = GoreSeriesPresenter.GetNearRow(GlobalVars.currentId);
 
             if (item != null)
             {
@@ -406,7 +389,6 @@ namespace Aniflix.Views
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
                 DiretorText.Text = item.Diretor;
-                FaseMCUText.Text = item.MCU;
                 EstrelasText.Text = item.Estrelas;
                 EstudioText.Text = item.Estudio;
             }
