@@ -103,7 +103,7 @@ namespace Aniflix.Services
 
                 if (movie.Credits?.Crew != null)
                 {
-                    diretorText.Text = string.Join(" ", movie.Credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}"));
+                    diretorText.Text = StringExtensions.CleanString(string.Join(" ", movie.Credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}")));
                 }
 
                 if (movie.Credits?.Cast != null)
