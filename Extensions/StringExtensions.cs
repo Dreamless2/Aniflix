@@ -125,7 +125,6 @@ namespace Aniflix.Extensions
         {
             string normalized = input.Normalize(NormalizationForm.FormD);
 
-            //string withoutAccents = Regex.Replace(normalized, @"[^\p{L}# ]", "");
             string withoutAccents = Regex.Replace(normalized, "[^a-zA-Z# ]", "");
 
 
