@@ -14,6 +14,37 @@ namespace Aniflix.Views
             InitializeComponent();
         }
 
+        #region "FillData"
+        private void FillData()
+        {
+            var item = SeriesPresenter.GetFirstRow();
+
+            if (item != null)
+            {
+                GlobalVars.currentId = item.Id;
+                CodigoText.Text = item.Codigo;
+                TituloText.Text = item.Titulo;
+                AudioBox.SelectedItem = item.Audio;
+                SinopseText.Text = item.Sinopse;
+                TituloOriginalText.Text = item.Titulo_Original;
+                DataLancamentoText.Text = item.Data_Lancamento;
+                TituloAlternativoText.Text = item.Titulo_Alternativo;
+                SerieText.Text = item.Serie;
+                FranquiaText.Text = item.Franquia;
+                AutoresText.Text = item.Autores;
+                CriadoresText.Text = item.Criadores;
+                ObraOriginalText.Text = item.Obra_Original;
+                GeneroText.Text = item.Genero;
+                TagsText.Text = item.Tags;
+                DiretorText.Text = item.Diretor;
+                EstrelasText.Text = item.Estrelas;
+                EstudioText.Text = item.Estudio;
+                FaseMCUText.Text = item.MCU;
+            }
+            ;
+        }
+        #endregion
+
         #region "ChangeData"
         private void ChangeData()
         {
@@ -42,12 +73,29 @@ namespace Aniflix.Views
         }
         #endregion
 
-
-
         #region "Load"
         private void SeriesView_Load(object sender, EventArgs e)
         {
             ChangeData();
+            CodigoText.Focus();
+
+            try
+            {
+                bool findData = FilmesPresenter.Existe(1);
+
+                if (findData)
+                {
+                    FillData();
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum filme cadastrado.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao verificar: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         #endregion
 
@@ -361,7 +409,5 @@ namespace Aniflix.Views
             }
         }
         #endregion
-
-
     }
 }
