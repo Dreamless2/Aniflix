@@ -39,7 +39,16 @@ namespace Aniflix.Views
         }
         #endregion
 
-        #region "CodigoText"
+
+
+        #region "Load"
+        private void SeriesView_Load(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+        #endregion
+
+        #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(CodigoText.Text))
@@ -60,7 +69,9 @@ namespace Aniflix.Views
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, PaisOrigemText, IdiomaOriginalText, SerieText, CriadoresText, GeneroText, TagsText, EstrelasText, EstudioText);
             }
         }
+        #endregion
 
+        #region "KeyPress"
         private void CodigoText_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -68,15 +79,9 @@ namespace Aniflix.Views
                 e.Handled = true;
             }
         }
-
         #endregion
 
-        #region "Load"
-        private void SeriesView_Load(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-        #endregion
+
 
         #region "TextChanged"
         private void TituloText_TextChanged(object sender, EventArgs e)
