@@ -1,6 +1,9 @@
 ﻿using Sunny.UI;
+using Aniflix.Models;
 using Aniflix.Entities;
 using Aniflix.Services;
+using Aniflix.Functions;
+using Aniflix.Presenters;
 
 namespace Aniflix.Views
 {
@@ -80,8 +83,6 @@ namespace Aniflix.Views
             }
         }
         #endregion
-
-
 
         #region "TextChanged"
         private void TituloText_TextChanged(object sender, EventArgs e)
@@ -179,6 +180,188 @@ namespace Aniflix.Views
             ChangeData();
         }
         #endregion
+
+        #region "CopiarButton"
+        private void CopiarButton_Click(object sender, EventArgs e)
+        {
+            ResumoText.SelectAll();
+            ResumoText.Copy();
+        }
+        #endregion
+
+        #region "InserirNovoButton"
+        private void InserirNovoButton_Click(object sender, EventArgs e)
+        {
+            var item = new SeriesModels
+            {
+                Codigo = CodigoText.Text,
+                Titulo = TituloText.Text,
+                Audio = AudioBox.SelectedItem?.ToString() ?? string.Empty,
+                Sinopse = SinopseText.Text,
+                Titulo_Original = TituloOriginalText.Text,
+                Data_Lancamento = DataLancamentoText.Text,
+                Titulo_Alternativo = TituloAlternativoText.Text,
+                Pais_Origem = PaisOrigemText.Text,
+                Idioma_Original = IdiomaOriginalText.Text,
+                Serie = SerieText.Text,
+                Franquia = FranquiaText.Text,
+                Autores = AutoresText.Text,
+                Criadores = CriadoresText.Text,
+                Obra_Original = ObraOriginalText.Text,
+                Genero = GeneroText.Text,
+                Tags = TagsText.Text,
+                Diretor = DiretorText.Text,
+                MCU = FaseMCUText.Text,
+                Estrelas = EstrelasText.Text,
+                Estudio = EstudioText.Text
+            };
+
+            if (!string.IsNullOrEmpty(item.Codigo))
+            {
+                SeriesPresenter.Registrar(item);
+            }
+            else
+            {
+                MessageBox.Show("Por favor, insira o código da série.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        #endregion
+
+        #region "EditarButton"
+        private void EditarButton_Click(object sender, EventArgs e)
+        {
+            var item = new SeriesModels
+            {
+                Codigo = CodigoText.Text,
+                Titulo = TituloText.Text,
+                Audio = AudioBox.SelectedItem?.ToString() ?? string.Empty,
+                Sinopse = SinopseText.Text,
+                Titulo_Original = TituloOriginalText.Text,
+                Data_Lancamento = DataLancamentoText.Text,
+                Titulo_Alternativo = TituloAlternativoText.Text,
+                Pais_Origem = PaisOrigemText.Text,
+                Idioma_Original = IdiomaOriginalText.Text,
+                Serie = SerieText.Text,
+                Franquia = FranquiaText.Text,
+                Autores = AutoresText.Text,
+                Criadores = CriadoresText.Text,
+                Obra_Original = ObraOriginalText.Text,
+                Genero = GeneroText.Text,
+                Tags = TagsText.Text,
+                Diretor = DiretorText.Text,
+                MCU = FaseMCUText.Text,
+                Estrelas = EstrelasText.Text,
+                Estudio = EstudioText.Text
+            };
+
+            if (!GlobalVars.editando)
+            {
+                GlobalVars.editando = true;
+                EditarButton.Text = "Cancelar";
+                GlobalFunctions.UndoReadOnly(this);
+            }
+            else if (EditarButton.Text == "Cancelar")
+            {
+                var cancelar = MessageBox.Show($"Cancelar a edição da série {item.Titulo} ?", "Séries", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (cancelar == DialogResult.Yes)
+                {
+                    GlobalVars.editando = false;
+                    GlobalFunctions.DoReadOnly(this);
+                    EditarButton.Text = "Editar";
+                }
+                else
+                {
+                    EditarButton.Text = "Salvar";
+                }
+            }
+            else if (EditarButton.Text == "Salvar")
+            {
+                var atualizar = MessageBox.Show($"Atualizar as informações sobre a série {item.Titulo} ?", "Séries", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (atualizar == DialogResult.Yes)
+                {
+                    SeriesPresenter.Atualizar(item);
+                }
+
+                GlobalFunctions.DoReadOnly(this);
+                EditarButton.Text = "Editar";
+                GlobalVars.editando = false;
+            }
+        }
+        #endregion
+
+        #region "AnteriorButton"
+        private void AnteriorButton_Click(object sender, EventArgs e)
+        {
+            var item = SeriesPresenter.GetPriorRow(GlobalVars.currentId);
+
+            if (item != null)
+            {
+                GlobalVars.currentId = item.Id;
+                CodigoText.Text = item.Codigo;
+                TituloText.Text = item.Titulo;
+                AudioBox.SelectedItem = item.Audio;
+                SinopseText.Text = item.Sinopse;
+                TituloOriginalText.Text = item.Titulo_Original;
+                DataLancamentoText.Text = item.Data_Lancamento;
+                TituloAlternativoText.Text = item.Titulo_Alternativo;
+                SerieText.Text = item.Serie;
+                FranquiaText.Text = item.Franquia;
+                AutoresText.Text = item.Autores;
+                CriadoresText.Text = item.Criadores;
+                ObraOriginalText.Text = item.Obra_Original;
+                GeneroText.Text = item.Genero;
+                TagsText.Text = item.Tags;
+                DiretorText.Text = item.Diretor;
+                EstrelasText.Text = item.Estrelas;
+                EstudioText.Text = item.Estudio;
+                FaseMCUText.Text = item.MCU;
+            }
+            else
+            {
+                MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        #endregion
+
+        #region "ProximoButton"
+        private void ProximoButton_Click(object sender, EventArgs e)
+        {
+
+            var item = SeriesPresenter.GetNearRow(GlobalVars.currentId);
+
+            if (item != null)
+            {
+                GlobalVars.currentId = item.Id;
+                CodigoText.Text = item.Codigo;
+                TituloText.Text = item.Titulo;
+                AudioBox.SelectedItem = item.Audio;
+                SinopseText.Text = item.Sinopse;
+                TituloOriginalText.Text = item.Titulo_Original;
+                DataLancamentoText.Text = item.Data_Lancamento;
+                TituloAlternativoText.Text = item.Titulo_Alternativo;
+                PaisOrigemText.Text = item.Pais_Origem;
+                IdiomaOriginalText.Text = item.Idioma_Original;
+                SerieText.Text = item.Serie;
+                FranquiaText.Text = item.Franquia;
+                AutoresText.Text = item.Autores;
+                CriadoresText.Text = item.Criadores;
+                ObraOriginalText.Text = item.Obra_Original;
+                GeneroText.Text = item.Genero;
+                TagsText.Text = item.Tags;
+                DiretorText.Text = item.Diretor;
+                FaseMCUText.Text = item.MCU;
+                EstrelasText.Text = item.Estrelas;
+                EstudioText.Text = item.Estudio;
+            }
+            else
+            {
+                MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        #endregion
+
 
     }
 }
