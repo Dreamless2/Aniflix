@@ -11,8 +11,6 @@ namespace Aniflix.Views
             InitializeComponent();
         }
 
-
-
         #region "ChangeData"
         private void ChangeData()
         {
@@ -73,11 +71,14 @@ namespace Aniflix.Views
 
         #endregion
 
+        #region "Load"
         private void SeriesView_Load(object sender, EventArgs e)
         {
             ChangeData();
         }
+        #endregion
 
+        #region "TextChanged"
         private void TituloText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
@@ -172,5 +173,7 @@ namespace Aniflix.Views
         {
             ChangeData();
         }
+        #endregion
+
     }
 }
