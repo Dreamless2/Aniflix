@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace Aniflix.Extensions
 {
-    public static class StringExtensions
+    public static partial class StringExtensions
     {
         public static string RemoveDiacritics(this string text)
         {
@@ -123,8 +123,11 @@ namespace Aniflix.Extensions
         public static string CleanString(string input)
         {
             string normalized = input.Normalize(NormalizationForm.FormD);
-            string withoutAccents = Regex.Replace(normalized, "[^a-zA-Z# ]", "");
+            string withoutAccents = MyRegex().Replace(normalized, "");
             return Regex.Replace(withoutAccents, @"[\p{P}&&[^#]]", "");
         }
+
+        [GeneratedRegex("[^a-zA-Z# ]")]
+        private static partial Regex MyRegex();
     }
 }
