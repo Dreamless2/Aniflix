@@ -1,6 +1,5 @@
 ﻿using Sunny.UI;
 using FontAwesome.Sharp.Material;
-using SharpVectors.Renderers.Forms;
 
 namespace Aniflix.Functions
 {
@@ -129,7 +128,7 @@ namespace Aniflix.Functions
             int accentIndex = random.Next(accentColors.Count);
 
             return (darkBackgrounds[bgIndex], accentColors[accentIndex]);
-        } 
+        }
 
         public static void DoReadOnly(Control control)
         {
@@ -149,8 +148,6 @@ namespace Aniflix.Functions
                 }
             }
         }
-
-
         public static void UndoReadOnly(Control control)
         {
             foreach (Control c in control.Controls)
