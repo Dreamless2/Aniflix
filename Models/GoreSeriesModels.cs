@@ -19,7 +19,6 @@ namespace Aniflix.Models
         public string? Franquia { get; set; }
         public string? Autores { get; set; }
         public string? Criadores { get; set; }
-        public string? Obra_Original { get; set; }
         public string? Genero { get; set; }
         public string? Tags { get; set; }
         public string? Diretor { get; set; }
