@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ObraOriginalText = new Sunny.UI.UITextBox();
-            ObraOriginalLabel = new Sunny.UI.UILabel();
             CriadoresText = new Sunny.UI.UITextBox();
             GeneroText = new Sunny.UI.UITextBox();
             IdiomaOriginalText = new Sunny.UI.UITextBox();
@@ -75,45 +73,6 @@
             CodigoFilmeLabel = new Sunny.UI.UILabel();
             SuspendLayout();
             // 
-            // ObraOriginalText
-            // 
-            ObraOriginalText.ButtonFillColor = Color.FromArgb(0, 150, 136);
-            ObraOriginalText.ButtonFillHoverColor = Color.FromArgb(51, 171, 160);
-            ObraOriginalText.ButtonFillPressColor = Color.FromArgb(0, 120, 109);
-            ObraOriginalText.ButtonRectColor = Color.FromArgb(0, 150, 136);
-            ObraOriginalText.ButtonRectHoverColor = Color.FromArgb(51, 171, 160);
-            ObraOriginalText.ButtonRectPressColor = Color.FromArgb(0, 120, 109);
-            ObraOriginalText.ButtonStyleInherited = false;
-            ObraOriginalText.FillColor2 = Color.FromArgb(238, 248, 248);
-            ObraOriginalText.Font = new Font("Microsoft Sans Serif", 12F);
-            ObraOriginalText.Location = new Point(35, 604);
-            ObraOriginalText.Margin = new Padding(4, 5, 4, 5);
-            ObraOriginalText.MinimumSize = new Size(1, 16);
-            ObraOriginalText.Name = "ObraOriginalText";
-            ObraOriginalText.Padding = new Padding(5);
-            ObraOriginalText.RectColor = Color.FromArgb(0, 150, 136);
-            ObraOriginalText.ScrollBarColor = Color.FromArgb(0, 150, 136);
-            ObraOriginalText.ScrollBarStyleInherited = false;
-            ObraOriginalText.ShowText = false;
-            ObraOriginalText.Size = new Size(412, 29);
-            ObraOriginalText.Style = Sunny.UI.UIStyle.Custom;
-            ObraOriginalText.TabIndex = 146;
-            ObraOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
-            ObraOriginalText.Watermark = "Obra Original";
-            ObraOriginalText.WordWarp = false;
-            ObraOriginalText.TextChanged += ObraOriginalText_TextChanged;
-            // 
-            // ObraOriginalLabel
-            // 
-            ObraOriginalLabel.AutoSize = true;
-            ObraOriginalLabel.Font = new Font("Microsoft Sans Serif", 12F);
-            ObraOriginalLabel.ForeColor = Color.Black;
-            ObraOriginalLabel.Location = new Point(35, 579);
-            ObraOriginalLabel.Name = "ObraOriginalLabel";
-            ObraOriginalLabel.Size = new Size(101, 20);
-            ObraOriginalLabel.TabIndex = 145;
-            ObraOriginalLabel.Text = "Obra Original";
-            // 
             // CriadoresText
             // 
             CriadoresText.ButtonFillColor = Color.FromArgb(0, 150, 136);
@@ -125,7 +84,7 @@
             CriadoresText.ButtonStyleInherited = false;
             CriadoresText.FillColor2 = Color.FromArgb(238, 248, 248);
             CriadoresText.Font = new Font("Microsoft Sans Serif", 12F);
-            CriadoresText.Location = new Point(455, 604);
+            CriadoresText.Location = new Point(35, 604);
             CriadoresText.Margin = new Padding(4, 5, 4, 5);
             CriadoresText.MinimumSize = new Size(1, 16);
             CriadoresText.Name = "CriadoresText";
@@ -231,7 +190,7 @@
             CriadoresLabel.AutoSize = true;
             CriadoresLabel.Font = new Font("Microsoft Sans Serif", 12F);
             CriadoresLabel.ForeColor = Color.Black;
-            CriadoresLabel.Location = new Point(455, 579);
+            CriadoresLabel.Location = new Point(35, 579);
             CriadoresLabel.Name = "CriadoresLabel";
             CriadoresLabel.Size = new Size(77, 20);
             CriadoresLabel.TabIndex = 140;
@@ -426,7 +385,7 @@
             DiretorText.ButtonStyleInherited = false;
             DiretorText.FillColor2 = Color.FromArgb(238, 248, 248);
             DiretorText.Font = new Font("Microsoft Sans Serif", 12F);
-            DiretorText.Location = new Point(35, 664);
+            DiretorText.Location = new Point(506, 604);
             DiretorText.Margin = new Padding(4, 5, 4, 5);
             DiretorText.MinimumSize = new Size(1, 16);
             DiretorText.Name = "DiretorText";
@@ -435,7 +394,7 @@
             DiretorText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             DiretorText.ScrollBarStyleInherited = false;
             DiretorText.ShowText = false;
-            DiretorText.Size = new Size(412, 29);
+            DiretorText.Size = new Size(413, 29);
             DiretorText.Style = Sunny.UI.UIStyle.Custom;
             DiretorText.TabIndex = 122;
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -454,7 +413,7 @@
             EstrelasText.ButtonStyleInherited = false;
             EstrelasText.FillColor2 = Color.FromArgb(238, 248, 248);
             EstrelasText.Font = new Font("Microsoft Sans Serif", 12F);
-            EstrelasText.Location = new Point(455, 664);
+            EstrelasText.Location = new Point(35, 664);
             EstrelasText.Margin = new Padding(4, 5, 4, 5);
             EstrelasText.MinimumSize = new Size(1, 16);
             EstrelasText.Name = "EstrelasText";
@@ -463,7 +422,7 @@
             EstrelasText.ScrollBarColor = Color.FromArgb(0, 150, 136);
             EstrelasText.ScrollBarStyleInherited = false;
             EstrelasText.ShowText = false;
-            EstrelasText.Size = new Size(463, 29);
+            EstrelasText.Size = new Size(883, 29);
             EstrelasText.Style = Sunny.UI.UIStyle.Custom;
             EstrelasText.TabIndex = 121;
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
@@ -504,7 +463,7 @@
             DiretorLabel.AutoSize = true;
             DiretorLabel.Font = new Font("Microsoft Sans Serif", 12F);
             DiretorLabel.ForeColor = Color.Black;
-            DiretorLabel.Location = new Point(35, 638);
+            DiretorLabel.Location = new Point(506, 579);
             DiretorLabel.Name = "DiretorLabel";
             DiretorLabel.Size = new Size(57, 20);
             DiretorLabel.TabIndex = 128;
@@ -537,7 +496,7 @@
             EstrelasLabel.AutoSize = true;
             EstrelasLabel.Font = new Font("Microsoft Sans Serif", 12F);
             EstrelasLabel.ForeColor = Color.Black;
-            EstrelasLabel.Location = new Point(455, 639);
+            EstrelasLabel.Location = new Point(35, 639);
             EstrelasLabel.Name = "EstrelasLabel";
             EstrelasLabel.Size = new Size(67, 20);
             EstrelasLabel.TabIndex = 125;
@@ -939,8 +898,6 @@
             AllowShowTitle = false;
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1537, 966);
-            Controls.Add(ObraOriginalText);
-            Controls.Add(ObraOriginalLabel);
             Controls.Add(CriadoresText);
             Controls.Add(GeneroText);
             Controls.Add(IdiomaOriginalText);
@@ -996,9 +953,6 @@
         }
 
         #endregion
-
-        private Sunny.UI.UITextBox ObraOriginalText;
-        private Sunny.UI.UILabel ObraOriginalLabel;
         private Sunny.UI.UITextBox CriadoresText;
         private Sunny.UI.UITextBox GeneroText;
         private Sunny.UI.UITextBox IdiomaOriginalText;
