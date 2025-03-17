@@ -1,5 +1,5 @@
-﻿using Aniflix.Functions;
-using Aniflix.Models;
+﻿using Aniflix.Models;
+using Aniflix.Functions;
 
 namespace Aniflix.Presenters
 {
@@ -54,14 +54,14 @@ namespace Aniflix.Presenters
                 MessageBox.Show(item.Titulo + " não encontrado nos registros!", "Trashflix", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        public static TrashflixModels GetFirstRow()
+        public static TrashflixModels? GetFirstRow()
         {
             return GlobalVars.context.Trashflix
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
         }
 
-        public static TrashflixModels GetNearRow(int id)
+        public static TrashflixModels? GetNearRow(int id)
         {
             try
             {
@@ -77,7 +77,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static TrashflixModels GetPriorRow(int id)
+        public static TrashflixModels? GetPriorRow(int id)
         {
             try
             {

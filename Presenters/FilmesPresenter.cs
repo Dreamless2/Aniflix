@@ -1,5 +1,5 @@
-﻿using Aniflix.Functions;
-using Aniflix.Models;
+﻿using Aniflix.Models;
+using Aniflix.Functions;
 
 namespace Aniflix.Presenters
 {
@@ -54,14 +54,14 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static FilmesModels GetFirstRow()
+        public static FilmesModels? GetFirstRow()
         {
             return GlobalVars.context.Filmes
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
         }
 
-        public static FilmesModels GetNearRow(int id)
+        public static FilmesModels? GetNearRow(int id)
         {
             try
             {
@@ -77,7 +77,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static FilmesModels GetPriorRow(int id)
+        public static FilmesModels? GetPriorRow(int id)
         {
             try
             {

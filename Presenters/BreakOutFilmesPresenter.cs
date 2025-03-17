@@ -55,7 +55,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static BreakOutFilmesModels GetFirstRow()
+        public static BreakOutFilmesModels? GetFirstRow()
         {
             return GlobalVars.context.Breakout_Filmes
                 .OrderBy(x => x.Id)
@@ -63,7 +63,7 @@ namespace Aniflix.Presenters
 
         }
 
-        public static BreakOutFilmesModels GetNearRow(int id)
+        public static BreakOutFilmesModels? GetNearRow(int id)
         {
             try
             {
@@ -79,7 +79,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static BreakOutFilmesModels GetPriorRow(int id)
+        public static BreakOutFilmesModels? GetPriorRow(int id)
         {
             try
             {

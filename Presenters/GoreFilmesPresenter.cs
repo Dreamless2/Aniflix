@@ -55,14 +55,14 @@ namespace Aniflix.Presenters
         }
 
 
-        public static GoreFilmesModels GetFirstRow()
+        public static GoreFilmesModels? GetFirstRow()
         {
             return GlobalVars.context.Gore_Filmes
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
         }
 
-        public static GoreFilmesModels GetNearRow(int id)
+        public static GoreFilmesModels? GetNearRow(int id)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static GoreFilmesModels GetPriorRow(int id)
+        public static GoreFilmesModels? GetPriorRow(int id)
         {
             try
             {

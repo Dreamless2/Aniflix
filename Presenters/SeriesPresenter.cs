@@ -59,14 +59,14 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static SeriesModels GetFirstRow()
+        public static SeriesModels? GetFirstRow()
         {
             return GlobalVars.context.Series
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
         }
 
-        public static SeriesModels GetNearRow(int id)
+        public static SeriesModels? GetNearRow(int id)
         {
             try
             {
@@ -82,7 +82,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static SeriesModels GetPriorRow(int id)
+        public static SeriesModels? GetPriorRow(int id)
         {
             try
             {
