@@ -88,7 +88,7 @@ namespace Aniflix.Views
         }
         #endregion
 
-        #region
+        #region "Reset"
         private void Reset()
         {
             DisableButton();
