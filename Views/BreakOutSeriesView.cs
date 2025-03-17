@@ -95,7 +95,7 @@ namespace Aniflix.Views
                 }
                 else
                 {
-                    MessageBox.Show("Nenhuma série cadastrada.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nenhuma série cadastrada.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
@@ -262,7 +262,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Por favor, insira o código da série.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código da série.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
