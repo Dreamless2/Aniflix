@@ -96,12 +96,14 @@ namespace Aniflix.Views
             GlobalVars.currentBtn = null;
             TitleBarPanel.BackColor = Color.Transparent;
             MenuPanel.BackColor = Color.Transparent;
+            TitleBarPanel.Text = "Home";
             TitleChildFormLabel.Text = "Home";
             CurrentChildFormBox.IconChar = FontAwesome.Sharp.MaterialIcons.Home;
         }
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
             GlobalVars.currentChildForm?.Close();
+            ActivateButton(btnSender);
             GlobalVars.currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.Dock = DockStyle.Fill;
@@ -188,7 +190,5 @@ namespace Aniflix.Views
         {
 
         }
-
-
     }
 }
