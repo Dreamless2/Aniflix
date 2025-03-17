@@ -342,7 +342,7 @@ namespace Aniflix.Views
         #region "AnteriorButton"
         private void AnteriorButton_Click(object sender, EventArgs e)
         {
-            var item = GoreSeriesPresenter.GetPriorRow(GlobalVars.currentId);
+            var item = BreakOutSeriesPresenter.GetPriorRow(GlobalVars.currentId);
 
             if (item != null)
             {
@@ -376,7 +376,7 @@ namespace Aniflix.Views
         private void ProximoButton_Click(object sender, EventArgs e)
         {
 
-            var item = GoreSeriesPresenter.GetNearRow(GlobalVars.currentId);
+            var item = BreakOutSeriesPresenter.GetNearRow(GlobalVars.currentId);
 
             if (item != null)
             {
