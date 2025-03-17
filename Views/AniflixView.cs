@@ -102,7 +102,7 @@ namespace Aniflix.Views
         }
         #endregion
 
-#region "Open Child Form"
+        #region "Open Child Form"
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
             GlobalVars.currentChildForm?.Close();
@@ -192,9 +192,5 @@ namespace Aniflix.Views
             Reset();
         }
         #endregion
-        private void AniflixView_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
