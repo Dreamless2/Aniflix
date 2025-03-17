@@ -439,7 +439,6 @@
             Text = "Aniflix";
             TitleColor = Color.FromArgb(0, 150, 136);
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
-            Load += AniflixView_Load;
             MenuPanel.ResumeLayout(false);
             LogoPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)LogoBox).EndInit();
