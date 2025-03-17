@@ -56,16 +56,14 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static GoreSeriesModels GetFirstRow()
+        public static GoreSeriesModels? GetFirstRow()
         {
-            if (GlobalVars.context.Gore_Series.Count() == 0) { }
             return GlobalVars.context.Gore_Series
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
         }
-        }
 
-        public static GoreSeriesModels GetNearRow(int id)
+        public static GoreSeriesModels? GetNearRow(int id)
         {
             try
             {
@@ -81,7 +79,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static GoreSeriesModels GetPriorRow(int id)
+        public static GoreSeriesModels? GetPriorRow(int id)
         {
             try
             {
