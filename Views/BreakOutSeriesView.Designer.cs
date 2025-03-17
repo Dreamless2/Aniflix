@@ -99,6 +99,7 @@
             CriadoresText.TextAlignment = ContentAlignment.MiddleLeft;
             CriadoresText.Watermark = "Criadores";
             CriadoresText.WordWarp = false;
+            CriadoresText.TextChanged += CriadoresText_TextChanged;
             // 
             // GeneroText
             // 
@@ -126,6 +127,7 @@
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
             GeneroText.Watermark = "Gênero";
             GeneroText.WordWarp = false;
+            GeneroText.TextChanged += GeneroText_TextChanged;
             // 
             // IdiomaOriginalText
             // 
@@ -254,6 +256,7 @@
             ProximoButton.Text = "Proximo";
             ProximoButton.TextAlign = ContentAlignment.BottomLeft;
             ProximoButton.UseVisualStyleBackColor = false;
+            ProximoButton.TextChanged += ProximoButton_Click;
             // 
             // AnteriorButton
             // 
@@ -271,6 +274,7 @@
             AnteriorButton.Text = "Anterior";
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
             AnteriorButton.UseVisualStyleBackColor = false;
+            AnteriorButton.TextChanged += AnteriorButton_Click;
             // 
             // EditarButton
             // 
@@ -288,6 +292,7 @@
             EditarButton.Text = "Editar ";
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = false;
+            EditarButton.TextChanged += EditarButton_Click;
             // 
             // InserirNovoButton
             // 
@@ -305,6 +310,7 @@
             InserirNovoButton.Text = "Inserir Novo";
             InserirNovoButton.TextAlign = ContentAlignment.BottomLeft;
             InserirNovoButton.UseVisualStyleBackColor = false;
+            InserirNovoButton.TextChanged += InserirNovoButton_Click;
             // 
             // CopiarButton
             // 
@@ -322,6 +328,7 @@
             CopiarButton.Text = "Copiar";
             CopiarButton.TextAlign = ContentAlignment.BottomLeft;
             CopiarButton.UseVisualStyleBackColor = false;
+            CopiarButton.TextChanged += CopiarButton_Click;
             // 
             // SinopseText
             // 
@@ -388,6 +395,7 @@
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
             DiretorText.Watermark = "Diretor";
             DiretorText.WordWarp = false;
+            DiretorText.TextChanged += DiretorText_TextChanged;
             // 
             // EstrelasText
             // 
@@ -415,6 +423,7 @@
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
             EstrelasText.Watermark = "Estrelas";
             EstrelasText.WordWarp = false;
+            EstrelasText.TextChanged += EstrelasText_TextChanged;
             // 
             // EstudioText
             // 
@@ -442,6 +451,7 @@
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
             EstudioText.WordWarp = false;
+            EstudioText.TextChanged += EstudioText_TextChanged;
             // 
             // DiretorLabel
             // 
@@ -524,6 +534,7 @@
             AutoresText.TextAlignment = ContentAlignment.MiddleLeft;
             AutoresText.Watermark = "Autores";
             AutoresText.WordWarp = false;
+            AutoresText.TextChanged += AutoresText_TextChanged;
             // 
             // FranquiaText
             // 
@@ -552,6 +563,7 @@
             FranquiaText.TextAlignment = ContentAlignment.MiddleLeft;
             FranquiaText.Watermark = "Franquia";
             FranquiaText.WordWarp = false;
+            FranquiaText.TextChanged += FranquiaText_TextChanged;
             // 
             // TagsText
             // 
@@ -725,6 +737,7 @@
             SerieText.TextAlignment = ContentAlignment.MiddleLeft;
             SerieText.Watermark = "Série";
             SerieText.WordWarp = false;
+            SerieText.TextChanged += SerieText_TextChanged;
             // 
             // DataLancamentoLabel
             // 
