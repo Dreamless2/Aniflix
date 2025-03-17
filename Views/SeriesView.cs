@@ -1,7 +1,6 @@
 ﻿using Sunny.UI;
 using Aniflix.Models;
 using Aniflix.Entities;
-using Aniflix.Services;
 using Aniflix.Functions;
 using Aniflix.Presenters;
 
