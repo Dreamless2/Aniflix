@@ -42,7 +42,6 @@ namespace Aniflix.Presenters
                 itemExistente.Serie = item.Serie;
                 itemExistente.Autores = item.Autores;
                 itemExistente.Criadores = item.Criadores;
-                itemExistente.Obra_Original = item.Obra_Original;
                 itemExistente.Genero = item.Genero;
                 itemExistente.Tags = item.Tags;
                 itemExistente.Diretor = item.Diretor;
@@ -57,14 +56,14 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static BreakOutSeriesModels GetFirstRow()
+        public static BreakOutSeriesModels? GetFirstRow()
         {
             return GlobalVars.context.BreakOut_Series
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
         }
 
-        public static BreakOutSeriesModels GetNearRow(int id)
+        public static BreakOutSeriesModels? GetNearRow(int id)
         {
             try
             {
@@ -80,7 +79,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static BreakOutSeriesModels GetPriorRow(int id)
+        public static BreakOutSeriesModels? GetPriorRow(int id)
         {
             try
             {
