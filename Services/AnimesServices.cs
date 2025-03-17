@@ -21,26 +21,26 @@ namespace Aniflix.Services
         {
             try
             {
-                var series = await general.GetTvShowAsync(tvId);
+                var item = await general.GetTvShowAsync(tvId);
 
-                if (series == null || string.IsNullOrWhiteSpace(series.Name))
+                if (item == null || string.IsNullOrWhiteSpace(item.Name))
                 {
                     MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                var country = series.ProductionCountries?.FirstOrDefault()?.Name ?? "País desconhecido";
-                var language = series.SpokenLanguages?.FirstOrDefault()?.Name ?? "Idioma desconhecido";
+                var country = item.ProductionCountries?.FirstOrDefault()?.Name ?? "País desconhecido";
+                var language = item.SpokenLanguages?.FirstOrDefault()?.Name ?? "Idioma desconhecido";
 
                 country = (await deepl.Translate(country)).Text;
                 language = (await deepl.Translate(language)).Text;
 
                 var itemSemAcentos = StringExtensions.RemoveAccents(
                     StringExtensions.StripPunctuation(
-                        StringExtensions.RemoveDiacritics(series.Name.Replace(" ", ""))
+                        StringExtensions.RemoveDiacritics(item.Name.Replace(" ", ""))
                     )
                 );
 
-                var itemComAcentos = StringExtensions.StripPunctuation(series.Name.Replace(" ", ""));
+                var itemComAcentos = StringExtensions.StripPunctuation(item.Name.Replace(" ", ""));
 
                 if (string.IsNullOrEmpty(itemSemAcentos) || string.IsNullOrEmpty(itemComAcentos))
                 {
@@ -48,9 +48,9 @@ namespace Aniflix.Services
                     return;
                 }
 
-                if (!string.IsNullOrWhiteSpace(series.Name))
+                if (!string.IsNullOrWhiteSpace(item.Name))
                 {
-                    bool temAcentos = StringExtensions.HasAccents(series.Name);
+                    bool temAcentos = StringExtensions.HasAccents(item.Name);
 
                     serieText.Text = temAcentos
                         ? "#" + itemComAcentos + " " + "#" + itemSemAcentos
@@ -89,18 +89,18 @@ namespace Aniflix.Services
                     paisOrigemText.Text = "--";
                 }
 
-                tituloText.Text = series.Name ?? "--";
-                sinopseText.Text = series.Overview ?? "--";
-                tituloOriginalText.Text = series.OriginalName ?? "--";
-                dataLancamentoText.Text = series.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
-                tituloAlternativoText.Text = series.AlternativeTitles.Results[0].Title ?? "--";
+                tituloText.Text = item.Name ?? "--";
+                sinopseText.Text = item.Overview ?? "--";
+                tituloOriginalText.Text = item.OriginalName ?? "--";
+                dataLancamentoText.Text = item.FirstAirDate?.ToString("dd/MM/yyyy") ?? "--";
+                tituloAlternativoText.Text = item.AlternativeTitles.Results[0].Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
                     tagsText.Text = $"#Serie #Serie{releaseDate.Year} #Série #Série{releaseDate.Year}";
                 }
 
 
-                if (series.Genres?.Count > 2)
+                if (item.Genres?.Count > 2)
                 {
                     var hashtagsPrincipais = new HashSet<string>();
                     var outrasHashtags = new HashSet<string>();
@@ -135,9 +135,9 @@ namespace Aniflix.Services
                     }
 
 
-                    var genre0 = await deepl.Translate(series.Genres[0].Name);
-                    var genre1 = await deepl.Translate(series.Genres[1].Name);
-                    var genre2 = await deepl.Translate(series.Genres[2].Name);
+                    var genre0 = await deepl.Translate(item.Genres[0].Name);
+                    var genre1 = await deepl.Translate(item.Genres[1].Name);
+                    var genre2 = await deepl.Translate(item.Genres[2].Name);
 
                     FormatGenre(genre2.ToString()!, hashtagsPrincipais, outrasHashtags);
                     FormatGenre(genre1.ToString()!, hashtagsPrincipais, outrasHashtags);
@@ -146,14 +146,14 @@ namespace Aniflix.Services
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
 
-                if (series.Credits?.Cast != null)
+                if (item.Credits?.Cast != null)
                 {
-                    estrelasText.Text = StringExtensions.CleanString(string.Join(" ", series.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")));
+                    estrelasText.Text = StringExtensions.CleanString(string.Join(" ", item.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}")));
                 }
 
-                if (series.ProductionCompanies != null)
+                if (item.ProductionCompanies != null)
                 {
-                    estudioText.Text = StringExtensions.CleanString(string.Join(" ", series.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}")));
+                    estudioText.Text = StringExtensions.CleanString(string.Join(" ", item.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}")));
                 }
             }
             catch (Exception ex)

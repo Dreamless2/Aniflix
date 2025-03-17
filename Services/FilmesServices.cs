@@ -8,15 +8,15 @@ namespace Aniflix.Services
     public class FilmesServices
     {
         private readonly TMDBContracts general = new();
-        public async Task GivenData(string movieId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
+        public async Task GivenData(string itemId, UITextBox tituloText, UIRichTextBox sinopseText, UITextBox tituloOriginalText,
                                     UITextBox dataLancamentoText, UITextBox tituloAlternativoText, UITextBox filmeText, UITextBox tagsText, UITextBox generoText,
                                     UITextBox diretorText, UITextBox estrelasText, UITextBox estudioText)
         {
             try
             {
-                var movie = await general.GetMovieAsync(movieId);
+                var item = await general.GetMovieAsync(itemId);
 
-                if (movie == null || string.IsNullOrWhiteSpace(movie.Title))
+                if (item == null || string.IsNullOrWhiteSpace(item.Title))
                 {
                     MessageBox.Show("Filme inválido ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -24,11 +24,11 @@ namespace Aniflix.Services
 
                 var itemSemAcentos = StringExtensions.RemoveAccents(
                     StringExtensions.StripPunctuation(
-                        StringExtensions.RemoveDiacritics(movie.Title.Replace(" ", ""))
+                        StringExtensions.RemoveDiacritics(item.Title.Replace(" ", ""))
                     )
                 );
 
-                var itemComAcentos = StringExtensions.StripPunctuation(movie.Title.Replace(" ", ""));
+                var itemComAcentos = StringExtensions.StripPunctuation(item.Title.Replace(" ", ""));
 
                 if (string.IsNullOrEmpty(itemSemAcentos) || string.IsNullOrEmpty(itemComAcentos))
                 {
@@ -36,9 +36,9 @@ namespace Aniflix.Services
                     return;
                 }
 
-                if (!string.IsNullOrWhiteSpace(movie.Title))
+                if (!string.IsNullOrWhiteSpace(item.Title))
                 {
-                    bool temAcentos = StringExtensions.HasAccents(movie.Title);
+                    bool temAcentos = StringExtensions.HasAccents(item.Title);
 
                     filmeText.Text = temAcentos
                         ? "#" + itemComAcentos + " " + "#" + itemSemAcentos
@@ -49,18 +49,18 @@ namespace Aniflix.Services
                     filmeText.Text = "--";
                 }
 
-                tituloText.Text = movie.Title ?? "--";
-                sinopseText.Text = movie.Overview ?? "--";
-                tituloOriginalText.Text = movie.OriginalTitle ?? "--";
-                dataLancamentoText.Text = movie.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
-                tituloAlternativoText.Text = movie.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
+                tituloText.Text = item.Title ?? "--";
+                sinopseText.Text = item.Overview ?? "--";
+                tituloOriginalText.Text = item.OriginalTitle ?? "--";
+                dataLancamentoText.Text = item.ReleaseDate?.ToString("dd/MM/yyyy") ?? "--";
+                tituloAlternativoText.Text = item.AlternativeTitles?.Titles?.FirstOrDefault()?.Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
                     tagsText.Text = $"#Filme #Filme{releaseDate.Year}";
                 }
 
 
-                if (movie.Genres?.Count > 2)
+                if (item.Genres?.Count > 2)
                 {
                     var hashtagsPrincipais = new HashSet<string>();
                     var outrasHashtags = new HashSet<string>();
@@ -94,26 +94,26 @@ namespace Aniflix.Services
                         }
                     }
 
-                    FormatGenre(movie.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(movie.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
-                    FormatGenre(movie.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(item.Genres[2].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(item.Genres[1].Name, hashtagsPrincipais, outrasHashtags);
+                    FormatGenre(item.Genres[0].Name, hashtagsPrincipais, outrasHashtags);
 
                     generoText.Text = string.Join(" ", hashtagsPrincipais.Concat(outrasHashtags));
                 }
 
-                if (movie.Credits?.Crew != null)
+                if (item.Credits?.Crew != null)
                 {
-                    diretorText.Text = StringExtensions.CleanString(string.Join(" ", movie.Credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}")));
+                    diretorText.Text = StringExtensions.CleanString(string.Join(" ", item.Credits.Crew.Where(person => person.Job == "Director").Take(4).Select(person => $"#{person.Name.Replace(" ", "")}")));
                 }
 
-                if (movie.Credits?.Cast != null)
+                if (item.Credits?.Cast != null)
                 {
-                    estrelasText.Text = StringExtensions.CleanString(StringExtensions.RemoveAccents(string.Join(" ", movie.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}"))));
+                    estrelasText.Text = StringExtensions.CleanString(StringExtensions.RemoveAccents(string.Join(" ", item.Credits.Cast.Take(5).Select(person => $"#{person.Name.Replace(" ", "")}"))));
                 }
 
-                if (movie.ProductionCompanies != null)
+                if (item.ProductionCompanies != null)
                 {
-                    estudioText.Text = StringExtensions.CleanString(string.Join(" ", movie.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}")));
+                    estudioText.Text = StringExtensions.CleanString(string.Join(" ", item.ProductionCompanies.Take(5).Select(company => $"#{company.Name.Replace(" ", "")}")));
                 }
             }
             catch (Exception ex)
