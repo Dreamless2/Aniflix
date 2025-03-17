@@ -9,14 +9,11 @@ namespace Aniflix.Views
 {
     public partial class GoreFilmesView : UIForm
     {
-        #region "Constructor"
         public GoreFilmesView()
         {
             InitializeComponent();
         }
-        #endregion
 
-        #region "ChangeData"
         private void ChangeData()
         {
 
@@ -37,9 +34,7 @@ namespace Aniflix.Views
             );
             ResumoText.Text = item.GetFormattedText();
         }
-        #endregion
 
-        #region "FillData"
         private void FillData()
         {
             var item = GoreFilmesPresenter.GetFirstRow();
@@ -64,9 +59,7 @@ namespace Aniflix.Views
             }
             ;
         }
-        #endregion
 
-        #region "Load"
         private void GoreFilmesView_Load(object sender, EventArgs e)
         {
             ChangeData();
@@ -90,9 +83,7 @@ namespace Aniflix.Views
                 MessageBox.Show($"Erro ao verificar: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        #endregion
 
-        #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
             var services = new FilmesServices();
@@ -106,9 +97,7 @@ namespace Aniflix.Views
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, FilmeText, TagsText, GeneroText, DiretorText, EstrelasText, EstudioText);
             }
         }
-        #endregion
 
-        #region "KeyPress"
         private void CodigoText_KeyPress(object sender, KeyPressEventArgs e)
         {
 
@@ -117,55 +106,13 @@ namespace Aniflix.Views
                 e.Handled = true;
             }
         }
-        #endregion
-
-        #region "TextChanged"
-        private void TituloText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
 
         private void AudioBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
 
-        private void SinopseText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
-        private void TituloOriginalText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
         private void DataLancamentoText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
-        private void TituloAlternativoText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
-        private void TagsText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
-        private void FilmeText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
-        private void FranquiaText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
-        private void GeneroText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
@@ -185,17 +132,52 @@ namespace Aniflix.Views
             ChangeData();
         }
 
-        #endregion
+        private void FilmeText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
 
-        #region "CopiarButton"
+        private void FranquiaText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void GeneroText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void SinopseText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TagsText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TituloAlternativoText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TituloOriginalText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
+        private void TituloText_TextChanged(object sender, EventArgs e)
+        {
+            ChangeData();
+        }
+
         private void CopiarButton_Click(object sender, EventArgs e)
         {
             ResumoText.SelectAll();
             ResumoText.Copy();
         }
-        #endregion
 
-        #region "InserirNovoButton"
         private void InserirNovoButton_Click(object sender, EventArgs e)
         {
             var item = new GoreFilmesModels
@@ -225,9 +207,7 @@ namespace Aniflix.Views
                 MessageBox.Show("Por favor, insira o código do filme.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        #endregion
 
-        #region "EditarButton"
         private void EditarButton_Click(object sender, EventArgs e)
         {
             var item = new GoreFilmesModels
@@ -283,9 +263,7 @@ namespace Aniflix.Views
                 GlobalVars.editando = false;
             }
         }
-        #endregion
 
-        #region "AnteriorButton"
         private void AnteriorButton_Click(object sender, EventArgs e)
         {
             var item = GoreFilmesPresenter.GetPriorRow(GlobalVars.currentId);
@@ -313,9 +291,7 @@ namespace Aniflix.Views
                 MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-        #endregion
 
-        #region "ProximoButton"
         private void ProximoButton_Click(object sender, EventArgs e)
         {
 
@@ -344,6 +320,5 @@ namespace Aniflix.Views
                 MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-        #endregion
     }
 }
