@@ -88,7 +88,7 @@ namespace Aniflix.Views
                 }
                 else
                 {
-                    MessageBox.Show("Nenhuma série cadastrada.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nenhuma série cadastrada.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
@@ -103,7 +103,7 @@ namespace Aniflix.Views
         {
             if (string.IsNullOrEmpty(CodigoText.Text))
             {
-                MessageBox.Show("Por favor, insira o código da série.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código da série.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CodigoText.Focus();
             }
             else
@@ -111,7 +111,7 @@ namespace Aniflix.Views
                 var services = new SeriesServices();
                 if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
                 {
-                    MessageBox.Show("Por favor, insira um código válido.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Por favor, insira um código válido.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     CodigoText.Focus();
                     return;
                 }
@@ -256,7 +256,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Por favor, insira o código da série.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código da série.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
@@ -294,7 +294,7 @@ namespace Aniflix.Views
             }
             else if (EditarButton.Text == "Cancelar")
             {
-                var cancelar = MessageBox.Show($"Cancelar a edição da série {item.Titulo} ?", "Séries", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                var cancelar = MessageBox.Show($"Cancelar a edição da série {item.Titulo} ?", "Gore - Séries", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (cancelar == DialogResult.Yes)
                 {
@@ -309,7 +309,7 @@ namespace Aniflix.Views
             }
             else if (EditarButton.Text == "Salvar")
             {
-                var atualizar = MessageBox.Show($"Atualizar as informações sobre a série {item.Titulo} ?", "Séries", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                var atualizar = MessageBox.Show($"Atualizar as informações sobre a série {item.Titulo} ?", "Gore - Séries", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (atualizar == DialogResult.Yes)
                 {
@@ -350,7 +350,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         #endregion
@@ -385,7 +385,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         #endregion

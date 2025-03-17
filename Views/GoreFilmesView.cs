@@ -82,7 +82,7 @@ namespace Aniflix.Views
                 }
                 else
                 {
-                    MessageBox.Show("Nenhum filme cadastrado.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nenhum filme cadastrado.", "Gore - Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
@@ -221,7 +221,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Por favor, insira o código do filme.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código do filme.", "Gore - Filmes", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
@@ -255,7 +255,7 @@ namespace Aniflix.Views
             }
             else if (EditarButton.Text == "Cancelar")
             {
-                var cancelar = MessageBox.Show($"Cancelar a edição do filme {item.Titulo} ?", "Filmes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                var cancelar = MessageBox.Show($"Cancelar a edição do filme {item.Titulo} ?", "Gore - Filmes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (cancelar == DialogResult.Yes)
                 {
@@ -270,7 +270,7 @@ namespace Aniflix.Views
             }
             else if (EditarButton.Text == "Salvar")
             {
-                var atualizar = MessageBox.Show($"Atualizar as informações sobre o filme {item.Titulo} ?", "Filmes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                var atualizar = MessageBox.Show($"Atualizar as informações sobre o filme {item.Titulo} ?", "Gore - Filmes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (atualizar == DialogResult.Yes)
                 {
@@ -309,7 +309,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "Gore - Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         #endregion
@@ -340,7 +340,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Gore - Filmes", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         #endregion
