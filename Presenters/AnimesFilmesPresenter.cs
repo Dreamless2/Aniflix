@@ -54,14 +54,14 @@ namespace Aniflix.Presenters
                 MessageBox.Show(item.Titulo + " não encontrado nos registros!", "Animes - Filmes", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        public static AnimesFilmesModels GetFirstRow()
+        public static AnimesFilmesModels? GetFirstRow()
         {
             return GlobalVars.context.Animes_Filmes
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
         }
 
-        public static AnimesFilmesModels GetNearRow(int id)
+        public static AnimesFilmesModels? GetNearRow(int id)
         {
             try
             {
@@ -77,7 +77,7 @@ namespace Aniflix.Presenters
             }
         }
 
-        public static AnimesFilmesModels GetPriorRow(int id)
+        public static AnimesFilmesModels? GetPriorRow(int id)
         {
             try
             {
