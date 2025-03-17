@@ -7,7 +7,7 @@ using Aniflix.Presenters;
 
 namespace Aniflix.Views
 {
-    public partial class AnimesView: UIForm
+    public partial class AnimesView : UIForm
     {
         public AnimesView()
         {
@@ -17,7 +17,7 @@ namespace Aniflix.Views
         #region "FillData"
         private void FillData()
         {
-            var item = BreakOutSeriesPresenter.GetFirstRow();
+            var item = AnimesPresenter.GetFirstRow();
 
             if (item != null)
             {
@@ -54,9 +54,9 @@ namespace Aniflix.Views
                 tituloOriginal: TituloOriginalText.Text,
                 dataLancamento: DataLancamentoText.Text,
                 tituloAlternativo: TituloAlternativoText.Text,
+                franquia: FranquiaText.Text,
                 paisOrigem: PaisOrigemText.Text,
                 idiomaOriginal: IdiomaOriginalText.Text,
-                franquia: FranquiaText.Text,
                 anime: AnimeText.Text,
                 autores: AutoresText.Text,
                 genero: GeneroText.Text,
@@ -78,7 +78,7 @@ namespace Aniflix.Views
 
             try
             {
-                bool findData = BreakOutSeriesPresenter.Existe(1);
+                bool findData = AnimesPresenter.Existe(1);
 
                 if (findData)
                 {
@@ -86,7 +86,7 @@ namespace Aniflix.Views
                 }
                 else
                 {
-                    MessageBox.Show("Nenhuma série cadastrada.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nenhuma série cadastrada.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
@@ -101,7 +101,7 @@ namespace Aniflix.Views
         {
             if (string.IsNullOrEmpty(CodigoText.Text))
             {
-                MessageBox.Show("Por favor, insira o código da série.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código da série.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CodigoText.Focus();
             }
             else
@@ -109,7 +109,7 @@ namespace Aniflix.Views
                 var services = new SeriesServices();
                 if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
                 {
-                    MessageBox.Show("Por favor, insira um código válido.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Por favor, insira um código válido.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     CodigoText.Focus();
                     return;
                 }
@@ -249,11 +249,11 @@ namespace Aniflix.Views
 
             if (!string.IsNullOrEmpty(item.Codigo))
             {
-                BreakOutSeriesPresenter.Registrar(item);
+                AnimesPresenter.Registrar(item);
             }
             else
             {
-                MessageBox.Show("Por favor, insira o código da série.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código da série.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion
@@ -291,7 +291,7 @@ namespace Aniflix.Views
             }
             else if (EditarButton.Text == "Cancelar")
             {
-                var cancelar = MessageBox.Show($"Cancelar a edição da série {item.Titulo} ?", "BreakOut - Séries", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                var cancelar = MessageBox.Show($"Cancelar a edição da série {item.Titulo} ?", "Animes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (cancelar == DialogResult.Yes)
                 {
@@ -306,11 +306,11 @@ namespace Aniflix.Views
             }
             else if (EditarButton.Text == "Salvar")
             {
-                var atualizar = MessageBox.Show($"Atualizar as informações sobre a série {item.Titulo} ?", "BreakOut - Séries", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                var atualizar = MessageBox.Show($"Atualizar as informações sobre a série {item.Titulo} ?", "Animes", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (atualizar == DialogResult.Yes)
                 {
-                    BreakOutSeriesPresenter.Atualizar(item);
+                    AnimesPresenter.Atualizar(item);
                 }
 
                 GlobalFunctions.DoReadOnly(this);
@@ -323,7 +323,7 @@ namespace Aniflix.Views
         #region "AnteriorButton"
         private void AnteriorButton_Click(object sender, EventArgs e)
         {
-            var item = BreakOutSeriesPresenter.GetPriorRow(GlobalVars.currentId);
+            var item = AnimesPresenter.GetPriorRow(GlobalVars.currentId);
 
             if (item != null)
             {
@@ -347,7 +347,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sem mais registros. Chegou ao início da lista.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         #endregion
@@ -356,7 +356,7 @@ namespace Aniflix.Views
         private void ProximoButton_Click(object sender, EventArgs e)
         {
 
-            var item = BreakOutSeriesPresenter.GetNearRow(GlobalVars.currentId);
+            var item = AnimesPresenter.GetNearRow(GlobalVars.currentId);
 
             if (item != null)
             {
@@ -382,7 +382,7 @@ namespace Aniflix.Views
             }
             else
             {
-                MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
