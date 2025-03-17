@@ -406,6 +406,7 @@ namespace Aniflix.Views
                 MessageBox.Show("Sem mais registros. Chegou ao fim da lista.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
         #endregion
     }
 }
