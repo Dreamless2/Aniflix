@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Aniflix.Services
 {
-    public class itemServices
+    public class SeriesServices
     {
         private readonly TMDBContracts general = new();
         private readonly DEEPLContracts deepl = new();

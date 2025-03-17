@@ -97,6 +97,7 @@
             GeneroText.TextAlignment = ContentAlignment.MiddleLeft;
             GeneroText.Watermark = "Gênero";
             GeneroText.WordWarp = false;
+            GeneroText.TextChanged += GeneroText_TextChanged;
             // 
             // IdiomaOriginalText
             // 
@@ -124,6 +125,7 @@
             IdiomaOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             IdiomaOriginalText.Watermark = "Idioma Original";
             IdiomaOriginalText.WordWarp = false;
+            IdiomaOriginalText.TextChanged += IdiomaOriginalText_TextChanged;
             // 
             // PaisOrigemText
             // 
@@ -151,6 +153,7 @@
             PaisOrigemText.TextAlignment = ContentAlignment.MiddleLeft;
             PaisOrigemText.Watermark = "País de Origem";
             PaisOrigemText.WordWarp = false;
+            PaisOrigemText.TextChanged += PaisOrigemText_TextChanged;
             // 
             // IdiomaOriginalLabel
             // 
@@ -212,6 +215,7 @@
             ProximoButton.Text = "Proximo";
             ProximoButton.TextAlign = ContentAlignment.BottomLeft;
             ProximoButton.UseVisualStyleBackColor = false;
+            ProximoButton.TextChanged += ProximoButton_Click;
             // 
             // AnteriorButton
             // 
@@ -229,6 +233,7 @@
             AnteriorButton.Text = "Anterior";
             AnteriorButton.TextAlign = ContentAlignment.BottomLeft;
             AnteriorButton.UseVisualStyleBackColor = false;
+            AnteriorButton.TextChanged += AnteriorButton_Click;
             // 
             // EditarButton
             // 
@@ -246,6 +251,7 @@
             EditarButton.Text = "Editar ";
             EditarButton.TextAlign = ContentAlignment.BottomLeft;
             EditarButton.UseVisualStyleBackColor = false;
+            EditarButton.TextChanged += EditarButton_Click;
             // 
             // InserirNovoButton
             // 
@@ -263,6 +269,7 @@
             InserirNovoButton.Text = "Inserir Novo";
             InserirNovoButton.TextAlign = ContentAlignment.BottomLeft;
             InserirNovoButton.UseVisualStyleBackColor = false;
+            InserirNovoButton.TextChanged += InserirNovoButton_Click;
             // 
             // CopiarButton
             // 
@@ -280,6 +287,7 @@
             CopiarButton.Text = "Copiar";
             CopiarButton.TextAlign = ContentAlignment.BottomLeft;
             CopiarButton.UseVisualStyleBackColor = false;
+            CopiarButton.TextChanged += CopiarButton_Click;
             // 
             // SinopseText
             // 
@@ -299,6 +307,7 @@
             SinopseText.Style = Sunny.UI.UIStyle.Custom;
             SinopseText.TabIndex = 130;
             SinopseText.TextAlignment = ContentAlignment.TopLeft;
+            SinopseText.TextChanged += SinopseText_TextChanged;
             // 
             // ResumoText
             // 
@@ -345,6 +354,7 @@
             DiretorText.TextAlignment = ContentAlignment.MiddleLeft;
             DiretorText.Watermark = "Diretor";
             DiretorText.WordWarp = false;
+            DiretorText.TextChanged += DiretorText_TextChanged;
             // 
             // EstrelasText
             // 
@@ -372,6 +382,7 @@
             EstrelasText.TextAlignment = ContentAlignment.MiddleLeft;
             EstrelasText.Watermark = "Estrelas";
             EstrelasText.WordWarp = false;
+            EstrelasText.TextChanged += EstrelasText_TextChanged;
             // 
             // EstudioText
             // 
@@ -399,6 +410,7 @@
             EstudioText.TextAlignment = ContentAlignment.MiddleLeft;
             EstudioText.Watermark = "Estúdio";
             EstudioText.WordWarp = false;
+            EstudioText.TextChanged += EstudioText_TextChanged;
             // 
             // DiretorLabel
             // 
@@ -481,6 +493,7 @@
             AutoresText.TextAlignment = ContentAlignment.MiddleLeft;
             AutoresText.Watermark = "Autores";
             AutoresText.WordWarp = false;
+            AutoresText.TextChanged += AutoresText_TextChanged;
             // 
             // FranquiaText
             // 
@@ -509,6 +522,7 @@
             FranquiaText.TextAlignment = ContentAlignment.MiddleLeft;
             FranquiaText.Watermark = "Franquia";
             FranquiaText.WordWarp = false;
+            FranquiaText.TextChanged += FranquiaText_TextChanged;
             // 
             // TagsText
             // 
@@ -536,6 +550,7 @@
             TagsText.TextAlignment = ContentAlignment.MiddleLeft;
             TagsText.Watermark = "Tags";
             TagsText.WordWarp = false;
+            TagsText.TextChanged += TagsText_TextChanged;
             // 
             // TituloAlternativoLabel
             // 
@@ -585,6 +600,7 @@
             DataLancamentoText.TextAlignment = ContentAlignment.MiddleLeft;
             DataLancamentoText.Watermark = "Data de Lançamento";
             DataLancamentoText.WordWarp = false;
+            DataLancamentoText.TextChanged += DataLancamentoText_TextChanged;
             // 
             // TituloOriginalLabel
             // 
@@ -623,6 +639,7 @@
             TituloOriginalText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloOriginalText.Watermark = "Título Original";
             TituloOriginalText.WordWarp = false;
+            TituloOriginalText.TextChanged += TituloOriginalText_TextChanged;
             // 
             // TituloAlternativoText
             // 
@@ -651,6 +668,7 @@
             TituloAlternativoText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloAlternativoText.Watermark = "Título Alternativo";
             TituloAlternativoText.WordWarp = false;
+            TituloAlternativoText.TextChanged += TituloAlternativoText_TextChanged;
             // 
             // AnimeText
             // 
@@ -678,6 +696,7 @@
             AnimeText.TextAlignment = ContentAlignment.MiddleLeft;
             AnimeText.Watermark = "Anime";
             AnimeText.WordWarp = false;
+            AnimeText.TextChanged += AnimeText_TextChanged;
             // 
             // DataLancamentoLabel
             // 
@@ -749,6 +768,7 @@
             TituloText.TextAlignment = ContentAlignment.MiddleLeft;
             TituloText.Watermark = "Título";
             TituloText.WordWarp = false;
+            TituloText.TextChanged += TituloText_TextChanged;
             // 
             // AudioLabel
             // 
@@ -785,6 +805,7 @@
             AudioBox.Text = "Dublado";
             AudioBox.TextAlignment = ContentAlignment.MiddleLeft;
             AudioBox.Watermark = "Áudio";
+            AudioBox.SystemColorsChanged += AudioBox_SelectedIndexChanged;
             // 
             // CodigoText
             // 
@@ -812,6 +833,8 @@
             CodigoText.TextAlignment = ContentAlignment.MiddleLeft;
             CodigoText.Watermark = "Código do Anime";
             CodigoText.WordWarp = false;
+            CodigoText.KeyPress += CodigoText_KeyPress;
+            CodigoText.Leave += CodigoText_Leave;
             // 
             // CodigoFilmeLabel
             // 
