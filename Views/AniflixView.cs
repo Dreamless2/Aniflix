@@ -23,6 +23,7 @@ namespace Aniflix.Views
             DoubleBuffered = true;
         }
 
+        #region "Activate Button"
         private void ActivateButton(object btnSender)
         {
             var (backgroundColor, accentColor) = GlobalFunctions.SelectThemeColors();
@@ -71,7 +72,11 @@ namespace Aniflix.Views
                 }
             }
         }
-        private void DisableButton()
+        #endregion
+
+        #region "Disable Button"
+
+        private static void DisableButton()
         {
             if (GlobalVars.currentBtn != null)
             {
@@ -83,14 +88,14 @@ namespace Aniflix.Views
                 GlobalVars.currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
             }
         }
+        #endregion
         private void Reset()
         {
             DisableButton();
             GlobalVars.leftBorderBtn!.Visible = false;
             GlobalVars.currentBtn = null;
-            TitleBarPanel.BackColor = Color.FromArgb(0, 150, 136);
-            MenuPanel.BackColor = Color.FromArgb(39, 39, 58);
-
+            TitleBarPanel.BackColor = Color.Transparent;
+            MenuPanel.BackColor = Color.Transparent;
             TitleChildFormLabel.Text = "Home";
             CurrentChildFormBox.IconChar = FontAwesome.Sharp.MaterialIcons.Home;
         }
