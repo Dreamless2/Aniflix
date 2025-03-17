@@ -426,18 +426,18 @@
             // AniflixView
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackColor = Color.FromArgb(238, 248, 248);
+            BackColor = Color.FromArgb(244, 242, 251);
             ClientSize = new Size(1821, 1095);
-            ControlBoxFillHoverColor = Color.FromArgb(51, 171, 160);
+            ControlBoxFillHoverColor = Color.FromArgb(133, 97, 198);
             Controls.Add(uiPanel1);
             Controls.Add(TitleBarPanel);
             Controls.Add(MenuPanel);
             MaximizeBox = false;
             Name = "AniflixView";
-            RectColor = Color.FromArgb(0, 150, 136);
+            RectColor = Color.FromArgb(102, 58, 183);
             Style = Sunny.UI.UIStyle.Custom;
             Text = "Aniflix";
-            TitleColor = Color.FromArgb(0, 150, 136);
+            TitleColor = Color.FromArgb(102, 58, 183);
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             MenuPanel.ResumeLayout(false);
             LogoPanel.ResumeLayout(false);
