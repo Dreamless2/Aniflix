@@ -18,10 +18,12 @@ namespace Aniflix.Views
 {
     public partial class BreakOutSeriesView : UIForm
     {
+        #region "Constructor"
         public BreakOutSeriesView()
         {
             InitializeComponent();
         }
+        #endregion
 
         #region "FillData"
         private void FillData()

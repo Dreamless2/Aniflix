@@ -9,10 +9,12 @@ namespace Aniflix.Views
 {
     public partial class BreakOutFilmesView : UIForm
     {
+        #region "Constructor"
         public BreakOutFilmesView()
         {
             InitializeComponent();
         }
+        #endregion
 
         #region "ChangeData"
         private void ChangeData()

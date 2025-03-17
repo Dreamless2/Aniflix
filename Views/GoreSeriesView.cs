@@ -9,10 +9,12 @@ namespace Aniflix.Views
 {
     public partial class GoreSeriesView : UIForm
     {
+        #region "Constructor
         public GoreSeriesView()
         {
             InitializeComponent();
         }
+        #endregion
 
         #region "FillData"
         private void FillData()
