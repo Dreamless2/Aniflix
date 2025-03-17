@@ -29,9 +29,10 @@ namespace Aniflix.Views
                 TituloOriginalText.Text = item.Titulo_Original;
                 DataLancamentoText.Text = item.Data_Lancamento;
                 TituloAlternativoText.Text = item.Titulo_Alternativo;
+                FranquiaText.Text = item.Franquia;
+                AnimeText.Text = item.Anime;
                 PaisOrigemText.Text = item.Pais_Origem;
                 IdiomaOriginalText.Text = item.Idioma_Original;
-                FranquiaText.Text = item.Franquia;
                 AutoresText.Text = item.Autores;
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
@@ -86,7 +87,7 @@ namespace Aniflix.Views
                 }
                 else
                 {
-                    MessageBox.Show("Nenhuma série cadastrada.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Nenhum anime cadastrado.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)
@@ -101,12 +102,12 @@ namespace Aniflix.Views
         {
             if (string.IsNullOrEmpty(CodigoText.Text))
             {
-                MessageBox.Show("Por favor, insira o código da série.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código do anime.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CodigoText.Focus();
             }
             else
             {
-                var services = new SeriesServices();
+                var services = new AnimesServices();
                 if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
                 {
                     MessageBox.Show("Por favor, insira um código válido.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -175,7 +176,7 @@ namespace Aniflix.Views
             ChangeData();
         }
 
-        private void SerieText_TextChanged(object sender, EventArgs e)
+        private void AnimeText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
         }
@@ -188,11 +189,6 @@ namespace Aniflix.Views
         {
             ChangeData();
         }
-        private void CriadoresText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
         private void DiretorText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
@@ -225,7 +221,7 @@ namespace Aniflix.Views
         #region "InserirNovoButton"
         private void InserirNovoButton_Click(object sender, EventArgs e)
         {
-            var item = new BreakOutSeriesModels
+            var item = new AnimesModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -234,12 +230,11 @@ namespace Aniflix.Views
                 Titulo_Original = TituloOriginalText.Text,
                 Data_Lancamento = DataLancamentoText.Text,
                 Titulo_Alternativo = TituloAlternativoText.Text,
+                Franquia = FranquiaText.Text,
                 Pais_Origem = PaisOrigemText.Text,
                 Idioma_Original = IdiomaOriginalText.Text,
-                Serie = SerieText.Text,
-                Franquia = FranquiaText.Text,
+                Anime = AnimeText.Text,
                 Autores = AutoresText.Text,
-                Criadores = CriadoresText.Text,
                 Genero = GeneroText.Text,
                 Tags = TagsText.Text,
                 Diretor = DiretorText.Text,
@@ -261,7 +256,7 @@ namespace Aniflix.Views
         #region "EditarButton"
         private void EditarButton_Click(object sender, EventArgs e)
         {
-            var item = new BreakOutSeriesModels
+            var item = new AnimesModels
             {
                 Codigo = CodigoText.Text,
                 Titulo = TituloText.Text,
@@ -270,12 +265,11 @@ namespace Aniflix.Views
                 Titulo_Original = TituloOriginalText.Text,
                 Data_Lancamento = DataLancamentoText.Text,
                 Titulo_Alternativo = TituloAlternativoText.Text,
+                Franquia = FranquiaText.Text,
                 Pais_Origem = PaisOrigemText.Text,
                 Idioma_Original = IdiomaOriginalText.Text,
-                Serie = SerieText.Text,
-                Franquia = FranquiaText.Text,
+                Anime = AnimeText.Text,
                 Autores = AutoresText.Text,
-                Criadores = CriadoresText.Text,
                 Genero = GeneroText.Text,
                 Tags = TagsText.Text,
                 Diretor = DiretorText.Text,
@@ -335,10 +329,11 @@ namespace Aniflix.Views
                 TituloOriginalText.Text = item.Titulo_Original;
                 DataLancamentoText.Text = item.Data_Lancamento;
                 TituloAlternativoText.Text = item.Titulo_Alternativo;
-                SerieText.Text = item.Serie;
                 FranquiaText.Text = item.Franquia;
+                PaisOrigemText.Text = item.Pais_Origem;
+                IdiomaOriginalText.Text = item.Idioma_Original;
+                AnimeText.Text = item.Anime;
                 AutoresText.Text = item.Autores;
-                CriadoresText.Text = item.Criadores;
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
                 DiretorText.Text = item.Diretor;
@@ -368,12 +363,11 @@ namespace Aniflix.Views
                 TituloOriginalText.Text = item.Titulo_Original;
                 DataLancamentoText.Text = item.Data_Lancamento;
                 TituloAlternativoText.Text = item.Titulo_Alternativo;
+                FranquiaText.Text = item.Franquia;
                 PaisOrigemText.Text = item.Pais_Origem;
                 IdiomaOriginalText.Text = item.Idioma_Original;
-                SerieText.Text = item.Serie;
-                FranquiaText.Text = item.Franquia;
+                AnimeText.Text = item.Anime;
                 AutoresText.Text = item.Autores;
-                CriadoresText.Text = item.Criadores;
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
                 DiretorText.Text = item.Diretor;
