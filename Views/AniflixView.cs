@@ -7,7 +7,7 @@ namespace Aniflix.Views
     public partial class AniflixView : UIForm
     {
 
-
+        #region "Constructor"
         public AniflixView()
         {
             InitializeComponent();
@@ -20,6 +20,7 @@ namespace Aniflix.Views
             Text = string.Empty;
             DoubleBuffered = true;
         }
+        #endregion
 
         #region "Activate Button"
         private void ActivateButton(object btnSender)
