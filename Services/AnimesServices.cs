@@ -25,7 +25,7 @@ namespace Aniflix.Services
 
                 if (item == null || string.IsNullOrWhiteSpace(item.Name))
                 {
-                    MessageBox.Show("Série inválida ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Anime inválido ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 var country = item.ProductionCountries?.FirstOrDefault()?.Name ?? "País desconhecido";
@@ -44,7 +44,7 @@ namespace Aniflix.Services
 
                 if (string.IsNullOrEmpty(itemSemAcentos) || string.IsNullOrEmpty(itemComAcentos))
                 {
-                    MessageBox.Show("Nenhuma série encontrada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Nenhum anime encontrado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -96,7 +96,7 @@ namespace Aniflix.Services
                 tituloAlternativoText.Text = item.AlternativeTitles.Results[0].Title ?? "--";
                 if (DateTime.TryParseExact(dataLancamentoText.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out var releaseDate))
                 {
-                    tagsText.Text = $"#Serie #Serie{releaseDate.Year} #Série #Série{releaseDate.Year}";
+                    tagsText.Text = $"#Anime #Anime{releaseDate.Year}";
                 }
 
 
