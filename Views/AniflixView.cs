@@ -1,8 +1,6 @@
 ﻿using Sunny.UI;
-using System.Net;
 using Aniflix.Functions;
 using FontAwesome.Sharp.Material;
-using SharpVectors.Renderers.Forms;
 
 namespace Aniflix.Views
 {
@@ -89,6 +87,8 @@ namespace Aniflix.Views
             }
         }
         #endregion
+
+        #region
         private void Reset()
         {
             DisableButton();
@@ -100,6 +100,9 @@ namespace Aniflix.Views
             TitleChildFormLabel.Text = "Home";
             CurrentChildFormBox.IconChar = FontAwesome.Sharp.MaterialIcons.Home;
         }
+        #endregion
+
+#region "Open Child Form"
         private void OpenChildForm(UIForm childForm, object btnSender)
         {
             GlobalVars.currentChildForm?.Close();
@@ -118,6 +121,9 @@ namespace Aniflix.Views
             TitleChildFormLabel.Text = childForm.Text;
             TitleBarPanel.Text = childForm.Text;
         }
+        #endregion
+
+        #region "Buttons Click"
         private void FilmesButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -185,7 +191,7 @@ namespace Aniflix.Views
         {
             Reset();
         }
-
+        #endregion
         private void AniflixView_Load(object sender, EventArgs e)
         {
 
