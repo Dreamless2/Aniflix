@@ -432,6 +432,7 @@
             Controls.Add(uiPanel1);
             Controls.Add(TitleBarPanel);
             Controls.Add(MenuPanel);
+            IconImage = Properties.Resources.aniflix;
             MaximizeBox = false;
             Name = "AniflixView";
             RectColor = Color.FromArgb(102, 58, 183);
