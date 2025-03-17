@@ -33,7 +33,6 @@ namespace Aniflix.Views
                 FranquiaText.Text = item.Franquia;
                 AutoresText.Text = item.Autores;
                 CriadoresText.Text = item.Criadores;
-                ObraOriginalText.Text = item.Obra_Original;
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
                 DiretorText.Text = item.Diretor;
@@ -60,7 +59,6 @@ namespace Aniflix.Views
                 serie: SerieText.Text,
                 autores: AutoresText.Text,
                 criadores: CriadoresText.Text,
-                obraOriginal: ObraOriginalText.Text,
                 genero: GeneroText.Text,
                 tags: TagsText.Text,
                 diretor: DiretorText.Text,
@@ -191,11 +189,6 @@ namespace Aniflix.Views
             ChangeData();
         }
 
-        private void ObraOriginalText_TextChanged(object sender, EventArgs e)
-        {
-            ChangeData();
-        }
-
         private void CriadoresText_TextChanged(object sender, EventArgs e)
         {
             ChangeData();
@@ -248,7 +241,6 @@ namespace Aniflix.Views
                 Franquia = FranquiaText.Text,
                 Autores = AutoresText.Text,
                 Criadores = CriadoresText.Text,
-                Obra_Original = ObraOriginalText.Text,
                 Genero = GeneroText.Text,
                 Tags = TagsText.Text,
                 Diretor = DiretorText.Text,
@@ -285,7 +277,6 @@ namespace Aniflix.Views
                 Franquia = FranquiaText.Text,
                 Autores = AutoresText.Text,
                 Criadores = CriadoresText.Text,
-                Obra_Original = ObraOriginalText.Text,
                 Genero = GeneroText.Text,
                 Tags = TagsText.Text,
                 Diretor = DiretorText.Text,
@@ -349,7 +340,6 @@ namespace Aniflix.Views
                 FranquiaText.Text = item.Franquia;
                 AutoresText.Text = item.Autores;
                 CriadoresText.Text = item.Criadores;
-                ObraOriginalText.Text = item.Obra_Original;
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
                 DiretorText.Text = item.Diretor;
@@ -385,7 +375,6 @@ namespace Aniflix.Views
                 FranquiaText.Text = item.Franquia;
                 AutoresText.Text = item.Autores;
                 CriadoresText.Text = item.Criadores;
-                ObraOriginalText.Text = item.Obra_Original;
                 GeneroText.Text = item.Genero;
                 TagsText.Text = item.Tags;
                 DiretorText.Text = item.Diretor;
