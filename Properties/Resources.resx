@@ -118,19 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="aniflix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aniflix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gpl_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gpl_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tmdb_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tmdb_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gpl_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gpl_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="deepl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deepl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aniflix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aniflix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sunnyui" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sunnyui.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="deepl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deepl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aniflix1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aniflix1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
