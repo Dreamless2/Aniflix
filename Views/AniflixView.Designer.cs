@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AniflixView));
             MenuPanel = new Sunny.UI.UIPanel();
             SairButton = new FontAwesome.Sharp.Material.MaterialButton();
             SobreButton = new FontAwesome.Sharp.Material.MaterialButton();
@@ -432,6 +433,7 @@
             Controls.Add(uiPanel1);
             Controls.Add(TitleBarPanel);
             Controls.Add(MenuPanel);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IconImage = Properties.Resources.aniflix;
             MaximizeBox = false;
             Name = "AniflixView";
