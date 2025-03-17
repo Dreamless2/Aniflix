@@ -10,12 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\BreakOutSeries.cs" />
-    <Compile Remove="Views\BreakOutSeries.Designer.cs" />
+    <Compile Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
+    <None Remove="NovaPasta\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="NovaPasta\" />
+    <Compile Remove="Views\BreakOutSeries.cs" />
+    <Compile Remove="Views\BreakOutSeries.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
