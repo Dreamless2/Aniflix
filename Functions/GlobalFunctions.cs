@@ -129,22 +129,7 @@ namespace Aniflix.Functions
             int accentIndex = random.Next(accentColors.Count);
 
             return (darkBackgrounds[bgIndex], accentColors[accentIndex]);
-        }
-
-        public static async void LoadSvgFromUrlAsync(string fileUrl, SvgPictureBox svgPictureBox)
-        {
-            using HttpClient client = new();
-            try
-            {
-                byte[] fileBytes = await client.GetByteArrayAsync(fileUrl);
-                using MemoryStream memoryStream = new(fileBytes);
-                svgPictureBox.Load(memoryStream);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Erro ao carregar o arquivo SVG: {ex.Message}");
-            }
-        }
+        } 
 
         public static void DoReadOnly(Control control)
         {

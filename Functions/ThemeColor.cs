@@ -2,7 +2,6 @@
 {
     public static class ThemeColor
     {
-
         public static Color PrimaryColor { get; set; }
         public static Color SecondaryColor { get; set; }
         public static Color ChangeColorBrightness(Color color, double correctionFactor)
