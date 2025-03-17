@@ -6,10 +6,13 @@ namespace Aniflix.Views
 {
     public partial class SobreView : UIForm
     {
+
+        #region "Constructor"
         public SobreView()
         {
             InitializeComponent();
         }
+        #endregion
 
         #region "Form Load"
         private void SobreView_Load(object sender, EventArgs e)
