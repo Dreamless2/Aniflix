@@ -42,7 +42,6 @@ namespace Aniflix.Presenters
                 itemExistente.Serie = item.Serie;
                 itemExistente.Autores = item.Autores;
                 itemExistente.Criadores = item.Criadores;
-                itemExistente.Obra_Original = item.Obra_Original;
                 itemExistente.Genero = item.Genero;
                 itemExistente.Tags = item.Tags;
                 itemExistente.Diretor = item.Diretor;
@@ -59,9 +58,11 @@ namespace Aniflix.Presenters
 
         public static GoreSeriesModels GetFirstRow()
         {
+            if (GlobalVars.context.Gore_Series.Count() == 0) { }
             return GlobalVars.context.Gore_Series
                 .OrderBy(x => x.Id)
                 .FirstOrDefault();
+        }
         }
 
         public static GoreSeriesModels GetNearRow(int id)
@@ -86,7 +87,7 @@ namespace Aniflix.Presenters
             {
                 if (id == 0)
                 {
-                    return null;
+                    return null!;
                 }
 
                 return GlobalVars.context.Gore_Series
@@ -96,7 +97,7 @@ namespace Aniflix.Presenters
             }
             catch
             {
-                return null;
+                return null!;
             }
         }
 
