@@ -147,7 +147,6 @@ namespace Aniflix.Views
                     CodigoText.Focus();
                     return;
                 }
-
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, PaisOrigemText, IdiomaOriginalText, AnimeText, GeneroText, TagsText, EstrelasText, EstudioText);
             }
         }
