@@ -120,6 +120,7 @@ namespace Aniflix.Views
             {
                 MessageBox.Show("Por favor, insira um código válido.", "Aniflix - Filmes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CodigoText.Focus();
+                return;
             }
             else
             {
