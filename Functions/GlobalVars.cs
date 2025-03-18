@@ -31,7 +31,7 @@ namespace Aniflix.Functions
         public static Random? random;
         public static int currentId = 0;
         public static bool editando = false;
-        public static string TMDB_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMWYxNWFjMDYzMjQ5MmIzYzNhOTQwMDMyYWQ2Yjk1YiIsIm5iZiI6MTc0MDYwOTk2MS40NDk5OTk4LCJzdWIiOiI2N2JmOTlhOThjMzg2YzRlNWJjOGMyMWQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.-UvZqVY1yZ9_6Yjk9qh1WaKwop07J4pgOvKlcZZIREQ";
+        public static string TMDB_KEY = "f04ae616e26fc665d8b08357ce77a1b0";
         public static string DEEPL_KEY = "7feb3eb8-de95-4312-843c-1064aecdab8b:fx";
         public static GeneralContext context = new();
         public static bool isClosing = false;
