@@ -113,7 +113,7 @@ namespace Aniflix.Views
         #endregion
 
 
-        #region "Closing"
+        #region "FormClosing"
         private void FilmesView_FormClosing(object sender, FormClosingEventArgs e)
         {
             GlobalVars.isClosing = true;
@@ -125,7 +125,7 @@ namespace Aniflix.Views
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
             var services = new FilmesServices();
-            
+
             if (GlobalVars.isClosing)
             {
                 return;
@@ -134,7 +134,7 @@ namespace Aniflix.Views
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
                 MessageBox.Show("Por favor, insira um código válido.", "Aniflix - Filmes", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                CodigoText.Focus();               
+                CodigoText.Focus();
             }
             else
             {
