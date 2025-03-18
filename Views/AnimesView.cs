@@ -121,6 +121,11 @@ namespace Aniflix.Views
         #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
+            if (GlobalVars.isClosing)
+            {
+                return;
+            }
+
             if (string.IsNullOrEmpty(CodigoText.Text))
             {
                 MessageBox.Show("Por favor, insira o código do anime.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
