@@ -118,6 +118,14 @@ namespace Aniflix.Views
         }
         #endregion
 
+        #region "FormClosing"
+        private void AnimesView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            GlobalVars.isClosing = true;
+        }
+
+        #endregion
+
         #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
