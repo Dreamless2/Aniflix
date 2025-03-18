@@ -771,6 +771,7 @@
             ShowTitle = false;
             Text = "Trashflix";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            Load += TrashflixView_Load;
             ResumeLayout(false);
             PerformLayout();
         }

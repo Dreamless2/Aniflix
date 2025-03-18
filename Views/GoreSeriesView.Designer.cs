@@ -948,6 +948,7 @@
             ShowTitle = false;
             Text = "Gore - Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            Load += GoreSeriesView_Load;
             ResumeLayout(false);
             PerformLayout();
         }
