@@ -949,6 +949,7 @@
             ShowTitle = false;
             Text = "BreakOut - Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            FormClosing += BreakOutSeriesView_FormClosing;
             Load += BreakOutSeriesView_Load;
             ResumeLayout(false);
             PerformLayout();

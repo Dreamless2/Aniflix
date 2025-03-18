@@ -901,6 +901,7 @@
             ShowTitle = false;
             Text = "Animes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            FormClosing += AnimesView_FormClosing;
             Load += AnimesView_Load;
             ResumeLayout(false);
             PerformLayout();

@@ -111,12 +111,11 @@ namespace Aniflix.Views
         }
         #endregion
 
-        #region "FormClosing"
+        #region "Closing"
         private void BreakOutFilmesView_FormClosing(object sender, FormClosingEventArgs e)
         {
             GlobalVars.isClosing = true;
-        }
-
+        }        
         #endregion
 
         #region "Leave"

@@ -117,21 +117,22 @@ namespace Aniflix.Views
         }
         #endregion
 
+        #region "Closing"
         private void BreakOutSeriesView_FormClosing(object sender, FormClosingEventArgs e)
         {
             GlobalVars.isClosing = true;
         }
+        #endregion
 
         #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
+            var services = new SeriesServices();
+
             if (GlobalVars.isClosing)
             {
                 return;
             }
-
-
-            var services = new SeriesServices();
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
                 MessageBox.Show("Por favor, insira um código válido.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);

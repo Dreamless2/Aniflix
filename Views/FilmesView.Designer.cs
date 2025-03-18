@@ -821,6 +821,7 @@
             Text = "Filmes";
             TitleColor = Color.FromArgb(0, 150, 136);
             ZoomScaleRect = new Rectangle(15, 15, 1209, 709);
+            FormClosing += FilmesView_FormClosing;
             Load += FilmesView_Load;
             ResumeLayout(false);
             PerformLayout();

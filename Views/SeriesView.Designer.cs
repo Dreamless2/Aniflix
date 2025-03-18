@@ -1030,6 +1030,7 @@
             ShowTitle = false;
             Text = "Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            FormClosing += SeriesView_FormClosing;
             Load += SeriesView_Load;
             ResumeLayout(false);
             PerformLayout();
