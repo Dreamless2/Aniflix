@@ -116,7 +116,6 @@ namespace Aniflix.Views
         {
             GlobalVars.isClosing = true;
         }
-
         #endregion
 
         #region "Leave"

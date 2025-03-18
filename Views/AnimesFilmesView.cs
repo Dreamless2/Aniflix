@@ -122,12 +122,11 @@ namespace Aniflix.Views
         #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
-              if (GlobalVars.isClosing)
+            if (GlobalVars.isClosing)
             {
                 return;
             }
             var services = new FilmesServices();
-
 
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {

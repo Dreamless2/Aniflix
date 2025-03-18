@@ -771,6 +771,7 @@
             ShowTitle = false;
             Text = "Gore - Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            FormClosing += GoreFilmesView_FormClosing;
             Load += GoreFilmesView_Load;
             ResumeLayout(false);
             PerformLayout();
