@@ -94,7 +94,7 @@ namespace Aniflix.Views
 
         #region "Disable Button"
 
-        private static void DisableButton()
+        private void DisableButton()
         {
             if (GlobalVars.currentBtn != null)
             {
