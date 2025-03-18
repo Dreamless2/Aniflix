@@ -438,6 +438,5 @@ namespace Aniflix.Views
             }
         }
         #endregion
-
     }
 }
