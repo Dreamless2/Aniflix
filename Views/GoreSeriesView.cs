@@ -135,7 +135,7 @@ namespace Aniflix.Views
 
             if (string.IsNullOrEmpty(CodigoText.Text))
             {
-                MessageBox.Show("Por favor, insira o código do anime.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código da série.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CodigoText.Focus();
             }
             else
@@ -143,7 +143,7 @@ namespace Aniflix.Views
                 var services = new SeriesServices();
                 if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
                 {
-                    MessageBox.Show("Por favor, insira um código válido.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Por favor, insira um código válido.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     CodigoText.Focus();
                     return;
                 }
