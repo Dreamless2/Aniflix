@@ -128,20 +128,25 @@ namespace Aniflix.Views
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
 
-            var services = new SeriesServices();
-
             if (GlobalVars.isClosing)
             {
                 return;
             }
-            if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
+
+            if (string.IsNullOrEmpty(CodigoText.Text))
             {
-                MessageBox.Show("Por favor, insira um código válido.", "Gore - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira o código do anime.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CodigoText.Focus();
-                return;
             }
             else
             {
+                var services = new AnimesServices();
+                if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
+                {
+                    MessageBox.Show("Por favor, insira um código válido.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    CodigoText.Focus();
+                    return;
+                }
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, PaisOrigemText, IdiomaOriginalText, SerieText, CriadoresText, GeneroText, TagsText, EstrelasText, EstudioText);
             }
         }
