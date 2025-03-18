@@ -768,6 +768,7 @@
             ShowTitle = false;
             Text = "BreakOut - Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            Load += BreakOutFilmesView_Load;
             ResumeLayout(false);
             PerformLayout();
         }
