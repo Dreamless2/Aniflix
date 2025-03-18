@@ -112,7 +112,6 @@ namespace Aniflix.Views
         }
         #endregion
 
-
         #region "Closing"
         private void FilmesView_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -388,6 +387,5 @@ namespace Aniflix.Views
             }
         }
         #endregion
-
     }
 }
