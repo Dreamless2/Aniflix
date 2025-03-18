@@ -128,25 +128,25 @@ namespace Aniflix.Views
                 return;
             }
 
-            if (string.IsNullOrEmpty(CodigoText.Text))
+
+                var services = new SeriesServices();
+            if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
-                MessageBox.Show("Por favor, insira o código da série.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Por favor, insira um código válido.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CodigoText.Focus();
+                return;
             }
             else
             {
-                var services = new SeriesServices();
-                if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
-                {
-                    MessageBox.Show("Por favor, insira um código válido.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    CodigoText.Focus();
-                    return;
-                }
 
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, PaisOrigemText, IdiomaOriginalText, SerieText, CriadoresText, GeneroText, TagsText, EstrelasText, EstudioText);
             }
+
         }
         #endregion
+
+
+
 
         #region "KeyPress"
         private void CodigoText_KeyPress(object sender, KeyPressEventArgs e)
