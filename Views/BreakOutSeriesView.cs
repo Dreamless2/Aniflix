@@ -131,6 +131,7 @@ namespace Aniflix.Views
             {
                 return;
             }
+
             if (string.IsNullOrEmpty(CodigoText.Text))
             {
                 MessageBox.Show("Por favor, insira o código da série.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
