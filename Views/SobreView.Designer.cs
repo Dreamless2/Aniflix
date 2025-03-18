@@ -366,6 +366,7 @@
             Controls.Add(LinkLicenseSite);
             Controls.Add(LinkTMDB);
             Controls.Add(uiLabel1);
+            EscClose = true;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SobreView";
