@@ -118,7 +118,7 @@ namespace Aniflix.Views
             var services = new FilmesServices();
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
-                UIMessageBox.ShowMessageDialog("Informe um código válido.", "Erro", false, UIStyle.Purple, false, UIMessageDialogButtons.Ok);
+                MessageBox.Show("Por favor, insira um código válido.", "Aniflix - Filmes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 CodigoText.Focus();
             }
             else
