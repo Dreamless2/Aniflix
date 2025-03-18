@@ -113,7 +113,7 @@ namespace Aniflix.Views
         #endregion
 
 
-        #region "FormClosing"
+        #region "Closing"
         private void FilmesView_FormClosing(object sender, FormClosingEventArgs e)
         {
             GlobalVars.isClosing = true;
