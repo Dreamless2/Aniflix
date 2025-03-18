@@ -140,13 +140,14 @@ namespace Aniflix.Views
             }
             else
             {
-                var services = new AnimesServices();
+                var services = new SeriesServices();
                 if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
                 {
                     MessageBox.Show("Por favor, insira um código válido.", "Animes", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     CodigoText.Focus();
                     return;
                 }
+
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, PaisOrigemText, IdiomaOriginalText, SerieText, CriadoresText, GeneroText, TagsText, EstrelasText, EstudioText);
             }
         }
