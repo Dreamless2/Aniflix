@@ -111,6 +111,14 @@ namespace Aniflix.Views
         }
         #endregion
 
+        #region "Closing"
+        private void GoreFilmesView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            GlobalVars.isClosing = true;
+        }
+
+        #endregion
+
         #region "Leave"
         private async void CodigoText_Leave(object sender, EventArgs e)
         {
