@@ -771,6 +771,7 @@
             ShowTitle = false;
             Text = "Animes - Filmes";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
+            Load += AnimesFilmesView_Load;
             ResumeLayout(false);
             PerformLayout();
         }
