@@ -131,7 +131,7 @@ namespace Aniflix.Views
             }
 
 
-                var services = new SeriesServices();
+            var services = new SeriesServices();
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
                 MessageBox.Show("Por favor, insira um código válido.", "BreakOut - Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -143,8 +143,6 @@ namespace Aniflix.Views
 
                 await services.GivenData(codigo.ToString(), TituloText, SinopseText, TituloOriginalText, DataLancamentoText, TituloAlternativoText, PaisOrigemText, IdiomaOriginalText, SerieText, CriadoresText, GeneroText, TagsText, EstrelasText, EstudioText);
             }
-
-
         }
         #endregion
 
