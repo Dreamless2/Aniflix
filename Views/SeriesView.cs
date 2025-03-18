@@ -129,7 +129,7 @@ namespace Aniflix.Views
             }
 
 
-                var services = new SeriesServices();
+            var services = new SeriesServices();
             if (!int.TryParse(CodigoText.Text, out var codigo) || codigo <= 0)
             {
                 MessageBox.Show("Por favor, insira um código válido.", "Séries", MessageBoxButtons.OK, MessageBoxIcon.Error);
