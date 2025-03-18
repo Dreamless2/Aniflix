@@ -30,7 +30,8 @@ namespace Aniflix.Contracts
         {
             DefaultLanguage = "pt-BR",
             DefaultCountry = "BR",
-            Timeout = TimeSpan.FromSeconds(900)
+            Timeout = TimeSpan.FromSeconds(900),
+            MaxRetryCount = 5,
         };
 
         public async Task<Movie?> GetMovieAsync(string movieId)
