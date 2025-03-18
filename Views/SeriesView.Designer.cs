@@ -1028,7 +1028,7 @@
             Name = "SeriesView";
             Padding = new Padding(0);
             ShowTitle = false;
-            Text = "v";
+            Text = "Séries";
             ZoomScaleRect = new Rectangle(15, 15, 800, 450);
             Load += SeriesView_Load;
             ResumeLayout(false);
