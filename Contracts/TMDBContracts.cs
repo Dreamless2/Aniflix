@@ -29,19 +29,10 @@ namespace Aniflix.Contracts
 {
     public class TMDBContracts
     {
-        private static readonly HttpClientHandler handler = new()
-        {
-            Proxy = new WebProxy("socks4://45.128.133.199:1080"),
-            UseProxy = true
-        };
 
-        public TMDBContracts()
-        {
-            var httpclient = new HttpClient(handler);
-        }
+        private static readonly WebProxy proxy = new("http://127.0.0.1:1080");
 
-
-        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true, "", null, handler)
+        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true, "", null, proxy)
         {
             DefaultLanguage = "pt-BR",
             DefaultCountry = "BR",
