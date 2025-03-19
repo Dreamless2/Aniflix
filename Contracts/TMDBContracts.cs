@@ -18,6 +18,7 @@
 #endregion
 
 using Aniflix.Functions;
+using System.Net;
 using TMDbLib.Client;
 using TMDbLib.Objects.Account;
 using TMDbLib.Objects.Authentication;
@@ -28,6 +29,14 @@ namespace Aniflix.Contracts
 {
     public class TMDBContracts
     {
+
+        public static readonly HttpClientHandler handler = new()
+        {
+            Proxy = new WebProxy("socks4://45.128.133.199:1080"),
+            UseProxy = true
+        };
+
+
         private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true)
         {
             DefaultLanguage = "pt-BR",
