@@ -18,7 +18,6 @@
 #endregion
 
 using Aniflix.Functions;
-using System.Net;
 using TMDbLib.Client;
 using TMDbLib.Objects.Account;
 using TMDbLib.Objects.Authentication;
