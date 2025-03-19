@@ -32,7 +32,7 @@ namespace Aniflix.Contracts
 
         private static readonly WebProxy proxy = new("socks4://109.166.210.170:5678");
 
-        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true, "", null, proxy)
+        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true, null, null, proxy)
         {
             DefaultLanguage = "pt-BR",
             DefaultCountry = "BR",
