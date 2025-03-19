@@ -29,15 +29,10 @@ namespace Aniflix.Contracts
 {
     public class TMDBContracts
     {
-
-        private static readonly WebProxy proxy = new("socks4://109.166.210.170:5678");
-
-        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true, "api.themoviedb.org", null, proxy)
+        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true)
         {
             DefaultLanguage = "pt-BR",
             DefaultCountry = "BR",
-            Timeout = TimeSpan.FromSeconds(900),
-            MaxRetryCount = 5
         };
         public async Task<AccountDetails?> GetAccountDetailsAsync(string sessionId)
         {
