@@ -20,6 +20,7 @@
 using Aniflix.Functions;
 using System.Net;
 using TMDbLib.Client;
+using TMDbLib.Objects.Authentication;
 using TMDbLib.Objects.Movies;
 using TMDbLib.Objects.TvShows;
 using TMDbLib.Utilities;
@@ -28,13 +29,14 @@ namespace Aniflix.Contracts
 {
     public class TMDBContracts
     {
-        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true, "", null, new WebProxy())
+        private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true)
         {
             DefaultLanguage = "pt-BR",
             DefaultCountry = "BR",
             Timeout = TimeSpan.FromSeconds(900),
             MaxRetryCount = 5
         };
+
 
         public async Task<Movie?> GetMovieAsync(string movieId)
             => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | MovieMethods.AlternativeTitles);
