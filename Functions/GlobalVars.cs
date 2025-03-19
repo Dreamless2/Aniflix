@@ -35,6 +35,6 @@ namespace Aniflix.Functions
         public static string DEEPL_KEY = "7feb3eb8-de95-4312-843c-1064aecdab8b:fx";
         public static GeneralContext context = new();
         public static bool isClosing = false;
-        public static int sessionId = "f7d766441aabec75ecf4cf4d24905433ac93a58d";
+        public static string sessionId = "f7d766441aabec75ecf4cf4d24905433ac93a58d";
     }
 }
