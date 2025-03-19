@@ -21,6 +21,7 @@ using Sunny.UI;
 using Aniflix.Contracts;
 using Aniflix.Extensions;
 using System.Globalization;
+using Aniflix.Functions;
 
 namespace Aniflix.Services
 {
@@ -36,6 +37,7 @@ namespace Aniflix.Services
             try
             {
                 var item = await general.GetTvShowAsync(itemId);
+                await general.GetAccountDetailsAsync(GlobalVars.SESSION_ID);
 
                 if (item == null || string.IsNullOrWhiteSpace(item.Name))
                 {
