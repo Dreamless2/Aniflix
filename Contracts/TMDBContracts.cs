@@ -30,7 +30,7 @@ namespace Aniflix.Contracts
     public class TMDBContracts
     {
 
-        private static readonly WebProxy proxy = new("http://127.0.0.1:1080");
+        private static readonly WebProxy proxy = new("socks4://109.166.210.170:5678");
 
         private readonly TMDbClient _client = new(GlobalVars.TMDB_KEY, true, "", null, proxy)
         {
