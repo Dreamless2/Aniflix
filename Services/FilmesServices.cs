@@ -35,6 +35,8 @@ namespace Aniflix.Services
             {
                 var item = await general.GetMovieAsync(itemId);
 
+
+
                 if (item == null || string.IsNullOrWhiteSpace(item.Title))
                 {
                     MessageBox.Show("Filme inválido ou título vazio.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);

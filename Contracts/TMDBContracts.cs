@@ -20,6 +20,7 @@
 using Aniflix.Functions;
 using System.Net;
 using TMDbLib.Client;
+using TMDbLib.Objects.Account;
 using TMDbLib.Objects.Authentication;
 using TMDbLib.Objects.Movies;
 using TMDbLib.Objects.TvShows;
@@ -36,7 +37,13 @@ namespace Aniflix.Contracts
             Timeout = TimeSpan.FromSeconds(900),
             MaxRetryCount = 5
         };
+        public async Task<AccountDetails?> GetAccountDetailsAsync(string sessionId)
+        {
+            await _client.SetSessionInformationAsync(sessionId, SessionType.UserSession);
+            var account = await _client.AccountGetDetailsAsync();
 
+            return account;
+        }
 
         public async Task<Movie?> GetMovieAsync(string movieId)
             => await _client.GetMovieAsync(int.Parse(movieId), MovieMethods.Credits | MovieMethods.AlternativeTitles);
