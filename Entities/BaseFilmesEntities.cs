@@ -43,10 +43,6 @@ namespace Aniflix.Entities
             string formattedText =
 $@"**{Titulo}** - **{Audio}**
 
-**HD** - __720p__
-**SD** - __480p__
-__[Os vídeos estão em ordem crescente, ou seja, de cima para baixo, tal como na descrição das resoluções.]__
-
 **Sinopse:** __{Sinopse}__
 
 **Título Original:** __{TituloOriginal}__
