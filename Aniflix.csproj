@@ -15,10 +15,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="DeepL.Net" Version="1.14.0" />
+		<PackageReference Include="DeepL.Net" Version="1.15.0" />
 		<PackageReference Include="FontAwesome.Sharp.Material" Version="6.6.0" />
 		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
-		<PackageReference Include="SunnyUI" Version="3.8.2" />
+		<PackageReference Include="SunnyUI" Version="3.8.3" />
 		<PackageReference Include="TMDbLib" Version="2.2.0" />
 	</ItemGroup>
 

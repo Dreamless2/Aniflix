@@ -40,6 +40,5 @@ namespace Aniflix.Data
         {
             optionsBuilder.UseMySql(localConnectionString, ServerVersion.AutoDetect(localConnectionString));
         }
-
     }
 }
