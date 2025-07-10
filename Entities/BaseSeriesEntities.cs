@@ -60,7 +60,7 @@ $@"**{Titulo}** - **{Audio}**
 **Franquia:** {Franquia}
 **Autores:** {Autores}
 **Criadores:** {Criadores}
-**Obra Original:** {ObraOriginal}
+**Obra Original:** __{ObraOriginal}__
 **Gênero:** {Genero}
 **Tags:** {Tags}
 **Diretor:** {Diretor}
