@@ -50,7 +50,6 @@ namespace Aniflix.Presenters
 
             if (itemExistente != null)
             {
-
                 itemExistente.Titulo = item.Titulo;
                 itemExistente.Audio = item.Audio;
                 itemExistente.Sinopse = item.Sinopse;
@@ -60,6 +59,7 @@ namespace Aniflix.Presenters
                 itemExistente.Pais_Origem = item.Pais_Origem;
                 itemExistente.Idioma_Original = item.Idioma_Original;
                 itemExistente.Serie = item.Serie;
+                itemExistente.Franquia = item.Franquia;
                 itemExistente.Autores = item.Autores;
                 itemExistente.Criadores = item.Criadores;
                 itemExistente.Obra_Original = item.Obra_Original;

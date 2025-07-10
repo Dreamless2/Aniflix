@@ -21,7 +21,7 @@ namespace Aniflix.Entities
 {
     public class BaseSeriesEntities(string titulo, string audio, string sinopse = null!, string tituloOriginal = null!,
                string dataLancamento = null!, string tituloAlternativo = null!, string paisOrigem = null!, string idiomaOriginal = null!, string serie = null!,
-               string autores = null!, string criadores = null!, string obraOriginal = null!, string genero = null!, string tags = null!, string diretor = null!,
+               string franquia = null!, string autores = null!, string criadores = null!, string obraOriginal = null!, string genero = null!, string tags = null!, string diretor = null!,
                string mcu = null!, string estrelas = null!, string estudio = null!)
     {
         public string Titulo { get; private set; } = titulo;
@@ -33,6 +33,7 @@ namespace Aniflix.Entities
         public string PaisOrigem { get; private set; } = paisOrigem;
         public string IdiomaOriginal { get; private set; } = idiomaOriginal;
         public string Serie { get; private set; } = serie;
+        public string Franquia { get; private set; } = franquia;
         public string Autores { get; private set; } = autores;
         public string Criadores { get; private set; } = criadores;
         public string ObraOriginal { get; private set; } = obraOriginal;
@@ -56,6 +57,7 @@ $@"**{Titulo}** - **{Audio}**
 **Países de Origem:** __{PaisOrigem}__
 **Idioma Original:** __{IdiomaOriginal}__
 **Série:** {Serie}
+**Franquia:** {Franquia}
 **Autores:** {Autores}
 **Criadores:** {Criadores}
 **Obra Original:** {ObraOriginal}
