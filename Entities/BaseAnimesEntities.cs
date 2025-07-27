@@ -44,9 +44,13 @@ namespace Aniflix.Entities
         public string GetFormattedText()
         {
             string formattedText =
-$@"**{Titulo}** - **{Audio}**
+$@"**{Titulo} - {Audio}**
 
 **Sinopse:** __{Sinopse}__
+
+**FHD** _ __1080p__
+**HD** _ __720p__
+**SD** _ __480p__
 
 **Nome Original:** __{TituloOriginal}__
 **Título Alternativo:** __{TituloAlternativo}__
