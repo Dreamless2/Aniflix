@@ -63,7 +63,7 @@ namespace Aniflix.Services
                     bool temAcentos = StringExtensions.HasAccents(item.Title);
 
                     filmeText.Text = temAcentos
-                        ? "#" + itemSemAcentos + " " + "#" + itemSemAcentos
+                        ? "#" + itemSemAcentos + " " + "#" + itemComAcentos
                         : "#" + itemComAcentos;
                 }
                 else
