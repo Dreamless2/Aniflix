@@ -138,7 +138,12 @@ namespace Aniflix.Services
                             { "romântica", "romantica romântica" },
                             { "comédia", "comedia comédia" },
                             { "mistério", "misterio mistério" },
-                            { "ação", "acao ação" }
+                            { "ação", "acao ação" },
+                            { "açãoeaventura", "acaoeaventura açãoeaventura" },
+                            { "animação", "animacao animação" },
+                            { "documentário", "documentario documentário" },
+                            { "comédia dramática", "comediadramatica comédia dramática" },
+                            { "comédia romântica", "comediaromantica comédia romântica" }
                         };
 
                         string lowerGenre = genre.ToLower();
