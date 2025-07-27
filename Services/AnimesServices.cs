@@ -125,12 +125,12 @@ namespace Aniflix.Services
                     {
                         Dictionary<string, string> specialWords = new()
                         {
-                            { "ficção científica", "ficçãocientífica ficcaocientifica" },
-                            { "romântico", "romântico romantico" },
-                            { "romântica", "romântica romantica" },
-                            { "comédia", "comédia comedia" },
-                            { "mistério", "mistério misterio" },
-                            { "ação", "ação acao" }
+                            { "ficção científica", "ficcaocientifica ficçãocientífica" },
+                            { "romântico", "romantico romântico" },
+                            { "romântica", "romantica romântica" },
+                            { "comédia", "comedia comédia" },
+                            { "mistério", "misterio mistério" },
+                            { "ação", "acao ação" }
                         };
 
                         string lowerGenre = genre.ToLower();
