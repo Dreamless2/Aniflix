@@ -83,9 +83,12 @@ namespace Aniflix.Services
 
                     bool temAcentos = StringExtensions.HasAccents(toLowerLanguage);
 
+                    var semAcento = "#" + StringExtensions.RemoveDiacritics(toLowerLanguage.Replace(" ", ""));
+                    var comAcento = "#" + toLowerLanguage;
+
                     idiomaOriginalText.Text = temAcentos
-                        ? "#" + toLowerLanguage + " " + "#" + StringExtensions.RemoveDiacritics(toLowerLanguage.Replace(" ", ""))
-                        : "#" + StringExtensions.RemoveDiacritics(toLowerLanguage.Replace(" ", ""));
+                        ? semAcento + " " + comAcento
+                        : semAcento;
                 }
                 else
                 {
@@ -94,16 +97,21 @@ namespace Aniflix.Services
 
                 if (!string.IsNullOrEmpty(country.ToString()))
                 {
-                    bool temAcentos = StringExtensions.HasAccents(country.ToString());
+                    var countryText = country.ToString();
+                    bool temAcentos = StringExtensions.HasAccents(countryText);
+
+                    var semAcento = "#" + StringExtensions.RemoveDiacritics(countryText.Replace(" ", ""));
+                    var comAcento = "#" + countryText.Replace(" ", "");
 
                     paisOrigemText.Text = temAcentos
-                        ? "#" + country.ToString().Replace(" ", "") + " " + "#" + StringExtensions.RemoveDiacritics(country.ToString().Replace(" ", ""))
-                        : "#" + StringExtensions.RemoveDiacritics(country.ToString().Replace(" ", ""));
+                        ? semAcento + " " + comAcento
+                        : semAcento;
                 }
                 else
                 {
                     paisOrigemText.Text = "--";
                 }
+
 
                 tituloText.Text = item.Name ?? "--";
                 sinopseText.Text = item.Overview ?? "--";
