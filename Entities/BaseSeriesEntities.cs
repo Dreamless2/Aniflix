@@ -49,9 +49,9 @@ namespace Aniflix.Entities
             string formattedText =
 $@"**{Titulo} - {Audio}**
 
-**FHD** _ __1080p__
-**HD** _ __720p__
-**SD** _ __480p__
+**FHD** - __1080p__
+**HD** - __720p__
+**SD** - __480p__
 
 **Sinopse:** __{Sinopse}__
 
