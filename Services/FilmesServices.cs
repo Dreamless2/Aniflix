@@ -91,7 +91,7 @@ namespace Aniflix.Services
                     {
                         Dictionary<string, string> specialWords = new()
                         {
-                             { "ficção científica", "ficcaocientifica ficçãocientífica" },
+                            { "ficção científica", "ficcaocientifica ficçãocientífica" },
                             { "ficçãocientíficaefantasia", "ficcaocientificaefantasia ficçãocientíficaefantasia" },
                             { "ficção científica e aventura", "ficcaocientificaeaventura ficçãocientíficaeaventura" },
                             { "ficçãocientíficaeaventura", "ficcaocientificaeaventura ficçãocientíficaeaventura" },
