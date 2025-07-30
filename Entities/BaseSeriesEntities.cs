@@ -61,14 +61,14 @@ $@"**{Titulo} - {Audio}**
 **Países de Origem:** __{PaisOrigem}__
 **Idioma Original:** __{IdiomaOriginal}__
 **Série:** {Serie}
-**Franquia:** #{Franquia}
-**Autores:** #{Autores}
-**Criadores:** #{Criadores}
+**Franquia:** {Franquia}
+**Autores:** {Autores}
+**Criadores:** {Criadores}
 **Obra Original:** __{ObraOriginal}__
-**Gênero:** #{Genero}
-**Tags:** #{Tags}
-**Diretor:** #{Diretor}
-**Fase MCU:** #{MCU}
+**Gênero:** {Genero}
+**Tags:** {Tags}
+**Diretor:** {Diretor}
+**Fase MCU:** {MCU}
 **Estrelas:** {Estrelas}
 **Estúdio:** {Estudio}
 ";
