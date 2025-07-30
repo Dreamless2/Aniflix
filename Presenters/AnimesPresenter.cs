@@ -57,7 +57,6 @@ namespace Aniflix.Presenters
                 itemExistente.Titulo_Original = item.Titulo_Original;
                 itemExistente.Data_Lancamento = item.Data_Lancamento;
                 itemExistente.Titulo_Alternativo = item.Titulo_Alternativo;
-                itemExistente.Franquia = item.Franquia;
                 itemExistente.Pais_Origem = item.Pais_Origem;
                 itemExistente.Idioma_Original = item.Idioma_Original;
                 itemExistente.Anime = item.Anime;
