@@ -126,11 +126,17 @@ namespace Aniflix.Services
                         Dictionary<string, string> specialWords = new()
                         {
                             { "ficção científica", "ficcaocientifica ficçãocientífica" },
+                            { "ficçãocientíficaefantasia", "ficcaocientificaefantasia ficçãocientíficaefantasia" },
+                            { "ficção científica e aventura", "ficcaocientificaeaventura ficçãocientíficaeaventura" },
+                            { "ficçãocientíficaeaventura", "ficcaocientificaeaventura ficçãocientíficaeaventura" },
                             { "romântico", "romantico romântico" },
                             { "romântica", "romantica romântica" },
                             { "comédia", "comedia comédia" },
                             { "mistério", "misterio mistério" },
                             { "ação", "acao ação" },
+                            { "ação e fantasia", "acaoefantasia açãoefantasia" },
+                            { "açãoefantasia", "acaoefantasia açãoefantasia" },
+                            { "ação e aventura", "acaoeaventura açãoeaventura" },
                             { "açãoeaventura", "acaoeaventura açãoeaventura" },
                             { "animação", "animacao animação" },
                             { "documentário", "documentario documentário" },
