@@ -48,10 +48,6 @@ $@"**{Titulo} - {Audio}**
 
 **Sinopse:** __{Sinopse}__
 
-**FHD** - __1080p__
-**HD** - __720p__
-**SD** - __480p__
-
 **Nome Original:** __{TituloOriginal}__
 **Título Alternativo:** __{TituloAlternativo}__
 **Data de lançamento:** __{DataLancamento}__
